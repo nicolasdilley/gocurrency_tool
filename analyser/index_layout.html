@@ -1,0 +1,16 @@
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+</head>
+<body>
+
+  <h2> Projects List </h2>
+
+  <ul>
+    {{range .Indexes}}
+    <li><a href="{{.Filename}}"> {{.Project_name}} </a> ({{.Num_of_features}} features, {{.Line_number}} Lines,
+    {{.Num_of_packages_with_features}}/{{.Num_of_packages}} packages) </li>
+    {{end}}
+  </ul>
+</body>
+</html>

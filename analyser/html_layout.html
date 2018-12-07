@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : {{.Full_project_name}} ( {{.Line_number }} Lines ) </h1>
+  <h2> <a href="https://github.com/{{.Full_project_name}}/tree/{{.Commit}}"> Commit : {{.Commit}} </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    {{range .Package_counters}}{{if .Counter.Has_feature}}
+          <li> {{.Counter.Package_name}} ( {{.Featured_packages}} features, {{.Featured_files}}/{{.Num_files}} featured file ) </li>
+          {{end}}{{end}}
+    <li> Num of Packages with features : {{.Num_of_packages_with_features}}/{{.Num_of_packages}}</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>{{.Project_counter.Send_count}} </td>
+      <td>{{.Project_counter.Rcv_count}} </td>
+      <td>{{.Project_counter.Chan_count}}</td>
+      <td>{{.Project_counter.Go_count}}</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>{{.Project_counter.Receive_chan_count}} </td>
+      <td>{{.Project_counter.Send_chan_count}}</td>
+      <td>{{.Project_counter.Param_chan_count}}</td>
+      <td>{{.Project_counter.Undefined_over_defined_chans}}</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>{{.Project_counter.Go_in_for_count}} </td>
+      <td>{{.Project_counter.Range_over_chan_count}} </td>
+      <td>{{.Project_counter.Go_in_constant_for_count}} </td>
+      <td>{{.Project_counter.Make_chan_in_for_count}}</td>
+      <td>{{.Project_counter.Make_chan_in_constant_for_count}}</td>
+      <td>{{.Project_counter.Assign_chan_in_for_count}} </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>{{.Project_counter.Sync_Chan_count}}</td>
+      <td>{{.Project_counter.Known_chan_depth_count}}</td>
+      <td>{{.Project_counter.Unknown_chan_depth_count}}</td>
+      <td>{{.Project_counter.Known_over_unknown_chan}}%</td>
+      <td>{{.Project_counter.Close_chan_count}} </td>
+      <td>{{.Project_counter.Chan_of_chans_count}}</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>{{.Project_counter.Array_of_channels_count}}</td>
+      <td>{{.Project_counter.Constant_chan_array_count}}</td>
+      <td>{{.Project_counter.Chan_slice_count}}</td>
+      <td>{{.Project_counter.Chan_map_count}}</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>{{.Project_counter.Select_count}} </td>
+      <td>{{.Project_counter.Default_select_count}}</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      {{range .Package_counters}}
+        {{range .File_counters}}
+          {{range .Features}}
+            <tr>
+              <td><a href="https://github.com/{{.F_project_name}}/blob/{{.F_commit}}/{{.F_filename}}#L{{.F_line_num}}">{{.F_filename}}</a></td>
+              <td>{{.F_type}}</td>
+              <td>{{.F_line_num}}</td>
+              <td>{{.F_number}}</td>
+            </tr>
+          {{end}}
+        {{end}}
+      {{end}}
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  // Charts
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [{{.Project_counter.Send_count}}, {{.Project_counter.Rcv_count}},
+    {{.Project_counter.Chan_count}},
+    {{.Project_counter.Go_count}}],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    // Table
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>
