@@ -64,7 +64,7 @@ func HtmlOutputCounters(package_counters []*PackageCounter, commit string, proje
 		panic(err)
 	}
 
-	project_counter.Line_number = ReadNumberOfLines(GenerateListFiles(path_to_dir))
+	// project_counter.Line_number = ReadNumberOfLines(GenerateListFiles(path_to_dir))
 	var page PageData = PageData{
 		Full_project_name: project_name,
 		Commit:            commit,

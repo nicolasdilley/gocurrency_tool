@@ -279,9 +279,10 @@ func analyseNode(fileset *token.FileSet, package_name string, filename string, n
 			}
 		}
 	case *ast.DeclStmt:
-		// look for a make(chan X) or a make(chan X,n)
+		// look for a make(chan X) or a make(chan X,n)  waitgroup (var wg *sync.Waitgroup) and mutexes (var mu *sync.Mutex)
 		switch decl := x.Decl.(type) {
 		case *ast.GenDecl:
+			// Look for declaration of a waitgroup
 			if decl.Tok == token.VAR {
 				for _, spec := range decl.Specs {
 					switch value := spec.(type) {
@@ -341,6 +342,9 @@ func analyseNode(fileset *token.FileSet, package_name string, filename string, n
 				}
 			}
 		}
+
+		// Look if the type of LHS is a mutex or a waitgroup
+
 	case *ast.ForStmt:
 		makeChanInFor(x, feature, env, counter, fileset)
 		// look in the block and see if goroutine are created in a for loop

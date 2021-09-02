@@ -35,6 +35,13 @@ type Counter struct {
 	Receive_chan_count                int     // how many receive chan
 	Send_chan_count                   int     // how many send only chan
 	Param_chan_count                  int     // How many times a chan is used as a param without specifying receives only or write only
+	Waitgroup_count                   int     // How many waitgroup declaration are contained
+	Known_add_count                   int     // How many known bound of add(n) where n is a constant
+	Unknown_add_count                 int     // How many unknown bound of add(n) where n is not a constant
+	Done_count                        int     // How many wg.Done()
+	Mutex_count                       int     // How many mutex declaration where found
+	Unlock_count                      int     // How many unlock in the code
+	Lock_count                        int     // How many lock in the code
 	IsPackage                         bool    // Return if the counter represent the counter for just a file or the whole package
 	Package_name                      string  // The name of the package
 	Package_path                      string  // path of the package
@@ -65,6 +72,11 @@ func main() {
 	if os.Args[1] == "test" {
 		var new_counter PackageCounter = ParseDir("test", "tests", "")
 		var test_counter Counter = HtmlOutputCounters([]*PackageCounter{&new_counter}, "test", "test", nil, "")
+
+		fmt.Println(len(test_counter.Features))
+		test_counter = ParseConcurrencyPrimitives("tests", test_counter) // analyses occurences of Waitgroup,mutexes and operations on them
+		fmt.Println(len(test_counter.Features))
+
 		OutputCounters("tests", []*PackageCounter{&new_counter}, "", test_counter)
 		return
 	}
@@ -82,39 +94,46 @@ func main() {
 
 	for _, project_name := range proj_listings {
 
-		proj_name := filepath.Base(string(project_name))
-		var path_to_dir string
-		var commit_hash string
-		path_to_dir, commit_hash = CloneRepo(string(project_name))
+		if project_name != "" {
+			proj_name := filepath.Base(string(project_name))
+			var path_to_dir string
+			var commit_hash string
+			path_to_dir, commit_hash = CloneRepo(string(project_name))
 
-		var packages []*PackageCounter
+			_, err1 := os.Stat(path_to_dir)
+			if os.IsNotExist(err1) {
+				continue
+			}
+			var packages []*PackageCounter
 
-		err := filepath.Walk(path_to_dir, func(path string, info os.FileInfo, err error) error {
+			err := filepath.Walk(path_to_dir, func(path string, info os.FileInfo, err error) error {
+
+				if err != nil {
+					fmt.Printf("prevent panic by handling failure accessing a path %q: %v\n", path_to_dir, err)
+					return err
+				}
+				if info.IsDir() {
+					if info.Name() == "vendor" || info.Name() == "tests" || info.Name() == "test" {
+						fmt.Printf("skipping a dir without errors: %+v \n", info.Name())
+						return filepath.SkipDir
+					}
+					var new_counter PackageCounter = ParseDir(proj_name, path, path_to_dir)
+					packages = append(packages, &new_counter)
+					return nil
+				}
+				return nil
+			})
 
 			if err != nil {
-				fmt.Printf("prevent panic by handling failure accessing a path %q: %v\n", path_to_dir, err)
-				return err
+				fmt.Printf("error walking the path %q: %v\n", path_to_dir, err)
 			}
-			if info.IsDir() {
-				if info.Name() == "vendor" || info.Name() == "tests" || info.Name() == "test" {
-					fmt.Printf("skipping a dir without errors: %+v \n", info.Name())
-					return filepath.SkipDir
-				}
-				var new_counter PackageCounter = ParseDir(proj_name, path, path_to_dir)
-				packages = append(packages, &new_counter)
-				return nil
-			}
-			return nil
-		})
+			var project_counter Counter = HtmlOutputCounters(packages, commit_hash, project_name, index_data, path_to_dir) // html
 
-		if err != nil {
-			fmt.Printf("error walking the path %q: %v\n", path_to_dir, err)
+			project_counter = ParseConcurrencyPrimitives(path_to_dir, project_counter) // analyses occurences of Waitgroup,mutexes and operations on them
+
+			OutputCounters(project_name, packages, path_to_dir, project_counter) // csvs
+			// project_counters = append(project_counters, project_counter)
 		}
-		var project_counter Counter = HtmlOutputCounters(packages, commit_hash, project_name, index_data, path_to_dir) // html
-
-		OutputCounters(project_name, packages, path_to_dir, project_counter) // csvs
-		defer os.RemoveAll(path_to_dir)                                      // clean up
-		// project_counters = append(project_counters, project_counter)
 	}
 	createIndexFile(index_data) // index html
 

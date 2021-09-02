@@ -5,8 +5,11 @@ import (
 	"go/ast"
 	"go/parser"
 	"go/token"
+	"os"
 	"path/filepath"
 	"strings"
+
+	"golang.org/x/tools/go/packages"
 )
 
 // parse a particular dir
@@ -36,18 +39,19 @@ func ParseDir(proj_name string, path_to_dir string, path_to_main_dir string) Pac
 		return counter
 	}
 
-	for pack_name, node := range f {
+	for pack_name, pack := range f {
+
 		var package_counter_chan chan Counter = make(chan Counter)
 		counter.Counter.Package_name = strings.TrimPrefix(strings.TrimPrefix(path_to_dir, path_to_main_dir)+"/"+pack_name, "/")
 		counter.Counter.Package_path = path_to_dir
 		// Analyse each file
-		for name, file := range node.Files {
+		for name, file := range pack.Files {
 			filename := strings.TrimPrefix(strings.TrimPrefix(path_to_dir, path_to_main_dir)+"/"+filepath.Base(name), "/")
 			go AnalyseAst(fileSet, pack_name, filename, file, package_counter_chan, name) // launch a goroutine for each file
 		}
 
 		// Receive the results of the analysis of each file
-		for range node.Files {
+		for range pack.Files {
 
 			var new_counter Counter = <-package_counter_chan
 
@@ -86,5 +90,57 @@ func ParseDir(proj_name string, path_to_dir string, path_to_main_dir string) Pac
 		}
 
 	}
+
+	return counter
+}
+
+func ParseConcurrencyPrimitives(path_to_dir string, counter Counter) Counter {
+	package_names := []string{}
+
+	filepath.Walk(path_to_dir, func(path string, file os.FileInfo, err error) error {
+		if file.IsDir() {
+			if file.Name() != "vendor" && file.Name() != "third_party" {
+				path, _ = filepath.Abs(path)
+				package_names = append(package_names, path)
+			} else {
+				return filepath.SkipDir
+			}
+		}
+		return nil
+	})
+
+	var ast_map map[string]*packages.Package = make(map[string]*packages.Package)
+	var cfg *packages.Config = &packages.Config{Mode: packages.LoadAllSyntax, Fset: &token.FileSet{}, Dir: path_to_dir, Tests: true}
+
+	package_names = append([]string{"."}, package_names...)
+	lpkgs, err := packages.Load(cfg, package_names...)
+
+	if err != nil {
+		fmt.Println("couldn't load ", path_to_dir)
+	}
+
+	for _, pack := range lpkgs {
+		ast_map[pack.Name] = pack
+	}
+
+	for pack_name, node := range ast_map {
+		// Analyse each file
+
+		// make sure the package doesnt contain any global concurrency primitives
+
+		for _, file := range node.Syntax {
+			for _, decl := range file.Decls {
+				switch decl := decl.(type) {
+				case *ast.FuncDecl:
+					// Analyse each function decleration
+					if decl.Body != nil {
+						counter = AnalyseConcurrencyPrimitives(pack_name, decl, counter, cfg.Fset, ast_map)
+					}
+				}
+			}
+		}
+
+	}
+
 	return counter
 }

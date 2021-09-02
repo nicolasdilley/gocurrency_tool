@@ -20,6 +20,13 @@ const (
 	CHAN_SLICE                FeatureType = "Slice array of chans"
 	CHAN_MAP                  FeatureType = "Map of chans"
 	CLOSE_CHAN                FeatureType = "Close chan"
+	WAITGROUP                 FeatureType = "Waitgroup"
+	KNOWN_ADD                 FeatureType = "Waitgroup Add(const)"
+	UNKNOWN_ADD               FeatureType = "Waitgroup Add(var)"
+	DONE                      FeatureType = "Waitgroup Done()"
+	MUTEX                     FeatureType = "Mutex"
+	UNLOCK                    FeatureType = "Mutex Unlock()"
+	LOCK                      FeatureType = "Mutex Lock()"
 	SELECT                    FeatureType = "Select (number of branch)"
 	DEFAULT_SELECT            FeatureType = "Select with default (number of branch)"
 	ASSIGN_CHAN_IN_FOR        FeatureType = "Assign chan in for"
@@ -51,6 +58,13 @@ const (
 	RECEIVE_CHAN_COUNT              int = 20
 	SEND_CHAN_COUNT                 int = 21
 	PARAM_CHAN_COUNT                int = 22
+	WAITGROUP_COUNT                 int = 23
+	KNOWN_ADD_COUNT                 int = 24
+	UNKNOWN_ADD_COUNT               int = 25
+	DONE_COUNT                      int = 26
+	MUTEX_COUNT                     int = 27
+	UNLOCK_COUNT                    int = 28
+	LOCK_COUNT                      int = 29
 )
 
 type Feature struct {
@@ -118,6 +132,18 @@ func setFeaturesNumber(counter *Counter) {
 			feature.F_type_num = RECEIVE_CHAN_COUNT
 		case PARAM_CHAN:
 			feature.F_type_num = PARAM_CHAN_COUNT
+		case WAITGROUP:
+			feature.F_type_num = WAITGROUP_COUNT
+		case KNOWN_ADD:
+			feature.F_type_num = KNOWN_ADD_COUNT
+		case UNKNOWN_ADD:
+			feature.F_type_num = UNKNOWN_ADD_COUNT
+		case MUTEX:
+			feature.F_type_num = MUTEX_COUNT
+		case LOCK:
+			feature.F_type_num = LOCK_COUNT
+		case UNLOCK:
+			feature.F_type_num = UNLOCK_COUNT
 		}
 
 		counter.Features = append(counter.Features, feature)
