@@ -34,12 +34,12 @@ func OutputCounters(project_name string, package_counters []*PackageCounter, pat
 		f.WriteString(fmt.Sprintf("Line num,%d\n", project_counter.Line_number))
 		f.WriteString(fmt.Sprintf("packages num,%d,%d\n", project_counter.Num_of_packages_with_features, num_of_packages))
 		f.WriteString(fmt.Sprintf("files num,%d,%d\n", num_featured_files, num_files))
-		f.WriteString(fmt.Sprintf("Average Line num per featured file,%.d\n"))
+		f.WriteString(fmt.Sprintf("Average Line num per featured file,%.d\n", readNumberOfLinesPerFeaturedFile(package_counters)))
 	}
 
 	for _, counter := range package_counters {
 		if len(counter.File_counters) > 0 {
-			f.WriteString(fmt.Sprintf("%s,%d\n", counter.Counter.Package_name))
+			f.WriteString(fmt.Sprintf("%s,%d\n", counter.Counter.Package_name, ReadNumberOfLines(GeneratePackageListFiles(counter.Counter.Package_path))))
 		}
 	}
 
