@@ -1,0 +1,105 @@
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+</head>
+<body>
+
+  <h2> Projects </h2>
+
+  #projects without channels / #featured projects : {{.Stats.Num_projects_without_chans}} / {{.Stats.Num_featured_projects}}
+
+  <h2> Channels </h2>
+
+  # of channels : {{.Stats.Average.Channels}} </br>
+  # of known channels : {{.Stats.Average.Known_chans}} </br>
+  # of unknown channels : {{.Stats.Average.Unknown_chans}} </br>
+  # of non-zero channels : {{.Stats.Average.Non_zero_know_chans}} </br>
+  # of sync channels : {{.Stats.Average.Zero_chans}} </br>
+
+  <h2> Projects </h2>
+
+  # of project with at least one chan : {{.Stats.Project_with_interesting_features}}
+
+  <h2> Averages </h2>
+  #channels / {{.Constant}} LoC : {{.Stats.Average.Channels}} </br>
+  #goroutines / {{.Constant}} LoC : {{.Stats.Average.Goroutines}} </br>
+  #go in for / {{.Constant}} LoC : {{.Stats.Average.Go_in_for}} </br>
+  #dynamic structure / {{.Constant}} LoC : {{.Stats.Average.Dynamic_structures}} </br>
+  #go in for over go : {{.Stats.Average.Go_in_for_over_go}}% </br>
+  #chan in for over chan : {{.Stats.Average.Channels_in_for_over_chan}}% </br>
+  #featured packages / package : {{.Stats.Average.Featured_packages_over_packages}} </br>
+  #features / featured packages : {{.Stats.Average.Features_over_featured_packages}} </br>
+  #projects with go in for : {{ .Stats.Average.Project_with_go_in_for}}% </br>
+  #projects with chan in for : {{.Stats.Average.Project_with_chan_in_for}}% </br>
+  %of defined chans as params : {{.Stats.Average.Defined_over_params}}% </br>
+  #Project with assign chan in for : {{.Stats.Num_assign_chan_in_for}} </br>
+
+
+  <h2> Average Channels Size </h2>
+  <canvas id="chan_size" width="800" height="800"></canvas>
+
+  <h2> Num of go per line code </h2>
+
+<canvas id="go" width="800" height="800"></canvas>
+
+<h2> Make Chan Graph </h2>
+<canvas id="chan" width="800" height="800"></canvas>
+  <script>
+  var chan_size = "chan_size";
+  var chan_data = {{.Channel_size_graph.Dataset}}; // actual data
+  var chan_labels = {{.Channel_size_graph.Labels}} ;
+  var chan_colors =  {{.Channel_size_graph.Colors}} ;
+  var chan_options = {responsive: false};
+  // These labels appear in the legend and in the tooltips when hovering different arcs\n)
+  var chan_chart_data = {datasets: [{data: chan_data,backgroundColor: chan_colors}],labels: chan_labels};
+  var chan_chart = new Chart(chan_size,{type: 'bar',data: chan_chart_data,options: chan_options});
+
+  var chan = "chan"
+  var chan_scatter_data = {{.Chan_graph.Dataset}};
+  var chan_scatter_options = {responsive: false,scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom'
+            }]
+        }};
+  // These labels appear in the legend and in the tooltips when hovering different arcs\n)
+  chan_chart_data = {datasets: [{label: "# of chan",data: chan_scatter_data}]};
+  var chan_scatter_chart = new Chart(chan,{type: 'scatter',data: chan_chart_data,options: chan_scatter_options});
+
+  var go_data = {{.Go_graph.Dataset}}; // actual data
+  var go_options = {responsive: false,scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom'
+            }]
+        }};
+  var go_chart_data = {datasets: [{label: "# of Go",data: go_data}]};
+  var go_chart = new Chart("go",{type: 'scatter',data: go_chart_data,options: go_options});
+
+
+
+</script>
+
+
+  <div style="float:left"><h1> Concurrency Score </h1> <ol>
+
+    {{range .Stats.ConcurrencyLevels}}
+    <li><a href="./gocurrency_automator/results/html/{{.Name}}"> {{.Name}} </a> = {{.Score}} </li>
+    {{end}}
+  </ol></div>
+
+  <div style="float:left"><h1> Risk Score </h1> <ol>
+
+    {{range .Stats.RiskLevels}}
+    <li><a href="./gocurrency_automator/results/html/{{.Name}}"> {{.Name}} </a>  = {{.Score}} </li>
+    {{end}}
+  </ol></div>
+
+  <div style="float:left"><h1> Memory Leak Score </h1> <ol>
+
+    {{range .Stats.MemoryLevels}}
+    <li><a href="./gocurrency_automator/results/html/{{.Name}}"> {{.Name}} </a> = {{.Score}} </li>
+    {{end}}
+  </ol></div>
+</body>
+</html>

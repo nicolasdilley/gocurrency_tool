@@ -1,0 +1,3111 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : cayleygraph/cayley ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/cayleygraph/cayley/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> graph/sql/postgres ( 28 features, 1/1 featured file ) </li>
+          
+          <li> internal/repl ( 7 features, 1/2 featured file ) </li>
+          
+          <li> graph/nosql ( 10 features, 3/4 featured file ) </li>
+          
+          <li> query/linkedql ( 1 features, 1/14 featured file ) </li>
+          
+          <li> graph/sql ( 57 features, 3/6 featured file ) </li>
+          
+          <li> graph/sql/mysql ( 28 features, 1/1 featured file ) </li>
+          
+          <li> client ( 13 features, 1/1 featured file ) </li>
+          
+          <li> schema_test ( 6 features, 3/4 featured file ) </li>
+          
+          <li> cmd/cayley/command ( 5 features, 1/8 featured file ) </li>
+          
+          <li> graph/sql/sqlite ( 28 features, 1/2 featured file ) </li>
+          
+          <li> graph/kv/kvtest ( 3 features, 1/1 featured file ) </li>
+          
+          <li> server/http ( 2 features, 1/4 featured file ) </li>
+          
+          <li> internal/http ( 4 features, 2/9 featured file ) </li>
+          
+          <li> graph/kv/leveldb ( 12 features, 1/2 featured file ) </li>
+          
+          <li> internal/lru ( 13 features, 2/2 featured file ) </li>
+          
+          <li> graph/graphtest ( 7 features, 2/2 featured file ) </li>
+          
+          <li> graph/nosql/nosqltest ( 2 features, 1/1 featured file ) </li>
+          
+          <li> graph/kv/bolt ( 22 features, 1/2 featured file ) </li>
+          
+          <li> query/gizmo ( 19 features, 2/6 featured file ) </li>
+          
+          <li> query/graphql ( 6 features, 1/3 featured file ) </li>
+          
+          <li> graph/kv ( 19 features, 3/8 featured file ) </li>
+          
+          <li> graph/kv_test ( 5 features, 1/1 featured file ) </li>
+          
+          <li> graph/iterator ( 31 features, 1/21 featured file ) </li>
+          
+          <li> query/linkedql/steps ( 2 features, 2/41 featured file ) </li>
+          
+    <li> Num of Packages with features : 24/62</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>7 </td>
+      <td>28 </td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>2</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>80%</td>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>6 </td>
+      <td>16</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/postgres/postgres.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go</a></td>
+              <td>Mutex</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go#L118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>118</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go#L247">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go</a></td>
+              <td>Mutex</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go#L249">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go</a></td>
+              <td>Goroutine</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go#L250">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>250</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go#L252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/repl/repl.go</a></td>
+              <td>Receive</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/iterator.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/iterator.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go</a></td>
+              <td>Mutex</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go</a></td>
+              <td>Mutex</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/shapes.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/linkedql/linkedql.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/linkedql/linkedql.go</a></td>
+              <td>Mutex</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go#L307">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go</a></td>
+              <td>Mutex</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go#L307">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go</a></td>
+              <td>Mutex</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go#L307">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go</a></td>
+              <td>Mutex</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go#L307">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/shape.go</a></td>
+              <td>Mutex</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go#L353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go#L353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go#L353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/iterator.go</a></td>
+              <td>Mutex</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L146">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L272">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L401">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L401">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L401">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L401">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L401">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L651">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>651</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go#L651">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>651</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/mysql/mysql.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Mutex</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>83</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Close chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Send</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/client/client.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/namespaces_test.go#L17">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/namespaces_test.go</a></td>
+              <td>Mutex</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/namespaces_test.go#L22">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/namespaces_test.go</a></td>
+              <td>Mutex</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/namespaces_test.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/namespaces_test.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/writer_test.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/writer_test.go</a></td>
+              <td>Mutex</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/loader_test.go#L15">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/loader_test.go</a></td>
+              <td>Mutex</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/loader_test.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/schema/loader_test.go</a></td>
+              <td>Mutex</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>27</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>30</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/cmd/cayley/command/repl.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/sql/sqlite/sqlite.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/kvtest/kvtest.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/kvtest/kvtest.go</a></td>
+              <td>Mutex</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/kvtest/kvtest.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/kvtest/kvtest.go</a></td>
+              <td>Mutex</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/kvtest/kvtest.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/kvtest/kvtest.go</a></td>
+              <td>Mutex</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/server/http/api_v2.go#L513">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/server/http/api_v2.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>513</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/server/http/api_v2.go#L514">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/server/http/api_v2.go</a></td>
+              <td>Receive</td>
+              <td>514</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/query.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/query.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>84</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/query.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/query.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/http.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/http.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/http.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/http/http.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Waitgroup</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Mutex</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/leveldb/leveldb.go</a></td>
+              <td>Waitgroup</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go#L26">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go</a></td>
+              <td>Mutex</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go</a></td>
+              <td>Go in for</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>28</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru_test.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/internal/lru/lru.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go#L509">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go</a></td>
+              <td>Mutex</td>
+              <td>509</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go#L509">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go</a></td>
+              <td>Mutex</td>
+              <td>509</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go#L509">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go</a></td>
+              <td>Mutex</td>
+              <td>509</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go</a></td>
+              <td>Mutex</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go</a></td>
+              <td>Mutex</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/integration.go</a></td>
+              <td>Mutex</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/graphtest.go#L1221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/graphtest/graphtest.go</a></td>
+              <td>Mutex</td>
+              <td>1221</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/nosqltest/nosqltest.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/nosqltest/nosqltest.go</a></td>
+              <td>Mutex</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/nosqltest/nosqltest.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/nosql/nosqltest/nosqltest.go</a></td>
+              <td>Mutex</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/bolt/bolt.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go#L696">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go</a></td>
+              <td>Mutex</td>
+              <td>696</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go#L696">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go</a></td>
+              <td>Mutex</td>
+              <td>696</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go#L696">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go</a></td>
+              <td>Mutex</td>
+              <td>696</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go#L801">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go</a></td>
+              <td>Mutex</td>
+              <td>801</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go#L801">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go</a></td>
+              <td>Mutex</td>
+              <td>801</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go#L801">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo_test.go</a></td>
+              <td>Mutex</td>
+              <td>801</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Mutex</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Mutex</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Mutex</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L220">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>220</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Send</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L222">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L333">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>333</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L335">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Goroutine</td>
+              <td>335</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L339">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Send</td>
+              <td>339</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L347">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>347</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L348">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>348</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L351">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go#L356">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go#L218">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>218</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go#L219">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go</a></td>
+              <td>Receive</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go#L291">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>291</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go#L292">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go</a></td>
+              <td>Receive</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go#L307">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>307</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go#L308">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/graphql/graphql.go</a></td>
+              <td>Receive</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go</a></td>
+              <td>Mutex</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go</a></td>
+              <td>Mutex</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go</a></td>
+              <td>Mutex</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/iterators.go</a></td>
+              <td>Mutex</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore.go</a></td>
+              <td>Mutex</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go#L430">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go#L437">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>437</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go#L450">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go#L453">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>453</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go#L477">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go#L567">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>567</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go#L568">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/indexing.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>568</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go</a></td>
+              <td>Mutex</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go#L283">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>283</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go#L286">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go#L291">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go#L293">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/kv/quadstore_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>52</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>116</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>147</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>154</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>173</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L174">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>180</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L181">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L204">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>209</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L210">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Send</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L215">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>215</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L216">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L218">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Send</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L233">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>233</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L234">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L248">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>248</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L249">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L335">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>335</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L354">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>354</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L355">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>355</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go#L357">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/graph/iterator/iterate.go</a></td>
+              <td>Send</td>
+              <td>357</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/linkedql/steps/match_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/linkedql/steps/match_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/linkedql/steps/steps_test.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph&#43;&#43;cayley/query/linkedql/steps/steps_test.go</a></td>
+              <td>Mutex</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 7 ,  28 ,
+     5 ,
+     5 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

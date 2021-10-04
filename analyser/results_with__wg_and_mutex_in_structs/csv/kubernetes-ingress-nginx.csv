@@ -1,0 +1,425 @@
+Line num,41756
+packages num,22,113
+files num,42,220
+Average Line num per featured file,363,10164
+cmd/dbg,186
+cmd/nginx,687
+cmd/plugin,40
+cmd/plugin/commands/backends,57
+cmd/plugin/commands/certs,43
+cmd/plugin/commands/conf,51
+cmd/plugin/commands/exec,46
+cmd/plugin/commands/general,36
+cmd/plugin/commands/info,33
+cmd/plugin/commands/ingresses,238
+cmd/plugin/commands/lint,182
+cmd/plugin/commands/logs,76
+cmd/plugin/commands/ssh,30
+cmd/plugin/kubectl,89
+cmd/plugin/lints,191
+cmd/plugin/request,241
+cmd/plugin/util,87
+cmd/waitshutdown,22
+docs/examples/customization/external-auth-headers/authsvc,29
+docs/examples/customization/external-auth-headers/echosvc,12
+hack,5
+hack/boilerplate,0
+images/custom-error-pages,145
+images/fastcgi-helloserver/rootfs,24
+images/kube-webhook-certgen/rootfs,7
+images/kube-webhook-certgen/rootfs/cmd,183
+images/kube-webhook-certgen/rootfs/core,5
+images/kube-webhook-certgen/rootfs/pkg/certs,133
+images/kube-webhook-certgen/rootfs/pkg/k8s,242
+internal/admission/controller,206
+internal/file,81
+internal/ingress,1110
+internal/ingress/annotations,417
+internal/ingress/annotations/alias,77
+internal/ingress/annotations/auth,359
+internal/ingress/annotations/authreq,480
+internal/ingress/annotations/authreqglobal,84
+internal/ingress/annotations/authtls,296
+internal/ingress/annotations/backendprotocol,118
+internal/ingress/annotations/canary,179
+internal/ingress/annotations/clientbodybuffersize,55
+internal/ingress/annotations/connection,82
+internal/ingress/annotations/cors,228
+internal/ingress/annotations/customhttperrors,95
+internal/ingress/annotations/defaultbackend,109
+internal/ingress/annotations/fastcgi,262
+internal/ingress/annotations/globalratelimit,230
+internal/ingress/annotations/http2pushpreload,55
+internal/ingress/annotations/influxdb,168
+internal/ingress/annotations/ipwhitelist,233
+internal/ingress/annotations/loadbalancing,53
+internal/ingress/annotations/log,116
+internal/ingress/annotations/mirror,101
+internal/ingress/annotations/modsecurity,117
+internal/ingress/annotations/opentracing,120
+internal/ingress/annotations/parser,280
+internal/ingress/annotations/portinredirect,119
+internal/ingress/annotations/proxy,350
+internal/ingress/annotations/proxyssl,355
+internal/ingress/annotations/ratelimit,311
+internal/ingress/annotations/redirect,206
+internal/ingress/annotations/rewrite,266
+internal/ingress/annotations/satisfy,94
+internal/ingress/annotations/secureupstream,153
+internal/ingress/annotations/serversnippet,54
+internal/ingress/annotations/serviceupstream,103
+internal/ingress/annotations/sessionaffinity,196
+internal/ingress/annotations/snippet,54
+internal/ingress/annotations/sslcipher,79
+internal/ingress/annotations/sslpassthrough,76
+internal/ingress/annotations/upstreamhashby,70
+internal/ingress/annotations/upstreamvhost,47
+internal/ingress/annotations/xforwardedprefix,55
+internal/ingress/controller,6020
+internal/ingress/controller/config,391
+internal/ingress/controller/ingressclass,11
+internal/ingress/controller/process,44
+internal/ingress/controller/store,2334
+internal/ingress/controller/template,3826
+internal/ingress/defaults,36
+internal/ingress/errors,91
+internal/ingress/metric,152
+internal/ingress/metric/collectors,1619
+internal/ingress/resolver,108
+internal/ingress/status,891
+internal/k8s,373
+internal/net,152
+internal/net/dns,75
+internal/net/ssl,773
+internal/nginx,325
+internal/runtime,41
+internal/sets,104
+internal/task,230
+internal/watch,181
+test/e2e,48
+test/e2e/admission,203
+test/e2e/annotations,4525
+test/e2e/dbg,59
+test/e2e/defaultbackend,204
+test/e2e/framework,2278
+test/e2e/gracefulshutdown,98
+test/e2e/ingress,366
+test/e2e/leaks,86
+test/e2e/loadbalance,122
+test/e2e/lua,358
+test/e2e/security,62
+test/e2e/servicebackend,477
+test/e2e/settings,3008
+test/e2e/settings/ocsp,286
+test/e2e/ssl,117
+test/e2e/status,95
+test/e2e/tcpudp,148
+version,20
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/backend_ssl.go,29,Mutex Lock(),38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/backend_ssl.go,28,Mutex Unlock(),39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/backend_ssl.go,3,Send,193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,22,chan used as a param,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,1,Goroutine,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,1,Goroutine,153,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,1,Goroutine,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,1,Goroutine,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,1,Goroutine,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,1,Goroutine,177,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,27,Mutex,230,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,27,Mutex,230,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,350,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,378,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,419,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,439,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,455,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,475,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,504,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,531,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,569,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,579,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,585,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,594,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,638,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,3,Send,671,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store.go,22,chan used as a param,990,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,166,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,261,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,268,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,369,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,376,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,378,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,494,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,502,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,504,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,587,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,594,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,596,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,675,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,682,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,684,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,27,Mutex,719,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,764,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,771,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,773,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,4,Synchronous chan,885,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,1,Goroutine,892,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,2,Receive,894,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,27,Mutex,1135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,27,Mutex,1135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,27,Mutex,1199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,27,Mutex,1199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,27,Mutex,1325,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/store/store_test.go,27,Mutex,1325,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/cmd/plugin/kubectl/kubectl.go,27,Mutex,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/cmd/plugin/kubectl/kubectl.go,1,Goroutine,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/gracefulshutdown/grace_period.go,4,Synchronous chan,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/gracefulshutdown/grace_period.go,1,Goroutine,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/gracefulshutdown/grace_period.go,3,Send,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/gracefulshutdown/grace_period.go,2,Receive,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl.go,27,Mutex,501,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl.go,29,Mutex Lock(),517,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl.go,28,Mutex Unlock(),518,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl.go,29,Mutex Lock(),543,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl.go,28,Mutex Unlock(),544,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,439,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,30,Waitgroup,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,27,Mutex,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/ssl/ssl_test.go,1,Goroutine,449,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/status/status.go,22,chan used as a param,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/status/status.go,1,Goroutine,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/status/status.go,1,Goroutine,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/status/status_test.go,4,Synchronous chan,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/status/status_test.go,15,Close chan,319,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/status/status_test.go,1,Goroutine,321,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/settings/ocsp/ocsp.go,27,Mutex,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/settings/ocsp/ocsp.go,27,Mutex,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/settings/ocsp/ocsp.go,27,Mutex,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/leaks/lua_ssl.go,27,Mutex,74,
+/Users/nicolasdilley/Library/Caches/go-build/34/34ff2c9df783bd71d7f2bcfddc5707e2947feab38ce7566cbbd1953f4a1108c1-d,27,Mutex,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/exec.go,27,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/exec.go,27,Mutex,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/exec.go,27,Mutex,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/exec.go,27,Mutex,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/ssl.go,27,Mutex,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/ssl.go,27,Mutex,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/ssl.go,27,Mutex,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/ssl.go,27,Mutex,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/framework.go,1,Goroutine,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/framework/framework.go,1,Goroutine,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/main.go,1,Goroutine,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/main.go,1,Goroutine,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/main.go,1,Goroutine,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/status.go,27,Mutex,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/status.go,1,Goroutine,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/status.go,4,Synchronous chan,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/status.go,15,Close chan,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/status.go,27,Mutex,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/tcp.go,3,Send,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/tcp.go,8,Known chan length (length),124,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/tcp.go,1,Goroutine,126,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/tcp.go,1,Goroutine,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/tcp.go,16,Select (number of branch),129,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/tcp.go,2,Receive,130,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,30,Waitgroup,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,27,Mutex,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/checker_test.go,1,Goroutine,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,30,Waitgroup,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,30,Waitgroup,331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx_test.go,27,Mutex,331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,22,chan used as a param,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,2217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,2217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,2217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,2217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,2235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/controller_test.go,27,Mutex,2304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,4,Synchronous chan,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,4,Synchronous chan,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,27,Mutex,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,27,Mutex,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,27,Mutex,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,27,Mutex,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,269,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,27,Mutex,282,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,298,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,317,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,16,Select (number of branch),323,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,2,Receive,324,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,2,Receive,335,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,2,Receive,352,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,29,Mutex Lock(),362,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,28,Mutex Unlock(),363,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,373,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,27,Mutex,388,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,3,Send,414,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,418,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,3,Send,419,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,754,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,5,Go in for,773,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,1,Goroutine,773,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/nginx.go,27,Mutex,1059,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/lua/dynamic_certificates.go,27,Mutex,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/tcpudp/tcp.go,27,Mutex,172,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/tcpudp/tcp.go,27,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/k8s/main_test.go,27,Mutex,251,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/cmd/plugin/commands/lint/main.go,27,Mutex,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/cmd/plugin/commands/lint/main.go,27,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/cmd/plugin/commands/lint/main.go,27,Mutex,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,4,Synchronous chan,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,1,Goroutine,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,4,Synchronous chan,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,1,Goroutine,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,4,Synchronous chan,89,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,1,Goroutine,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,4,Synchronous chan,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,1,Goroutine,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,4,Synchronous chan,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue_test.go,1,Goroutine,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue.go,20,Receive only chan (<-chan),60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue.go,20,Receive only chan (<-chan),144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue.go,17,Select with default (number of branch),145,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue.go,2,Receive,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue.go,2,Receive,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/task/queue.go,4,Synchronous chan,176,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/admission/admission.go,27,Mutex,166,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/test/e2e/admission/admission.go,27,Mutex,250,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/controller/template/template.go,27,Mutex,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/nginx/main.go,27,Mutex,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/net/net.go,27,Mutex,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket_test.go,1,Goroutine,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket_test.go,5,Go in for,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket_test.go,1,Goroutine,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket_test.go,27,Mutex,289,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,27,Mutex,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,4,Synchronous chan,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,1,Goroutine,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,3,Send,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,1,Goroutine,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,2,Receive,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,15,Close chan,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process_test.go,27,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,4,Synchronous chan,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,21,Send only chan (chan<-),167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,170,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,172,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,173,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,174,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,21,Send only chan (chan<-),178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,4,Synchronous chan,179,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,2,Receive,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,188,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,21,Send only chan (chan<-),196,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,204,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,206,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,208,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,210,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,212,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/process.go,3,Send,216,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,27,Mutex,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,27,Mutex,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,27,Mutex,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,27,Mutex,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,30,Waitgroup,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,27,Mutex,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,1,Goroutine,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status_test.go,27,Mutex,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/controller.go,21,Send only chan (chan<-),203,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/controller.go,21,Send only chan (chan<-),216,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/controller_test.go,27,Mutex,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/controller_test.go,27,Mutex,126,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,4,Synchronous chan,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,21,Send only chan (chan<-),110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,21,Send only chan (chan<-),117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,4,Synchronous chan,118,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,2,Receive,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,21,Send only chan (chan<-),167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,183,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,185,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,187,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,189,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/nginx_status.go,3,Send,195,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket.go,5,Go in for,332,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket.go,1,Goroutine,332,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket.go,21,Send only chan (chan<-),406,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/ingress/metric/collectors/socket.go,21,Send only chan (chan<-),421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,8,Known chan length (length),30,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,1,Goroutine,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,3,Send,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,8,Known chan length (length),46,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,3,Send,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,16,Select (number of branch),59,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,2,Receive,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,2,Receive,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,16,Select (number of branch),65,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,2,Receive,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,2,Receive,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,8,Known chan length (length),101,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,3,Send,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,16,Select (number of branch),132,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,2,Receive,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher_test.go,2,Receive,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher.go,27,Mutex,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher.go,27,Mutex,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher.go,1,Goroutine,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher.go,16,Select (number of branch),73,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher.go,2,Receive,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kubernetes++ingress-nginx/internal/watch/file_watcher.go,2,Receive,91,

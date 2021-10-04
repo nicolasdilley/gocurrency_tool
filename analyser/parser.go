@@ -2,58 +2,72 @@ package main
 
 import (
 	"fmt"
-	"go/ast"
-	"go/parser"
 	"go/token"
-	"os"
 	"path/filepath"
 	"strings"
 
+	"github.com/nicolasdilley/gocurrency_tool/analyser/analyse"
+	"github.com/nicolasdilley/gocurrency_tool/analyser/output"
 	"golang.org/x/tools/go/packages"
 )
 
 // parse a particular dir
-func ParseDir(proj_name string, path_to_dir string, path_to_main_dir string) PackageCounter {
+func ParseDir(proj_name string, path_to_main_dir string, fileSet *token.FileSet, ast_map map[string]*packages.Package) []*output.PackageCounter {
+	var packages []*output.PackageCounter
 
-	var fileSet *token.FileSet = token.NewFileSet()
-	var counter PackageCounter = PackageCounter{
-		Counter: Counter{
-			Go_count:     0,
-			Send_count:   0,
-			Rcv_count:    0,
-			Chan_count:   0,
-			IsPackage:    true,
-			Project_name: proj_name},
-		File_counters: []*Counter{}}
+	for pack_name, pack := range ast_map {
+		var counter output.PackageCounter = output.PackageCounter{
+			Counter: analyse.Counter{
+				Go_count:     0,
+				Send_count:   0,
+				Rcv_count:    0,
+				Chan_count:   0,
+				IsPackage:    true,
+				Project_name: proj_name},
+			File_counters: []*analyse.Counter{}}
+		fmt.Print("Parsing package ", pack_name, " ", len(pack.Syntax), " files ", " : ")
 
-	f, err := parser.ParseDir(fileSet, path_to_dir, nil, parser.AllErrors)
+		var package_counter_chan chan analyse.Counter = make(chan analyse.Counter)
+		full_pack_name := ""
+		if strings.Contains(pack.PkgPath, "projects-gocurrency/") {
+			full_pack_name = strings.Join(strings.Split(strings.Split(pack.PkgPath, "projects-gocurrency/")[1], "/")[1:], "/")
 
-	if proj_name == "test" {
-		ast.Print(fileSet, f)
-	}
-	if err != nil {
-		fmt.Printf("An error was found in package %s : %v", filepath.Base(path_to_dir), err)
-	}
+		} else {
+			if strings.Contains(pack.PkgPath, "github.com") {
+				full_pack_name = strings.Join(strings.Split(pack.PkgPath, "/")[3:], "/")
+			} else {
+				// bizarre path like kubernetes "k8s.io/kubernetes/pkg/kubelet/checkpointmanager"
+				if len(pack.GoFiles) > 0 {
+					if strings.Contains(pack.GoFiles[0], "projects-gocurrency/") {
+						replaced_path := strings.Split(strings.Split(pack.GoFiles[0], "projects-gocurrency/")[1], "/")
+						full_pack_name = strings.Join(replaced_path[1:len(replaced_path)-1], "/")
+					}
+				}
+			}
 
-	if len(f) == 0 {
-		return counter
-	}
+		}
+		counter.Counter.Package_name = full_pack_name
 
-	for pack_name, pack := range f {
+		// the package path is used later to count number of lines of all go files in the folder
 
-		var package_counter_chan chan Counter = make(chan Counter)
-		counter.Counter.Package_name = strings.TrimPrefix(strings.TrimPrefix(path_to_dir, path_to_main_dir)+"/"+pack_name, "/")
-		counter.Counter.Package_path = path_to_dir
+		// remove github.com/projectname/
+		pack_path := path_to_main_dir + "/" + full_pack_name
+		// append result to path_to_main_dir
+		counter.Counter.Package_path = pack_path
 		// Analyse each file
-		for name, file := range pack.Files {
-			filename := strings.TrimPrefix(strings.TrimPrefix(path_to_dir, path_to_main_dir)+"/"+filepath.Base(name), "/")
-			go AnalyseAst(fileSet, pack_name, filename, file, package_counter_chan, name) // launch a goroutine for each file
+
+		if strings.Contains(full_pack_name, ".test") {
+			continue
+		}
+		for _, file := range pack.Syntax {
+			filename := fileSet.Position(file.Pos()).Filename
+			go analyse.AnalyseAst(fileSet, pack_name, filename, file, package_counter_chan, filepath.Base(fileSet.Position(file.Pos()).Filename), ast_map) // launch a goroutine for each file
 		}
 
 		// Receive the results of the analysis of each file
-		for range pack.Files {
-
-			var new_counter Counter = <-package_counter_chan
+		for range pack.Syntax {
+			fmt.Print("#")
+			var new_counter analyse.Counter = <-package_counter_chan
 
 			new_counter.IsPackage = false
 			new_counter.Project_name = proj_name
@@ -89,58 +103,11 @@ func ParseDir(proj_name string, path_to_dir string, path_to_main_dir string) Pac
 
 		}
 
-	}
+		packages = append(packages, &counter)
 
-	return counter
-}
-
-func ParseConcurrencyPrimitives(path_to_dir string, counter Counter) Counter {
-	package_names := []string{}
-
-	filepath.Walk(path_to_dir, func(path string, file os.FileInfo, err error) error {
-		if file.IsDir() {
-			if file.Name() != "vendor" && file.Name() != "third_party" {
-				path, _ = filepath.Abs(path)
-				package_names = append(package_names, path)
-			} else {
-				return filepath.SkipDir
-			}
-		}
-		return nil
-	})
-
-	var ast_map map[string]*packages.Package = make(map[string]*packages.Package)
-	var cfg *packages.Config = &packages.Config{Mode: packages.LoadAllSyntax, Fset: &token.FileSet{}, Dir: path_to_dir, Tests: true}
-
-	package_names = append([]string{"."}, package_names...)
-	lpkgs, err := packages.Load(cfg, package_names...)
-
-	if err != nil {
-		fmt.Println("couldn't load ", path_to_dir)
-	}
-
-	for _, pack := range lpkgs {
-		ast_map[pack.Name] = pack
-	}
-
-	for pack_name, node := range ast_map {
-		// Analyse each file
-
-		// make sure the package doesnt contain any global concurrency primitives
-
-		for _, file := range node.Syntax {
-			for _, decl := range file.Decls {
-				switch decl := decl.(type) {
-				case *ast.FuncDecl:
-					// Analyse each function decleration
-					if decl.Body != nil {
-						counter = AnalyseConcurrencyPrimitives(pack_name, decl, counter, cfg.Fset, ast_map)
-					}
-				}
-			}
-		}
+		fmt.Println()
 
 	}
 
-	return counter
+	return packages
 }

@@ -1,0 +1,1469 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : boltdb/bolt ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/boltdb/bolt/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li>  ( 100 features, 4/15 featured file ) </li>
+          
+          <li>  ( 78 features, 2/6 featured file ) </li>
+          
+    <li> Num of Packages with features : 2/3</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>13 </td>
+      <td>16 </td>
+      <td>12</td>
+      <td>13</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>0 </td>
+      <td>3 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>3</td>
+      <td>2</td>
+      <td>25%</td>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>3</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Receive</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L272">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L378">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Synchronous chan</td>
+              <td>378</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Goroutine</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L383">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>chan used as a param</td>
+              <td>383</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L390">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Send</td>
+              <td>390</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L410">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Send</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L418">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>chan used as a param</td>
+              <td>418</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L427">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Send</td>
+              <td>427</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L434">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Send</td>
+              <td>434</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L441">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Send</td>
+              <td>441</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L443">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Send</td>
+              <td>443</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Mutex</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Mutex</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/tx.go</a></td>
+              <td>Mutex</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L392">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>392</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L393">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>393</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L395">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>395</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L396">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L470">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>470</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L480">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>480</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L485">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L485">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L485">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L485">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L485">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L493">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>493</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L512">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>512</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L516">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>516</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L517">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>517</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L521">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>521</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L526">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L526">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L526">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L526">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L526">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L550">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>550</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L565">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>565</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L613">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>613</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L613">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>613</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L613">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>613</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L613">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>613</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L613">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex</td>
+              <td>613</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L661">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>661</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L663">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>663</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L674">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Goroutine</td>
+              <td>674</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L676">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>676</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L678">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Receive</td>
+              <td>678</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L705">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>705</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L712">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>712</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L734">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Send</td>
+              <td>734</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go#L740">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db.go</a></td>
+              <td>Send</td>
+              <td>740</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go#L340">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go</a></td>
+              <td>Mutex</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go#L340">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go</a></td>
+              <td>Mutex</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go#L340">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go</a></td>
+              <td>Mutex</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go#L340">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go</a></td>
+              <td>Mutex</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go#L340">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/node.go</a></td>
+              <td>Mutex</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L183">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L183">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L183">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L206">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L206">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L206">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L236">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L236">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L236">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L681">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>681</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L681">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>681</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L681">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>681</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L681">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>681</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go#L681">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/bucket.go</a></td>
+              <td>Mutex</td>
+              <td>681</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Go in for</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Send</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>56</td>
+              <td>&amp;{4378002 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L78">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Mutex</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/simulation_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L318">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>318</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L329">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>329</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L405">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L407">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L411">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Send</td>
+              <td>411</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L414">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>414</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L415">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>415</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L417">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>417</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L479">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>479</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L480">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>480</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L484">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Close chan</td>
+              <td>484</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L489">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>489</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L490">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>490</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L502">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>502</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L503">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>503</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L884">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>884</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L886">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Go in for</td>
+              <td>886</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L886">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>886</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L887">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Send</td>
+              <td>887</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L895">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>895</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L957">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>957</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L959">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Send</td>
+              <td>959</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L968">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>968</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L969">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>969</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L975">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>975</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L976">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>976</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L981">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>981</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L985">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>985</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1016">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1016</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1018">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Send</td>
+              <td>1018</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1026">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1026</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1032">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>1032</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1206">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Go in for</td>
+              <td>1211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>1211</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1209</td>
+              <td>&amp;{4429406 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1213">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>1213</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Close chan</td>
+              <td>1230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1231">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1231</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1250">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1250</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1251">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1255">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Go in for</td>
+              <td>1255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1255">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>1255</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1254">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1254</td>
+              <td>&amp;{4430289 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1255">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1257">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>1257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1274">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Close chan</td>
+              <td>1274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1275">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1294">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1295">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1299">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Go in for</td>
+              <td>1299</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1299">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>1299</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1298">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1298</td>
+              <td>&amp;{4431176 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1299">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1299</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1300">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1300</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1301">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Receive</td>
+              <td>1301</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1323">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Close chan</td>
+              <td>1323</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/boltdb/bolt/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go#L1324">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/boltdb&#43;&#43;bolt/db_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1324</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 13 ,  16 ,
+     12 ,
+     13 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

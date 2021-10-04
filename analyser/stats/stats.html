@@ -1,0 +1,86 @@
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+</head>
+<body>
+
+  <h2> Projects </h2>
+
+  #projects without channels / #featured projects : 6 / 127
+
+  <h2> Channels </h2>
+
+  # of channels : 7341 </br>
+  # of known channels : 6685 </br>
+  # of unknown channels : 656 </br>
+  # of non-zero channels : 2347 </br>
+  # of sync channels : 4338 </br>
+
+  <h2> Projects </h2>
+
+  # of project with at least one chan : 124
+
+  <h2> Averages </h2>
+  #channels / 100000 LoC : 7341 </br>
+  #goroutines / 100000 LoC : 124.34782119040837 </br>
+  #go in for / 100000 LoC : 27.82107474906106 </br>
+  #dynamic structure / 100000 LoC : 0.051891395756867985 </br>
+  #go in for over go : 22.37359246243637% </br>
+  #chan in for over chan : 1.5256777005857514% </br>
+  #featured packages / package : 8.824039696033866 </br>
+  #features / featured packages : 24.152968934329532 </br>
+  #projects with go in for : 84.49612403100775% </br>
+  #projects with chan in for : 20.155038759689923% </br>
+  %of defined chans as params : 55.84463728909783% </br>
+  #Project with assign chan in for : 1 </br>
+
+
+  <h2> Average Channels Size </h2>
+  <canvas id="chan_size" width="800" height="800"></canvas>
+
+  <h2> Num of go per line code </h2>
+
+<canvas id="go" width="800" height="800"></canvas>
+
+<h2> Make Chan Graph </h2>
+<canvas id="chan" width="800" height="800"></canvas>
+  <script>
+  var chan_size = "chan_size";
+  var chan_data = ; 
+  var chan_labels =  ;
+  var chan_colors =   ;
+  var chan_options = {responsive: false};
+  
+  var chan_chart_data = {datasets: [{data: chan_data,backgroundColor: chan_colors}],labels: chan_labels};
+  var chan_chart = new Chart(chan_size,{type: 'bar',data: chan_chart_data,options: chan_options});
+
+  var chan = "chan"
+  var chan_scatter_data = ;
+  var chan_scatter_options = {responsive: false,scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom'
+            }]
+        }};
+  
+  chan_chart_data = {datasets: [{label: "# of chan",data: chan_scatter_data}]};
+  var chan_scatter_chart = new Chart(chan,{type: 'scatter',data: chan_chart_data,options: chan_scatter_options});
+
+  var go_data = ; 
+  var go_options = {responsive: false,scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom'
+            }]
+        }};
+  var go_chart_data = {datasets: [{label: "# of Go",data: go_data}]};
+  var go_chart = new Chart("go",{type: 'scatter',data: go_chart_data,options: go_options});
+
+
+
+</script>
+
+
+  <div style="float:left"><h1> Concurrency Score </h1> <ol>
+
+    

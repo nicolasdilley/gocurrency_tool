@@ -1,0 +1,1008 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : golang/groupcache ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/golang/groupcache/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li>  ( 90 features, 4/8 featured file ) </li>
+          
+          <li> singleflight ( 23 features, 2/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 2/6</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>12 </td>
+      <td>10 </td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>0 </td>
+      <td>5 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>42.857142857142854%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Go in for</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>71</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Mutex</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>67</td>
+              <td>&amp;{7777938 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Mutex</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Mutex</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go#L353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache.go</a></td>
+              <td>Mutex</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L97">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/http.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>89</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Go in for</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>91</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L97">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>113</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L114">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>131</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Go in for</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>133</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>157</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L267">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L267">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L267">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L296">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L296">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L296">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L380">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L381">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L382">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L391">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L391">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L391">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L396">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L397">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>397</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L395">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>395</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L408">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>408</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L410">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Go in for</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L410">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>410</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L410">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L413">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>413</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L416">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>416</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L423">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L424">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Send</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L429">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Receive</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/groupcache_test.go</a></td>
+              <td>Mutex</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Mutex</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Mutex</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Mutex</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Receive</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Go in for</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>68</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>67</td>
+              <td>&amp;{5784851 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Waitgroup</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Waitgroup</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>52</td>
+              <td>&amp;{2197192 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/groupcache/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/golang&#43;&#43;groupcache/singleflight/singleflight.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 12 ,  10 ,
+     7 ,
+     5 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

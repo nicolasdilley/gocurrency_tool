@@ -1,0 +1,1405 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : revel/revel ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/revel/revel/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> utils ( 10 features, 2/2 featured file ) </li>
+          
+          <li>  ( 64 features, 10/56 featured file ) </li>
+          
+          <li> cache ( 5 features, 1/11 featured file ) </li>
+          
+          <li> testing ( 64 features, 2/2 featured file ) </li>
+          
+          <li> logger ( 3 features, 1/10 featured file ) </li>
+          
+    <li> Num of Packages with features : 5/10</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>8 </td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>75%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>3</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go</a></td>
+              <td>Mutex</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go#L12">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go</a></td>
+              <td>Mutex</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go</a></td>
+              <td>Mutex</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go#L97">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go</a></td>
+              <td>Mutex</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go</a></td>
+              <td>Mutex</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/utils/simplestack_test.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>70</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>71</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Goroutine</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>144</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Goroutine</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Receive</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L174">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L182">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>182</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L183">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Receive</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L223">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L224">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L240">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Receive</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L243">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Receive</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L244">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L249">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Send</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go#L253">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/watcher.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>69</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>157</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go</a></td>
+              <td>Send</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go#L172">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>172</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/compress.go</a></td>
+              <td>Receive</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server.go</a></td>
+              <td>Mutex</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server.go</a></td>
+              <td>Mutex</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template_adapter_go.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template_adapter_go.go</a></td>
+              <td>Mutex</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template_adapter_go.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template_adapter_go.go</a></td>
+              <td>Mutex</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template_adapter_go.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template_adapter_go.go</a></td>
+              <td>Mutex</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L95">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L432">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>432</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L433">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L436">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex</td>
+              <td>436</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/template.go</a></td>
+              <td>Mutex</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L220">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Goroutine</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L297">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Mutex</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L297">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Mutex</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L297">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Mutex</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go#L297">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_adapter_go.go</a></td>
+              <td>Mutex</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go#L8">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go</a></td>
+              <td>Mutex</td>
+              <td>8</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go#L8">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go</a></td>
+              <td>Mutex</td>
+              <td>8</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go#L8">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go</a></td>
+              <td>Mutex</td>
+              <td>8</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go#L8">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/revel_test.go</a></td>
+              <td>Mutex</td>
+              <td>8</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_test.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go</a></td>
+              <td>Mutex</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go#L385">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go#L386">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go</a></td>
+              <td>Mutex</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go</a></td>
+              <td>Mutex</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go</a></td>
+              <td>Mutex</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/router_test.go</a></td>
+              <td>Mutex</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/cache/serialization.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go#L294">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go</a></td>
+              <td>Mutex</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go#L294">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go</a></td>
+              <td>Mutex</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go#L406">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite.go</a></td>
+              <td>Mutex</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/testing/testsuite_test.go</a></td>
+              <td>Mutex</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/logger/wrap_handlers.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/logger/wrap_handlers.go</a></td>
+              <td>Mutex</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/logger/wrap_handlers.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/logger/wrap_handlers.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/revel/revel/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/logger/wrap_handlers.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/revel&#43;&#43;revel/logger/wrap_handlers.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 2 ,  8 ,
+     4 ,
+     5 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

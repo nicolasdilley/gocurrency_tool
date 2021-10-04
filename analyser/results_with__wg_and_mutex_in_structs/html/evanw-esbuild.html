@@ -1,0 +1,2571 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : evanw/esbuild ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/evanw/esbuild/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> internal/cache ( 20 features, 3/3 featured file ) </li>
+          
+          <li> internal/helpers ( 2 features, 1/6 featured file ) </li>
+          
+          <li> internal/renamer ( 6 features, 1/1 featured file ) </li>
+          
+          <li> internal/logger ( 17 features, 1/2 featured file ) </li>
+          
+          <li> internal/config ( 11 features, 2/2 featured file ) </li>
+          
+          <li> internal/resolver ( 20 features, 1/4 featured file ) </li>
+          
+          <li> internal/fs ( 23 features, 3/7 featured file ) </li>
+          
+          <li> internal/graph ( 9 features, 1/3 featured file ) </li>
+          
+          <li> pkg/cli ( 1 features, 1/2 featured file ) </li>
+          
+          <li> pkg/api ( 59 features, 2/3 featured file ) </li>
+          
+          <li> internal/bundler ( 138 features, 14/15 featured file ) </li>
+          
+    <li> Num of Packages with features : 11/27</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>11 </td>
+      <td>5 </td>
+      <td>4</td>
+      <td>34</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>14 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>50%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_fs.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go#L93">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go#L187">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/cache/cache_ast.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/helpers/timer.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/helpers/timer.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/helpers/timer.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/helpers/timer.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go#L498">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go</a></td>
+              <td>Waitgroup</td>
+              <td>498</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go#L499">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>499</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go#L503">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go</a></td>
+              <td>Go in for</td>
+              <td>503</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go#L503">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go</a></td>
+              <td>Goroutine</td>
+              <td>503</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go#L508">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>508</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go#L512">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/renamer/renamer.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>512</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L393">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex</td>
+              <td>393</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L443">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>443</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L506">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>506</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L507">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>507</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L512">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>512</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L513">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>513</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L519">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>519</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L520">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>520</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L840">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex</td>
+              <td>840</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L850">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>850</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L851">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>851</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L859">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>859</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L860">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>860</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L868">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>868</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go#L869">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/logger/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>869</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go#L412">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go</a></td>
+              <td>Mutex</td>
+              <td>412</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go#L424">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go#L441">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>441</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go#L442">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/config.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go#L12">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go</a></td>
+              <td>Mutex</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go#L863">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>863</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go#L865">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>865</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go#L868">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>868</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go#L934">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>934</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go#L935">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/config/globals.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>935</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L272">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L345">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>345</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L346">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L390">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>390</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L395">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>395</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L396">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L406">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L412">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>412</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L413">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>413</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L553">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>553</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L983">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>983</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L995">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>995</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1013">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1013</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1029">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1029</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1031">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1031</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1085">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1085</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1097">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1097</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go#L1550">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/resolver/resolver.go</a></td>
+              <td>Mutex</td>
+              <td>1550</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Mutex</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L178">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>178</td>
+              <td>32</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L182">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Send</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go#L186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs.go</a></td>
+              <td>Receive</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go</a></td>
+              <td>Mutex</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go</a></td>
+              <td>Mutex</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go</a></td>
+              <td>Mutex</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go</a></td>
+              <td>Mutex</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_mock_test.go</a></td>
+              <td>Mutex</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L159">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L177">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L178">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L199">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L272">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go#L273">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/fs/fs_real.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Mutex</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Waitgroup</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Go in for</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Goroutine</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L184">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go#L238">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/graph/graph.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/cli/cli_impl.go#L782">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/cli/cli_impl.go</a></td>
+              <td>Receive</td>
+              <td>782</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>51</td>
+              <td>&amp;{10579664 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L181">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L219">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L233">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L261">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L277">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>277</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L288">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L296">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L552">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>552</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L556">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>556</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L556">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup</td>
+              <td>556</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L556">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup</td>
+              <td>556</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L562">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>562</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L563">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>563</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L581">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>581</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L590">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>590</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L591">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>591</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L601">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>601</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L605">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>605</td>
+              <td>&amp;{10596470 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L606">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>606</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L610">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>610</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go#L615">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/serve_other.go</a></td>
+              <td>Goroutine</td>
+              <td>615</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L958">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>958</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L992">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Waitgroup</td>
+              <td>992</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L993">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>993</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L995">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Go in for</td>
+              <td>995</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L995">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Goroutine</td>
+              <td>995</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1011">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1011</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1014">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1014</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1040">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>1040</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1050">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Goroutine</td>
+              <td>1050</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>1105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>1106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Goroutine</td>
+              <td>1136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>1180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1181">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>1181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1260">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>1260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1260">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>1260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1260">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>1260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1260">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>1260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1260">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>1260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go#L1353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/pkg/api/api_impl.go</a></td>
+              <td>Mutex</td>
+              <td>1353</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_css_test.go#L9">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_css_test.go</a></td>
+              <td>Mutex</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_tsconfig_test.go#L9">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_tsconfig_test.go</a></td>
+              <td>Mutex</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_splitting_test.go#L9">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_splitting_test.go</a></td>
+              <td>Mutex</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_importstar_ts_test.go#L9">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_importstar_ts_test.go</a></td>
+              <td>Mutex</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_packagejson_test.go#L9">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_packagejson_test.go</a></td>
+              <td>Mutex</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L126">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L152">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go#L153">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_loader_test.go#L10">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_loader_test.go</a></td>
+              <td>Mutex</td>
+              <td>10</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_ts_test.go#L10">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_ts_test.go</a></td>
+              <td>Mutex</td>
+              <td>10</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_importstar_test.go#L9">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_importstar_test.go</a></td>
+              <td>Mutex</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_dce_test.go#L9">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_dce_test.go</a></td>
+              <td>Mutex</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_lower_test.go#L14">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_lower_test.go</a></td>
+              <td>Mutex</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_default_test.go#L15">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler_default_test.go</a></td>
+              <td>Mutex</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L339">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>339</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L347">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>347</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L485">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L987">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup</td>
+              <td>987</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L991">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Go in for</td>
+              <td>991</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L990">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>990</td>
+              <td>&amp;{10109750 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L991">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>991</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L994">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>994</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1014">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1014</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1005">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>1005</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1005">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>1005</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1005">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>1005</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1005">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>1005</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1005">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>1005</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1005">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>1005</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1021">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>1021</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1023">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>1023</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1039">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1039</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1065">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>chan used as a param</td>
+              <td>1065</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>1139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1187">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup</td>
+              <td>1187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Go in for</td>
+              <td>1230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>1230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Send</td>
+              <td>1230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1258">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Go in for</td>
+              <td>1258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Make chan in for</td>
+              <td>1252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1257">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1257</td>
+              <td>&amp;{10118227 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1258">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>1258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1259">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Receive</td>
+              <td>1259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1260">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1265">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1265</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1309">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>1309</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1337">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup</td>
+              <td>1337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1338">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>1338</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1340">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Go in for</td>
+              <td>1340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1340">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>1340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1378">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1378</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1381">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1530">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Receive</td>
+              <td>1530</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L1998">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup</td>
+              <td>1998</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2002">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Go in for</td>
+              <td>2002</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2001">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>2001</td>
+              <td>&amp;{10145969 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2002">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>2002</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2004">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>2004</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2009">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>2009</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2012">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>2012</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2153">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup</td>
+              <td>2153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2165">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>2165</td>
+              <td>&amp;{10151779 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2166">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Goroutine</td>
+              <td>2166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2196">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>2196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2202">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>2202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2267">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex</td>
+              <td>2267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2286">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>2286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2287">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>2287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2325">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>2325</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go#L2326">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/bundler.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>2326</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L191">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L199">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L349">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup</td>
+              <td>349</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L350">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L354">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>354</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L356">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L360">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L389">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L391">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L393">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Go in for</td>
+              <td>393</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L393">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>393</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L505">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>505</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L508">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>508</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L723">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup</td>
+              <td>723</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L724">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>724</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L726">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Go in for</td>
+              <td>726</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L726">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>726</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L857">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>857</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L860">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>860</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L1288">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup</td>
+              <td>1288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L1297">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Go in for</td>
+              <td>1297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L1296">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1296</td>
+              <td>&amp;{9913804 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L1297">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>1297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L1339">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1339</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L1342">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1342</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L3800">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>3800</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4152">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup</td>
+              <td>4152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4153">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>4153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Go in for</td>
+              <td>4162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>4162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>4185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>4188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4338">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex</td>
+              <td>4338</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4365">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup</td>
+              <td>4365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4376">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Go in for</td>
+              <td>4376</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4375">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>4375</td>
+              <td>&amp;{10029643 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4376">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>4376</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4430">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>4430</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4739">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>4739</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4794">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Mutex</td>
+              <td>4794</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4817">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup</td>
+              <td>4817</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4821">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Go in for</td>
+              <td>4821</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4820">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>4820</td>
+              <td>&amp;{10044105 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4821">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>4821</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4862">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>4862</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L4866">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>4866</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L5035">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>5035</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L5141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>5141</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L5143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Receive</td>
+              <td>5143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L5144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Send</td>
+              <td>5144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L5147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Goroutine</td>
+              <td>5147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L5150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>chan used as a param</td>
+              <td>5150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/evanw/esbuild/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go#L5227">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/evanw&#43;&#43;esbuild/internal/bundler/linker.go</a></td>
+              <td>Send</td>
+              <td>5227</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 11 ,  5 ,
+     4 ,
+     34 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -21,28 +21,23 @@ s.headers.update({'Accept':'application/vnd.github.mercy-preview+json'})
 keywords = []
 
 while cont:
-   p+=1
-   payload = {'q':'language:go', 'sort':'stars', 'order':'desc','per_page':'100','page':str(p)}
-   r = s.get('https://api.github.com/search/repositories', params=payload)
-   data = r.json()
-   # print(data)
-   for repo in data['items']:
+    payload = {'q':'language:go', 'sort':'stars', 'order':'desc','per_page':'150','page':str(p)}
+    r = s.get('https://api.github.com/search/repositories', params=payload)
+    data = r.json()
+    # print(data)
+    for repo in data['items']:
        i+=1
        r = s.get('https://api.github.com/repos/'+str(repo['full_name']))
        repodata = r.json()
-       if len(repodata['topics']) == 0:
-          print(str(repo['full_name']),','
+      
+       print(str(repo['full_name']),','
                 # , str(repo['description']),','
                 , str(repo['watchers_count']))
-       else:
-          print(str(repo['full_name']),','
-                # , str(repo['description']),','
-                , str(repo['watchers_count']), ','
-                , ','.join(repodata['topics']))
-          # keywords = keywords+(repodata['topics'])
+
+         # keywords = keywords+(repodata['topics'])
           
-       if int(str(repo['watchers_count'])) < 1000:
-           cont = False;
+    if i > 150:
+        cont = False;
     
 print(str(i)," projects found")
 # print(','.join(set(keywords)))

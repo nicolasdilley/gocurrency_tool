@@ -1,0 +1,509 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : nektos/act ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/nektos/act/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> pkg/container ( 4 features, 1/8 featured file ) </li>
+          
+          <li> pkg/runner ( 13 features, 6/11 featured file ) </li>
+          
+          <li> cmd ( 3 features, 1/6 featured file ) </li>
+          
+          <li> pkg/common ( 14 features, 3/12 featured file ) </li>
+          
+    <li> Num of Packages with features : 4/5</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>4 </td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go#L673">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go</a></td>
+              <td>Goroutine</td>
+              <td>673</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go#L706">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>706</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go#L707">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go</a></td>
+              <td>Receive</td>
+              <td>707</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go#L711">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/container/docker_run.go</a></td>
+              <td>Receive</td>
+              <td>711</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/run_context_test.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/run_context_test.go</a></td>
+              <td>Mutex</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go</a></td>
+              <td>Mutex</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/logger.go</a></td>
+              <td>Mutex</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/command_test.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/command_test.go</a></td>
+              <td>Mutex</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/command_test.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/command_test.go</a></td>
+              <td>Mutex</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/expression.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/expression.go</a></td>
+              <td>Mutex</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/expression.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/expression.go</a></td>
+              <td>Mutex</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/expression.go#L234">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/expression.go</a></td>
+              <td>Mutex</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/run_context.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/run_context.go</a></td>
+              <td>Mutex</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/step_context.go#L266">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/runner/step_context.go</a></td>
+              <td>Mutex</td>
+              <td>266</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/cmd/root.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/cmd/root.go</a></td>
+              <td>Mutex</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/cmd/root.go#L361">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/cmd/root.go</a></td>
+              <td>Goroutine</td>
+              <td>361</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/cmd/root.go#L376">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/cmd/root.go</a></td>
+              <td>Receive</td>
+              <td>376</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go</a></td>
+              <td>Synchronous chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go</a></td>
+              <td>Go in for</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go</a></td>
+              <td>Goroutine</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go#L111">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go</a></td>
+              <td>chan used as a param</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/executor.go</a></td>
+              <td>Send</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git_test.go#L228">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git_test.go</a></td>
+              <td>Mutex</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go</a></td>
+              <td>Mutex</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go#L161">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go</a></td>
+              <td>Mutex</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go#L165">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go</a></td>
+              <td>Mutex</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go#L241">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go</a></td>
+              <td>Mutex</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go#L243">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go</a></td>
+              <td>Mutex</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go#L284">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nektos/act/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go#L285">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nektos&#43;&#43;act/pkg/common/git.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>285</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 1 ,  4 ,
+     1 ,
+     3 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

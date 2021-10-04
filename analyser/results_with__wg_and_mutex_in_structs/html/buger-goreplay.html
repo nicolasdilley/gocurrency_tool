@@ -1,0 +1,549 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : buger/goreplay ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/buger/goreplay/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> simpletime ( 1 features, 1/1 featured file ) </li>
+          
+          <li> capture ( 26 features, 2/7 featured file ) </li>
+          
+          <li> tcp ( 19 features, 2/4 featured file ) </li>
+          
+    <li> Num of Packages with features : 3/7</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>10 </td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>0 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>5</td>
+      <td>0</td>
+      <td>62.5%</td>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/simpletime/time.go#L10">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/simpletime/time.go</a></td>
+              <td>Goroutine</td>
+              <td>10</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture_test.go#L8">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture_test.go</a></td>
+              <td>Mutex</td>
+              <td>8</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Synchronous chan</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Synchronous chan</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L146">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Synchronous chan</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>150</td>
+              <td>10000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L187">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>187</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L190">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L199">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>199</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Close chan</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L203">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Send</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L368">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Go in for</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L368">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Goroutine</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L374">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>374</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L374">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>374</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L395">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>395</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L396">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L398">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>398</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L468">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>468</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L468">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>468</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L510">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>510</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go#L510">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/capture/capture.go</a></td>
+              <td>Mutex</td>
+              <td>510</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_packet.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_packet.go</a></td>
+              <td>Mutex</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_packet.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_packet.go</a></td>
+              <td>Mutex</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L228">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>chan used as a param</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L238">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>238</td>
+              <td>10000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L241">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>241</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L245">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>245</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Go in for</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>256</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Goroutine</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L267">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L275">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>275</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L278">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L280">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L283">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>283</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L420">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L429">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L462">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>462</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go#L463">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/buger&#43;&#43;goreplay/tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>463</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 5 ,  10 ,
+     8 ,
+     4 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

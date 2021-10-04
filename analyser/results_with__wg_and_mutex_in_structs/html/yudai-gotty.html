@@ -1,0 +1,982 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : yudai/gotty ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/yudai/gotty/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> backend/localcommand ( 6 features, 1/4 featured file ) </li>
+          
+          <li> webtty ( 59 features, 2/8 featured file ) </li>
+          
+          <li> server ( 40 features, 3/12 featured file ) </li>
+          
+    <li> Num of Packages with features : 3/7</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>3 </td>
+      <td>11 </td>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>66.66666666666666%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>5 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go</a></td>
+              <td>Mutex</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go</a></td>
+              <td>Synchronous chan</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>84</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go#L87">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/backend/localcommand/local_command.go</a></td>
+              <td>Receive</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Mutex</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>67</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Send</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Goroutine</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L87">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Send</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>103</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L21">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L21">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>32</td>
+              <td>&amp;{6226523 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Mutex</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L87">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>87</td>
+              <td>&amp;{6227804 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/webtty/webtty_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L22">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Receive</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handler_atomic.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go#L22">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go</a></td>
+              <td>Goroutine</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go#L23">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>23</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go#L24">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go</a></td>
+              <td>Receive</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go#L26">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/handlers.go</a></td>
+              <td>Receive</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Waitgroup</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>137</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Send</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>155</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Receive</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>162</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Receive</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L169">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Receive</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L216">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L216">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L216">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L216">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/yudai/gotty/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go#L241">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/yudai&#43;&#43;gotty/server/server.go</a></td>
+              <td>Mutex</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 3 ,  11 ,
+     3 ,
+     8 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>
