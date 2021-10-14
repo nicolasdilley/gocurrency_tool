@@ -1,0 +1,2336 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : hashicorp/packer ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/hashicorp/packer/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> main ( 14 features, 3/12 featured file ) </li>
+          
+          <li> command/command ( 23 features, 5/36 featured file ) </li>
+          
+          <li> internal/packer_registry/packer_registry ( 2 features, 1/9 featured file ) </li>
+          
+          <li> packer/packer ( 48 features, 7/41 featured file ) </li>
+          
+          <li> packer/plugin-getter/plugingetter ( 1 features, 1/4 featured file ) </li>
+          
+          <li> provisioner/breakpoint/breakpoint ( 2 features, 1/2 featured file ) </li>
+          
+          <li> provisioner/shell/shell_test ( 2 features, 1/6 featured file ) </li>
+          
+          <li> provisioner/sleep/sleep ( 3 features, 1/3 featured file ) </li>
+          
+          <li> provisioner/windows-restart/restart ( 34 features, 2/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 9/57</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>13 </td>
+      <td>42 </td>
+      <td>23</td>
+      <td>25</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>1</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>3 </td>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>18</td>
+      <td>5</td>
+      <td>0</td>
+      <td>21.73913043478261%</td>
+      <td>7 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>13 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//log.go#L36">log.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L85">main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L87">main.go</a></td>
+              <td>Goroutine</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L114">main.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L173">main.go</a></td>
+              <td>Goroutine</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L435">main.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>435</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L458">main.go</a></td>
+              <td>Goroutine</td>
+              <td>458</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L462">main.go</a></td>
+              <td>Goroutine</td>
+              <td>462</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//main.go#L466">main.go</a></td>
+              <td>Goroutine</td>
+              <td>466</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//checkpoint.go#L15">checkpoint.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>15</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//checkpoint.go#L26">checkpoint.go</a></td>
+              <td>Send</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//checkpoint.go#L33">checkpoint.go</a></td>
+              <td>Send</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//checkpoint.go#L59">checkpoint.go</a></td>
+              <td>Send</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//checkpoint.go#L66">checkpoint.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/signal.go#L16">command/signal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>16</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/signal.go#L21">command/signal.go</a></td>
+              <td>Close chan</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/signal.go#L23">command/signal.go</a></td>
+              <td>Goroutine</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/signal.go#L24">command/signal.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>24</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/signal.go#L25">command/signal.go</a></td>
+              <td>Receive</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/signal.go#L33">command/signal.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/meta.go#L79">command/meta.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L56">command/build_cancellation_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L62">command/build_cancellation_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L63">command/build_cancellation_test.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L64">command/build_cancellation_test.go</a></td>
+              <td>Close chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L70">command/build_cancellation_test.go</a></td>
+              <td>Send</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L77">command/build_cancellation_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>77</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L78">command/build_cancellation_test.go</a></td>
+              <td>Receive</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_cancellation_test.go#L83">command/build_cancellation_test.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_parallel_test.go#L57">command/build_parallel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_parallel_test.go#L58">command/build_parallel_test.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_parallel_test.go#L59">command/build_parallel_test.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_parallel_test.go#L94">command/build_parallel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_parallel_test.go#L123">command/build_parallel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build_parallel_test.go#L152">command/build_parallel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build.go#L269">command/build.go</a></td>
+              <td>Go in for</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//command/build.go#L269">command/build.go</a></td>
+              <td>Goroutine</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//internal/packer_registry/types.bucket.go#L369">internal/packer_registry/types.bucket.go</a></td>
+              <td>Go in for</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//internal/packer_registry/types.bucket.go#L369">internal/packer_registry/types.bucket.go</a></td>
+              <td>Goroutine</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L150">packer/provisioner.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>150</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L151">packer/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L152">packer/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L221">packer/provisioner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>221</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L222">packer/provisioner.go</a></td>
+              <td>Goroutine</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L228">packer/provisioner.go</a></td>
+              <td>Send</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L231">packer/provisioner.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>231</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L232">packer/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>232</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner.go#L233">packer/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_test.go#L74">packer/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_test.go#L166">packer/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_test.go#L226">packer/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_test.go#L297">packer/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_test.go#L337">packer/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/registry_builder.go#L31">packer/registry_builder.go</a></td>
+              <td>Synchronous chan</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/registry_builder.go#L32">packer/registry_builder.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/registry_builder.go#L34">packer/registry_builder.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>34</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/registry_builder.go#L35">packer/registry_builder.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/registry_builder.go#L41">packer/registry_builder.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/registry_builder.go#L60">packer/registry_builder.go</a></td>
+              <td>Close chan</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/build.go#L240">packer/build.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>240</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/build.go#L241">packer/build.go</a></td>
+              <td>Receive</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L86">packer/plugin_client.go</a></td>
+              <td>Go in for</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L86">packer/plugin_client.go</a></td>
+              <td>Goroutine</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L202">packer/plugin_client.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L219">packer/plugin_client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L257">packer/plugin_client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L258">packer/plugin_client.go</a></td>
+              <td>Goroutine</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L272">packer/plugin_client.go</a></td>
+              <td>Close chan</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L281">packer/plugin_client.go</a></td>
+              <td>Goroutine</td>
+              <td>281</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L285">packer/plugin_client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>285</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L286">packer/plugin_client.go</a></td>
+              <td>Goroutine</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L287">packer/plugin_client.go</a></td>
+              <td>Close chan</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L293">packer/plugin_client.go</a></td>
+              <td>Send</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L305">packer/plugin_client.go</a></td>
+              <td>Goroutine</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L306">packer/plugin_client.go</a></td>
+              <td>Range over chan</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L316">packer/plugin_client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>316</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L317">packer/plugin_client.go</a></td>
+              <td>Receive</td>
+              <td>317</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L319">packer/plugin_client.go</a></td>
+              <td>Receive</td>
+              <td>319</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_client.go#L321">packer/plugin_client.go</a></td>
+              <td>Receive</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_timeout.go#L25">packer/provisioner_timeout.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_timeout.go#L27">packer/provisioner_timeout.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_timeout.go#L28">packer/provisioner_timeout.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>28</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_timeout.go#L29">packer/provisioner_timeout.go</a></td>
+              <td>Receive</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_timeout.go#L31">packer/provisioner_timeout.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/provisioner_timeout.go#L43">packer/provisioner_timeout.go</a></td>
+              <td>Close chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_test.go#L57">packer/plugin_test.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin_test.go#L86">packer/plugin_test.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//packer/plugin-getter/plugins_test.go#L635">packer/plugin-getter/plugins_test.go</a></td>
+              <td>Goroutine</td>
+              <td>635</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/breakpoint/provisioner.go#L71">provisioner/breakpoint/provisioner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>71</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/breakpoint/provisioner.go#L78">provisioner/breakpoint/provisioner.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/shell/provisioner.go#L372">provisioner/shell/provisioner.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>372</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/shell/provisioner.go#L373">provisioner/shell/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>373</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/sleep/provisioner.go#L29">provisioner/sleep/provisioner.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>29</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/sleep/provisioner.go#L30">provisioner/sleep/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/sleep/provisioner.go#L32">provisioner/sleep/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L205">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L206">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L211">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>211</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L212">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L213">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Send</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L218">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Goroutine</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L220">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Send</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L222">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L274">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L286">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L287">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L288">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Goroutine</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L289">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Send</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L291">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Send</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L294">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Goroutine</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L296">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L299">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>299</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L316">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>316</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L323">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>323</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L329">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Goroutine</td>
+              <td>329</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L330">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Send</td>
+              <td>330</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner_test.go#L334">provisioner/windows-restart/provisioner_test.go</a></td>
+              <td>Receive</td>
+              <td>334</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L105">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Synchronous chan</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L133">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>133</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L169">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Goroutine</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L172">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Send</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L181">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>181</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L182">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L191">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L196">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L197">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Close chan</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L218">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>218</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L219">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/hashicorp/packer/blob//provisioner/windows-restart/provisioner.go#L222">provisioner/windows-restart/provisioner.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 13 ,  42 ,
+     23 ,
+     25 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

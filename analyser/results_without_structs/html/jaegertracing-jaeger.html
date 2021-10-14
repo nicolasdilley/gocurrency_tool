@@ -1,0 +1,4071 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : jaegertracing/jaeger ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/jaegertracing/jaeger/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cmd/agent/app/app ( 10 features, 2/7 featured file ) </li>
+          
+          <li> cmd/agent/app/configmanager/grpc/grpc ( 1 features, 1/2 featured file ) </li>
+          
+          <li> cmd/agent/app/processors/processors ( 3 features, 2/3 featured file ) </li>
+          
+          <li> cmd/agent/app/reporter/reporter ( 5 features, 1/10 featured file ) </li>
+          
+          <li> cmd/agent/app/reporter/grpc/grpc ( 4 features, 3/8 featured file ) </li>
+          
+          <li> cmd/agent/app/servers/servers ( 9 features, 2/4 featured file ) </li>
+          
+          <li> cmd/agent/app/servers/thriftudp/thriftudp ( 2 features, 1/4 featured file ) </li>
+          
+          <li> cmd/agent/app/testutils/testutils ( 1 features, 1/5 featured file ) </li>
+          
+          <li> cmd/all-in-one/main ( 1 features, 1/2 featured file ) </li>
+          
+          <li> cmd/anonymizer/app/anonymizer/anonymizer ( 1 features, 1/2 featured file ) </li>
+          
+          <li> cmd/collector/app/app ( 5 features, 1/14 featured file ) </li>
+          
+          <li> cmd/collector/app/handler/handler ( 1 features, 1/6 featured file ) </li>
+          
+          <li> cmd/collector/app/sanitizer/cache/cache ( 11 features, 2/4 featured file ) </li>
+          
+          <li> cmd/collector/app/server/server ( 3 features, 3/7 featured file ) </li>
+          
+          <li> cmd/flags/flags ( 7 features, 2/6 featured file ) </li>
+          
+          <li> cmd/ingester/app/consumer/consumer ( 27 features, 4/11 featured file ) </li>
+          
+          <li> cmd/ingester/app/consumer/offset/offset ( 4 features, 1/4 featured file ) </li>
+          
+          <li> cmd/ingester/app/processor/processor_test ( 6 features, 1/6 featured file ) </li>
+          
+          <li> cmd/query/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> cmd/query/app/app ( 19 features, 5/23 featured file ) </li>
+          
+          <li> cmd/query/app/apiv3/apiv3 ( 3 features, 2/6 featured file ) </li>
+          
+          <li> cmd/tracegen/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> crossdock/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> crossdock/services/services ( 10 features, 2/8 featured file ) </li>
+          
+          <li> examples/hotrod/cmd/cmd ( 3 features, 1/6 featured file ) </li>
+          
+          <li> examples/hotrod/pkg/pool/pool ( 8 features, 1/1 featured file ) </li>
+          
+          <li> internal/tracegen/tracegen ( 2 features, 1/2 featured file ) </li>
+          
+          <li> pkg/cache/cache ( 18 features, 1/3 featured file ) </li>
+          
+          <li> pkg/config/tlscfg/tlscfg ( 8 features, 3/8 featured file ) </li>
+          
+          <li> pkg/discovery/discovery ( 9 features, 2/4 featured file ) </li>
+          
+          <li> pkg/discovery/grpcresolver/grpcresolver ( 4 features, 2/2 featured file ) </li>
+          
+          <li> pkg/queue/queue ( 13 features, 1/2 featured file ) </li>
+          
+          <li> pkg/testutils/testutils ( 6 features, 1/2 featured file ) </li>
+          
+          <li> plugin/sampling/leaderelection/leaderelection ( 5 features, 2/2 featured file ) </li>
+          
+          <li> plugin/sampling/strategystore/adaptive/adaptive ( 18 features, 3/17 featured file ) </li>
+          
+          <li> plugin/sampling/strategystore/static/static ( 4 features, 1/7 featured file ) </li>
+          
+          <li> plugin/storage/badger/badger ( 8 features, 1/8 featured file ) </li>
+          
+          <li> plugin/storage/integration/integration ( 1 features, 1/11 featured file ) </li>
+          
+          <li> plugin/storage/kafka/kafka ( 3 features, 1/9 featured file ) </li>
+          
+          <li> proto-gen/api_v3/api_v3 ( 2 features, 1/2 featured file ) </li>
+          
+          <li> thrift-gen/baggage/baggage ( 4 features, 1/3 featured file ) </li>
+          
+          <li> thrift-gen/jaeger/jaeger ( 4 features, 1/3 featured file ) </li>
+          
+          <li> thrift-gen/sampling/sampling ( 4 features, 1/3 featured file ) </li>
+          
+          <li> thrift-gen/zipkincore/zipkincore ( 4 features, 1/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 44/193</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>19 </td>
+      <td>67 </td>
+      <td>27</td>
+      <td>91</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>4</td>
+      <td>1</td>
+      <td>83.33333333333334</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>10 </td>
+      <td>0 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>19</td>
+      <td>5</td>
+      <td>3</td>
+      <td>18.51851851851852%</td>
+      <td>8 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>29 </td>
+      <td>6</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent.go#L68">cmd/agent/app/agent.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent.go#L76">cmd/agent/app/agent.go</a></td>
+              <td>Go in for</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent.go#L76">cmd/agent/app/agent.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent_test.go#L57">cmd/agent/app/agent_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent_test.go#L58">cmd/agent/app/agent_test.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent_test.go#L113">cmd/agent/app/agent_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>113</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent_test.go#L114">cmd/agent/app/agent_test.go</a></td>
+              <td>Goroutine</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent_test.go#L117">cmd/agent/app/agent_test.go</a></td>
+              <td>Send</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent_test.go#L119">cmd/agent/app/agent_test.go</a></td>
+              <td>Close chan</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/agent_test.go#L132">cmd/agent/app/agent_test.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/configmanager/grpc/manager_test.go#L79">cmd/agent/app/configmanager/grpc/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/processors/thrift_processor.go#L86">cmd/agent/app/processors/thrift_processor.go</a></td>
+              <td>Go in for</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/processors/thrift_processor.go#L86">cmd/agent/app/processors/thrift_processor.go</a></td>
+              <td>Goroutine</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/processors/thrift_processor_test.go#L69">cmd/agent/app/processors/thrift_processor_test.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/client_metrics.go#L106">cmd/agent/app/reporter/client_metrics.go</a></td>
+              <td>Synchronous chan</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/client_metrics.go#L109">cmd/agent/app/reporter/client_metrics.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/client_metrics.go#L136">cmd/agent/app/reporter/client_metrics.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>136</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/client_metrics.go#L137">cmd/agent/app/reporter/client_metrics.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/client_metrics.go#L139">cmd/agent/app/reporter/client_metrics.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/grpc/collector_proxy_test.go#L79">cmd/agent/app/reporter/grpc/collector_proxy_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/grpc/builder.go#L108">cmd/agent/app/reporter/grpc/builder.go</a></td>
+              <td>Goroutine</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/grpc/builder_test.go#L49">cmd/agent/app/reporter/grpc/builder_test.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/reporter/grpc/builder_test.go#L51">cmd/agent/app/reporter/grpc/builder_test.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server_test.go#L47">cmd/agent/app/servers/tbuffered_server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server_test.go#L62">cmd/agent/app/servers/tbuffered_server_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>62</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server_test.go#L63">cmd/agent/app/servers/tbuffered_server_test.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server_test.go#L134">cmd/agent/app/servers/tbuffered_server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server_test.go#L153">cmd/agent/app/servers/tbuffered_server_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>153</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server_test.go#L154">cmd/agent/app/servers/tbuffered_server_test.go</a></td>
+              <td>Receive</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server.go#L79">cmd/agent/app/servers/tbuffered_server.go</a></td>
+              <td>Unknown chan length</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server.go#L112">cmd/agent/app/servers/tbuffered_server.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>112</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/tbuffered_server.go#L113">cmd/agent/app/servers/tbuffered_server.go</a></td>
+              <td>Send</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/thriftudp/transport_test.go#L105">cmd/agent/app/servers/thriftudp/transport_test.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/servers/thriftudp/transport_test.go#L112">cmd/agent/app/servers/thriftudp/transport_test.go</a></td>
+              <td>Goroutine</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/agent/app/testutils/mock_grpc_collector.go#L46">cmd/agent/app/testutils/mock_grpc_collector.go</a></td>
+              <td>Goroutine</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/all-in-one/main.go#L256">cmd/all-in-one/main.go</a></td>
+              <td>Goroutine</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/anonymizer/app/anonymizer/anonymizer.go#L92">cmd/anonymizer/app/anonymizer/anonymizer.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/span_processor.go#L109">cmd/collector/app/span_processor.go</a></td>
+              <td>Synchronous chan</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/span_processor.go#L224">cmd/collector/app/span_processor.go</a></td>
+              <td>Goroutine</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/span_processor.go#L228">cmd/collector/app/span_processor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>228</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/span_processor.go#L229">cmd/collector/app/span_processor.go</a></td>
+              <td>Receive</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/span_processor.go#L231">cmd/collector/app/span_processor.go</a></td>
+              <td>Receive</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/handler/grpc_handler_test.go#L69">cmd/collector/app/handler/grpc_handler_test.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go#L133">cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go#L143">cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go#L174">cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L95">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Goroutine</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L96">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Goroutine</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L106">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L107">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L109">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L145">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>145</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L146">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Receive</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/sanitizer/cache/auto_refresh_cache.go#L153">cmd/collector/app/sanitizer/cache/auto_refresh_cache.go</a></td>
+              <td>Receive</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/server/http.go#L91">cmd/collector/app/server/http.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/server/zipkin.go#L86">cmd/collector/app/server/zipkin.go</a></td>
+              <td>Goroutine</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/collector/app/server/grpc.go#L83">cmd/collector/app/server/grpc.go</a></td>
+              <td>Goroutine</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/flags/admin.go#L118">cmd/flags/admin.go</a></td>
+              <td>Goroutine</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/flags/service.go#L59">cmd/flags/service.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>59</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/flags/service.go#L60">cmd/flags/service.go</a></td>
+              <td>Synchronous chan</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/flags/service.go#L84">cmd/flags/service.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/flags/service.go#L146">cmd/flags/service.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>146</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/flags/service.go#L147">cmd/flags/service.go</a></td>
+              <td>Receive</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/flags/service.go#L149">cmd/flags/service.go</a></td>
+              <td>Receive</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector_test.go#L33">cmd/ingester/app/consumer/deadlock_detector_test.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L78">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Goroutine</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L87">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Go in for</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L88">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Go in for</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L87">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Goroutine</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L88">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L132">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>132</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L133">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L151">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer.go#L166">cmd/ingester/app/consumer/consumer.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L87">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>87</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L88">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Synchronous chan</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L100">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Goroutine</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L111">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>111</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L112">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L115">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L117">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>117</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L118">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L141">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Synchronous chan</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L150">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Goroutine</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L155">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>155</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L156">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L159">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Receive</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L178">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Send</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/deadlock_detector.go#L194">cmd/ingester/app/consumer/deadlock_detector.go</a></td>
+              <td>Send</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer_test.go#L72">cmd/ingester/app/consumer/consumer_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>72</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/consumer_test.go#L73">cmd/ingester/app/consumer/consumer_test.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/offset/manager.go#L73">cmd/ingester/app/consumer/offset/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/offset/manager.go#L76">cmd/ingester/app/consumer/offset/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>76</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/offset/manager.go#L77">cmd/ingester/app/consumer/offset/manager.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/consumer/offset/manager.go#L85">cmd/ingester/app/consumer/offset/manager.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/processor/parallel_processor.go#L53">cmd/ingester/app/processor/parallel_processor.go</a></td>
+              <td>Go in for</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/processor/parallel_processor.go#L53">cmd/ingester/app/processor/parallel_processor.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/processor/parallel_processor.go#L55">cmd/ingester/app/processor/parallel_processor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>55</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/processor/parallel_processor.go#L56">cmd/ingester/app/processor/parallel_processor.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/processor/parallel_processor.go#L58">cmd/ingester/app/processor/parallel_processor.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/ingester/app/processor/parallel_processor.go#L69">cmd/ingester/app/processor/parallel_processor.go</a></td>
+              <td>Send</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/main.go#L127">cmd/query/main.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server.go#L256">cmd/query/app/server.go</a></td>
+              <td>Goroutine</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server.go#L271">cmd/query/app/server.go</a></td>
+              <td>Send</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server.go#L275">cmd/query/app/server.go</a></td>
+              <td>Goroutine</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server.go#L281">cmd/query/app/server.go</a></td>
+              <td>Send</td>
+              <td>281</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server.go#L286">cmd/query/app/server.go</a></td>
+              <td>Goroutine</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server.go#L294">cmd/query/app/server.go</a></td>
+              <td>Send</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler_test.go#L197">cmd/query/app/static_handler_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler_test.go#L229">cmd/query/app/static_handler_test.go</a></td>
+              <td>Send</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler_test.go#L236">cmd/query/app/static_handler_test.go</a></td>
+              <td>Close chan</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler_test.go#L237">cmd/query/app/static_handler_test.go</a></td>
+              <td>Send</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler.go#L148">cmd/query/app/static_handler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>148</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler.go#L149">cmd/query/app/static_handler.go</a></td>
+              <td>Receive</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler.go#L170">cmd/query/app/static_handler.go</a></td>
+              <td>Receive</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/static_handler.go#L191">cmd/query/app/static_handler.go</a></td>
+              <td>Goroutine</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server_test.go#L344">cmd/query/app/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server_test.go#L504">cmd/query/app/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>504</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server_test.go#L622">cmd/query/app/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>622</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/server_test.go#L666">cmd/query/app/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>666</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/grpc_handler_test.go#L160">cmd/query/app/grpc_handler_test.go</a></td>
+              <td>Goroutine</td>
+              <td>160</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/apiv3/grpc_gateway_test.go#L79">cmd/query/app/apiv3/grpc_gateway_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/apiv3/grpc_gateway_test.go#L97">cmd/query/app/apiv3/grpc_gateway_test.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/query/app/apiv3/grpc_handler_test.go#L43">cmd/query/app/apiv3/grpc_handler_test.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//cmd/tracegen/main.go#L67">cmd/tracegen/main.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/main.go#L64">crossdock/main.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler.go#L137">crossdock/services/tracehandler.go</a></td>
+              <td>Synchronous chan</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler.go#L138">crossdock/services/tracehandler.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler.go#L139">crossdock/services/tracehandler.go</a></td>
+              <td>Close chan</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler.go#L198">crossdock/services/tracehandler.go</a></td>
+              <td>chan used as a param</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler.go#L202">crossdock/services/tracehandler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>202</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler.go#L203">crossdock/services/tracehandler.go</a></td>
+              <td>Receive</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler.go#L205">crossdock/services/tracehandler.go</a></td>
+              <td>Receive</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler_test.go#L270">crossdock/services/tracehandler_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler_test.go#L271">crossdock/services/tracehandler_test.go</a></td>
+              <td>Goroutine</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//crossdock/services/tracehandler_test.go#L272">crossdock/services/tracehandler_test.go</a></td>
+              <td>Close chan</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/cmd/all.go#L29">examples/hotrod/cmd/all.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/cmd/all.go#L30">examples/hotrod/cmd/all.go</a></td>
+              <td>Goroutine</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/cmd/all.go#L31">examples/hotrod/cmd/all.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L26">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Synchronous chan</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L27">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L29">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Go in for</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L29">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L31">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>31</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L32">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L34">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//examples/hotrod/pkg/pool/pool.go#L48">examples/hotrod/pkg/pool/pool.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//internal/tracegen/config.go#L76">internal/tracegen/config.go</a></td>
+              <td>Go in for</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//internal/tracegen/config.go#L76">internal/tracegen/config.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L154">pkg/cache/lru_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L159">pkg/cache/lru_test.go</a></td>
+              <td>Go in for</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L159">pkg/cache/lru_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>159</td>
+              <td>20</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L159">pkg/cache/lru_test.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L162">pkg/cache/lru_test.go</a></td>
+              <td>Receive</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L170">pkg/cache/lru_test.go</a></td>
+              <td>Close chan</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L175">pkg/cache/lru_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L178">pkg/cache/lru_test.go</a></td>
+              <td>Goroutine</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L181">pkg/cache/lru_test.go</a></td>
+              <td>Send</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L191">pkg/cache/lru_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L192">pkg/cache/lru_test.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L194">pkg/cache/lru_test.go</a></td>
+              <td>Receive</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L200">pkg/cache/lru_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L204">pkg/cache/lru_test.go</a></td>
+              <td>Goroutine</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L207">pkg/cache/lru_test.go</a></td>
+              <td>Send</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L218">pkg/cache/lru_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>218</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L219">pkg/cache/lru_test.go</a></td>
+              <td>Receive</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/cache/lru_test.go#L221">pkg/cache/lru_test.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/cert_watcher.go#L82">pkg/config/tlscfg/cert_watcher.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>82</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/cert_watcher.go#L83">pkg/config/tlscfg/cert_watcher.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/cert_watcher.go#L126">pkg/config/tlscfg/cert_watcher.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/options.go#L83">pkg/config/tlscfg/options.go</a></td>
+              <td>Goroutine</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/cert_watcher_test.go#L79">pkg/config/tlscfg/cert_watcher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/cert_watcher_test.go#L156">pkg/config/tlscfg/cert_watcher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/cert_watcher_test.go#L215">pkg/config/tlscfg/cert_watcher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/config/tlscfg/cert_watcher_test.go#L320">pkg/config/tlscfg/cert_watcher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier_test.go#L27">pkg/discovery/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier_test.go#L28">pkg/discovery/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier_test.go#L52">pkg/discovery/notifier_test.go</a></td>
+              <td>Goroutine</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier_test.go#L53">pkg/discovery/notifier_test.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier_test.go#L58">pkg/discovery/notifier_test.go</a></td>
+              <td>Close chan</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier_test.go#L59">pkg/discovery/notifier_test.go</a></td>
+              <td>Close chan</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier.go#L37">pkg/discovery/notifier.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier.go#L45">pkg/discovery/notifier.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/notifier.go#L61">pkg/discovery/notifier.go</a></td>
+              <td>Send</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/grpcresolver/grpc_resolver_test.go#L73">pkg/discovery/grpcresolver/grpc_resolver_test.go</a></td>
+              <td>Go in for</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/grpcresolver/grpc_resolver_test.go#L73">pkg/discovery/grpcresolver/grpc_resolver_test.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/grpcresolver/grpc_resolver.go#L72">pkg/discovery/grpcresolver/grpc_resolver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>72</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/discovery/grpcresolver/grpc_resolver.go#L98">pkg/discovery/grpcresolver/grpc_resolver.go</a></td>
+              <td>Goroutine</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L53">pkg/queue/bounded_queue.go</a></td>
+              <td>Unknown chan length</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L73">pkg/queue/bounded_queue.go</a></td>
+              <td>Go in for</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L73">pkg/queue/bounded_queue.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L79">pkg/queue/bounded_queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L80">pkg/queue/bounded_queue.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L88">pkg/queue/bounded_queue.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L132">pkg/queue/bounded_queue.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>132</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L133">pkg/queue/bounded_queue.go</a></td>
+              <td>Send</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L168">pkg/queue/bounded_queue.go</a></td>
+              <td>Goroutine</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L171">pkg/queue/bounded_queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>171</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L172">pkg/queue/bounded_queue.go</a></td>
+              <td>Receive</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L175">pkg/queue/bounded_queue.go</a></td>
+              <td>Receive</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/queue/bounded_queue.go#L190">pkg/queue/bounded_queue.go</a></td>
+              <td>Unknown chan length</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/testutils/logger_test.go#L55">pkg/testutils/logger_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/testutils/logger_test.go#L59">pkg/testutils/logger_test.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/testutils/logger_test.go#L60">pkg/testutils/logger_test.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/testutils/logger_test.go#L65">pkg/testutils/logger_test.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/testutils/logger_test.go#L66">pkg/testutils/logger_test.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//pkg/testutils/logger_test.go#L73">pkg/testutils/logger_test.go</a></td>
+              <td>Close chan</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/leaderelection/leader_election_test.go#L97">plugin/sampling/leaderelection/leader_election_test.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/leaderelection/leader_election.go#L67">plugin/sampling/leaderelection/leader_election.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/leaderelection/leader_election.go#L89">plugin/sampling/leaderelection/leader_election.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>89</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/leaderelection/leader_election.go#L90">plugin/sampling/leaderelection/leader_election.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/leaderelection/leader_election.go#L93">plugin/sampling/leaderelection/leader_election.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/aggregator.go#L71">plugin/sampling/strategystore/adaptive/aggregator.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>71</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/aggregator.go#L72">plugin/sampling/strategystore/adaptive/aggregator.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/aggregator.go#L77">plugin/sampling/strategystore/adaptive/aggregator.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/aggregator.go#L126">plugin/sampling/strategystore/adaptive/aggregator.go</a></td>
+              <td>Goroutine</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L167">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Synchronous chan</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L170">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Goroutine</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L171">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Goroutine</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L204">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>204</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L205">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Receive</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L211">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Receive</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L237">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>237</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L238">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Receive</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L272">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Goroutine</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor.go#L274">plugin/sampling/strategystore/adaptive/processor.go</a></td>
+              <td>Receive</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor_test.go#L384">plugin/sampling/strategystore/adaptive/processor_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor_test.go#L386">plugin/sampling/strategystore/adaptive/processor_test.go</a></td>
+              <td>Goroutine</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor_test.go#L420">plugin/sampling/strategystore/adaptive/processor_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/adaptive/processor_test.go#L427">plugin/sampling/strategystore/adaptive/processor_test.go</a></td>
+              <td>Goroutine</td>
+              <td>427</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/static/strategy_store.go#L77">plugin/sampling/strategystore/static/strategy_store.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/static/strategy_store.go#L152">plugin/sampling/strategystore/static/strategy_store.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>152</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/static/strategy_store.go#L153">plugin/sampling/strategystore/static/strategy_store.go</a></td>
+              <td>Receive</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/sampling/strategystore/static/strategy_store.go#L155">plugin/sampling/strategystore/static/strategy_store.go</a></td>
+              <td>Receive</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L136">plugin/storage/badger/factory.go</a></td>
+              <td>Goroutine</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L137">plugin/storage/badger/factory.go</a></td>
+              <td>Goroutine</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L191">plugin/storage/badger/factory.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L192">plugin/storage/badger/factory.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L194">plugin/storage/badger/factory.go</a></td>
+              <td>Receive</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L217">plugin/storage/badger/factory.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>217</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L218">plugin/storage/badger/factory.go</a></td>
+              <td>Receive</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/badger/factory.go#L220">plugin/storage/badger/factory.go</a></td>
+              <td>Receive</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/integration/token_propagation_test.go#L91">plugin/storage/integration/token_propagation_test.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/kafka/writer.go#L53">plugin/storage/kafka/writer.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/kafka/writer.go#L58">plugin/storage/kafka/writer.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//plugin/storage/kafka/writer.go#L85">plugin/storage/kafka/writer.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//proto-gen/api_v3/query_service.pb.gw.go#L236">proto-gen/api_v3/query_service.pb.gw.go</a></td>
+              <td>Goroutine</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//proto-gen/api_v3/query_service.pb.gw.go#L237">proto-gen/api_v3/query_service.pb.gw.go</a></td>
+              <td>Receive</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/baggage/baggage.go#L301">thrift-gen/baggage/baggage.go</a></td>
+              <td>Goroutine</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/baggage/baggage.go#L305">thrift-gen/baggage/baggage.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>305</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/baggage/baggage.go#L306">thrift-gen/baggage/baggage.go</a></td>
+              <td>Receive</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/baggage/baggage.go#L308">thrift-gen/baggage/baggage.go</a></td>
+              <td>Receive</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/jaeger/jaeger.go#L2414">thrift-gen/jaeger/jaeger.go</a></td>
+              <td>Goroutine</td>
+              <td>2414</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/jaeger/jaeger.go#L2418">thrift-gen/jaeger/jaeger.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>2418</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/jaeger/jaeger.go#L2419">thrift-gen/jaeger/jaeger.go</a></td>
+              <td>Receive</td>
+              <td>2419</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/jaeger/jaeger.go#L2421">thrift-gen/jaeger/jaeger.go</a></td>
+              <td>Receive</td>
+              <td>2421</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/sampling/sampling.go#L1077">thrift-gen/sampling/sampling.go</a></td>
+              <td>Goroutine</td>
+              <td>1077</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/sampling/sampling.go#L1081">thrift-gen/sampling/sampling.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1081</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/sampling/sampling.go#L1082">thrift-gen/sampling/sampling.go</a></td>
+              <td>Receive</td>
+              <td>1082</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/sampling/sampling.go#L1084">thrift-gen/sampling/sampling.go</a></td>
+              <td>Receive</td>
+              <td>1084</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/zipkincore/zipkincore.go#L1569">thrift-gen/zipkincore/zipkincore.go</a></td>
+              <td>Goroutine</td>
+              <td>1569</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/zipkincore/zipkincore.go#L1573">thrift-gen/zipkincore/zipkincore.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1573</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/zipkincore/zipkincore.go#L1574">thrift-gen/zipkincore/zipkincore.go</a></td>
+              <td>Receive</td>
+              <td>1574</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/jaegertracing/jaeger/blob//thrift-gen/zipkincore/zipkincore.go#L1576">thrift-gen/zipkincore/zipkincore.go</a></td>
+              <td>Receive</td>
+              <td>1576</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 19 ,  67 ,
+     27 ,
+     91 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

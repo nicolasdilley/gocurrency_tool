@@ -1,0 +1,4164 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : gohugoio/hugo ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/gohugoio/hugo/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cache/filecache/filecache ( 3 features, 1/6 featured file ) </li>
+          
+          <li> cache/namedmemcache/namedmemcache ( 3 features, 1/2 featured file ) </li>
+          
+          <li> commands/commands ( 26 features, 4/39 featured file ) </li>
+          
+          <li> common/maps/maps ( 3 features, 1/7 featured file ) </li>
+          
+          <li> common/para/para ( 4 features, 1/2 featured file ) </li>
+          
+          <li> common/types/types ( 3 features, 1/6 featured file ) </li>
+          
+          <li> deploy/deploy ( 13 features, 1/7 featured file ) </li>
+          
+          <li> deps/deps ( 3 features, 1/2 featured file ) </li>
+          
+          <li> hugolib/hugolib ( 28 features, 4/93 featured file ) </li>
+          
+          <li> lazy/lazy ( 15 features, 2/3 featured file ) </li>
+          
+          <li> livereload/livereload ( 16 features, 3/3 featured file ) </li>
+          
+          <li> navigation/navigation ( 3 features, 1/4 featured file ) </li>
+          
+          <li> resources/resources ( 9 features, 3/15 featured file ) </li>
+          
+          <li> resources/page/page ( 6 features, 2/37 featured file ) </li>
+          
+          <li> resources/resource_transformers/babel/babel ( 1 features, 1/1 featured file ) </li>
+          
+          <li> resources/resource_transformers/postcss/postcss ( 1 features, 1/2 featured file ) </li>
+          
+          <li> tpl/data/data ( 3 features, 1/6 featured file ) </li>
+          
+          <li> tpl/internal/go_templates/fmtsort/fmtsort_test ( 1 features, 1/3 featured file ) </li>
+          
+          <li> tpl/internal/go_templates/htmltemplate/template_test ( 10 features, 2/32 featured file ) </li>
+          
+          <li> tpl/internal/go_templates/texttemplate/template_test ( 5 features, 1/14 featured file ) </li>
+          
+          <li> tpl/internal/go_templates/texttemplate/parse/parse ( 6 features, 2/5 featured file ) </li>
+          
+          <li> watcher/watcher ( 9 features, 1/1 featured file ) </li>
+          
+          <li> watcher/filenotify/filenotify ( 18 features, 2/4 featured file ) </li>
+          
+    <li> Num of Packages with features : 23/145</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>29 </td>
+      <td>40 </td>
+      <td>23</td>
+      <td>35</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>3 </td>
+      <td>2</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>18 </td>
+      <td>0 </td>
+      <td>13 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>10</td>
+      <td>1</td>
+      <td>43.47826086956522%</td>
+      <td>5 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>12 </td>
+      <td>7</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//cache/filecache/filecache_test.go#L226">cache/filecache/filecache_test.go</a></td>
+              <td>Go in for</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//cache/filecache/filecache_test.go#L226">cache/filecache/filecache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>226</td>
+              <td>50</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//cache/filecache/filecache_test.go#L226">cache/filecache/filecache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//cache/namedmemcache/named_cache_test.go#L69">cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//cache/namedmemcache/named_cache_test.go#L69">cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>69</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//cache/namedmemcache/named_cache_test.go#L69">cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server_test.go#L48">commands/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server_test.go#L56">commands/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server_test.go#L75">commands/server_test.go</a></td>
+              <td>Send</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/commandeer.go#L113">commands/commandeer.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L71">commands/server.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L507">commands/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>507</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L523">commands/server.go</a></td>
+              <td>Go in for</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L523">commands/server.go</a></td>
+              <td>Goroutine</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L535">commands/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>535</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L536">commands/server.go</a></td>
+              <td>Receive</td>
+              <td>536</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L537">commands/server.go</a></td>
+              <td>Receive</td>
+              <td>537</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L540">commands/server.go</a></td>
+              <td>Receive</td>
+              <td>540</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/server.go#L615">commands/server.go</a></td>
+              <td>Goroutine</td>
+              <td>615</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L421">commands/hugo.go</a></td>
+              <td>Synchronous chan</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L428">commands/hugo.go</a></td>
+              <td>Goroutine</td>
+              <td>428</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L430">commands/hugo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>430</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L431">commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L433">commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L442">commands/hugo.go</a></td>
+              <td>Close chan</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L532">commands/hugo.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>532</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L535">commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>535</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L780">commands/hugo.go</a></td>
+              <td>Goroutine</td>
+              <td>780</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L863">commands/hugo.go</a></td>
+              <td>Goroutine</td>
+              <td>863</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L865">commands/hugo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>865</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L866">commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>866</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//commands/hugo.go#L872">commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>872</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/maps/scratch_test.go#L142">common/maps/scratch_test.go</a></td>
+              <td>Go in for</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/maps/scratch_test.go#L142">common/maps/scratch_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>142</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/maps/scratch_test.go#L142">common/maps/scratch_test.go</a></td>
+              <td>Goroutine</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/para/para.go#L45">common/para/para.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>45</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/para/para.go#L46">common/para/para.go</a></td>
+              <td>Send</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/para/para.go#L47">common/para/para.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/para/para.go#L53">common/para/para.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/types/evictingqueue_test.go#L60">common/types/evictingqueue_test.go</a></td>
+              <td>Go in for</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/types/evictingqueue_test.go#L60">common/types/evictingqueue_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>60</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//common/types/evictingqueue_test.go#L60">common/types/evictingqueue_test.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L199">deploy/deploy.go</a></td>
+              <td>Make chan in for</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L199">deploy/deploy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>199</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L209">deploy/deploy.go</a></td>
+              <td>Go in for</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L208">deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L209">deploy/deploy.go</a></td>
+              <td>Goroutine</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L215">deploy/deploy.go</a></td>
+              <td>Receive</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L220">deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L230">deploy/deploy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>230</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L239">deploy/deploy.go</a></td>
+              <td>Go in for</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L238">deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L239">deploy/deploy.go</a></td>
+              <td>Goroutine</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L250">deploy/deploy.go</a></td>
+              <td>Receive</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deploy/deploy.go#L255">deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>255</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deps/deps.go#L117">deps/deps.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>117</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deps/deps.go#L118">deps/deps.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//deps/deps.go#L128">deps/deps.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>128</td>
+              <td>10</td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L61">hugolib/hugo_sites_build.go</a></td>
+              <td>Synchronous chan</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L63">hugolib/hugo_sites_build.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L73">hugolib/hugo_sites_build.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L169">hugolib/hugo_sites_build.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>169</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L171">hugolib/hugo_sites_build.go</a></td>
+              <td>Send</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L176">hugolib/hugo_sites_build.go</a></td>
+              <td>Receive</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L299">hugolib/hugo_sites_build.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>299</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/hugo_sites_build.go#L300">hugolib/hugo_sites_build.go</a></td>
+              <td>Receive</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/pages_process.go#L123">hugolib/pages_process.go</a></td>
+              <td>Send</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site.go#L1604">hugolib/site.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>1604</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site.go#L1604">hugolib/site.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>1604</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site.go#L1610">hugolib/site.go</a></td>
+              <td>Send</td>
+              <td>1610</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L63">hugolib/site_render.go</a></td>
+              <td>Synchronous chan</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L64">hugolib/site_render.go</a></td>
+              <td>Unknown chan length</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L65">hugolib/site_render.go</a></td>
+              <td>Synchronous chan</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L67">hugolib/site_render.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L73">hugolib/site_render.go</a></td>
+              <td>Go in for</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L73">hugolib/site_render.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L80">hugolib/site_render.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>80</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L81">hugolib/site_render.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L84">hugolib/site_render.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L90">hugolib/site_render.go</a></td>
+              <td>Close chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L94">hugolib/site_render.go</a></td>
+              <td>Close chan</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L96">hugolib/site_render.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L106">hugolib/site_render.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L107">hugolib/site_render.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L138">hugolib/site_render.go</a></td>
+              <td>Send</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//hugolib/site_render.go#L143">hugolib/site_render.go</a></td>
+              <td>Send</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L173">lazy/init.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>173</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L175">lazy/init.go</a></td>
+              <td>Goroutine</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L177">lazy/init.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>177</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L178">lazy/init.go</a></td>
+              <td>Receive</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L181">lazy/init.go</a></td>
+              <td>Send</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L185">lazy/init.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>185</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L186">lazy/init.go</a></td>
+              <td>Receive</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init.go#L188">lazy/init.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init_test.go#L82">lazy/init_test.go</a></td>
+              <td>Go in for</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init_test.go#L82">lazy/init_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>82</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init_test.go#L82">lazy/init_test.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init_test.go#L127">lazy/init_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>127</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init_test.go#L128">lazy/init_test.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init_test.go#L212">lazy/init_test.go</a></td>
+              <td>Go in for</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//lazy/init_test.go#L212">lazy/init_test.go</a></td>
+              <td>Goroutine</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/livereload.go#L90">livereload/livereload.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>90</td>
+              <td>256</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/livereload.go#L91">livereload/livereload.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/livereload.go#L92">livereload/livereload.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/livereload.go#L93">livereload/livereload.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/livereload.go#L99">livereload/livereload.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/livereload.go#L134">livereload/livereload.go</a></td>
+              <td>Send</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L31">livereload/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L32">livereload/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L33">livereload/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L39">livereload/hub.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>39</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L40">livereload/hub.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L42">livereload/hub.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L45">livereload/hub.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L47">livereload/hub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>47</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/hub.go#L48">livereload/hub.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//livereload/connection.go#L48">livereload/connection.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//navigation/menu_cache_test.go#L58">navigation/menu_cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//navigation/menu_cache_test.go#L58">navigation/menu_cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>58</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//navigation/menu_cache_test.go#L58">navigation/menu_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/image.go#L252">resources/image.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>252</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/image.go#L256">resources/image.go</a></td>
+              <td>Send</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/image.go#L258">resources/image.go</a></td>
+              <td>Receive</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/image_test.go#L305">resources/image_test.go</a></td>
+              <td>Go in for</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/image_test.go#L305">resources/image_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>305</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/image_test.go#L305">resources/image_test.go</a></td>
+              <td>Goroutine</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/transform_test.go#L409">resources/transform_test.go</a></td>
+              <td>Go in for</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/transform_test.go#L409">resources/transform_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>409</td>
+              <td>13</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/transform_test.go#L409">resources/transform_test.go</a></td>
+              <td>Goroutine</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/page/permalinks_test.go#L144">resources/page/permalinks_test.go</a></td>
+              <td>Go in for</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/page/permalinks_test.go#L144">resources/page/permalinks_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>144</td>
+              <td>20</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/page/permalinks_test.go#L144">resources/page/permalinks_test.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/page/pages_cache_test.go#L50">resources/page/pages_cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/page/pages_cache_test.go#L50">resources/page/pages_cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>50</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/page/pages_cache_test.go#L50">resources/page/pages_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/resource_transformers/babel/babel.go#L197">resources/resource_transformers/babel/babel.go</a></td>
+              <td>Goroutine</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//resources/resource_transformers/postcss/postcss.go#L226">resources/resource_transformers/postcss/postcss.go</a></td>
+              <td>Goroutine</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/data/resources_test.go#L158">tpl/data/resources_test.go</a></td>
+              <td>Go in for</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/data/resources_test.go#L158">tpl/data/resources_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>158</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/data/resources_test.go#L158">tpl/data/resources_test.go</a></td>
+              <td>Goroutine</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/fmtsort/sort_test.go#L191">tpl/internal/go_templates/fmtsort/sort_test.go</a></td>
+              <td>Constant array of chans (length)</td>
+              <td>191</td>
+              <td>3</td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/clone_test.go#L216">tpl/internal/go_templates/htmltemplate/clone_test.go</a></td>
+              <td>Go in for</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/clone_test.go#L216">tpl/internal/go_templates/htmltemplate/clone_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>216</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/clone_test.go#L216">tpl/internal/go_templates/htmltemplate/clone_test.go</a></td>
+              <td>Goroutine</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/exec_test.go#L712">tpl/internal/go_templates/htmltemplate/exec_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>712</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/exec_test.go#L713">tpl/internal/go_templates/htmltemplate/exec_test.go</a></td>
+              <td>Goroutine</td>
+              <td>713</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/exec_test.go#L715">tpl/internal/go_templates/htmltemplate/exec_test.go</a></td>
+              <td>Send</td>
+              <td>715</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/exec_test.go#L717">tpl/internal/go_templates/htmltemplate/exec_test.go</a></td>
+              <td>Close chan</td>
+              <td>717</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/exec_test.go#L1745">tpl/internal/go_templates/htmltemplate/exec_test.go</a></td>
+              <td>Go in for</td>
+              <td>1745</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/exec_test.go#L1745">tpl/internal/go_templates/htmltemplate/exec_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>1745</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/htmltemplate/exec_test.go#L1745">tpl/internal/go_templates/htmltemplate/exec_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1745</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/exec_test.go#L706">tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>706</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/exec_test.go#L707">tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Goroutine</td>
+              <td>707</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/exec_test.go#L709">tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Send</td>
+              <td>709</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/exec_test.go#L711">tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Close chan</td>
+              <td>711</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/exec_test.go#L1707">tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1707</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/parse/lex_test.go#L543">tpl/internal/go_templates/texttemplate/parse/lex_test.go</a></td>
+              <td>Receive</td>
+              <td>543</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/parse/lex.go#L157">tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Send</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/parse/lex.go#L188">tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Send</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/parse/lex.go#L195">tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Receive</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/parse/lex.go#L219">tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Synchronous chan</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//tpl/internal/go_templates/texttemplate/parse/lex.go#L223">tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Goroutine</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L52">watcher/batcher.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>52</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L53">watcher/batcher.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>53</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L56">watcher/batcher.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L67">watcher/batcher.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>67</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L68">watcher/batcher.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L70">watcher/batcher.go</a></td>
+              <td>Receive</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L74">watcher/batcher.go</a></td>
+              <td>Send</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L76">watcher/batcher.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/batcher.go#L85">watcher/batcher.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L69">watcher/filenotify/poller.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L125">watcher/filenotify/poller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>125</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L126">watcher/filenotify/poller.go</a></td>
+              <td>Send</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L127">watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L135">watcher/filenotify/poller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>135</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L136">watcher/filenotify/poller.go</a></td>
+              <td>Send</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L137">watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L149">watcher/filenotify/poller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>149</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L150">watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller.go#L151">watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L267">watcher/filenotify/poller_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>267</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L268">watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L279">watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L281">watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>281</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L294">watcher/filenotify/poller_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>294</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L295">watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L296">watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob//watcher/filenotify/poller_test.go#L298">watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>298</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 29 ,  40 ,
+     23 ,
+     35 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

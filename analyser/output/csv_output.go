@@ -59,20 +59,21 @@ func OutputCounters(project_name string, package_counters []*PackageCounter, pat
 
 				files, _ := ioutil.ReadDir(path)
 
+				go_files := []string{}
 				contains_go_files := false
 
+				full_pack_name := strings.Join(strings.Split(strings.Split(path, "projects-gocurrency/")[1], "/")[1:], "/")
 				for _, file := range files {
 					if strings.Contains(file.Name(), ".go") {
 						contains_go_files = true
+						go_files = append(go_files, path+"/"+file.Name()+"\n")
 					}
 				}
 
 				if contains_go_files {
 
 					// Remove the ../project-gocurrency/author++name/ from the path
-					full_pack_name := strings.Join(strings.Split(strings.Split(path, "projects-gocurrency/")[1], "/")[1:], "/")
-
-					num_lines := ReadNumberOfLines(GeneratePackageListFiles(path))
+					num_lines := ReadNumberOfLines(go_files)
 					total_num_lines += num_lines
 					packageInfos = append(packageInfos, PackageInfo{Name: full_pack_name, num_lines: num_lines})
 				}
@@ -85,7 +86,7 @@ func OutputCounters(project_name string, package_counters []*PackageCounter, pat
 		f.WriteString(fmt.Sprintf("packages num,%d,%d\n", project_counter.Num_of_packages_with_features, num_packages))
 		f.WriteString(fmt.Sprintf("files num,%d,%d\n", num_featured_files, num_files))
 		average_line_in_featured_file, total_line_featured_file := readNumberOfLinesPerFeaturedFile(package_counters)
-		f.WriteString(fmt.Sprintf("Average Line num per featured file,%d,%d\n", average_line_in_featured_file, total_line_featured_file))
+		f.WriteString(fmt.Sprintf("Average Line num per featured file and total concurrent file,%d,%d\n", average_line_in_featured_file, total_line_featured_file))
 
 		for _, pack := range packageInfos {
 

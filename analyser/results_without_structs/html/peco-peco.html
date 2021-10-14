@@ -1,0 +1,2116 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : peco/peco ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/peco/peco/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> peco ( 191 features, 12/29 featured file ) </li>
+          
+          <li> filter/filter ( 16 features, 2/7 featured file ) </li>
+          
+          <li> hub/hub_test ( 12 features, 2/3 featured file ) </li>
+          
+          <li> internal/keyseq/keyseq ( 5 features, 1/9 featured file ) </li>
+          
+          <li> pipeline/pipeline ( 23 features, 2/3 featured file ) </li>
+          
+          <li> sig/sig ( 4 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 6/10</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>20 </td>
+      <td>95 </td>
+      <td>23</td>
+      <td>50</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>2</td>
+      <td>10</td>
+      <td>16.666666666666664</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>18</td>
+      <td>4</td>
+      <td>1</td>
+      <td>17.391304347826086%</td>
+      <td>11 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>30 </td>
+      <td>9</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//query.go#L69">query.go</a></td>
+              <td>Unknown chan length</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//query.go#L71">query.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//query.go#L72">query.go</a></td>
+              <td>Close chan</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//query.go#L77">query.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//view.go#L46">view.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>46</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//view.go#L47">view.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//view.go#L49">view.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//view.go#L51">view.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//view.go#L53">view.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L43">source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L49">source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L53">source_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>53</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L54">source_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L55">source_test.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L59">source_test.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L62">source_test.go</a></td>
+              <td>Receive</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L70">source_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>70</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source_test.go#L71">source_test.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L68">screen.go</a></td>
+              <td>Synchronous chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L70">screen.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L73">screen.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>73</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L74">screen.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L76">screen.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L85">screen.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L87">screen.go</a></td>
+              <td>Close chan</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L92">screen.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L96">screen.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>96</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L97">screen.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L99">screen.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L110">screen.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>110</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L111">screen.go</a></td>
+              <td>Send</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L120">screen.go</a></td>
+              <td>Synchronous chan</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L121">screen.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>121</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L122">screen.go</a></td>
+              <td>Send</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//screen.go#L126">screen.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//input.go#L12">input.go</a></td>
+              <td>chan used as a param</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//input.go#L24">input.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>24</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//input.go#L25">input.go</a></td>
+              <td>Receive</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//input.go#L27">input.go</a></td>
+              <td>Receive</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L27">source.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L28">source.go</a></td>
+              <td>Synchronous chan</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L46">source.go</a></td>
+              <td>Synchronous chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L47">source.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>47</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L48">source.go</a></td>
+              <td>Close chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L49">source.go</a></td>
+              <td>Close chan</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L58">source.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L63">source.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>63</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L64">source.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L67">source.go</a></td>
+              <td>Receive</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L106">source.go</a></td>
+              <td>Synchronous chan</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L107">source.go</a></td>
+              <td>Goroutine</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L113">source.go</a></td>
+              <td>Close chan</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L116">source.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>116</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L117">source.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L122">source.go</a></td>
+              <td>Send</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L132">source.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>132</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L133">source.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L138">source.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L171">source.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>171</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L172">source.go</a></td>
+              <td>Receive</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L180">source.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>180</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L181">source.go</a></td>
+              <td>Receive</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L210">source.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>210</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L211">source.go</a></td>
+              <td>Receive</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L226">source.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>226</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//source.go#L227">source.go</a></td>
+              <td>Receive</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//issues_test.go#L18">issues_test.go</a></td>
+              <td>Goroutine</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//issues_test.go#L21">issues_test.go</a></td>
+              <td>Receive</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//issues_test.go#L62">issues_test.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//issues_test.go#L64">issues_test.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//issues_test.go#L100">issues_test.go</a></td>
+              <td>Goroutine</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//issues_test.go#L103">issues_test.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L73">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L76">action_test.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L109">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L112">action_test.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L165">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L168">action_test.go</a></td>
+              <td>Receive</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L197">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L200">action_test.go</a></td>
+              <td>Receive</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L257">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L260">action_test.go</a></td>
+              <td>Receive</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L285">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>285</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L288">action_test.go</a></td>
+              <td>Receive</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L321">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L324">action_test.go</a></td>
+              <td>Receive</td>
+              <td>324</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L348">action_test.go</a></td>
+              <td>Goroutine</td>
+              <td>348</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//action_test.go#L351">action_test.go</a></td>
+              <td>Receive</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L124">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>124</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L125">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L127">peco_test.go</a></td>
+              <td>Send</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L151">peco_test.go</a></td>
+              <td>Goroutine</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L307">peco_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L308">peco_test.go</a></td>
+              <td>Goroutine</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L309">peco_test.go</a></td>
+              <td>Close chan</td>
+              <td>309</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L310">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>310</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L311">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L313">peco_test.go</a></td>
+              <td>Send</td>
+              <td>313</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L318">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>318</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L319">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>319</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L322">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L353">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L373">peco_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>373</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L374">peco_test.go</a></td>
+              <td>Goroutine</td>
+              <td>374</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L375">peco_test.go</a></td>
+              <td>Close chan</td>
+              <td>375</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L379">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>379</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L380">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L382">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L384">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L386">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L390">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>390</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L423">peco_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L424">peco_test.go</a></td>
+              <td>Goroutine</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L425">peco_test.go</a></td>
+              <td>Close chan</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L426">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>426</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L427">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>427</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L429">peco_test.go</a></td>
+              <td>Send</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L434">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>434</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L435">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>435</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L438">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>438</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L459">peco_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>459</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L460">peco_test.go</a></td>
+              <td>Goroutine</td>
+              <td>460</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L461">peco_test.go</a></td>
+              <td>Close chan</td>
+              <td>461</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L462">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>462</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L463">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>463</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L465">peco_test.go</a></td>
+              <td>Send</td>
+              <td>465</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L470">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>470</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L476">peco_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>476</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L477">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco_test.go#L480">peco_test.go</a></td>
+              <td>Receive</td>
+              <td>480</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L24">filter.go</a></td>
+              <td>chan used as a param</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L30">filter.go</a></td>
+              <td>chan used as a param</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L30">filter.go</a></td>
+              <td>chan used as a param</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L40">filter.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L41">filter.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L43">filter.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L54">filter.go</a></td>
+              <td>chan used as a param</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L55">filter.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L56">filter.go</a></td>
+              <td>Synchronous chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L57">filter.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L64">filter.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L65">filter.go</a></td>
+              <td>Close chan</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L73">filter.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>73</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L74">filter.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L79">filter.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L81">filter.go</a></td>
+              <td>Send</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L84">filter.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L92">filter.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L108">filter.go</a></td>
+              <td>Send</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L159">filter.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L166">filter.go</a></td>
+              <td>Goroutine</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L176">filter.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>176</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L177">filter.go</a></td>
+              <td>Receive</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L179">filter.go</a></td>
+              <td>Receive</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L185">filter.go</a></td>
+              <td>Receive</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L205">filter.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>205</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L206">filter.go</a></td>
+              <td>Receive</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L208">filter.go</a></td>
+              <td>Receive</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter.go#L223">filter.go</a></td>
+              <td>Goroutine</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//buffer.go#L95">buffer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//buffer.go#L105">buffer.go</a></td>
+              <td>chan used as a param</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//buffer.go#L118">buffer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>118</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//buffer.go#L119">buffer.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//buffer.go#L124">buffer.go</a></td>
+              <td>Receive</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L95">peco.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>95</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L96">peco.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L98">peco.go</a></td>
+              <td>Send</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L109">peco.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L166">peco.go</a></td>
+              <td>chan used as a param</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L215">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L306">peco.go</a></td>
+              <td>Synchronous chan</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L308">peco.go</a></td>
+              <td>Send</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L341">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>341</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L350">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L362">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>362</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L363">peco.go</a></td>
+              <td>Receive</td>
+              <td>363</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L368">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L369">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L370">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>370</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L386">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L391">peco.go</a></td>
+              <td>Receive</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L406">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L407">peco.go</a></td>
+              <td>Receive</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L422">peco.go</a></td>
+              <td>Receive</td>
+              <td>422</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L497">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>497</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L498">peco.go</a></td>
+              <td>Receive</td>
+              <td>498</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L665">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>665</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L710">peco.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>710</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L711">peco.go</a></td>
+              <td>Receive</td>
+              <td>711</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L792">peco.go</a></td>
+              <td>Goroutine</td>
+              <td>792</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//peco.go#L795">peco.go</a></td>
+              <td>Send</td>
+              <td>795</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L91">filter/external.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L93">filter/external.go</a></td>
+              <td>Synchronous chan</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L94">filter/external.go</a></td>
+              <td>Goroutine</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L96">filter/external.go</a></td>
+              <td>Close chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L98">filter/external.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>98</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L99">filter/external.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L110">filter/external.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>110</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L111">filter/external.go</a></td>
+              <td>Send</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L112">filter/external.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L129">filter/external.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>129</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L130">filter/external.go</a></td>
+              <td>Receive</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/external.go#L132">filter/external.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/filter_test.go#L47">filter/filter_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>47</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/filter_test.go#L54">filter/filter_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>54</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/filter_test.go#L55">filter/filter_test.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//filter/filter_test.go#L65">filter/filter_test.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub.go#L35">hub/hub.go</a></td>
+              <td>Send</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub.go#L80">hub/hub.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub.go#L98">hub/hub.go</a></td>
+              <td>chan used as a param</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub.go#L113">hub/hub.go</a></td>
+              <td>Send</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L18">hub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L19">hub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L24">hub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L25">hub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L36">hub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L37">hub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L53">hub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//hub/hub_test.go#L54">hub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//internal/keyseq/ahocorasick.go#L72">internal/keyseq/ahocorasick.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>72</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//internal/keyseq/ahocorasick.go#L73">internal/keyseq/ahocorasick.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//internal/keyseq/ahocorasick.go#L77">internal/keyseq/ahocorasick.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//internal/keyseq/ahocorasick.go#L102">internal/keyseq/ahocorasick.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//internal/keyseq/ahocorasick.go#L106">internal/keyseq/ahocorasick.go</a></td>
+              <td>Send</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L33">pipeline/pipeline.go</a></td>
+              <td>Synchronous chan</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L34">pipeline/pipeline.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L36">pipeline/pipeline.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>36</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L37">pipeline/pipeline.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L39">pipeline/pipeline.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L62">pipeline/pipeline.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>62</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L63">pipeline/pipeline.go</a></td>
+              <td>Send</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L64">pipeline/pipeline.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L138">pipeline/pipeline.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L143">pipeline/pipeline.go</a></td>
+              <td>Go in for</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L142">pipeline/pipeline.go</a></td>
+              <td>Synchronous chan</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L143">pipeline/pipeline.go</a></td>
+              <td>Goroutine</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L149">pipeline/pipeline.go</a></td>
+              <td>Goroutine</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline.go#L152">pipeline/pipeline.go</a></td>
+              <td>Receive</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L25">pipeline/pipeline_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L29">pipeline/pipeline_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>29</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L30">pipeline/pipeline_test.go</a></td>
+              <td>Receive</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L32">pipeline/pipeline_test.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L87">pipeline/pipeline_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L95">pipeline/pipeline_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L100">pipeline/pipeline_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>100</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L101">pipeline/pipeline_test.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//pipeline/pipeline_test.go#L103">pipeline/pipeline_test.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//sig/sig.go#L31">sig/sig.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>31</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//sig/sig.go#L44">sig/sig.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>44</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//sig/sig.go#L45">sig/sig.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/peco/peco/blob//sig/sig.go#L47">sig/sig.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 20 ,  95 ,
+     23 ,
+     50 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

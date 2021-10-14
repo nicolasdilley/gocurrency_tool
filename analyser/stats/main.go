@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -101,6 +102,7 @@ type Counter struct {
 	known_add   map[string]int
 	unknown_add map[string]int
 	done        map[string]int
+	wait        map[string]int
 
 	// Mutex
 	mutex  map[string]int
@@ -118,16 +120,34 @@ type ProjectCounter struct {
 
 // statsInfo is a struct that holds combined projects stats
 type StatsInfo struct {
-	Num_projects                          int            // the number of projects analyzed
-	Num_featured_projects                 int            // the number of projects with at least one feature
-	Num_projects_without_chans            int            // the number of projects analyzed without a new channel
-	Num_of_package_with_features          int            // how many packages with features
-	Num_of_packages_from_featured_project int            // num of packages only in featured project
-	Num_packages                          int            // the total number of packages
-	Num_features                          int            // the total number of features
-	Num_files                             int            // total number of files in the project
-	Num_featured_files                    int            // total number of featured files in the project
-	Num_lines_in_featured_files           map[string]int // total number of featured files in the project
+	Num_projects                          int         // the number of projects analyzed
+	Num_featured_projects                 int         // the number of projects with at least one feature
+	Num_median_projects                   int         // the number of projects that falls between median ploc (concurrency size)
+	Num_projects_without_chans            int         // the number of projects analyzed without a new channel
+	Num_projects_without_go               int         // the number of projects analyzed without a go
+	Num_projects_without_send             int         // the number of projects analyzed without a send
+	Num_projects_without_receive          int         // the number of projects analyzed without a receive
+	Num_projects_without_select           int         // the number of projects analyzed without a select
+	Num_projects_without_close            int         // the number of projects analyzed without a close
+	Num_projects_without_range            int         // the number of projects analyzed without a range
+	Num_projects_without_wg               int         // the number of projects analyzed without a wg
+	Num_projects_without_unknown_add      int         // the number of projects analyzed without a unknown_add
+	Num_projects_without_known_add        int         // the number of projects analyzed without a known_add
+	Num_projects_without_add              int         // the number of projects analyzed without a add
+	Num_projects_without_wait             int         // the number of projects analyzed without a wait
+	Num_projects_without_done             int         // the number of projects analyzed without a done
+	Num_projects_without_mutex            int         // the number of projects analyzed without a mutex
+	Num_projects_without_lock             int         // the number of projects analyzed without a lock
+	Num_projects_without_unlock           int         // the number of projects analyzed without a unlock
+	Num_of_package_with_features          int         // how many packages with features
+	Num_of_packages_from_featured_project int         // num of packages only in featured project
+	Num_select                            int         // num of select
+	Num_default_select                    int         // num of select with a default branch
+	Num_packages                          int         // the total number of packages
+	Num_features                          int         // the total number of features
+	Num_files                             int         // total number of files in the project
+	Num_featured_files                    int         // total number of featured files in the project
+	Num_lines_in_featured_files           ProjectList // total number of featured files in the project per project
 	Project_with_interesting_features     int
 	Features_per_projects                 map[string][]*Feature // a map of all the features per project name
 	Num_assign_chan_in_for                int
@@ -185,7 +205,7 @@ func main() {
 func generatesFeaturesList() StatsInfo {
 	var stats StatsInfo = StatsInfo{
 		Features_per_projects:       map[string][]*Feature{},
-		Num_lines_in_featured_files: map[string]int{},
+		Num_lines_in_featured_files: ProjectList{},
 	}
 
 	num_line_overall := 0
@@ -216,7 +236,7 @@ func generatesFeaturesList() StatsInfo {
 				average_line_number_of_featured_file, _ := strconv.ParseFloat(strings.Split(csv_strings[3], ",")[1], 0)
 				line_number_of_featured_file, _ := strconv.Atoi(strings.Split(csv_strings[3], ",")[2])
 
-				stats.Num_lines_in_featured_files[info.Name()] = line_number_of_featured_file
+				stats.Num_lines_in_featured_files = append(stats.Num_lines_in_featured_files, Project{Name: info.Name(), Concurrent_size: line_number_of_featured_file})
 
 				feat_pack, _ := strconv.Atoi(packages_line[1])
 				stats.Num_of_package_with_features += feat_pack
@@ -235,7 +255,6 @@ func generatesFeaturesList() StatsInfo {
 				for _, s_feature := range s_features {
 					if s_feature != "" {
 						s := strings.Split(s_feature, ",")
-						fmt.Println("ici ", s)
 						type_num, _ := strconv.Atoi(s[1])
 						line_num, _ := strconv.Atoi(s[3])
 
@@ -265,7 +284,9 @@ func generatesFeaturesList() StatsInfo {
 	if err != nil {
 		panic(err)
 	}
-	stats.Num_featured_projects = len(stats.Features_per_projects)
+
+	sort.Sort(stats.Num_lines_in_featured_files)
+
 	fmt.Printf("num of loc overall : %d\n", num_line_overall)
 	return stats
 }
@@ -273,7 +294,7 @@ func generatesFeaturesList() StatsInfo {
 func getStats(stats *StatsInfo) (Counter, ProjectCounter) {
 
 	// read and process csv
-	counter, project_counter := getCounters(stats.Features_per_projects)
+	counter, project_counter := getCounters(stats.Features_per_projects, stats)
 
 	// calculate averages based on counter generated
 	stats.Average.Channels = counter.channels
@@ -297,7 +318,7 @@ func getStats(stats *StatsInfo) (Counter, ProjectCounter) {
 	return counter, project_counter
 }
 
-func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectCounter) {
+func getCounters(features_per_projects map[string][]*Feature, stats *StatsInfo) (Counter, ProjectCounter) {
 	var counter Counter
 	var project_counter ProjectCounter
 
@@ -316,12 +337,16 @@ func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectC
 	counter.known_add = make(map[string]int)
 	counter.unknown_add = make(map[string]int)
 	counter.done = make(map[string]int)
+	counter.wait = make(map[string]int)
 	counter.lock = make(map[string]int)
 	counter.unlock = make(map[string]int)
 	counter.constant_go_in_constant_for_map = make(map[string][]int)
 	counter.num_branch_per_projects = make(map[string][]int)
 
+	num_default_select := 0
+
 	for proj, features := range features_per_projects {
+
 		containsGoInFor := false
 		containsChanInFor := false
 		containsAssignChanInFor := false
@@ -333,6 +358,7 @@ func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectC
 		num_receive := 0
 		num_range := 0
 		num_send := 0
+		num_close := 0
 		defined_chans := 0
 		undefined_chans := 0
 		num_wg := 0
@@ -348,6 +374,7 @@ func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectC
 				counter.num_branch_per_projects[proj] = append(counter.num_branch_per_projects[proj], num_branch)
 			case DEFAULT_SELECT_COUNT:
 				num_select++
+				num_default_select++
 				num_branch, _ := strconv.Atoi(feature.f_number)
 				counter.num_branch_per_projects[proj] = append(counter.num_branch_per_projects[proj], num_branch)
 			case RANGE_OVER_CHAN_COUNT:
@@ -361,6 +388,8 @@ func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectC
 			case GOROUTINE_COUNT:
 				counter.goroutines += 1 / (float64(feature.f_number_of_lines) / constant)
 				num_go++
+			case CLOSE_CHAN_COUNT:
+				num_close++
 			case GO_IN_FOR_COUNT:
 				counter.go_in_any_for_map[proj]++
 				containsGoInFor = true
@@ -418,6 +447,8 @@ func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectC
 				counter.unknown_add[proj]++
 			case DONE_COUNT:
 				counter.done[proj]++
+			case WAIT_COUNT:
+				counter.wait[proj]++
 			case MUTEX_COUNT:
 				counter.mutex[proj]++
 				num_mutex++
@@ -450,19 +481,82 @@ func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectC
 			counter.go_map[line_num] = append(counter.go_map[line_num], num_go)
 			counter.chan_map[line_num] = append(counter.chan_map[line_num], num_chan)
 		}
+
+		stats.Num_select += num_select
+
 		if num_go > 0 {
 			counter.go_per_projects[proj] += num_go
+		} else {
+			stats.Num_projects_without_go++
+		}
+
+		if num_send == 0 {
+			stats.Num_projects_without_send++
+		}
+
+		if num_receive == 0 {
+			stats.Num_projects_without_receive++
+		}
+
+		if num_select == 0 {
+			stats.Num_projects_without_select++
+		}
+
+		if num_range == 0 {
+			stats.Num_projects_without_range++
+		}
+
+		if num_close == 0 {
+			stats.Num_projects_without_close++
 		}
 
 		if num_chan == 0 {
 			project_counter.contains_no_chan++
 		}
 
-		if num_chan > 0 || counter.lock[proj] > 0 || counter.unlock[proj] > 0 || counter.wg[proj] > 0 {
+		if num_wg == 0 {
+			stats.Num_projects_without_wg++
+		}
+
+		if counter.unknown_add[proj] == 0 {
+			stats.Num_projects_without_unknown_add++
+		}
+
+		if counter.known_add[proj] == 0 {
+			stats.Num_projects_without_known_add++
+		}
+
+		if counter.unknown_add[proj] == 0 && counter.known_add[proj] == 0 {
+			stats.Num_projects_without_add++
+		}
+
+		if counter.wait[proj] == 0 {
+			stats.Num_projects_without_wait++
+		}
+
+		if counter.done[proj] == 0 {
+			stats.Num_projects_without_done++
+		}
+
+		if num_mutex == 0 {
+			stats.Num_projects_without_mutex++
+		}
+		if counter.lock[proj] == 0 {
+			stats.Num_projects_without_lock++
+		}
+		if counter.unlock[proj] == 0 {
+			stats.Num_projects_without_unlock++
+		}
+
+		if num_chan > 0 || num_mutex > 0 || num_wg > 0 {
 			counter.Project_with_interesting_features++
+		} else {
+			fmt.Println("project " + proj + " has no interesting features ! ")
 		}
 		counter.channels += num_chan
 	}
+
+	stats.Num_default_select = num_default_select
 
 	return counter, project_counter
 }
@@ -470,4 +564,25 @@ func getCounters(features_per_projects map[string][]*Feature) (Counter, ProjectC
 func createStatFile() *os.File {
 	f, _ := os.Create("stats.html")
 	return f
+}
+
+type Project struct {
+	Name            string
+	Concurrent_size int
+}
+
+type ProjectList []Project
+
+func (p ProjectList) Len() int           { return len(p) }
+func (p ProjectList) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
+func (p ProjectList) Less(i, j int) bool { return p[i].Concurrent_size > p[j].Concurrent_size }
+func (p ProjectList) Get(name string) Project {
+	to_return := Project{}
+
+	for _, project := range p {
+		if project.Name == name {
+			to_return = project
+		}
+	}
+	return to_return
 }

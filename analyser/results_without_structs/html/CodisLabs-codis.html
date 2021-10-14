@@ -1,0 +1,2834 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : CodisLabs/codis ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/CodisLabs/codis/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cmd/dashboard/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> cmd/fe/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> cmd/proxy/main ( 7 features, 1/1 featured file ) </li>
+          
+          <li> extern/deprecated/redis-test/main ( 23 features, 11/16 featured file ) </li>
+          
+          <li> extern/deprecated/redis-test/bench/main ( 10 features, 1/1 featured file ) </li>
+          
+          <li> pkg/models/etcd/etcdclient ( 6 features, 1/1 featured file ) </li>
+          
+          <li> pkg/models/zk/zkclient ( 9 features, 1/1 featured file ) </li>
+          
+          <li> pkg/proxy/proxy ( 69 features, 8/18 featured file ) </li>
+          
+          <li> pkg/proxy/redis/redis ( 5 features, 1/7 featured file ) </li>
+          
+          <li> pkg/topom/topom ( 48 features, 6/20 featured file ) </li>
+          
+          <li> pkg/utils/utils ( 14 features, 1/6 featured file ) </li>
+          
+          <li> pkg/utils/redis/redis ( 61 features, 2/2 featured file ) </li>
+          
+          <li> pkg/utils/rpc/rpc ( 1 features, 1/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 13/28</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>20 </td>
+      <td>50 </td>
+      <td>39</td>
+      <td>91</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>23 </td>
+      <td>3 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>23</td>
+      <td>6</td>
+      <td>58.97435897435898%</td>
+      <td>10 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>17 </td>
+      <td>3</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/dashboard/main.go#L159">cmd/dashboard/main.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/dashboard/main.go#L161">cmd/dashboard/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>161</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/dashboard/main.go#L164">cmd/dashboard/main.go</a></td>
+              <td>Receive</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/fe/main.go#L47">cmd/fe/main.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/proxy/main.go#L107">cmd/proxy/main.go</a></td>
+              <td>Goroutine</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/proxy/main.go#L210">cmd/proxy/main.go</a></td>
+              <td>Goroutine</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/proxy/main.go#L212">cmd/proxy/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>212</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/proxy/main.go#L215">cmd/proxy/main.go</a></td>
+              <td>Receive</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/proxy/main.go#L221">cmd/proxy/main.go</a></td>
+              <td>Goroutine</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/proxy/main.go#L223">cmd/proxy/main.go</a></td>
+              <td>Goroutine</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//cmd/proxy/main.go#L225">cmd/proxy/main.go</a></td>
+              <td>Goroutine</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/extra_memleak.go#L39">extern/deprecated/redis-test/extra_memleak.go</a></td>
+              <td>Go in for</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/extra_memleak.go#L39">extern/deprecated/redis-test/extra_memleak.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_incr1.go#L35">extern/deprecated/redis-test/test_incr1.go</a></td>
+              <td>Go in for</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_incr1.go#L35">extern/deprecated/redis-test/test_incr1.go</a></td>
+              <td>Goroutine</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_incr2.go#L40">extern/deprecated/redis-test/test_incr2.go</a></td>
+              <td>Go in for</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_incr2.go#L40">extern/deprecated/redis-test/test_incr2.go</a></td>
+              <td>Goroutine</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_pttl.go#L40">extern/deprecated/redis-test/test_pttl.go</a></td>
+              <td>Go in for</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_pttl.go#L40">extern/deprecated/redis-test/test_pttl.go</a></td>
+              <td>Goroutine</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/basic_incr.go#L32">extern/deprecated/redis-test/basic_incr.go</a></td>
+              <td>Go in for</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/basic_incr.go#L32">extern/deprecated/redis-test/basic_incr.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_mset.go#L38">extern/deprecated/redis-test/test_mset.go</a></td>
+              <td>Go in for</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_mset.go#L38">extern/deprecated/redis-test/test_mset.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_hset.go#L41">extern/deprecated/redis-test/test_hset.go</a></td>
+              <td>Go in for</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_hset.go#L41">extern/deprecated/redis-test/test_hset.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_mget.go#L38">extern/deprecated/redis-test/test_mget.go</a></td>
+              <td>Go in for</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_mget.go#L38">extern/deprecated/redis-test/test_mget.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/extra_incr.go#L48">extern/deprecated/redis-test/extra_incr.go</a></td>
+              <td>Go in for</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/extra_incr.go#L48">extern/deprecated/redis-test/extra_incr.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_list.go#L41">extern/deprecated/redis-test/test_list.go</a></td>
+              <td>Go in for</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/test_list.go#L41">extern/deprecated/redis-test/test_list.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/utils.go#L602">extern/deprecated/redis-test/utils.go</a></td>
+              <td>Synchronous chan</td>
+              <td>602</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/utils.go#L619">extern/deprecated/redis-test/utils.go</a></td>
+              <td>Receive</td>
+              <td>619</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/utils.go#L677">extern/deprecated/redis-test/utils.go</a></td>
+              <td>Goroutine</td>
+              <td>677</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L117">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Synchronous chan</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L131">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Go in for</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L131">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Goroutine</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L143">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Go in for</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L143">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Goroutine</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L166">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Go in for</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L166">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Goroutine</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L196">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Receive</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L220">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Receive</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//extern/deprecated/redis-test/bench/benchmark.go#L244">extern/deprecated/redis-test/bench/benchmark.go</a></td>
+              <td>Receive</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/etcd/etcdclient.go#L269">pkg/models/etcd/etcdclient.go</a></td>
+              <td>Synchronous chan</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/etcd/etcdclient.go#L270">pkg/models/etcd/etcdclient.go</a></td>
+              <td>Goroutine</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/etcd/etcdclient.go#L271">pkg/models/etcd/etcdclient.go</a></td>
+              <td>Close chan</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/etcd/etcdclient.go#L327">pkg/models/etcd/etcdclient.go</a></td>
+              <td>Synchronous chan</td>
+              <td>327</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/etcd/etcdclient.go#L328">pkg/models/etcd/etcdclient.go</a></td>
+              <td>Goroutine</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/etcd/etcdclient.go#L329">pkg/models/etcd/etcdclient.go</a></td>
+              <td>Close chan</td>
+              <td>329</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L97">pkg/models/zk/zkclient.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L257">pkg/models/zk/zkclient.go</a></td>
+              <td>Synchronous chan</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L258">pkg/models/zk/zkclient.go</a></td>
+              <td>Goroutine</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L259">pkg/models/zk/zkclient.go</a></td>
+              <td>Close chan</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L260">pkg/models/zk/zkclient.go</a></td>
+              <td>Receive</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L427">pkg/models/zk/zkclient.go</a></td>
+              <td>Synchronous chan</td>
+              <td>427</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L428">pkg/models/zk/zkclient.go</a></td>
+              <td>Goroutine</td>
+              <td>428</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L429">pkg/models/zk/zkclient.go</a></td>
+              <td>Close chan</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/models/zk/zkclient.go#L430">pkg/models/zk/zkclient.go</a></td>
+              <td>Receive</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/jodis.go#L109">pkg/proxy/jodis.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/jodis.go#L120">pkg/proxy/jodis.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/metrics.go#L20">pkg/proxy/metrics.go</a></td>
+              <td>Goroutine</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/metrics.go#L31">pkg/proxy/metrics.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L61">pkg/proxy/request_test.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L72">pkg/proxy/request_test.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L85">pkg/proxy/request_test.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L98">pkg/proxy/request_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>98</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L98">pkg/proxy/request_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>98</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L99">pkg/proxy/request_test.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L101">pkg/proxy/request_test.go</a></td>
+              <td>Send</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L106">pkg/proxy/request_test.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/request_test.go#L115">pkg/proxy/request_test.go</a></td>
+              <td>Goroutine</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L25">pkg/proxy/backend_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>25</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L26">pkg/proxy/backend_test.go</a></td>
+              <td>Goroutine</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L27">pkg/proxy/backend_test.go</a></td>
+              <td>Close chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L30">pkg/proxy/backend_test.go</a></td>
+              <td>Send</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L34">pkg/proxy/backend_test.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L50">pkg/proxy/backend_test.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L65">pkg/proxy/backend_test.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend_test.go#L67">pkg/proxy/backend_test.go</a></td>
+              <td>Receive</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/stats.go#L65">pkg/proxy/stats.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/stats.go#L201">pkg/proxy/stats.go</a></td>
+              <td>Goroutine</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L48">pkg/proxy/backend.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>48</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L54">pkg/proxy/backend.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L78">pkg/proxy/backend.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L101">pkg/proxy/backend.go</a></td>
+              <td>Send</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L147">pkg/proxy/backend.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>147</td>
+              <td>128</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L150">pkg/proxy/backend.go</a></td>
+              <td>Goroutine</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L151">pkg/proxy/backend.go</a></td>
+              <td>Range over chan</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L177">pkg/proxy/backend.go</a></td>
+              <td>Unknown chan length</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L178">pkg/proxy/backend.go</a></td>
+              <td>Goroutine</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L276">pkg/proxy/backend.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L316">pkg/proxy/backend.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>316</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L317">pkg/proxy/backend.go</a></td>
+              <td>Receive</td>
+              <td>317</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L319">pkg/proxy/backend.go</a></td>
+              <td>Receive</td>
+              <td>319</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L331">pkg/proxy/backend.go</a></td>
+              <td>Receive</td>
+              <td>331</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/backend.go#L364">pkg/proxy/backend.go</a></td>
+              <td>Send</td>
+              <td>364</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L95">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L96">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L321">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L322">pkg/proxy/proxy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>322</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L322">pkg/proxy/proxy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>322</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L332">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>332</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L333">pkg/proxy/proxy.go</a></td>
+              <td>Close chan</td>
+              <td>333</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L335">pkg/proxy/proxy.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>335</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L336">pkg/proxy/proxy.go</a></td>
+              <td>Send</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L350">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L351">pkg/proxy/proxy.go</a></td>
+              <td>Range over chan</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L380">pkg/proxy/proxy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>380</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L381">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L385">pkg/proxy/proxy.go</a></td>
+              <td>Send</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L388">pkg/proxy/proxy.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>388</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L389">pkg/proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L391">pkg/proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L404">pkg/proxy/proxy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>404</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L405">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L407">pkg/proxy/proxy.go</a></td>
+              <td>Send</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L419">pkg/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>419</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L422">pkg/proxy/proxy.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>422</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L423">pkg/proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L425">pkg/proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L434">pkg/proxy/proxy.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>434</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L435">pkg/proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>435</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/proxy.go#L437">pkg/proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>437</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/session.go#L117">pkg/proxy/session.go</a></td>
+              <td>Goroutine</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/session.go#L128">pkg/proxy/session.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/session.go#L140">pkg/proxy/session.go</a></td>
+              <td>Goroutine</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/session.go#L145">pkg/proxy/session.go</a></td>
+              <td>Goroutine</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/redis/conn_test.go#L22">pkg/proxy/redis/conn_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>22</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/redis/conn_test.go#L23">pkg/proxy/redis/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/redis/conn_test.go#L24">pkg/proxy/redis/conn_test.go</a></td>
+              <td>Close chan</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/redis/conn_test.go#L27">pkg/proxy/redis/conn_test.go</a></td>
+              <td>Send</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/proxy/redis/conn_test.go#L35">pkg/proxy/redis/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_proxy.go#L154">pkg/topom/topom_proxy.go</a></td>
+              <td>Go in for</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_proxy.go#L154">pkg/topom/topom_proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats_test.go#L134">pkg/topom/topom_stats_test.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats_test.go#L141">pkg/topom/topom_stats_test.go</a></td>
+              <td>Go in for</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats_test.go#L141">pkg/topom/topom_stats_test.go</a></td>
+              <td>Goroutine</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L28">pkg/topom/topom_stats.go</a></td>
+              <td>Synchronous chan</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L28">pkg/topom/topom_stats.go</a></td>
+              <td>Synchronous chan</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L31">pkg/topom/topom_stats.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L32">pkg/topom/topom_stats.go</a></td>
+              <td>Close chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L41">pkg/topom/topom_stats.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>41</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L42">pkg/topom/topom_stats.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L44">pkg/topom/topom_stats.go</a></td>
+              <td>Receive</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L59">pkg/topom/topom_stats.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L95">pkg/topom/topom_stats.go</a></td>
+              <td>Goroutine</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L116">pkg/topom/topom_stats.go</a></td>
+              <td>Synchronous chan</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L116">pkg/topom/topom_stats.go</a></td>
+              <td>Synchronous chan</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L119">pkg/topom/topom_stats.go</a></td>
+              <td>Goroutine</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L120">pkg/topom/topom_stats.go</a></td>
+              <td>Close chan</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L129">pkg/topom/topom_stats.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>129</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L130">pkg/topom/topom_stats.go</a></td>
+              <td>Receive</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L132">pkg/topom/topom_stats.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L147">pkg/topom/topom_stats.go</a></td>
+              <td>Go in for</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L147">pkg/topom/topom_stats.go</a></td>
+              <td>Goroutine</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_stats.go#L162">pkg/topom/topom_stats.go</a></td>
+              <td>Goroutine</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L121">pkg/topom/topom.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L204">pkg/topom/topom.go</a></td>
+              <td>Goroutine</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L216">pkg/topom/topom.go</a></td>
+              <td>Goroutine</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L228">pkg/topom/topom.go</a></td>
+              <td>Goroutine</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L240">pkg/topom/topom.go</a></td>
+              <td>Goroutine</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L431">pkg/topom/topom.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>431</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L432">pkg/topom/topom.go</a></td>
+              <td>Goroutine</td>
+              <td>432</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L436">pkg/topom/topom.go</a></td>
+              <td>Send</td>
+              <td>436</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L439">pkg/topom/topom.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>439</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L440">pkg/topom/topom.go</a></td>
+              <td>Receive</td>
+              <td>440</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom.go#L442">pkg/topom/topom.go</a></td>
+              <td>Receive</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_action.go#L55">pkg/topom/topom_action.go</a></td>
+              <td>Go in for</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_action.go#L55">pkg/topom/topom_action.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L120">pkg/topom/topom_sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L121">pkg/topom/topom_sentinel.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>121</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L121">pkg/topom/topom_sentinel.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>121</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L131">pkg/topom/topom_sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L132">pkg/topom/topom_sentinel.go</a></td>
+              <td>Close chan</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L134">pkg/topom/topom_sentinel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>134</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L135">pkg/topom/topom_sentinel.go</a></td>
+              <td>Send</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L149">pkg/topom/topom_sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L150">pkg/topom/topom_sentinel.go</a></td>
+              <td>Range over chan</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L209">pkg/topom/topom_sentinel.go</a></td>
+              <td>Go in for</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/topom/topom_sentinel.go#L209">pkg/topom/topom_sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L25">pkg/utils/resolver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>25</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L25">pkg/utils/resolver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>25</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L26">pkg/utils/resolver.go</a></td>
+              <td>Goroutine</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L27">pkg/utils/resolver.go</a></td>
+              <td>Send</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L29">pkg/utils/resolver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>29</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L30">pkg/utils/resolver.go</a></td>
+              <td>Receive</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L32">pkg/utils/resolver.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L45">pkg/utils/resolver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>45</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L45">pkg/utils/resolver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>45</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L46">pkg/utils/resolver.go</a></td>
+              <td>Goroutine</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L47">pkg/utils/resolver.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L49">pkg/utils/resolver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>49</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L50">pkg/utils/resolver.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/resolver.go#L52">pkg/utils/resolver.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/client.go#L332">pkg/utils/redis/client.go</a></td>
+              <td>Goroutine</td>
+              <td>332</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/client.go#L336">pkg/utils/redis/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>336</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/client.go#L337">pkg/utils/redis/client.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/client.go#L339">pkg/utils/redis/client.go</a></td>
+              <td>Receive</td>
+              <td>339</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L38">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>38</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L39">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L95">pkg/utils/redis/sentinel.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>95</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L95">pkg/utils/redis/sentinel.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>95</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L97">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L98">pkg/utils/redis/sentinel.go</a></td>
+              <td>Send</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L101">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L102">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L104">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L115">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L183">pkg/utils/redis/sentinel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L189">pkg/utils/redis/sentinel.go</a></td>
+              <td>Go in for</td>
+              <td>189</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L189">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>189</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L198">pkg/utils/redis/sentinel.go</a></td>
+              <td>Send</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L209">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>209</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L210">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L215">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L230">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L259">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L367">pkg/utils/redis/sentinel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>367</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L372">pkg/utils/redis/sentinel.go</a></td>
+              <td>Go in for</td>
+              <td>372</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L372">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>372</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L377">pkg/utils/redis/sentinel.go</a></td>
+              <td>Send</td>
+              <td>377</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L399">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>399</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L400">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>400</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L412">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>412</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L450">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L465">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>465</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L523">pkg/utils/redis/sentinel.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>523</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L523">pkg/utils/redis/sentinel.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>523</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L525">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>525</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L527">pkg/utils/redis/sentinel.go</a></td>
+              <td>Send</td>
+              <td>527</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L543">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>543</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L544">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>544</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L551">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>551</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L558">pkg/utils/redis/sentinel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>558</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L561">pkg/utils/redis/sentinel.go</a></td>
+              <td>Go in for</td>
+              <td>561</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L561">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>561</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L566">pkg/utils/redis/sentinel.go</a></td>
+              <td>Send</td>
+              <td>566</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L572">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>572</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L573">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>573</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L578">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>578</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L597">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>597</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L647">pkg/utils/redis/sentinel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>647</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L650">pkg/utils/redis/sentinel.go</a></td>
+              <td>Go in for</td>
+              <td>650</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L650">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>650</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L655">pkg/utils/redis/sentinel.go</a></td>
+              <td>Send</td>
+              <td>655</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L661">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>661</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L662">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>662</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L667">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>667</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L704">pkg/utils/redis/sentinel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>704</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L707">pkg/utils/redis/sentinel.go</a></td>
+              <td>Go in for</td>
+              <td>707</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L707">pkg/utils/redis/sentinel.go</a></td>
+              <td>Goroutine</td>
+              <td>707</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L712">pkg/utils/redis/sentinel.go</a></td>
+              <td>Send</td>
+              <td>712</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L718">pkg/utils/redis/sentinel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>718</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L719">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>719</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/redis/sentinel.go#L724">pkg/utils/redis/sentinel.go</a></td>
+              <td>Receive</td>
+              <td>724</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/CodisLabs/codis/blob//pkg/utils/rpc/api.go#L47">pkg/utils/rpc/api.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 20 ,  50 ,
+     39 ,
+     91 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

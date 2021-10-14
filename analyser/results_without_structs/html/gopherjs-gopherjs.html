@@ -1,0 +1,1023 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : gopherjs/gopherjs ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/gopherjs/gopherjs/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> build/build ( 4 features, 1/7 featured file ) </li>
+          
+          <li> compiler/natives/src/internal/poll/poll ( 3 features, 1/1 featured file ) </li>
+          
+          <li> compiler/natives/src/net/http/http ( 32 features, 2/2 featured file ) </li>
+          
+          <li> compiler/natives/src/runtime/runtime ( 3 features, 1/2 featured file ) </li>
+          
+          <li> compiler/natives/src/sync/sync_test ( 9 features, 3/7 featured file ) </li>
+          
+          <li> compiler/natives/src/time/time_test ( 4 features, 1/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 7/59</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>13 </td>
+      <td>18 </td>
+      <td>17</td>
+      <td>2</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0%</td>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>6 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//tool.go#L345">tool.go</a></td>
+              <td>Unknown chan length</td>
+              <td>345</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//tool.go#L476">tool.go</a></td>
+              <td>Send</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//tool.go#L477">tool.go</a></td>
+              <td>Receive</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//build/build.go#L838">build/build.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>838</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//build/build.go#L839">build/build.go</a></td>
+              <td>Receive</td>
+              <td>839</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//build/build.go#L847">build/build.go</a></td>
+              <td>Receive</td>
+              <td>847</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//build/build.go#L853">build/build.go</a></td>
+              <td>Goroutine</td>
+              <td>853</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/internal/poll/fd_poll.go#L62">compiler/natives/src/internal/poll/fd_poll.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/internal/poll/fd_poll.go#L64">compiler/natives/src/internal/poll/fd_poll.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/internal/poll/fd_poll.go#L85">compiler/natives/src/internal/poll/fd_poll.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L24">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L25">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L24">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L25">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L30">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Send</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L33">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Send</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L37">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Send</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L40">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L41">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L43">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L90">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L91">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L90">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L91">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L106">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L107">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Send</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L115">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L119">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>119</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L120">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Send</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L121">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L125">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>125</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L126">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L129">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Receive</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/fetch.go#L131">compiler/natives/src/net/http/fetch.go</a></td>
+              <td>Receive</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L47">compiler/natives/src/net/http/http.go</a></td>
+              <td>Synchronous chan</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L48">compiler/natives/src/net/http/http.go</a></td>
+              <td>Synchronous chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L64">compiler/natives/src/net/http/http.go</a></td>
+              <td>Send</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L75">compiler/natives/src/net/http/http.go</a></td>
+              <td>Send</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L79">compiler/natives/src/net/http/http.go</a></td>
+              <td>Send</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L101">compiler/natives/src/net/http/http.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L102">compiler/natives/src/net/http/http.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/net/http/http.go#L104">compiler/natives/src/net/http/http.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/runtime/runtime.go#L226">compiler/natives/src/runtime/runtime.go</a></td>
+              <td>Synchronous chan</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/runtime/runtime.go#L227">compiler/natives/src/runtime/runtime.go</a></td>
+              <td>Close chan</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/runtime/runtime.go#L228">compiler/natives/src/runtime/runtime.go</a></td>
+              <td>Receive</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/waitgroup.go#L18">compiler/natives/src/sync/waitgroup.go</a></td>
+              <td>Synchronous chan</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/waitgroup.go#L28">compiler/natives/src/sync/waitgroup.go</a></td>
+              <td>Receive</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/cond.go#L20">compiler/natives/src/sync/cond.go</a></td>
+              <td>Synchronous chan</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/cond.go#L23">compiler/natives/src/sync/cond.go</a></td>
+              <td>Receive</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/cond.go#L32">compiler/natives/src/sync/cond.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/cond.go#L39">compiler/natives/src/sync/cond.go</a></td>
+              <td>Send</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/sync.go#L29">compiler/natives/src/sync/sync.go</a></td>
+              <td>Synchronous chan</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/sync.go#L35">compiler/natives/src/sync/sync.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/sync/sync.go#L62">compiler/natives/src/sync/sync.go</a></td>
+              <td>Send</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/time/time.go#L35">compiler/natives/src/time/time.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/time/time.go#L36">compiler/natives/src/time/time.go</a></td>
+              <td>Close chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/time/time.go#L37">compiler/natives/src/time/time.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gopherjs/gopherjs/blob//compiler/natives/src/time/time.go#L55">compiler/natives/src/time/time.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 13 ,  18 ,
+     17 ,
+     2 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

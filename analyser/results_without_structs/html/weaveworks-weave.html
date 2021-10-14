@@ -1,0 +1,3007 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : weaveworks/weave ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/weaveworks/weave/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> common/docker/docker ( 9 features, 1/1 featured file ) </li>
+          
+          <li> ipam/ipam ( 132 features, 8/9 featured file ) </li>
+          
+          <li> nameserver/nameserver ( 12 features, 3/8 featured file ) </li>
+          
+          <li> net/net ( 14 features, 3/15 featured file ) </li>
+          
+          <li> npc/metrics/metrics ( 2 features, 1/1 featured file ) </li>
+          
+          <li> npc/ulogd/ulogd ( 2 features, 1/1 featured file ) </li>
+          
+          <li> plugin/plugin ( 5 features, 1/2 featured file ) </li>
+          
+          <li> prog/kube-utils/main ( 10 features, 3/6 featured file ) </li>
+          
+          <li> prog/sigproxy/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> prog/weave-npc/main ( 5 features, 1/1 featured file ) </li>
+          
+          <li> prog/weaver/main ( 23 features, 2/7 featured file ) </li>
+          
+          <li> proxy/proxy ( 11 features, 2/17 featured file ) </li>
+          
+          <li> router/router ( 89 features, 5/14 featured file ) </li>
+          
+          <li> testing/gossip/gossip ( 19 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 14/35</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>88 </td>
+      <td>73 </td>
+      <td>62</td>
+      <td>44</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>17 </td>
+      <td>6</td>
+      <td>1</td>
+      <td>95.83333333333334</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>5 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>3</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>44</td>
+      <td>15</td>
+      <td>3</td>
+      <td>24.193548387096776%</td>
+      <td>5 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>15 </td>
+      <td>11</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L98">common/docker/client.go</a></td>
+              <td>Goroutine</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L104">common/docker/client.go</a></td>
+              <td>Make chan in for</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L104">common/docker/client.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>104</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L109">common/docker/client.go</a></td>
+              <td>Range over chan</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L146">common/docker/client.go</a></td>
+              <td>Goroutine</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L153">common/docker/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>153</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L154">common/docker/client.go</a></td>
+              <td>Receive</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L156">common/docker/client.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//common/docker/client.go#L165">common/docker/client.go</a></td>
+              <td>Receive</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/status.go#L50">ipam/status.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/status.go#L51">ipam/status.go</a></td>
+              <td>Send</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/status.go#L52">ipam/status.go</a></td>
+              <td>Send</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/status.go#L63">ipam/status.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/claim.go#L29">ipam/claim.go</a></td>
+              <td>Send</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocate.go#L33">ipam/allocate.go</a></td>
+              <td>Send</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocate.go#L38">ipam/allocate.go</a></td>
+              <td>Send</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocate.go#L52">ipam/allocate.go</a></td>
+              <td>Send</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocate.go#L71">ipam/allocate.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http_test.go#L54">ipam/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http_test.go#L165">ipam/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L160">ipam/testutils_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>160</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L161">ipam/testutils_test.go</a></td>
+              <td>Send</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L162">ipam/testutils_test.go</a></td>
+              <td>Send</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L164">ipam/testutils_test.go</a></td>
+              <td>Receive</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L168">ipam/testutils_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L169">ipam/testutils_test.go</a></td>
+              <td>Send</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L170">ipam/testutils_test.go</a></td>
+              <td>Send</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L172">ipam/testutils_test.go</a></td>
+              <td>Receive</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L176">ipam/testutils_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L178">ipam/testutils_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>178</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L179">ipam/testutils_test.go</a></td>
+              <td>Receive</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L181">ipam/testutils_test.go</a></td>
+              <td>Receive</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L186">ipam/testutils_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L187">ipam/testutils_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>187</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/testutils_test.go#L188">ipam/testutils_test.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http.go#L45">ipam/http.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http.go#L47">ipam/http.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>47</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http.go#L48">ipam/http.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http.go#L142">ipam/http.go</a></td>
+              <td>Synchronous chan</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http.go#L143">ipam/http.go</a></td>
+              <td>Send</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http.go#L155">ipam/http.go</a></td>
+              <td>Send</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/http.go#L157">ipam/http.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L96">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L97">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L118">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L121">ipam/allocator_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L122">ipam/allocator_test.go</a></td>
+              <td>Goroutine</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L124">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L132">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L238">ipam/allocator_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L239">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L240">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L241">ipam/allocator_test.go</a></td>
+              <td>Receive</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L243">ipam/allocator_test.go</a></td>
+              <td>Receive</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L245">ipam/allocator_test.go</a></td>
+              <td>Close chan</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L284">ipam/allocator_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>284</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L285">ipam/allocator_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>285</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L286">ipam/allocator_test.go</a></td>
+              <td>Goroutine</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L289">ipam/allocator_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>289</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L290">ipam/allocator_test.go</a></td>
+              <td>Receive</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L296">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L302">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L304">ipam/allocator_test.go</a></td>
+              <td>Receive</td>
+              <td>304</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L320">ipam/allocator_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L323">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>323</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L327">ipam/allocator_test.go</a></td>
+              <td>Goroutine</td>
+              <td>327</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L328">ipam/allocator_test.go</a></td>
+              <td>Goroutine</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L337">ipam/allocator_test.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L337">ipam/allocator_test.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L365">ipam/allocator_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L370">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>370</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L371">ipam/allocator_test.go</a></td>
+              <td>Send</td>
+              <td>371</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L373">ipam/allocator_test.go</a></td>
+              <td>Receive</td>
+              <td>373</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L599">ipam/allocator_test.go</a></td>
+              <td>Go in for</td>
+              <td>599</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L599">ipam/allocator_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>599</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator_test.go#L599">ipam/allocator_test.go</a></td>
+              <td>Goroutine</td>
+              <td>599</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L178">ipam/allocator.go</a></td>
+              <td>Unknown chan length</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L179">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L183">ipam/allocator.go</a></td>
+              <td>Goroutine</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L189">ipam/allocator.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>189</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L190">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L199">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L284">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L287">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L293">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L302">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L308">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L309">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>309</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L310">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L312">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>312</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L317">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>317</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L327">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>327</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L332">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>332</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L345">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>345</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L367">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>367</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L377">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>377</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L384">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L385">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L386">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L388">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>388</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L404">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>404</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L405">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L409">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L413">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>413</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L415">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>415</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L448">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>448</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L449">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L461">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>461</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L463">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>463</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L470">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>470</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L471">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>471</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L475">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>475</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L482">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>482</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L489">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>489</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L499">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>499</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L501">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>501</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L548">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>548</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L564">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>564</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L565">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>565</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L575">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>575</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L581">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>581</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L583">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>583</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L586">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L592">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>592</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L593">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>593</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L594">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>594</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L596">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>596</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L634">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>634</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L635">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>635</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L636">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>636</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L638">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>638</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L644">ipam/allocator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>644</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L645">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>645</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L646">ipam/allocator.go</a></td>
+              <td>Send</td>
+              <td>646</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L648">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>648</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L678">ipam/allocator.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>678</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L678">ipam/allocator.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>678</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L681">ipam/allocator.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>681</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L682">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>682</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L684">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>684</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//ipam/allocator.go#L686">ipam/allocator.go</a></td>
+              <td>Receive</td>
+              <td>686</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/dns_test.go#L34">nameserver/dns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/dns_test.go#L131">nameserver/dns_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>131</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/dns_test.go#L131">nameserver/dns_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>131</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/dns_test.go#L133">nameserver/dns_test.go</a></td>
+              <td>Send</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/dns_test.go#L145">nameserver/dns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/dns.go#L148">nameserver/dns.go</a></td>
+              <td>Go in for</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/dns.go#L148">nameserver/dns.go</a></td>
+              <td>Goroutine</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/nameserver.go#L59">nameserver/nameserver.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/nameserver.go#L62">nameserver/nameserver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>62</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/nameserver.go#L63">nameserver/nameserver.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/nameserver.go#L65">nameserver/nameserver.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//nameserver/nameserver.go#L73">nameserver/nameserver.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/if.go#L21">net/if.go</a></td>
+              <td>Synchronous chan</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/if.go#L32">net/if.go</a></td>
+              <td>Range over chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/if.go#L49">net/if.go</a></td>
+              <td>Synchronous chan</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/if.go#L67">net/if.go</a></td>
+              <td>Range over chan</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/iptables.go#L136">net/iptables.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/iptables.go#L212">net/iptables.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/iptables.go#L220">net/iptables.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>220</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/iptables.go#L221">net/iptables.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/bridge.go#L164">net/bridge.go</a></td>
+              <td>Synchronous chan</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/bridge.go#L178">net/bridge.go</a></td>
+              <td>Goroutine</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/bridge.go#L179">net/bridge.go</a></td>
+              <td>Range over chan</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/bridge.go#L666">net/bridge.go</a></td>
+              <td>Synchronous chan</td>
+              <td>666</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/bridge.go#L671">net/bridge.go</a></td>
+              <td>Goroutine</td>
+              <td>671</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//net/bridge.go#L672">net/bridge.go</a></td>
+              <td>Range over chan</td>
+              <td>672</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//npc/metrics/metrics.go#L110">npc/metrics/metrics.go</a></td>
+              <td>Goroutine</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//npc/metrics/metrics.go#L117">npc/metrics/metrics.go</a></td>
+              <td>Goroutine</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//npc/ulogd/ulogd.go#L31">npc/ulogd/ulogd.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//npc/ulogd/ulogd.go#L32">npc/ulogd/ulogd.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//plugin/plugin.go#L63">plugin/plugin.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>63</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//plugin/plugin.go#L88">plugin/plugin.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//plugin/plugin.go#L91">plugin/plugin.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//plugin/plugin.go#L115">plugin/plugin.go</a></td>
+              <td>Goroutine</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//plugin/plugin.go#L116">plugin/plugin.go</a></td>
+              <td>Send</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/peerlist_test.go#L63">prog/kube-utils/peerlist_test.go</a></td>
+              <td>Go in for</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/peerlist_test.go#L63">prog/kube-utils/peerlist_test.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/annotations.go#L142">prog/kube-utils/annotations.go</a></td>
+              <td>Synchronous chan</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/annotations.go#L146">prog/kube-utils/annotations.go</a></td>
+              <td>Close chan</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/annotations.go#L154">prog/kube-utils/annotations.go</a></td>
+              <td>Close chan</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/main.go#L267">prog/kube-utils/main.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/main.go#L395">prog/kube-utils/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>395</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/main.go#L397">prog/kube-utils/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>397</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/main.go#L400">prog/kube-utils/main.go</a></td>
+              <td>Receive</td>
+              <td>400</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/kube-utils/main.go#L401">prog/kube-utils/main.go</a></td>
+              <td>Close chan</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/sigproxy/main.go#L18">prog/sigproxy/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>18</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/sigproxy/main.go#L33">prog/sigproxy/main.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/sigproxy/main.go#L36">prog/sigproxy/main.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weave-npc/main.go#L336">prog/weave-npc/main.go</a></td>
+              <td>Goroutine</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weave-npc/main.go#L337">prog/weave-npc/main.go</a></td>
+              <td>Goroutine</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weave-npc/main.go#L338">prog/weave-npc/main.go</a></td>
+              <td>Goroutine</td>
+              <td>338</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weave-npc/main.go#L340">prog/weave-npc/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>340</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weave-npc/main.go#L342">prog/weave-npc/main.go</a></td>
+              <td>Receive</td>
+              <td>342</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L66">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L67">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L73">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L78">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L84">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L90">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L96">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L107">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L118">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L123">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L129">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L154">prog/weaver/metrics.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L166">prog/weaver/metrics.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/metrics.go#L168">prog/weaver/metrics.go</a></td>
+              <td>Send</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L288">prog/weaver/main.go</a></td>
+              <td>Goroutine</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L487">prog/weaver/main.go</a></td>
+              <td>Goroutine</td>
+              <td>487</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L497">prog/weaver/main.go</a></td>
+              <td>Goroutine</td>
+              <td>497</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L504">prog/weaver/main.go</a></td>
+              <td>Goroutine</td>
+              <td>504</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L508">prog/weaver/main.go</a></td>
+              <td>Goroutine</td>
+              <td>508</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L515">prog/weaver/main.go</a></td>
+              <td>Goroutine</td>
+              <td>515</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L526">prog/weaver/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L527">prog/weaver/main.go</a></td>
+              <td>Goroutine</td>
+              <td>527</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//prog/weaver/main.go#L528">prog/weaver/main.go</a></td>
+              <td>Close chan</td>
+              <td>528</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy_intercept.go#L101">proxy/proxy_intercept.go</a></td>
+              <td>Goroutine</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy_intercept.go#L102">proxy/proxy_intercept.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L133">proxy/proxy.go</a></td>
+              <td>Synchronous chan</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L286">proxy/proxy.go</a></td>
+              <td>Synchronous chan</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L288">proxy/proxy.go</a></td>
+              <td>Go in for</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L288">proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L289">proxy/proxy.go</a></td>
+              <td>Send</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L297">proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L423">proxy/proxy.go</a></td>
+              <td>Send</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L441">proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>441</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//proxy/proxy.go#L461">proxy/proxy.go</a></td>
+              <td>Receive</td>
+              <td>461</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/pcap.go#L68">router/pcap.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/awsvpc.go#L57">router/awsvpc.go</a></td>
+              <td>Synchronous chan</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/awsvpc.go#L58">router/awsvpc.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>58</td>
+              <td>1</td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L190">router/overlay_switch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L193">router/overlay_switch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L202">router/overlay_switch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L203">router/overlay_switch.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>203</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L234">router/overlay_switch.go</a></td>
+              <td>Go in for</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L233">router/overlay_switch.go</a></td>
+              <td>Make chan in for</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L233">router/overlay_switch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L234">router/overlay_switch.go</a></td>
+              <td>Goroutine</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L243">router/overlay_switch.go</a></td>
+              <td>Goroutine</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L247">router/overlay_switch.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L247">router/overlay_switch.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L253">router/overlay_switch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>253</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L254">router/overlay_switch.go</a></td>
+              <td>Receive</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L258">router/overlay_switch.go</a></td>
+              <td>Receive</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L261">router/overlay_switch.go</a></td>
+              <td>Receive</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L264">router/overlay_switch.go</a></td>
+              <td>Receive</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L268">router/overlay_switch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>268</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L269">router/overlay_switch.go</a></td>
+              <td>Send</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L270">router/overlay_switch.go</a></td>
+              <td>Receive</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L282">router/overlay_switch.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>282</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L282">router/overlay_switch.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>282</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L285">router/overlay_switch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>285</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L286">router/overlay_switch.go</a></td>
+              <td>Receive</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L289">router/overlay_switch.go</a></td>
+              <td>Receive</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L385">router/overlay_switch.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>385</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/overlay_switch.go#L386">router/overlay_switch.go</a></td>
+              <td>Send</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L123">router/sleeve.go</a></td>
+              <td>Goroutine</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L240">router/sleeve.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>240</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L241">router/sleeve.go</a></td>
+              <td>Send</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L242">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L382">router/sleeve.go</a></td>
+              <td>Unknown chan length</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L383">router/sleeve.go</a></td>
+              <td>Unknown chan length</td>
+              <td>383</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L384">router/sleeve.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>384</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L385">router/sleeve.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>385</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L386">router/sleeve.go</a></td>
+              <td>Synchronous chan</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L387">router/sleeve.go</a></td>
+              <td>Synchronous chan</td>
+              <td>387</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L408">router/sleeve.go</a></td>
+              <td>Synchronous chan</td>
+              <td>408</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L409">router/sleeve.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>409</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L418">router/sleeve.go</a></td>
+              <td>Goroutine</td>
+              <td>418</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L435">router/sleeve.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>435</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L436">router/sleeve.go</a></td>
+              <td>Send</td>
+              <td>436</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L437">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>437</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L541">router/sleeve.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>541</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L542">router/sleeve.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>542</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L543">router/sleeve.go</a></td>
+              <td>Send</td>
+              <td>543</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L544">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>544</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L611">router/sleeve.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>611</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L612">router/sleeve.go</a></td>
+              <td>Send</td>
+              <td>612</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L613">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>613</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L629">router/sleeve.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>629</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L630">router/sleeve.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>630</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L631">router/sleeve.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>631</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L632">router/sleeve.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>632</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L633">router/sleeve.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>633</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L634">router/sleeve.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>634</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L640">router/sleeve.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>640</td>
+              <td>9</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L641">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>641</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L644">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>644</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L647">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>647</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L650">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>650</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L653">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>653</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L662">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>662</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L665">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>665</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L668">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>668</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L671">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>671</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L695">router/sleeve.go</a></td>
+              <td>Send</td>
+              <td>695</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L698">router/sleeve.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>698</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L716">router/sleeve.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>716</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/sleeve.go#L717">router/sleeve.go</a></td>
+              <td>Receive</td>
+              <td>717</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L162">router/fastdp.go</a></td>
+              <td>Goroutine</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L631">router/fastdp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>631</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L633">router/fastdp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>633</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L634">router/fastdp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>634</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L635">router/fastdp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>635</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L705">router/fastdp.go</a></td>
+              <td>Goroutine</td>
+              <td>705</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L723">router/fastdp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>723</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L724">router/fastdp.go</a></td>
+              <td>Receive</td>
+              <td>724</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L731">router/fastdp.go</a></td>
+              <td>Receive</td>
+              <td>731</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L736">router/fastdp.go</a></td>
+              <td>Send</td>
+              <td>736</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L751">router/fastdp.go</a></td>
+              <td>Receive</td>
+              <td>751</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L768">router/fastdp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>768</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L769">router/fastdp.go</a></td>
+              <td>Send</td>
+              <td>769</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L853">router/fastdp.go</a></td>
+              <td>Send</td>
+              <td>853</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L1048">router/fastdp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1048</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L1049">router/fastdp.go</a></td>
+              <td>Receive</td>
+              <td>1049</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//router/fastdp.go#L1052">router/fastdp.go</a></td>
+              <td>Receive</td>
+              <td>1052</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L64">testing/gossip/mocks.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>64</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L65">testing/gossip/mocks.go</a></td>
+              <td>Send</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L79">testing/gossip/mocks.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L80">testing/gossip/mocks.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L94">testing/gossip/mocks.go</a></td>
+              <td>Make chan in for</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L94">testing/gossip/mocks.go</a></td>
+              <td>Synchronous chan</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L95">testing/gossip/mocks.go</a></td>
+              <td>Send</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L96">testing/gossip/mocks.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L104">testing/gossip/mocks.go</a></td>
+              <td>Synchronous chan</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L105">testing/gossip/mocks.go</a></td>
+              <td>Send</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L106">testing/gossip/mocks.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L117">testing/gossip/mocks.go</a></td>
+              <td>chan used as a param</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L120">testing/gossip/mocks.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>120</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L121">testing/gossip/mocks.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L170">testing/gossip/mocks.go</a></td>
+              <td>Receive</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L177">testing/gossip/mocks.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>177</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L179">testing/gossip/mocks.go</a></td>
+              <td>Goroutine</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L191">testing/gossip/mocks.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/weaveworks/weave/blob//testing/gossip/mocks.go#L192">testing/gossip/mocks.go</a></td>
+              <td>Send</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 88 ,  73 ,
+     62 ,
+     44 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

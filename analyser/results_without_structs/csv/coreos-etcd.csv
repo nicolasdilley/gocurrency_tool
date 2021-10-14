@@ -1,0 +1,2560 @@
+Line num,0
+packages num,56,135
+files num,184,838
+Average Line num per featured file,45766
+main_test,7
+api/authpb/authpb,1099
+api/etcdserverpb/etcdserverpb_test,28033
+api/etcdserverpb/gw/gw,2965
+api/membershippb/membershippb,1388
+api/mvccpb/mvccpb,739
+api/v3rpc/rpctypes/rpctypes,244
+api/version/version,29
+api/versionpb/versionpb,70
+client/pkg/fileutil/fileutil,1150
+client/pkg/logutil/logutil,155
+client/pkg/pathutil/pathutil,37
+client/pkg/srv/srv,376
+client/pkg/systemd/systemd,10
+client/pkg/testutil/testutil,494
+client/pkg/tlsutil/tlsutil,98
+client/pkg/transport/transport,1906
+client/pkg/types/types,786
+client/v2/client_test,4533
+client/v3/clientv3_test,4777
+client/v3/clientv3util/clientv3util,51
+client/v3/concurrency/concurrency_test,959
+client/v3/credentials/credentials,86
+client/v3/experimental/recipes/recipe,477
+client/v3/internal/endpoint/endpoint,154
+client/v3/internal/resolver/resolver,49
+client/v3/leasing/leasing,955
+client/v3/mirror/mirror,66
+client/v3/mock/mockserver/mockserver,142
+client/v3/namespace/namespace,330
+client/v3/naming/naming,1
+client/v3/naming/endpoints/endpoints,188
+client/v3/naming/endpoints/internal/internal,11
+client/v3/naming/resolver/resolver,87
+client/v3/ordering/ordering,256
+client/v3/snapshot/snapshot,75
+client/v3/yaml/yaml,158
+contrib/lock/client/main,155
+contrib/lock/storage/main,77
+contrib/raftexample/main,890
+etcdctl/main,71
+etcdctl/ctlv2/ctlv2,63
+etcdctl/ctlv2/command/command,1729
+etcdctl/ctlv3/ctlv3,89
+etcdctl/ctlv3/command/command,4720
+etcdutl/main,81
+etcdutl/etcdutl/etcdutl,799
+etcdutl/snapshot/snapshot,388
+pkg/adt/adt,1001
+pkg/cobrautl/cobrautl,164
+pkg/contention/contention,37
+pkg/cpuutil/cpuutil,17
+pkg/crc/crc,68
+pkg/debugutil/debugutil,25
+pkg/expect/expect,233
+pkg/flags/flags,673
+pkg/grpc_testing/grpc_testing,69
+pkg/httputil/httputil,52
+pkg/idutil/idutil,74
+pkg/ioutil/ioutil,298
+pkg/netutil/netutil,667
+pkg/osutil/osutil,158
+pkg/pbutil/pbutil,107
+pkg/proxy/proxy,1389
+pkg/report/report,542
+pkg/runtime/runtime,38
+pkg/schedule/schedule,144
+pkg/stringutil/stringutil,48
+pkg/traceutil/traceutil,455
+pkg/wait/wait,247
+raft/raft_test,10377
+raft/confchange/confchange,656
+raft/quorum/quorum,492
+raft/raftpb/raftpb,3013
+raft/rafttest/rafttest,1147
+raft/tracker/tracker,726
+server/main,46
+server/auth/auth,2658
+server/config/config,411
+server/embed/embed,2440
+server/etcdmain/etcdmain,2193
+server/etcdserver/etcdserver,8496
+server/etcdserver/api/api,79
+server/etcdserver/api/etcdhttp/etcdhttp,835
+server/etcdserver/api/membership/membership,2276
+server/etcdserver/api/rafthttp/rafthttp,4561
+server/etcdserver/api/snap/snap,660
+server/etcdserver/api/snap/snappb/snappb,318
+server/etcdserver/api/v2auth/v2auth,1352
+server/etcdserver/api/v2discovery/v2discovery,832
+server/etcdserver/api/v2error/v2error,151
+server/etcdserver/api/v2http/v2http,4153
+server/etcdserver/api/v2http/httptypes/httptypes,200
+server/etcdserver/api/v2stats/v2stats,263
+server/etcdserver/api/v2store/v2store,2488
+server/etcdserver/api/v2v3/v2v3,769
+server/etcdserver/api/v3alarm/v3alarm,100
+server/etcdserver/api/v3client/v3client,32
+server/etcdserver/api/v3compactor/v3compactor,471
+server/etcdserver/api/v3election/v3election,108
+server/etcdserver/api/v3election/v3electionpb/v3electionpb,2361
+server/etcdserver/api/v3election/v3electionpb/gw/gw,349
+server/etcdserver/api/v3lock/v3lock,37
+server/etcdserver/api/v3lock/v3lockpb/v3lockpb,1035
+server/etcdserver/api/v3lock/v3lockpb/gw/gw,179
+server/etcdserver/api/v3rpc/v3rpc,1936
+server/etcdserver/cindex/cindex,126
+server/etcdserver/version/version,235
+server/lease/lease,1417
+server/lease/leasehttp/leasehttp,294
+server/lease/leasepb/leasepb,691
+server/mock/mockstorage/mockstorage,38
+server/mock/mockstore/mockstore,125
+server/mock/mockwait/mockwait,28
+server/proxy/grpcproxy/grpcproxy,1814
+server/proxy/grpcproxy/adapter/adapter,458
+server/proxy/grpcproxy/cache/cache,117
+server/proxy/httpproxy/httpproxy,786
+server/proxy/tcpproxy/tcpproxy,285
+server/storage/storage,356
+server/storage/backend/backend_test,1628
+server/storage/backend/testing/betesting,31
+server/storage/datadir/datadir_test,47
+server/storage/mvcc/mvcc,6116
+server/storage/schema/schema,1850
+server/storage/wal/wal,2532
+server/storage/wal/walpb/walpb,623
+server/verify/verify,98
+tools/benchmark/main,13
+tools/benchmark/cmd/cmd,1350
+tools/etcd-dump-db/main,232
+tools/etcd-dump-logs/main,541
+tools/etcd-dump-metrics/main,464
+tools/local-tester/bridge/main,367
+tools/mod/tools,24
+Filename, #,Concurrent Type, Line number , Number
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,238,
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,392,
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,2461,
+api/etcdserverpb/gw/rpc.pb.gw.go,2,Receive,2462,
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,2626,
+api/etcdserverpb/gw/rpc.pb.gw.go,2,Receive,2627,
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,2695,
+api/etcdserverpb/gw/rpc.pb.gw.go,2,Receive,2696,
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,2932,
+api/etcdserverpb/gw/rpc.pb.gw.go,2,Receive,2933,
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,3097,
+api/etcdserverpb/gw/rpc.pb.gw.go,2,Receive,3098,
+api/etcdserverpb/gw/rpc.pb.gw.go,1,Goroutine,3334,
+api/etcdserverpb/gw/rpc.pb.gw.go,2,Receive,3335,
+client/pkg/fileutil/lock_test.go,8,Known chan length (length),60,1
+client/pkg/fileutil/lock_test.go,1,Goroutine,61,
+client/pkg/fileutil/lock_test.go,3,Send,66,
+client/pkg/fileutil/lock_test.go,16,Select (number of branch),72,2
+client/pkg/fileutil/lock_test.go,2,Receive,73,
+client/pkg/fileutil/lock_test.go,2,Receive,75,
+client/pkg/fileutil/lock_test.go,16,Select (number of branch),84,2
+client/pkg/fileutil/lock_test.go,2,Receive,85,
+client/pkg/fileutil/lock_test.go,2,Receive,86,
+client/pkg/fileutil/purge_test.go,4,Synchronous chan,45,
+client/pkg/fileutil/purge_test.go,8,Known chan length (length),45,10
+client/pkg/fileutil/purge_test.go,16,Select (number of branch),49,2
+client/pkg/fileutil/purge_test.go,2,Receive,50,
+client/pkg/fileutil/purge_test.go,2,Receive,52,
+client/pkg/fileutil/purge_test.go,5,Go in for,57,
+client/pkg/fileutil/purge_test.go,7,Goroutine in for with constant (constant),57,10
+client/pkg/fileutil/purge_test.go,1,Goroutine,57,
+client/pkg/fileutil/purge_test.go,16,Select (number of branch),68,2
+client/pkg/fileutil/purge_test.go,2,Receive,69,
+client/pkg/fileutil/purge_test.go,2,Receive,70,
+client/pkg/fileutil/purge_test.go,16,Select (number of branch),85,3
+client/pkg/fileutil/purge_test.go,2,Receive,86,
+client/pkg/fileutil/purge_test.go,2,Receive,88,
+client/pkg/fileutil/purge_test.go,2,Receive,90,
+client/pkg/fileutil/purge_test.go,15,Close chan,92,
+client/pkg/fileutil/purge_test.go,4,Synchronous chan,118,
+client/pkg/fileutil/purge_test.go,8,Known chan length (length),118,10
+client/pkg/fileutil/purge_test.go,16,Select (number of branch),122,2
+client/pkg/fileutil/purge_test.go,2,Receive,123,
+client/pkg/fileutil/purge_test.go,2,Receive,124,
+client/pkg/fileutil/purge_test.go,16,Select (number of branch),139,3
+client/pkg/fileutil/purge_test.go,2,Receive,140,
+client/pkg/fileutil/purge_test.go,2,Receive,142,
+client/pkg/fileutil/purge_test.go,2,Receive,144,
+client/pkg/fileutil/purge_test.go,16,Select (number of branch),154,2
+client/pkg/fileutil/purge_test.go,2,Receive,155,
+client/pkg/fileutil/purge_test.go,2,Receive,156,
+client/pkg/fileutil/purge_test.go,16,Select (number of branch),170,3
+client/pkg/fileutil/purge_test.go,2,Receive,171,
+client/pkg/fileutil/purge_test.go,2,Receive,173,
+client/pkg/fileutil/purge_test.go,2,Receive,175,
+client/pkg/fileutil/purge_test.go,15,Close chan,178,
+client/pkg/fileutil/purge.go,20,Receive only chan (<-chan),27,
+client/pkg/fileutil/purge.go,20,Receive only chan (<-chan),31,
+client/pkg/fileutil/purge.go,4,Synchronous chan,32,
+client/pkg/fileutil/purge.go,20,Receive only chan (<-chan),39,
+client/pkg/fileutil/purge.go,21,Send only chan (chan<-),39,
+client/pkg/fileutil/purge.go,21,Send only chan (chan<-),39,
+client/pkg/fileutil/purge.go,8,Known chan length (length),43,1
+client/pkg/fileutil/purge.go,1,Goroutine,44,
+client/pkg/fileutil/purge.go,3,Send,51,
+client/pkg/fileutil/purge.go,3,Send,69,
+client/pkg/fileutil/purge.go,3,Send,74,
+client/pkg/fileutil/purge.go,3,Send,82,
+client/pkg/fileutil/purge.go,16,Select (number of branch),85,2
+client/pkg/fileutil/purge.go,2,Receive,86,
+client/pkg/fileutil/purge.go,2,Receive,87,
+client/pkg/testutil/testutil.go,16,Select (number of branch),73,2
+client/pkg/testutil/testutil.go,2,Receive,74,
+client/pkg/testutil/testutil.go,2,Receive,76,
+client/pkg/testutil/recorder.go,4,Synchronous chan,72,
+client/pkg/testutil/recorder.go,1,Goroutine,73,
+client/pkg/testutil/recorder.go,3,Send,76,
+client/pkg/testutil/recorder.go,15,Close chan,78,
+client/pkg/testutil/recorder.go,3,Send,98,
+client/pkg/testutil/recorder.go,17,Select with default (number of branch),103,2
+client/pkg/testutil/recorder.go,2,Receive,104,
+client/pkg/testutil/recorder.go,16,Select (number of branch),120,2
+client/pkg/testutil/recorder.go,2,Receive,121,
+client/pkg/testutil/recorder.go,2,Receive,122,
+client/pkg/testutil/recorder.go,16,Select (number of branch),128,2
+client/pkg/testutil/recorder.go,2,Receive,129,
+client/pkg/testutil/recorder.go,2,Receive,131,
+client/pkg/testutil/leak_test.go,5,Go in for,41,
+client/pkg/testutil/leak_test.go,1,Goroutine,41,
+client/pkg/testutil/leak_test.go,16,Select (number of branch),42,0
+client/pkg/transport/keepalive_listener_test.go,1,Goroutine,38,
+client/pkg/transport/keepalive_listener_test.go,1,Goroutine,68,
+client/pkg/transport/limit_listen.go,3,Send,41,
+client/pkg/transport/limit_listen.go,2,Receive,42,
+client/pkg/transport/transport_test.go,4,Synchronous chan,53,
+client/pkg/transport/transport_test.go,1,Goroutine,54,
+client/pkg/transport/transport_test.go,3,Send,56,
+client/pkg/transport/transport_test.go,1,Goroutine,58,
+client/pkg/transport/transport_test.go,3,Send,70,
+client/pkg/transport/transport_test.go,2,Receive,72,
+client/pkg/transport/transport_test.go,2,Receive,73,
+client/pkg/transport/timeout_dialer_test.go,4,Synchronous chan,24,
+client/pkg/transport/timeout_dialer_test.go,3,Send,31,
+client/pkg/transport/timeout_dialer_test.go,1,Goroutine,34,
+client/pkg/transport/timeout_dialer_test.go,8,Known chan length (length),48,1
+client/pkg/transport/timeout_dialer_test.go,1,Goroutine,49,
+client/pkg/transport/timeout_dialer_test.go,3,Send,51,
+client/pkg/transport/timeout_dialer_test.go,16,Select (number of branch),54,2
+client/pkg/transport/timeout_dialer_test.go,2,Receive,55,
+client/pkg/transport/timeout_dialer_test.go,2,Receive,58,
+client/pkg/transport/timeout_dialer_test.go,1,Goroutine,73,
+client/pkg/transport/timeout_dialer_test.go,3,Send,75,
+client/pkg/transport/timeout_dialer_test.go,16,Select (number of branch),78,2
+client/pkg/transport/timeout_dialer_test.go,2,Receive,79,
+client/pkg/transport/timeout_dialer_test.go,2,Receive,80,
+client/pkg/transport/timeout_dialer_test.go,2,Receive,103,
+client/pkg/transport/timeout_listener_test.go,8,Known chan length (length),50,1
+client/pkg/transport/timeout_listener_test.go,2,Receive,59,
+client/pkg/transport/timeout_listener_test.go,1,Goroutine,61,
+client/pkg/transport/timeout_listener_test.go,3,Send,65,
+client/pkg/transport/timeout_listener_test.go,8,Known chan length (length),72,1
+client/pkg/transport/timeout_listener_test.go,1,Goroutine,73,
+client/pkg/transport/timeout_listener_test.go,3,Send,75,
+client/pkg/transport/timeout_listener_test.go,16,Select (number of branch),78,2
+client/pkg/transport/timeout_listener_test.go,2,Receive,79,
+client/pkg/transport/timeout_listener_test.go,2,Receive,81,
+client/pkg/transport/timeout_listener_test.go,3,Send,82,
+client/pkg/transport/timeout_listener_test.go,3,Send,89,
+client/pkg/transport/timeout_listener_test.go,1,Goroutine,91,
+client/pkg/transport/timeout_listener_test.go,3,Send,95,
+client/pkg/transport/timeout_listener_test.go,1,Goroutine,100,
+client/pkg/transport/timeout_listener_test.go,3,Send,102,
+client/pkg/transport/timeout_listener_test.go,16,Select (number of branch),105,2
+client/pkg/transport/timeout_listener_test.go,2,Receive,106,
+client/pkg/transport/timeout_listener_test.go,2,Receive,107,
+client/pkg/transport/timeout_listener_test.go,3,Send,108,
+client/pkg/transport/timeout_listener_test.go,3,Send,115,
+client/pkg/transport/listener_tls.go,4,Synchronous chan,79,
+client/pkg/transport/listener_tls.go,4,Synchronous chan,80,
+client/pkg/transport/listener_tls.go,1,Goroutine,84,
+client/pkg/transport/listener_tls.go,16,Select (number of branch),89,2
+client/pkg/transport/listener_tls.go,2,Receive,90,
+client/pkg/transport/listener_tls.go,2,Receive,92,
+client/pkg/transport/listener_tls.go,5,Go in for,137,
+client/pkg/transport/listener_tls.go,1,Goroutine,137,
+client/pkg/transport/listener_tls.go,16,Select (number of branch),160,2
+client/pkg/transport/listener_tls.go,3,Send,161,
+client/pkg/transport/listener_tls.go,2,Receive,163,
+client/pkg/transport/listener_tls.go,2,Receive,270,
+client/pkg/transport/listener_test.go,1,Goroutine,229,
+client/pkg/transport/listener_test.go,8,Known chan length (length),305,1
+client/pkg/transport/listener_test.go,1,Goroutine,306,
+client/pkg/transport/listener_test.go,3,Send,308,
+client/pkg/transport/listener_test.go,8,Known chan length (length),311,1
+client/pkg/transport/listener_test.go,8,Known chan length (length),312,1
+client/pkg/transport/listener_test.go,1,Goroutine,313,
+client/pkg/transport/listener_test.go,3,Send,316,
+client/pkg/transport/listener_test.go,3,Send,318,
+client/pkg/transport/listener_test.go,16,Select (number of branch),322,3
+client/pkg/transport/listener_test.go,2,Receive,323,
+client/pkg/transport/listener_test.go,2,Receive,327,
+client/pkg/transport/listener_test.go,2,Receive,329,
+client/v2/fake_transport_test.go,16,Select (number of branch),23,4
+client/v2/fake_transport_test.go,2,Receive,24,
+client/v2/fake_transport_test.go,2,Receive,26,
+client/v2/fake_transport_test.go,2,Receive,28,
+client/v2/fake_transport_test.go,2,Receive,29,
+client/v2/fake_transport_test.go,16,Select (number of branch),31,2
+client/v2/fake_transport_test.go,2,Receive,33,
+client/v2/fake_transport_test.go,2,Receive,37,
+client/v2/cancelreq.go,4,Synchronous chan,12,
+client/v2/cancelreq.go,15,Close chan,16,
+client/v2/client.go,16,Select (number of branch),478,2
+client/v2/client.go,2,Receive,479,
+client/v2/client.go,2,Receive,481,
+client/v2/client.go,8,Known chan length (length),561,1
+client/v2/client.go,1,Goroutine,562,
+client/v2/client.go,3,Send,564,
+client/v2/client.go,15,Close chan,565,
+client/v2/client.go,16,Select (number of branch),571,2
+client/v2/client.go,2,Receive,572,
+client/v2/client.go,2,Receive,574,
+client/v2/client.go,2,Receive,577,
+client/v2/client.go,4,Synchronous chan,602,
+client/v2/client.go,1,Goroutine,603,
+client/v2/client.go,3,Send,605,
+client/v2/client.go,16,Select (number of branch),608,2
+client/v2/client.go,2,Receive,609,
+client/v2/client.go,2,Receive,611,
+client/v2/client.go,2,Receive,613,
+client/v2/client_test.go,3,Send,115,
+client/v2/client_test.go,3,Send,128,
+client/v2/client_test.go,3,Send,153,
+client/v2/client_test.go,3,Send,171,
+client/v2/client_test.go,3,Send,183,
+client/v2/client_test.go,3,Send,184,
+client/v2/client_test.go,1,Goroutine,214,
+client/v2/client_test.go,3,Send,220,
+client/v2/client_test.go,2,Receive,238,
+client/v2/client_test.go,1,Goroutine,253,
+client/v2/client_test.go,3,Send,254,
+client/v2/client_test.go,4,Synchronous chan,274,
+client/v2/client_test.go,1,Goroutine,276,
+client/v2/client_test.go,15,Close chan,278,
+client/v2/client_test.go,17,Select with default (number of branch),284,2
+client/v2/client_test.go,2,Receive,285,
+client/v2/client_test.go,3,Send,290,
+client/v2/client_test.go,16,Select (number of branch),292,2
+client/v2/client_test.go,2,Receive,293,
+client/v2/client_test.go,2,Receive,296,
+client/v2/client_test.go,3,Send,303,
+client/v2/client_test.go,8,Known chan length (length),306,1
+client/v2/client_test.go,1,Goroutine,307,
+client/v2/client_test.go,3,Send,309,
+client/v2/client_test.go,16,Select (number of branch),312,2
+client/v2/client_test.go,2,Receive,313,
+client/v2/client_test.go,2,Receive,317,
+client/v2/client_test.go,3,Send,467,
+client/v2/client_test.go,8,Known chan length (length),473,1
+client/v2/client_test.go,1,Goroutine,474,
+client/v2/client_test.go,3,Send,478,
+client/v2/client_test.go,16,Select (number of branch),481,2
+client/v2/client_test.go,2,Receive,482,
+client/v2/client_test.go,2,Receive,486,
+client/v2/client_test.go,8,Known chan length (length),497,1
+client/v2/client_test.go,3,Send,498,
+client/v2/client_test.go,3,Send,517,
+client/v2/client_test.go,8,Known chan length (length),523,1
+client/v2/client_test.go,1,Goroutine,524,
+client/v2/client_test.go,3,Send,528,
+client/v2/client_test.go,16,Select (number of branch),531,2
+client/v2/client_test.go,2,Receive,532,
+client/v2/client_test.go,2,Receive,536,
+client/v3/client_test.go,4,Synchronous chan,64,
+client/v3/client_test.go,1,Goroutine,65,
+client/v3/client_test.go,15,Close chan,66,
+client/v3/client_test.go,4,Synchronous chan,75,
+client/v3/client_test.go,1,Goroutine,76,
+client/v3/client_test.go,15,Close chan,77,
+client/v3/client_test.go,16,Select (number of branch),81,2
+client/v3/client_test.go,2,Receive,82,
+client/v3/client_test.go,2,Receive,84,
+client/v3/client_test.go,16,Select (number of branch),86,2
+client/v3/client_test.go,2,Receive,87,
+client/v3/client_test.go,2,Receive,89,
+client/v3/client_test.go,5,Go in for,116,
+client/v3/client_test.go,10,Make chan in for,115,
+client/v3/client_test.go,8,Known chan length (length),115,1
+client/v3/client_test.go,1,Goroutine,116,
+client/v3/client_test.go,3,Send,122,
+client/v3/client_test.go,17,Select with default (number of branch),127,2
+client/v3/client_test.go,2,Receive,128,
+client/v3/client_test.go,16,Select (number of branch),133,2
+client/v3/client_test.go,2,Receive,134,
+client/v3/client_test.go,2,Receive,136,
+client/v3/client_test.go,1,Goroutine,216,
+client/v3/client.go,16,Select (number of branch),201,2
+client/v3/client.go,2,Receive,202,
+client/v3/client.go,2,Receive,204,
+client/v3/client.go,1,Goroutine,436,
+client/v3/client.go,9,Unknown chan length,460,
+client/v3/client.go,5,Go in for,470,
+client/v3/client.go,1,Goroutine,470,
+client/v3/client.go,3,Send,474,
+client/v3/client.go,3,Send,482,
+client/v3/client.go,3,Send,486,
+client/v3/client.go,3,Send,493,
+client/v3/client.go,2,Receive,498,
+client/v3/lease.go,4,Synchronous chan,197,
+client/v3/lease.go,9,Unknown chan length,267,
+client/v3/lease.go,17,Select with default (number of branch),271,2
+client/v3/lease.go,2,Receive,272,
+client/v3/lease.go,15,Close chan,275,
+client/v3/lease.go,4,Synchronous chan,287,
+client/v3/lease.go,1,Goroutine,297,
+client/v3/lease.go,1,Goroutine,299,
+client/v3/lease.go,1,Goroutine,300,
+client/v3/lease.go,2,Receive,325,
+client/v3/lease.go,20,Receive only chan (<-chan),329,
+client/v3/lease.go,16,Select (number of branch),330,3
+client/v3/lease.go,2,Receive,331,
+client/v3/lease.go,2,Receive,333,
+client/v3/lease.go,2,Receive,335,
+client/v3/lease.go,16,Select (number of branch),466,2
+client/v3/lease.go,2,Receive,467,
+client/v3/lease.go,2,Receive,468,
+client/v3/lease.go,1,Goroutine,492,
+client/v3/lease.go,17,Select with default (number of branch),523,2
+client/v3/lease.go,3,Send,524,
+client/v3/lease.go,16,Select (number of branch),542,2
+client/v3/lease.go,2,Receive,543,
+client/v3/lease.go,2,Receive,544,
+client/v3/lease.go,16,Select (number of branch),584,4
+client/v3/lease.go,2,Receive,585,
+client/v3/lease.go,2,Receive,586,
+client/v3/lease.go,2,Receive,588,
+client/v3/lease.go,2,Receive,590,
+client/v3/txn_test.go,8,Known chan length (length),30,1
+client/v3/txn_test.go,3,Send,33,
+client/v3/txn_test.go,5,Go in for,96,
+client/v3/txn_test.go,1,Goroutine,96,
+client/v3/txn_test.go,16,Select (number of branch),97,2
+client/v3/txn_test.go,2,Receive,98,
+client/v3/txn_test.go,2,Receive,102,
+client/v3/maintenance.go,1,Goroutine,250,
+client/v3/maintenance.go,1,Goroutine,286,
+client/v3/retry_interceptor.go,16,Select (number of branch),301,2
+client/v3/retry_interceptor.go,2,Receive,302,
+client/v3/retry_interceptor.go,2,Receive,305,
+client/v3/watch.go,4,Synchronous chan,257,
+client/v3/watch.go,4,Synchronous chan,277,
+client/v3/watch.go,4,Synchronous chan,278,
+client/v3/watch.go,4,Synchronous chan,279,
+client/v3/watch.go,8,Known chan length (length),280,1
+client/v3/watch.go,4,Synchronous chan,281,
+client/v3/watch.go,4,Synchronous chan,282,
+client/v3/watch.go,1,Goroutine,285,
+client/v3/watch.go,19,Channel of channels,311,wr.retc
+client/v3/watch.go,4,Synchronous chan,324,
+client/v3/watch.go,15,Close chan,325,
+client/v3/watch.go,8,Known chan length (length),339,1
+client/v3/watch.go,16,Select (number of branch),343,3
+client/v3/watch.go,3,Send,344,
+client/v3/watch.go,2,Receive,346,
+client/v3/watch.go,2,Receive,348,
+client/v3/watch.go,3,Send,351,
+client/v3/watch.go,16,Select (number of branch),360,3
+client/v3/watch.go,2,Receive,361,
+client/v3/watch.go,2,Receive,363,
+client/v3/watch.go,2,Receive,364,
+client/v3/watch.go,3,Send,366,
+client/v3/watch.go,15,Close chan,376,
+client/v3/watch.go,16,Select (number of branch),417,3
+client/v3/watch.go,3,Send,418,
+client/v3/watch.go,2,Receive,420,
+client/v3/watch.go,2,Receive,422,
+client/v3/watch.go,2,Receive,433,
+client/v3/watch.go,17,Select with default (number of branch),434,2
+client/v3/watch.go,2,Receive,435,
+client/v3/watch.go,16,Select (number of branch),464,3
+client/v3/watch.go,3,Send,465,
+client/v3/watch.go,2,Receive,466,
+client/v3/watch.go,2,Receive,467,
+client/v3/watch.go,17,Select with default (number of branch),474,2
+client/v3/watch.go,3,Send,475,
+client/v3/watch.go,1,Goroutine,480,
+client/v3/watch.go,2,Receive,522,
+client/v3/watch.go,16,Select (number of branch),537,5
+client/v3/watch.go,2,Receive,539,
+client/v3/watch.go,8,Known chan length (length),542,1
+client/v3/watch.go,4,Synchronous chan,549,
+client/v3/watch.go,4,Synchronous chan,552,
+client/v3/watch.go,1,Goroutine,554,
+client/v3/watch.go,2,Receive,571,
+client/v3/watch.go,2,Receive,647,
+client/v3/watch.go,2,Receive,662,
+client/v3/watch.go,2,Receive,665,
+client/v3/watch.go,16,Select (number of branch),732,2
+client/v3/watch.go,3,Send,733,
+client/v3/watch.go,2,Receive,734,
+client/v3/watch.go,16,Select (number of branch),746,2
+client/v3/watch.go,3,Send,747,
+client/v3/watch.go,2,Receive,748,
+client/v3/watch.go,16,Select (number of branch),759,2
+client/v3/watch.go,3,Send,760,
+client/v3/watch.go,2,Receive,761,
+client/v3/watch.go,16,Select (number of branch),765,2
+client/v3/watch.go,3,Send,766,
+client/v3/watch.go,2,Receive,767,
+client/v3/watch.go,22,chan used as a param,774,
+client/v3/watch.go,3,Send,788,
+client/v3/watch.go,16,Select (number of branch),803,5
+client/v3/watch.go,3,Send,804,
+client/v3/watch.go,2,Receive,810,
+client/v3/watch.go,3,Send,818,
+client/v3/watch.go,3,Send,825,
+client/v3/watch.go,2,Receive,858,
+client/v3/watch.go,2,Receive,860,
+client/v3/watch.go,2,Receive,862,
+client/v3/watch.go,4,Synchronous chan,873,
+client/v3/watch.go,4,Synchronous chan,890,
+client/v3/watch.go,15,Close chan,893,
+client/v3/watch.go,2,Receive,894,
+client/v3/watch.go,5,Go in for,904,
+client/v3/watch.go,4,Synchronous chan,902,
+client/v3/watch.go,1,Goroutine,904,
+client/v3/watch.go,1,Goroutine,912,
+client/v3/watch.go,20,Receive only chan (<-chan),916,
+client/v3/watch.go,4,Synchronous chan,919,
+client/v3/watch.go,5,Go in for,921,
+client/v3/watch.go,1,Goroutine,921,
+client/v3/watch.go,16,Select (number of branch),930,2
+client/v3/watch.go,2,Receive,931,
+client/v3/watch.go,1,Goroutine,937,
+client/v3/watch.go,3,Send,939,
+client/v3/watch.go,2,Receive,941,
+client/v3/watch.go,1,Goroutine,945,
+client/v3/watch.go,15,Close chan,946,
+client/v3/watch.go,2,Receive,955,
+client/v3/watch.go,2,Receive,959,
+client/v3/watch.go,17,Select with default (number of branch),972,2
+client/v3/watch.go,2,Receive,973,
+client/v3/example_metrics_test.go,4,Synchronous chan,59,
+client/v3/example_metrics_test.go,1,Goroutine,60,
+client/v3/example_metrics_test.go,15,Close chan,61,
+client/v3/example_metrics_test.go,2,Receive,66,
+client/v3/example_watch_test.go,1,Goroutine,96,
+client/v3/example_watch_test.go,4,Synchronous chan,139,
+client/v3/example_watch_test.go,1,Goroutine,140,
+client/v3/example_watch_test.go,15,Close chan,148,
+client/v3/example_watch_test.go,2,Receive,150,
+client/v3/example_watch_test.go,2,Receive,152,
+client/v3/example_lease_test.go,2,Receive,125,
+client/v3/concurrency/session.go,4,Synchronous chan,60,
+client/v3/concurrency/session.go,1,Goroutine,64,
+client/v3/concurrency/session.go,15,Close chan,65,
+client/v3/concurrency/session.go,2,Receive,91,
+client/v3/concurrency/stm.go,8,Known chan length (length),141,1
+client/v3/concurrency/stm.go,1,Goroutine,142,
+client/v3/concurrency/stm.go,3,Send,150,
+client/v3/concurrency/stm.go,3,Send,163,
+client/v3/concurrency/stm.go,2,Receive,165,
+client/v3/concurrency/election.go,17,Select with default (number of branch),96,2
+client/v3/concurrency/election.go,2,Receive,97,
+client/v3/concurrency/election.go,4,Synchronous chan,168,
+client/v3/concurrency/election.go,1,Goroutine,169,
+client/v3/concurrency/election.go,21,Send only chan (chan<-),173,
+client/v3/concurrency/election.go,2,Receive,192,
+client/v3/concurrency/election.go,16,Select (number of branch),213,2
+client/v3/concurrency/election.go,3,Send,214,
+client/v3/concurrency/election.go,2,Receive,215,
+client/v3/concurrency/election.go,2,Receive,223,
+client/v3/concurrency/election.go,16,Select (number of branch),235,2
+client/v3/concurrency/election.go,3,Send,236,
+client/v3/concurrency/election.go,2,Receive,237,
+client/v3/concurrency/example_mutex_test.go,4,Synchronous chan,125,
+client/v3/concurrency/example_mutex_test.go,1,Goroutine,126,
+client/v3/concurrency/example_mutex_test.go,15,Close chan,127,
+client/v3/concurrency/example_mutex_test.go,2,Receive,139,
+client/v3/concurrency/example_stm_test.go,5,Go in for,80,
+client/v3/concurrency/example_stm_test.go,7,Goroutine in for with constant (constant),80,10
+client/v3/concurrency/example_stm_test.go,1,Goroutine,80,
+client/v3/concurrency/example_election_test.go,8,Known chan length (length),61,2
+client/v3/concurrency/example_election_test.go,1,Goroutine,62,
+client/v3/concurrency/example_election_test.go,3,Send,69,
+client/v3/concurrency/example_election_test.go,1,Goroutine,71,
+client/v3/concurrency/example_election_test.go,3,Send,76,
+client/v3/concurrency/example_election_test.go,2,Receive,82,
+client/v3/concurrency/example_election_test.go,2,Receive,83,
+client/v3/concurrency/example_election_test.go,2,Receive,90,
+client/v3/concurrency/example_election_test.go,2,Receive,91,
+client/v3/leasing/txn.go,16,Select (number of branch),67,2
+client/v3/leasing/txn.go,2,Receive,68,
+client/v3/leasing/txn.go,2,Receive,69,
+client/v3/leasing/cache.go,4,Synchronous chan,57,
+client/v3/leasing/cache.go,4,Synchronous chan,68,
+client/v3/leasing/cache.go,16,Select (number of branch),207,2
+client/v3/leasing/cache.go,2,Receive,208,
+client/v3/leasing/cache.go,2,Receive,209,
+client/v3/leasing/cache.go,16,Select (number of branch),253,2
+client/v3/leasing/cache.go,2,Receive,254,
+client/v3/leasing/cache.go,2,Receive,256,
+client/v3/leasing/kv.go,4,Synchronous chan,51,
+client/v3/leasing/kv.go,15,Close chan,52,
+client/v3/leasing/kv.go,4,Synchronous chan,66,
+client/v3/leasing/kv.go,1,Goroutine,69,
+client/v3/leasing/kv.go,1,Goroutine,73,
+client/v3/leasing/kv.go,16,Select (number of branch),127,2
+client/v3/leasing/kv.go,2,Receive,128,
+client/v3/leasing/kv.go,2,Receive,129,
+client/v3/leasing/kv.go,17,Select with default (number of branch),134,2
+client/v3/leasing/kv.go,2,Receive,135,
+client/v3/leasing/kv.go,4,Synchronous chan,136,
+client/v3/leasing/kv.go,1,Goroutine,326,
+client/v3/leasing/kv.go,16,Select (number of branch),451,3
+client/v3/leasing/kv.go,2,Receive,452,
+client/v3/leasing/kv.go,2,Receive,454,
+client/v3/leasing/kv.go,2,Receive,456,
+client/v3/leasing/kv.go,17,Select with default (number of branch),467,2
+client/v3/leasing/kv.go,2,Receive,468,
+client/v3/mirror/syncer.go,8,Known chan length (length),50,1024
+client/v3/mirror/syncer.go,8,Known chan length (length),51,1
+client/v3/mirror/syncer.go,3,Send,57,
+client/v3/mirror/syncer.go,15,Close chan,58,
+client/v3/mirror/syncer.go,15,Close chan,59,
+client/v3/mirror/syncer.go,1,Goroutine,65,
+client/v3/mirror/syncer.go,15,Close chan,66,
+client/v3/mirror/syncer.go,15,Close chan,67,
+client/v3/mirror/syncer.go,3,Send,89,
+client/v3/mirror/syncer.go,3,Send,93,
+client/v3/mock/mockserver/mockserver.go,1,Goroutine,139,
+client/v3/namespace/watch.go,4,Synchronous chan,52,
+client/v3/namespace/watch.go,1,Goroutine,54,
+client/v3/namespace/watch.go,15,Close chan,56,
+client/v3/namespace/watch.go,16,Select (number of branch),66,3
+client/v3/namespace/watch.go,3,Send,67,
+client/v3/namespace/watch.go,2,Receive,68,
+client/v3/namespace/watch.go,2,Receive,70,
+client/v3/naming/endpoints/endpoints_impl.go,8,Known chan length (length),116,1
+client/v3/naming/endpoints/endpoints_impl.go,3,Send,118,
+client/v3/naming/endpoints/endpoints_impl.go,1,Goroutine,120,
+client/v3/naming/endpoints/endpoints_impl.go,22,chan used as a param,124,
+client/v3/naming/endpoints/endpoints_impl.go,16,Select (number of branch),131,2
+client/v3/naming/endpoints/endpoints_impl.go,2,Receive,132,
+client/v3/naming/endpoints/endpoints_impl.go,2,Receive,134,
+client/v3/naming/endpoints/endpoints_impl.go,3,Send,167,
+client/v3/naming/resolver/resolver.go,1,Goroutine,51,
+client/v3/naming/resolver/resolver.go,16,Select (number of branch),79,2
+client/v3/naming/resolver/resolver.go,2,Receive,80,
+client/v3/naming/resolver/resolver.go,2,Receive,82,
+contrib/raftexample/listener.go,20,Receive only chan (<-chan),30,
+contrib/raftexample/listener.go,8,Known chan length (length),39,1
+contrib/raftexample/listener.go,8,Known chan length (length),40,1
+contrib/raftexample/listener.go,1,Goroutine,41,
+contrib/raftexample/listener.go,3,Send,44,
+contrib/raftexample/listener.go,3,Send,47,
+contrib/raftexample/listener.go,16,Select (number of branch),49,3
+contrib/raftexample/listener.go,2,Receive,50,
+contrib/raftexample/listener.go,2,Receive,52,
+contrib/raftexample/listener.go,2,Receive,54,
+contrib/raftexample/kvstore.go,21,Send only chan (chan<-),41,
+contrib/raftexample/kvstore.go,20,Receive only chan (<-chan),41,
+contrib/raftexample/kvstore.go,20,Receive only chan (<-chan),41,
+contrib/raftexample/kvstore.go,1,Goroutine,54,
+contrib/raftexample/kvstore.go,3,Send,70,
+contrib/raftexample/kvstore.go,20,Receive only chan (<-chan),73,
+contrib/raftexample/kvstore.go,20,Receive only chan (<-chan),73,
+contrib/raftexample/kvstore.go,2,Receive,102,
+contrib/raftexample/main.go,4,Synchronous chan,31,
+contrib/raftexample/main.go,15,Close chan,32,
+contrib/raftexample/main.go,4,Synchronous chan,33,
+contrib/raftexample/main.go,15,Close chan,34,
+contrib/raftexample/main.go,2,Receive,41,
+contrib/raftexample/httpapi.go,3,Send,75,
+contrib/raftexample/httpapi.go,3,Send,90,
+contrib/raftexample/httpapi.go,21,Send only chan (chan<-),104,
+contrib/raftexample/httpapi.go,20,Receive only chan (<-chan),104,
+contrib/raftexample/httpapi.go,1,Goroutine,112,
+contrib/raftexample/httpapi.go,2,Receive,119,
+contrib/raftexample/raftexample_test.go,4,Synchronous chan,31,
+contrib/raftexample/raftexample_test.go,3,Send,33,
+contrib/raftexample/raftexample_test.go,5,Go in for,79,
+contrib/raftexample/raftexample_test.go,1,Goroutine,79,
+contrib/raftexample/raftexample_test.go,2,Receive,86,
+contrib/raftexample/raftexample_test.go,4,Synchronous chan,110,
+contrib/raftexample/raftexample_test.go,5,Go in for,113,
+contrib/raftexample/raftexample_test.go,5,Go in for,134,
+contrib/raftexample/raftexample_test.go,1,Goroutine,113,
+contrib/raftexample/raftexample_test.go,2,Receive,115,
+contrib/raftexample/raftexample_test.go,16,Select (number of branch),119,2
+contrib/raftexample/raftexample_test.go,3,Send,120,
+contrib/raftexample/raftexample_test.go,2,Receive,122,
+contrib/raftexample/raftexample_test.go,3,Send,126,
+contrib/raftexample/raftexample_test.go,1,Goroutine,134,
+contrib/raftexample/raftexample_test.go,3,Send,134,
+contrib/raftexample/raftexample_test.go,2,Receive,138,
+contrib/raftexample/raftexample_test.go,1,Goroutine,156,
+contrib/raftexample/raftexample_test.go,3,Send,157,
+contrib/raftexample/raftexample_test.go,3,Send,158,
+contrib/raftexample/raftexample_test.go,2,Receive,162,
+contrib/raftexample/raftexample_test.go,4,Synchronous chan,170,
+contrib/raftexample/raftexample_test.go,15,Close chan,171,
+contrib/raftexample/raftexample_test.go,4,Synchronous chan,173,
+contrib/raftexample/raftexample_test.go,15,Close chan,174,
+contrib/raftexample/raftexample_test.go,2,Receive,180,
+contrib/raftexample/raftexample_test.go,2,Receive,189,
+contrib/raftexample/raftexample_test.go,2,Receive,207,
+contrib/raftexample/raftexample_test.go,3,Send,238,
+contrib/raftexample/raftexample_test.go,4,Synchronous chan,244,
+contrib/raftexample/raftexample_test.go,15,Close chan,245,
+contrib/raftexample/raftexample_test.go,4,Synchronous chan,247,
+contrib/raftexample/raftexample_test.go,15,Close chan,248,
+contrib/raftexample/raftexample_test.go,1,Goroutine,252,
+contrib/raftexample/raftexample_test.go,3,Send,253,
+contrib/raftexample/raftexample_test.go,2,Receive,256,
+contrib/raftexample/raftexample_test.go,1,Goroutine,274,
+contrib/raftexample/raftexample_test.go,3,Send,275,
+contrib/raftexample/raftexample_test.go,2,Receive,278,
+contrib/raftexample/raftexample_test.go,17,Select with default (number of branch),280,2
+contrib/raftexample/raftexample_test.go,2,Receive,281,
+contrib/raftexample/raftexample_test.go,2,Receive,286,
+contrib/raftexample/raft.go,20,Receive only chan (<-chan),87,
+contrib/raftexample/raft.go,20,Receive only chan (<-chan),88,
+contrib/raftexample/raft.go,4,Synchronous chan,90,
+contrib/raftexample/raft.go,4,Synchronous chan,91,
+contrib/raftexample/raft.go,4,Synchronous chan,105,
+contrib/raftexample/raft.go,4,Synchronous chan,106,
+contrib/raftexample/raft.go,4,Synchronous chan,107,
+contrib/raftexample/raft.go,8,Known chan length (length),111,1
+contrib/raftexample/raft.go,1,Goroutine,114,
+contrib/raftexample/raft.go,8,Known chan length (length),189,1
+contrib/raftexample/raft.go,16,Select (number of branch),190,2
+contrib/raftexample/raft.go,3,Send,191,
+contrib/raftexample/raft.go,2,Receive,192,
+contrib/raftexample/raft.go,3,Send,269,
+contrib/raftexample/raft.go,3,Send,286,
+contrib/raftexample/raft.go,1,Goroutine,325,
+contrib/raftexample/raft.go,1,Goroutine,326,
+contrib/raftexample/raft.go,2,Receive,340,
+contrib/raftexample/raft.go,3,Send,354,
+contrib/raftexample/raft.go,20,Receive only chan (<-chan),363,
+contrib/raftexample/raft.go,16,Select (number of branch),370,2
+contrib/raftexample/raft.go,2,Receive,371,
+contrib/raftexample/raft.go,2,Receive,372,
+contrib/raftexample/raft.go,1,Goroutine,417,
+contrib/raftexample/raft.go,16,Select (number of branch),421,2
+contrib/raftexample/raft.go,2,Receive,422,
+contrib/raftexample/raft.go,2,Receive,430,
+contrib/raftexample/raft.go,16,Select (number of branch),446,4
+contrib/raftexample/raft.go,2,Receive,447,
+contrib/raftexample/raft.go,2,Receive,451,
+contrib/raftexample/raft.go,2,Receive,468,
+contrib/raftexample/raft.go,2,Receive,472,
+contrib/raftexample/raft.go,17,Select with default (number of branch),491,2
+contrib/raftexample/raft.go,2,Receive,492,
+etcdctl/ctlv2/command/cluster_health.go,8,Known chan length (length),48,1
+etcdctl/ctlv2/command/cluster_health.go,1,Goroutine,51,
+etcdctl/ctlv2/command/cluster_health.go,2,Receive,52,
+etcdctl/ctlv2/command/exec_watch_command.go,8,Known chan length (length),84,1
+etcdctl/ctlv2/command/exec_watch_command.go,1,Goroutine,87,
+etcdctl/ctlv2/command/exec_watch_command.go,2,Receive,88,
+etcdctl/ctlv2/command/exec_watch_command.go,5,Go in for,110,
+etcdctl/ctlv2/command/exec_watch_command.go,1,Goroutine,110,
+etcdctl/ctlv2/command/watch_command.go,8,Known chan length (length),61,1
+etcdctl/ctlv2/command/watch_command.go,1,Goroutine,64,
+etcdctl/ctlv2/command/watch_command.go,2,Receive,65,
+etcdctl/ctlv3/command/watch_command.go,1,Goroutine,127,
+etcdctl/ctlv3/command/elect_command.go,4,Synchronous chan,77,
+etcdctl/ctlv3/command/elect_command.go,8,Known chan length (length),78,1
+etcdctl/ctlv3/command/elect_command.go,1,Goroutine,80,
+etcdctl/ctlv3/command/elect_command.go,2,Receive,81,
+etcdctl/ctlv3/command/elect_command.go,1,Goroutine,85,
+etcdctl/ctlv3/command/elect_command.go,15,Close chan,89,
+etcdctl/ctlv3/command/elect_command.go,2,Receive,92,
+etcdctl/ctlv3/command/elect_command.go,17,Select with default (number of branch),94,2
+etcdctl/ctlv3/command/elect_command.go,2,Receive,95,
+etcdctl/ctlv3/command/elect_command.go,4,Synchronous chan,111,
+etcdctl/ctlv3/command/elect_command.go,8,Known chan length (length),112,1
+etcdctl/ctlv3/command/elect_command.go,1,Goroutine,114,
+etcdctl/ctlv3/command/elect_command.go,2,Receive,115,
+etcdctl/ctlv3/command/elect_command.go,15,Close chan,117,
+etcdctl/ctlv3/command/elect_command.go,16,Select (number of branch),131,2
+etcdctl/ctlv3/command/elect_command.go,2,Receive,132,
+etcdctl/ctlv3/command/elect_command.go,2,Receive,133,
+etcdctl/ctlv3/command/txn_command.go,8,Known chan length (length),127,1
+etcdctl/ctlv3/command/txn_command.go,3,Send,132,
+etcdctl/ctlv3/command/txn_command.go,3,Send,137,
+etcdctl/ctlv3/command/txn_command.go,3,Send,142,
+etcdctl/ctlv3/command/txn_command.go,2,Receive,152,
+etcdctl/ctlv3/command/lock_command.go,4,Synchronous chan,81,
+etcdctl/ctlv3/command/lock_command.go,8,Known chan length (length),82,1
+etcdctl/ctlv3/command/lock_command.go,1,Goroutine,84,
+etcdctl/ctlv3/command/lock_command.go,2,Receive,85,
+etcdctl/ctlv3/command/lock_command.go,15,Close chan,87,
+etcdctl/ctlv3/command/lock_command.go,16,Select (number of branch),115,2
+etcdctl/ctlv3/command/lock_command.go,2,Receive,116,
+etcdctl/ctlv3/command/lock_command.go,2,Receive,118,
+etcdctl/ctlv3/command/ep_command.go,9,Unknown chan length,113,
+etcdctl/ctlv3/command/ep_command.go,5,Go in for,116,
+etcdctl/ctlv3/command/ep_command.go,1,Goroutine,116,
+etcdctl/ctlv3/command/ep_command.go,3,Send,122,
+etcdctl/ctlv3/command/ep_command.go,3,Send,159,
+etcdctl/ctlv3/command/ep_command.go,15,Close chan,164,
+etcdctl/ctlv3/command/ep_command.go,6,Range over chan,168,
+etcdctl/ctlv3/command/make_mirror_command.go,1,Goroutine,133,
+etcdctl/ctlv3/command/make_mirror_command.go,2,Receive,164,
+etcdctl/ctlv3/command/check.go,9,Unknown chan length,155,
+etcdctl/ctlv3/command/check.go,5,Go in for,191,
+etcdctl/ctlv3/command/check.go,1,Goroutine,191,
+etcdctl/ctlv3/command/check.go,6,Range over chan,193,
+etcdctl/ctlv3/command/check.go,3,Send,196,
+etcdctl/ctlv3/command/check.go,1,Goroutine,201,
+etcdctl/ctlv3/command/check.go,3,Send,206,
+etcdctl/ctlv3/command/check.go,15,Close chan,208,
+etcdctl/ctlv3/command/check.go,1,Goroutine,211,
+etcdctl/ctlv3/command/check.go,2,Receive,223,
+etcdctl/ctlv3/command/check.go,8,Known chan length (length),284,1
+etcdctl/ctlv3/command/check.go,1,Goroutine,286,
+etcdctl/ctlv3/command/check.go,16,Select (number of branch),288,1
+etcdctl/ctlv3/command/check.go,2,Receive,289,
+etcdctl/ctlv3/command/check.go,9,Unknown chan length,329,
+etcdctl/ctlv3/command/check.go,5,Go in for,375,
+etcdctl/ctlv3/command/check.go,1,Goroutine,375,
+etcdctl/ctlv3/command/check.go,6,Range over chan,377,
+etcdctl/ctlv3/command/check.go,3,Send,380,
+etcdctl/ctlv3/command/check.go,1,Goroutine,386,
+etcdctl/ctlv3/command/check.go,3,Send,389,
+etcdctl/ctlv3/command/check.go,15,Close chan,391,
+etcdctl/ctlv3/command/check.go,2,Receive,398,
+etcdutl/etcdutl/defrag_command.go,4,Synchronous chan,56,
+etcdutl/etcdutl/defrag_command.go,1,Goroutine,58,
+etcdutl/etcdutl/defrag_command.go,15,Close chan,59,
+etcdutl/etcdutl/defrag_command.go,16,Select (number of branch),65,2
+etcdutl/etcdutl/defrag_command.go,2,Receive,66,
+etcdutl/etcdutl/defrag_command.go,2,Receive,67,
+etcdutl/etcdutl/defrag_command.go,2,Receive,70,
+etcdutl/etcdutl/backup_command.go,8,Known chan length (length),277,1
+etcdutl/etcdutl/backup_command.go,1,Goroutine,278,
+etcdutl/etcdutl/backup_command.go,3,Send,283,
+etcdutl/etcdutl/backup_command.go,16,Select (number of branch),285,2
+etcdutl/etcdutl/backup_command.go,2,Receive,286,
+etcdutl/etcdutl/backup_command.go,2,Receive,287,
+etcdutl/etcdutl/backup_command.go,2,Receive,289,
+pkg/expect/expect_test.go,4,Synchronous chan,107,
+pkg/expect/expect_test.go,1,Goroutine,108,
+pkg/expect/expect_test.go,15,Close chan,109,
+pkg/expect/expect_test.go,16,Select (number of branch),115,2
+pkg/expect/expect_test.go,2,Receive,116,
+pkg/expect/expect_test.go,2,Receive,118,
+pkg/expect/expect.go,1,Goroutine,72,
+pkg/grpc_testing/stub_server.go,1,Goroutine,71,
+pkg/grpc_testing/stub_server.go,2,Receive,83,
+pkg/netutil/netutil.go,16,Select (number of branch),129,2
+pkg/netutil/netutil.go,2,Receive,130,
+pkg/netutil/netutil.go,2,Receive,139,
+pkg/osutil/osutil_test.go,20,Receive only chan (<-chan),54,
+pkg/osutil/osutil_test.go,16,Select (number of branch),55,2
+pkg/osutil/osutil_test.go,2,Receive,56,
+pkg/osutil/osutil_test.go,2,Receive,60,
+pkg/osutil/osutil_test.go,10,Make chan in for,71,
+pkg/osutil/osutil_test.go,8,Known chan length (length),71,2
+pkg/osutil/interrupt_unix.go,8,Known chan length (length),50,1
+pkg/osutil/interrupt_unix.go,1,Goroutine,53,
+pkg/osutil/interrupt_unix.go,2,Receive,54,
+pkg/proxy/server_test.go,2,Receive,76,
+pkg/proxy/server_test.go,4,Synchronous chan,80,
+pkg/proxy/server_test.go,4,Synchronous chan,80,
+pkg/proxy/server_test.go,1,Goroutine,82,
+pkg/proxy/server_test.go,15,Close chan,83,
+pkg/proxy/server_test.go,6,Range over chan,84,
+pkg/proxy/server_test.go,8,Known chan length (length),89,1
+pkg/proxy/server_test.go,1,Goroutine,90,
+pkg/proxy/server_test.go,3,Send,92,
+pkg/proxy/server_test.go,3,Send,96,
+pkg/proxy/server_test.go,2,Receive,98,
+pkg/proxy/server_test.go,3,Send,110,
+pkg/proxy/server_test.go,2,Receive,112,
+pkg/proxy/server_test.go,15,Close chan,129,
+pkg/proxy/server_test.go,16,Select (number of branch),130,2
+pkg/proxy/server_test.go,2,Receive,131,
+pkg/proxy/server_test.go,2,Receive,132,
+pkg/proxy/server_test.go,17,Select with default (number of branch),136,3
+pkg/proxy/server_test.go,2,Receive,137,
+pkg/proxy/server_test.go,2,Receive,139,
+pkg/proxy/server_test.go,16,Select (number of branch),148,3
+pkg/proxy/server_test.go,2,Receive,149,
+pkg/proxy/server_test.go,2,Receive,150,
+pkg/proxy/server_test.go,2,Receive,155,
+pkg/proxy/server_test.go,2,Receive,196,
+pkg/proxy/server_test.go,2,Receive,246,
+pkg/proxy/server_test.go,8,Known chan length (length),254,1
+pkg/proxy/server_test.go,1,Goroutine,255,
+pkg/proxy/server_test.go,3,Send,256,
+pkg/proxy/server_test.go,16,Select (number of branch),259,2
+pkg/proxy/server_test.go,2,Receive,260,
+pkg/proxy/server_test.go,2,Receive,262,
+pkg/proxy/server_test.go,16,Select (number of branch),267,2
+pkg/proxy/server_test.go,2,Receive,268,
+pkg/proxy/server_test.go,2,Receive,272,
+pkg/proxy/server_test.go,2,Receive,293,
+pkg/proxy/server_test.go,2,Receive,329,
+pkg/proxy/server_test.go,2,Receive,366,
+pkg/proxy/server_test.go,8,Known chan length (length),374,1
+pkg/proxy/server_test.go,1,Goroutine,375,
+pkg/proxy/server_test.go,3,Send,376,
+pkg/proxy/server_test.go,16,Select (number of branch),379,2
+pkg/proxy/server_test.go,2,Receive,380,
+pkg/proxy/server_test.go,2,Receive,382,
+pkg/proxy/server_test.go,16,Select (number of branch),391,2
+pkg/proxy/server_test.go,2,Receive,392,
+pkg/proxy/server_test.go,2,Receive,396,
+pkg/proxy/server_test.go,2,Receive,417,
+pkg/proxy/server_test.go,2,Receive,448,
+pkg/proxy/server_test.go,4,Synchronous chan,503,
+pkg/proxy/server_test.go,2,Receive,506,
+pkg/proxy/server_test.go,1,Goroutine,508,
+pkg/proxy/server_test.go,15,Close chan,514,
+pkg/proxy/server_test.go,2,Receive,527,
+pkg/proxy/server.go,4,Synchronous chan,215,
+pkg/proxy/server.go,4,Synchronous chan,216,
+pkg/proxy/server.go,8,Known chan length (length),217,16
+pkg/proxy/server.go,4,Synchronous chan,219,
+pkg/proxy/server.go,4,Synchronous chan,220,
+pkg/proxy/server.go,4,Synchronous chan,221,
+pkg/proxy/server.go,3,Send,270,
+pkg/proxy/server.go,1,Goroutine,277,
+pkg/proxy/server.go,5,Go in for,405,
+pkg/proxy/server.go,5,Go in for,412,
+pkg/proxy/server.go,16,Select (number of branch),307,2
+pkg/proxy/server.go,2,Receive,308,
+pkg/proxy/server.go,2,Receive,309,
+pkg/proxy/server.go,16,Select (number of branch),317,2
+pkg/proxy/server.go,2,Receive,318,
+pkg/proxy/server.go,2,Receive,319,
+pkg/proxy/server.go,16,Select (number of branch),330,2
+pkg/proxy/server.go,3,Send,331,
+pkg/proxy/server.go,17,Select with default (number of branch),332,2
+pkg/proxy/server.go,2,Receive,333,
+pkg/proxy/server.go,2,Receive,337,
+pkg/proxy/server.go,16,Select (number of branch),343,2
+pkg/proxy/server.go,2,Receive,344,
+pkg/proxy/server.go,2,Receive,345,
+pkg/proxy/server.go,16,Select (number of branch),351,2
+pkg/proxy/server.go,3,Send,352,
+pkg/proxy/server.go,17,Select with default (number of branch),353,2
+pkg/proxy/server.go,2,Receive,354,
+pkg/proxy/server.go,2,Receive,358,
+pkg/proxy/server.go,16,Select (number of branch),373,2
+pkg/proxy/server.go,3,Send,374,
+pkg/proxy/server.go,17,Select with default (number of branch),375,2
+pkg/proxy/server.go,2,Receive,376,
+pkg/proxy/server.go,2,Receive,380,
+pkg/proxy/server.go,16,Select (number of branch),390,2
+pkg/proxy/server.go,3,Send,391,
+pkg/proxy/server.go,17,Select with default (number of branch),392,2
+pkg/proxy/server.go,2,Receive,393,
+pkg/proxy/server.go,2,Receive,397,
+pkg/proxy/server.go,1,Goroutine,405,
+pkg/proxy/server.go,1,Goroutine,412,
+pkg/proxy/server.go,16,Select (number of branch),452,2
+pkg/proxy/server.go,3,Send,453,
+pkg/proxy/server.go,17,Select with default (number of branch),454,2
+pkg/proxy/server.go,2,Receive,455,
+pkg/proxy/server.go,2,Receive,459,
+pkg/proxy/server.go,16,Select (number of branch),523,2
+pkg/proxy/server.go,2,Receive,524,
+pkg/proxy/server.go,2,Receive,525,
+pkg/proxy/server.go,16,Select (number of branch),549,2
+pkg/proxy/server.go,2,Receive,550,
+pkg/proxy/server.go,2,Receive,551,
+pkg/proxy/server.go,16,Select (number of branch),563,2
+pkg/proxy/server.go,3,Send,564,
+pkg/proxy/server.go,17,Select with default (number of branch),565,2
+pkg/proxy/server.go,2,Receive,566,
+pkg/proxy/server.go,2,Receive,570,
+pkg/proxy/server.go,16,Select (number of branch),585,2
+pkg/proxy/server.go,3,Send,586,
+pkg/proxy/server.go,17,Select with default (number of branch),587,2
+pkg/proxy/server.go,2,Receive,588,
+pkg/proxy/server.go,2,Receive,592,
+pkg/proxy/server.go,4,Synchronous chan,661,
+pkg/proxy/server.go,17,Select with default (number of branch),673,3
+pkg/proxy/server.go,2,Receive,674,
+pkg/proxy/server.go,2,Receive,675,
+pkg/proxy/server.go,4,Synchronous chan,914,
+pkg/proxy/server.go,17,Select with default (number of branch),926,3
+pkg/proxy/server.go,2,Receive,927,
+pkg/proxy/server.go,2,Receive,928,
+pkg/proxy/server.go,4,Synchronous chan,945,
+pkg/proxy/server.go,17,Select with default (number of branch),957,3
+pkg/proxy/server.go,2,Receive,958,
+pkg/proxy/server.go,2,Receive,959,
+pkg/report/report_test.go,1,Goroutine,43,
+pkg/report/report_test.go,3,Send,47,
+pkg/report/report_test.go,3,Send,50,
+pkg/report/report_test.go,2,Receive,54,
+pkg/report/report_test.go,2,Receive,77,
+pkg/report/report_test.go,1,Goroutine,87,
+pkg/report/report_test.go,3,Send,91,
+pkg/report/report_test.go,3,Send,94,
+pkg/report/report_test.go,2,Receive,98,
+pkg/report/weighted.go,8,Known chan length (length),44,2
+pkg/report/weighted.go,1,Goroutine,45,
+pkg/report/weighted.go,15,Close chan,46,
+pkg/report/weighted.go,8,Known chan length (length),47,1
+pkg/report/weighted.go,8,Known chan length (length),47,1
+pkg/report/weighted.go,1,Goroutine,48,
+pkg/report/weighted.go,3,Send,48,
+pkg/report/weighted.go,2,Receive,48,
+pkg/report/weighted.go,1,Goroutine,49,
+pkg/report/weighted.go,3,Send,49,
+pkg/report/weighted.go,2,Receive,49,
+pkg/report/weighted.go,1,Goroutine,50,
+pkg/report/weighted.go,2,Receive,51,
+pkg/report/weighted.go,3,Send,52,
+pkg/report/weighted.go,3,Send,53,
+pkg/report/weighted.go,2,Receive,53,
+pkg/report/weighted.go,8,Known chan length (length),59,2
+pkg/report/weighted.go,1,Goroutine,60,
+pkg/report/weighted.go,15,Close chan,61,
+pkg/report/weighted.go,8,Known chan length (length),62,1
+pkg/report/weighted.go,8,Known chan length (length),62,1
+pkg/report/weighted.go,1,Goroutine,63,
+pkg/report/weighted.go,3,Send,63,
+pkg/report/weighted.go,2,Receive,63,
+pkg/report/weighted.go,1,Goroutine,64,
+pkg/report/weighted.go,3,Send,64,
+pkg/report/weighted.go,2,Receive,64,
+pkg/report/weighted.go,1,Goroutine,65,
+pkg/report/weighted.go,3,Send,66,
+pkg/report/weighted.go,2,Receive,66,
+pkg/report/weighted.go,3,Send,67,
+pkg/report/weighted.go,2,Receive,67,
+pkg/report/weighted.go,3,Send,77,
+pkg/report/weighted.go,3,Send,83,
+pkg/report/weighted.go,3,Send,92,
+pkg/report/report.go,8,Known chan length (length),86,16
+pkg/report/report.go,8,Known chan length (length),102,1
+pkg/report/report.go,1,Goroutine,103,
+pkg/report/report.go,15,Close chan,104,
+pkg/report/report.go,3,Send,106,
+pkg/report/report.go,8,Known chan length (length),112,1
+pkg/report/report.go,1,Goroutine,113,
+pkg/report/report.go,15,Close chan,114,
+pkg/report/report.go,3,Send,120,
+pkg/schedule/schedule.go,8,Known chan length (length),65,1
+pkg/schedule/schedule.go,8,Known chan length (length),66,1
+pkg/schedule/schedule.go,1,Goroutine,70,
+pkg/schedule/schedule.go,17,Select with default (number of branch),84,2
+pkg/schedule/schedule.go,3,Send,85,
+pkg/schedule/schedule.go,2,Receive,124,
+pkg/schedule/schedule.go,16,Select (number of branch),143,2
+pkg/schedule/schedule.go,2,Receive,144,
+pkg/schedule/schedule.go,2,Receive,145,
+pkg/wait/wait_time_test.go,17,Select with default (number of branch),26,2
+pkg/wait/wait_time_test.go,2,Receive,27,
+pkg/wait/wait_time_test.go,17,Select with default (number of branch),34,2
+pkg/wait/wait_time_test.go,2,Receive,35,
+pkg/wait/wait_time_test.go,17,Select with default (number of branch),40,2
+pkg/wait/wait_time_test.go,2,Receive,41,
+pkg/wait/wait_time_test.go,17,Select with default (number of branch),46,2
+pkg/wait/wait_time_test.go,2,Receive,48,
+pkg/wait/wait_time_test.go,16,Select (number of branch),63,2
+pkg/wait/wait_time_test.go,2,Receive,64,
+pkg/wait/wait_time_test.go,2,Receive,65,
+pkg/wait/wait_test.go,2,Receive,28,
+pkg/wait/wait_test.go,2,Receive,33,
+pkg/wait/wait_test.go,8,Known chan length (length),43,1
+pkg/wait/wait_test.go,3,Send,48,
+pkg/wait/wait_test.go,16,Select (number of branch),54,2
+pkg/wait/wait_test.go,2,Receive,55,
+pkg/wait/wait_test.go,2,Receive,56,
+pkg/wait/wait_test.go,2,Receive,61,
+pkg/wait/wait_test.go,2,Receive,71,
+pkg/wait/wait_test.go,2,Receive,76,
+pkg/wait/wait_time.go,4,Synchronous chan,30,
+pkg/wait/wait_time.go,15,Close chan,30,
+pkg/wait/wait_time.go,4,Synchronous chan,50,
+pkg/wait/wait.go,8,Known chan length (length),65,1
+pkg/wait/wait.go,3,Send,83,
+pkg/wait/wait.go,20,Receive only chan (<-chan),100,
+raft/node_bench_test.go,1,Goroutine,30,
+raft/node_bench_test.go,1,Goroutine,35,
+raft/node_bench_test.go,2,Receive,42,
+raft/example_test.go,5,Go in for,44,
+raft/example_test.go,2,Receive,37,
+raft/example_test.go,1,Goroutine,44,
+raft/node.go,1,Goroutine,233,
+raft/node.go,1,Goroutine,247,
+raft/node.go,16,Select (number of branch),292,2
+raft/node.go,3,Send,293,
+raft/node.go,2,Receive,295,
+raft/node.go,2,Receive,300,
+raft/node.go,16,Select (number of branch),344,8
+raft/node.go,2,Receive,348,
+raft/node.go,3,Send,353,
+raft/node.go,2,Receive,356,
+raft/node.go,2,Receive,361,
+raft/node.go,16,Select (number of branch),388,2
+raft/node.go,3,Send,389,
+raft/node.go,2,Receive,390,
+raft/node.go,2,Receive,392,
+raft/node.go,3,Send,394,
+raft/node.go,2,Receive,397,
+raft/node.go,2,Receive,401,
+raft/node.go,3,Send,402,
+raft/node.go,2,Receive,403,
+raft/node.go,17,Select with default (number of branch),413,3
+raft/node.go,3,Send,414,
+raft/node.go,2,Receive,415,
+raft/node.go,16,Select (number of branch),464,3
+raft/node.go,3,Send,465,
+raft/node.go,2,Receive,467,
+raft/node.go,2,Receive,469,
+raft/node.go,8,Known chan length (length),476,1
+raft/node.go,16,Select (number of branch),478,3
+raft/node.go,3,Send,479,
+raft/node.go,2,Receive,483,
+raft/node.go,2,Receive,485,
+raft/node.go,16,Select (number of branch),488,3
+raft/node.go,2,Receive,489,
+raft/node.go,2,Receive,493,
+raft/node.go,2,Receive,495,
+raft/node.go,16,Select (number of branch),504,2
+raft/node.go,3,Send,505,
+raft/node.go,2,Receive,506,
+raft/node.go,16,Select (number of branch),512,2
+raft/node.go,3,Send,513,
+raft/node.go,2,Receive,514,
+raft/node.go,16,Select (number of branch),516,2
+raft/node.go,2,Receive,517,
+raft/node.go,2,Receive,518,
+raft/node.go,4,Synchronous chan,524,
+raft/node.go,16,Select (number of branch),525,2
+raft/node.go,3,Send,526,
+raft/node.go,2,Receive,527,
+raft/node.go,2,Receive,528,
+raft/node.go,16,Select (number of branch),534,2
+raft/node.go,3,Send,535,
+raft/node.go,2,Receive,536,
+raft/node.go,16,Select (number of branch),543,2
+raft/node.go,3,Send,544,
+raft/node.go,2,Receive,545,
+raft/node.go,16,Select (number of branch),550,3
+raft/node.go,3,Send,552,
+raft/node.go,2,Receive,553,
+raft/node.go,2,Receive,554,
+raft/node_test.go,16,Select (number of branch),36,2
+raft/node_test.go,2,Receive,37,
+raft/node_test.go,2,Receive,39,
+raft/node_test.go,8,Known chan length (length),49,1
+raft/node_test.go,8,Known chan length (length),50,1
+raft/node_test.go,17,Select with default (number of branch),56,2
+raft/node_test.go,2,Receive,57,
+raft/node_test.go,17,Select with default (number of branch),63,2
+raft/node_test.go,2,Receive,64,
+raft/node_test.go,17,Select with default (number of branch),69,2
+raft/node_test.go,2,Receive,70,
+raft/node_test.go,4,Synchronous chan,83,
+raft/node_test.go,4,Synchronous chan,84,
+raft/node_test.go,5,Go in for,100,
+raft/node_test.go,10,Make chan in for,99,
+raft/node_test.go,8,Known chan length (length),99,1
+raft/node_test.go,1,Goroutine,100,
+raft/node_test.go,3,Send,102,
+raft/node_test.go,16,Select (number of branch),105,2
+raft/node_test.go,2,Receive,106,
+raft/node_test.go,17,Select with default (number of branch),114,2
+raft/node_test.go,2,Receive,115,
+raft/node_test.go,4,Synchronous chan,116,
+raft/node_test.go,2,Receive,119,
+raft/node_test.go,1,Goroutine,137,
+raft/node_test.go,2,Receive,142,
+raft/node_test.go,1,Goroutine,182,
+raft/node_test.go,2,Receive,185,
+raft/node_test.go,1,Goroutine,319,
+raft/node_test.go,2,Receive,322,
+raft/node_test.go,1,Goroutine,357,
+raft/node_test.go,4,Synchronous chan,362,
+raft/node_test.go,4,Synchronous chan,363,
+raft/node_test.go,4,Synchronous chan,364,
+raft/node_test.go,1,Goroutine,366,
+raft/node_test.go,15,Close chan,367,
+raft/node_test.go,16,Select (number of branch),369,3
+raft/node_test.go,2,Receive,370,
+raft/node_test.go,2,Receive,372,
+raft/node_test.go,2,Receive,374,
+raft/node_test.go,3,Send,390,
+raft/node_test.go,2,Receive,399,
+raft/node_test.go,2,Receive,403,
+raft/node_test.go,2,Receive,409,
+raft/node_test.go,15,Close chan,411,
+raft/node_test.go,2,Receive,412,
+raft/node_test.go,1,Goroutine,432,
+raft/node_test.go,8,Known chan length (length),435,1
+raft/node_test.go,1,Goroutine,436,
+raft/node_test.go,3,Send,437,
+raft/node_test.go,17,Select with default (number of branch),441,2
+raft/node_test.go,2,Receive,442,
+raft/node_test.go,16,Select (number of branch),448,2
+raft/node_test.go,2,Receive,449,
+raft/node_test.go,2,Receive,453,
+raft/node_test.go,1,Goroutine,474,
+raft/node_test.go,2,Receive,477,
+raft/node_test.go,1,Goroutine,509,
+raft/node_test.go,4,Synchronous chan,528,
+raft/node_test.go,1,Goroutine,530,
+raft/node_test.go,15,Close chan,532,
+raft/node_test.go,16,Select (number of branch),538,2
+raft/node_test.go,2,Receive,539,
+raft/node_test.go,2,Receive,540,
+raft/node_test.go,2,Receive,620,
+raft/node_test.go,2,Receive,631,
+raft/node_test.go,2,Receive,636,
+raft/node_test.go,16,Select (number of branch),643,2
+raft/node_test.go,2,Receive,644,
+raft/node_test.go,2,Receive,646,
+raft/node_test.go,2,Receive,679,
+raft/node_test.go,16,Select (number of branch),684,2
+raft/node_test.go,2,Receive,685,
+raft/node_test.go,2,Receive,687,
+raft/node_test.go,2,Receive,729,
+raft/node_test.go,16,Select (number of branch),735,2
+raft/node_test.go,2,Receive,736,
+raft/node_test.go,2,Receive,738,
+raft/node_test.go,2,Receive,757,
+raft/node_test.go,2,Receive,762,
+raft/node_test.go,16,Select (number of branch),765,2
+raft/node_test.go,2,Receive,766,
+raft/node_test.go,2,Receive,768,
+raft/node_test.go,16,Select (number of branch),772,2
+raft/node_test.go,2,Receive,773,
+raft/node_test.go,2,Receive,774,
+raft/node_test.go,1,Goroutine,819,
+raft/node_test.go,4,Synchronous chan,821,
+raft/node_test.go,4,Synchronous chan,822,
+raft/node_test.go,4,Synchronous chan,823,
+raft/node_test.go,1,Goroutine,824,
+raft/node_test.go,15,Close chan,825,
+raft/node_test.go,16,Select (number of branch),827,3
+raft/node_test.go,2,Receive,828,
+raft/node_test.go,2,Receive,830,
+raft/node_test.go,2,Receive,832,
+raft/node_test.go,3,Send,852,
+raft/node_test.go,2,Receive,860,
+raft/node_test.go,15,Close chan,861,
+raft/node_test.go,2,Receive,862,
+raft/node_test.go,1,Goroutine,918,
+raft/node_test.go,1,Goroutine,1010,
+raft/rafttest/network.go,17,Select with default (number of branch),104,2
+raft/rafttest/network.go,3,Send,105,
+raft/rafttest/network_test.go,17,Select with default (number of branch),39,2
+raft/rafttest/network_test.go,2,Receive,40,
+raft/rafttest/node.go,4,Synchronous chan,59,
+raft/rafttest/node.go,4,Synchronous chan,66,
+raft/rafttest/node.go,1,Goroutine,69,
+raft/rafttest/node.go,16,Select (number of branch),71,5
+raft/rafttest/node.go,2,Receive,72,
+raft/rafttest/node.go,2,Receive,74,
+raft/rafttest/node.go,5,Go in for,87,
+raft/rafttest/node.go,1,Goroutine,87,
+raft/rafttest/node.go,2,Receive,93,
+raft/rafttest/node.go,1,Goroutine,94,
+raft/rafttest/node.go,2,Receive,95,
+raft/rafttest/node.go,2,Receive,101,
+raft/rafttest/node.go,16,Select (number of branch),104,2
+raft/rafttest/node.go,2,Receive,105,
+raft/rafttest/node.go,2,Receive,107,
+raft/rafttest/node.go,3,Send,124,
+raft/rafttest/node.go,2,Receive,126,
+raft/rafttest/node.go,2,Receive,133,
+raft/rafttest/node.go,3,Send,152,
+raft/rafttest/node.go,3,Send,157,
+server/main_test.go,8,Known chan length (length),60,1
+server/main_test.go,1,Goroutine,62,
+server/main_test.go,2,Receive,63,
+server/auth/simple_token.go,16,Select (number of branch),55,2
+server/auth/simple_token.go,3,Send,56,
+server/auth/simple_token.go,2,Receive,57,
+server/auth/simple_token.go,2,Receive,59,
+server/auth/simple_token.go,16,Select (number of branch),83,2
+server/auth/simple_token.go,2,Receive,84,
+server/auth/simple_token.go,2,Receive,94,
+server/auth/simple_token.go,1,Goroutine,186,
+server/auth/simple_token.go,16,Select (number of branch),233,2
+server/auth/simple_token.go,2,Receive,234,
+server/auth/simple_token.go,2,Receive,236,
+server/auth/store_test.go,4,Synchronous chan,36,
+server/auth/store_test.go,1,Goroutine,37,
+server/auth/store_test.go,3,Send,38,
+server/auth/store_test.go,4,Synchronous chan,690,
+server/auth/store_test.go,1,Goroutine,691,
+server/auth/store_test.go,15,Close chan,692,
+server/auth/store_test.go,2,Receive,697,
+server/auth/store_test.go,5,Go in for,814,
+server/auth/store_test.go,1,Goroutine,814,
+server/embed/serve.go,2,Receive,96,
+server/embed/serve.go,1,Goroutine,120,
+server/embed/serve.go,1,Goroutine,137,
+server/embed/serve.go,3,Send,139,
+server/embed/serve.go,1,Goroutine,185,
+server/embed/serve.go,3,Send,187,
+server/embed/serve.go,1,Goroutine,251,
+server/embed/serve.go,2,Receive,252,
+server/embed/etcd.go,4,Synchronous chan,102,
+server/embed/etcd.go,9,Unknown chan length,249,
+server/embed/etcd.go,4,Synchronous chan,443,
+server/embed/etcd.go,1,Goroutine,444,
+server/embed/etcd.go,15,Close chan,445,
+server/embed/etcd.go,16,Select (number of branch),452,2
+server/embed/etcd.go,2,Receive,453,
+server/embed/etcd.go,2,Receive,454,
+server/embed/etcd.go,2,Receive,460,
+server/embed/etcd.go,5,Go in for,544,
+server/embed/etcd.go,5,Go in for,550,
+server/embed/etcd.go,1,Goroutine,544,
+server/embed/etcd.go,1,Goroutine,550,
+server/embed/etcd.go,5,Go in for,578,
+server/embed/etcd.go,1,Goroutine,578,
+server/embed/etcd.go,5,Go in for,732,
+server/embed/etcd.go,1,Goroutine,732,
+server/embed/etcd.go,5,Go in for,761,
+server/embed/etcd.go,1,Goroutine,761,
+server/embed/etcd.go,17,Select with default (number of branch),774,2
+server/embed/etcd.go,2,Receive,775,
+server/embed/etcd.go,16,Select (number of branch),779,2
+server/embed/etcd.go,2,Receive,780,
+server/embed/etcd.go,3,Send,781,
+server/etcdmain/etcd.go,16,Select (number of branch),215,2
+server/etcdmain/etcd.go,2,Receive,216,
+server/etcdmain/etcd.go,2,Receive,219,
+server/etcdmain/etcd.go,16,Select (number of branch),232,2
+server/etcdmain/etcd.go,2,Receive,233,
+server/etcdmain/etcd.go,2,Receive,234,
+server/etcdmain/etcd.go,5,Go in for,415,
+server/etcdmain/etcd.go,1,Goroutine,415,
+server/etcdmain/grpc_proxy.go,8,Known chan length (length),217,3
+server/etcdmain/grpc_proxy.go,1,Goroutine,218,
+server/etcdmain/grpc_proxy.go,3,Send,218,
+server/etcdmain/grpc_proxy.go,1,Goroutine,219,
+server/etcdmain/grpc_proxy.go,3,Send,219,
+server/etcdmain/grpc_proxy.go,1,Goroutine,220,
+server/etcdmain/grpc_proxy.go,3,Send,220,
+server/etcdmain/grpc_proxy.go,1,Goroutine,223,
+server/etcdmain/grpc_proxy.go,2,Receive,244,
+server/etcdserver/v2_server.go,16,Select (number of branch),109,3
+server/etcdserver/v2_server.go,2,Receive,110,
+server/etcdserver/v2_server.go,2,Receive,113,
+server/etcdserver/v2_server.go,2,Receive,117,
+server/etcdserver/metrics.go,20,Receive only chan (<-chan),207,
+server/etcdserver/metrics.go,16,Select (number of branch),231,2
+server/etcdserver/metrics.go,2,Receive,232,
+server/etcdserver/metrics.go,2,Receive,233,
+server/etcdserver/snapshot_merge.go,1,Goroutine,63,
+server/etcdserver/corrupt.go,16,Select (number of branch),137,2
+server/etcdserver/corrupt.go,2,Receive,138,
+server/etcdserver/corrupt.go,2,Receive,140,
+server/etcdserver/raft_test.go,3,Send,168,
+server/etcdserver/raft_test.go,16,Select (number of branch),169,2
+server/etcdserver/raft_test.go,2,Receive,170,
+server/etcdserver/raft_test.go,2,Receive,171,
+server/etcdserver/raft_test.go,3,Send,175,
+server/etcdserver/raft_test.go,16,Select (number of branch),176,2
+server/etcdserver/raft_test.go,2,Receive,177,
+server/etcdserver/raft_test.go,2,Receive,178,
+server/etcdserver/raft_test.go,3,Send,203,
+server/etcdserver/raft_test.go,2,Receive,207,
+server/etcdserver/raft_test.go,4,Synchronous chan,209,
+server/etcdserver/raft_test.go,1,Goroutine,210,
+server/etcdserver/raft_test.go,3,Send,211,
+server/etcdserver/raft_test.go,2,Receive,212,
+server/etcdserver/raft_test.go,15,Close chan,213,
+server/etcdserver/raft_test.go,16,Select (number of branch),216,2
+server/etcdserver/raft_test.go,2,Receive,217,
+server/etcdserver/raft_test.go,2,Receive,219,
+server/etcdserver/raft_test.go,2,Receive,223,
+server/etcdserver/raft_test.go,16,Select (number of branch),225,2
+server/etcdserver/raft_test.go,2,Receive,226,
+server/etcdserver/raft_test.go,2,Receive,227,
+server/etcdserver/raft_test.go,3,Send,261,
+server/etcdserver/raft_test.go,2,Receive,267,
+server/etcdserver/raft.go,8,Known chan length (length),134,1
+server/etcdserver/raft.go,9,Unknown chan length,135,
+server/etcdserver/raft.go,4,Synchronous chan,136,
+server/etcdserver/raft.go,4,Synchronous chan,137,
+server/etcdserver/raft.go,4,Synchronous chan,138,
+server/etcdserver/raft.go,1,Goroutine,160,
+server/etcdserver/raft.go,16,Select (number of branch),165,3
+server/etcdserver/raft.go,2,Receive,166,
+server/etcdserver/raft.go,2,Receive,168,
+server/etcdserver/raft.go,16,Select (number of branch),193,3
+server/etcdserver/raft.go,3,Send,194,
+server/etcdserver/raft.go,2,Receive,195,
+server/etcdserver/raft.go,2,Receive,197,
+server/etcdserver/raft.go,8,Known chan length (length),202,1
+server/etcdserver/raft.go,16,Select (number of branch),211,2
+server/etcdserver/raft.go,3,Send,212,
+server/etcdserver/raft.go,2,Receive,213,
+server/etcdserver/raft.go,3,Send,254,
+server/etcdserver/raft.go,3,Send,274,
+server/etcdserver/raft.go,16,Select (number of branch),294,2
+server/etcdserver/raft.go,3,Send,295,
+server/etcdserver/raft.go,2,Receive,296,
+server/etcdserver/raft.go,3,Send,305,
+server/etcdserver/raft.go,2,Receive,309,
+server/etcdserver/raft.go,17,Select with default (number of branch),349,2
+server/etcdserver/raft.go,3,Send,350,
+server/etcdserver/raft.go,3,Send,379,
+server/etcdserver/raft.go,2,Receive,380,
+server/etcdserver/v3_server.go,2,Receive,234,
+server/etcdserver/v3_server.go,16,Select (number of branch),378,3
+server/etcdserver/v3_server.go,2,Receive,379,
+server/etcdserver/v3_server.go,2,Receive,381,
+server/etcdserver/v3_server.go,2,Receive,383,
+server/etcdserver/v3_server.go,16,Select (number of branch),694,3
+server/etcdserver/v3_server.go,2,Receive,695,
+server/etcdserver/v3_server.go,2,Receive,697,
+server/etcdserver/v3_server.go,2,Receive,701,
+server/etcdserver/v3_server.go,16,Select (number of branch),713,3
+server/etcdserver/v3_server.go,2,Receive,714,
+server/etcdserver/v3_server.go,2,Receive,716,
+server/etcdserver/v3_server.go,2,Receive,717,
+server/etcdserver/v3_server.go,16,Select (number of branch),748,2
+server/etcdserver/v3_server.go,2,Receive,749,
+server/etcdserver/v3_server.go,2,Receive,750,
+server/etcdserver/v3_server.go,20,Receive only chan (<-chan),766,
+server/etcdserver/v3_server.go,16,Select (number of branch),781,6
+server/etcdserver/v3_server.go,2,Receive,782,
+server/etcdserver/v3_server.go,2,Receive,801,
+server/etcdserver/v3_server.go,2,Receive,805,
+server/etcdserver/v3_server.go,2,Receive,814,
+server/etcdserver/v3_server.go,2,Receive,826,
+server/etcdserver/v3_server.go,2,Receive,833,
+server/etcdserver/v3_server.go,17,Select with default (number of branch),873,2
+server/etcdserver/v3_server.go,3,Send,874,
+server/etcdserver/v3_server.go,16,Select (number of branch),879,3
+server/etcdserver/v3_server.go,2,Receive,880,
+server/etcdserver/v3_server.go,2,Receive,882,
+server/etcdserver/v3_server.go,2,Receive,884,
+server/etcdserver/server_test.go,3,Send,182,
+server/etcdserver/server_test.go,3,Send,210,
+server/etcdserver/server_test.go,3,Send,212,
+server/etcdserver/server_test.go,3,Send,221,
+server/etcdserver/server_test.go,8,Known chan length (length),225,1
+server/etcdserver/server_test.go,1,Goroutine,226,
+server/etcdserver/server_test.go,3,Send,228,
+server/etcdserver/server_test.go,2,Receive,241,
+server/etcdserver/server_test.go,4,Synchronous chan,873,
+server/etcdserver/server_test.go,8,Known chan length (length),896,1
+server/etcdserver/server_test.go,1,Goroutine,897,
+server/etcdserver/server_test.go,3,Send,899,
+server/etcdserver/server_test.go,16,Select (number of branch),902,2
+server/etcdserver/server_test.go,2,Receive,903,
+server/etcdserver/server_test.go,2,Receive,904,
+server/etcdserver/server_test.go,8,Known chan length (length),941,1
+server/etcdserver/server_test.go,1,Goroutine,942,
+server/etcdserver/server_test.go,3,Send,944,
+server/etcdserver/server_test.go,16,Select (number of branch),947,2
+server/etcdserver/server_test.go,2,Receive,948,
+server/etcdserver/server_test.go,2,Receive,949,
+server/etcdserver/server_test.go,8,Known chan length (length),964,1
+server/etcdserver/server_test.go,1,Goroutine,985,
+server/etcdserver/server_test.go,3,Send,987,
+server/etcdserver/server_test.go,3,Send,993,
+server/etcdserver/server_test.go,1,Goroutine,997,
+server/etcdserver/server_test.go,2,Receive,1015,
+server/etcdserver/server_test.go,8,Known chan length (length),1042,2
+server/etcdserver/server_test.go,1,Goroutine,1044,
+server/etcdserver/server_test.go,3,Send,1046,
+server/etcdserver/server_test.go,1,Goroutine,1061,
+server/etcdserver/server_test.go,3,Send,1063,
+server/etcdserver/server_test.go,2,Receive,1077,
+server/etcdserver/server_test.go,2,Receive,1078,
+server/etcdserver/server_test.go,3,Send,1134,
+server/etcdserver/server_test.go,1,Goroutine,1135,
+server/etcdserver/server_test.go,2,Receive,1137,
+server/etcdserver/server_test.go,3,Send,1141,
+server/etcdserver/server_test.go,2,Receive,1144,
+server/etcdserver/server_test.go,2,Receive,1149,
+server/etcdserver/server_test.go,2,Receive,1153,
+server/etcdserver/server_test.go,2,Receive,1164,
+server/etcdserver/server_test.go,2,Receive,1168,
+server/etcdserver/server_test.go,4,Synchronous chan,1207,
+server/etcdserver/server_test.go,1,Goroutine,1208,
+server/etcdserver/server_test.go,15,Close chan,1209,
+server/etcdserver/server_test.go,2,Receive,1233,
+server/etcdserver/server_test.go,3,Send,1297,
+server/etcdserver/server_test.go,3,Send,1300,
+server/etcdserver/server_test.go,2,Receive,1303,
+server/etcdserver/server_test.go,3,Send,1310,
+server/etcdserver/server_test.go,2,Receive,1312,
+server/etcdserver/server_test.go,3,Send,1321,
+server/etcdserver/server_test.go,3,Send,1340,
+server/etcdserver/server_test.go,3,Send,1386,
+server/etcdserver/server_test.go,3,Send,1432,
+server/etcdserver/server_test.go,8,Known chan length (length),1480,1
+server/etcdserver/server_test.go,3,Send,1482,
+server/etcdserver/server_test.go,4,Synchronous chan,1488,
+server/etcdserver/server_test.go,4,Synchronous chan,1547,
+server/etcdserver/server_test.go,4,Synchronous chan,1548,
+server/etcdserver/server_test.go,4,Synchronous chan,1549,
+server/etcdserver/server_test.go,4,Synchronous chan,1572,
+server/etcdserver/server_test.go,4,Synchronous chan,1579,
+server/etcdserver/server_test.go,1,Goroutine,1580,
+server/etcdserver/server_test.go,15,Close chan,1581,
+server/etcdserver/server_test.go,17,Select with default (number of branch),1588,2
+server/etcdserver/server_test.go,2,Receive,1589,
+server/etcdserver/server_test.go,3,Send,1597,
+server/etcdserver/server_test.go,2,Receive,1598,
+server/etcdserver/server_test.go,8,Known chan length (length),1603,1
+server/etcdserver/server_test.go,3,Send,1605,
+server/etcdserver/server_test.go,4,Synchronous chan,1613,
+server/etcdserver/server_test.go,4,Synchronous chan,1660,
+server/etcdserver/server_test.go,4,Synchronous chan,1661,
+server/etcdserver/server_test.go,4,Synchronous chan,1662,
+server/etcdserver/server_test.go,4,Synchronous chan,1683,
+server/etcdserver/server_test.go,4,Synchronous chan,1688,
+server/etcdserver/server_test.go,4,Synchronous chan,1700,
+server/etcdserver/server_test.go,1,Goroutine,1701,
+server/etcdserver/server_test.go,15,Close chan,1702,
+server/etcdserver/server_test.go,17,Select with default (number of branch),1709,2
+server/etcdserver/server_test.go,2,Receive,1710,
+server/etcdserver/server_test.go,3,Send,1718,
+server/etcdserver/server_test.go,2,Receive,1719,
+server/etcdserver/server_test.go,8,Known chan length (length),1724,1
+server/etcdserver/server_test.go,3,Send,1726,
+server/etcdserver/server_test.go,4,Synchronous chan,1773,
+server/etcdserver/server_test.go,4,Synchronous chan,1774,
+server/etcdserver/server_test.go,1,Goroutine,1776,
+server/etcdserver/server_test.go,2,Receive,1777,
+server/etcdserver/server_test.go,17,Select with default (number of branch),1782,2
+server/etcdserver/server_test.go,2,Receive,1783,
+server/etcdserver/server_test.go,17,Select with default (number of branch),1788,2
+server/etcdserver/server_test.go,2,Receive,1789,
+server/etcdserver/server_test.go,2,Receive,1888,
+server/etcdserver/server_test.go,3,Send,1946,
+server/etcdserver/server_test.go,3,Send,1969,
+server/etcdserver/server_test.go,8,Known chan length (length),2012,1
+server/etcdserver/server_test.go,3,Send,2021,
+server/etcdserver/server_test.go,8,Known chan length (length),2030,1
+server/etcdserver/server_test.go,3,Send,2042,
+server/etcdserver/server.go,4,Synchronous chan,319,
+server/etcdserver/server.go,8,Known chan length (length),323,1
+server/etcdserver/server.go,4,Synchronous chan,337,
+server/etcdserver/server.go,16,Select (number of branch),481,2
+server/etcdserver/server.go,2,Receive,482,
+server/etcdserver/server.go,2,Receive,483,
+server/etcdserver/server.go,4,Synchronous chan,552,
+server/etcdserver/server.go,4,Synchronous chan,553,
+server/etcdserver/server.go,8,Known chan length (length),554,1
+server/etcdserver/server.go,8,Known chan length (length),556,1
+server/etcdserver/server.go,4,Synchronous chan,558,
+server/etcdserver/server.go,1,Goroutine,579,
+server/etcdserver/server.go,16,Select (number of branch),594,4
+server/etcdserver/server.go,2,Receive,595,
+server/etcdserver/server.go,2,Receive,597,
+server/etcdserver/server.go,2,Receive,599,
+server/etcdserver/server.go,2,Receive,601,
+server/etcdserver/server.go,2,Receive,603,
+server/etcdserver/server.go,2,Receive,606,
+server/etcdserver/server.go,2,Receive,609,
+server/etcdserver/server.go,4,Synchronous chan,782,
+server/etcdserver/server.go,16,Select (number of branch),835,5
+server/etcdserver/server.go,2,Receive,836,
+server/etcdserver/server.go,2,Receive,839,
+server/etcdserver/server.go,8,Known chan length (length),842,16
+server/etcdserver/server.go,16,Select (number of branch),844,2
+server/etcdserver/server.go,3,Send,845,
+server/etcdserver/server.go,2,Receive,846,
+server/etcdserver/server.go,2,Receive,863,
+server/etcdserver/server.go,2,Receive,867,
+server/etcdserver/server.go,2,Receive,871,
+server/etcdserver/server.go,2,Receive,875,
+server/etcdserver/server.go,2,Receive,913,
+server/etcdserver/server.go,17,Select with default (number of branch),916,2
+server/etcdserver/server.go,2,Receive,918,
+server/etcdserver/server.go,2,Receive,961,
+server/etcdserver/server.go,1,Goroutine,992,
+server/etcdserver/server.go,1,Goroutine,1084,
+server/etcdserver/server.go,16,Select (number of branch),1133,2
+server/etcdserver/server.go,2,Receive,1134,
+server/etcdserver/server.go,2,Receive,1136,
+server/etcdserver/server.go,16,Select (number of branch),1186,2
+server/etcdserver/server.go,3,Send,1187,
+server/etcdserver/server.go,2,Receive,1188,
+server/etcdserver/server.go,2,Receive,1191,
+server/etcdserver/server.go,16,Select (number of branch),1213,2
+server/etcdserver/server.go,2,Receive,1214,
+server/etcdserver/server.go,2,Receive,1215,
+server/etcdserver/server.go,17,Select with default (number of branch),1217,2
+server/etcdserver/server.go,3,Send,1218,
+server/etcdserver/server.go,16,Select (number of branch),1625,3
+server/etcdserver/server.go,2,Receive,1626,
+server/etcdserver/server.go,2,Receive,1639,
+server/etcdserver/server.go,2,Receive,1643,
+server/etcdserver/server.go,17,Select with default (number of branch),1682,2
+server/etcdserver/server.go,2,Receive,1683,
+server/etcdserver/server.go,16,Select (number of branch),1802,2
+server/etcdserver/server.go,2,Receive,1803,
+server/etcdserver/server.go,16,Select (number of branch),1809,2
+server/etcdserver/server.go,2,Receive,1810,
+server/etcdserver/server.go,2,Receive,1811,
+server/etcdserver/server.go,2,Receive,1819,
+server/etcdserver/server.go,4,Synchronous chan,1969,
+server/etcdserver/server.go,16,Select (number of branch),2163,3
+server/etcdserver/server.go,2,Receive,2164,
+server/etcdserver/server.go,2,Receive,2165,
+server/etcdserver/server.go,2,Receive,2166,
+server/etcdserver/server.go,16,Select (number of branch),2261,2
+server/etcdserver/server.go,2,Receive,2262,
+server/etcdserver/server.go,2,Receive,2263,
+server/etcdserver/server.go,17,Select with default (number of branch),2338,2
+server/etcdserver/server.go,2,Receive,2339,
+server/etcdserver/server.go,1,Goroutine,2348,
+server/etcdserver/api/rafthttp/snapshot_test.go,8,Known chan length (length),106,1
+server/etcdserver/api/rafthttp/snapshot_test.go,16,Select (number of branch),118,2
+server/etcdserver/api/rafthttp/snapshot_test.go,2,Receive,119,
+server/etcdserver/api/rafthttp/snapshot_test.go,2,Receive,121,
+server/etcdserver/api/rafthttp/snapshot_test.go,2,Receive,125,
+server/etcdserver/api/rafthttp/snapshot_test.go,3,Send,146,
+server/etcdserver/api/rafthttp/util.go,21,Send only chan (chan<-),124,
+server/etcdserver/api/rafthttp/util.go,17,Select with default (number of branch),125,2
+server/etcdserver/api/rafthttp/util.go,3,Send,126,
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,44,
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,62,
+server/etcdserver/api/rafthttp/pipeline_test.go,16,Select (number of branch),81,2
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,82,
+server/etcdserver/api/rafthttp/pipeline_test.go,2,Receive,83,
+server/etcdserver/api/rafthttp/pipeline_test.go,17,Select with default (number of branch),89,2
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,90,
+server/etcdserver/api/rafthttp/pipeline_test.go,16,Select (number of branch),99,2
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,100,
+server/etcdserver/api/rafthttp/pipeline_test.go,2,Receive,101,
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,115,
+server/etcdserver/api/rafthttp/pipeline_test.go,17,Select with default (number of branch),209,2
+server/etcdserver/api/rafthttp/pipeline_test.go,2,Receive,210,
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,223,
+server/etcdserver/api/rafthttp/pipeline_test.go,4,Synchronous chan,226,
+server/etcdserver/api/rafthttp/pipeline_test.go,1,Goroutine,227,
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,229,
+server/etcdserver/api/rafthttp/pipeline_test.go,16,Select (number of branch),231,2
+server/etcdserver/api/rafthttp/pipeline_test.go,2,Receive,232,
+server/etcdserver/api/rafthttp/pipeline_test.go,2,Receive,233,
+server/etcdserver/api/rafthttp/pipeline_test.go,3,Send,259,
+server/etcdserver/api/rafthttp/pipeline_test.go,8,Known chan length (length),309,1
+server/etcdserver/api/rafthttp/probing_status.go,1,Goroutine,57,
+server/etcdserver/api/rafthttp/probing_status.go,16,Select (number of branch),64,2
+server/etcdserver/api/rafthttp/probing_status.go,2,Receive,65,
+server/etcdserver/api/rafthttp/probing_status.go,2,Receive,94,
+server/etcdserver/api/rafthttp/http.go,2,Receive,451,
+server/etcdserver/api/rafthttp/snapshot_sender.go,8,Known chan length (length),159,1
+server/etcdserver/api/rafthttp/snapshot_sender.go,1,Goroutine,161,
+server/etcdserver/api/rafthttp/snapshot_sender.go,3,Send,164,
+server/etcdserver/api/rafthttp/snapshot_sender.go,3,Send,173,
+server/etcdserver/api/rafthttp/snapshot_sender.go,16,Select (number of branch),176,2
+server/etcdserver/api/rafthttp/snapshot_sender.go,2,Receive,177,
+server/etcdserver/api/rafthttp/snapshot_sender.go,2,Receive,179,
+server/etcdserver/api/rafthttp/fake_roundtripper_test.go,8,Known chan length (length),23,1
+server/etcdserver/api/rafthttp/fake_roundtripper_test.go,16,Select (number of branch),28,3
+server/etcdserver/api/rafthttp/fake_roundtripper_test.go,2,Receive,29,
+server/etcdserver/api/rafthttp/fake_roundtripper_test.go,2,Receive,31,
+server/etcdserver/api/rafthttp/fake_roundtripper_test.go,2,Receive,33,
+server/etcdserver/api/rafthttp/functional_test.go,8,Known chan length (length),46,1
+server/etcdserver/api/rafthttp/functional_test.go,2,Receive,81,
+server/etcdserver/api/rafthttp/functional_test.go,8,Known chan length (length),104,1
+server/etcdserver/api/rafthttp/functional_test.go,16,Select (number of branch),130,2
+server/etcdserver/api/rafthttp/functional_test.go,2,Receive,132,
+server/etcdserver/api/rafthttp/functional_test.go,2,Receive,135,
+server/etcdserver/api/rafthttp/functional_test.go,17,Select with default (number of branch),169,2
+server/etcdserver/api/rafthttp/functional_test.go,3,Send,170,
+server/etcdserver/api/rafthttp/transport_test.go,8,Known chan length (length),161,1
+server/etcdserver/api/rafthttp/transport_test.go,16,Select (number of branch),175,2
+server/etcdserver/api/rafthttp/transport_test.go,2,Receive,176,
+server/etcdserver/api/rafthttp/transport_test.go,2,Receive,178,
+server/etcdserver/api/rafthttp/transport_test.go,16,Select (number of branch),182,2
+server/etcdserver/api/rafthttp/transport_test.go,2,Receive,183,
+server/etcdserver/api/rafthttp/transport_test.go,2,Receive,184,
+server/etcdserver/api/rafthttp/stream_test.go,16,Select (number of branch),59,2
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,60,
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,61,
+server/etcdserver/api/rafthttp/stream_test.go,3,Send,70,
+server/etcdserver/api/rafthttp/stream_test.go,16,Select (number of branch),72,2
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,73,
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,74,
+server/etcdserver/api/rafthttp/stream_test.go,3,Send,101,
+server/etcdserver/api/rafthttp/stream_test.go,16,Select (number of branch),102,2
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,103,
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,104,
+server/etcdserver/api/rafthttp/stream_test.go,8,Known chan length (length),174,1
+server/etcdserver/api/rafthttp/stream_test.go,8,Known chan length (length),198,1
+server/etcdserver/api/rafthttp/stream_test.go,1,Goroutine,206,
+server/etcdserver/api/rafthttp/stream_test.go,16,Select (number of branch),212,2
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,213,
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,214,
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,235,
+server/etcdserver/api/rafthttp/stream_test.go,9,Unknown chan length,269,
+server/etcdserver/api/rafthttp/stream_test.go,9,Unknown chan length,270,
+server/etcdserver/api/rafthttp/stream_test.go,3,Send,336,
+server/etcdserver/api/rafthttp/stream_test.go,16,Select (number of branch),338,2
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,339,
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,340,
+server/etcdserver/api/rafthttp/stream_test.go,17,Select with default (number of branch),410,2
+server/etcdserver/api/rafthttp/stream_test.go,3,Send,411,
+server/etcdserver/api/rafthttp/stream_test.go,17,Select with default (number of branch),432,2
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,433,
+server/etcdserver/api/rafthttp/stream_test.go,2,Receive,455,
+server/etcdserver/api/rafthttp/remote.go,17,Select with default (number of branch),55,2
+server/etcdserver/api/rafthttp/remote.go,3,Send,56,
+server/etcdserver/api/rafthttp/stream.go,8,Known chan length (length),147,4096
+server/etcdserver/api/rafthttp/stream.go,4,Synchronous chan,148,
+server/etcdserver/api/rafthttp/stream.go,4,Synchronous chan,149,
+server/etcdserver/api/rafthttp/stream.go,4,Synchronous chan,150,
+server/etcdserver/api/rafthttp/stream.go,1,Goroutine,152,
+server/etcdserver/api/rafthttp/stream.go,16,Select (number of branch),178,4
+server/etcdserver/api/rafthttp/stream.go,2,Receive,179,
+server/etcdserver/api/rafthttp/stream.go,2,Receive,204,
+server/etcdserver/api/rafthttp/stream.go,2,Receive,235,
+server/etcdserver/api/rafthttp/stream.go,2,Receive,284,
+server/etcdserver/api/rafthttp/stream.go,8,Known chan length (length),335,4096
+server/etcdserver/api/rafthttp/stream.go,16,Select (number of branch),341,2
+server/etcdserver/api/rafthttp/stream.go,3,Send,342,
+server/etcdserver/api/rafthttp/stream.go,2,Receive,344,
+server/etcdserver/api/rafthttp/stream.go,2,Receive,351,
+server/etcdserver/api/rafthttp/stream.go,4,Synchronous chan,382,
+server/etcdserver/api/rafthttp/stream.go,1,Goroutine,389,
+server/etcdserver/api/rafthttp/stream.go,17,Select with default (number of branch),480,2
+server/etcdserver/api/rafthttp/stream.go,2,Receive,481,
+server/etcdserver/api/rafthttp/stream.go,17,Select with default (number of branch),526,2
+server/etcdserver/api/rafthttp/stream.go,3,Send,527,
+server/etcdserver/api/rafthttp/stream.go,2,Receive,562,
+server/etcdserver/api/rafthttp/stream.go,17,Select with default (number of branch),594,2
+server/etcdserver/api/rafthttp/stream.go,2,Receive,595,
+server/etcdserver/api/rafthttp/pipeline.go,4,Synchronous chan,64,
+server/etcdserver/api/rafthttp/pipeline.go,8,Known chan length (length),65,64
+server/etcdserver/api/rafthttp/pipeline.go,5,Go in for,68,
+server/etcdserver/api/rafthttp/pipeline.go,7,Goroutine in for with constant (constant),68,4
+server/etcdserver/api/rafthttp/pipeline.go,1,Goroutine,68,
+server/etcdserver/api/rafthttp/pipeline.go,16,Select (number of branch),97,2
+server/etcdserver/api/rafthttp/pipeline.go,2,Receive,98,
+server/etcdserver/api/rafthttp/pipeline.go,2,Receive,125,
+server/etcdserver/api/rafthttp/pipeline.go,8,Known chan length (length),137,1
+server/etcdserver/api/rafthttp/pipeline.go,1,Goroutine,140,
+server/etcdserver/api/rafthttp/pipeline.go,16,Select (number of branch),141,2
+server/etcdserver/api/rafthttp/pipeline.go,2,Receive,142,
+server/etcdserver/api/rafthttp/pipeline.go,2,Receive,144,
+server/etcdserver/api/rafthttp/pipeline.go,3,Send,151,
+server/etcdserver/api/rafthttp/peer.go,8,Known chan length (length),167,4096
+server/etcdserver/api/rafthttp/peer.go,8,Known chan length (length),168,4096
+server/etcdserver/api/rafthttp/peer.go,4,Synchronous chan,169,
+server/etcdserver/api/rafthttp/peer.go,1,Goroutine,174,
+server/etcdserver/api/rafthttp/peer.go,16,Select (number of branch),176,2
+server/etcdserver/api/rafthttp/peer.go,2,Receive,177,
+server/etcdserver/api/rafthttp/peer.go,2,Receive,183,
+server/etcdserver/api/rafthttp/peer.go,1,Goroutine,192,
+server/etcdserver/api/rafthttp/peer.go,16,Select (number of branch),194,2
+server/etcdserver/api/rafthttp/peer.go,2,Receive,195,
+server/etcdserver/api/rafthttp/peer.go,2,Receive,201,
+server/etcdserver/api/rafthttp/peer.go,17,Select with default (number of branch),246,2
+server/etcdserver/api/rafthttp/peer.go,3,Send,247,
+server/etcdserver/api/rafthttp/peer.go,1,Goroutine,283,
+server/etcdserver/api/rafthttp/http_test.go,5,Go in for,160,
+server/etcdserver/api/rafthttp/http_test.go,10,Make chan in for,159,
+server/etcdserver/api/rafthttp/http_test.go,4,Synchronous chan,159,
+server/etcdserver/api/rafthttp/http_test.go,1,Goroutine,160,
+server/etcdserver/api/rafthttp/http_test.go,15,Close chan,163,
+server/etcdserver/api/rafthttp/http_test.go,2,Receive,167,
+server/etcdserver/api/rafthttp/http_test.go,5,Go in for,204,
+server/etcdserver/api/rafthttp/http_test.go,1,Goroutine,204,
+server/etcdserver/api/rafthttp/http_test.go,16,Select (number of branch),207,2
+server/etcdserver/api/rafthttp/http_test.go,2,Receive,208,
+server/etcdserver/api/rafthttp/http_test.go,2,Receive,209,
+server/etcdserver/api/rafthttp/http_test.go,17,Select with default (number of branch),328,2
+server/etcdserver/api/rafthttp/http_test.go,2,Receive,329,
+server/etcdserver/api/rafthttp/http_test.go,17,Select with default (number of branch),334,2
+server/etcdserver/api/rafthttp/http_test.go,2,Receive,335,
+server/etcdserver/api/rafthttp/http_test.go,3,Send,390,
+server/etcdserver/api/snap/message.go,3,Send,60,
+server/etcdserver/api/snap/message.go,3,Send,62,
+server/etcdserver/api/v2discovery/discovery_test.go,5,Go in for,208,
+server/etcdserver/api/v2discovery/discovery_test.go,1,Goroutine,208,
+server/etcdserver/api/v2discovery/discovery_test.go,5,Go in for,295,
+server/etcdserver/api/v2discovery/discovery_test.go,1,Goroutine,295,
+server/etcdserver/api/v2discovery/discovery_test.go,1,Goroutine,432,
+server/etcdserver/api/v2http/client.go,16,Select (number of branch),611,3
+server/etcdserver/api/v2http/client.go,2,Receive,612,
+server/etcdserver/api/v2http/client.go,2,Receive,615,
+server/etcdserver/api/v2http/client.go,2,Receive,618,
+server/etcdserver/api/v2http/client_test.go,3,Send,154,
+server/etcdserver/api/v2http/client_test.go,4,Synchronous chan,1659,
+server/etcdserver/api/v2http/client_test.go,1,Goroutine,1674,
+server/etcdserver/api/v2http/client_test.go,3,Send,1675,
+server/etcdserver/api/v2http/client_test.go,3,Send,1735,
+server/etcdserver/api/v2http/client_test.go,8,Known chan length (length),1777,1
+server/etcdserver/api/v2http/client_test.go,3,Send,1779,
+server/etcdserver/api/v2http/client_test.go,8,Known chan length (length),1791,1
+server/etcdserver/api/v2http/client_test.go,4,Synchronous chan,1834,
+server/etcdserver/api/v2http/client_test.go,4,Synchronous chan,1839,
+server/etcdserver/api/v2http/client_test.go,1,Goroutine,1840,
+server/etcdserver/api/v2http/client_test.go,15,Close chan,1843,
+server/etcdserver/api/v2http/client_test.go,16,Select (number of branch),1847,2
+server/etcdserver/api/v2http/client_test.go,2,Receive,1848,
+server/etcdserver/api/v2http/client_test.go,2,Receive,1849,
+server/etcdserver/api/v2http/client_test.go,16,Select (number of branch),1871,2
+server/etcdserver/api/v2http/client_test.go,3,Send,1872,
+server/etcdserver/api/v2http/client_test.go,2,Receive,1876,
+server/etcdserver/api/v2http/client_test.go,16,Select (number of branch),1881,2
+server/etcdserver/api/v2http/client_test.go,2,Receive,1882,
+server/etcdserver/api/v2http/client_test.go,2,Receive,1883,
+server/etcdserver/api/v2http/client_test.go,16,Select (number of branch),1901,2
+server/etcdserver/api/v2http/client_test.go,3,Send,1902,
+server/etcdserver/api/v2http/client_test.go,2,Receive,1906,
+server/etcdserver/api/v2http/client_test.go,16,Select (number of branch),1910,2
+server/etcdserver/api/v2http/client_test.go,2,Receive,1911,
+server/etcdserver/api/v2http/client_test.go,2,Receive,1912,
+server/etcdserver/api/v2http/client_test.go,16,Select (number of branch),1926,2
+server/etcdserver/api/v2http/client_test.go,2,Receive,1927,
+server/etcdserver/api/v2http/client_test.go,2,Receive,1928,
+server/etcdserver/api/v2store/watcher_hub.go,8,Known chan length (length),69,100
+server/etcdserver/api/v2store/watcher_hub.go,3,Send,83,
+server/etcdserver/api/v2store/watcher.go,17,Select with default (number of branch),65,2
+server/etcdserver/api/v2store/watcher.go,3,Send,66,
+server/etcdserver/api/v2store/watcher_test.go,17,Select with default (number of branch),28,2
+server/etcdserver/api/v2store/watcher_test.go,2,Receive,29,
+server/etcdserver/api/v2store/watcher_test.go,2,Receive,39,
+server/etcdserver/api/v2store/watcher_test.go,17,Select with default (number of branch),52,2
+server/etcdserver/api/v2store/watcher_test.go,2,Receive,53,
+server/etcdserver/api/v2store/watcher_test.go,2,Receive,63,
+server/etcdserver/api/v2store/watcher_test.go,17,Select with default (number of branch),73,2
+server/etcdserver/api/v2store/watcher_test.go,2,Receive,74,
+server/etcdserver/api/v2store/watcher_test.go,2,Receive,84,
+server/etcdserver/api/v2store/store_ttl_test.go,20,Receive only chan (<-chan),358,
+server/etcdserver/api/v2store/store_ttl_test.go,17,Select with default (number of branch),359,2
+server/etcdserver/api/v2store/store_ttl_test.go,2,Receive,360,
+server/etcdserver/api/v2store/store_bench_test.go,2,Receive,114,
+server/etcdserver/api/v2store/store_bench_test.go,2,Receive,136,
+server/etcdserver/api/v2store/store_bench_test.go,2,Receive,157,
+server/etcdserver/api/v2store/store_bench_test.go,2,Receive,173,
+server/etcdserver/api/v2v3/watcher.go,2,Receive,36,
+server/etcdserver/api/v2v3/watcher.go,4,Synchronous chan,42,
+server/etcdserver/api/v2v3/watcher.go,4,Synchronous chan,42,
+server/etcdserver/api/v2v3/watcher.go,1,Goroutine,43,
+server/etcdserver/api/v2v3/watcher.go,15,Close chan,45,
+server/etcdserver/api/v2v3/watcher.go,15,Close chan,46,
+server/etcdserver/api/v2v3/watcher.go,16,Select (number of branch),65,2
+server/etcdserver/api/v2v3/watcher.go,3,Send,66,
+server/etcdserver/api/v2v3/watcher.go,2,Receive,67,
+server/etcdserver/api/v2v3/watcher.go,2,Receive,139,
+server/etcdserver/api/v3compactor/periodic_test.go,16,Select (number of branch),150,2
+server/etcdserver/api/v3compactor/periodic_test.go,2,Receive,151,
+server/etcdserver/api/v3compactor/periodic_test.go,2,Receive,153,
+server/etcdserver/api/v3compactor/revision.go,1,Goroutine,66,
+server/etcdserver/api/v3compactor/revision.go,16,Select (number of branch),68,2
+server/etcdserver/api/v3compactor/revision.go,2,Receive,69,
+server/etcdserver/api/v3compactor/revision.go,2,Receive,71,
+server/etcdserver/api/v3compactor/revision_test.go,16,Select (number of branch),88,2
+server/etcdserver/api/v3compactor/revision_test.go,2,Receive,89,
+server/etcdserver/api/v3compactor/revision_test.go,2,Receive,91,
+server/etcdserver/api/v3compactor/periodic.go,1,Goroutine,103,
+server/etcdserver/api/v3compactor/periodic.go,16,Select (number of branch),112,2
+server/etcdserver/api/v3compactor/periodic.go,2,Receive,113,
+server/etcdserver/api/v3compactor/periodic.go,2,Receive,115,
+server/etcdserver/api/v3election/election.go,16,Select (number of branch),81,2
+server/etcdserver/api/v3election/election.go,2,Receive,82,
+server/etcdserver/api/v3election/election.go,2,Receive,83,
+server/etcdserver/api/v3election/v3electionpb/gw/v3election.pb.gw.go,1,Goroutine,305,
+server/etcdserver/api/v3election/v3electionpb/gw/v3election.pb.gw.go,2,Receive,306,
+server/etcdserver/api/v3lock/v3lockpb/gw/v3lock.pb.gw.go,1,Goroutine,165,
+server/etcdserver/api/v3lock/v3lockpb/gw/v3lock.pb.gw.go,2,Receive,166,
+server/etcdserver/api/v3rpc/maintenance.go,1,Goroutine,114,
+server/etcdserver/api/v3rpc/lease.go,8,Known chan length (length),94,1
+server/etcdserver/api/v3rpc/lease.go,1,Goroutine,95,
+server/etcdserver/api/v3rpc/lease.go,3,Send,96,
+server/etcdserver/api/v3rpc/lease.go,16,Select (number of branch),98,2
+server/etcdserver/api/v3rpc/lease.go,2,Receive,99,
+server/etcdserver/api/v3rpc/lease.go,2,Receive,100,
+server/etcdserver/api/v3rpc/watch.go,8,Known chan length (length),168,16
+server/etcdserver/api/v3rpc/watch.go,4,Synchronous chan,174,
+server/etcdserver/api/v3rpc/watch.go,1,Goroutine,178,
+server/etcdserver/api/v3rpc/watch.go,8,Known chan length (length),183,1
+server/etcdserver/api/v3rpc/watch.go,1,Goroutine,188,
+server/etcdserver/api/v3rpc/watch.go,3,Send,196,
+server/etcdserver/api/v3rpc/watch.go,16,Select (number of branch),209,2
+server/etcdserver/api/v3rpc/watch.go,2,Receive,210,
+server/etcdserver/api/v3rpc/watch.go,2,Receive,215,
+server/etcdserver/api/v3rpc/watch.go,16,Select (number of branch),278,2
+server/etcdserver/api/v3rpc/watch.go,3,Send,279,
+server/etcdserver/api/v3rpc/watch.go,2,Receive,281,
+server/etcdserver/api/v3rpc/watch.go,16,Select (number of branch),316,2
+server/etcdserver/api/v3rpc/watch.go,3,Send,317,
+server/etcdserver/api/v3rpc/watch.go,2,Receive,318,
+server/etcdserver/api/v3rpc/watch.go,3,Send,327,
+server/etcdserver/api/v3rpc/watch.go,3,Send,341,
+server/etcdserver/api/v3rpc/watch.go,16,Select (number of branch),378,4
+server/etcdserver/api/v3rpc/watch.go,2,Receive,379,
+server/etcdserver/api/v3rpc/watch.go,2,Receive,449,
+server/etcdserver/api/v3rpc/watch.go,2,Receive,488,
+server/etcdserver/api/v3rpc/watch.go,2,Receive,498,
+server/etcdserver/api/v3rpc/interceptor.go,16,Select (number of branch),315,2
+server/etcdserver/api/v3rpc/interceptor.go,2,Receive,316,
+server/etcdserver/api/v3rpc/interceptor.go,2,Receive,318,
+server/etcdserver/api/v3rpc/interceptor.go,2,Receive,333,
+server/lease/lessor.go,8,Known chan length (length),214,16
+server/lease/lessor.go,4,Synchronous chan,215,
+server/lease/lessor.go,4,Synchronous chan,216,
+server/lease/lessor.go,1,Goroutine,221,
+server/lease/lessor.go,4,Synchronous chan,272,
+server/lease/lessor.go,16,Select (number of branch),384,3
+server/lease/lessor.go,2,Receive,388,
+server/lease/lessor.go,2,Receive,392,
+server/lease/lessor.go,2,Receive,394,
+server/lease/lessor.go,4,Synchronous chan,442,
+server/lease/lessor.go,2,Receive,580,
+server/lease/lessor.go,16,Select (number of branch),590,2
+server/lease/lessor.go,2,Receive,591,
+server/lease/lessor.go,2,Receive,592,
+server/lease/lessor.go,17,Select with default (number of branch),613,3
+server/lease/lessor.go,2,Receive,614,
+server/lease/lessor.go,3,Send,616,
+server/lease/lessor_test.go,4,Synchronous chan,132,
+server/lease/lessor_test.go,1,Goroutine,133,
+server/lease/lessor_test.go,15,Close chan,135,
+server/lease/lessor_test.go,5,Go in for,141,
+server/lease/lessor_test.go,1,Goroutine,141,
+server/lease/lessor_test.go,2,Receive,147,
+server/lease/lessor_test.go,16,Select (number of branch),426,2
+server/lease/lessor_test.go,2,Receive,427,
+server/lease/lessor_test.go,2,Receive,431,
+server/lease/lessor_test.go,8,Known chan length (length),435,1
+server/lease/lessor_test.go,1,Goroutine,436,
+server/lease/lessor_test.go,3,Send,441,
+server/lease/lessor_test.go,16,Select (number of branch),444,2
+server/lease/lessor_test.go,2,Receive,445,
+server/lease/lessor_test.go,2,Receive,447,
+server/lease/lessor_test.go,16,Select (number of branch),455,2
+server/lease/lessor_test.go,2,Receive,456,
+server/lease/lessor_test.go,2,Receive,457,
+server/lease/lessor_test.go,16,Select (number of branch),479,2
+server/lease/lessor_test.go,2,Receive,480,
+server/lease/lessor_test.go,2,Receive,484,
+server/lease/lessor_test.go,8,Known chan length (length),488,1
+server/lease/lessor_test.go,1,Goroutine,489,
+server/lease/lessor_test.go,3,Send,494,
+server/lease/lessor_test.go,16,Select (number of branch),497,2
+server/lease/lessor_test.go,2,Receive,498,
+server/lease/lessor_test.go,2,Receive,500,
+server/lease/lessor_test.go,16,Select (number of branch),506,2
+server/lease/lessor_test.go,2,Receive,507,
+server/lease/lessor_test.go,2,Receive,508,
+server/lease/lessor_test.go,4,Synchronous chan,537,
+server/lease/lessor_test.go,15,Close chan,539,
+server/lease/lessor_test.go,16,Select (number of branch),557,2
+server/lease/lessor_test.go,2,Receive,558,
+server/lease/lessor_test.go,2,Receive,559,
+server/lease/leasehttp/http_test.go,4,Synchronous chan,118,
+server/lease/leasehttp/http_test.go,15,Close chan,119,
+server/lease/leasehttp/http.go,16,Select (number of branch),70,2
+server/lease/leasehttp/http.go,2,Receive,71,
+server/lease/leasehttp/http.go,2,Receive,72,
+server/lease/leasehttp/http.go,16,Select (number of branch),100,2
+server/lease/leasehttp/http.go,2,Receive,101,
+server/lease/leasehttp/http.go,2,Receive,102,
+server/proxy/grpcproxy/watch_broadcasts.go,8,Known chan length (length),41,1
+server/proxy/grpcproxy/watch_broadcasts.go,4,Synchronous chan,42,
+server/proxy/grpcproxy/watch_broadcasts.go,1,Goroutine,44,
+server/proxy/grpcproxy/watch_broadcasts.go,2,Receive,127,
+server/proxy/grpcproxy/watch_broadcasts.go,17,Select with default (number of branch),131,2
+server/proxy/grpcproxy/watch_broadcasts.go,3,Send,132,
+server/proxy/grpcproxy/watcher.go,16,Select (number of branch),122,2
+server/proxy/grpcproxy/watcher.go,3,Send,123,
+server/proxy/grpcproxy/watcher.go,2,Receive,124,
+server/proxy/grpcproxy/watch_broadcast.go,4,Synchronous chan,51,
+server/proxy/grpcproxy/watch_broadcast.go,1,Goroutine,55,
+server/proxy/grpcproxy/watch_broadcast.go,16,Select (number of branch),158,2
+server/proxy/grpcproxy/watch_broadcast.go,2,Receive,159,
+server/proxy/grpcproxy/watch_broadcast.go,2,Receive,163,
+server/proxy/grpcproxy/leader.go,4,Synchronous chan,46,
+server/proxy/grpcproxy/leader.go,4,Synchronous chan,47,
+server/proxy/grpcproxy/leader.go,4,Synchronous chan,48,
+server/proxy/grpcproxy/leader.go,1,Goroutine,52,
+server/proxy/grpcproxy/leader.go,2,Receive,63,
+server/proxy/grpcproxy/leader.go,2,Receive,77,
+server/proxy/grpcproxy/leader.go,17,Select with default (number of branch),85,2
+server/proxy/grpcproxy/leader.go,2,Receive,86,
+server/proxy/grpcproxy/leader.go,17,Select with default (number of branch),96,2
+server/proxy/grpcproxy/leader.go,2,Receive,97,
+server/proxy/grpcproxy/leader.go,4,Synchronous chan,98,
+server/proxy/grpcproxy/register.go,4,Synchronous chan,38,
+server/proxy/grpcproxy/register.go,1,Goroutine,39,
+server/proxy/grpcproxy/register.go,15,Close chan,40,
+server/proxy/grpcproxy/register.go,16,Select (number of branch),48,2
+server/proxy/grpcproxy/register.go,2,Receive,49,
+server/proxy/grpcproxy/register.go,2,Receive,53,
+server/proxy/grpcproxy/watch.go,4,Synchronous chan,62,
+server/proxy/grpcproxy/watch.go,1,Goroutine,63,
+server/proxy/grpcproxy/watch.go,15,Close chan,64,
+server/proxy/grpcproxy/watch.go,2,Receive,65,
+server/proxy/grpcproxy/watch.go,16,Select (number of branch),67,2
+server/proxy/grpcproxy/watch.go,2,Receive,68,
+server/proxy/grpcproxy/watch.go,2,Receive,69,
+server/proxy/grpcproxy/watch.go,2,Receive,72,
+server/proxy/grpcproxy/watch.go,17,Select with default (number of branch),82,2
+server/proxy/grpcproxy/watch.go,2,Receive,83,
+server/proxy/grpcproxy/watch.go,17,Select with default (number of branch),85,2
+server/proxy/grpcproxy/watch.go,2,Receive,86,
+server/proxy/grpcproxy/watch.go,8,Known chan length (length),101,1024
+server/proxy/grpcproxy/watch.go,17,Select with default (number of branch),115,2
+server/proxy/grpcproxy/watch.go,2,Receive,116,
+server/proxy/grpcproxy/watch.go,8,Known chan length (length),126,3
+server/proxy/grpcproxy/watch.go,1,Goroutine,127,
+server/proxy/grpcproxy/watch.go,3,Send,128,
+server/proxy/grpcproxy/watch.go,1,Goroutine,131,
+server/proxy/grpcproxy/watch.go,3,Send,132,
+server/proxy/grpcproxy/watch.go,1,Goroutine,136,
+server/proxy/grpcproxy/watch.go,3,Send,137,
+server/proxy/grpcproxy/watch.go,16,Select (number of branch),138,3
+server/proxy/grpcproxy/watch.go,2,Receive,139,
+server/proxy/grpcproxy/watch.go,2,Receive,140,
+server/proxy/grpcproxy/watch.go,2,Receive,141,
+server/proxy/grpcproxy/watch.go,2,Receive,145,
+server/proxy/grpcproxy/watch.go,1,Goroutine,150,
+server/proxy/grpcproxy/watch.go,2,Receive,151,
+server/proxy/grpcproxy/watch.go,2,Receive,152,
+server/proxy/grpcproxy/watch.go,17,Select with default (number of branch),157,3
+server/proxy/grpcproxy/watch.go,2,Receive,158,
+server/proxy/grpcproxy/watch.go,2,Receive,160,
+server/proxy/grpcproxy/watch.go,5,Go in for,197,
+server/proxy/grpcproxy/watch.go,1,Goroutine,197,
+server/proxy/grpcproxy/watch.go,3,Send,239,
+server/proxy/grpcproxy/watch.go,16,Select (number of branch),283,2
+server/proxy/grpcproxy/watch.go,2,Receive,284,
+server/proxy/grpcproxy/watch.go,2,Receive,291,
+server/proxy/grpcproxy/watch.go,3,Send,312,
+server/proxy/grpcproxy/kv.go,4,Synchronous chan,35,
+server/proxy/grpcproxy/kv.go,15,Close chan,36,
+server/proxy/grpcproxy/health.go,16,Select (number of branch),68,2
+server/proxy/grpcproxy/health.go,2,Receive,69,
+server/proxy/grpcproxy/health.go,2,Receive,70,
+server/proxy/grpcproxy/cluster.go,4,Synchronous chan,79,
+server/proxy/grpcproxy/cluster.go,1,Goroutine,81,
+server/proxy/grpcproxy/cluster.go,15,Close chan,82,
+server/proxy/grpcproxy/cluster.go,15,Close chan,88,
+server/proxy/grpcproxy/cluster.go,16,Select (number of branch),106,2
+server/proxy/grpcproxy/cluster.go,2,Receive,107,
+server/proxy/grpcproxy/cluster.go,2,Receive,110,
+server/proxy/grpcproxy/lease.go,4,Synchronous chan,59,
+server/proxy/grpcproxy/lease.go,1,Goroutine,60,
+server/proxy/grpcproxy/lease.go,15,Close chan,61,
+server/proxy/grpcproxy/lease.go,2,Receive,62,
+server/proxy/grpcproxy/lease.go,16,Select (number of branch),64,2
+server/proxy/grpcproxy/lease.go,2,Receive,65,
+server/proxy/grpcproxy/lease.go,2,Receive,66,
+server/proxy/grpcproxy/lease.go,2,Receive,69,
+server/proxy/grpcproxy/lease.go,17,Select with default (number of branch),135,2
+server/proxy/grpcproxy/lease.go,2,Receive,136,
+server/proxy/grpcproxy/lease.go,4,Synchronous chan,149,
+server/proxy/grpcproxy/lease.go,8,Known chan length (length),154,2
+server/proxy/grpcproxy/lease.go,17,Select with default (number of branch),163,2
+server/proxy/grpcproxy/lease.go,2,Receive,164,
+server/proxy/grpcproxy/lease.go,8,Known chan length (length),171,3
+server/proxy/grpcproxy/lease.go,1,Goroutine,172,
+server/proxy/grpcproxy/lease.go,3,Send,173,
+server/proxy/grpcproxy/lease.go,3,Send,175,
+server/proxy/grpcproxy/lease.go,1,Goroutine,179,
+server/proxy/grpcproxy/lease.go,3,Send,180,
+server/proxy/grpcproxy/lease.go,3,Send,182,
+server/proxy/grpcproxy/lease.go,1,Goroutine,187,
+server/proxy/grpcproxy/lease.go,3,Send,188,
+server/proxy/grpcproxy/lease.go,16,Select (number of branch),189,3
+server/proxy/grpcproxy/lease.go,2,Receive,190,
+server/proxy/grpcproxy/lease.go,2,Receive,191,
+server/proxy/grpcproxy/lease.go,2,Receive,192,
+server/proxy/grpcproxy/lease.go,16,Select (number of branch),197,2
+server/proxy/grpcproxy/lease.go,2,Receive,198,
+server/proxy/grpcproxy/lease.go,3,Send,199,
+server/proxy/grpcproxy/lease.go,2,Receive,200,
+server/proxy/grpcproxy/lease.go,1,Goroutine,206,
+server/proxy/grpcproxy/lease.go,2,Receive,207,
+server/proxy/grpcproxy/lease.go,2,Receive,208,
+server/proxy/grpcproxy/lease.go,2,Receive,209,
+server/proxy/grpcproxy/lease.go,15,Close chan,211,
+server/proxy/grpcproxy/lease.go,17,Select with default (number of branch),215,3
+server/proxy/grpcproxy/lease.go,2,Receive,216,
+server/proxy/grpcproxy/lease.go,2,Receive,218,
+server/proxy/grpcproxy/lease.go,1,Goroutine,260,
+server/proxy/grpcproxy/lease.go,16,Select (number of branch),282,2
+server/proxy/grpcproxy/lease.go,2,Receive,283,
+server/proxy/grpcproxy/lease.go,2,Receive,295,
+server/proxy/grpcproxy/lease.go,16,Select (number of branch),313,2
+server/proxy/grpcproxy/lease.go,3,Send,314,
+server/proxy/grpcproxy/lease.go,2,Receive,316,
+server/proxy/grpcproxy/lease.go,16,Select (number of branch),339,3
+server/proxy/grpcproxy/lease.go,3,Send,340,
+server/proxy/grpcproxy/lease.go,2,Receive,342,
+server/proxy/grpcproxy/lease.go,2,Receive,344,
+server/proxy/grpcproxy/lease.go,16,Select (number of branch),352,2
+server/proxy/grpcproxy/lease.go,2,Receive,353,
+server/proxy/grpcproxy/lease.go,2,Receive,360,
+server/proxy/grpcproxy/adapter/chan_stream.go,16,Select (number of branch),45,2
+server/proxy/grpcproxy/adapter/chan_stream.go,3,Send,46,
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,50,
+server/proxy/grpcproxy/adapter/chan_stream.go,3,Send,64,
+server/proxy/grpcproxy/adapter/chan_stream.go,16,Select (number of branch),75,2
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,76,
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,78,
+server/proxy/grpcproxy/adapter/chan_stream.go,16,Select (number of branch),84,2
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,85,
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,87,
+server/proxy/grpcproxy/adapter/chan_stream.go,16,Select (number of branch),108,2
+server/proxy/grpcproxy/adapter/chan_stream.go,3,Send,109,
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,114,
+server/proxy/grpcproxy/adapter/chan_stream.go,16,Select (number of branch),122,2
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,123,
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,132,
+server/proxy/grpcproxy/adapter/chan_stream.go,8,Known chan length (length),144,1
+server/proxy/grpcproxy/adapter/chan_stream.go,4,Synchronous chan,144,
+server/proxy/grpcproxy/adapter/chan_stream.go,8,Known chan length (length),145,1
+server/proxy/grpcproxy/adapter/chan_stream.go,8,Known chan length (length),145,1
+server/proxy/grpcproxy/adapter/chan_stream.go,1,Goroutine,155,
+server/proxy/grpcproxy/adapter/chan_stream.go,16,Select (number of branch),157,3
+server/proxy/grpcproxy/adapter/chan_stream.go,3,Send,158,
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,159,
+server/proxy/grpcproxy/adapter/chan_stream.go,2,Receive,160,
+server/proxy/httpproxy/director.go,1,Goroutine,46,
+server/proxy/httpproxy/reverse.go,8,Known chan length (length),118,1
+server/proxy/httpproxy/reverse.go,1,Goroutine,125,
+server/proxy/httpproxy/reverse.go,16,Select (number of branch),126,2
+server/proxy/httpproxy/reverse.go,2,Receive,127,
+server/proxy/httpproxy/reverse.go,2,Receive,134,
+server/proxy/httpproxy/reverse.go,3,Send,139,
+server/proxy/tcpproxy/userspace_test.go,1,Goroutine,51,
+server/proxy/tcpproxy/userspace_test.go,1,Goroutine,112,
+server/proxy/tcpproxy/userspace.go,4,Synchronous chan,73,
+server/proxy/tcpproxy/userspace.go,1,Goroutine,90,
+server/proxy/tcpproxy/userspace.go,5,Go in for,97,
+server/proxy/tcpproxy/userspace.go,1,Goroutine,97,
+server/proxy/tcpproxy/userspace.go,1,Goroutine,187,
+server/proxy/tcpproxy/userspace.go,16,Select (number of branch),200,2
+server/proxy/tcpproxy/userspace.go,2,Receive,201,
+server/proxy/tcpproxy/userspace.go,5,Go in for,207,
+server/proxy/tcpproxy/userspace.go,1,Goroutine,207,
+server/proxy/tcpproxy/userspace.go,2,Receive,220,
+server/storage/backend.go,4,Synchronous chan,74,
+server/storage/backend.go,1,Goroutine,75,
+server/storage/backend.go,3,Send,76,
+server/storage/backend.go,16,Select (number of branch),79,2
+server/storage/backend.go,2,Receive,80,
+server/storage/backend.go,2,Receive,84,
+server/storage/backend.go,2,Receive,92,
+server/storage/backend/batch_tx.go,1,Goroutine,320,
+server/storage/backend/backend.go,4,Synchronous chan,211,
+server/storage/backend/backend.go,4,Synchronous chan,212,
+server/storage/backend/backend.go,1,Goroutine,221,
+server/storage/backend/backend.go,4,Synchronous chan,327,
+server/storage/backend/backend.go,4,Synchronous chan,327,
+server/storage/backend/backend.go,1,Goroutine,329,
+server/storage/backend/backend.go,15,Close chan,330,
+server/storage/backend/backend.go,16,Select (number of branch),342,2
+server/storage/backend/backend.go,2,Receive,343,
+server/storage/backend/backend.go,2,Receive,351,
+server/storage/backend/backend.go,16,Select (number of branch),405,2
+server/storage/backend/backend.go,2,Receive,406,
+server/storage/backend/backend.go,2,Receive,407,
+server/storage/backend/backend.go,2,Receive,420,
+server/storage/backend/backend.go,2,Receive,646,
+server/storage/backend/hooks_test.go,17,Select with default (number of branch),99,2
+server/storage/backend/hooks_test.go,2,Receive,100,
+server/storage/backend/backend_test.go,4,Synchronous chan,35,
+server/storage/backend/backend_test.go,1,Goroutine,36,
+server/storage/backend/backend_test.go,3,Send,41,
+server/storage/backend/backend_test.go,16,Select (number of branch),43,2
+server/storage/backend/backend_test.go,2,Receive,44,
+server/storage/backend/backend_test.go,2,Receive,45,
+server/storage/mvcc/kvstore_compaction.go,16,Select (number of branch),73,2
+server/storage/mvcc/kvstore_compaction.go,2,Receive,74,
+server/storage/mvcc/kvstore_compaction.go,2,Receive,75,
+server/storage/mvcc/watchable_store_bench_test.go,2,Receive,107,
+server/storage/mvcc/watchable_store_bench_test.go,17,Select with default (number of branch),109,2
+server/storage/mvcc/watchable_store_bench_test.go,2,Receive,110,
+server/storage/mvcc/kvstore_compaction_test.go,16,Select (number of branch),119,2
+server/storage/mvcc/kvstore_compaction_test.go,2,Receive,120,
+server/storage/mvcc/kvstore_compaction_test.go,2,Receive,121,
+server/storage/mvcc/watcher_group.go,17,Select with default (number of branch),254,2
+server/storage/mvcc/watcher_group.go,3,Send,255,
+server/storage/mvcc/watchable_store_test.go,2,Receive,209,
+server/storage/mvcc/watchable_store_test.go,16,Select (number of branch),249,2
+server/storage/mvcc/watchable_store_test.go,2,Receive,250,
+server/storage/mvcc/watchable_store_test.go,2,Receive,257,
+server/storage/mvcc/watchable_store_test.go,16,Select (number of branch),285,2
+server/storage/mvcc/watchable_store_test.go,2,Receive,286,
+server/storage/mvcc/watchable_store_test.go,2,Receive,296,
+server/storage/mvcc/watchable_store_test.go,16,Select (number of branch),322,2
+server/storage/mvcc/watchable_store_test.go,2,Receive,323,
+server/storage/mvcc/watchable_store_test.go,2,Receive,333,
+server/storage/mvcc/watchable_store_test.go,16,Select (number of branch),383,2
+server/storage/mvcc/watchable_store_test.go,2,Receive,384,
+server/storage/mvcc/watchable_store_test.go,2,Receive,394,
+server/storage/mvcc/watchable_store_test.go,2,Receive,421,
+server/storage/mvcc/watchable_store_test.go,9,Unknown chan length,550,
+server/storage/mvcc/watchable_store_test.go,5,Go in for,553,
+server/storage/mvcc/watchable_store_test.go,1,Goroutine,553,
+server/storage/mvcc/watchable_store_test.go,16,Select (number of branch),563,2
+server/storage/mvcc/watchable_store_test.go,2,Receive,564,
+server/storage/mvcc/watchable_store_test.go,3,Send,565,
+server/storage/mvcc/watchable_store_test.go,2,Receive,567,
+server/storage/mvcc/watchable_store_test.go,3,Send,571,
+server/storage/mvcc/watchable_store_test.go,3,Send,580,
+server/storage/mvcc/watchable_store_test.go,17,Select with default (number of branch),583,2
+server/storage/mvcc/watchable_store_test.go,2,Receive,584,
+server/storage/mvcc/watchable_store_test.go,3,Send,585,
+server/storage/mvcc/watchable_store_test.go,5,Go in for,595,
+server/storage/mvcc/watchable_store_test.go,1,Goroutine,595,
+server/storage/mvcc/watchable_store_test.go,17,Select with default (number of branch),603,2
+server/storage/mvcc/watchable_store_test.go,2,Receive,604,
+server/storage/mvcc/watchable_store_test.go,4,Synchronous chan,623,
+server/storage/mvcc/watchable_store_test.go,5,Go in for,626,
+server/storage/mvcc/watchable_store_test.go,7,Goroutine in for with constant (constant),626,100
+server/storage/mvcc/watchable_store_test.go,1,Goroutine,626,
+server/storage/mvcc/watchable_store_test.go,2,Receive,633,
+server/storage/mvcc/watchable_store_test.go,5,Go in for,636,
+server/storage/mvcc/watchable_store_test.go,1,Goroutine,636,
+server/storage/mvcc/watchable_store_test.go,1,Goroutine,641,
+server/storage/mvcc/watchable_store_test.go,15,Close chan,648,
+server/storage/mvcc/kv_test.go,5,Go in for,423,
+server/storage/mvcc/kv_test.go,10,Make chan in for,422,
+server/storage/mvcc/kv_test.go,8,Known chan length (length),422,1
+server/storage/mvcc/kv_test.go,1,Goroutine,423,
+server/storage/mvcc/kv_test.go,3,Send,425,
+server/storage/mvcc/kv_test.go,16,Select (number of branch),427,2
+server/storage/mvcc/kv_test.go,2,Receive,428,
+server/storage/mvcc/kv_test.go,2,Receive,430,
+server/storage/mvcc/kv_test.go,16,Select (number of branch),434,2
+server/storage/mvcc/kv_test.go,2,Receive,435,
+server/storage/mvcc/kv_test.go,2,Receive,436,
+server/storage/mvcc/kv_test.go,4,Synchronous chan,453,
+server/storage/mvcc/kv_test.go,1,Goroutine,454,
+server/storage/mvcc/kv_test.go,15,Close chan,455,
+server/storage/mvcc/kv_test.go,16,Select (number of branch),458,2
+server/storage/mvcc/kv_test.go,2,Receive,459,
+server/storage/mvcc/kv_test.go,2,Receive,460,
+server/storage/mvcc/kv_test.go,8,Known chan length (length),677,1
+server/storage/mvcc/kv_test.go,2,Receive,679,
+server/storage/mvcc/kv_test.go,16,Select (number of branch),767,2
+server/storage/mvcc/kv_test.go,2,Receive,768,
+server/storage/mvcc/kv_test.go,2,Receive,776,
+server/storage/mvcc/kv_test.go,16,Select (number of branch),782,2
+server/storage/mvcc/kv_test.go,2,Receive,783,
+server/storage/mvcc/kv_test.go,2,Receive,791,
+server/storage/mvcc/kv_test.go,16,Select (number of branch),798,2
+server/storage/mvcc/kv_test.go,2,Receive,799,
+server/storage/mvcc/kv_test.go,2,Receive,807,
+server/storage/mvcc/kv_test.go,16,Select (number of branch),812,2
+server/storage/mvcc/kv_test.go,2,Receive,813,
+server/storage/mvcc/kv_test.go,2,Receive,821,
+server/storage/mvcc/watchable_store.go,8,Known chan length (length),83,1
+server/storage/mvcc/watchable_store.go,4,Synchronous chan,86,
+server/storage/mvcc/watchable_store.go,1,Goroutine,95,
+server/storage/mvcc/watchable_store.go,1,Goroutine,96,
+server/storage/mvcc/watchable_store.go,21,Send only chan (chan<-),116,
+server/storage/mvcc/watchable_store.go,16,Select (number of branch),233,2
+server/storage/mvcc/watchable_store.go,2,Receive,234,
+server/storage/mvcc/watchable_store.go,2,Receive,235,
+server/storage/mvcc/watchable_store.go,16,Select (number of branch),259,3
+server/storage/mvcc/watchable_store.go,2,Receive,260,
+server/storage/mvcc/watchable_store.go,2,Receive,261,
+server/storage/mvcc/watchable_store.go,2,Receive,262,
+server/storage/mvcc/watchable_store.go,17,Select with default (number of branch),465,2
+server/storage/mvcc/watchable_store.go,3,Send,466,
+server/storage/mvcc/watchable_store.go,17,Select with default (number of branch),539,2
+server/storage/mvcc/watchable_store.go,3,Send,540,
+server/storage/mvcc/kvstore_txn.go,17,Select with default (number of branch),157,2
+server/storage/mvcc/kvstore_txn.go,2,Receive,158,
+server/storage/mvcc/watcher_test.go,2,Receive,52,
+server/storage/mvcc/watcher_test.go,2,Receive,72,
+server/storage/mvcc/watcher_test.go,2,Receive,142,
+server/storage/mvcc/watcher_test.go,2,Receive,172,
+server/storage/mvcc/watcher_test.go,16,Select (number of branch),241,2
+server/storage/mvcc/watcher_test.go,2,Receive,242,
+server/storage/mvcc/watcher_test.go,2,Receive,246,
+server/storage/mvcc/watcher_test.go,17,Select with default (number of branch),317,2
+server/storage/mvcc/watcher_test.go,2,Receive,318,
+server/storage/mvcc/watcher_test.go,17,Select with default (number of branch),325,2
+server/storage/mvcc/watcher_test.go,2,Receive,326,
+server/storage/mvcc/watcher_test.go,16,Select (number of branch),335,2
+server/storage/mvcc/watcher_test.go,2,Receive,336,
+server/storage/mvcc/watcher_test.go,2,Receive,340,
+server/storage/mvcc/watcher_test.go,8,Known chan length (length),358,1
+server/storage/mvcc/watcher_test.go,1,Goroutine,360,
+server/storage/mvcc/watcher_test.go,2,Receive,361,
+server/storage/mvcc/watcher_test.go,3,Send,362,
+server/storage/mvcc/watcher_test.go,16,Select (number of branch),367,2
+server/storage/mvcc/watcher_test.go,2,Receive,368,
+server/storage/mvcc/watcher_test.go,2,Receive,370,
+server/storage/mvcc/watcher_test.go,16,Select (number of branch),375,2
+server/storage/mvcc/watcher_test.go,2,Receive,376,
+server/storage/mvcc/watcher_test.go,2,Receive,377,
+server/storage/mvcc/kvstore.go,4,Synchronous chan,113,
+server/storage/mvcc/kvstore.go,22,chan used as a param,140,
+server/storage/mvcc/kvstore.go,17,Select with default (number of branch),142,2
+server/storage/mvcc/kvstore.go,2,Receive,143,
+server/storage/mvcc/kvstore.go,4,Synchronous chan,226,
+server/storage/mvcc/kvstore.go,4,Synchronous chan,249,
+server/storage/mvcc/kvstore.go,15,Close chan,262,
+server/storage/mvcc/kvstore.go,4,Synchronous chan,318,
+server/storage/mvcc/kvstore.go,2,Receive,373,
+server/storage/mvcc/kvstore.go,9,Unknown chan length,428,
+server/storage/mvcc/kvstore.go,8,Known chan length (length),428,1
+server/storage/mvcc/kvstore.go,1,Goroutine,429,
+server/storage/mvcc/kvstore.go,3,Send,431,
+server/storage/mvcc/kvstore.go,6,Range over chan,434,
+server/storage/mvcc/kvstore.go,21,Send only chan (chan<-),474,
+server/storage/mvcc/kvstore.go,3,Send,488,
+server/storage/mvcc/kvstore_test.go,3,Send,139,
+server/storage/mvcc/kvstore_test.go,3,Send,141,
+server/storage/mvcc/kvstore_test.go,3,Send,215,
+server/storage/mvcc/kvstore_test.go,3,Send,216,
+server/storage/mvcc/kvstore_test.go,3,Send,292,
+server/storage/mvcc/kvstore_test.go,3,Send,293,
+server/storage/mvcc/kvstore_test.go,3,Send,332,
+server/storage/mvcc/kvstore_test.go,3,Send,335,
+server/storage/mvcc/kvstore_test.go,3,Send,387,
+server/storage/mvcc/kvstore_test.go,3,Send,388,
+server/storage/mvcc/kvstore_test.go,3,Send,390,
+server/storage/mvcc/kvstore_test.go,3,Send,391,
+server/storage/mvcc/kvstore_test.go,8,Known chan length (length),546,1
+server/storage/mvcc/kvstore_test.go,4,Synchronous chan,548,
+server/storage/mvcc/kvstore_test.go,5,Go in for,552,
+server/storage/mvcc/kvstore_test.go,7,Goroutine in for with constant (constant),552,10
+server/storage/mvcc/kvstore_test.go,1,Goroutine,552,
+server/storage/mvcc/kvstore_test.go,16,Select (number of branch),559,2
+server/storage/mvcc/kvstore_test.go,2,Receive,560,
+server/storage/mvcc/kvstore_test.go,3,Send,562,
+server/storage/mvcc/kvstore_test.go,1,Goroutine,568,
+server/storage/mvcc/kvstore_test.go,15,Close chan,569,
+server/storage/mvcc/kvstore_test.go,2,Receive,572,
+server/storage/mvcc/kvstore_test.go,1,Goroutine,583,
+server/storage/mvcc/kvstore_test.go,16,Select (number of branch),594,2
+server/storage/mvcc/kvstore_test.go,2,Receive,595,
+server/storage/mvcc/kvstore_test.go,2,Receive,597,
+server/storage/mvcc/kvstore_test.go,8,Known chan length (length),665,1
+server/storage/mvcc/kvstore_test.go,1,Goroutine,666,
+server/storage/mvcc/kvstore_test.go,3,Send,668,
+server/storage/mvcc/kvstore_test.go,16,Select (number of branch),670,2
+server/storage/mvcc/kvstore_test.go,2,Receive,671,
+server/storage/mvcc/kvstore_test.go,2,Receive,672,
+server/storage/mvcc/kvstore_test.go,5,Go in for,730,
+server/storage/mvcc/kvstore_test.go,1,Goroutine,730,
+server/storage/mvcc/kvstore_test.go,5,Go in for,753,
+server/storage/mvcc/kvstore_test.go,1,Goroutine,753,
+server/storage/mvcc/kvstore_test.go,4,Synchronous chan,783,
+server/storage/mvcc/kvstore_test.go,1,Goroutine,784,
+server/storage/mvcc/kvstore_test.go,15,Close chan,786,
+server/storage/mvcc/kvstore_test.go,16,Select (number of branch),788,2
+server/storage/mvcc/kvstore_test.go,2,Receive,789,
+server/storage/mvcc/kvstore_test.go,2,Receive,790,
+server/storage/mvcc/kvstore_test.go,8,Known chan length (length),844,1
+server/storage/mvcc/kvstore_test.go,8,Known chan length (length),845,1
+server/storage/mvcc/kvstore_test.go,8,Known chan length (length),846,1
+server/storage/mvcc/kvstore_test.go,8,Known chan length (length),847,1
+server/storage/mvcc/kvstore_test.go,4,Synchronous chan,857,
+server/storage/mvcc/kvstore_test.go,2,Receive,888,
+server/storage/mvcc/kvstore_test.go,2,Receive,955,
+server/storage/mvcc/kvstore_test.go,2,Receive,960,
+server/storage/mvcc/kvstore_test.go,2,Receive,972,
+server/storage/mvcc/kvstore_test.go,2,Receive,977,
+server/storage/mvcc/kvstore_test.go,2,Receive,981,
+server/storage/wal/file_pipeline.go,4,Synchronous chan,51,
+server/storage/wal/file_pipeline.go,8,Known chan length (length),52,1
+server/storage/wal/file_pipeline.go,4,Synchronous chan,53,
+server/storage/wal/file_pipeline.go,1,Goroutine,55,
+server/storage/wal/file_pipeline.go,16,Select (number of branch),62,2
+server/storage/wal/file_pipeline.go,2,Receive,63,
+server/storage/wal/file_pipeline.go,2,Receive,64,
+server/storage/wal/file_pipeline.go,2,Receive,71,
+server/storage/wal/file_pipeline.go,3,Send,94,
+server/storage/wal/file_pipeline.go,16,Select (number of branch),97,2
+server/storage/wal/file_pipeline.go,3,Send,98,
+server/storage/wal/file_pipeline.go,2,Receive,99,
+tools/benchmark/cmd/watch_latency.go,4,Synchronous chan,86,
+tools/benchmark/cmd/watch_latency.go,5,Go in for,89,
+tools/benchmark/cmd/watch_latency.go,1,Goroutine,89,
+tools/benchmark/cmd/watch_latency.go,2,Receive,90,
+tools/benchmark/cmd/watch_latency.go,2,Receive,91,
+tools/benchmark/cmd/watch_latency.go,3,Send,92,
+tools/benchmark/cmd/watch_latency.go,15,Close chan,103,
+tools/benchmark/cmd/watch_latency.go,2,Receive,110,
+tools/benchmark/cmd/watch_get.go,3,Send,89,
+tools/benchmark/cmd/watch_get.go,5,Go in for,95,
+tools/benchmark/cmd/watch_get.go,1,Goroutine,95,
+tools/benchmark/cmd/watch_get.go,2,Receive,102,
+tools/benchmark/cmd/watch_get.go,1,Goroutine,111,
+tools/benchmark/cmd/watch_get.go,2,Receive,114,
+tools/benchmark/cmd/lease.go,4,Synchronous chan,46,
+tools/benchmark/cmd/lease.go,5,Go in for,56,
+tools/benchmark/cmd/lease.go,1,Goroutine,56,
+tools/benchmark/cmd/lease.go,6,Range over chan,62,
+tools/benchmark/cmd/lease.go,3,Send,65,
+tools/benchmark/cmd/lease.go,1,Goroutine,72,
+tools/benchmark/cmd/lease.go,3,Send,75,
+tools/benchmark/cmd/lease.go,15,Close chan,77,
+tools/benchmark/cmd/lease.go,2,Receive,84,
+tools/benchmark/cmd/mvcc-put.go,3,Send,124,
+tools/benchmark/cmd/mvcc-put.go,3,Send,130,
+tools/benchmark/cmd/mvcc-put.go,2,Receive,135,
+tools/benchmark/cmd/stm.go,9,Unknown chan length,107,
+tools/benchmark/cmd/stm.go,5,Go in for,117,
+tools/benchmark/cmd/stm.go,1,Goroutine,117,
+tools/benchmark/cmd/stm.go,1,Goroutine,120,
+tools/benchmark/cmd/stm.go,3,Send,143,
+tools/benchmark/cmd/stm.go,15,Close chan,145,
+tools/benchmark/cmd/stm.go,2,Receive,152,
+tools/benchmark/cmd/stm.go,20,Receive only chan (<-chan),155,
+tools/benchmark/cmd/stm.go,21,Send only chan (chan<-),155,
+tools/benchmark/cmd/stm.go,3,Send,205,
+tools/benchmark/cmd/txn_put.go,9,Unknown chan length,70,
+tools/benchmark/cmd/txn_put.go,5,Go in for,85,
+tools/benchmark/cmd/txn_put.go,1,Goroutine,85,
+tools/benchmark/cmd/txn_put.go,6,Range over chan,87,
+tools/benchmark/cmd/txn_put.go,3,Send,91,
+tools/benchmark/cmd/txn_put.go,1,Goroutine,97,
+tools/benchmark/cmd/txn_put.go,3,Send,104,
+tools/benchmark/cmd/txn_put.go,15,Close chan,106,
+tools/benchmark/cmd/txn_put.go,2,Receive,113,
+tools/benchmark/cmd/txn_mixed.go,9,Unknown chan length,87,
+tools/benchmark/cmd/txn_mixed.go,5,Go in for,103,
+tools/benchmark/cmd/txn_mixed.go,1,Goroutine,103,
+tools/benchmark/cmd/txn_mixed.go,6,Range over chan,105,
+tools/benchmark/cmd/txn_mixed.go,3,Send,110,
+tools/benchmark/cmd/txn_mixed.go,3,Send,112,
+tools/benchmark/cmd/txn_mixed.go,1,Goroutine,119,
+tools/benchmark/cmd/txn_mixed.go,3,Send,137,
+tools/benchmark/cmd/txn_mixed.go,15,Close chan,139,
+tools/benchmark/cmd/txn_mixed.go,2,Receive,149,
+tools/benchmark/cmd/txn_mixed.go,2,Receive,151,
+tools/benchmark/cmd/watch.go,9,Unknown chan length,116,
+tools/benchmark/cmd/watch.go,9,Unknown chan length,125,
+tools/benchmark/cmd/watch.go,5,Go in for,127,
+tools/benchmark/cmd/watch.go,1,Goroutine,127,
+tools/benchmark/cmd/watch.go,2,Receive,131,
+tools/benchmark/cmd/watch.go,3,Send,134,
+tools/benchmark/cmd/watch.go,3,Send,138,
+tools/benchmark/cmd/watch.go,1,Goroutine,141,
+tools/benchmark/cmd/watch.go,15,Close chan,143,
+tools/benchmark/cmd/watch.go,3,Send,148,
+tools/benchmark/cmd/watch.go,2,Receive,157,
+tools/benchmark/cmd/watch.go,2,Receive,160,
+tools/benchmark/cmd/watch.go,5,Go in for,199,
+tools/benchmark/cmd/watch.go,1,Goroutine,199,
+tools/benchmark/cmd/watch.go,9,Unknown chan length,206,
+tools/benchmark/cmd/watch.go,1,Goroutine,207,
+tools/benchmark/cmd/watch.go,15,Close chan,208,
+tools/benchmark/cmd/watch.go,3,Send,210,
+tools/benchmark/cmd/watch.go,5,Go in for,216,
+tools/benchmark/cmd/watch.go,1,Goroutine,216,
+tools/benchmark/cmd/watch.go,6,Range over chan,217,
+tools/benchmark/cmd/watch.go,2,Receive,232,
+tools/benchmark/cmd/watch.go,21,Send only chan (chan<-),236,
+tools/benchmark/cmd/watch.go,3,Send,240,
+tools/benchmark/cmd/range.go,9,Unknown chan length,79,
+tools/benchmark/cmd/range.go,5,Go in for,89,
+tools/benchmark/cmd/range.go,1,Goroutine,89,
+tools/benchmark/cmd/range.go,6,Range over chan,91,
+tools/benchmark/cmd/range.go,3,Send,96,
+tools/benchmark/cmd/range.go,1,Goroutine,102,
+tools/benchmark/cmd/range.go,3,Send,109,
+tools/benchmark/cmd/range.go,15,Close chan,111,
+tools/benchmark/cmd/range.go,2,Receive,118,
+tools/benchmark/cmd/put.go,9,Unknown chan length,80,
+tools/benchmark/cmd/put.go,5,Go in for,95,
+tools/benchmark/cmd/put.go,1,Goroutine,95,
+tools/benchmark/cmd/put.go,6,Range over chan,97,
+tools/benchmark/cmd/put.go,3,Send,102,
+tools/benchmark/cmd/put.go,1,Goroutine,108,
+tools/benchmark/cmd/put.go,3,Send,115,
+tools/benchmark/cmd/put.go,15,Close chan,117,
+tools/benchmark/cmd/put.go,1,Goroutine,121,
+tools/benchmark/cmd/put.go,2,Receive,133,
+tools/etcd-dump-metrics/main.go,4,Synchronous chan,87,
+tools/etcd-dump-metrics/main.go,1,Goroutine,91,
+tools/etcd-dump-metrics/main.go,3,Send,97,
+tools/etcd-dump-metrics/main.go,3,Send,101,
+tools/etcd-dump-metrics/main.go,1,Goroutine,105,
+tools/etcd-dump-metrics/main.go,3,Send,111,
+tools/etcd-dump-metrics/main.go,3,Send,115,
+tools/etcd-dump-metrics/main.go,2,Receive,117,
+tools/etcd-dump-metrics/main.go,2,Receive,121,
+tools/etcd-dump-metrics/main.go,4,Synchronous chan,152,
+tools/etcd-dump-metrics/main.go,5,Go in for,154,
+tools/etcd-dump-metrics/main.go,1,Goroutine,154,
+tools/etcd-dump-metrics/main.go,3,Send,157,
+tools/etcd-dump-metrics/main.go,2,Receive,160,
+tools/etcd-dump-metrics/main.go,3,Send,161,
+tools/etcd-dump-metrics/main.go,2,Receive,165,
+tools/local-tester/bridge/dispatch.go,1,Goroutine,51,
+tools/local-tester/bridge/bridge.go,1,Goroutine,56,
+tools/local-tester/bridge/bridge.go,1,Goroutine,61,
+tools/local-tester/bridge/bridge.go,1,Goroutine,66,
+tools/local-tester/bridge/bridge.go,1,Goroutine,93,
+tools/local-tester/bridge/bridge.go,1,Goroutine,99,
+tools/local-tester/bridge/bridge.go,1,Goroutine,159,
+tools/local-tester/bridge/bridge.go,1,Goroutine,163,
+tools/local-tester/bridge/bridge.go,5,Go in for,318,
+tools/local-tester/bridge/bridge.go,1,Goroutine,318,
+/Users/nicolasdilley/Library/Caches/go-build/05/059e7ad3d3f0fc3c4c1b4198c910e9f6312f82825d298c75595ef47b9b64a117-d,0,Mutex,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/lease.go,0,Waitgroup Add(const),55,&{19837583 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/lease.go,0,Waitgroup Done(),57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/lease.go,0,Waitgroup Add(const),71,&{19837943 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/lease.go,0,Waitgroup Done(),73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/put.go,0,Mutex,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/put.go,0,Waitgroup Add(const),94,&{19796594 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/put.go,0,Waitgroup Done(),96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/range.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/range.go,0,Waitgroup Add(const),88,&{19808293 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/range.go,0,Waitgroup Done(),90,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Mutex,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Waitgroup Add(const),116,&{19802108 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Waitgroup Done(),156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Mutex,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Mutex,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Mutex,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/stm.go,0,Mutex,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/txn_mixed.go,0,Mutex,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/txn_mixed.go,0,Waitgroup Add(const),102,&{19818740 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/txn_mixed.go,0,Waitgroup Done(),104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/txn_put.go,0,Mutex,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/txn_put.go,0,Waitgroup Add(const),84,&{19828847 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/txn_put.go,0,Waitgroup Done(),86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/util.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch.go,0,Waitgroup Add(var),124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch.go,0,Waitgroup Done(),128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch.go,0,Waitgroup Done(),144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch.go,0,Waitgroup Add(var),196,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch.go,0,Waitgroup Done(),200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch.go,0,Mutex,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_get.go,0,Waitgroup Add(var),93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_get.go,0,Waitgroup Done(),106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Mutex,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Waitgroup,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Waitgroup Add(var),85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/coreos++etcd/tools/benchmark/cmd/watch_latency.go,0,Waitgroup Done(),93,

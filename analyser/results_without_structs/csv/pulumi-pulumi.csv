@@ -1,0 +1,882 @@
+Line num,147374
+packages num,20,189
+files num,59,512
+Average Line num per featured file,469,27693
+,0
+pkg/backend,2228
+pkg/backend/display,3278
+pkg/backend/filestate,1554
+pkg/backend/httpstate,1879
+pkg/backend/httpstate/client,943
+pkg/backend/state,29
+pkg/cmd/pulumi,11358
+pkg/codegen,423
+pkg/codegen/docs,2695
+pkg/codegen/dotnet,3335
+pkg/codegen/go,5149
+pkg/codegen/hcl2,2782
+pkg/codegen/hcl2/model,6463
+pkg/codegen/hcl2/model/format,128
+pkg/codegen/hcl2/syntax,2022
+pkg/codegen/importer,849
+pkg/codegen/internal/test,620
+pkg/codegen/internal/test/testdata,1152
+pkg/codegen/internal/test/testdata/dash-named-schema/go/foo,252
+pkg/codegen/internal/test/testdata/dash-named-schema/go/foo/submodule1,109
+pkg/codegen/internal/test/testdata/external-resource-schema/go/example,1038
+pkg/codegen/internal/test/testdata/nested-module/go/foo,150
+pkg/codegen/internal/test/testdata/nested-module/go/foo/nested/module,115
+pkg/codegen/internal/test/testdata/nested-module-thirdparty/go/foo,150
+pkg/codegen/internal/test/testdata/nested-module-thirdparty/go/foo/deeply/nested/module,115
+pkg/codegen/internal/test/testdata/output-funcs/go,583
+pkg/codegen/internal/test/testdata/plain-schema-gh6957/go/xyz,499
+pkg/codegen/internal/test/testdata/provider-config-schema/go/configstation,197
+pkg/codegen/internal/test/testdata/provider-config-schema/go/configstation/config,145
+pkg/codegen/internal/test/testdata/resource-args-python/go/example,668
+pkg/codegen/internal/test/testdata/resource-args-python/go-program,15
+pkg/codegen/internal/test/testdata/simple-enum-schema/go/plant,673
+pkg/codegen/internal/test/testdata/simple-enum-schema/go/plant/tree/v1,785
+pkg/codegen/internal/test/testdata/simple-methods-schema/go/example,308
+pkg/codegen/internal/test/testdata/simple-methods-schema/go/example/nested,115
+pkg/codegen/internal/test/testdata/simple-plain-schema/go/example,497
+pkg/codegen/internal/test/testdata/simple-plain-schema-with-root-package/go,452
+pkg/codegen/internal/test/testdata/simple-resource-schema/go/example,991
+pkg/codegen/internal/test/testdata/simple-resource-schema-custom-pypackage-name/go/example,643
+pkg/codegen/internal/test/testdata/simple-yaml-schema/go/example,1129
+pkg/codegen/internal/utils,89
+pkg/codegen/nodejs,3178
+pkg/codegen/python,4269
+pkg/codegen/schema,2773
+pkg/engine,2965
+pkg/engine/lifeycletest,6411
+pkg/graph,50
+pkg/graph/dotconv,87
+pkg/operations,774
+pkg/resource/analyzer,1421
+pkg/resource/deploy,5608
+pkg/resource/deploy/deploytest,788
+pkg/resource/deploy/providers,1094
+pkg/resource/edit,383
+pkg/resource/graph,317
+pkg/resource/provider,240
+pkg/resource/stack,1186
+pkg/secrets,28
+pkg/secrets/b64,26
+pkg/secrets/cloud,65
+pkg/secrets/passphrase,226
+pkg/secrets/service,100
+pkg/testing/integration,1802
+pkg/util/cancel,50
+pkg/util/testutil,45
+pkg/util/tracing,14
+pkg/util/validation,116
+pkg/version,2
+sdk/dotnet/Pulumi.Automation.Tests/Data/testproj,14
+sdk/dotnet/cmd/pulumi-language-dotnet,415
+sdk/go/auto,4923
+sdk/go/auto/debug,22
+sdk/go/auto/events,6
+sdk/go/auto/optdestroy,63
+sdk/go/auto/optpreview,81
+sdk/go/auto/optrefresh,63
+sdk/go/auto/optremove,16
+sdk/go/auto/optup,81
+sdk/go/auto/test/errors/compilation_error/go,10
+sdk/go/auto/test/errors/conflict_error,12
+sdk/go/auto/test/errors/runtime_error/go,11
+sdk/go/auto/test/testproj,14
+sdk/go/common/apitype,596
+sdk/go/common/apitype/migrate,229
+sdk/go/common/constant,4
+sdk/go/common/diag,255
+sdk/go/common/diag/colors,298
+sdk/go/common/encoding,82
+sdk/go/common/resource,3465
+sdk/go/common/resource/config,2527
+sdk/go/common/resource/plugin,4533
+sdk/go/common/testing,148
+sdk/go/common/tokens,302
+sdk/go/common/tools,85
+sdk/go/common/util/archive,279
+sdk/go/common/util/buildutil,110
+sdk/go/common/util/ciutil,561
+sdk/go/common/util/cmdutil,747
+sdk/go/common/util/contract,75
+sdk/go/common/util/deepcopy,141
+sdk/go/common/util/executable,88
+sdk/go/common/util/fsutil,164
+sdk/go/common/util/gitutil,527
+sdk/go/common/util/goversion,83
+sdk/go/common/util/httputil,102
+sdk/go/common/util/logging,125
+sdk/go/common/util/mapper,1037
+sdk/go/common/util/result,60
+sdk/go/common/util/retry,68
+sdk/go/common/util/rpcutil,115
+sdk/go/common/util/rpcutil/rpcerror,208
+sdk/go/common/version,2
+sdk/go/common/workspace,2742
+sdk/go/pulumi,14439
+sdk/go/pulumi/config,597
+sdk/go/pulumi/provider,97
+sdk/go/pulumi/templates,0
+sdk/go/pulumi-language-go,312
+sdk/nodejs/cmd/pulumi-language-nodejs,781
+sdk/nodejs/npm,138
+sdk/nodejs/tests/automation/data/testproj,14
+sdk/proto/go,5499
+sdk/python,307
+sdk/python/cmd/pulumi-language-python,599
+sdk/python/lib/test/automation/data/testproj,14
+sdk/python/lib/test/automation/errors/compilation_error/go,10
+sdk/python/lib/test/automation/errors/conflict_error,12
+sdk/python/lib/test/automation/errors/runtime_error/go,11
+tests,719
+tests/containers,94
+tests/examples,304
+tests/integration,3890
+tests/integration/about/go,10
+tests/integration/aliases,132
+tests/integration/aliases/go/adopt_into_component/step1,94
+tests/integration/aliases/go/adopt_into_component/step2,125
+tests/integration/aliases/go/rename/step1,13
+tests/integration/aliases/go/rename/step2,17
+tests/integration/aliases/go/rename_component/step1,44
+tests/integration/aliases/go/rename_component/step2,46
+tests/integration/aliases/go/rename_component_and_child/step1,40
+tests/integration/aliases/go/rename_component_and_child/step2,47
+tests/integration/aliases/go/retype_component/step1,40
+tests/integration/aliases/go/retype_component/step2,44
+tests/integration/component_provider_schema/testcomponent-go,29
+tests/integration/config_basic/go,59
+tests/integration/config_secrets_warn/go,144
+tests/integration/construct_component/go,46
+tests/integration/construct_component/testcomponent-go,195
+tests/integration/construct_component_methods/go,79
+tests/integration/construct_component_methods/testcomponent-go,108
+tests/integration/construct_component_methods_unknown/go,110
+tests/integration/construct_component_methods_unknown/testcomponent-go,91
+tests/integration/construct_component_plain/go,35
+tests/integration/construct_component_plain/testcomponent-go,168
+tests/integration/construct_component_provider/go,58
+tests/integration/construct_component_provider/testcomponent-go,64
+tests/integration/construct_component_slow/go,23
+tests/integration/construct_component_unknown/go,99
+tests/integration/construct_component_unknown/testcomponent-go,191
+tests/integration/custom_timeouts,27
+tests/integration/delete_before_create,34
+tests/integration/dependency_steps,18
+tests/integration/double_pending_delete,79
+tests/integration/duplicate_urns,29
+tests/integration/empty/go,9
+tests/integration/empty/gorun,9
+tests/integration/empty/gorun_main/gorun_main_src,9
+tests/integration/get_resource/go,43
+tests/integration/large_resource/go,11
+tests/integration/partial_state,73
+tests/integration/policy,110
+tests/integration/protect_resources,84
+tests/integration/query,27
+tests/integration/read/import_acquire,19
+tests/integration/read/read_dbr,22
+tests/integration/read/read_relinquish,18
+tests/integration/read/read_replace,22
+tests/integration/recreate_resource_check,18
+tests/integration/rotate_passphrase,9
+tests/integration/stack_reference/go,20
+tests/integration/stack_reference/go/step1,35
+tests/integration/stack_reference/go/step2,43
+tests/integration/steps,82
+tests/integration/targets,38
+tests/integration/transformations,180
+tests/integration/types,27
+tests/testprovider,179
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,192,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,197,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,16,Select (number of branch),207,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,208,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,218,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,234,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,236,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,16,Select (number of branch),243,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,258,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,259,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,264,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,266,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,16,Select (number of branch),274,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,275,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,278,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,289,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,4,Synchronous chan,290,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,295,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,3,Send,297,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,16,Select (number of branch),305,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,306,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/config/config_test.go,2,Receive,309,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/jsonmessage.go,20,Receive only chan (<-chan),106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/query.go,20,Receive only chan (<-chan),30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/query.go,21,Send only chan (chan<-),31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/query.go,16,Select (number of branch),52,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/query.go,2,Receive,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/query.go,2,Receive,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/json.go,20,Receive only chan (<-chan),96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/json.go,21,Send only chan (chan<-),96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,20,Receive only chan (<-chan),38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,21,Send only chan (chan<-),38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,20,Receive only chan (<-chan),66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,21,Send only chan (chan<-),66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,4,Synchronous chan,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,4,Synchronous chan,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,1,Goroutine,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,3,Send,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/display.go,2,Receive,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/diff.go,20,Receive only chan (<-chan),40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/diff.go,21,Send only chan (chan<-),40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/diff.go,16,Select (number of branch),71,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/diff.go,2,Receive,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/diff.go,2,Receive,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/watch.go,20,Receive only chan (<-chan),38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/watch.go,21,Send only chan (chan<-),38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/watch.go,27,Mutex,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/watch.go,29,Mutex Lock(),96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/watch.go,28,Mutex Unlock(),97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,3,Send,261,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,20,Receive only chan (<-chan),274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,21,Send only chan (chan<-),274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,4,Synchronous chan,301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,1,Goroutine,342,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,15,Close chan,348,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,20,Receive only chan (<-chan),1185,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,16,Select (number of branch),1190,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,2,Receive,1191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/display/progress.go,2,Receive,1194,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,30,Waitgroup,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,24,Waitgroup Add(const),116,&{12492295 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,26,Waitgroup Done(),136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,31,Waitgroup Wait(),139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,30,Waitgroup,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,24,Waitgroup Add(const),158,&{12493813 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,26,Waitgroup Done(),175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,31,Waitgroup Wait(),178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,30,Waitgroup,196,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,24,Waitgroup Add(const),197,&{12495211 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,26,Waitgroup Done(),214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,31,Waitgroup Wait(),217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,30,Waitgroup,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,24,Waitgroup Add(const),236,&{12496760 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,26,Waitgroup Done(),253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/codegen/go/gen_test.go,31,Waitgroup Wait(),256,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/languageruntime.go,4,Synchronous chan,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/languageruntime.go,1,Goroutine,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/languageruntime.go,3,Send,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/languageruntime.go,2,Receive,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/pluginhost.go,1,Goroutine,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/pluginhost.go,3,Send,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/pluginhost.go,4,Synchronous chan,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/pluginhost.go,4,Synchronous chan,189,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/pluginhost.go,1,Goroutine,292,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deploytest/pluginhost.go,3,Send,292,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,22,chan used as a param,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,1,Goroutine,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,2,Receive,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,2,Receive,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,4,Synchronous chan,90,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,1,Goroutine,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,3,Send,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,3,Send,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/rpcutil/serve.go,15,Close chan,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/import.go,3,Send,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/destroy.go,3,Send,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/refresh.go,3,Send,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,4,Synchronous chan,243,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,1,Goroutine,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,15,Close chan,261,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,1,Goroutine,265,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,16,Select (number of branch),266,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,2,Receive,267,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,2,Receive,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,16,Select (number of branch),277,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,2,Receive,278,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/deployment.go,2,Receive,281,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,3,Send,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,1,Goroutine,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,2,Receive,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,4,Synchronous chan,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,1,Goroutine,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,3,Send,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,16,Select (number of branch),167,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,2,Receive,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/query.go,2,Receive,170,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,2,Receive,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,2,Receive,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,16,Select (number of branch),147,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,3,Send,148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,2,Receive,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,16,Select (number of branch),160,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,3,Send,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,2,Receive,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,16,Select (number of branch),169,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,3,Send,170,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,2,Receive,172,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,4,Synchronous chan,187,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,4,Synchronous chan,188,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,4,Synchronous chan,189,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,1,Goroutine,191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,16,Select (number of branch),193,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,2,Receive,194,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/journal.go,2,Receive,197,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,21,Send only chan (chan<-),205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,4,Synchronous chan,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,4,Synchronous chan,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,1,Goroutine,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,21,Send only chan (chan<-),236,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,4,Synchronous chan,237,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,4,Synchronous chan,237,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,1,Goroutine,239,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,21,Send only chan (chan<-),252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,22,chan used as a param,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,22,chan used as a param,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,2,Receive,267,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,16,Select (number of branch),276,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,2,Receive,277,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,281,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,286,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,2,Receive,466,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,474,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,484,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,496,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,514,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,525,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,562,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/events.go,3,Send,578,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/update.go,3,Send,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/apply.go,4,Synchronous chan,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/apply.go,1,Goroutine,94,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/apply.go,6,Range over chan,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/apply.go,15,Close chan,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/apply.go,15,Close chan,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/apply.go,15,Close chan,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,21,Send only chan (chan<-),17,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,4,Synchronous chan,24,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,4,Synchronous chan,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,1,Goroutine,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,4,Synchronous chan,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,4,Synchronous chan,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,1,Goroutine,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,6,Range over chan,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,3,Send,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,3,Send,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,15,Close chan,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,2,Receive,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,15,Close chan,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,2,Receive,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/query.go,15,Close chan,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/watch.go,1,Goroutine,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/watch.go,8,Known chan length (length),72,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/watch.go,6,Range over chan,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,2,Receive,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,4,Synchronous chan,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,16,Select (number of branch),102,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,3,Send,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,2,Receive,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,2,Receive,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,4,Synchronous chan,626,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,4,Synchronous chan,626,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,4,Synchronous chan,626,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,1,Goroutine,639,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,16,Select (number of branch),646,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,2,Receive,647,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,3,Send,655,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,2,Receive,656,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/snapshot.go,3,Send,667,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/cmdutil/trace.go,1,Goroutine,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/cmdutil/trace.go,1,Goroutine,187,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,21,Send only chan (chan<-),456,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,21,Send only chan (chan<-),549,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,4,Synchronous chan,568,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,4,Synchronous chan,569,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,1,Goroutine,570,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,4,Synchronous chan,575,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,4,Synchronous chan,578,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,1,Goroutine,579,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,6,Range over chan,581,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,3,Send,582,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,3,Send,586,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,15,Close chan,590,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,2,Receive,624,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,15,Close chan,626,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,2,Receive,630,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,15,Close chan,631,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/filestate/backend.go,21,Send only chan (chan<-),711,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/watcher.go,1,Goroutine,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/watcher.go,3,Send,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/watcher.go,3,Send,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/watcher.go,3,Send,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,4,Synchronous chan,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,5,Go in for,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,7,Goroutine in for with constant (constant),54,50
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,1,Goroutine,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,3,Send,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,2,Receive,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,4,Synchronous chan,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,5,Go in for,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,7,Goroutine in for with constant (constant),109,50
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,1,Goroutine,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,3,Send,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/errors_test.go,2,Receive,118,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/stack.go,4,Synchronous chan,260,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/stack.go,1,Goroutine,261,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/stack.go,2,Receive,263,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/stack.go,13,Slice array of chans,273,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/stack.go,4,Synchronous chan,858,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/stack.go,3,Send,891,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/stack.go,2,Receive,893,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,283,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,284,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,389,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,390,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,485,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,486,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,577,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,578,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,681,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,682,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,785,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,786,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,879,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,880,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,972,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,973,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,1328,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,1329,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,1349,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,1350,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,1364,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,1365,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,1378,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,1379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,2079,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,2080,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,4,Synchronous chan,2090,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,1,Goroutine,2091,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,20,Receive only chan (<-chan),2329,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/auto/local_workspace_test.go,2,Receive,2331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/workgroup_test.go,5,Go in for,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/workgroup_test.go,1,Goroutine,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/context_test.go,1,Goroutine,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/resource_test.go,4,Synchronous chan,357,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/resource_test.go,3,Send,359,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/resource_test.go,2,Receive,363,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types.go,1,Goroutine,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types.go,1,Goroutine,437,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types.go,1,Goroutine,820,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,4,Synchronous chan,719,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,4,Synchronous chan,720,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,4,Synchronous chan,721,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,1,Goroutine,722,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,1,Goroutine,725,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,2,Receive,726,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,3,Send,729,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,15,Close chan,735,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,2,Receive,738,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,15,Close chan,740,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/run_test.go,2,Receive,742,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,165,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,303,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,309,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,315,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,409,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,410,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,411,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,415,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,419,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,16,Select (number of branch),427,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,428,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,431,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,434,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,447,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,448,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,449,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,453,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,457,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,459,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,16,Select (number of branch),465,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,466,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,469,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,472,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,487,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,488,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,489,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,497,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,501,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,503,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,16,Select (number of branch),509,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,510,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,513,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,516,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,575,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,582,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,19,Channel of channels,606,gate
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,608,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,608,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,1,Goroutine,613,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,4,Synchronous chan,623,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,3,Send,624,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_test.go,2,Receive,627,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/context.go,1,Goroutine,421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/context.go,1,Goroutine,573,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/context.go,1,Goroutine,760,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/context.go,1,Goroutine,1389,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,523,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/pulumi/types_builtins_test.go,1,Goroutine,526,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,4,Synchronous chan,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,15,Close chan,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,1,Goroutine,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,16,Select (number of branch),70,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,2,Receive,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,2,Receive,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,4,Synchronous chan,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,1,Goroutine,89,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/test_plan.go,6,Range over chan,90,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/refresh_test.go,4,Synchronous chan,648,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/refresh_test.go,4,Synchronous chan,648,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/refresh_test.go,1,Goroutine,649,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/refresh_test.go,2,Receive,650,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/refresh_test.go,3,Send,660,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/refresh_test.go,2,Receive,661,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/refresh_test.go,15,Close chan,668,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,30,Waitgroup,421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,24,Waitgroup Add(const),422,resourceCount val is : 4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,1,Goroutine,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,31,Waitgroup Wait(),424,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,26,Waitgroup Done(),437,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,438,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,450,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,30,Waitgroup,453,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,24,Waitgroup Add(const),454,resourceCount val is : 4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,5,Go in for,456,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,7,Goroutine in for with constant (constant),456,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,1,Goroutine,456,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,26,Waitgroup Done(),458,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,31,Waitgroup Wait(),461,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,15,Close chan,465,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,481,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,3,Send,749,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,784,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,784,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,785,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,1,Goroutine,792,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,793,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,15,Close chan,795,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,15,Close chan,844,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,845,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,2049,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,2050,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,2051,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,2052,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,4,Synchronous chan,2055,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,1,Goroutine,2074,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,3,Send,2076,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,3,Send,2078,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,3,Send,2080,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,2083,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,3,Send,2088,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,2091,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,2091,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,3,Send,2112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/engine/lifeycletest/pulumi_test.go,2,Receive,2116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/secrets/passphrase/manager.go,27,Mutex,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/secrets/passphrase/manager.go,29,Mutex Lock(),116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/secrets/passphrase/manager.go,28,Mutex Unlock(),121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/secrets/passphrase/manager.go,29,Mutex Lock(),133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/secrets/passphrase/manager.go,28,Mutex Unlock(),134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,16,Select (number of branch),68,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,2,Receive,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,2,Receive,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,4,Synchronous chan,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,16,Select (number of branch),115,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,3,Send,116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,2,Receive,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,15,Close chan,118,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,30,Waitgroup,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,25,Waitgroup Add(var),131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,5,Go in for,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,1,Goroutine,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,26,Waitgroup Done(),135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,4,Synchronous chan,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,1,Goroutine,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,31,Waitgroup Wait(),142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,15,Close chan,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,17,Select with default (number of branch),214,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,2,Receive,215,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,16,Select (number of branch),356,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,2,Receive,357,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,1,Goroutine,374,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,2,Receive,382,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,4,Synchronous chan,396,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,1,Goroutine,407,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,5,Go in for,415,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step_executor.go,1,Goroutine,415,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,4,Synchronous chan,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,4,Synchronous chan,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,3,Send,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,2,Receive,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,2,Receive,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,1,Goroutine,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,3,Send,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,4,Synchronous chan,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,4,Synchronous chan,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,3,Send,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,2,Receive,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,2,Receive,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query_test.go,1,Goroutine,116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,4,Synchronous chan,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,15,Close chan,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,1,Goroutine,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,16,Select (number of branch),124,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,2,Receive,131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,4,Synchronous chan,196,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,1,Goroutine,197,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,16,Select (number of branch),200,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,3,Send,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,2,Receive,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,16,Select (number of branch),223,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,2,Receive,224,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/deployment_executor.go,2,Receive,250,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,4,Synchronous chan,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,4,Synchronous chan,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,4,Synchronous chan,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,16,Select (number of branch),116,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,2,Receive,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,2,Receive,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,1,Goroutine,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,3,Send,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,21,Send only chan (chan<-),200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,4,Synchronous chan,203,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,4,Synchronous chan,206,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,4,Synchronous chan,213,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,1,Goroutine,218,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,6,Range over chan,219,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,3,Send,224,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,3,Send,229,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,3,Send,233,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,1,Goroutine,286,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_query.go,2,Receive,320,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/step.go,21,Send only chan (chan<-),685,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),159,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,160,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,166,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,1,Goroutine,194,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),340,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,341,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,342,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),349,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,350,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,351,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),372,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,373,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,377,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,378,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,386,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),387,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,388,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,389,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,392,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,22,chan used as a param,413,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,22,chan used as a param,414,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,22,chan used as a param,414,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,418,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,1,Goroutine,463,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,799,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),801,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,802,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,803,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),810,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,811,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,812,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,1011,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),1014,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,1015,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,1016,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),1022,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,1023,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,1024,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,4,Synchronous chan,1108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),1111,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,1112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,1113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,16,Select (number of branch),1119,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,1120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,2,Receive,1121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,1146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,1169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/resource/deploy/source_eval.go,3,Send,1199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/retry/until.go,16,Select (number of branch),80,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/retry/until.go,2,Receive,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/util/retry/until.go,2,Receive,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,30,Waitgroup,14,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,5,Go in for,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,7,Goroutine in for with constant (constant),18,1000
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,5,Go in for,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,7,Goroutine in for with constant (constant),23,1000
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,24,Waitgroup Add(const),17,&{17225579 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,1,Goroutine,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,26,Waitgroup Done(),19,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,1,Goroutine,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,26,Waitgroup Done(),24,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/workspace/creds_test.go,31,Waitgroup Wait(),29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,4,Synchronous chan,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,4,Synchronous chan,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,1,Goroutine,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,16,Select (number of branch),68,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,15,Close chan,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,3,Send,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,4,Synchronous chan,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,3,Send,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,20,Receive only chan (<-chan),193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,21,Send only chan (chan<-),193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,4,Synchronous chan,197,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,4,Synchronous chan,198,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,8,Known chan length (length),200,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,4,Synchronous chan,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,206,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,1,Goroutine,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,1,Goroutine,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,3,Send,219,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,3,Send,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,20,Receive only chan (<-chan),322,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,21,Send only chan (chan<-),322,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,30,Waitgroup,339,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,31,Waitgroup Wait(),342,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,4,Synchronous chan,360,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,24,Waitgroup Add(const),363,&{16018231 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,26,Waitgroup Done(),364,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,6,Range over chan,366,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,5,Go in for,376,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,7,Goroutine in for with constant (constant),376,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,1,Goroutine,376,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,3,Send,393,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,16,Select (number of branch),403,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,404,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,2,Receive,421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/state.go,15,Close chan,438,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,4,Synchronous chan,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,1,Goroutine,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,2,Receive,213,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,21,Send only chan (chan<-),622,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,3,Send,633,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,21,Send only chan (chan<-),930,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,21,Send only chan (chan<-),976,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,21,Send only chan (chan<-),984,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,4,Synchronous chan,994,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,4,Synchronous chan,995,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,1,Goroutine,996,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,4,Synchronous chan,1002,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,4,Synchronous chan,1003,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,1,Goroutine,1004,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,6,Range over chan,1005,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,3,Send,1006,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,3,Send,1008,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,15,Close chan,1012,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,2,Receive,1056,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,15,Close chan,1058,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,2,Receive,1063,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,15,Close chan,1064,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,4,Synchronous chan,1314,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,4,Synchronous chan,1314,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,3,Send,1316,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,2,Receive,1317,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,15,Close chan,1318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,15,Close chan,1319,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,1,Goroutine,1321,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,3,Send,1339,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,20,Receive only chan (<-chan),1350,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,21,Send only chan (chan<-),1350,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,3,Send,1357,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,16,Select (number of branch),1361,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,2,Receive,1362,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/backend/httpstate/backend.go,2,Receive,1364,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/tests/stack_test.go,9,Unknown chan length,430,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/tests/stack_test.go,5,Go in for,432,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/tests/stack_test.go,1,Goroutine,432,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/tests/stack_test.go,3,Send,435,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/tests/stack_test.go,3,Send,437,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/tests/stack_test.go,2,Receive,448,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host_server.go,4,Synchronous chan,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host_server.go,3,Send,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host_server.go,2,Receive,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/plugin.go,4,Synchronous chan,178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/plugin.go,1,Goroutine,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/plugin.go,4,Synchronous chan,218,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/plugin.go,1,Goroutine,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/plugin.go,2,Receive,375,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/plugin.go,2,Receive,378,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host.go,4,Synchronous chan,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host.go,1,Goroutine,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host.go,3,Send,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host.go,4,Synchronous chan,182,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host.go,3,Send,183,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/host.go,2,Receive,191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/provider_plugin.go,2,Receive,381,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/sdk/go/common/resource/plugin/provider_plugin.go,1,Goroutine,501,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,27,Mutex,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,29,Mutex Lock(),137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,28,Mutex Unlock(),138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,9,Unknown chan length,166,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,5,Go in for,179,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,1,Goroutine,179,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,3,Send,195,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/operations_aws.go,2,Receive,202,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,4,Synchronous chan,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,4,Synchronous chan,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,5,Go in for,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,1,Goroutine,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,3,Send,177,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,3,Send,178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,2,Receive,184,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/pulumi++pulumi/pkg/operations/resources.go,2,Receive,185,

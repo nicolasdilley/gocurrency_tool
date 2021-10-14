@@ -1,0 +1,1007 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : apex/apex ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/apex/apex/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> internal/util/util ( 3 features, 1/2 featured file ) </li>
+          
+          <li> logs/logs ( 17 features, 2/2 featured file ) </li>
+          
+          <li> metrics/metrics ( 10 features, 1/2 featured file ) </li>
+          
+          <li> project/project_test ( 14 features, 1/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 4/54</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>7 </td>
+      <td>3 </td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>2</td>
+      <td>2</td>
+      <td>66.66666666666666</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>4 </td>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0%</td>
+      <td>5 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//internal/util/util.go#L189">internal/util/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>189</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//internal/util/util.go#L190">internal/util/util.go</a></td>
+              <td>Receive</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//internal/util/util.go#L192">internal/util/util.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/log.go#L23">logs/log.go</a></td>
+              <td>Synchronous chan</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/log.go#L24">logs/log.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/log.go#L29">logs/log.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/log.go#L61">logs/log.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/log.go#L82">logs/log.go</a></td>
+              <td>Send</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L35">logs/logs.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L36">logs/logs.go</a></td>
+              <td>Synchronous chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L39">logs/logs.go</a></td>
+              <td>Go in for</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L39">logs/logs.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L42">logs/logs.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L44">logs/logs.go</a></td>
+              <td>Close chan</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L56">logs/logs.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L58">logs/logs.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L66">logs/logs.go</a></td>
+              <td>chan used as a param</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L66">logs/logs.go</a></td>
+              <td>chan used as a param</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L74">logs/logs.go</a></td>
+              <td>Send</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//logs/logs.go#L77">logs/logs.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L68">metrics/metric.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L70">metrics/metric.go</a></td>
+              <td>Synchronous chan</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L76">metrics/metric.go</a></td>
+              <td>Go in for</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L76">metrics/metric.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L86">metrics/metric.go</a></td>
+              <td>Send</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L93">metrics/metric.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L95">metrics/metric.go</a></td>
+              <td>Close chan</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L103">metrics/metric.go</a></td>
+              <td>Unknown chan length</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L105">metrics/metric.go</a></td>
+              <td>Send</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//metrics/metric.go#L107">metrics/metric.go</a></td>
+              <td>Close chan</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L194">project/project.go</a></td>
+              <td>Synchronous chan</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L196">project/project.go</a></td>
+              <td>Goroutine</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L201">project/project.go</a></td>
+              <td>Go in for</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L201">project/project.go</a></td>
+              <td>Goroutine</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L209">project/project.go</a></td>
+              <td>Send</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L214">project/project.go</a></td>
+              <td>Close chan</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L217">project/project.go</a></td>
+              <td>Range over chan</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L381">project/project.go</a></td>
+              <td>Synchronous chan</td>
+              <td>381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L383">project/project.go</a></td>
+              <td>Goroutine</td>
+              <td>383</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L388">project/project.go</a></td>
+              <td>Go in for</td>
+              <td>388</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L388">project/project.go</a></td>
+              <td>Goroutine</td>
+              <td>388</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L401">project/project.go</a></td>
+              <td>Send</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L406">project/project.go</a></td>
+              <td>Close chan</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/apex/apex/blob//project/project.go#L409">project/project.go</a></td>
+              <td>Range over chan</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 7 ,  3 ,
+     7 ,
+     9 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,1655 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : future-architect/vuls ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/future-architect/vuls/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> detector/detector ( 42 features, 2/9 featured file ) </li>
+          
+          <li> gost/gost ( 38 features, 1/11 featured file ) </li>
+          
+          <li> oval/oval ( 23 features, 1/9 featured file ) </li>
+          
+          <li> scanner/scanner ( 49 features, 3/27 featured file ) </li>
+          
+          <li> util/util ( 4 features, 1/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 5/23</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>40 </td>
+      <td>32 </td>
+      <td>23</td>
+      <td>11</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>8</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>4 </td>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>21</td>
+      <td>4.3478260869565215%</td>
+      <td>21 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>16 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L113">detector/exploitdb.go</a></td>
+              <td>Unknown chan length</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L114">detector/exploitdb.go</a></td>
+              <td>Unknown chan length</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L115">detector/exploitdb.go</a></td>
+              <td>Unknown chan length</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L116">detector/exploitdb.go</a></td>
+              <td>Close chan</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L117">detector/exploitdb.go</a></td>
+              <td>Close chan</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L118">detector/exploitdb.go</a></td>
+              <td>Close chan</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L120">detector/exploitdb.go</a></td>
+              <td>Goroutine</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L122">detector/exploitdb.go</a></td>
+              <td>Send</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L131">detector/exploitdb.go</a></td>
+              <td>Send</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L132">detector/exploitdb.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>132</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L133">detector/exploitdb.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L139">detector/exploitdb.go</a></td>
+              <td>Send</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L151">detector/exploitdb.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>151</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L152">detector/exploitdb.go</a></td>
+              <td>Receive</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L154">detector/exploitdb.go</a></td>
+              <td>Receive</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L156">detector/exploitdb.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L173">detector/exploitdb.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L173">detector/exploitdb.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L195">detector/exploitdb.go</a></td>
+              <td>Send</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L199">detector/exploitdb.go</a></td>
+              <td>Send</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/exploitdb.go#L203">detector/exploitdb.go</a></td>
+              <td>Send</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L70">detector/cve_client.go</a></td>
+              <td>Unknown chan length</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L71">detector/cve_client.go</a></td>
+              <td>Unknown chan length</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L72">detector/cve_client.go</a></td>
+              <td>Unknown chan length</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L73">detector/cve_client.go</a></td>
+              <td>Close chan</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L74">detector/cve_client.go</a></td>
+              <td>Close chan</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L75">detector/cve_client.go</a></td>
+              <td>Close chan</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L77">detector/cve_client.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L79">detector/cve_client.go</a></td>
+              <td>Send</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L86">detector/cve_client.go</a></td>
+              <td>Send</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L87">detector/cve_client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>87</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L88">detector/cve_client.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L91">detector/cve_client.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L103">detector/cve_client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>103</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L104">detector/cve_client.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L106">detector/cve_client.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L108">detector/cve_client.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L119">detector/cve_client.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L119">detector/cve_client.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L136">detector/cve_client.go</a></td>
+              <td>Send</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L141">detector/cve_client.go</a></td>
+              <td>Send</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//detector/cve_client.go#L144">detector/cve_client.go</a></td>
+              <td>Send</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L27">gost/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L28">gost/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L29">gost/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L30">gost/util.go</a></td>
+              <td>Close chan</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L31">gost/util.go</a></td>
+              <td>Close chan</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L32">gost/util.go</a></td>
+              <td>Close chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L34">gost/util.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L36">gost/util.go</a></td>
+              <td>Send</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L45">gost/util.go</a></td>
+              <td>Send</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L46">gost/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>46</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L47">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L53">gost/util.go</a></td>
+              <td>Send</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L65">gost/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>65</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L66">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L68">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L70">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L94">gost/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L95">gost/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L96">gost/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L97">gost/util.go</a></td>
+              <td>Close chan</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L98">gost/util.go</a></td>
+              <td>Close chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L99">gost/util.go</a></td>
+              <td>Close chan</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L101">gost/util.go</a></td>
+              <td>Goroutine</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L103">gost/util.go</a></td>
+              <td>Send</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L110">gost/util.go</a></td>
+              <td>Send</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L121">gost/util.go</a></td>
+              <td>Send</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L122">gost/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>122</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L123">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L130">gost/util.go</a></td>
+              <td>Send</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L142">gost/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>142</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L143">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L145">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L147">gost/util.go</a></td>
+              <td>Receive</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L157">gost/util.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L157">gost/util.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L179">gost/util.go</a></td>
+              <td>Send</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L183">gost/util.go</a></td>
+              <td>Send</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//gost/util.go#L187">gost/util.go</a></td>
+              <td>Send</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L103">oval/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L104">oval/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L105">oval/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L106">oval/util.go</a></td>
+              <td>Close chan</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L107">oval/util.go</a></td>
+              <td>Close chan</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L108">oval/util.go</a></td>
+              <td>Close chan</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L110">oval/util.go</a></td>
+              <td>Goroutine</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L112">oval/util.go</a></td>
+              <td>Send</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L121">oval/util.go</a></td>
+              <td>Send</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L134">oval/util.go</a></td>
+              <td>Send</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L135">oval/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>135</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L136">oval/util.go</a></td>
+              <td>Receive</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L145">oval/util.go</a></td>
+              <td>Send</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L157">oval/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>157</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L158">oval/util.go</a></td>
+              <td>Receive</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L187">oval/util.go</a></td>
+              <td>Receive</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L189">oval/util.go</a></td>
+              <td>Receive</td>
+              <td>189</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L199">oval/util.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L199">oval/util.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L220">oval/util.go</a></td>
+              <td>Send</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L224">oval/util.go</a></td>
+              <td>Send</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L230">oval/util.go</a></td>
+              <td>Send</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//oval/util.go#L233">oval/util.go</a></td>
+              <td>Send</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L67">scanner/executil.go</a></td>
+              <td>Unknown chan length</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L68">scanner/executil.go</a></td>
+              <td>Close chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L71">scanner/executil.go</a></td>
+              <td>Go in for</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L71">scanner/executil.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L80">scanner/executil.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L82">scanner/executil.go</a></td>
+              <td>Send</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L97">scanner/executil.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>97</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L98">scanner/executil.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/executil.go#L106">scanner/executil.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L270">scanner/serverapi.go</a></td>
+              <td>Unknown chan length</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L271">scanner/serverapi.go</a></td>
+              <td>Close chan</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L273">scanner/serverapi.go</a></td>
+              <td>Go in for</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L273">scanner/serverapi.go</a></td>
+              <td>Goroutine</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L279">scanner/serverapi.go</a></td>
+              <td>Send</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L285">scanner/serverapi.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>285</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L286">scanner/serverapi.go</a></td>
+              <td>Receive</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L296">scanner/serverapi.go</a></td>
+              <td>Receive</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L322">scanner/serverapi.go</a></td>
+              <td>Unknown chan length</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L323">scanner/serverapi.go</a></td>
+              <td>Close chan</td>
+              <td>323</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L325">scanner/serverapi.go</a></td>
+              <td>Go in for</td>
+              <td>325</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L325">scanner/serverapi.go</a></td>
+              <td>Goroutine</td>
+              <td>325</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L332">scanner/serverapi.go</a></td>
+              <td>Send</td>
+              <td>332</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L338">scanner/serverapi.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>338</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L339">scanner/serverapi.go</a></td>
+              <td>Receive</td>
+              <td>339</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L351">scanner/serverapi.go</a></td>
+              <td>Receive</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L494">scanner/serverapi.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>494</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L495">scanner/serverapi.go</a></td>
+              <td>Goroutine</td>
+              <td>495</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L497">scanner/serverapi.go</a></td>
+              <td>Send</td>
+              <td>497</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L501">scanner/serverapi.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>501</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L502">scanner/serverapi.go</a></td>
+              <td>Receive</td>
+              <td>502</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/serverapi.go#L504">scanner/serverapi.go</a></td>
+              <td>Receive</td>
+              <td>504</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L692">scanner/debian.go</a></td>
+              <td>Unknown chan length</td>
+              <td>692</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L693">scanner/debian.go</a></td>
+              <td>Unknown chan length</td>
+              <td>693</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L694">scanner/debian.go</a></td>
+              <td>Unknown chan length</td>
+              <td>694</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L695">scanner/debian.go</a></td>
+              <td>Close chan</td>
+              <td>695</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L696">scanner/debian.go</a></td>
+              <td>Close chan</td>
+              <td>696</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L697">scanner/debian.go</a></td>
+              <td>Close chan</td>
+              <td>697</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L699">scanner/debian.go</a></td>
+              <td>Goroutine</td>
+              <td>699</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L701">scanner/debian.go</a></td>
+              <td>Send</td>
+              <td>701</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L709">scanner/debian.go</a></td>
+              <td>Send</td>
+              <td>709</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L710">scanner/debian.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>710</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L711">scanner/debian.go</a></td>
+              <td>Receive</td>
+              <td>711</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L716">scanner/debian.go</a></td>
+              <td>Send</td>
+              <td>716</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L724">scanner/debian.go</a></td>
+              <td>Send</td>
+              <td>724</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L726">scanner/debian.go</a></td>
+              <td>Send</td>
+              <td>726</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L737">scanner/debian.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>737</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L738">scanner/debian.go</a></td>
+              <td>Receive</td>
+              <td>738</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L755">scanner/debian.go</a></td>
+              <td>Receive</td>
+              <td>755</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//scanner/debian.go#L757">scanner/debian.go</a></td>
+              <td>Receive</td>
+              <td>757</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//util/util.go#L17">util/util.go</a></td>
+              <td>Synchronous chan</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//util/util.go#L19">util/util.go</a></td>
+              <td>Go in for</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//util/util.go#L19">util/util.go</a></td>
+              <td>Goroutine</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/future-architect/vuls/blob//util/util.go#L25">util/util.go</a></td>
+              <td>Range over chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 40 ,  32 ,
+     23 ,
+     11 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

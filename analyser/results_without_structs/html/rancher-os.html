@@ -1,0 +1,1343 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : rancher/os ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/rancher/os/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cmd/cloudinitsave/cloudinitsave ( 16 features, 1/1 featured file ) </li>
+          
+          <li> cmd/control/control ( 2 features, 1/22 featured file ) </li>
+          
+          <li> cmd/control/service/app/app ( 12 features, 1/1 featured file ) </li>
+          
+          <li> cmd/network/network ( 2 features, 1/1 featured file ) </li>
+          
+          <li> cmd/power/power ( 4 features, 1/2 featured file ) </li>
+          
+          <li> cmd/respawn/respawn ( 9 features, 1/1 featured file ) </li>
+          
+          <li> pkg/compose/compose ( 3 features, 1/2 featured file ) </li>
+          
+          <li> pkg/init/docker/docker ( 7 features, 1/1 featured file ) </li>
+          
+          <li> pkg/init/one/one ( 2 features, 1/1 featured file ) </li>
+          
+          <li> pkg/netconf/netconf ( 1 features, 1/7 featured file ) </li>
+          
+          <li> pkg/util/util ( 8 features, 1/6 featured file ) </li>
+          
+    <li> Num of Packages with features : 11/68</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>10 </td>
+      <td>15 </td>
+      <td>14</td>
+      <td>12</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>3 </td>
+      <td>3 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>3</td>
+      <td>1</td>
+      <td>21.428571428571427%</td>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>5 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L314">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Synchronous chan</td>
+              <td>314</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L315">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Synchronous chan</td>
+              <td>315</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L320">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Go in for</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L320">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Goroutine</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L328">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Send</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L336">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>336</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L337">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L339">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Receive</td>
+              <td>339</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L346">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Synchronous chan</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L347">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Goroutine</td>
+              <td>347</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L349">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Close chan</td>
+              <td>349</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L353">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>353</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L354">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Receive</td>
+              <td>354</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L359">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Receive</td>
+              <td>359</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L360">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Receive</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/cloudinitsave/cloudinitsave.go#L363">cmd/cloudinitsave/cloudinitsave.go</a></td>
+              <td>Close chan</td>
+              <td>363</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/install.go#L698">cmd/control/install.go</a></td>
+              <td>Go in for</td>
+              <td>698</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/install.go#L698">cmd/control/install.go</a></td>
+              <td>Goroutine</td>
+              <td>698</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L90">cmd/control/service/app/app.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>90</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L91">cmd/control/service/app/app.go</a></td>
+              <td>Synchronous chan</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L93">cmd/control/service/app/app.go</a></td>
+              <td>Synchronous chan</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L94">cmd/control/service/app/app.go</a></td>
+              <td>Goroutine</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L95">cmd/control/service/app/app.go</a></td>
+              <td>Send</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L97">cmd/control/service/app/app.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L98">cmd/control/service/app/app.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>98</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L99">cmd/control/service/app/app.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L103">cmd/control/service/app/app.go</a></td>
+              <td>Send</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L104">cmd/control/service/app/app.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L108">cmd/control/service/app/app.go</a></td>
+              <td>Send</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/control/service/app/app.go#L111">cmd/control/service/app/app.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/network/network.go#L45">cmd/network/network.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>45</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/network/network.go#L47">cmd/network/network.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/power/power.go#L160">cmd/power/power.go</a></td>
+              <td>Goroutine</td>
+              <td>160</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/power/power.go#L165">cmd/power/power.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>165</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/power/power.go#L167">cmd/power/power.go</a></td>
+              <td>Receive</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/power/power.go#L171">cmd/power/power.go</a></td>
+              <td>Receive</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L54">cmd/respawn/respawn.go</a></td>
+              <td>Synchronous chan</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L56">cmd/respawn/respawn.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L57">cmd/respawn/respawn.go</a></td>
+              <td>Range over chan</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L84">cmd/respawn/respawn.go</a></td>
+              <td>Unknown chan length</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L90">cmd/respawn/respawn.go</a></td>
+              <td>Go in for</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L90">cmd/respawn/respawn.go</a></td>
+              <td>Goroutine</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L94">cmd/respawn/respawn.go</a></td>
+              <td>Receive</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L124">cmd/respawn/respawn.go</a></td>
+              <td>chan used as a param</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//cmd/respawn/respawn.go#L125">cmd/respawn/respawn.go</a></td>
+              <td>Send</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/compose/project.go#L199">pkg/compose/project.go</a></td>
+              <td>Synchronous chan</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/compose/project.go#L205">pkg/compose/project.go</a></td>
+              <td>Goroutine</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/compose/project.go#L206">pkg/compose/project.go</a></td>
+              <td>Range over chan</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/docker/docker.go#L21">pkg/init/docker/docker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/docker/docker.go#L22">pkg/init/docker/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/docker/docker.go#L23">pkg/init/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/docker/docker.go#L26">pkg/init/docker/docker.go</a></td>
+              <td>Send</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/docker/docker.go#L32">pkg/init/docker/docker.go</a></td>
+              <td>chan used as a param</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/docker/docker.go#L33">pkg/init/docker/docker.go</a></td>
+              <td>Send</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/docker/docker.go#L34">pkg/init/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/one/one.go#L12">pkg/init/one/one.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>12</td>
+              <td>2048</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/init/one/one.go#L15">pkg/init/one/one.go</a></td>
+              <td>Range over chan</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/netconf/netconf_linux.go#L253">pkg/netconf/netconf_linux.go</a></td>
+              <td>Goroutine</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L12">pkg/util/backoff.go</a></td>
+              <td>Synchronous chan</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L13">pkg/util/backoff.go</a></td>
+              <td>Synchronous chan</td>
+              <td>13</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L14">pkg/util/backoff.go</a></td>
+              <td>Goroutine</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L19">pkg/util/backoff.go</a></td>
+              <td>Send</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L36">pkg/util/backoff.go</a></td>
+              <td>Send</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L39">pkg/util/backoff.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>39</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L40">pkg/util/backoff.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/os/blob//pkg/util/backoff.go#L44">pkg/util/backoff.go</a></td>
+              <td>Send</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 10 ,  15 ,
+     14 ,
+     12 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

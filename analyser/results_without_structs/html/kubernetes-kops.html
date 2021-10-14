@@ -1,0 +1,4386 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : kubernetes/kops ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/kubernetes/kops/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cmd/kops-controller/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> dns-controller/cmd/dns-controller/main ( 6 features, 1/1 featured file ) </li>
+          
+          <li> dns-controller/pkg/dns/dns ( 3 features, 1/7 featured file ) </li>
+          
+          <li> dns-controller/pkg/util/util ( 2 features, 1/3 featured file ) </li>
+          
+          <li> dns-controller/pkg/watchers/watchers ( 29 features, 5/7 featured file ) </li>
+          
+          <li> pkg/assets/assets ( 8 features, 1/6 featured file ) </li>
+          
+          <li> pkg/dump/dump ( 15 features, 1/1 featured file ) </li>
+          
+          <li> pkg/instancegroups/instancegroups ( 30 features, 3/8 featured file ) </li>
+          
+          <li> pkg/resources/digitalocean/digitalocean ( 3 features, 1/1 featured file ) </li>
+          
+          <li> pkg/resources/ops/ops ( 2 features, 1/2 featured file ) </li>
+          
+          <li> protokube/cmd/protokube/main ( 4 features, 1/2 featured file ) </li>
+          
+          <li> protokube/pkg/gossip/gossip ( 6 features, 1/2 featured file ) </li>
+          
+          <li> protokube/pkg/gossip/mesh/mesh ( 12 features, 1/5 featured file ) </li>
+          
+          <li> upup/pkg/fi/fi_test ( 2 features, 1/34 featured file ) </li>
+          
+          <li> util/pkg/vfs/vfs ( 8 features, 2/26 featured file ) </li>
+          
+    <li> Num of Packages with features : 15/218</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>14 </td>
+      <td>41 </td>
+      <td>14</td>
+      <td>30</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>6 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>85.71428571428571</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>6 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+      <td>14.285714285714285%</td>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>13 </td>
+      <td>4</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//cmd/kops-controller/main.go#L106">cmd/kops-controller/main.go</a></td>
+              <td>Goroutine</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/cmd/dns-controller/main.go#L89">dns-controller/cmd/dns-controller/main.go</a></td>
+              <td>Goroutine</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/cmd/dns-controller/main.go#L159">dns-controller/cmd/dns-controller/main.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/cmd/dns-controller/main.go#L226">dns-controller/cmd/dns-controller/main.go</a></td>
+              <td>Goroutine</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/cmd/dns-controller/main.go#L227">dns-controller/cmd/dns-controller/main.go</a></td>
+              <td>Goroutine</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/cmd/dns-controller/main.go#L228">dns-controller/cmd/dns-controller/main.go</a></td>
+              <td>Goroutine</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/cmd/dns-controller/main.go#L231">dns-controller/cmd/dns-controller/main.go</a></td>
+              <td>Goroutine</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/dns/dnscontroller.go#L111">dns-controller/pkg/dns/dnscontroller.go</a></td>
+              <td>Goroutine</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/dns/dnscontroller.go#L113">dns-controller/pkg/dns/dnscontroller.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/dns/dnscontroller.go#L117">dns-controller/pkg/dns/dnscontroller.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/util/stoppable.go#L43">dns-controller/pkg/util/stoppable.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/util/stoppable.go#L59">dns-controller/pkg/util/stoppable.go</a></td>
+              <td>Synchronous chan</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod_test.go#L64">dns-controller/pkg/watchers/pod_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod_test.go#L79">dns-controller/pkg/watchers/pod_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod_test.go#L81">dns-controller/pkg/watchers/pod_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>81</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod_test.go#L82">dns-controller/pkg/watchers/pod_test.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod_test.go#L83">dns-controller/pkg/watchers/pod_test.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/node.go#L63">dns-controller/pkg/watchers/node.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/node.go#L65">dns-controller/pkg/watchers/node.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/node.go#L69">dns-controller/pkg/watchers/node.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/node.go#L106">dns-controller/pkg/watchers/node.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/node.go#L107">dns-controller/pkg/watchers/node.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/node.go#L110">dns-controller/pkg/watchers/node.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/ingress.go#L62">dns-controller/pkg/watchers/ingress.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/ingress.go#L64">dns-controller/pkg/watchers/ingress.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/ingress.go#L68">dns-controller/pkg/watchers/ingress.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/ingress.go#L104">dns-controller/pkg/watchers/ingress.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>104</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/ingress.go#L105">dns-controller/pkg/watchers/ingress.go</a></td>
+              <td>Receive</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/ingress.go#L108">dns-controller/pkg/watchers/ingress.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/service.go#L63">dns-controller/pkg/watchers/service.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/service.go#L65">dns-controller/pkg/watchers/service.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/service.go#L69">dns-controller/pkg/watchers/service.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/service.go#L105">dns-controller/pkg/watchers/service.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>105</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/service.go#L106">dns-controller/pkg/watchers/service.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/service.go#L109">dns-controller/pkg/watchers/service.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod.go#L63">dns-controller/pkg/watchers/pod.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod.go#L65">dns-controller/pkg/watchers/pod.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod.go#L69">dns-controller/pkg/watchers/pod.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod.go#L106">dns-controller/pkg/watchers/pod.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod.go#L107">dns-controller/pkg/watchers/pod.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//dns-controller/pkg/watchers/pod.go#L110">dns-controller/pkg/watchers/pod.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L79">pkg/assets/copy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>79</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L81">pkg/assets/copy.go</a></td>
+              <td>Send</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L97">pkg/assets/copy.go</a></td>
+              <td>Go in for</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L92">pkg/assets/copy.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L97">pkg/assets/copy.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L102">pkg/assets/copy.go</a></td>
+              <td>Send</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L107">pkg/assets/copy.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/assets/copy.go#L114">pkg/assets/copy.go</a></td>
+              <td>Close chan</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L351">pkg/dump/dumper.go</a></td>
+              <td>Synchronous chan</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L352">pkg/dump/dumper.go</a></td>
+              <td>Goroutine</td>
+              <td>352</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L355">pkg/dump/dumper.go</a></td>
+              <td>Send</td>
+              <td>355</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L365">pkg/dump/dumper.go</a></td>
+              <td>Send</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L368">pkg/dump/dumper.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>368</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L369">pkg/dump/dumper.go</a></td>
+              <td>Receive</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L378">pkg/dump/dumper.go</a></td>
+              <td>Receive</td>
+              <td>378</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L381">pkg/dump/dumper.go</a></td>
+              <td>Receive</td>
+              <td>381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L410">pkg/dump/dumper.go</a></td>
+              <td>Synchronous chan</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L411">pkg/dump/dumper.go</a></td>
+              <td>Goroutine</td>
+              <td>411</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L416">pkg/dump/dumper.go</a></td>
+              <td>Send</td>
+              <td>416</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L419">pkg/dump/dumper.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>419</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L420">pkg/dump/dumper.go</a></td>
+              <td>Receive</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L423">pkg/dump/dumper.go</a></td>
+              <td>Receive</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/dump/dumper.go#L425">pkg/dump/dumper.go</a></td>
+              <td>Receive</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate.go#L125">pkg/instancegroups/rollingupdate.go</a></td>
+              <td>Go in for</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate.go#L125">pkg/instancegroups/rollingupdate.go</a></td>
+              <td>Goroutine</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L184">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Unknown chan length</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L187">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Go in for</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L187">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Goroutine</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L188">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Send</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L198">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Receive</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L229">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>229</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L230">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Receive</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L243">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Receive</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L278">pkg/instancegroups/instancegroups.go</a></td>
+              <td>chan used as a param</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/instancegroups.go#L280">pkg/instancegroups/instancegroups.go</a></td>
+              <td>Receive</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1057">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1057</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1058">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Send</td>
+              <td>1058</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1063">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1063</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1064">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Receive</td>
+              <td>1064</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1065">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Receive</td>
+              <td>1065</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1073">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1073</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1074">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Send</td>
+              <td>1074</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1079">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1079</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1080">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Receive</td>
+              <td>1080</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1081">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Receive</td>
+              <td>1081</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1113">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1113</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1114">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Receive</td>
+              <td>1114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1115">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Receive</td>
+              <td>1115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1119">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1131">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1131</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1132">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Send</td>
+              <td>1132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1150">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/instancegroups/rollingupdate_test.go#L1151">pkg/instancegroups/rollingupdate_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1151</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/resources/digitalocean/resources.go#L319">pkg/resources/digitalocean/resources.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>319</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/resources/digitalocean/resources.go#L320">pkg/resources/digitalocean/resources.go</a></td>
+              <td>Receive</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/resources/digitalocean/resources.go#L322">pkg/resources/digitalocean/resources.go</a></td>
+              <td>Receive</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/resources/ops/delete.go#L105">pkg/resources/ops/delete.go</a></td>
+              <td>Go in for</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//pkg/resources/ops/delete.go#L105">pkg/resources/ops/delete.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/cmd/protokube/main.go#L301">protokube/cmd/protokube/main.go</a></td>
+              <td>Goroutine</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/cmd/protokube/main.go#L318">protokube/cmd/protokube/main.go</a></td>
+              <td>Goroutine</td>
+              <td>318</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/cmd/protokube/main.go#L363">protokube/cmd/protokube/main.go</a></td>
+              <td>Goroutine</td>
+              <td>363</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/cmd/protokube/main.go#L384">protokube/cmd/protokube/main.go</a></td>
+              <td>Goroutine</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/gossip.go#L54">protokube/pkg/gossip/gossip.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>54</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/gossip.go#L56">protokube/pkg/gossip/gossip.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/gossip.go#L57">protokube/pkg/gossip/gossip.go</a></td>
+              <td>Send</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/gossip.go#L60">protokube/pkg/gossip/gossip.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/gossip.go#L61">protokube/pkg/gossip/gossip.go</a></td>
+              <td>Send</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/gossip.go#L64">protokube/pkg/gossip/gossip.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L43">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L48">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L50">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L54">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L56">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>56</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L57">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L59">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L67">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Send</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L75">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L76">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Send</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L77">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Close chan</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//protokube/pkg/gossip/mesh/peer.go#L86">protokube/pkg/gossip/mesh/peer.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//upup/pkg/fi/executor.go#L183">upup/pkg/fi/executor.go</a></td>
+              <td>Go in for</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//upup/pkg/fi/executor.go#L183">upup/pkg/fi/executor.go</a></td>
+              <td>Goroutine</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/vaultfs.go#L202">util/pkg/vfs/vaultfs.go</a></td>
+              <td>Goroutine</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/s3context.go#L305">util/pkg/vfs/s3context.go</a></td>
+              <td>Unknown chan length</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/s3context.go#L307">util/pkg/vfs/s3context.go</a></td>
+              <td>Go in for</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/s3context.go#L307">util/pkg/vfs/s3context.go</a></td>
+              <td>Goroutine</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/s3context.go#L313">util/pkg/vfs/s3context.go</a></td>
+              <td>Send</td>
+              <td>313</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/s3context.go#L318">util/pkg/vfs/s3context.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>318</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/s3context.go#L319">util/pkg/vfs/s3context.go</a></td>
+              <td>Receive</td>
+              <td>319</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kubernetes/kops/blob//util/pkg/vfs/s3context.go#L321">util/pkg/vfs/s3context.go</a></td>
+              <td>Receive</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 14 ,  41 ,
+     14 ,
+     30 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

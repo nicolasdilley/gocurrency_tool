@@ -1,0 +1,1500 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : opencontainers/runc ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/opencontainers/runc/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> main ( 37 features, 5/24 featured file ) </li>
+          
+          <li> contrib/cmd/recvtty/main ( 4 features, 1/1 featured file ) </li>
+          
+          <li> libcontainer/libcontainer ( 30 features, 5/27 featured file ) </li>
+          
+          <li> libcontainer/cgroups/systemd/systemd ( 10 features, 1/10 featured file ) </li>
+          
+          <li> libcontainer/configs/configs_test ( 7 features, 1/19 featured file ) </li>
+          
+          <li> libcontainer/integration/integration ( 12 features, 1/9 featured file ) </li>
+          
+          <li> libcontainer/logs/logs ( 8 features, 2/2 featured file ) </li>
+          
+          <li> libcontainer/seccomp/patchbpf/patchbpf ( 5 features, 1/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 8/30</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>18 </td>
+      <td>30 </td>
+      <td>18</td>
+      <td>23</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>1 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>13</td>
+      <td>0</td>
+      <td>72.22222222222221%</td>
+      <td>9 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>10 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//signals.go#L32">signals.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>32</td>
+              <td>2048</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//signals.go#L73">signals.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//notify_socket.go#L118">notify_socket.go</a></td>
+              <td>Synchronous chan</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//notify_socket.go#L119">notify_socket.go</a></td>
+              <td>Goroutine</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//notify_socket.go#L131">notify_socket.go</a></td>
+              <td>Send</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//notify_socket.go#L140">notify_socket.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>140</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//notify_socket.go#L141">notify_socket.go</a></td>
+              <td>Receive</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//notify_socket.go#L146">notify_socket.go</a></td>
+              <td>Receive</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L54">events.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>54</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L55">events.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>55</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L54">events.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>54</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L55">events.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>55</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L59">events.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L62">events.go</a></td>
+              <td>Range over chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L73">events.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L74">events.go</a></td>
+              <td>Close chan</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L78">events.go</a></td>
+              <td>Goroutine</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L85">events.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L93">events.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>93</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L94">events.go</a></td>
+              <td>Receive</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L99">events.go</a></td>
+              <td>Send</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L103">events.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L104">events.go</a></td>
+              <td>Send</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//events.go#L107">events.go</a></td>
+              <td>Close chan</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L58">tty.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L63">tty.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L64">tty.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L131">tty.go</a></td>
+              <td>Goroutine</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L132">tty.go</a></td>
+              <td>Goroutine</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L134">tty.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L140">tty.go</a></td>
+              <td>Goroutine</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L149">tty.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>149</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L151">tty.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//tty.go#L158">tty.go</a></td>
+              <td>Receive</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//utils_linux.go#L165">utils_linux.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>165</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//utils_linux.go#L166">utils_linux.go</a></td>
+              <td>Goroutine</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//utils_linux.go#L167">utils_linux.go</a></td>
+              <td>Send</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//contrib/cmd/recvtty/recvtty.go#L120">contrib/cmd/recvtty/recvtty.go</a></td>
+              <td>Goroutine</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//contrib/cmd/recvtty/recvtty.go#L126">contrib/cmd/recvtty/recvtty.go</a></td>
+              <td>Goroutine</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//contrib/cmd/recvtty/recvtty.go#L158">contrib/cmd/recvtty/recvtty.go</a></td>
+              <td>Go in for</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//contrib/cmd/recvtty/recvtty.go#L158">contrib/cmd/recvtty/recvtty.go</a></td>
+              <td>Goroutine</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_v2.go#L32">libcontainer/notify_linux_v2.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_v2.go#L33">libcontainer/notify_linux_v2.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_v2.go#L40">libcontainer/notify_linux_v2.go</a></td>
+              <td>Close chan</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_v2.go#L64">libcontainer/notify_linux_v2.go</a></td>
+              <td>Send</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux.go#L43">libcontainer/notify_linux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux.go#L44">libcontainer/notify_linux.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux.go#L48">libcontainer/notify_linux.go</a></td>
+              <td>Close chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux.go#L60">libcontainer/notify_linux.go</a></td>
+              <td>Send</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_test.go#L64">libcontainer/notify_linux_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>64</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_test.go#L65">libcontainer/notify_linux_test.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_test.go#L66">libcontainer/notify_linux_test.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_test.go#L80">libcontainer/notify_linux_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>80</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_test.go#L81">libcontainer/notify_linux_test.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/notify_linux_test.go#L85">libcontainer/notify_linux_test.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L105">libcontainer/process_linux.go</a></td>
+              <td>Receive</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L121">libcontainer/process_linux.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L360">libcontainer/process_linux.go</a></td>
+              <td>Receive</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L391">libcontainer/process_linux.go</a></td>
+              <td>Receive</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L695">libcontainer/process_linux.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>695</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L696">libcontainer/process_linux.go</a></td>
+              <td>Goroutine</td>
+              <td>696</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L697">libcontainer/process_linux.go</a></td>
+              <td>Close chan</td>
+              <td>697</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L707">libcontainer/process_linux.go</a></td>
+              <td>Send</td>
+              <td>707</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/process_linux.go#L711">libcontainer/process_linux.go</a></td>
+              <td>Send</td>
+              <td>711</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/container_linux.go#L271">libcontainer/container_linux.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>271</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/container_linux.go#L272">libcontainer/container_linux.go</a></td>
+              <td>Receive</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/container_linux.go#L275">libcontainer/container_linux.go</a></td>
+              <td>Receive</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/container_linux.go#L301">libcontainer/container_linux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/container_linux.go#L302">libcontainer/container_linux.go</a></td>
+              <td>Goroutine</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/container_linux.go#L304">libcontainer/container_linux.go</a></td>
+              <td>Send</td>
+              <td>304</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/container_linux.go#L349">libcontainer/container_linux.go</a></td>
+              <td>Receive</td>
+              <td>349</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L339">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>339</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L348">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>348</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L349">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Receive</td>
+              <td>349</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L350">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Close chan</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L356">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Receive</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L368">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>368</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L377">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>377</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L378">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Receive</td>
+              <td>378</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L379">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Close chan</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/cgroups/systemd/common.go#L384">libcontainer/cgroups/systemd/common.go</a></td>
+              <td>Receive</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/configs/config.go#L374">libcontainer/configs/config.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>374</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/configs/config.go#L375">libcontainer/configs/config.go</a></td>
+              <td>Goroutine</td>
+              <td>375</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/configs/config.go#L380">libcontainer/configs/config.go</a></td>
+              <td>Send</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/configs/config.go#L388">libcontainer/configs/config.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>388</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/configs/config.go#L389">libcontainer/configs/config.go</a></td>
+              <td>Receive</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/configs/config.go#L391">libcontainer/configs/config.go</a></td>
+              <td>Receive</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/configs/config.go#L393">libcontainer/configs/config.go</a></td>
+              <td>Receive</td>
+              <td>393</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L283">libcontainer/integration/execin_test.go</a></td>
+              <td>Make chan in constant for</td>
+              <td>283</td>
+              <td>300</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L284">libcontainer/integration/execin_test.go</a></td>
+              <td>Go in for</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L284">libcontainer/integration/execin_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>284</td>
+              <td>300</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L283">libcontainer/integration/execin_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>283</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L284">libcontainer/integration/execin_test.go</a></td>
+              <td>Goroutine</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L287">libcontainer/integration/execin_test.go</a></td>
+              <td>Send</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L292">libcontainer/integration/execin_test.go</a></td>
+              <td>Send</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L297">libcontainer/integration/execin_test.go</a></td>
+              <td>Send</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L303">libcontainer/integration/execin_test.go</a></td>
+              <td>Send</td>
+              <td>303</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L309">libcontainer/integration/execin_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>309</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L310">libcontainer/integration/execin_test.go</a></td>
+              <td>Receive</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/integration/execin_test.go#L312">libcontainer/integration/execin_test.go</a></td>
+              <td>Receive</td>
+              <td>312</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs.go#L31">libcontainer/logs/logs.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>31</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs.go#L34">libcontainer/logs/logs.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs.go#L43">libcontainer/logs/logs.go</a></td>
+              <td>Send</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs.go#L44">libcontainer/logs/logs.go</a></td>
+              <td>Close chan</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs_linux_test.go#L55">libcontainer/logs/logs_linux_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>55</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs_linux_test.go#L56">libcontainer/logs/logs_linux_test.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs_linux_test.go#L57">libcontainer/logs/logs_linux_test.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/logs/logs_linux_test.go#L111">libcontainer/logs/logs_linux_test.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/seccomp/patchbpf/enosys_linux.go#L119">libcontainer/seccomp/patchbpf/enosys_linux.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>119</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/seccomp/patchbpf/enosys_linux.go#L120">libcontainer/seccomp/patchbpf/enosys_linux.go</a></td>
+              <td>Goroutine</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/seccomp/patchbpf/enosys_linux.go#L122">libcontainer/seccomp/patchbpf/enosys_linux.go</a></td>
+              <td>Send</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/seccomp/patchbpf/enosys_linux.go#L123">libcontainer/seccomp/patchbpf/enosys_linux.go</a></td>
+              <td>Close chan</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/opencontainers/runc/blob//libcontainer/seccomp/patchbpf/enosys_linux.go#L132">libcontainer/seccomp/patchbpf/enosys_linux.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 18 ,  30 ,
+     18 ,
+     23 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

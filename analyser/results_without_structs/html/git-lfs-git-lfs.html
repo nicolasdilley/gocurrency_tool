@@ -1,0 +1,3545 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : git-lfs/git-lfs ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/git-lfs/git-lfs/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> main ( 3 features, 1/3 featured file ) </li>
+          
+          <li> commands/commands ( 75 features, 4/47 featured file ) </li>
+          
+          <li> git/git_test ( 4 features, 1/17 featured file ) </li>
+          
+          <li> lfs/lfs_test ( 92 features, 7/29 featured file ) </li>
+          
+          <li> lfshttp/lfshttp ( 4 features, 2/22 featured file ) </li>
+          
+          <li> t/cmd/main ( 6 features, 2/11 featured file ) </li>
+          
+          <li> tasklog/tasklog ( 90 features, 10/11 featured file ) </li>
+          
+          <li> tools/tools_test ( 17 features, 5/33 featured file ) </li>
+          
+          <li> tq/tq ( 55 features, 4/20 featured file ) </li>
+          
+    <li> Num of Packages with features : 9/27</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>114 </td>
+      <td>32 </td>
+      <td>53</td>
+      <td>57</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>10 </td>
+      <td>3</td>
+      <td>22</td>
+      <td>37.142857142857146</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>3 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>21</td>
+      <td>21</td>
+      <td>11</td>
+      <td>39.62264150943396%</td>
+      <td>32 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>5 </td>
+      <td>9</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//git-lfs.go#L14">git-lfs.go</a></td>
+              <td>Synchronous chan</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//git-lfs.go#L19">git-lfs.go</a></td>
+              <td>Goroutine</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//git-lfs.go#L21">git-lfs.go</a></td>
+              <td>Receive</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_fetch.go#L326">commands/command_fetch.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>326</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_fetch.go#L337">commands/command_fetch.go</a></td>
+              <td>Send</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_fetch.go#L342">commands/command_fetch.go</a></td>
+              <td>Goroutine</td>
+              <td>342</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_fetch.go#L357">commands/command_fetch.go</a></td>
+              <td>Send</td>
+              <td>357</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_pull.go#L79">commands/command_pull.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L86">commands/command_prune.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>86</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L90">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L93">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L96">commands/command_prune.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>96</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L103">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L104">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L105">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L106">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L109">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L115">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L120">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L124">commands/command_prune.go</a></td>
+              <td>Close chan</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L127">commands/command_prune.go</a></td>
+              <td>Close chan</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L151">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L155">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L277">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>277</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L284">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L290">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L330">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>330</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L336">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L336">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L344">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L348">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>348</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L353">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L358">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>358</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L358">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>358</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L366">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>366</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L370">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>370</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L375">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>375</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L381">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L381">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L390">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>390</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L396">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L413">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>413</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L431">commands/command_prune.go</a></td>
+              <td>Go in for</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L426">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L431">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L437">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>437</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L437">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>437</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L442">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L444">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L450">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L456">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>456</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L456">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>456</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L467">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>467</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L476">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L485">commands/command_prune.go</a></td>
+              <td>Goroutine</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L491">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>491</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L491">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>491</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L496">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>496</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L498">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>498</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L504">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>504</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L510">commands/command_prune.go</a></td>
+              <td>chan used as a param</td>
+              <td>510</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L518">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>518</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_prune.go#L525">commands/command_prune.go</a></td>
+              <td>Send</td>
+              <td>525</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L95">commands/command_filter_process.go</a></td>
+              <td>Synchronous chan</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L103">commands/command_filter_process.go</a></td>
+              <td>Goroutine</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L144">commands/command_filter_process.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L231">commands/command_filter_process.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L244">commands/command_filter_process.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>244</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L245">commands/command_filter_process.go</a></td>
+              <td>Receive</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L251">commands/command_filter_process.go</a></td>
+              <td>Send</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L257">commands/command_filter_process.go</a></td>
+              <td>Send</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L263">commands/command_filter_process.go</a></td>
+              <td>Receive</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L272">commands/command_filter_process.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>272</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L273">commands/command_filter_process.go</a></td>
+              <td>Send</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L321">commands/command_filter_process.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L325">commands/command_filter_process.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>325</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L326">commands/command_filter_process.go</a></td>
+              <td>Receive</td>
+              <td>326</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//commands/command_filter_process.go#L336">commands/command_filter_process.go</a></td>
+              <td>Receive</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//git/ls_files.go#L65">git/ls_files.go</a></td>
+              <td>Synchronous chan</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//git/ls_files.go#L66">git/ls_files.go</a></td>
+              <td>Goroutine</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//git/ls_files.go#L68">git/ls_files.go</a></td>
+              <td>Send</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//git/ls_files.go#L83">git/ls_files.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L51">lfs/gitscanner_tree.go</a></td>
+              <td>Unknown chan length</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L52">lfs/gitscanner_tree.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>52</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L54">lfs/gitscanner_tree.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L61">lfs/gitscanner_tree.go</a></td>
+              <td>Send</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L65">lfs/gitscanner_tree.go</a></td>
+              <td>Send</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L79">lfs/gitscanner_tree.go</a></td>
+              <td>Send</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L84">lfs/gitscanner_tree.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L87">lfs/gitscanner_tree.go</a></td>
+              <td>Close chan</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L88">lfs/gitscanner_tree.go</a></td>
+              <td>Close chan</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L105">lfs/gitscanner_tree.go</a></td>
+              <td>Unknown chan length</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L106">lfs/gitscanner_tree.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>106</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L108">lfs/gitscanner_tree.go</a></td>
+              <td>Goroutine</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L112">lfs/gitscanner_tree.go</a></td>
+              <td>Send</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L119">lfs/gitscanner_tree.go</a></td>
+              <td>Send</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L121">lfs/gitscanner_tree.go</a></td>
+              <td>Close chan</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_tree.go#L122">lfs/gitscanner_tree.go</a></td>
+              <td>Close chan</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L33">lfs/gitscanner_index.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>33</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L34">lfs/gitscanner_index.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>34</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L36">lfs/gitscanner_index.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L41">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L47">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L52">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L58">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L60">lfs/gitscanner_index.go</a></td>
+              <td>Close chan</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L61">lfs/gitscanner_index.go</a></td>
+              <td>Close chan</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L69">lfs/gitscanner_index.go</a></td>
+              <td>Unknown chan length</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L76">lfs/gitscanner_index.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L81">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L94">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L97">lfs/gitscanner_index.go</a></td>
+              <td>Close chan</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L100">lfs/gitscanner_index.go</a></td>
+              <td>Range over chan</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L118">lfs/gitscanner_index.go</a></td>
+              <td>Unknown chan length</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L119">lfs/gitscanner_index.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>119</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L121">lfs/gitscanner_index.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L134">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L138">lfs/gitscanner_index.go</a></td>
+              <td>Send</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L141">lfs/gitscanner_index.go</a></td>
+              <td>Close chan</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_index.go#L142">lfs/gitscanner_index.go</a></td>
+              <td>Close chan</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L20">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>chan used as a param</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L20">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>chan used as a param</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L20">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>chan used as a param</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L26">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>Goroutine</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L32">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L34">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>Send</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L37">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>Send</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L48">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatch.go#L53">lfs/gitscanner_catfilebatch.go</a></td>
+              <td>Send</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L135">lfs/gitscanner_log.go</a></td>
+              <td>Unknown chan length</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L137">lfs/gitscanner_log.go</a></td>
+              <td>Goroutine</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L141">lfs/gitscanner_log.go</a></td>
+              <td>Send</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L146">lfs/gitscanner_log.go</a></td>
+              <td>Send</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L151">lfs/gitscanner_log.go</a></td>
+              <td>Send</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L153">lfs/gitscanner_log.go</a></td>
+              <td>Close chan</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L157">lfs/gitscanner_log.go</a></td>
+              <td>Range over chan</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L183">lfs/gitscanner_log.go</a></td>
+              <td>chan used as a param</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_log.go#L190">lfs/gitscanner_log.go</a></td>
+              <td>Send</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L18">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>chan used as a param</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L18">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>chan used as a param</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L18">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>chan used as a param</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L24">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L30">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>Send</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L32">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L35">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>Send</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L45">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>Send</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_catfilebatchcheck.go#L52">lfs/gitscanner_catfilebatchcheck.go</a></td>
+              <td>Send</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L39">lfs/scanner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>39</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L40">lfs/scanner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>40</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L41">lfs/scanner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>41</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L53">lfs/scanner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>53</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L54">lfs/scanner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>54</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L55">lfs/scanner.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>55</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L72">lfs/scanner.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L72">lfs/scanner.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L86">lfs/scanner.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L86">lfs/scanner.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L99">lfs/scanner.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/scanner.go#L99">lfs/scanner.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L60">lfs/gitscanner_refs.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L123">lfs/gitscanner_refs.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>123</td>
+              <td>20</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L128">lfs/gitscanner_refs.go</a></td>
+              <td>Go in for</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L128">lfs/gitscanner_refs.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L132">lfs/gitscanner_refs.go</a></td>
+              <td>Send</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L138">lfs/gitscanner_refs.go</a></td>
+              <td>Close chan</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L139">lfs/gitscanner_refs.go</a></td>
+              <td>Range over chan</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L166">lfs/gitscanner_refs.go</a></td>
+              <td>Unknown chan length</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L167">lfs/gitscanner_refs.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>167</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L169">lfs/gitscanner_refs.go</a></td>
+              <td>Goroutine</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L175">lfs/gitscanner_refs.go</a></td>
+              <td>Send</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L179">lfs/gitscanner_refs.go</a></td>
+              <td>Send</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L183">lfs/gitscanner_refs.go</a></td>
+              <td>Send</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L186">lfs/gitscanner_refs.go</a></td>
+              <td>Close chan</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfs/gitscanner_refs.go#L187">lfs/gitscanner_refs.go</a></td>
+              <td>Close chan</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfshttp/stats.go#L101">lfshttp/stats.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>101</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfshttp/stats.go#L105">lfshttp/stats.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfshttp/stats.go#L154">lfshttp/stats.go</a></td>
+              <td>Send</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//lfshttp/client_test.go#L109">lfshttp/client_test.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//t/cmd/lfstest-count-tests.go#L183">t/cmd/lfstest-count-tests.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>183</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//t/cmd/lfstest-count-tests.go#L184">t/cmd/lfstest-count-tests.go</a></td>
+              <td>Receive</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//t/cmd/lfstest-count-tests.go#L191">t/cmd/lfstest-count-tests.go</a></td>
+              <td>Receive</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//t/cmd/lfstest-gitserver.go#L90">t/cmd/lfstest-gitserver.go</a></td>
+              <td>Synchronous chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//t/cmd/lfstest-gitserver.go#L93">t/cmd/lfstest-gitserver.go</a></td>
+              <td>Send</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//t/cmd/lfstest-gitserver.go#L156">t/cmd/lfstest-gitserver.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task.go#L30">tasklog/list_task.go</a></td>
+              <td>Send</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task.go#L37">tasklog/list_task.go</a></td>
+              <td>Send</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/waiting_task_test.go#L12">tasklog/waiting_task_test.go</a></td>
+              <td>Receive</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/waiting_task_test.go#L18">tasklog/waiting_task_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>18</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/waiting_task_test.go#L19">tasklog/waiting_task_test.go</a></td>
+              <td>Receive</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/waiting_task_test.go#L30">tasklog/waiting_task_test.go</a></td>
+              <td>Receive</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task.go#L32">tasklog/percentage_task.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>32</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task.go#L57">tasklog/percentage_task.go</a></td>
+              <td>Send</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task.go#L72">tasklog/percentage_task.go</a></td>
+              <td>Send</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task_test.go#L15">tasklog/simple_task_test.go</a></td>
+              <td>Goroutine</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task_test.go#L34">tasklog/simple_task_test.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task_test.go#L51">tasklog/simple_task_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>51</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task_test.go#L52">tasklog/simple_task_test.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task_test.go#L57">tasklog/simple_task_test.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task_test.go#L58">tasklog/simple_task_test.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task_test.go#L64">tasklog/simple_task_test.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task_test.go#L13">tasklog/list_task_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>13</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task_test.go#L14">tasklog/list_task_test.go</a></td>
+              <td>Receive</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task_test.go#L22">tasklog/list_task_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>22</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task_test.go#L23">tasklog/list_task_test.go</a></td>
+              <td>Receive</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task_test.go#L35">tasklog/list_task_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>35</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/list_task_test.go#L36">tasklog/list_task_test.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L78">tasklog/log.go</a></td>
+              <td>Synchronous chan</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L79">tasklog/log.go</a></td>
+              <td>Synchronous chan</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L89">tasklog/log.go</a></td>
+              <td>Goroutine</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L159">tasklog/log.go</a></td>
+              <td>Go in for</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L159">tasklog/log.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L174">tasklog/log.go</a></td>
+              <td>Send</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L181">tasklog/log.go</a></td>
+              <td>Goroutine</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L204">tasklog/log.go</a></td>
+              <td>Receive</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L214">tasklog/log.go</a></td>
+              <td>Send</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L219">tasklog/log.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>219</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L220">tasklog/log.go</a></td>
+              <td>Receive</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log.go#L229">tasklog/log.go</a></td>
+              <td>Send</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/waiting_task.go#L17">tasklog/waiting_task.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>17</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/waiting_task.go#L18">tasklog/waiting_task.go</a></td>
+              <td>Send</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/simple_task.go#L37">tasklog/simple_task.go</a></td>
+              <td>Send</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L12">tasklog/percentage_task_test.go</a></td>
+              <td>Receive</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L17">tasklog/percentage_task_test.go</a></td>
+              <td>Receive</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L23">tasklog/percentage_task_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>23</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L24">tasklog/percentage_task_test.go</a></td>
+              <td>Receive</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L37">tasklog/percentage_task_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>37</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L38">tasklog/percentage_task_test.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L48">tasklog/percentage_task_test.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/percentage_task_test.go#L50">tasklog/percentage_task_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L27">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L28">tasklog/log_test.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L29">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L30">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L31">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L46">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L47">tasklog/log_test.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L48">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L49">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L50">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L65">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L66">tasklog/log_test.go</a></td>
+              <td>Goroutine</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L67">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L68">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L69">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L71">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L72">tasklog/log_test.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L73">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L74">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L75">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L99">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L99">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L104">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L106">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L107">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L108">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L123">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L124">tasklog/log_test.go</a></td>
+              <td>Goroutine</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L127">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L128">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L129">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L130">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L131">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L152">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L153">tasklog/log_test.go</a></td>
+              <td>Goroutine</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L156">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L157">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L158">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L181">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L182">tasklog/log_test.go</a></td>
+              <td>Goroutine</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L183">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L184">tasklog/log_test.go</a></td>
+              <td>Send</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L185">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L201">tasklog/log_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tasklog/log_test.go#L202">tasklog/log_test.go</a></td>
+              <td>Close chan</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/channels.go#L34">tools/channels.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/ordered_set.go#L183">tools/ordered_set.go</a></td>
+              <td>Synchronous chan</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/ordered_set.go#L184">tools/ordered_set.go</a></td>
+              <td>Goroutine</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/ordered_set.go#L186">tools/ordered_set.go</a></td>
+              <td>Send</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/ordered_set.go#L188">tools/ordered_set.go</a></td>
+              <td>Close chan</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/stringset.go#L139">tools/stringset.go</a></td>
+              <td>Synchronous chan</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/stringset.go#L140">tools/stringset.go</a></td>
+              <td>Goroutine</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/stringset.go#L142">tools/stringset.go</a></td>
+              <td>Send</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/stringset.go#L144">tools/stringset.go</a></td>
+              <td>Close chan</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools_test.go#L245">tools/filetools_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools.go#L302">tools/filetools.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>302</td>
+              <td>256</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools.go#L306">tools/filetools.go</a></td>
+              <td>Goroutine</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools.go#L311">tools/filetools.go</a></td>
+              <td>Send</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools.go#L351">tools/filetools.go</a></td>
+              <td>Send</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools.go#L369">tools/filetools.go</a></td>
+              <td>Send</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools.go#L386">tools/filetools.go</a></td>
+              <td>Send</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tools/filetools.go#L399">tools/filetools.go</a></td>
+              <td>Goroutine</td>
+              <td>399</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/meter.go#L84">tq/meter.go</a></td>
+              <td>Synchronous chan</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/meter.go#L221">tq/meter.go</a></td>
+              <td>Send</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L81">tq/adapterbase.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>81</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L95">tq/adapterbase.go</a></td>
+              <td>Go in for</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L95">tq/adapterbase.go</a></td>
+              <td>Goroutine</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L109">tq/adapterbase.go</a></td>
+              <td>Send</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L114">tq/adapterbase.go</a></td>
+              <td>Unknown chan length</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L118">tq/adapterbase.go</a></td>
+              <td>Goroutine</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L120">tq/adapterbase.go</a></td>
+              <td>Send</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/adapterbase.go#L124">tq/adapterbase.go</a></td>
+              <td>Close chan</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/custom.go#L215">tq/custom.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>215</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/custom.go#L216">tq/custom.go</a></td>
+              <td>Goroutine</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/custom.go#L220">tq/custom.go</a></td>
+              <td>Send</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/custom.go#L224">tq/custom.go</a></td>
+              <td>Send</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/custom.go#L226">tq/custom.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>226</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/custom.go#L227">tq/custom.go</a></td>
+              <td>Receive</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/custom.go#L229">tq/custom.go</a></td>
+              <td>Receive</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L299">tq/transfer_queue.go</a></td>
+              <td>Synchronous chan</td>
+              <td>299</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L325">tq/transfer_queue.go</a></td>
+              <td>Unknown chan length</td>
+              <td>325</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L344">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L362">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>362</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L372">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>372</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L440">tq/transfer_queue.go</a></td>
+              <td>Make chan in for</td>
+              <td>440</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L445">tq/transfer_queue.go</a></td>
+              <td>Go in for</td>
+              <td>445</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L427">tq/transfer_queue.go</a></td>
+              <td>Receive</td>
+              <td>427</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L440">tq/transfer_queue.go</a></td>
+              <td>Synchronous chan</td>
+              <td>440</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L445">tq/transfer_queue.go</a></td>
+              <td>Goroutine</td>
+              <td>445</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L446">tq/transfer_queue.go</a></td>
+              <td>Close chan</td>
+              <td>446</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L454">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>454</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L493">tq/transfer_queue.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>493</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L495">tq/transfer_queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>495</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L496">tq/transfer_queue.go</a></td>
+              <td>Receive</td>
+              <td>496</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L499">tq/transfer_queue.go</a></td>
+              <td>Receive</td>
+              <td>499</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L504">tq/transfer_queue.go</a></td>
+              <td>Receive</td>
+              <td>504</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L614">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>614</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L629">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>629</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L642">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>642</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L676">tq/transfer_queue.go</a></td>
+              <td>Unknown chan length</td>
+              <td>676</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L679">tq/transfer_queue.go</a></td>
+              <td>Close chan</td>
+              <td>679</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L681">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>681</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L692">tq/transfer_queue.go</a></td>
+              <td>Goroutine</td>
+              <td>692</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L693">tq/transfer_queue.go</a></td>
+              <td>Close chan</td>
+              <td>693</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L755">tq/transfer_queue.go</a></td>
+              <td>Unknown chan length</td>
+              <td>755</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L757">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>757</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L760">tq/transfer_queue.go</a></td>
+              <td>Close chan</td>
+              <td>760</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L768">tq/transfer_queue.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>768</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L787">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>787</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L789">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>789</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L802">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>802</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L804">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>804</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L815">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>815</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L830">tq/transfer_queue.go</a></td>
+              <td>Send</td>
+              <td>830</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L970">tq/transfer_queue.go</a></td>
+              <td>Unknown chan length</td>
+              <td>970</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L988">tq/transfer_queue.go</a></td>
+              <td>Goroutine</td>
+              <td>988</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/git-lfs/git-lfs/blob//tq/transfer_queue.go#L989">tq/transfer_queue.go</a></td>
+              <td>Goroutine</td>
+              <td>989</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 114 ,  32 ,
+     53 ,
+     57 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

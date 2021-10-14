@@ -1,0 +1,684 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : Masterminds/glide ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/Masterminds/glide/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cache/cache ( 8 features, 1/4 featured file ) </li>
+          
+          <li> repo/repo ( 29 features, 2/7 featured file ) </li>
+          
+    <li> Num of Packages with features : 2/17</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>9 </td>
+      <td>8 </td>
+      <td>8</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>3 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>6</td>
+      <td>12.5%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>3 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L37">cache/global_lock.go</a></td>
+              <td>Send</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L41">cache/global_lock.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>41</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L80">cache/global_lock.go</a></td>
+              <td>Goroutine</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L82">cache/global_lock.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>82</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L83">cache/global_lock.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L96">cache/global_lock.go</a></td>
+              <td>Synchronous chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L98">cache/global_lock.go</a></td>
+              <td>Goroutine</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//cache/global_lock.go#L99">cache/global_lock.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L21">repo/set_reference.go</a></td>
+              <td>Unknown chan length</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L22">repo/set_reference.go</a></td>
+              <td>Unknown chan length</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L28">repo/set_reference.go</a></td>
+              <td>Go in for</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L28">repo/set_reference.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L30">repo/set_reference.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>30</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L31">repo/set_reference.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L59">repo/set_reference.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L69">repo/set_reference.go</a></td>
+              <td>Send</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L77">repo/set_reference.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/set_reference.go#L85">repo/set_reference.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L264">repo/installer.go</a></td>
+              <td>Unknown chan length</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L265">repo/installer.go</a></td>
+              <td>Unknown chan length</td>
+              <td>265</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L271">repo/installer.go</a></td>
+              <td>Go in for</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L271">repo/installer.go</a></td>
+              <td>Goroutine</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L273">repo/installer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>273</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L274">repo/installer.go</a></td>
+              <td>Receive</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L302">repo/installer.go</a></td>
+              <td>Receive</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L322">repo/installer.go</a></td>
+              <td>Send</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L340">repo/installer.go</a></td>
+              <td>Send</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L349">repo/installer.go</a></td>
+              <td>Send</td>
+              <td>349</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L511">repo/installer.go</a></td>
+              <td>Unknown chan length</td>
+              <td>511</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L512">repo/installer.go</a></td>
+              <td>Unknown chan length</td>
+              <td>512</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L518">repo/installer.go</a></td>
+              <td>Go in for</td>
+              <td>518</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L518">repo/installer.go</a></td>
+              <td>Goroutine</td>
+              <td>518</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L520">repo/installer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>520</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L521">repo/installer.go</a></td>
+              <td>Receive</td>
+              <td>521</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L542">repo/installer.go</a></td>
+              <td>Receive</td>
+              <td>542</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L552">repo/installer.go</a></td>
+              <td>Send</td>
+              <td>552</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/Masterminds/glide/blob//repo/installer.go#L560">repo/installer.go</a></td>
+              <td>Send</td>
+              <td>560</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 9 ,  8 ,
+     8 ,
+     5 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

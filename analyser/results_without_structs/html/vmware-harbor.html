@@ -1,0 +1,6413 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : vmware/harbor ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/vmware/harbor/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> src/chartserver/chartserver ( 38 features, 5/22 featured file ) </li>
+          
+          <li> src/cmd/migrate-patch/main ( 6 features, 1/1 featured file ) </li>
+          
+          <li> src/common/dao/dao ( 2 features, 1/12 featured file ) </li>
+          
+          <li> src/common/utils/utils ( 18 features, 2/4 featured file ) </li>
+          
+          <li> src/controller/artifact/artifact ( 4 features, 1/7 featured file ) </li>
+          
+          <li> src/controller/event/handler/internal/internal ( 3 features, 1/4 featured file ) </li>
+          
+          <li> src/controller/gc/gc ( 1 features, 1/4 featured file ) </li>
+          
+          <li> src/controller/health/health ( 15 features, 2/5 featured file ) </li>
+          
+          <li> src/controller/project/project ( 5 features, 1/4 featured file ) </li>
+          
+          <li> src/controller/proxy/proxy ( 4 features, 1/9 featured file ) </li>
+          
+          <li> src/controller/registry/registry ( 5 features, 1/2 featured file ) </li>
+          
+          <li> src/controller/replication/replication ( 1 features, 1/7 featured file ) </li>
+          
+          <li> src/controller/scan/scan ( 7 features, 1/8 featured file ) </li>
+          
+          <li> src/core/main ( 11 features, 1/1 featured file ) </li>
+          
+          <li> src/core/api/api ( 1 features, 1/12 featured file ) </li>
+          
+          <li> src/jobservice/api/api ( 2 features, 1/5 featured file ) </li>
+          
+          <li> src/jobservice/hook/hook ( 3 features, 1/4 featured file ) </li>
+          
+          <li> src/jobservice/job/impl/sample/sample ( 3 features, 1/1 featured file ) </li>
+          
+          <li> src/jobservice/lcm/lcm ( 4 features, 1/2 featured file ) </li>
+          
+          <li> src/jobservice/logger/logger ( 12 features, 1/19 featured file ) </li>
+          
+          <li> src/jobservice/logger/sweeper/sweeper ( 3 features, 1/5 featured file ) </li>
+          
+          <li> src/jobservice/period/period ( 8 features, 3/7 featured file ) </li>
+          
+          <li> src/jobservice/runner/runner ( 1 features, 1/3 featured file ) </li>
+          
+          <li> src/jobservice/runtime/runtime ( 10 features, 2/2 featured file ) </li>
+          
+          <li> src/jobservice/worker/cworker/cworker ( 8 features, 2/6 featured file ) </li>
+          
+          <li> src/lib/lib ( 3 features, 1/23 featured file ) </li>
+          
+          <li> src/lib/cache/cache ( 6 features, 2/10 featured file ) </li>
+          
+          <li> src/lib/retry/retry ( 2 features, 1/2 featured file ) </li>
+          
+          <li> src/pkg/exporter/exporter ( 32 features, 6/13 featured file ) </li>
+          
+          <li> src/pkg/notifier/notifier ( 7 features, 2/3 featured file ) </li>
+          
+          <li> src/pkg/notifier/event/event ( 1 features, 1/2 featured file ) </li>
+          
+          <li> src/pkg/oidc/oidc ( 1 features, 1/9 featured file ) </li>
+          
+          <li> src/pkg/p2p/preheat/preheat ( 3 features, 1/2 featured file ) </li>
+          
+          <li> src/pkg/permission/evaluator/rbac/rbac ( 1 features, 1/5 featured file ) </li>
+          
+          <li> src/pkg/proxy/secret/secret ( 1 features, 1/4 featured file ) </li>
+          
+          <li> src/pkg/quota/dao/dao ( 2 features, 1/5 featured file ) </li>
+          
+          <li> src/pkg/retention/policy/alg/or/or ( 15 features, 1/2 featured file ) </li>
+          
+          <li> src/pkg/scan/scan ( 6 features, 1/4 featured file ) </li>
+          
+          <li> src/pkg/scan/rest/v1/v1 ( 6 features, 2/6 featured file ) </li>
+          
+          <li> src/pkg/task/task ( 10 features, 1/14 featured file ) </li>
+          
+          <li> src/server/middleware/repoproxy/repoproxy ( 1 features, 1/2 featured file ) </li>
+          
+          <li> src/server/v2.0/handler/handler ( 6 features, 1/47 featured file ) </li>
+          
+    <li> Num of Packages with features : 42/455</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>54 </td>
+      <td>68 </td>
+      <td>26</td>
+      <td>67</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>10</td>
+      <td>3</td>
+      <td>78.57142857142857</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>17 </td>
+      <td>2 </td>
+      <td>2 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>15</td>
+      <td>6</td>
+      <td>57.692307692307686%</td>
+      <td>6 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>19 </td>
+      <td>3</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_manipulation.go#L92">src/chartserver/handler_manipulation.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/reverse_proxy.go#L114">src/chartserver/reverse_proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L64">src/chartserver/handler_utility.go</a></td>
+              <td>Unknown chan length</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L65">src/chartserver/handler_utility.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>65</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L71">src/chartserver/handler_utility.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L76">src/chartserver/handler_utility.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>76</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L77">src/chartserver/handler_utility.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L81">src/chartserver/handler_utility.go</a></td>
+              <td>Send</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L83">src/chartserver/handler_utility.go</a></td>
+              <td>Close chan</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L86">src/chartserver/handler_utility.go</a></td>
+              <td>Range over chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L98">src/chartserver/handler_utility.go</a></td>
+              <td>Go in for</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L95">src/chartserver/handler_utility.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L98">src/chartserver/handler_utility.go</a></td>
+              <td>Goroutine</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L101">src/chartserver/handler_utility.go</a></td>
+              <td>Send</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L108">src/chartserver/handler_utility.go</a></td>
+              <td>Send</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L116">src/chartserver/handler_utility.go</a></td>
+              <td>Close chan</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_utility.go#L118">src/chartserver/handler_utility.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L54">src/chartserver/handler_repo.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>54</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L56">src/chartserver/handler_repo.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>56</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L58">src/chartserver/handler_repo.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>58</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L67">src/chartserver/handler_repo.go</a></td>
+              <td>Unknown chan length</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L71">src/chartserver/handler_repo.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L77">src/chartserver/handler_repo.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L79">src/chartserver/handler_repo.go</a></td>
+              <td>Send</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L82">src/chartserver/handler_repo.go</a></td>
+              <td>Range over chan</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L104">src/chartserver/handler_repo.go</a></td>
+              <td>Go in for</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L93">src/chartserver/handler_repo.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>93</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L94">src/chartserver/handler_repo.go</a></td>
+              <td>Receive</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L101">src/chartserver/handler_repo.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L104">src/chartserver/handler_repo.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L108">src/chartserver/handler_repo.go</a></td>
+              <td>Send</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L115">src/chartserver/handler_repo.go</a></td>
+              <td>Send</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L121">src/chartserver/handler_repo.go</a></td>
+              <td>Send</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L132">src/chartserver/handler_repo.go</a></td>
+              <td>Close chan</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L135">src/chartserver/handler_repo.go</a></td>
+              <td>Receive</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/handler_repo.go#L140">src/chartserver/handler_repo.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/cache.go#L178">src/chartserver/cache.go</a></td>
+              <td>Receive</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/chartserver/cache.go#L199">src/chartserver/cache.go</a></td>
+              <td>Receive</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/cmd/migrate-patch/main.go#L36">src/cmd/migrate-patch/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>36</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/cmd/migrate-patch/main.go#L37">src/cmd/migrate-patch/main.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/cmd/migrate-patch/main.go#L43">src/cmd/migrate-patch/main.go</a></td>
+              <td>Send</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/cmd/migrate-patch/main.go#L45">src/cmd/migrate-patch/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>45</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/cmd/migrate-patch/main.go#L46">src/cmd/migrate-patch/main.go</a></td>
+              <td>Receive</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/cmd/migrate-patch/main.go#L47">src/cmd/migrate-patch/main.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/dao/pgsql_test.go#L32">src/common/dao/pgsql_test.go</a></td>
+              <td>Go in for</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/dao/pgsql_test.go#L32">src/common/dao/pgsql_test.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L92">src/common/utils/utils.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>92</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L93">src/common/utils/utils.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>93</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L95">src/common/utils/utils.go</a></td>
+              <td>Goroutine</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L100">src/common/utils/utils.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>100</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L101">src/common/utils/utils.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L115">src/common/utils/utils.go</a></td>
+              <td>Send</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L121">src/common/utils/utils.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>121</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L122">src/common/utils/utils.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L124">src/common/utils/utils.go</a></td>
+              <td>Receive</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/utils.go#L125">src/common/utils/utils.go</a></td>
+              <td>Send</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L25">src/common/utils/passports.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L37">src/common/utils/passports.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>37</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L38">src/common/utils/passports.go</a></td>
+              <td>Send</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L40">src/common/utils/passports.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L49">src/common/utils/passports.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>49</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L50">src/common/utils/passports.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L52">src/common/utils/passports.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/common/utils/passports.go#L90">src/common/utils/passports.go</a></td>
+              <td>Goroutine</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/artifact/helper.go#L26">src/controller/artifact/helper.go</a></td>
+              <td>Unknown chan length</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/artifact/helper.go#L28">src/controller/artifact/helper.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/artifact/helper.go#L29">src/controller/artifact/helper.go</a></td>
+              <td>Close chan</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/artifact/helper.go#L43">src/controller/artifact/helper.go</a></td>
+              <td>Send</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/event/handler/internal/artifact.go#L57">src/controller/event/handler/internal/artifact.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/event/handler/internal/artifact.go#L58">src/controller/event/handler/internal/artifact.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/event/handler/internal/artifact.go#L93">src/controller/event/handler/internal/artifact.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/gc/callback.go#L39">src/controller/gc/callback.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L47">src/controller/health/controller.go</a></td>
+              <td>Unknown chan length</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L49">src/controller/health/controller.go</a></td>
+              <td>Go in for</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L49">src/controller/health/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L52">src/controller/health/controller.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L68">src/controller/health/controller.go</a></td>
+              <td>chan used as a param</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L69">src/controller/health/controller.go</a></td>
+              <td>Synchronous chan</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L70">src/controller/health/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L80">src/controller/health/controller.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L83">src/controller/health/controller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>83</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L84">src/controller/health/controller.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L85">src/controller/health/controller.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L86">src/controller/health/controller.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/controller.go#L88">src/controller/health/controller.go</a></td>
+              <td>Send</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/checker.go#L98">src/controller/health/checker.go</a></td>
+              <td>Goroutine</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/health/checker.go#L102">src/controller/health/checker.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/project/util.go#L33">src/controller/project/util.go</a></td>
+              <td>Unknown chan length</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/project/util.go#L35">src/controller/project/util.go</a></td>
+              <td>Goroutine</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/project/util.go#L36">src/controller/project/util.go</a></td>
+              <td>Close chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/project/util.go#L46">src/controller/project/util.go</a></td>
+              <td>Send</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/project/util.go#L51">src/controller/project/util.go</a></td>
+              <td>Send</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/proxy/controller.go#L156">src/controller/proxy/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/proxy/controller.go#L189">src/controller/proxy/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>189</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/proxy/controller.go#L201">src/controller/proxy/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/proxy/controller.go#L249">src/controller/proxy/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/registry/controller.go#L215">src/controller/registry/controller.go</a></td>
+              <td>chan used as a param</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/registry/controller.go#L218">src/controller/registry/controller.go</a></td>
+              <td>Receive</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/registry/controller.go#L223">src/controller/registry/controller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>223</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/registry/controller.go#L224">src/controller/registry/controller.go</a></td>
+              <td>Receive</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/registry/controller.go#L250">src/controller/registry/controller.go</a></td>
+              <td>Receive</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/replication/execution.go#L121">src/controller/replication/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/scan/base_controller.go#L323">src/controller/scan/base_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>323</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/scan/base_controller.go#L533">src/controller/scan/base_controller.go</a></td>
+              <td>Go in for</td>
+              <td>533</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/scan/base_controller.go#L533">src/controller/scan/base_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>533</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/scan/base_controller.go#L636">src/controller/scan/base_controller.go</a></td>
+              <td>Go in for</td>
+              <td>636</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/scan/base_controller.go#L636">src/controller/scan/base_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>636</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/scan/base_controller.go#L939">src/controller/scan/base_controller.go</a></td>
+              <td>Go in for</td>
+              <td>939</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/controller/scan/base_controller.go#L939">src/controller/scan/base_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>939</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L89">src/core/main.go</a></td>
+              <td>chan used as a param</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L90">src/core/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>90</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L92">src/core/main.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L94">src/core/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>94</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L95">src/core/main.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L97">src/core/main.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L176">src/core/main.go</a></td>
+              <td>Goroutine</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L212">src/core/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L213">src/core/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L214">src/core/main.go</a></td>
+              <td>Goroutine</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/main.go#L216">src/core/main.go</a></td>
+              <td>Goroutine</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/core/api/internal.go#L120">src/core/api/internal.go</a></td>
+              <td>Goroutine</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/api/handler_test.go#L68">src/jobservice/api/handler_test.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/api/handler_test.go#L72">src/jobservice/api/handler_test.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/hook/hook_agent.go#L102">src/jobservice/hook/hook_agent.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/hook/hook_agent.go#L128">src/jobservice/hook/hook_agent.go</a></td>
+              <td>Send</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/hook/hook_agent.go#L131">src/jobservice/hook/hook_agent.go</a></td>
+              <td>Receive</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/job/impl/sample/job.go#L78">src/jobservice/job/impl/sample/job.go</a></td>
+              <td>Receive</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/job/impl/sample/job.go#L84">src/jobservice/job/impl/sample/job.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/job/impl/sample/job.go#L89">src/jobservice/job/impl/sample/job.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/lcm/controller.go#L77">src/jobservice/lcm/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/lcm/controller.go#L131">src/jobservice/lcm/controller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>131</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/lcm/controller.go#L132">src/jobservice/lcm/controller.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/lcm/controller.go#L138">src/jobservice/lcm/controller.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L36">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L38">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>38</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L39">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L41">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L48">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Go in for</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L48">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L72">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L79">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L80">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L81">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Goroutine</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L82">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper_controller.go#L93">src/jobservice/logger/sweeper_controller.go</a></td>
+              <td>Send</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper/db_sweeper.go#L10">src/jobservice/logger/sweeper/db_sweeper.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>10</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper/db_sweeper.go#L49">src/jobservice/logger/sweeper/db_sweeper.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/logger/sweeper/db_sweeper.go#L57">src/jobservice/logger/sweeper/db_sweeper.go</a></td>
+              <td>Send</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/enqueuer_test.go#L106">src/jobservice/period/enqueuer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/enqueuer_test.go#L107">src/jobservice/period/enqueuer_test.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/enqueuer_test.go#L115">src/jobservice/period/enqueuer_test.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/enqueuer.go#L70">src/jobservice/period/enqueuer.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/enqueuer.go#L87">src/jobservice/period/enqueuer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>87</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/enqueuer.go#L88">src/jobservice/period/enqueuer.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/enqueuer.go#L90">src/jobservice/period/enqueuer.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/period/basic_scheduler.go#L59">src/jobservice/period/basic_scheduler.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runner/redis.go#L86">src/jobservice/runner/redis.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap_test.go#L79">src/jobservice/runtime/bootstrap_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap_test.go#L88">src/jobservice/runtime/bootstrap_test.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L185">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Goroutine</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L190">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>190</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L193">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Goroutine</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L204">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>204</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L205">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Receive</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L208">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Receive</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L221">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Send</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/runtime/bootstrap.go#L225">src/jobservice/runtime/bootstrap.go</a></td>
+              <td>Send</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/c_worker.go#L138">src/jobservice/worker/cworker/c_worker.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/c_worker.go#L144">src/jobservice/worker/cworker/c_worker.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/reaper.go#L51">src/jobservice/worker/cworker/reaper.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/reaper.go#L59">src/jobservice/worker/cworker/reaper.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>59</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/reaper.go#L60">src/jobservice/worker/cworker/reaper.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/reaper.go#L66">src/jobservice/worker/cworker/reaper.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/reaper.go#L74">src/jobservice/worker/cworker/reaper.go</a></td>
+              <td>Goroutine</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/jobservice/worker/cworker/reaper.go#L76">src/jobservice/worker/cworker/reaper.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/worker_pool.go#L20">src/lib/worker_pool.go</a></td>
+              <td>Unknown chan length</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/worker_pool.go#L31">src/lib/worker_pool.go</a></td>
+              <td>Send</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/worker_pool.go#L36">src/lib/worker_pool.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/cache/util_test.go#L32">src/lib/cache/util_test.go</a></td>
+              <td>Go in for</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/cache/util_test.go#L32">src/lib/cache/util_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>32</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/cache/util_test.go#L32">src/lib/cache/util_test.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/cache/helper_test.go#L103">src/lib/cache/helper_test.go</a></td>
+              <td>Go in for</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/cache/helper_test.go#L103">src/lib/cache/helper_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>103</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/cache/helper_test.go#L103">src/lib/cache/helper_test.go</a></td>
+              <td>Goroutine</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/retry/retry.go#L107">src/lib/retry/retry.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>107</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/lib/retry/retry.go#L108">src/lib/retry/retry.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/cache.go#L81">src/pkg/exporter/cache.go</a></td>
+              <td>Goroutine</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/system_collector.go#L40">src/pkg/exporter/system_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/system_collector.go#L41">src/pkg/exporter/system_collector.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/system_collector.go#L45">src/pkg/exporter/system_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/system_collector.go#L47">src/pkg/exporter/system_collector.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L81">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L82">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L83">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L84">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L85">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L86">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L87">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L88">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L92">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L95">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L98">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L99">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L100">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L101">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L102">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/project_collector.go#L104">src/pkg/exporter/project_collector.go</a></td>
+              <td>Send</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/exporter.go#L88">src/pkg/exporter/exporter.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/exporter.go#L95">src/pkg/exporter/exporter.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/health_collector.go#L40">src/pkg/exporter/health_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/health_collector.go#L41">src/pkg/exporter/health_collector.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/health_collector.go#L42">src/pkg/exporter/health_collector.go</a></td>
+              <td>Send</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/health_collector.go#L46">src/pkg/exporter/health_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/health_collector.go#L48">src/pkg/exporter/health_collector.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/js_collector.go#L41">src/pkg/exporter/js_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/js_collector.go#L43">src/pkg/exporter/js_collector.go</a></td>
+              <td>Send</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/js_collector.go#L48">src/pkg/exporter/js_collector.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/exporter/js_collector.go#L50">src/pkg/exporter/js_collector.go</a></td>
+              <td>Send</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/notifier.go#L191">src/pkg/notifier/notifier.go</a></td>
+              <td>Go in for</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/notifier.go#L191">src/pkg/notifier/notifier.go</a></td>
+              <td>Goroutine</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/notifier.go#L193">src/pkg/notifier/notifier.go</a></td>
+              <td>Send</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/notifier.go#L195">src/pkg/notifier/notifier.go</a></td>
+              <td>Goroutine</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/notifier.go#L198">src/pkg/notifier/notifier.go</a></td>
+              <td>Receive</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/notifier_test.go#L141">src/pkg/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/notifier_test.go#L180">src/pkg/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/notifier/event/event.go#L84">src/pkg/notifier/event/event.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/oidc/helper.go#L73">src/pkg/oidc/helper.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/p2p/preheat/job.go#L179">src/pkg/p2p/preheat/job.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>179</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/p2p/preheat/job.go#L180">src/pkg/p2p/preheat/job.go</a></td>
+              <td>Receive</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/p2p/preheat/job.go#L202">src/pkg/p2p/preheat/job.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/permission/evaluator/rbac/casbin_match.go#L62">src/pkg/permission/evaluator/rbac/casbin_match.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/proxy/secret/manager.go#L106">src/pkg/proxy/secret/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/quota/dao/dao_test.go#L153">src/pkg/quota/dao/dao_test.go</a></td>
+              <td>Go in for</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/quota/dao/dao_test.go#L153">src/pkg/quota/dao/dao_test.go</a></td>
+              <td>Goroutine</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L82">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>82</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L84">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>84</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L86">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>86</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L89">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Goroutine</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L92">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L96">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>96</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L97">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L112">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L128">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Go in for</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L128">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L147">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Send</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L154">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Send</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L159">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Send</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L169">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Close chan</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/retention/policy/alg/or/processor.go#L171">src/pkg/retention/policy/alg/or/processor.go</a></td>
+              <td>Receive</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/job.go#L200">src/pkg/scan/job.go</a></td>
+              <td>Go in for</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/job.go#L200">src/pkg/scan/job.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/job.go#L211">src/pkg/scan/job.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>211</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/job.go#L212">src/pkg/scan/job.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/job.go#L239">src/pkg/scan/job.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/job.go#L242">src/pkg/scan/job.go</a></td>
+              <td>Receive</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/rest/v1/client_pool_test.go#L64">src/pkg/scan/rest/v1/client_pool_test.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/rest/v1/client_pool.go#L127">src/pkg/scan/rest/v1/client_pool.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/rest/v1/client_pool.go#L130">src/pkg/scan/rest/v1/client_pool.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>130</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/rest/v1/client_pool.go#L137">src/pkg/scan/rest/v1/client_pool.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>137</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/rest/v1/client_pool.go#L138">src/pkg/scan/rest/v1/client_pool.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/scan/rest/v1/client_pool.go#L144">src/pkg/scan/rest/v1/client_pool.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L127">src/pkg/task/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L291">src/pkg/task/execution.go</a></td>
+              <td>Synchronous chan</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L291">src/pkg/task/execution.go</a></td>
+              <td>Synchronous chan</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L294">src/pkg/task/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L297">src/pkg/task/execution.go</a></td>
+              <td>Send</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L306">src/pkg/task/execution.go</a></td>
+              <td>Send</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L311">src/pkg/task/execution.go</a></td>
+              <td>Send</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L324">src/pkg/task/execution.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>324</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L325">src/pkg/task/execution.go</a></td>
+              <td>Receive</td>
+              <td>325</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/pkg/task/execution.go#L330">src/pkg/task/execution.go</a></td>
+              <td>Receive</td>
+              <td>330</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/server/middleware/repoproxy/proxy.go#L243">src/server/middleware/repoproxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/server/v2.0/handler/project.go#L385">src/server/v2.0/handler/project.go</a></td>
+              <td>Go in for</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/server/v2.0/handler/project.go#L385">src/server/v2.0/handler/project.go</a></td>
+              <td>Goroutine</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/server/v2.0/handler/project.go#L494">src/server/v2.0/handler/project.go</a></td>
+              <td>Go in for</td>
+              <td>494</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/server/v2.0/handler/project.go#L494">src/server/v2.0/handler/project.go</a></td>
+              <td>Goroutine</td>
+              <td>494</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/server/v2.0/handler/project.go#L772">src/server/v2.0/handler/project.go</a></td>
+              <td>Go in for</td>
+              <td>772</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/vmware/harbor/blob//src/server/v2.0/handler/project.go#L772">src/server/v2.0/handler/project.go</a></td>
+              <td>Goroutine</td>
+              <td>772</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 54 ,  68 ,
+     26 ,
+     67 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

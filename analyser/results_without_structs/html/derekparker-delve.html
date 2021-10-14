@@ -1,0 +1,2256 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : derekparker/delve ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/derekparker/delve/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> _fixtures/main ( 70 features, 19/95 featured file ) </li>
+          
+          <li> cmd/dlv/main ( 3 features, 1/3 featured file ) </li>
+          
+          <li> cmd/dlv/cmds/cmds ( 12 features, 1/1 featured file ) </li>
+          
+          <li> pkg/proc/proc_test ( 38 features, 4/34 featured file ) </li>
+          
+          <li> pkg/proc/core/core ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/proc/gdbserial/gdbserial_test ( 23 features, 2/6 featured file ) </li>
+          
+          <li> pkg/proc/native/your_operating_system_and_architecture_combination_is_not_supported_by_delve ( 7 features, 1/31 featured file ) </li>
+          
+          <li> pkg/terminal/terminal ( 4 features, 2/12 featured file ) </li>
+          
+          <li> pkg/terminal/starbind/starbind ( 2 features, 1/4 featured file ) </li>
+          
+          <li> service/service ( 1 features, 1/5 featured file ) </li>
+          
+          <li> service/dap/dap ( 8 features, 2/3 featured file ) </li>
+          
+          <li> service/debugger/debugger ( 1 features, 1/8 featured file ) </li>
+          
+          <li> service/rpc1/rpc1 ( 6 features, 1/2 featured file ) </li>
+          
+          <li> service/rpc2/rpc2 ( 5 features, 1/2 featured file ) </li>
+          
+          <li> service/rpccommon/rpccommon ( 6 features, 1/4 featured file ) </li>
+          
+    <li> Num of Packages with features : 15/52</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>29 </td>
+      <td>35 </td>
+      <td>32</td>
+      <td>50</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>6</td>
+      <td>3</td>
+      <td>70</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>8 </td>
+      <td>1 </td>
+      <td>6 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>20</td>
+      <td>12</td>
+      <td>0</td>
+      <td>37.5%</td>
+      <td>6 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>5 </td>
+      <td>5</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testthreads.go#L18">_fixtures/testthreads.go</a></td>
+              <td>Go in for</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testthreads.go#L18">_fixtures/testthreads.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>18</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testthreads.go#L18">_fixtures/testthreads.go</a></td>
+              <td>Goroutine</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/notify-v2.go#L12">_fixtures/notify-v2.go</a></td>
+              <td>Goroutine</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/bpcountstest.go#L24">_fixtures/bpcountstest.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/bpcountstest.go#L25">_fixtures/bpcountstest.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/is%20sue239.go#L7">_fixtures/is sue239.go</a></td>
+              <td>chan used as a param</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/is%20sue239.go#L10">_fixtures/is sue239.go</a></td>
+              <td>Send</td>
+              <td>10</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/is%20sue239.go#L23">_fixtures/is sue239.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>23</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/is%20sue239.go#L24">_fixtures/is sue239.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/is%20sue239.go#L25">_fixtures/is sue239.go</a></td>
+              <td>Range over chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue387.go#L18">_fixtures/issue387.go</a></td>
+              <td>Go in for</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue387.go#L18">_fixtures/issue387.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>18</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue387.go#L18">_fixtures/issue387.go</a></td>
+              <td>Goroutine</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L7">_fixtures/goroutinestackprog.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L7">_fixtures/goroutinestackprog.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L8">_fixtures/goroutinestackprog.go</a></td>
+              <td>Send</td>
+              <td>8</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L9">_fixtures/goroutinestackprog.go</a></td>
+              <td>Send</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L20">_fixtures/goroutinestackprog.go</a></td>
+              <td>Synchronous chan</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L21">_fixtures/goroutinestackprog.go</a></td>
+              <td>Synchronous chan</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L23">_fixtures/goroutinestackprog.go</a></td>
+              <td>Go in for</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L23">_fixtures/goroutinestackprog.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>23</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L23">_fixtures/goroutinestackprog.go</a></td>
+              <td>Goroutine</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L26">_fixtures/goroutinestackprog.go</a></td>
+              <td>Receive</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/goroutinestackprog.go#L31">_fixtures/goroutinestackprog.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue1101.go#L17">_fixtures/issue1101.go</a></td>
+              <td>Goroutine</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testreturnaddress.go#L12">_fixtures/testreturnaddress.go</a></td>
+              <td>Goroutine</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testreturnaddress.go#L13">_fixtures/testreturnaddress.go</a></td>
+              <td>Goroutine</td>
+              <td>13</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L23">_fixtures/scopetest.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>23</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L24">_fixtures/scopetest.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>24</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L51">_fixtures/scopetest.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L96">_fixtures/scopetest.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>96</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L97">_fixtures/scopetest.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L99">_fixtures/scopetest.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L158">_fixtures/scopetest.go</a></td>
+              <td>Send</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L169">_fixtures/scopetest.go</a></td>
+              <td>Send</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/scopetest.go#L171">_fixtures/scopetest.go</a></td>
+              <td>Send</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testvariables2.go#L128">_fixtures/testvariables2.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>128</td>
+              <td>11</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testvariables2.go#L129">_fixtures/testvariables2.go</a></td>
+              <td>Send</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testvariables2.go#L130">_fixtures/testvariables2.go</a></td>
+              <td>Send</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testvariables2.go#L131">_fixtures/testvariables2.go</a></td>
+              <td>Send</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testvariables2.go#L132">_fixtures/testvariables2.go</a></td>
+              <td>Send</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue1469.go#L7">_fixtures/issue1469.go</a></td>
+              <td>Go in for</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue1469.go#L7">_fixtures/issue1469.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>7</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue1469.go#L7">_fixtures/issue1469.go</a></td>
+              <td>Goroutine</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testdeadlock.go#L4">_fixtures/testdeadlock.go</a></td>
+              <td>Synchronous chan</td>
+              <td>4</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testdeadlock.go#L5">_fixtures/testdeadlock.go</a></td>
+              <td>Synchronous chan</td>
+              <td>5</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testdeadlock.go#L6">_fixtures/testdeadlock.go</a></td>
+              <td>Goroutine</td>
+              <td>6</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testdeadlock.go#L7">_fixtures/testdeadlock.go</a></td>
+              <td>Receive</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testdeadlock.go#L8">_fixtures/testdeadlock.go</a></td>
+              <td>Send</td>
+              <td>8</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testdeadlock.go#L10">_fixtures/testdeadlock.go</a></td>
+              <td>Receive</td>
+              <td>10</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testdeadlock.go#L11">_fixtures/testdeadlock.go</a></td>
+              <td>Send</td>
+              <td>11</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/parallel_next.go#L18">_fixtures/parallel_next.go</a></td>
+              <td>Go in for</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/parallel_next.go#L18">_fixtures/parallel_next.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>18</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/parallel_next.go#L18">_fixtures/parallel_next.go</a></td>
+              <td>Goroutine</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/teststepconcurrent.go#L22">_fixtures/teststepconcurrent.go</a></td>
+              <td>Go in for</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/teststepconcurrent.go#L22">_fixtures/teststepconcurrent.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>22</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/teststepconcurrent.go#L22">_fixtures/teststepconcurrent.go</a></td>
+              <td>Goroutine</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue419.go#L13">_fixtures/issue419.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>13</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/issue419.go#L18">_fixtures/issue419.go</a></td>
+              <td>Receive</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/binarytrees.go#L50">_fixtures/binarytrees.go</a></td>
+              <td>Go in for</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/binarytrees.go#L50">_fixtures/binarytrees.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/sigchldprog.go#L17">_fixtures/sigchldprog.go</a></td>
+              <td>Goroutine</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/pkgrenames.go#L26">_fixtures/pkgrenames.go</a></td>
+              <td>Synchronous chan</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/pkgrenames.go#L26">_fixtures/pkgrenames.go</a></td>
+              <td>Synchronous chan</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testnextprog.go#L38">_fixtures/testnextprog.go</a></td>
+              <td>Synchronous chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testnextprog.go#L40">_fixtures/testnextprog.go</a></td>
+              <td>Goroutine</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testnextprog.go#L41">_fixtures/testnextprog.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testnextprog.go#L46">_fixtures/testnextprog.go</a></td>
+              <td>chan used as a param</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//_fixtures/testnextprog.go#L47">_fixtures/testnextprog.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/dlv_test.go#L102">cmd/dlv/dlv_test.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/dlv_test.go#L110">cmd/dlv/dlv_test.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/dlv_test.go#L587">cmd/dlv/dlv_test.go</a></td>
+              <td>Goroutine</td>
+              <td>587</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L407">cmd/dlv/cmds/commands.go</a></td>
+              <td>Synchronous chan</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L628">cmd/dlv/cmds/commands.go</a></td>
+              <td>chan used as a param</td>
+              <td>628</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L629">cmd/dlv/cmds/commands.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>629</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L635">cmd/dlv/cmds/commands.go</a></td>
+              <td>Goroutine</td>
+              <td>635</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L637">cmd/dlv/cmds/commands.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>637</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L638">cmd/dlv/cmds/commands.go</a></td>
+              <td>Receive</td>
+              <td>638</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L642">cmd/dlv/cmds/commands.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>642</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L643">cmd/dlv/cmds/commands.go</a></td>
+              <td>Receive</td>
+              <td>643</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L646">cmd/dlv/cmds/commands.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>646</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L647">cmd/dlv/cmds/commands.go</a></td>
+              <td>Receive</td>
+              <td>647</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L648">cmd/dlv/cmds/commands.go</a></td>
+              <td>Receive</td>
+              <td>648</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//cmd/dlv/cmds/commands.go#L746">cmd/dlv/cmds/commands.go</a></td>
+              <td>Synchronous chan</td>
+              <td>746</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L127">pkg/proc/fncall.go</a></td>
+              <td>Send</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L128">pkg/proc/fncall.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L135">pkg/proc/fncall.go</a></td>
+              <td>Send</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L169">pkg/proc/fncall.go</a></td>
+              <td>Synchronous chan</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L170">pkg/proc/fncall.go</a></td>
+              <td>Synchronous chan</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L185">pkg/proc/fncall.go</a></td>
+              <td>Goroutine</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L187">pkg/proc/fncall.go</a></td>
+              <td>Receive</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L922">pkg/proc/fncall.go</a></td>
+              <td>Send</td>
+              <td>922</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/fncall.go#L923">pkg/proc/fncall.go</a></td>
+              <td>Receive</td>
+              <td>923</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1142">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1143">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1144">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1148">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1276">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1277">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1277</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1361">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1361</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/bininfo.go#L1362">pkg/proc/bininfo.go</a></td>
+              <td>Goroutine</td>
+              <td>1362</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L29">pkg/proc/proc_unix_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>29</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L33">pkg/proc/proc_unix_test.go</a></td>
+              <td>Close chan</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L36">pkg/proc/proc_unix_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>36</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L37">pkg/proc/proc_unix_test.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L39">pkg/proc/proc_unix_test.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L44">pkg/proc/proc_unix_test.go</a></td>
+              <td>Send</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L48">pkg/proc/proc_unix_test.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L51">pkg/proc/proc_unix_test.go</a></td>
+              <td>Send</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_unix_test.go#L55">pkg/proc/proc_unix_test.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L238">pkg/proc/proc_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>238</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L242">pkg/proc/proc_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>242</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L243">pkg/proc/proc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L244">pkg/proc/proc_test.go</a></td>
+              <td>Receive</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L246">pkg/proc/proc_test.go</a></td>
+              <td>Send</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L250">pkg/proc/proc_test.go</a></td>
+              <td>Receive</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L679">pkg/proc/proc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>679</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L1930">pkg/proc/proc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1930</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L2848">pkg/proc/proc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2848</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L3585">pkg/proc/proc_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>3585</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L3587">pkg/proc/proc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>3587</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/proc_test.go#L3588">pkg/proc/proc_test.go</a></td>
+              <td>Receive</td>
+              <td>3588</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/core/core.go#L430">pkg/proc/core/core.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L46">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Synchronous chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L47">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L49">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Send</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L55">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L93">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Synchronous chan</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L94">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Goroutine</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L101">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L162">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L167">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Send</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/rr.go#L173">pkg/proc/gdbserial/rr.go</a></td>
+              <td>Send</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L196">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Synchronous chan</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L197">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Goroutine</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L199">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Send</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L208">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Synchronous chan</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L210">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Goroutine</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L212">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Send</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L215">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>215</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L216">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Receive</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L222">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L235">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>235</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L236">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Receive</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L610">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>610</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/gdbserial/gdbserver.go#L906">pkg/proc/gdbserial/gdbserver.go</a></td>
+              <td>Receive</td>
+              <td>906</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/native/proc.go#L58">pkg/proc/native/proc.go</a></td>
+              <td>Synchronous chan</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/native/proc.go#L59">pkg/proc/native/proc.go</a></td>
+              <td>Synchronous chan</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/native/proc.go#L62">pkg/proc/native/proc.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/native/proc.go#L155">pkg/proc/native/proc.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/native/proc.go#L337">pkg/proc/native/proc.go</a></td>
+              <td>Send</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/native/proc.go#L342">pkg/proc/native/proc.go</a></td>
+              <td>Send</td>
+              <td>342</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/proc/native/proc.go#L343">pkg/proc/native/proc.go</a></td>
+              <td>Receive</td>
+              <td>343</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/terminal/terminal.go#L122">pkg/terminal/terminal.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/terminal/terminal.go#L178">pkg/terminal/terminal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>178</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/terminal/terminal.go#L180">pkg/terminal/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/terminal/command_test.go#L776">pkg/terminal/command_test.go</a></td>
+              <td>Goroutine</td>
+              <td>776</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/terminal/starbind/starlark.go#L279">pkg/terminal/starbind/starlark.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>279</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//pkg/terminal/starbind/starlark.go#L280">pkg/terminal/starbind/starlark.go</a></td>
+              <td>Receive</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/listenerpipe.go#L41">service/listenerpipe.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server_test.go#L43">service/dap/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server_test.go#L59">service/dap/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server_test.go#L60">service/dap/server_test.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server.go#L136">service/dap/server.go</a></td>
+              <td>Goroutine</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server.go#L139">service/dap/server.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>139</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server.go#L140">service/dap/server.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server.go#L169">service/dap/server.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>169</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/dap/server.go#L170">service/dap/server.go</a></td>
+              <td>Receive</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/debugger/debugger.go#L225">service/debugger/debugger.go</a></td>
+              <td>Goroutine</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc1/client.go#L58">service/rpc1/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc1/client.go#L62">service/rpc1/client.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc1/client.go#L67">service/rpc1/client.go</a></td>
+              <td>Close chan</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc1/client.go#L80">service/rpc1/client.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc1/client.go#L82">service/rpc1/client.go</a></td>
+              <td>Close chan</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc1/client.go#L96">service/rpc1/client.go</a></td>
+              <td>Close chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc2/client.go#L100">service/rpc2/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc2/client.go#L101">service/rpc2/client.go</a></td>
+              <td>Goroutine</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc2/client.go#L113">service/rpc2/client.go</a></td>
+              <td>Send</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc2/client.go#L115">service/rpc2/client.go</a></td>
+              <td>Close chan</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpc2/client.go#L129">service/rpc2/client.go</a></td>
+              <td>Close chan</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpccommon/server.go#L130">service/rpccommon/server.go</a></td>
+              <td>Goroutine</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpccommon/server.go#L151">service/rpccommon/server.go</a></td>
+              <td>Go in for</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpccommon/server.go#L135">service/rpccommon/server.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>135</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpccommon/server.go#L136">service/rpccommon/server.go</a></td>
+              <td>Receive</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpccommon/server.go#L151">service/rpccommon/server.go</a></td>
+              <td>Goroutine</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derekparker/delve/blob//service/rpccommon/server.go#L332">service/rpccommon/server.go</a></td>
+              <td>Goroutine</td>
+              <td>332</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 29 ,  35 ,
+     32 ,
+     50 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

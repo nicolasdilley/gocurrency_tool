@@ -1,0 +1,3694 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : kataras/iris ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/kataras/iris/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> _examples/desktop/blink/main ( 2 features, 1/1 featured file ) </li>
+          
+          <li> _examples/desktop/lorca/main ( 2 features, 1/1 featured file ) </li>
+          
+          <li> _examples/desktop/webview/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> _examples/dropzonejs/src/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> _examples/http-server/custom-httpserver/multi/main ( 2 features, 1/1 featured file ) </li>
+          
+          <li> _examples/http-server/graceful-shutdown/custom-notifier/main ( 7 features, 1/1 featured file ) </li>
+          
+          <li> _examples/http-server/graceful-shutdown/default-notifier/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> _examples/http-server/listen-addr/omit-server-errors/main ( 2 features, 1/2 featured file ) </li>
+          
+          <li> _examples/http-server/notify-on-shutdown/main ( 2 features, 1/1 featured file ) </li>
+          
+          <li> _examples/kafka-api/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> _examples/logging/json-logger/main ( 2 features, 1/2 featured file ) </li>
+          
+          <li> _examples/logging/request-logger/accesslog-broker/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> _examples/mvc/grpc-compatible-bidirectional-stream/client/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> _examples/response-writer/sse/main ( 15 features, 1/1 featured file ) </li>
+          
+          <li> _examples/response-writer/sse-third-party/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> _examples/response-writer/sse-third-party-2/main ( 2 features, 1/1 featured file ) </li>
+          
+          <li> _examples/response-writer/stream-writer/main ( 2 features, 1/1 featured file ) </li>
+          
+          <li> _examples/websocket/gorilla-filewatch/main ( 4 features, 1/1 featured file ) </li>
+          
+          <li> _examples/websocket/socketio/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> context/context ( 6 features, 1/19 featured file ) </li>
+          
+          <li> core/host/host_test ( 16 features, 5/7 featured file ) </li>
+          
+          <li> core/router/router_test ( 5 features, 1/23 featured file ) </li>
+          
+          <li> middleware/accesslog/accesslog ( 26 features, 3/9 featured file ) </li>
+          
+          <li> middleware/basicauth/basicauth_test ( 4 features, 1/7 featured file ) </li>
+          
+          <li> middleware/rate/rate ( 1 features, 1/1 featured file ) </li>
+          
+          <li> sessions/sessions_test ( 3 features, 1/8 featured file ) </li>
+          
+    <li> Num of Packages with features : 26/369</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>10 </td>
+      <td>32 </td>
+      <td>10</td>
+      <td>43</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>7 </td>
+      <td>0 </td>
+      <td>2 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>3</td>
+      <td>0</td>
+      <td>30%</td>
+      <td>2 </td>
+      <td>2</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>8 </td>
+      <td>3</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/desktop/blink/main.go#L17">_examples/desktop/blink/main.go</a></td>
+              <td>Goroutine</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/desktop/blink/main.go#L41">_examples/desktop/blink/main.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/desktop/lorca/main.go#L15">_examples/desktop/lorca/main.go</a></td>
+              <td>Goroutine</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/desktop/lorca/main.go#L39">_examples/desktop/lorca/main.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/desktop/webview/main.go#L24">_examples/desktop/webview/main.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/dropzonejs/src/main.go#L163">_examples/dropzonejs/src/main.go</a></td>
+              <td>Goroutine</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/custom-httpserver/multi/main.go#L31">_examples/http-server/custom-httpserver/multi/main.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/custom-httpserver/multi/main.go#L39">_examples/http-server/custom-httpserver/multi/main.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/custom-notifier/main.go#L20">_examples/http-server/graceful-shutdown/custom-notifier/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/custom-notifier/main.go#L21">_examples/http-server/graceful-shutdown/custom-notifier/main.go</a></td>
+              <td>Goroutine</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/custom-notifier/main.go#L22">_examples/http-server/graceful-shutdown/custom-notifier/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>22</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/custom-notifier/main.go#L33">_examples/http-server/graceful-shutdown/custom-notifier/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>33</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/custom-notifier/main.go#L34">_examples/http-server/graceful-shutdown/custom-notifier/main.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/custom-notifier/main.go#L41">_examples/http-server/graceful-shutdown/custom-notifier/main.go</a></td>
+              <td>Close chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/custom-notifier/main.go#L48">_examples/http-server/graceful-shutdown/custom-notifier/main.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/default-notifier/main.go#L20">_examples/http-server/graceful-shutdown/default-notifier/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/default-notifier/main.go#L27">_examples/http-server/graceful-shutdown/default-notifier/main.go</a></td>
+              <td>Close chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/graceful-shutdown/default-notifier/main.go#L36">_examples/http-server/graceful-shutdown/default-notifier/main.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/listen-addr/omit-server-errors/main_test.go#L30">_examples/http-server/listen-addr/omit-server-errors/main_test.go</a></td>
+              <td>Goroutine</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/listen-addr/omit-server-errors/main_test.go#L56">_examples/http-server/listen-addr/omit-server-errors/main_test.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/notify-on-shutdown/main.go#L19">_examples/http-server/notify-on-shutdown/main.go</a></td>
+              <td>Goroutine</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/http-server/notify-on-shutdown/main.go#L20">_examples/http-server/notify-on-shutdown/main.go</a></td>
+              <td>Receive</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/kafka-api/main.go#L363">_examples/kafka-api/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>363</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/kafka-api/main.go#L364">_examples/kafka-api/main.go</a></td>
+              <td>Receive</td>
+              <td>364</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/kafka-api/main.go#L370">_examples/kafka-api/main.go</a></td>
+              <td>Receive</td>
+              <td>370</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/logging/json-logger/main_test.go#L38">_examples/logging/json-logger/main_test.go</a></td>
+              <td>Go in for</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/logging/json-logger/main_test.go#L38">_examples/logging/json-logger/main_test.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/logging/request-logger/accesslog-broker/main.go#L101">_examples/logging/request-logger/accesslog-broker/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/logging/request-logger/accesslog-broker/main.go#L102">_examples/logging/request-logger/accesslog-broker/main.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/logging/request-logger/accesslog-broker/main.go#L108">_examples/logging/request-logger/accesslog-broker/main.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/mvc/grpc-compatible-bidirectional-stream/client/main.go#L29">_examples/mvc/grpc-compatible-bidirectional-stream/client/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/mvc/grpc-compatible-bidirectional-stream/client/main.go#L33">_examples/mvc/grpc-compatible-bidirectional-stream/client/main.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/mvc/grpc-compatible-bidirectional-stream/client/main.go#L47">_examples/mvc/grpc-compatible-bidirectional-stream/client/main.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L36">_examples/response-writer/sse/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>36</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L37">_examples/response-writer/sse/main.go</a></td>
+              <td>Channel of channels</td>
+              <td>37</td>
+              <td>b.newClients</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L38">_examples/response-writer/sse/main.go</a></td>
+              <td>Channel of channels</td>
+              <td>38</td>
+              <td>b.closingClients</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L43">_examples/response-writer/sse/main.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L51">_examples/response-writer/sse/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>51</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L52">_examples/response-writer/sse/main.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L58">_examples/response-writer/sse/main.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L64">_examples/response-writer/sse/main.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L68">_examples/response-writer/sse/main.go</a></td>
+              <td>Send</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L92">_examples/response-writer/sse/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L95">_examples/response-writer/sse/main.go</a></td>
+              <td>Send</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L101">_examples/response-writer/sse/main.go</a></td>
+              <td>Send</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L108">_examples/response-writer/sse/main.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L148">_examples/response-writer/sse/main.go</a></td>
+              <td>Goroutine</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse/main.go#L164">_examples/response-writer/sse/main.go</a></td>
+              <td>Send</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse-third-party/main.go#L27">_examples/response-writer/sse-third-party/main.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse-third-party-2/main.go#L44">_examples/response-writer/sse-third-party-2/main.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/sse-third-party-2/main.go#L51">_examples/response-writer/sse-third-party-2/main.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/stream-writer/main.go#L52">_examples/response-writer/stream-writer/main.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>52</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/response-writer/stream-writer/main.go#L53">_examples/response-writer/stream-writer/main.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/websocket/gorilla-filewatch/main.go#L86">_examples/websocket/gorilla-filewatch/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>86</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/websocket/gorilla-filewatch/main.go#L87">_examples/websocket/gorilla-filewatch/main.go</a></td>
+              <td>Receive</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/websocket/gorilla-filewatch/main.go#L108">_examples/websocket/gorilla-filewatch/main.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/websocket/gorilla-filewatch/main.go#L131">_examples/websocket/gorilla-filewatch/main.go</a></td>
+              <td>Goroutine</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//_examples/websocket/socketio/main.go#L45">_examples/websocket/socketio/main.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//context/context.go#L277">context/context.go</a></td>
+              <td>Goroutine</td>
+              <td>277</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//context/context.go#L278">context/context.go</a></td>
+              <td>Receive</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//context/context.go#L307">context/context.go</a></td>
+              <td>Goroutine</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//context/context.go#L308">context/context.go</a></td>
+              <td>Receive</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//context/context.go#L2973">context/context.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>2973</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//context/context.go#L2975">context/context.go</a></td>
+              <td>Receive</td>
+              <td>2975</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/interrupt.go#L57">core/host/interrupt.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/interrupt.go#L61">core/host/interrupt.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>61</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/interrupt.go#L72">core/host/interrupt.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor_test.go#L91">core/host/supervisor_test.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor_task_example_test.go#L29">core/host/supervisor_task_example_test.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L137">core/host/supervisor.go</a></td>
+              <td>Send</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L205">core/host/supervisor.go</a></td>
+              <td>Go in for</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L205">core/host/supervisor.go</a></td>
+              <td>Goroutine</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L222">core/host/supervisor.go</a></td>
+              <td>Go in for</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L222">core/host/supervisor.go</a></td>
+              <td>Goroutine</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L405">core/host/supervisor.go</a></td>
+              <td>Goroutine</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L417">core/host/supervisor.go</a></td>
+              <td>Goroutine</td>
+              <td>417</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/supervisor.go#L430">core/host/supervisor.go</a></td>
+              <td>Goroutine</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/proxy_test.go#L44">core/host/proxy_test.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/proxy_test.go#L47">core/host/proxy_test.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/host/proxy_test.go#L68">core/host/proxy_test.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/router/fs.go#L876">core/router/fs.go</a></td>
+              <td>Goroutine</td>
+              <td>876</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/router/fs.go#L1062">core/router/fs.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1062</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/router/fs.go#L1063">core/router/fs.go</a></td>
+              <td>Receive</td>
+              <td>1063</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/router/fs.go#L1102">core/router/fs.go</a></td>
+              <td>Go in for</td>
+              <td>1102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//core/router/fs.go#L1102">core/router/fs.go</a></td>
+              <td>Goroutine</td>
+              <td>1102</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L34">middleware/accesslog/broker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L35">middleware/accesslog/broker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L37">middleware/accesslog/broker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L41">middleware/accesslog/broker.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L49">middleware/accesslog/broker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>49</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L50">middleware/accesslog/broker.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L54">middleware/accesslog/broker.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L59">middleware/accesslog/broker.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L63">middleware/accesslog/broker.go</a></td>
+              <td>Send</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L66">middleware/accesslog/broker.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L77">middleware/accesslog/broker.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L86">middleware/accesslog/broker.go</a></td>
+              <td>Send</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/broker.go#L92">middleware/accesslog/broker.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L37">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Go in for</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L37">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>37</td>
+              <td>42</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L37">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L104">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L249">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Go in for</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L249">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Goroutine</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L277">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Goroutine</td>
+              <td>277</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog_test.go#L361">middleware/accesslog/accesslog_test.go</a></td>
+              <td>Goroutine</td>
+              <td>361</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog.go#L528">middleware/accesslog/accesslog.go</a></td>
+              <td>Send</td>
+              <td>528</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog.go#L565">middleware/accesslog/accesslog.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>565</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog.go#L566">middleware/accesslog/accesslog.go</a></td>
+              <td>Receive</td>
+              <td>566</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog.go#L568">middleware/accesslog/accesslog.go</a></td>
+              <td>Receive</td>
+              <td>568</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/accesslog/accesslog.go#L774">middleware/accesslog/accesslog.go</a></td>
+              <td>Goroutine</td>
+              <td>774</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/basicauth/basicauth.go#L229">middleware/basicauth/basicauth.go</a></td>
+              <td>Goroutine</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/basicauth/basicauth.go#L510">middleware/basicauth/basicauth.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>510</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/basicauth/basicauth.go#L511">middleware/basicauth/basicauth.go</a></td>
+              <td>Receive</td>
+              <td>511</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/basicauth/basicauth.go#L513">middleware/basicauth/basicauth.go</a></td>
+              <td>Receive</td>
+              <td>513</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//middleware/rate/rate.go#L57">middleware/rate/rate.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//sessions/sessions_test.go#L314">sessions/sessions_test.go</a></td>
+              <td>Go in for</td>
+              <td>314</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//sessions/sessions_test.go#L314">sessions/sessions_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>314</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kataras/iris/blob//sessions/sessions_test.go#L314">sessions/sessions_test.go</a></td>
+              <td>Goroutine</td>
+              <td>314</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 10 ,  32 ,
+     10 ,
+     43 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

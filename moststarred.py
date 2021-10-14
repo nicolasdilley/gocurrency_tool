@@ -7,7 +7,7 @@ from pprint import pprint
 
 
 i=0
-p=0
+p=1
 cont = True
 
 username = input("GitHub username: ")
@@ -21,7 +21,7 @@ s.headers.update({'Accept':'application/vnd.github.mercy-preview+json'})
 keywords = []
 
 while cont:
-    payload = {'q':'language:go', 'sort':'stars', 'order':'desc','per_page':'150','page':str(p)}
+    payload = {'q':'language:go', 'sort':'stars', 'order':'desc','per_page':'200','page':str(p)}
     r = s.get('https://api.github.com/search/repositories', params=payload)
     data = r.json()
     # print(data)
@@ -30,9 +30,7 @@ while cont:
        r = s.get('https://api.github.com/repos/'+str(repo['full_name']))
        repodata = r.json()
       
-       print(str(repo['full_name']),','
-                # , str(repo['description']),','
-                , str(repo['watchers_count']))
+       print(str(repo['full_name']))
 
          # keywords = keywords+(repodata['topics'])
           

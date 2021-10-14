@@ -1,0 +1,246 @@
+Line num,0
+packages num,11,68
+files num,11,212
+Average Line num per featured file,2740
+main,50
+cmd/cloudinitexecute/cloudinitexecute,275
+cmd/cloudinitsave/cloudinitsave,315
+cmd/control/control,3834
+cmd/control/install/install,343
+cmd/control/service/service,210
+cmd/control/service/app/app,165
+cmd/control/service/command/command,228
+cmd/init/init,76
+cmd/network/network,131
+cmd/power/power,432
+cmd/respawn/respawn,136
+cmd/sysinit/sysinit,16
+cmd/wait/wait,16
+config/config,1466
+config/cloudinit/config/config,997
+config/cloudinit/config/validate/validate,1348
+config/cloudinit/datasource/datasource,25
+config/cloudinit/datasource/configdrive/configdrive,245
+config/cloudinit/datasource/file/file,39
+config/cloudinit/datasource/metadata/metadata,356
+config/cloudinit/datasource/metadata/aliyun/aliyun,141
+config/cloudinit/datasource/metadata/azure/azure,297
+config/cloudinit/datasource/metadata/cloudstack/cloudstack,165
+config/cloudinit/datasource/metadata/digitalocean/digitalocean,266
+config/cloudinit/datasource/metadata/ec2/ec2,207
+config/cloudinit/datasource/metadata/exoscale/exoscale,160
+config/cloudinit/datasource/metadata/gce/gce,197
+config/cloudinit/datasource/metadata/packet/packet,81
+config/cloudinit/datasource/proccmdline/proccmdline,163
+config/cloudinit/datasource/proxmox/proxmox,166
+config/cloudinit/datasource/tftp/tftp,141
+config/cloudinit/datasource/url/url,42
+config/cloudinit/datasource/vmware/vmware,589
+config/cloudinit/initialize/initialize,408
+config/cloudinit/network/network,2049
+config/cloudinit/pkg/pkg,234
+config/cloudinit/system/system,1693
+config/cmdline/cmdline,161
+config/yaml/yaml,35
+pkg/compose/compose,354
+pkg/dfs/dfs,605
+pkg/docker/docker,501
+pkg/hostname/hostname,47
+pkg/init/b2d/b2d,65
+pkg/init/bootstrap/bootstrap,32
+pkg/init/cloudinit/cloudinit,140
+pkg/init/configfiles/configfiles,83
+pkg/init/debug/debug,18
+pkg/init/docker/docker,40
+pkg/init/env/env,22
+pkg/init/fsmount/fsmount,101
+pkg/init/hypervisor/hypervisor,34
+pkg/init/modules/modules,39
+pkg/init/one/one,18
+pkg/init/prepare/prepare,33
+pkg/init/recovery/recovery,95
+pkg/init/selinux/selinux,23
+pkg/init/sharedroot/sharedroot,27
+pkg/init/switchroot/switchroot,139
+pkg/log/log,260
+pkg/netconf/netconf,939
+pkg/selinux/selinux,11
+pkg/sysinit/sysinit,139
+pkg/util/util,551
+pkg/util/network/network,359
+pkg/util/versions/versions,69
+scripts/main,26
+Filename, #,Concurrent Type, Line number , Number
+cmd/cloudinitsave/cloudinitsave.go,4,Synchronous chan,314,
+cmd/cloudinitsave/cloudinitsave.go,4,Synchronous chan,315,
+cmd/cloudinitsave/cloudinitsave.go,5,Go in for,320,
+cmd/cloudinitsave/cloudinitsave.go,1,Goroutine,320,
+cmd/cloudinitsave/cloudinitsave.go,3,Send,328,
+cmd/cloudinitsave/cloudinitsave.go,16,Select (number of branch),336,2
+cmd/cloudinitsave/cloudinitsave.go,2,Receive,337,
+cmd/cloudinitsave/cloudinitsave.go,2,Receive,339,
+cmd/cloudinitsave/cloudinitsave.go,4,Synchronous chan,346,
+cmd/cloudinitsave/cloudinitsave.go,1,Goroutine,347,
+cmd/cloudinitsave/cloudinitsave.go,15,Close chan,349,
+cmd/cloudinitsave/cloudinitsave.go,16,Select (number of branch),353,3
+cmd/cloudinitsave/cloudinitsave.go,2,Receive,354,
+cmd/cloudinitsave/cloudinitsave.go,2,Receive,359,
+cmd/cloudinitsave/cloudinitsave.go,2,Receive,360,
+cmd/cloudinitsave/cloudinitsave.go,15,Close chan,363,
+cmd/control/install.go,5,Go in for,698,
+cmd/control/install.go,1,Goroutine,698,
+cmd/control/service/app/app.go,8,Known chan length (length),90,1
+cmd/control/service/app/app.go,4,Synchronous chan,91,
+cmd/control/service/app/app.go,4,Synchronous chan,93,
+cmd/control/service/app/app.go,1,Goroutine,94,
+cmd/control/service/app/app.go,3,Send,95,
+cmd/control/service/app/app.go,1,Goroutine,97,
+cmd/control/service/app/app.go,16,Select (number of branch),98,2
+cmd/control/service/app/app.go,2,Receive,99,
+cmd/control/service/app/app.go,3,Send,103,
+cmd/control/service/app/app.go,2,Receive,104,
+cmd/control/service/app/app.go,3,Send,108,
+cmd/control/service/app/app.go,2,Receive,111,
+cmd/network/network.go,8,Known chan length (length),45,1
+cmd/network/network.go,2,Receive,47,
+cmd/power/power.go,1,Goroutine,160,
+cmd/power/power.go,16,Select (number of branch),165,2
+cmd/power/power.go,2,Receive,167,
+cmd/power/power.go,2,Receive,171,
+cmd/respawn/respawn.go,4,Synchronous chan,54,
+cmd/respawn/respawn.go,1,Goroutine,56,
+cmd/respawn/respawn.go,6,Range over chan,57,
+cmd/respawn/respawn.go,9,Unknown chan length,84,
+cmd/respawn/respawn.go,5,Go in for,90,
+cmd/respawn/respawn.go,1,Goroutine,90,
+cmd/respawn/respawn.go,2,Receive,94,
+cmd/respawn/respawn.go,22,chan used as a param,124,
+cmd/respawn/respawn.go,3,Send,125,
+pkg/compose/project.go,4,Synchronous chan,199,
+pkg/compose/project.go,1,Goroutine,205,
+pkg/compose/project.go,6,Range over chan,206,
+pkg/init/docker/docker.go,4,Synchronous chan,21,
+pkg/init/docker/docker.go,1,Goroutine,22,
+pkg/init/docker/docker.go,2,Receive,23,
+pkg/init/docker/docker.go,3,Send,26,
+pkg/init/docker/docker.go,22,chan used as a param,32,
+pkg/init/docker/docker.go,3,Send,33,
+pkg/init/docker/docker.go,2,Receive,34,
+pkg/init/one/one.go,8,Known chan length (length),12,2048
+pkg/init/one/one.go,6,Range over chan,15,
+pkg/netconf/netconf_linux.go,1,Goroutine,253,
+pkg/util/backoff.go,4,Synchronous chan,12,
+pkg/util/backoff.go,4,Synchronous chan,13,
+pkg/util/backoff.go,1,Goroutine,14,
+pkg/util/backoff.go,3,Send,19,
+pkg/util/backoff.go,3,Send,36,
+pkg/util/backoff.go,16,Select (number of branch),39,2
+pkg/util/backoff.go,2,Receive,40,
+pkg/util/backoff.go,3,Send,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/dfs/scratch.go,0,Mutex,200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/dfs/scratch.go,0,Mutex,733,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/respawn/respawn.go,0,Mutex Lock(),102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/respawn/respawn.go,0,Mutex Unlock(),103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/respawn/respawn.go,0,Mutex Lock(),108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/respawn/respawn.go,0,Mutex Unlock(),109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/respawn/respawn.go,0,Mutex Lock(),115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/respawn/respawn.go,0,Mutex Unlock(),116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/respawn/respawn.go,0,Mutex,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/util/util.go,0,Mutex,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/util/util.go,0,Mutex,283,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install/grub.go,0,Mutex,16,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install/grub.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install/grub.go,0,Mutex,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install/install.go,0,Mutex,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install/install.go,0,Mutex,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install/install.go,0,Mutex,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install/syslinux.go,0,Mutex,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/sysinit/sysinit.go,0,Mutex,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/sysinit/sysinit.go,0,Mutex,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/compose/project.go,0,Mutex,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/compose/project.go,0,Mutex,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/compose/project.go,0,Mutex,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/compose/project.go,0,Mutex,194,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/compose/project.go,0,Mutex,223,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/netconf/bonding.go,0,Mutex,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/autologin.go,0,Mutex,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/bootstrap.go,0,Mutex,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/bootstrap.go,0,Mutex,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/bootstrap.go,0,Mutex,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/bootstrap.go,0,Mutex,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/bootstrap.go,0,Mutex,182,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/config.go,0,Mutex,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/config.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/console_init.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/console_init.go,0,Mutex,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/console_init.go,0,Mutex,330,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/console_init.go,0,Mutex,379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/entrypoint.go,0,Mutex,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,294,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,402,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,602,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,686,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,697,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,701,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,717,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,767,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,802,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,832,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,911,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,932,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/install.go,0,Mutex,959,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/control/udevsettle.go,0,Mutex,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/cloudinitexecute/cloudinitexecute.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/cloudinitexecute/cloudinitexecute.go,0,Mutex,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/cloudinitexecute/cloudinitexecute.go,0,Mutex,194,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/log/log.go,0,Mutex,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/log/log.go,0,Mutex,241,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/log/showuserlog.go,0,Mutex,65,
+/Users/nicolasdilley/Library/Caches/go-build/8e/8e877ed2d37a71f3823f8e3dad6fe950750f9c255e2268908fb7dd50780c8ff3-d,0,Mutex,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/datasource/proccmdline/proc_cmdline_test.go,0,Mutex,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/datasource/proccmdline/proc_cmdline_test.go,0,Mutex,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/datasource/proccmdline/proc_cmdline_test.go,0,Mutex,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/datasource/proccmdline/proc_cmdline_test.go,0,Mutex,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/datasource/proccmdline/proc_cmdline_test.go,0,Waitgroup,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/datasource/proccmdline/proc_cmdline_test.go,0,Mutex,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Waitgroup,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Waitgroup,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Waitgroup,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/pkg/http_client_test.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/pkg/init/modules/modules.go,0,Mutex,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/initialize/ssh_keys_test.go,0,Mutex,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/initialize/ssh_keys_test.go,0,Mutex,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/initialize/ssh_keys_test.go,0,Mutex,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/initialize/ssh_keys_test.go,0,Mutex,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/initialize/ssh_keys_test.go,0,Waitgroup,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/initialize/ssh_keys_test.go,0,Mutex,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/cloudinitsave/cloudinitsave.go,0,Waitgroup,316,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/cloudinitsave/cloudinitsave.go,0,Waitgroup Add(const),319,&{7692721 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/cloudinitsave/cloudinitsave.go,0,Waitgroup Done(),321,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/cmd/power/shutdown.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/system/file.go,0,Mutex,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/system/ssh_key.go,0,Mutex,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++os/config/cloudinit/system/user.go,0,Mutex,89,

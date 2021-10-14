@@ -1,0 +1,2910 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : golang/dep ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/golang/dep/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> dep ( 11 features, 1/16 featured file ) </li>
+          
+          <li> cmd/dep/main ( 55 features, 4/19 featured file ) </li>
+          
+          <li> gps/main ( 84 features, 10/65 featured file ) </li>
+          
+          <li> hack/licenseok/main ( 11 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 4/193</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>34 </td>
+      <td>21 </td>
+      <td>25</td>
+      <td>33</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>1</td>
+      <td>1</td>
+      <td>50</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>12 </td>
+      <td>11 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>5</td>
+      <td>8</td>
+      <td>20%</td>
+      <td>15 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>4 </td>
+      <td>2</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L300">manifest.go</a></td>
+              <td>Unknown chan length</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L308">manifest.go</a></td>
+              <td>Send</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L310">manifest.go</a></td>
+              <td>Send</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L316">manifest.go</a></td>
+              <td>Go in for</td>
+              <td>316</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L316">manifest.go</a></td>
+              <td>Goroutine</td>
+              <td>316</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L320">manifest.go</a></td>
+              <td>Go in for</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L320">manifest.go</a></td>
+              <td>Goroutine</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L324">manifest.go</a></td>
+              <td>Go in for</td>
+              <td>324</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L324">manifest.go</a></td>
+              <td>Goroutine</td>
+              <td>324</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L328">manifest.go</a></td>
+              <td>Close chan</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//manifest.go#L334">manifest.go</a></td>
+              <td>Range over chan</td>
+              <td>334</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/gopath_scanner.go#L238">cmd/dep/gopath_scanner.go</a></td>
+              <td>Go in for</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/gopath_scanner.go#L238">cmd/dep/gopath_scanner.go</a></td>
+              <td>Goroutine</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/gopath_scanner.go#L366">cmd/dep/gopath_scanner.go</a></td>
+              <td>Goroutine</td>
+              <td>366</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/root_analyzer.go#L75">cmd/dep/root_analyzer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/root_analyzer.go#L79">cmd/dep/root_analyzer.go</a></td>
+              <td>Range over chan</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/root_analyzer.go#L90">cmd/dep/root_analyzer.go</a></td>
+              <td>Close chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/root_analyzer.go#L93">cmd/dep/root_analyzer.go</a></td>
+              <td>Send</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L211">cmd/dep/ensure.go</a></td>
+              <td>Goroutine</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L439">cmd/dep/ensure.go</a></td>
+              <td>Unknown chan length</td>
+              <td>439</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L452">cmd/dep/ensure.go</a></td>
+              <td>Go in for</td>
+              <td>452</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L452">cmd/dep/ensure.go</a></td>
+              <td>Goroutine</td>
+              <td>452</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L458">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>458</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L464">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>464</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L471">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>471</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L477">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L493">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>493</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L507">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>507</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L516">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>516</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L546">cmd/dep/ensure.go</a></td>
+              <td>Close chan</td>
+              <td>546</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L554">cmd/dep/ensure.go</a></td>
+              <td>Range over chan</td>
+              <td>554</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L784">cmd/dep/ensure.go</a></td>
+              <td>Unknown chan length</td>
+              <td>784</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L787">cmd/dep/ensure.go</a></td>
+              <td>Unknown chan length</td>
+              <td>787</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L796">cmd/dep/ensure.go</a></td>
+              <td>Go in for</td>
+              <td>796</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L796">cmd/dep/ensure.go</a></td>
+              <td>Goroutine</td>
+              <td>796</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L803">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>803</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L808">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>808</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L813">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>813</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L818">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>818</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L825">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>825</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L830">cmd/dep/ensure.go</a></td>
+              <td>Send</td>
+              <td>830</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L835">cmd/dep/ensure.go</a></td>
+              <td>Close chan</td>
+              <td>835</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L836">cmd/dep/ensure.go</a></td>
+              <td>Close chan</td>
+              <td>836</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L841">cmd/dep/ensure.go</a></td>
+              <td>Range over chan</td>
+              <td>841</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/ensure.go#L849">cmd/dep/ensure.go</a></td>
+              <td>Range over chan</td>
+              <td>849</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L942">cmd/dep/status.go</a></td>
+              <td>Unknown chan length</td>
+              <td>942</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L945">cmd/dep/status.go</a></td>
+              <td>Unknown chan length</td>
+              <td>945</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L946">cmd/dep/status.go</a></td>
+              <td>Unknown chan length</td>
+              <td>946</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L954">cmd/dep/status.go</a></td>
+              <td>Go in for</td>
+              <td>954</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L954">cmd/dep/status.go</a></td>
+              <td>Goroutine</td>
+              <td>954</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L968">cmd/dep/status.go</a></td>
+              <td>Send</td>
+              <td>968</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1041">cmd/dep/status.go</a></td>
+              <td>Send</td>
+              <td>1041</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1056">cmd/dep/status.go</a></td>
+              <td>Send</td>
+              <td>1056</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1063">cmd/dep/status.go</a></td>
+              <td>Close chan</td>
+              <td>1063</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1064">cmd/dep/status.go</a></td>
+              <td>Close chan</td>
+              <td>1064</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1065">cmd/dep/status.go</a></td>
+              <td>Close chan</td>
+              <td>1065</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1074">cmd/dep/status.go</a></td>
+              <td>Range over chan</td>
+              <td>1074</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1093">cmd/dep/status.go</a></td>
+              <td>Range over chan</td>
+              <td>1093</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1105">cmd/dep/status.go</a></td>
+              <td>Range over chan</td>
+              <td>1105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1117">cmd/dep/status.go</a></td>
+              <td>Range over chan</td>
+              <td>1117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1318">cmd/dep/status.go</a></td>
+              <td>Unknown chan length</td>
+              <td>1318</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1327">cmd/dep/status.go</a></td>
+              <td>Go in for</td>
+              <td>1327</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1327">cmd/dep/status.go</a></td>
+              <td>Goroutine</td>
+              <td>1327</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1332">cmd/dep/status.go</a></td>
+              <td>Send</td>
+              <td>1332</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1364">cmd/dep/status.go</a></td>
+              <td>Close chan</td>
+              <td>1364</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//cmd/dep/status.go#L1368">cmd/dep/status.go</a></td>
+              <td>Range over chan</td>
+              <td>1368</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solution_test.go#L93">gps/solution_test.go</a></td>
+              <td>Go in for</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solution_test.go#L93">gps/solution_test.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/cmd_unix.go#L62">gps/cmd_unix.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/cmd_unix.go#L63">gps/cmd_unix.go</a></td>
+              <td>Close chan</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/cmd_unix.go#L64">gps/cmd_unix.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/cmd_unix.go#L65">gps/cmd_unix.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>65</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/cmd_unix.go#L66">gps/cmd_unix.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/cmd_unix.go#L75">gps/cmd_unix.go</a></td>
+              <td>Receive</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/cmd_unix.go#L77">gps/cmd_unix.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L246">gps/vcs_source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L254">gps/vcs_source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L262">gps/vcs_source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>262</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L272">gps/vcs_source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L279">gps/vcs_source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L286">gps/vcs_source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L515">gps/vcs_source_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>515</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L516">gps/vcs_source_test.go</a></td>
+              <td>Goroutine</td>
+              <td>516</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L524">gps/vcs_source_test.go</a></td>
+              <td>Close chan</td>
+              <td>524</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/vcs_source_test.go#L534">gps/vcs_source_test.go</a></td>
+              <td>Receive</td>
+              <td>534</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source.go#L165">gps/source.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>165</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source.go#L168">gps/source.go</a></td>
+              <td>Receive</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source.go#L172">gps/source.go</a></td>
+              <td>Slice array of chans</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source.go#L179">gps/source.go</a></td>
+              <td>Send</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L315">gps/source_manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>315</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L329">gps/source_manager.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>329</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L346">gps/source_manager.go</a></td>
+              <td>chan used as a param</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L353">gps/source_manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L356">gps/source_manager.go</a></td>
+              <td>Goroutine</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L358">gps/source_manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>358</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L359">gps/source_manager.go</a></td>
+              <td>Receive</td>
+              <td>359</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_manager.go#L372">gps/source_manager.go</a></td>
+              <td>Receive</td>
+              <td>372</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L26">gps/source_cache_multi.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>26</td>
+              <td>50</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L27">gps/source_cache_multi.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L29">gps/source_cache_multi.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L44">gps/source_cache_multi.go</a></td>
+              <td>Receive</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L73">gps/source_cache_multi.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L93">gps/source_cache_multi.go</a></td>
+              <td>Send</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L113">gps/source_cache_multi.go</a></td>
+              <td>Send</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/source_cache_multi.go#L118">gps/source_cache_multi.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L408">gps/solver.go</a></td>
+              <td>Go in for</td>
+              <td>408</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L408">gps/solver.go</a></td>
+              <td>Goroutine</td>
+              <td>408</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L481">gps/solver.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>481</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L482">gps/solver.go</a></td>
+              <td>Receive</td>
+              <td>482</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L632">gps/solver.go</a></td>
+              <td>Goroutine</td>
+              <td>632</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L1019">gps/solver.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1019</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L1020">gps/solver.go</a></td>
+              <td>Receive</td>
+              <td>1020</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solver.go#L1269">gps/solver.go</a></td>
+              <td>Goroutine</td>
+              <td>1269</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/bridge.go#L200">gps/bridge.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solution.go#L89">gps/solution.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>89</td>
+              <td>16</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solution.go#L100">gps/solution.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>100</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solution.go#L101">gps/solution.go</a></td>
+              <td>Send</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solution.go#L102">gps/solution.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/solution.go#L103">gps/solution.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L795">gps/manager_test.go</a></td>
+              <td>Go in for</td>
+              <td>795</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L795">gps/manager_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>795</td>
+              <td>20</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L795">gps/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>795</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L876">gps/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>876</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L879">gps/manager_test.go</a></td>
+              <td>Send</td>
+              <td>879</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L880">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>880</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L892">gps/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>892</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L893">gps/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>893</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L895">gps/manager_test.go</a></td>
+              <td>Send</td>
+              <td>895</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L897">gps/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>897</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L897">gps/manager_test.go</a></td>
+              <td>Send</td>
+              <td>897</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L900">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>900</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L916">gps/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>916</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L918">gps/manager_test.go</a></td>
+              <td>Send</td>
+              <td>918</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L920">gps/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>920</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L921">gps/manager_test.go</a></td>
+              <td>Send</td>
+              <td>921</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L927">gps/manager_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>927</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L928">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>928</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L929">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>929</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L978">gps/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>978</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L978">gps/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>978</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L979">gps/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>979</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L980">gps/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>980</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L981">gps/manager_test.go</a></td>
+              <td>Send</td>
+              <td>981</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L983">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>983</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L986">gps/manager_test.go</a></td>
+              <td>Send</td>
+              <td>986</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L990">gps/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>990</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L992">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>992</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L1010">gps/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>1010</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L1012">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>1012</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//gps/manager_test.go#L1017">gps/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>1017</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L64">hack/licenseok/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>64</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L65">hack/licenseok/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L66">hack/licenseok/main.go</a></td>
+              <td>Goroutine</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L68">hack/licenseok/main.go</a></td>
+              <td>Range over chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L70">hack/licenseok/main.go</a></td>
+              <td>Go in for</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L70">hack/licenseok/main.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L94">hack/licenseok/main.go</a></td>
+              <td>Close chan</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L100">hack/licenseok/main.go</a></td>
+              <td>Close chan</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L101">hack/licenseok/main.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L105">hack/licenseok/main.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/golang/dep/blob//hack/licenseok/main.go#L114">hack/licenseok/main.go</a></td>
+              <td>Send</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 34 ,  21 ,
+     25 ,
+     33 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -210,22 +210,24 @@ func GenerateListFiles(path_to_dir string) string {
 	}
 	return filenames
 }
-func ReadNumberOfLines(list_filenames string) int {
+func ReadNumberOfLines(list_filenames []string) int {
 
 	var xargs_out bytes.Buffer
 	var git_out bytes.Buffer
-	filenames := strings.Split(list_filenames, "\n")
 	git_out.Reset()
-	for _, filename := range strings.Split(list_filenames, "\n") {
+
+	for _, filename := range list_filenames {
 		if filename != "" {
 
-			git_out.WriteString("\"" + filename + "\"\n")
+			git_out.WriteString(filename + "\n")
 		}
 	}
 	xargs_cmd := exec.Command("xargs", "cat")
 	xargs_cmd.Stdin = &git_out
 	xargs_cmd.Stdout = &xargs_out
 	xargs_cmd.Run()
+
+	fmt.Println(xargs_out.String())
 
 	f, _ := os.Create("temp.go")
 	f.Write(xargs_out.Bytes())
@@ -248,7 +250,7 @@ func ReadNumberOfLines(list_filenames string) int {
 	if len(cloc_infos) >= 5 {
 		num, _ := strconv.Atoi(cloc_infos[4])
 
-		if len(filenames) == 0 {
+		if len(list_filenames) == 0 {
 			return 0
 		}
 

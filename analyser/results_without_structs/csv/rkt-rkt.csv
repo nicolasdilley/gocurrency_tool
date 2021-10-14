@@ -1,0 +1,252 @@
+Line num,0
+packages num,5,78
+files num,6,269
+Average Line num per featured file,1964
+Documentation/examples/metadata-service/main,150
+api/v1/v1,47
+api/v1alpha/main,1459
+common/common,1061
+common/apps/apps,140
+common/cgroup/cgroup,39
+common/cgroup/v1/v1,341
+common/cgroup/v2/v2,42
+common/labelsort/labelsort,118
+common/networking/networking,75
+common/overlay/overlay,61
+lib/rkt,248
+networking/networking,1484
+networking/netinfo/netinfo,47
+networking/tuntap/tuntap,73
+pkg/aci/aci,175
+pkg/aci/acitest/acitest,58
+pkg/acl/acl,254
+pkg/backup/backup,157
+pkg/distribution/distribution,630
+pkg/fileutil/fileutil,612
+pkg/flag/flag,426
+pkg/fs/fs,76
+pkg/group/group,157
+pkg/keystore/keystore,454
+pkg/keystore/keystoretest/keystoretest,547
+pkg/keystore/keystoretest/keygen/main,97
+pkg/lock/lock,555
+pkg/log/log,133
+pkg/mountinfo/mountinfo,342
+pkg/multicall/multicall,46
+pkg/passwd/passwd,173
+pkg/pod/pod,1414
+pkg/set/set,119
+pkg/sys/sys,62
+pkg/tar/tar,1133
+pkg/tpm/tpm,15
+pkg/user/user_test,445
+rkt/main,8621
+rkt/config/config,1009
+rkt/flag/flag,198
+rkt/image/image,2166
+rkt/pubkey/pubkey,258
+stage0/stage0,1620
+stage1/app_add/main,275
+stage1/app_rm/main,111
+stage1/app_start/main,46
+stage1/app_stop/main,51
+stage1/attach/main,78
+stage1/common/common,45
+stage1/common/ssh/ssh,152
+stage1/common/types/types,124
+stage1/enter_kvm/main,50
+stage1/gc/main,153
+stage1/init/main,870
+stage1/init/common/common,2623
+stage1/init/kvm/kvm,358
+stage1/init/kvm/hypervisor/hypervisor,33
+stage1/init/kvm/hypervisor/hvlkvm/hvlkvm,45
+stage1/init/kvm/hypervisor/hvqemu/hvqemu,51
+stage1/iottymux/main,462
+stage1/stop/main,57
+stage1/stop_kvm/main,42
+stage1_fly/stage1_fly,37
+stage1_fly/enter/main,97
+stage1_fly/gc/main,26
+stage1_fly/run/main,411
+stage1_fly/stop/main,55
+store/db/db,129
+store/imagestore/imagestore,2781
+store/treestore/treestore,641
+tools/cleangen/main,63
+tools/common/common,43
+tools/common/filelist/filelist,138
+tools/depsgen/main,0
+tools/filelistgen/main,115
+tools/quickrm/main,207
+version/version,2
+Filename, #,Concurrent Type, Line number , Number
+pkg/pod/wait.go,4,Synchronous chan,86,
+pkg/pod/wait.go,1,Goroutine,88,
+pkg/pod/wait.go,15,Close chan,89,
+pkg/pod/wait.go,16,Select (number of branch),92,2
+pkg/pod/wait.go,2,Receive,93,
+pkg/pod/wait.go,3,Send,94,
+pkg/pod/wait.go,2,Receive,96,
+pkg/pod/wait.go,2,Receive,104,
+pkg/tar/chroot.go,4,Synchronous chan,118,
+pkg/tar/chroot.go,1,Goroutine,119,
+pkg/tar/chroot.go,3,Send,120,
+pkg/tar/chroot.go,2,Receive,126,
+rkt/metadata_service.go,8,Known chan length (length),61,1
+rkt/metadata_service.go,15,Close chan,632,
+rkt/metadata_service.go,15,Close chan,656,
+rkt/metadata_service.go,1,Goroutine,682,
+rkt/metadata_service.go,1,Goroutine,683,
+rkt/metadata_service.go,2,Receive,687,
+rkt/api_service.go,5,Go in for,931,
+rkt/api_service.go,1,Goroutine,931,
+rkt/api_service.go,2,Receive,936,
+stage1/iottymux/iottymux.go,4,Synchronous chan,171,
+stage1/iottymux/iottymux.go,3,Send,174,
+stage1/iottymux/iottymux.go,1,Goroutine,187,
+stage1/iottymux/iottymux.go,1,Goroutine,191,
+stage1/iottymux/iottymux.go,1,Goroutine,195,
+stage1/iottymux/iottymux.go,1,Goroutine,199,
+stage1/iottymux/iottymux.go,1,Goroutine,203,
+stage1/iottymux/iottymux.go,1,Goroutine,205,
+stage1/iottymux/iottymux.go,2,Receive,211,
+stage1/iottymux/iottymux.go,4,Synchronous chan,308,
+stage1/iottymux/iottymux.go,4,Synchronous chan,309,
+stage1/iottymux/iottymux.go,1,Goroutine,310,
+stage1/iottymux/iottymux.go,1,Goroutine,311,
+stage1/iottymux/iottymux.go,2,Receive,317,
+stage1/iottymux/iottymux.go,4,Synchronous chan,405,
+stage1/iottymux/iottymux.go,4,Synchronous chan,435,
+stage1/iottymux/iottymux.go,1,Goroutine,436,
+stage1/iottymux/iottymux.go,1,Goroutine,437,
+stage1/iottymux/iottymux.go,4,Synchronous chan,442,
+stage1/iottymux/iottymux.go,4,Synchronous chan,443,
+stage1/iottymux/iottymux.go,4,Synchronous chan,444,
+stage1/iottymux/iottymux.go,1,Goroutine,445,
+stage1/iottymux/iottymux.go,1,Goroutine,446,
+stage1/iottymux/iottymux.go,1,Goroutine,447,
+stage1/iottymux/iottymux.go,3,Send,449,
+stage1/iottymux/iottymux.go,4,Synchronous chan,455,
+stage1/iottymux/iottymux.go,4,Synchronous chan,456,
+stage1/iottymux/iottymux.go,4,Synchronous chan,457,
+stage1/iottymux/iottymux.go,1,Goroutine,458,
+stage1/iottymux/iottymux.go,1,Goroutine,459,
+stage1/iottymux/iottymux.go,1,Goroutine,460,
+stage1/iottymux/iottymux.go,3,Send,462,
+stage1/iottymux/iottymux.go,2,Receive,470,
+stage1/iottymux/iottymux.go,21,Send only chan (chan<-),475,
+stage1/iottymux/iottymux.go,4,Synchronous chan,476,
+stage1/iottymux/iottymux.go,1,Goroutine,484,
+stage1/iottymux/iottymux.go,2,Receive,486,
+stage1/iottymux/iottymux.go,21,Send only chan (chan<-),494,
+stage1/iottymux/iottymux.go,21,Send only chan (chan<-),494,
+stage1/iottymux/iottymux.go,3,Send,499,
+stage1/iottymux/iottymux.go,3,Send,502,
+stage1/iottymux/iottymux.go,21,Send only chan (chan<-),509,
+stage1/iottymux/iottymux.go,3,Send,514,
+stage1/iottymux/iottymux.go,20,Receive only chan (<-chan),522,
+stage1/iottymux/iottymux.go,21,Send only chan (chan<-),522,
+stage1/iottymux/iottymux.go,4,Synchronous chan,523,
+stage1/iottymux/iottymux.go,15,Close chan,531,
+stage1/iottymux/iottymux.go,16,Select (number of branch),543,2
+stage1/iottymux/iottymux.go,2,Receive,545,
+stage1/iottymux/iottymux.go,1,Goroutine,546,
+stage1/iottymux/iottymux.go,1,Goroutine,547,
+stage1/iottymux/iottymux.go,2,Receive,550,
+stage1/iottymux/iottymux.go,3,Send,551,
+stage1/iottymux/iottymux.go,20,Receive only chan (<-chan),558,
+stage1/iottymux/iottymux.go,16,Select (number of branch),560,1
+stage1/iottymux/iottymux.go,2,Receive,561,
+stage1/iottymux/iottymux.go,1,Goroutine,562,
+stage1/iottymux/iottymux.go,22,chan used as a param,585,
+stage1/iottymux/iottymux.go,20,Receive only chan (<-chan),585,
+stage1/iottymux/iottymux.go,20,Receive only chan (<-chan),585,
+stage1/iottymux/iottymux.go,16,Select (number of branch),603,3
+stage1/iottymux/iottymux.go,2,Receive,606,
+stage1/iottymux/iottymux.go,2,Receive,611,
+stage1/iottymux/iottymux.go,2,Receive,615,
+store/db/db_test.go,5,Go in for,103,
+store/db/db_test.go,1,Goroutine,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/networking/net_plugin.go,0,Mutex,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db.go,0,Mutex,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db.go,0,Mutex,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db.go,0,Mutex,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db.go,0,Mutex,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db.go,0,Mutex,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db_test.go,0,Mutex,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db_test.go,0,Mutex,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/db/db_test.go,0,Mutex,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/aciinfo.go,0,Mutex,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/remote.go,0,Mutex,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/remote.go,0,Mutex,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/remote.go,0,Mutex,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/remote.go,0,Mutex,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/remote.go,0,Mutex,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/remote.go,0,Mutex,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/schema.go,0,Mutex,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/schema.go,0,Mutex,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/schema.go,0,Mutex,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/schema.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/schema.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/schema.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,465,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,465,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,465,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,485,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,485,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,485,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,505,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,505,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,505,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,525,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,525,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,525,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,545,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,545,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,545,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,565,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,565,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,565,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,592,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,592,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,592,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,621,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,621,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/store/imagestore/migrate_test.go,0,Mutex,621,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/tests/testutils/aci-server/server.go,0,Mutex,326,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/tests/testutils/aci-server/server.go,0,Waitgroup,326,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/tests/testutils/aci-server/server.go,0,Mutex,326,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/rkt/pubkey/pubkey.go,0,Mutex,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/rkt/pubkey/pubkey.go,0,Mutex,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/rkt/pubkey/pubkey.go,0,Mutex,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/rkt/pubkey/pubkey.go,0,Mutex,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/rkt/pubkey/pubkey.go,0,Mutex,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/rkt/pubkey/pubkey.go,0,Mutex,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/rkt/pubkey/pubkey.go,0,Mutex,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/pkg/log/log.go,0,Mutex,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/pkg/log/log_test.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/pkg/log/log_test.go,0,Mutex,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/stage0/common.go,0,Mutex,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/stage0/registration.go,0,Mutex,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/stage0/registration.go,0,Mutex,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/stage0/registration.go,0,Mutex,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/stage0/registration.go,0,Mutex,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/stage0/registration.go,0,Mutex,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/stage0/registration.go,0,Mutex,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/tests/testutils/goroutineassistant.go,0,Waitgroup Add(var),45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/tests/testutils/goroutineassistant.go,0,Waitgroup Done(),49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rkt++rkt/tests/testutils/httputils.go,0,Mutex,62,
+/Users/nicolasdilley/Library/Caches/go-build/ce/ce479dc82e28c732e37974e5b6cd27879d1fd8c1ff8cd577841a929ead7f0df7-d,0,Mutex,81,

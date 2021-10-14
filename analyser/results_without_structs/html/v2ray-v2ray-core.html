@@ -1,0 +1,4700 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : v2ray/v2ray-core ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/v2ray/v2ray-core/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> core_test ( 3 features, 1/13 featured file ) </li>
+          
+          <li> app/commander/commander ( 11 features, 2/5 featured file ) </li>
+          
+          <li> app/dispatcher/dispatcher_test ( 4 features, 1/7 featured file ) </li>
+          
+          <li> app/dns/dns_test ( 34 features, 3/13 featured file ) </li>
+          
+          <li> app/proxyman/inbound/inbound ( 3 features, 1/5 featured file ) </li>
+          
+          <li> app/proxyman/outbound/outbound_test ( 1 features, 1/4 featured file ) </li>
+          
+          <li> app/reverse/reverse_test ( 1 features, 1/7 featured file ) </li>
+          
+          <li> app/router/command/command_test ( 34 features, 2/6 featured file ) </li>
+          
+          <li> app/stats/stats_test ( 162 features, 3/8 featured file ) </li>
+          
+          <li> common/log/log_test ( 9 features, 1/6 featured file ) </li>
+          
+          <li> common/mux/mux_test ( 11 features, 2/12 featured file ) </li>
+          
+          <li> common/signal/signal_test ( 13 features, 4/4 featured file ) </li>
+          
+          <li> common/signal/done/done ( 2 features, 1/1 featured file ) </li>
+          
+          <li> common/signal/pubsub/pubsub_test ( 7 features, 2/2 featured file ) </li>
+          
+          <li> common/signal/semaphore/semaphore ( 3 features, 1/1 featured file ) </li>
+          
+          <li> common/task/task_test ( 10 features, 1/5 featured file ) </li>
+          
+          <li> features/stats/stats ( 1 features, 1/2 featured file ) </li>
+          
+          <li> main/main ( 2 features, 1/3 featured file ) </li>
+          
+          <li> main/distro/debug/debug ( 1 features, 1/1 featured file ) </li>
+          
+          <li> proxy/blackhole/blackhole ( 1 features, 1/6 featured file ) </li>
+          
+          <li> proxy/dns/dns_test ( 7 features, 2/4 featured file ) </li>
+          
+          <li> proxy/http/http ( 1 features, 1/6 featured file ) </li>
+          
+          <li> proxy/trojan/trojan_test ( 2 features, 1/9 featured file ) </li>
+          
+          <li> testing/scenarios/scenarios ( 3 features, 2/15 featured file ) </li>
+          
+          <li> testing/servers/http/tcp ( 1 features, 1/1 featured file ) </li>
+          
+          <li> testing/servers/tcp/tcp ( 3 features, 1/2 featured file ) </li>
+          
+          <li> testing/servers/udp/udp ( 1 features, 1/2 featured file ) </li>
+          
+          <li> transport/internet/domainsocket/domainsocket_test ( 1 features, 1/7 featured file ) </li>
+          
+          <li> transport/internet/headers/http/http_test ( 3 features, 1/7 featured file ) </li>
+          
+          <li> transport/internet/http/http_test ( 3 features, 2/7 featured file ) </li>
+          
+          <li> transport/internet/kcp/kcp_test ( 27 features, 4/21 featured file ) </li>
+          
+          <li> transport/internet/quic/quic_test ( 11 features, 3/9 featured file ) </li>
+          
+          <li> transport/internet/tcp/tcp_test ( 1 features, 1/10 featured file ) </li>
+          
+          <li> transport/internet/udp/udp ( 15 features, 3/11 featured file ) </li>
+          
+          <li> transport/internet/websocket/websocket_test ( 5 features, 2/8 featured file ) </li>
+          
+          <li> transport/pipe/pipe ( 10 features, 1/5 featured file ) </li>
+          
+    <li> Num of Packages with features : 36/120</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>65 </td>
+      <td>133 </td>
+      <td>31</td>
+      <td>87</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>19</td>
+      <td>9</td>
+      <td>3</td>
+      <td>29.03225806451613%</td>
+      <td>9 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>33 </td>
+      <td>37</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//v2ray_test.go#L27">v2ray_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>27</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//v2ray_test.go#L32">v2ray_test.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//v2ray_test.go#L35">v2ray_test.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/commander.go#L73">app/commander/commander.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>73</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/commander.go#L77">app/commander/commander.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L22">app/commander/outbound.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>22</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L23">app/commander/outbound.go</a></td>
+              <td>Send</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L24">app/commander/outbound.go</a></td>
+              <td>Receive</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L33">app/commander/outbound.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>33</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L34">app/commander/outbound.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L36">app/commander/outbound.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L46">app/commander/outbound.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>46</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L47">app/commander/outbound.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/commander/outbound.go#L87">app/commander/outbound.go</a></td>
+              <td>Receive</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dispatcher/default.go#L207">app/dispatcher/default.go</a></td>
+              <td>Goroutine</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dispatcher/default.go#L209">app/dispatcher/default.go</a></td>
+              <td>Goroutine</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dispatcher/default.go#L237">app/dispatcher/default.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>237</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dispatcher/default.go#L238">app/dispatcher/default.go</a></td>
+              <td>Receive</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L262">app/dns/udpns.go</a></td>
+              <td>Synchronous chan</td>
+              <td>262</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L263">app/dns/udpns.go</a></td>
+              <td>Goroutine</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L265">app/dns/udpns.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>265</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L266">app/dns/udpns.go</a></td>
+              <td>Receive</td>
+              <td>266</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L267">app/dns/udpns.go</a></td>
+              <td>Receive</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L271">app/dns/udpns.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>271</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L272">app/dns/udpns.go</a></td>
+              <td>Receive</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L273">app/dns/udpns.go</a></td>
+              <td>Receive</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L276">app/dns/udpns.go</a></td>
+              <td>Close chan</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L286">app/dns/udpns.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>286</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L287">app/dns/udpns.go</a></td>
+              <td>Receive</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/udpns.go#L289">app/dns/udpns.go</a></td>
+              <td>Receive</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L227">app/dns/dohdns.go</a></td>
+              <td>Go in for</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L227">app/dns/dohdns.go</a></td>
+              <td>Goroutine</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L355">app/dns/dohdns.go</a></td>
+              <td>Synchronous chan</td>
+              <td>355</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L356">app/dns/dohdns.go</a></td>
+              <td>Goroutine</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L358">app/dns/dohdns.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>358</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L359">app/dns/dohdns.go</a></td>
+              <td>Receive</td>
+              <td>359</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L360">app/dns/dohdns.go</a></td>
+              <td>Receive</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L364">app/dns/dohdns.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>364</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L365">app/dns/dohdns.go</a></td>
+              <td>Receive</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L366">app/dns/dohdns.go</a></td>
+              <td>Receive</td>
+              <td>366</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L369">app/dns/dohdns.go</a></td>
+              <td>Close chan</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L379">app/dns/dohdns.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>379</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L380">app/dns/dohdns.go</a></td>
+              <td>Receive</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/dohdns.go#L382">app/dns/dohdns.go</a></td>
+              <td>Receive</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L108">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L163">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L264">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L346">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L403">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>403</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L468">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>468</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L578">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>578</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/dns/server_test.go#L774">app/dns/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>774</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/proxyman/inbound/worker.go#L115">app/proxyman/inbound/worker.go</a></td>
+              <td>Goroutine</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/proxyman/inbound/worker.go#L288">app/proxyman/inbound/worker.go</a></td>
+              <td>Goroutine</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/proxyman/inbound/worker.go#L362">app/proxyman/inbound/worker.go</a></td>
+              <td>Goroutine</td>
+              <td>362</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/proxyman/outbound/handler.go#L175">app/proxyman/outbound/handler.go</a></td>
+              <td>Goroutine</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/reverse/bridge.go#L152">app/reverse/bridge.go</a></td>
+              <td>Goroutine</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command.go#L59">app/router/command/command.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>59</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command.go#L60">app/router/command/command.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command.go#L72">app/router/command/command.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L46">app/router/command/command_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L47">app/router/command/command_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L50">app/router/command/command_test.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L53">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L57">app/router/command/command_test.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L77">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L81">app/router/command/command_test.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L84">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L89">app/router/command/command_test.go</a></td>
+              <td>Goroutine</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L93">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L159">app/router/command/command_test.go</a></td>
+              <td>Close chan</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L184">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L187">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L189">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>189</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L193">app/router/command/command_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>193</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L194">app/router/command/command_test.go</a></td>
+              <td>Receive</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L196">app/router/command/command_test.go</a></td>
+              <td>Receive</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L257">app/router/command/command_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L260">app/router/command/command_test.go</a></td>
+              <td>Goroutine</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L263">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L267">app/router/command/command_test.go</a></td>
+              <td>Goroutine</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L271">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L327">app/router/command/command_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>327</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L328">app/router/command/command_test.go</a></td>
+              <td>Receive</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L336">app/router/command/command_test.go</a></td>
+              <td>Receive</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L344">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L347">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>347</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L349">app/router/command/command_test.go</a></td>
+              <td>Send</td>
+              <td>349</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L353">app/router/command/command_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>353</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L354">app/router/command/command_test.go</a></td>
+              <td>Receive</td>
+              <td>354</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/router/command/command_test.go#L356">app/router/command/command_test.go</a></td>
+              <td>Receive</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L51">app/stats/channel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L57">app/stats/channel.go</a></td>
+              <td>chan used as a param</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L74">app/stats/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>74</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L75">app/stats/channel.go</a></td>
+              <td>Receive</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L89">app/stats/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>89</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L90">app/stats/channel.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L104">app/stats/channel.go</a></td>
+              <td>Synchronous chan</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L105">app/stats/channel.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L107">app/stats/channel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>107</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L108">app/stats/channel.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L116">app/stats/channel.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L146">app/stats/channel.go</a></td>
+              <td>chan used as a param</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L147">app/stats/channel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>147</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L148">app/stats/channel.go</a></td>
+              <td>Send</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L149">app/stats/channel.go</a></td>
+              <td>Receive</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L153">app/stats/channel.go</a></td>
+              <td>chan used as a param</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L154">app/stats/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>154</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L155">app/stats/channel.go</a></td>
+              <td>Send</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L157">app/stats/channel.go</a></td>
+              <td>Goroutine</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L161">app/stats/channel.go</a></td>
+              <td>chan used as a param</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L162">app/stats/channel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>162</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L163">app/stats/channel.go</a></td>
+              <td>Send</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L164">app/stats/channel.go</a></td>
+              <td>Receive</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L168">app/stats/channel.go</a></td>
+              <td>chan used as a param</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L169">app/stats/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>169</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L170">app/stats/channel.go</a></td>
+              <td>Send</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel.go#L172">app/stats/channel.go</a></td>
+              <td>Goroutine</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/stats_test.go#L53">app/stats/stats_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/stats_test.go#L54">app/stats/stats_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/stats_test.go#L58">app/stats/stats_test.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L34">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L35">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L37">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L42">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L45">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L46">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L47">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L49">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L50">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L52">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L53">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L55">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L56">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L58">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L61">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L62">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L63">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L65">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L66">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L68">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L69">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L71">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L72">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L74">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L79">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>79</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L80">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L82">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L84">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L110">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L111">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L112">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L129">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L131">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L135">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L136">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L137">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L139">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L140">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L144">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L145">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L146">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L161">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L165">app/stats/channel_test.go</a></td>
+              <td>Close chan</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L167">app/stats/channel_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>167</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L168">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L170">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L172">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L176">app/stats/channel_test.go</a></td>
+              <td>Close chan</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L179">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>179</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L180">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L182">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L184">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L198">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L199">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L200">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L205">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L209">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L214">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L220">app/stats/channel_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>220</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L221">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L223">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L226">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L228">app/stats/channel_test.go</a></td>
+              <td>Close chan</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L231">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L232">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>232</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L234">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>234</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L235">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L236">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L237">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L241">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L243">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>243</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L244">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L245">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L246">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L253">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>253</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L254">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L256">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L258">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L272">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L273">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L274">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L279">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L282">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>282</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L283">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>283</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L287">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>287</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L288">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L290">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L292">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L293">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L297">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L299">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>299</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L300">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L301">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L302">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L306">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L307">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L309">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>309</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L315">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>315</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L316">app/stats/channel_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>316</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L317">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>317</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L318">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>318</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L321">app/stats/channel_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>321</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L322">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L323">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>323</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L326">app/stats/channel_test.go</a></td>
+              <td>Close chan</td>
+              <td>326</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L329">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>329</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L330">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>330</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L332">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>332</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L334">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>334</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L352">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>352</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L353">app/stats/channel_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L355">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>355</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L360">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L361">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>361</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L362">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>362</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L364">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>364</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L365">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L369">app/stats/channel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L371">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>371</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L376">app/stats/channel_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>376</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L377">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>377</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L379">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L382">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L386">app/stats/channel_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>386</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L387">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>387</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L389">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L391">app/stats/channel_test.go</a></td>
+              <td>Send</td>
+              <td>391</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L395">app/stats/channel_test.go</a></td>
+              <td>Close chan</td>
+              <td>395</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L398">app/stats/channel_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>398</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L399">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>399</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L401">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>401</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//app/stats/channel_test.go#L403">app/stats/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>403</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L54">common/log/logger.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>54</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L55">common/log/logger.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L57">common/log/logger.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L60">common/log/logger.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L70">common/log/logger.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>70</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L71">common/log/logger.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L75">common/log/logger.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>75</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L76">common/log/logger.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/log/logger.go#L77">common/log/logger.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/server.go#L81">common/mux/server.go</a></td>
+              <td>Goroutine</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/server.go#L143">common/mux/server.go</a></td>
+              <td>Goroutine</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/server.go#L238">common/mux/server.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>238</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/server.go#L239">common/mux/server.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/client.go#L150">common/mux/client.go</a></td>
+              <td>Goroutine</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/client.go#L190">common/mux/client.go</a></td>
+              <td>Goroutine</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/client.go#L191">common/mux/client.go</a></td>
+              <td>Goroutine</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/client.go#L214">common/mux/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>214</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/client.go#L215">common/mux/client.go</a></td>
+              <td>Receive</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/client.go#L220">common/mux/client.go</a></td>
+              <td>Receive</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/mux/client.go#L301">common/mux/client.go</a></td>
+              <td>Goroutine</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/notifier.go#L17">common/signal/notifier.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>17</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/notifier.go#L18">common/signal/notifier.go</a></td>
+              <td>Send</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer.go#L24">common/signal/timer.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>24</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer.go#L25">common/signal/timer.go</a></td>
+              <td>Send</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer.go#L31">common/signal/timer.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>31</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer.go#L32">common/signal/timer.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer.go#L77">common/signal/timer.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>77</td>
+              <td>1</td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/notifier_test.go#L15">common/signal/notifier_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>15</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/notifier_test.go#L16">common/signal/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>16</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer_test.go#L41">common/signal/timer_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>41</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer_test.go#L42">common/signal/timer_test.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer_test.go#L54">common/signal/timer_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>54</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/timer_test.go#L55">common/signal/timer_test.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/done/done.go#L23">common/signal/done/done.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>23</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/done/done.go#L24">common/signal/done/done.go</a></td>
+              <td>Receive</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/pubsub/pubsub.go#L19">common/signal/pubsub/pubsub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>19</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/pubsub/pubsub.go#L20">common/signal/pubsub/pubsub.go</a></td>
+              <td>Send</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/pubsub/pubsub.go#L86">common/signal/pubsub/pubsub.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>86</td>
+              <td>16</td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/pubsub/pubsub_test.go#L15">common/signal/pubsub/pubsub_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>15</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/pubsub/pubsub_test.go#L16">common/signal/pubsub/pubsub_test.go</a></td>
+              <td>Receive</td>
+              <td>16</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/pubsub/pubsub_test.go#L27">common/signal/pubsub/pubsub_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>27</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/pubsub/pubsub_test.go#L28">common/signal/pubsub/pubsub_test.go</a></td>
+              <td>Receive</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/semaphore/semaphore.go#L11">common/signal/semaphore/semaphore.go</a></td>
+              <td>Unknown chan length</td>
+              <td>11</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/semaphore/semaphore.go#L14">common/signal/semaphore/semaphore.go</a></td>
+              <td>Send</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/signal/semaphore/semaphore.go#L26">common/signal/semaphore/semaphore.go</a></td>
+              <td>Send</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L23">common/task/task.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>23</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L27">common/task/task.go</a></td>
+              <td>Go in for</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L26">common/task/task.go</a></td>
+              <td>Receive</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L27">common/task/task.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L34">common/task/task.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>34</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L35">common/task/task.go</a></td>
+              <td>Send</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L42">common/task/task.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>42</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L43">common/task/task.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L45">common/task/task.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//common/task/task.go#L47">common/task/task.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//features/stats/stats.go#L51">features/stats/stats.go</a></td>
+              <td>chan used as a param</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//main/main.go#L168">main/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>168</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//main/main.go#L170">main/main.go</a></td>
+              <td>Receive</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//main/distro/debug/debug.go#L7">main/distro/debug/debug.go</a></td>
+              <td>Goroutine</td>
+              <td>7</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/blackhole/blackhole_test.go#L25">proxy/blackhole/blackhole_test.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/dns/dns.go#L124">proxy/dns/dns.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>124</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/dns/dns.go#L175">proxy/dns/dns.go</a></td>
+              <td>Goroutine</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/dns/dns.go#L285">proxy/dns/dns.go</a></td>
+              <td>Send</td>
+              <td>285</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/dns/dns.go#L312">proxy/dns/dns.go</a></td>
+              <td>Receive</td>
+              <td>312</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/dns/dns_test.go#L84">proxy/dns/dns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/dns/dns_test.go#L201">proxy/dns/dns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/dns/dns_test.go#L287">proxy/dns/dns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/http/client.go#L188">proxy/http/client.go</a></td>
+              <td>Goroutine</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/trojan/server.go#L211">proxy/trojan/server.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>211</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//proxy/trojan/server.go#L212">proxy/trojan/server.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/scenarios/policy_test.go#L33">testing/scenarios/policy_test.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/scenarios/vmess_test.go#L932">testing/scenarios/vmess_test.go</a></td>
+              <td>Receive</td>
+              <td>932</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/scenarios/vmess_test.go#L1182">testing/scenarios/vmess_test.go</a></td>
+              <td>Receive</td>
+              <td>1182</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/servers/http/http.go#L34">testing/servers/http/http.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/servers/tcp/tcp.go#L44">testing/servers/tcp/tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/servers/tcp/tcp.go#L57">testing/servers/tcp/tcp.go</a></td>
+              <td>Go in for</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/servers/tcp/tcp.go#L57">testing/servers/tcp/tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//testing/servers/udp/udp.go#L29">testing/servers/udp/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/domainsocket/listener.go#L83">transport/internet/domainsocket/listener.go</a></td>
+              <td>Goroutine</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/headers/http/http_test.go#L117">transport/internet/headers/http/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/headers/http/http_test.go#L217">transport/internet/headers/http/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/headers/http/http_test.go#L291">transport/internet/headers/http/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/http/hub.go#L100">transport/internet/http/hub.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/http/hub.go#L134">transport/internet/http/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/http/http_test.go#L32">transport/internet/http/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/dialer.go#L24">transport/internet/kcp/dialer.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>24</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/dialer.go#L25">transport/internet/kcp/dialer.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/dialer.go#L30">transport/internet/kcp/dialer.go</a></td>
+              <td>Close chan</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/dialer.go#L33">transport/internet/kcp/dialer.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>33</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/dialer.go#L34">transport/internet/kcp/dialer.go</a></td>
+              <td>Send</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/dialer.go#L41">transport/internet/kcp/dialer.go</a></td>
+              <td>Range over chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/dialer.go#L87">transport/internet/kcp/dialer.go</a></td>
+              <td>Goroutine</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/listener.go#L80">transport/internet/kcp/listener.go</a></td>
+              <td>Goroutine</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/listener.go#L166">transport/internet/kcp/listener.go</a></td>
+              <td>Go in for</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/listener.go#L166">transport/internet/kcp/listener.go</a></td>
+              <td>Goroutine</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L143">transport/internet/kcp/connection.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>143</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L144">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L145">transport/internet/kcp/connection.go</a></td>
+              <td>Goroutine</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L159">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L283">transport/internet/kcp/connection.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>283</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L284">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L302">transport/internet/kcp/connection.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>302</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L303">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>303</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L304">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>304</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L337">transport/internet/kcp/connection.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>337</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L338">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>338</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L356">transport/internet/kcp/connection.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>356</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L357">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>357</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L358">transport/internet/kcp/connection.go</a></td>
+              <td>Receive</td>
+              <td>358</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/connection.go#L453">transport/internet/kcp/connection.go</a></td>
+              <td>Goroutine</td>
+              <td>453</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/kcp_test.go#L25">transport/internet/kcp/kcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/kcp/kcp_test.go#L59">transport/internet/kcp/kcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/hub.go#L31">transport/internet/quic/hub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>31</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/hub.go#L32">transport/internet/quic/hub.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/hub.go#L34">transport/internet/quic/hub.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/hub.go#L67">transport/internet/quic/hub.go</a></td>
+              <td>Go in for</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/hub.go#L67">transport/internet/quic/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/hub.go#L134">transport/internet/quic/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/dialer.go#L51">transport/internet/quic/dialer.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>51</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/dialer.go#L52">transport/internet/quic/dialer.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/quic_test.go#L41">transport/internet/quic/quic_test.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/quic_test.go#L104">transport/internet/quic/quic_test.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/quic/quic_test.go#L168">transport/internet/quic/quic_test.go</a></td>
+              <td>Goroutine</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/tcp/hub.go#L81">transport/internet/tcp/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher_test.go#L44">transport/internet/udp/dispatcher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L77">transport/internet/udp/dispatcher.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L103">transport/internet/udp/dispatcher.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>103</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L104">transport/internet/udp/dispatcher.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L132">transport/internet/udp/dispatcher.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>132</td>
+              <td>16</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L142">transport/internet/udp/dispatcher.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>142</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L143">transport/internet/udp/dispatcher.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L146">transport/internet/udp/dispatcher.go</a></td>
+              <td>Send</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L154">transport/internet/udp/dispatcher.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>154</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L155">transport/internet/udp/dispatcher.go</a></td>
+              <td>Receive</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/dispatcher.go#L157">transport/internet/udp/dispatcher.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/hub.go#L59">transport/internet/udp/hub.go</a></td>
+              <td>Unknown chan length</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/hub.go#L61">transport/internet/udp/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/hub.go#L116">transport/internet/udp/hub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>116</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/udp/hub.go#L117">transport/internet/udp/hub.go</a></td>
+              <td>Send</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/websocket/hub.go#L104">transport/internet/websocket/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/websocket/ws_test.go#L24">transport/internet/websocket/ws_test.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/websocket/ws_test.go#L57">transport/internet/websocket/ws_test.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/websocket/ws_test.go#L79">transport/internet/websocket/ws_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/internet/websocket/ws_test.go#L133">transport/internet/websocket/ws_test.go</a></td>
+              <td>Goroutine</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L89">transport/pipe/impl.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>89</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L90">transport/pipe/impl.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L91">transport/pipe/impl.go</a></td>
+              <td>Receive</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L107">transport/pipe/impl.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>107</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L108">transport/pipe/impl.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L109">transport/pipe/impl.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L110">transport/pipe/impl.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L164">transport/pipe/impl.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>164</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L165">transport/pipe/impl.go</a></td>
+              <td>Receive</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/v2ray/v2ray-core/blob//transport/pipe/impl.go#L166">transport/pipe/impl.go</a></td>
+              <td>Receive</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 65 ,  133 ,
+     31 ,
+     87 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,4642 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : ipfs/go-ipfs ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/ipfs/go-ipfs/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> assets/assets ( 2 features, 1/5 featured file ) </li>
+          
+          <li> blocks/blockstoreutil/blockstoreutil ( 10 features, 1/1 featured file ) </li>
+          
+          <li> cmd/ipfs/main ( 70 features, 4/11 featured file ) </li>
+          
+          <li> cmd/ipfs/util/util ( 6 features, 1/9 featured file ) </li>
+          
+          <li> cmd/ipfswatch/main ( 5 features, 1/2 featured file ) </li>
+          
+          <li> core/core ( 4 features, 1/3 featured file ) </li>
+          
+          <li> core/bootstrap/bootstrap ( 9 features, 1/2 featured file ) </li>
+          
+          <li> core/commands/commands ( 83 features, 11/49 featured file ) </li>
+          
+          <li> core/commands/dag/dagcmd ( 16 features, 3/7 featured file ) </li>
+          
+          <li> core/commands/pin/pin ( 18 features, 2/3 featured file ) </li>
+          
+          <li> core/coreapi/coreapi ( 45 features, 5/13 featured file ) </li>
+          
+          <li> core/corehttp/corehttp ( 20 features, 5/19 featured file ) </li>
+          
+          <li> core/corerepo/corerepo ( 10 features, 1/2 featured file ) </li>
+          
+          <li> core/coreunix/coreunix ( 38 features, 2/4 featured file ) </li>
+          
+          <li> core/node/libp2p/libp2p ( 7 features, 1/18 featured file ) </li>
+          
+          <li> coverage/main/main ( 6 features, 1/1 featured file ) </li>
+          
+          <li> docs/examples/go-ipfs-as-a-library/main ( 3 features, 1/2 featured file ) </li>
+          
+          <li> fuse/ipns/ipns ( 20 features, 2/5 featured file ) </li>
+          
+          <li> fuse/mount/mount ( 15 features, 2/2 featured file ) </li>
+          
+          <li> fuse/node/node ( 2 features, 1/6 featured file ) </li>
+          
+          <li> fuse/readonly/readonly ( 11 features, 1/4 featured file ) </li>
+          
+          <li> gc/gc ( 40 features, 1/1 featured file ) </li>
+          
+          <li> p2p/p2p ( 6 features, 3/5 featured file ) </li>
+          
+          <li> peering/peering ( 5 features, 1/2 featured file ) </li>
+          
+          <li> plugin/plugins/peerlog/peerlog ( 13 features, 1/2 featured file ) </li>
+          
+          <li> repo/fsrepo/migrations/migrations ( 2 features, 1/12 featured file ) </li>
+          
+          <li> repo/fsrepo/migrations/ipfsfetcher/ipfsfetcher ( 1 features, 1/2 featured file ) </li>
+          
+          <li> thirdparty/notifier/notifier ( 48 features, 2/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 28/55</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>93 </td>
+      <td>132 </td>
+      <td>66</td>
+      <td>87</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>3 </td>
+      <td>8</td>
+      <td>1</td>
+      <td>91.66666666666666</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>18 </td>
+      <td>6 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>37</td>
+      <td>23</td>
+      <td>6</td>
+      <td>34.84848484848485%</td>
+      <td>33 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>51 </td>
+      <td>14</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//assets/assets_test.go#L24">assets/assets_test.go</a></td>
+              <td>Go in for</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//assets/assets_test.go#L24">assets/assets_test.go</a></td>
+              <td>Goroutine</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L39">blocks/blockstoreutil/remove.go</a></td>
+              <td>Unknown chan length</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L40">blocks/blockstoreutil/remove.go</a></td>
+              <td>Goroutine</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L41">blocks/blockstoreutil/remove.go</a></td>
+              <td>Close chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L53">blocks/blockstoreutil/remove.go</a></td>
+              <td>Send</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L57">blocks/blockstoreutil/remove.go</a></td>
+              <td>Send</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L63">blocks/blockstoreutil/remove.go</a></td>
+              <td>Send</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L65">blocks/blockstoreutil/remove.go</a></td>
+              <td>Send</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L77">blocks/blockstoreutil/remove.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L81">blocks/blockstoreutil/remove.go</a></td>
+              <td>Send</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//blocks/blockstoreutil/remove.go#L88">blocks/blockstoreutil/remove.go</a></td>
+              <td>Send</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L69">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L70">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L71">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L74">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L90">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L91">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L92">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L95">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L167">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L168">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Goroutine</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs_test.go#L171">cmd/ipfs/pinmfs_test.go</a></td>
+              <td>Receive</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/main.go#L326">cmd/ipfs/main.go</a></td>
+              <td>Goroutine</td>
+              <td>326</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L432">cmd/ipfs/daemon.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>432</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L433">cmd/ipfs/daemon.go</a></td>
+              <td>Receive</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L523">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L524">cmd/ipfs/daemon.go</a></td>
+              <td>Receive</td>
+              <td>524</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L660">cmd/ipfs/daemon.go</a></td>
+              <td>Synchronous chan</td>
+              <td>660</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L664">cmd/ipfs/daemon.go</a></td>
+              <td>Go in for</td>
+              <td>664</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L664">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>664</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L666">cmd/ipfs/daemon.go</a></td>
+              <td>Send</td>
+              <td>666</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L670">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>670</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L672">cmd/ipfs/daemon.go</a></td>
+              <td>Close chan</td>
+              <td>672</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L789">cmd/ipfs/daemon.go</a></td>
+              <td>Synchronous chan</td>
+              <td>789</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L793">cmd/ipfs/daemon.go</a></td>
+              <td>Go in for</td>
+              <td>793</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L793">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>793</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L795">cmd/ipfs/daemon.go</a></td>
+              <td>Send</td>
+              <td>795</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L799">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>799</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L801">cmd/ipfs/daemon.go</a></td>
+              <td>Close chan</td>
+              <td>801</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L844">cmd/ipfs/daemon.go</a></td>
+              <td>Synchronous chan</td>
+              <td>844</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L845">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>845</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L846">cmd/ipfs/daemon.go</a></td>
+              <td>Send</td>
+              <td>846</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L847">cmd/ipfs/daemon.go</a></td>
+              <td>Close chan</td>
+              <td>847</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L856">cmd/ipfs/daemon.go</a></td>
+              <td>Synchronous chan</td>
+              <td>856</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L862">cmd/ipfs/daemon.go</a></td>
+              <td>Send</td>
+              <td>862</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L869">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>869</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L875">cmd/ipfs/daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>875</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/daemon.go#L877">cmd/ipfs/daemon.go</a></td>
+              <td>Close chan</td>
+              <td>877</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L65">cmd/ipfs/pinmfs.go</a></td>
+              <td>Synchronous chan</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L66">cmd/ipfs/pinmfs.go</a></td>
+              <td>Goroutine</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L67">cmd/ipfs/pinmfs.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L69">cmd/ipfs/pinmfs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>69</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L70">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L75">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L82">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L100">cmd/ipfs/pinmfs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>100</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L101">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L103">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L109">cmd/ipfs/pinmfs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>109</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L110">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L111">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L121">cmd/ipfs/pinmfs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>121</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L122">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L123">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L136">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L137">cmd/ipfs/pinmfs.go</a></td>
+              <td>Unknown chan length</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L178">cmd/ipfs/pinmfs.go</a></td>
+              <td>Go in for</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L144">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L155">cmd/ipfs/pinmfs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>155</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L156">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L157">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L159">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L172">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L178">cmd/ipfs/pinmfs.go</a></td>
+              <td>Goroutine</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L180">cmd/ipfs/pinmfs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>180</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L181">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L182">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L184">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L186">cmd/ipfs/pinmfs.go</a></td>
+              <td>Send</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L191">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/pinmfs.go#L233">cmd/ipfs/pinmfs.go</a></td>
+              <td>Receive</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/util/signal.go#L38">cmd/ipfs/util/signal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>38</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/util/signal.go#L41">cmd/ipfs/util/signal.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/util/signal.go#L47">cmd/ipfs/util/signal.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>47</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/util/signal.go#L48">cmd/ipfs/util/signal.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/util/signal.go#L50">cmd/ipfs/util/signal.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfs/util/signal.go#L68">cmd/ipfs/util/signal.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfswatch/main.go#L108">cmd/ipfswatch/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>108</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfswatch/main.go#L112">cmd/ipfswatch/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>112</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfswatch/main.go#L113">cmd/ipfswatch/main.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfswatch/main.go#L115">cmd/ipfswatch/main.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//cmd/ipfswatch/main.go#L166">cmd/ipfswatch/main.go</a></td>
+              <td>Receive</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/builder.go#L63">core/builder.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/builder.go#L67">core/builder.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>67</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/builder.go#L68">core/builder.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/builder.go#L73">core/builder.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L77">core/bootstrap/bootstrap.go</a></td>
+              <td>Synchronous chan</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L93">core/bootstrap/bootstrap.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L109">core/bootstrap/bootstrap.go</a></td>
+              <td>Send</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L110">core/bootstrap/bootstrap.go</a></td>
+              <td>Close chan</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L158">core/bootstrap/bootstrap.go</a></td>
+              <td>Unknown chan length</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L168">core/bootstrap/bootstrap.go</a></td>
+              <td>Go in for</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L168">core/bootstrap/bootstrap.go</a></td>
+              <td>Goroutine</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L175">core/bootstrap/bootstrap.go</a></td>
+              <td>Send</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/bootstrap/bootstrap.go#L185">core/bootstrap/bootstrap.go</a></td>
+              <td>Close chan</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/profile.go#L82">core/commands/profile.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/profile.go#L216">core/commands/profile.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>216</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/profile.go#L217">core/commands/profile.go</a></td>
+              <td>Receive</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/profile.go#L218">core/commands/profile.go</a></td>
+              <td>Receive</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/external.go#L59">core/commands/external.go</a></td>
+              <td>Synchronous chan</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/external.go#L61">core/commands/external.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/external.go#L63">core/commands/external.go</a></td>
+              <td>Send</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/external.go#L73">core/commands/external.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/stat.go#L149">core/commands/stat.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>149</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/stat.go#L150">core/commands/stat.go</a></td>
+              <td>Receive</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/stat.go#L151">core/commands/stat.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/get.go#L305">core/commands/get.go</a></td>
+              <td>Goroutine</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/get.go#L320">core/commands/get.go</a></td>
+              <td>Goroutine</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L483">core/commands/swarm.go</a></td>
+              <td>Unknown chan length</td>
+              <td>483</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L485">core/commands/swarm.go</a></td>
+              <td>Synchronous chan</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L499">core/commands/swarm.go</a></td>
+              <td>Go in for</td>
+              <td>499</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L499">core/commands/swarm.go</a></td>
+              <td>Goroutine</td>
+              <td>499</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L503">core/commands/swarm.go</a></td>
+              <td>Send</td>
+              <td>503</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L510">core/commands/swarm.go</a></td>
+              <td>Send</td>
+              <td>510</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L515">core/commands/swarm.go</a></td>
+              <td>Send</td>
+              <td>515</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L519">core/commands/swarm.go</a></td>
+              <td>Goroutine</td>
+              <td>519</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L521">core/commands/swarm.go</a></td>
+              <td>Close chan</td>
+              <td>521</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L524">core/commands/swarm.go</a></td>
+              <td>Range over chan</td>
+              <td>524</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L528">core/commands/swarm.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>528</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/swarm.go#L529">core/commands/swarm.go</a></td>
+              <td>Receive</td>
+              <td>529</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/log.go#L118">core/commands/log.go</a></td>
+              <td>Goroutine</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/log.go#L120">core/commands/log.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/refs.go#L320">core/commands/refs.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>320</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/refs.go#L321">core/commands/refs.go</a></td>
+              <td>Receive</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/ping.go#L116">core/commands/ping.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/ping.go#L138">core/commands/ping.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>138</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/ping.go#L139">core/commands/ping.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/ping.go#L140">core/commands/ping.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L238">core/commands/repo.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L238">core/commands/repo.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L244">core/commands/repo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>244</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L245">core/commands/repo.go</a></td>
+              <td>Send</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L246">core/commands/repo.go</a></td>
+              <td>Receive</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L253">core/commands/repo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>253</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L254">core/commands/repo.go</a></td>
+              <td>Send</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L255">core/commands/repo.go</a></td>
+              <td>Receive</td>
+              <td>255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L261">core/commands/repo.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L262">core/commands/repo.go</a></td>
+              <td>Synchronous chan</td>
+              <td>262</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L264">core/commands/repo.go</a></td>
+              <td>Goroutine</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L265">core/commands/repo.go</a></td>
+              <td>Close chan</td>
+              <td>265</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L271">core/commands/repo.go</a></td>
+              <td>Go in for</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/repo.go#L271">core/commands/repo.go</a></td>
+              <td>Goroutine</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L236">core/commands/add.go</a></td>
+              <td>Make chan in for</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L237">core/commands/add.go</a></td>
+              <td>Make chan in for</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L240">core/commands/add.go</a></td>
+              <td>Go in for</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L236">core/commands/add.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>236</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L237">core/commands/add.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>237</td>
+              <td>8</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L240">core/commands/add.go</a></td>
+              <td>Goroutine</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L242">core/commands/add.go</a></td>
+              <td>Close chan</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L244">core/commands/add.go</a></td>
+              <td>Send</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L247">core/commands/add.go</a></td>
+              <td>Range over chan</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L274">core/commands/add.go</a></td>
+              <td>Receive</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L292">core/commands/add.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>292</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L293">core/commands/add.go</a></td>
+              <td>Synchronous chan</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L297">core/commands/add.go</a></td>
+              <td>Goroutine</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L305">core/commands/add.go</a></td>
+              <td>Send</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L333">core/commands/add.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>333</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L334">core/commands/add.go</a></td>
+              <td>Receive</td>
+              <td>334</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L379">core/commands/add.go</a></td>
+              <td>Receive</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L386">core/commands/add.go</a></td>
+              <td>Receive</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L402">core/commands/add.go</a></td>
+              <td>Close chan</td>
+              <td>402</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L406">core/commands/add.go</a></td>
+              <td>Synchronous chan</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L407">core/commands/add.go</a></td>
+              <td>Goroutine</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L409">core/commands/add.go</a></td>
+              <td>Receive</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L410">core/commands/add.go</a></td>
+              <td>Close chan</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L422">core/commands/add.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>422</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L423">core/commands/add.go</a></td>
+              <td>Send</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/add.go#L424">core/commands/add.go</a></td>
+              <td>Receive</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L96">core/commands/dht.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>96</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L97">core/commands/dht.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L98">core/commands/dht.go</a></td>
+              <td>Close chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L109">core/commands/dht.go</a></td>
+              <td>Send</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L120">core/commands/dht.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L181">core/commands/dht.go</a></td>
+              <td>Goroutine</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L292">core/commands/dht.go</a></td>
+              <td>Goroutine</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L400">core/commands/dht.go</a></td>
+              <td>Goroutine</td>
+              <td>400</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L484">core/commands/dht.go</a></td>
+              <td>Goroutine</td>
+              <td>484</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dht.go#L592">core/commands/dht.go</a></td>
+              <td>Goroutine</td>
+              <td>592</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/export.go#L55">core/commands/dag/export.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>55</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/export.go#L56">core/commands/dag/export.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/export.go#L59">core/commands/dag/export.go</a></td>
+              <td>Send</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/export.go#L61">core/commands/dag/export.go</a></td>
+              <td>Close chan</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/export.go#L73">core/commands/dag/export.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/export.go#L82">core/commands/dag/export.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L50">core/commands/dag/import.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>50</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L51">core/commands/dag/import.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L53">core/commands/dag/import.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L121">core/commands/dag/import.go</a></td>
+              <td>chan used as a param</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L135">core/commands/dag/import.go</a></td>
+              <td>Send</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L185">core/commands/dag/import.go</a></td>
+              <td>Send</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L191">core/commands/dag/import.go</a></td>
+              <td>Send</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L196">core/commands/dag/import.go</a></td>
+              <td>Send</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/import.go#L200">core/commands/dag/import.go</a></td>
+              <td>Send</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/dag/get.go#L63">core/commands/dag/get.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L106">core/commands/pin/pin.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>106</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L107">core/commands/pin/pin.go</a></td>
+              <td>Goroutine</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L109">core/commands/pin/pin.go</a></td>
+              <td>Send</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L116">core/commands/pin/pin.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>116</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L117">core/commands/pin/pin.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L128">core/commands/pin/pin.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L132">core/commands/pin/pin.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L722">core/commands/pin/pin.go</a></td>
+              <td>Synchronous chan</td>
+              <td>722</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L723">core/commands/pin/pin.go</a></td>
+              <td>Goroutine</td>
+              <td>723</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L724">core/commands/pin/pin.go</a></td>
+              <td>Close chan</td>
+              <td>724</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L728">core/commands/pin/pin.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>728</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L729">core/commands/pin/pin.go</a></td>
+              <td>Send</td>
+              <td>729</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/pin.go#L730">core/commands/pin/pin.go</a></td>
+              <td>Receive</td>
+              <td>730</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/remotepin.go#L231">core/commands/pin/remotepin.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>231</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/remotepin.go#L232">core/commands/pin/remotepin.go</a></td>
+              <td>Receive</td>
+              <td>232</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/remotepin.go#L233">core/commands/pin/remotepin.go</a></td>
+              <td>Receive</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/remotepin.go#L290">core/commands/pin/remotepin.go</a></td>
+              <td>Receive</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/commands/pin/remotepin.go#L396">core/commands/pin/remotepin.go</a></td>
+              <td>Receive</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L268">core/coreapi/unixfs.go</a></td>
+              <td>Synchronous chan</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L270">core/coreapi/unixfs.go</a></td>
+              <td>Goroutine</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L271">core/coreapi/unixfs.go</a></td>
+              <td>Close chan</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L273">core/coreapi/unixfs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>273</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L274">core/coreapi/unixfs.go</a></td>
+              <td>Send</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L275">core/coreapi/unixfs.go</a></td>
+              <td>Receive</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L285">core/coreapi/unixfs.go</a></td>
+              <td>Unknown chan length</td>
+              <td>285</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L289">core/coreapi/unixfs.go</a></td>
+              <td>Send</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/unixfs.go#L291">core/coreapi/unixfs.go</a></td>
+              <td>Close chan</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/block.go#L99">core/coreapi/block.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>99</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/block.go#L100">core/coreapi/block.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/block.go#L114">core/coreapi/block.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/dht.go#L113">core/coreapi/dht.go</a></td>
+              <td>Synchronous chan</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/dht.go#L114">core/coreapi/dht.go</a></td>
+              <td>Goroutine</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/dht.go#L119">core/coreapi/dht.go</a></td>
+              <td>Send</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/dht.go#L125">core/coreapi/dht.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>125</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/dht.go#L126">core/coreapi/dht.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/dht.go#L131">core/coreapi/dht.go</a></td>
+              <td>Receive</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/dht.go#L133">core/coreapi/dht.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/name.go#L109">core/coreapi/name.go</a></td>
+              <td>Synchronous chan</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/name.go#L110">core/coreapi/name.go</a></td>
+              <td>Goroutine</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/name.go#L111">core/coreapi/name.go</a></td>
+              <td>Close chan</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/name.go#L113">core/coreapi/name.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>113</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/name.go#L114">core/coreapi/name.go</a></td>
+              <td>Send</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/name.go#L115">core/coreapi/name.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L192">core/coreapi/pin.go</a></td>
+              <td>Synchronous chan</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L193">core/coreapi/pin.go</a></td>
+              <td>Goroutine</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L194">core/coreapi/pin.go</a></td>
+              <td>Close chan</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L196">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L226">core/coreapi/pin.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>226</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L233">core/coreapi/pin.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>233</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L234">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L238">core/coreapi/pin.go</a></td>
+              <td>Receive</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L252">core/coreapi/pin.go</a></td>
+              <td>Goroutine</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L253">core/coreapi/pin.go</a></td>
+              <td>Close chan</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L260">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L264">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L271">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L275">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L288">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L293">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L303">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>303</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L310">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L323">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>323</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreapi/pin.go#L328">core/coreapi/pin.go</a></td>
+              <td>Send</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/metrics_test.go#L43">core/corehttp/metrics_test.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/corehttp.go#L99">core/corehttp/corehttp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>99</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/corehttp.go#L100">core/corehttp/corehttp.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/corehttp.go#L115">core/corehttp/corehttp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>115</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/corehttp.go#L116">core/corehttp/corehttp.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/corehttp.go#L118">core/corehttp/corehttp.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/corehttp.go#L133">core/corehttp/corehttp.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/metrics.go#L143">core/corehttp/metrics.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/metrics.go#L144">core/corehttp/metrics.go</a></td>
+              <td>Send</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/metrics.go#L147">core/corehttp/metrics.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/metrics.go#L149">core/corehttp/metrics.go</a></td>
+              <td>Send</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/logs.go#L18">core/corehttp/logs.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>18</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/logs.go#L28">core/corehttp/logs.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>28</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/logs.go#L29">core/corehttp/logs.go</a></td>
+              <td>Send</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/logs.go#L40">core/corehttp/logs.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/logs.go#L41">core/corehttp/logs.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/logs.go#L54">core/corehttp/logs.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/gateway_test.go#L64">core/corehttp/gateway_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>64</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/gateway_test.go#L66">core/corehttp/gateway_test.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corehttp/gateway_test.go#L67">core/corehttp/gateway_test.go</a></td>
+              <td>Close chan</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L99">core/corerepo/gc.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L103">core/corerepo/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>103</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L104">core/corerepo/gc.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L113">core/corerepo/gc.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L153">core/corerepo/gc.go</a></td>
+              <td>Synchronous chan</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L154">core/corerepo/gc.go</a></td>
+              <td>Send</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L155">core/corerepo/gc.go</a></td>
+              <td>Close chan</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L187">core/corerepo/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>187</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L188">core/corerepo/gc.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/corerepo/gc.go#L190">core/corerepo/gc.go</a></td>
+              <td>Receive</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L47">core/coreunix/add_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>47</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L69">core/coreunix/add_test.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L70">core/coreunix/add_test.go</a></td>
+              <td>Close chan</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L81">core/coreunix/add_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L82">core/coreunix/add_test.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L83">core/coreunix/add_test.go</a></td>
+              <td>Close chan</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L88">core/coreunix/add_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>88</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L89">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L98">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L113">core/coreunix/add_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L114">core/coreunix/add_test.go</a></td>
+              <td>Goroutine</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L115">core/coreunix/add_test.go</a></td>
+              <td>Close chan</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L119">core/coreunix/add_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>119</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L120">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L127">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L136">core/coreunix/add_test.go</a></td>
+              <td>Range over chan</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L157">core/coreunix/add_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L178">core/coreunix/add_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L179">core/coreunix/add_test.go</a></td>
+              <td>Goroutine</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L180">core/coreunix/add_test.go</a></td>
+              <td>Close chan</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L181">core/coreunix/add_test.go</a></td>
+              <td>Close chan</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L191">core/coreunix/add_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L192">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L194">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L199">core/coreunix/add_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L200">core/coreunix/add_test.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L201">core/coreunix/add_test.go</a></td>
+              <td>Close chan</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L210">core/coreunix/add_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>210</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L211">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L222">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L225">core/coreunix/add_test.go</a></td>
+              <td>Receive</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L237">core/coreunix/add_test.go</a></td>
+              <td>Range over chan</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L277">core/coreunix/add_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>277</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L289">core/coreunix/add_test.go</a></td>
+              <td>Goroutine</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add_test.go#L296">core/coreunix/add_test.go</a></td>
+              <td>Range over chan</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add.go#L457">core/coreunix/add.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>457</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add.go#L467">core/coreunix/add.go</a></td>
+              <td>Send</td>
+              <td>467</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/coreunix/add.go#L506">core/coreunix/add.go</a></td>
+              <td>Send</td>
+              <td>506</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/node/libp2p/pnet.go#L44">core/node/libp2p/pnet.go</a></td>
+              <td>Synchronous chan</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/node/libp2p/pnet.go#L47">core/node/libp2p/pnet.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/node/libp2p/pnet.go#L51">core/node/libp2p/pnet.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/node/libp2p/pnet.go#L53">core/node/libp2p/pnet.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/node/libp2p/pnet.go#L54">core/node/libp2p/pnet.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/node/libp2p/pnet.go#L59">core/node/libp2p/pnet.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//core/node/libp2p/pnet.go#L67">core/node/libp2p/pnet.go</a></td>
+              <td>Close chan</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//coverage/main/main.go#L46">coverage/main/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>46</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//coverage/main/main.go#L47">coverage/main/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//coverage/main/main.go#L48">coverage/main/main.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//coverage/main/main.go#L49">coverage/main/main.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//coverage/main/main.go#L51">coverage/main/main.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//coverage/main/main.go#L63">coverage/main/main.go</a></td>
+              <td>Close chan</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//docs/examples/go-ipfs-as-a-library/main.go#L172">docs/examples/go-ipfs-as-a-library/main.go</a></td>
+              <td>Go in for</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//docs/examples/go-ipfs-as-a-library/main.go#L172">docs/examples/go-ipfs-as-a-library/main.go</a></td>
+              <td>Goroutine</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//docs/examples/go-ipfs-as-a-library/main.go#L342">docs/examples/go-ipfs-as-a-library/main.go</a></td>
+              <td>Goroutine</td>
+              <td>342</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_test.go#L357">fuse/ipns/ipns_test.go</a></td>
+              <td>Go in for</td>
+              <td>357</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_test.go#L357">fuse/ipns/ipns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>357</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_test.go#L407">fuse/ipns/ipns_test.go</a></td>
+              <td>Go in for</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_test.go#L407">fuse/ipns/ipns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_test.go#L431">fuse/ipns/ipns_test.go</a></td>
+              <td>Go in for</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_test.go#L431">fuse/ipns/ipns_test.go</a></td>
+              <td>Goroutine</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L328">fuse/ipns/ipns_unix.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>328</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L329">fuse/ipns/ipns_unix.go</a></td>
+              <td>Receive</td>
+              <td>329</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L351">fuse/ipns/ipns_unix.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>351</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L352">fuse/ipns/ipns_unix.go</a></td>
+              <td>Goroutine</td>
+              <td>352</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L353">fuse/ipns/ipns_unix.go</a></td>
+              <td>Send</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L355">fuse/ipns/ipns_unix.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>355</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L356">fuse/ipns/ipns_unix.go</a></td>
+              <td>Receive</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L358">fuse/ipns/ipns_unix.go</a></td>
+              <td>Receive</td>
+              <td>358</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L383">fuse/ipns/ipns_unix.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>383</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L384">fuse/ipns/ipns_unix.go</a></td>
+              <td>Goroutine</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L385">fuse/ipns/ipns_unix.go</a></td>
+              <td>Send</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L387">fuse/ipns/ipns_unix.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>387</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L388">fuse/ipns/ipns_unix.go</a></td>
+              <td>Receive</td>
+              <td>388</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/ipns/ipns_unix.go#L390">fuse/ipns/ipns_unix.go</a></td>
+              <td>Receive</td>
+              <td>390</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L46">fuse/mount/mount.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>46</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L47">fuse/mount/mount.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L48">fuse/mount/mount.go</a></td>
+              <td>Close chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L56">fuse/mount/mount.go</a></td>
+              <td>Send</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L59">fuse/mount/mount.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>59</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L60">fuse/mount/mount.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L62">fuse/mount/mount.go</a></td>
+              <td>Receive</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/mount.go#L91">fuse/mount/mount.go</a></td>
+              <td>Receive</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/fuse.go#L72">fuse/mount/fuse.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>72</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/fuse.go#L73">fuse/mount/fuse.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/fuse.go#L79">fuse/mount/fuse.go</a></td>
+              <td>Send</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/fuse.go#L85">fuse/mount/fuse.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>85</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/fuse.go#L86">fuse/mount/fuse.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/fuse.go#L88">fuse/mount/fuse.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/mount/fuse.go#L90">fuse/mount/fuse.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/node/mount_unix.go#L75">fuse/node/mount_unix.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/node/mount_unix.go#L82">fuse/node/mount_unix.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L179">fuse/readonly/ipfs_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L183">fuse/readonly/ipfs_test.go</a></td>
+              <td>Go in for</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L183">fuse/readonly/ipfs_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>183</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L183">fuse/readonly/ipfs_test.go</a></td>
+              <td>Goroutine</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L194">fuse/readonly/ipfs_test.go</a></td>
+              <td>Send</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L203">fuse/readonly/ipfs_test.go</a></td>
+              <td>Send</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L208">fuse/readonly/ipfs_test.go</a></td>
+              <td>Send</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L214">fuse/readonly/ipfs_test.go</a></td>
+              <td>Send</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L220">fuse/readonly/ipfs_test.go</a></td>
+              <td>Goroutine</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L222">fuse/readonly/ipfs_test.go</a></td>
+              <td>Close chan</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//fuse/readonly/ipfs_test.go#L225">fuse/readonly/ipfs_test.go</a></td>
+              <td>Range over chan</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L48">gc/gc.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>48</td>
+              <td>128</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L50">gc/gc.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L52">gc/gc.go</a></td>
+              <td>Close chan</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L57">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L58">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L59">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L65">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>65</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L66">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L67">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L77">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>77</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L78">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L87">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>87</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L88">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L89">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L95">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>95</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L96">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L97">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L101">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L106">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L107">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L108">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L120">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>120</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L121">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L122">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L170">gc/gc.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L179">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>179</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L180">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L181">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L194">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>194</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L195">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L196">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L205">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>205</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L206">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L207">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L216">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>216</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L217">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L218">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L238">gc/gc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>238</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L239">gc/gc.go</a></td>
+              <td>Send</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//gc/gc.go#L240">gc/gc.go</a></td>
+              <td>Receive</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//p2p/stream.go#L44">p2p/stream.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//p2p/stream.go#L53">p2p/stream.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//p2p/local.go#L49">p2p/local.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//p2p/local.go#L71">p2p/local.go</a></td>
+              <td>Go in for</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//p2p/local.go#L71">p2p/local.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//p2p/listener.go#L56">p2p/listener.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//peering/peering.go#L185">peering/peering.go</a></td>
+              <td>Go in for</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//peering/peering.go#L185">peering/peering.go</a></td>
+              <td>Goroutine</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//peering/peering.go#L235">peering/peering.go</a></td>
+              <td>Goroutine</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//peering/peering.go#L272">peering/peering.go</a></td>
+              <td>Goroutine</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//peering/peering.go#L284">peering/peering.go</a></td>
+              <td>Goroutine</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L97">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Unknown chan length</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L114">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>114</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L115">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L116">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L125">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>125</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L126">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L143">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>143</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L144">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L146">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Receive</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L175">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>175</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L176">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Send</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L203">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Goroutine</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//plugin/plugins/peerlog/peerlog.go#L213">plugin/plugins/peerlog/peerlog.go</a></td>
+              <td>Goroutine</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//repo/fsrepo/migrations/migrations.go#L268">repo/fsrepo/migrations/migrations.go</a></td>
+              <td>Go in for</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//repo/fsrepo/migrations/migrations.go#L268">repo/fsrepo/migrations/migrations.go</a></td>
+              <td>Goroutine</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//repo/fsrepo/migrations/ipfsfetcher/ipfsfetcher.go#L241">repo/fsrepo/migrations/ipfsfetcher/ipfsfetcher.go</a></td>
+              <td>Receive</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier.go#L132">thirdparty/notifier/notifier.go</a></td>
+              <td>Go in for</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier.go#L132">thirdparty/notifier/notifier.go</a></td>
+              <td>Goroutine</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L40">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L41">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L54">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L73">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L82">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L91">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L104">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L105">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>105</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L110">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L119">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L130">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L131">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>131</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L136">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L146">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>146</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L147">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L159">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>159</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L160">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>160</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L161">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L162">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L172">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Go in for</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L172">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Goroutine</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L180">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Goroutine</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L189">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>189</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L190">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L191">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L192">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L222">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L232">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>232</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L241">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>241</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L247">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L248">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>248</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L249">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L250">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Goroutine</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L255">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L256">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L260">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L264">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>264</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L265">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>265</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L267">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L271">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>271</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L272">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L274">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L275">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L281">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>281</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L282">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>282</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ipfs/go-ipfs/blob//thirdparty/notifier/notifier_test.go#L283">thirdparty/notifier/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>283</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 93 ,  132 ,
+     66 ,
+     87 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,1329 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : github/gh-ost ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/github/gh-ost/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> go/binlog/binlog ( 3 features, 1/4 featured file ) </li>
+          
+          <li> go/cmd/gh-ost/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> go/logic/logic ( 120 features, 5/7 featured file ) </li>
+          
+    <li> Num of Packages with features : 3/7</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>42 </td>
+      <td>19 </td>
+      <td>14</td>
+      <td>31</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>8</td>
+      <td>2</td>
+      <td>81.81818181818183</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>8</td>
+      <td>2</td>
+      <td>57.14285714285714%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>2</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/binlog/gomysql_reader.go#L80">go/binlog/gomysql_reader.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/binlog/gomysql_reader.go#L121">go/binlog/gomysql_reader.go</a></td>
+              <td>Send</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/binlog/gomysql_reader.go#L128">go/binlog/gomysql_reader.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/cmd/gh-ost/main.go#L28">go/cmd/gh-ost/main.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>28</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/cmd/gh-ost/main.go#L31">go/cmd/gh-ost/main.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/cmd/gh-ost/main.go#L32">go/cmd/gh-ost/main.go</a></td>
+              <td>Range over chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/streamer.go#L97">go/logic/streamer.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/streamer.go#L171">go/logic/streamer.go</a></td>
+              <td>Goroutine</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/server.go#L74">go/logic/server.go</a></td>
+              <td>Goroutine</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/server.go#L80">go/logic/server.go</a></td>
+              <td>Go in for</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/server.go#L80">go/logic/server.go</a></td>
+              <td>Goroutine</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/server.go#L83">go/logic/server.go</a></td>
+              <td>Goroutine</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/server.go#L92">go/logic/server.go</a></td>
+              <td>Go in for</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/server.go#L92">go/logic/server.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/server.go#L362">go/logic/server.go</a></td>
+              <td>Send</td>
+              <td>362</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L133">go/logic/throttler.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L162">go/logic/throttler.go</a></td>
+              <td>Send</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L169">go/logic/throttler.go</a></td>
+              <td>Go in for</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L169">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L209">go/logic/throttler.go</a></td>
+              <td>Unknown chan length</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L215">go/logic/throttler.go</a></td>
+              <td>Go in for</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L215">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L217">go/logic/throttler.go</a></td>
+              <td>Send</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L221">go/logic/throttler.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L279">go/logic/throttler.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L304">go/logic/throttler.go</a></td>
+              <td>Send</td>
+              <td>304</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L340">go/logic/throttler.go</a></td>
+              <td>Send</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L354">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>354</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L363">go/logic/throttler.go</a></td>
+              <td>Send</td>
+              <td>363</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L367">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>367</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L369">go/logic/throttler.go</a></td>
+              <td>Receive</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L371">go/logic/throttler.go</a></td>
+              <td>Send</td>
+              <td>371</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L417">go/logic/throttler.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>417</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L418">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>418</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L419">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>419</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L420">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L422">go/logic/throttler.go</a></td>
+              <td>Goroutine</td>
+              <td>422</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/throttler.go#L424">go/logic/throttler.go</a></td>
+              <td>Send</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L813">go/logic/applier.go</a></td>
+              <td>chan used as a param</td>
+              <td>813</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L813">go/logic/applier.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>813</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L813">go/logic/applier.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>813</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L813">go/logic/applier.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>813</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L816">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>816</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L820">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>820</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L821">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>821</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L822">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>822</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L828">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>828</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L831">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>831</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L839">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>839</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L847">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>847</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L852">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>852</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L870">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>870</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L874">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>874</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L881">go/logic/applier.go</a></td>
+              <td>Receive</td>
+              <td>881</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L908">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>908</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L912">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>912</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L917">go/logic/applier.go</a></td>
+              <td>chan used as a param</td>
+              <td>917</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L917">go/logic/applier.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>917</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L924">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>924</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L925">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>925</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L931">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>931</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L951">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>951</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/applier.go#L954">go/logic/applier.go</a></td>
+              <td>Send</td>
+              <td>954</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L93">go/logic/migrator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L94">go/logic/migrator.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>94</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L95">go/logic/migrator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L96">go/logic/migrator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L98">go/logic/migrator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L99">go/logic/migrator.go</a></td>
+              <td>Unknown chan length</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L146">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L174">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L192">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L193">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L197">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L200">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L230">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L235">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L243">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L244">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L270">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L315">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>315</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L342">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>342</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L376">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>376</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L410">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L411">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>411</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L413">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>413</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L578">go/logic/migrator.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>578</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L579">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>579</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L583">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>583</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L636">go/logic/migrator.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>636</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L639">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>639</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L647">go/logic/migrator.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>647</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L648">go/logic/migrator.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>648</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L649">go/logic/migrator.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>649</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L650">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>650</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L655">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>655</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L658">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>658</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L671">go/logic/migrator.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>671</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L672">go/logic/migrator.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>672</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L673">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>673</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L677">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>677</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L680">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>680</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L694">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>694</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L709">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>709</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L712">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>712</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L715">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>715</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L739">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>739</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L814">go/logic/migrator.go</a></td>
+              <td>Go in for</td>
+              <td>814</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L814">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>814</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1039">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>1039</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1043">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>1043</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1048">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>1048</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1068">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>1068</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1079">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>1079</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1081">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>1081</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1082">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>1082</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1083">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>1083</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1085">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>1085</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1121">go/logic/migrator.go</a></td>
+              <td>Goroutine</td>
+              <td>1121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1129">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>1129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1196">go/logic/migrator.go</a></td>
+              <td>Send</td>
+              <td>1196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1226">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>1226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1269">go/logic/migrator.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1269</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1270">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>1270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1278">go/logic/migrator.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1278</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/github/gh-ost/blob//go/logic/migrator.go#L1279">go/logic/migrator.go</a></td>
+              <td>Receive</td>
+              <td>1279</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 42 ,  19 ,
+     14 ,
+     31 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,2673 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : nsqio/nsq ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/nsqio/nsq/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> apps/nsq_stat/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> apps/nsq_tail/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> apps/nsq_to_file/main ( 21 features, 3/5 featured file ) </li>
+          
+          <li> apps/nsq_to_http/main ( 4 features, 1/3 featured file ) </li>
+          
+          <li> apps/nsq_to_nsq/main ( 6 features, 1/1 featured file ) </li>
+          
+          <li> apps/nsqadmin/main ( 1 features, 1/3 featured file ) </li>
+          
+          <li> apps/nsqd/main ( 1 features, 1/3 featured file ) </li>
+          
+          <li> apps/nsqlookupd/main ( 1 features, 1/3 featured file ) </li>
+          
+          <li> apps/to_nsq/main ( 8 features, 1/1 featured file ) </li>
+          
+          <li> bench/bench_channels/main ( 10 features, 1/1 featured file ) </li>
+          
+          <li> bench/bench_reader/main ( 11 features, 1/1 featured file ) </li>
+          
+          <li> bench/bench_writer/main ( 10 features, 1/1 featured file ) </li>
+          
+          <li> internal/clusterinfo/clusterinfo ( 16 features, 1/3 featured file ) </li>
+          
+          <li> internal/protocol/protocol ( 2 features, 1/6 featured file ) </li>
+          
+          <li> internal/util/util ( 1 features, 1/3 featured file ) </li>
+          
+          <li> internal/writers/writers ( 4 features, 1/2 featured file ) </li>
+          
+          <li> nsqadmin/nsqadmin ( 13 features, 4/11 featured file ) </li>
+          
+          <li> nsqd/nsqd ( 177 features, 12/29 featured file ) </li>
+          
+          <li> nsqlookupd/nsqlookupd ( 12 features, 4/12 featured file ) </li>
+          
+    <li> Num of Packages with features : 19/29</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>32 </td>
+      <td>90 </td>
+      <td>50</td>
+      <td>56</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>18</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>20 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>34</td>
+      <td>11</td>
+      <td>5</td>
+      <td>22%</td>
+      <td>8 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>19 </td>
+      <td>11</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_stat/nsq_stat.go#L178">apps/nsq_stat/nsq_stat.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>178</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_stat/nsq_stat.go#L181">apps/nsq_stat/nsq_stat.go</a></td>
+              <td>Goroutine</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_stat/nsq_stat.go#L183">apps/nsq_stat/nsq_stat.go</a></td>
+              <td>Receive</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_tail/nsq_tail.go#L97">apps/nsq_tail/nsq_tail.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>97</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_tail/nsq_tail.go#L132">apps/nsq_tail/nsq_tail.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_tail/nsq_tail.go#L138">apps/nsq_tail/nsq_tail.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/nsq_to_file.go#L139">apps/nsq_to_file/nsq_to_file.go</a></td>
+              <td>Synchronous chan</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/nsq_to_file.go#L140">apps/nsq_to_file/nsq_to_file.go</a></td>
+              <td>Synchronous chan</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L26">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>chan used as a param</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L26">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>chan used as a param</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L58">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>Go in for</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L58">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L73">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>73</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L74">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L81">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L86">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/topic_discoverer.go#L88">apps/nsq_to_file/topic_discoverer.go</a></td>
+              <td>Send</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L56">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>56</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L58">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Synchronous chan</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L59">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Synchronous chan</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L78">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L91">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>91</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L92">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L96">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L100">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L103">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_file/file_logger.go#L112">apps/nsq_to_file/file_logger.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_http/nsq_to_http.go#L239">apps/nsq_to_http/nsq_to_http.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>239</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_http/nsq_to_http.go#L295">apps/nsq_to_http/nsq_to_http.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>295</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_http/nsq_to_http.go#L296">apps/nsq_to_http/nsq_to_http.go</a></td>
+              <td>Receive</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_http/nsq_to_http.go#L298">apps/nsq_to_http/nsq_to_http.go</a></td>
+              <td>Receive</td>
+              <td>298</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_nsq/nsq_to_nsq.go#L319">apps/nsq_to_nsq/nsq_to_nsq.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>319</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_nsq/nsq_to_nsq.go#L360">apps/nsq_to_nsq/nsq_to_nsq.go</a></td>
+              <td>Unknown chan length</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_nsq/nsq_to_nsq.go#L383">apps/nsq_to_nsq/nsq_to_nsq.go</a></td>
+              <td>Go in for</td>
+              <td>383</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_nsq/nsq_to_nsq.go#L383">apps/nsq_to_nsq/nsq_to_nsq.go</a></td>
+              <td>Goroutine</td>
+              <td>383</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_nsq/nsq_to_nsq.go#L400">apps/nsq_to_nsq/nsq_to_nsq.go</a></td>
+              <td>Receive</td>
+              <td>400</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsq_to_nsq/nsq_to_nsq.go#L406">apps/nsq_to_nsq/nsq_to_nsq.go</a></td>
+              <td>Receive</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsqadmin/main.go#L113">apps/nsqadmin/main.go</a></td>
+              <td>Goroutine</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsqd/main.go#L77">apps/nsqd/main.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/nsqlookupd/main.go#L88">apps/nsqlookupd/main.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L49">apps/to_nsq/to_nsq.go</a></td>
+              <td>Synchronous chan</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L50">apps/to_nsq/to_nsq.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>50</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L76">apps/to_nsq/to_nsq.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L93">apps/to_nsq/to_nsq.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L110">apps/to_nsq/to_nsq.go</a></td>
+              <td>Close chan</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L116">apps/to_nsq/to_nsq.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>116</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L117">apps/to_nsq/to_nsq.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//apps/to_nsq/to_nsq.go#L118">apps/to_nsq/to_nsq.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L23">bench/bench_channels/bench_channels.go</a></td>
+              <td>Synchronous chan</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L24">bench/bench_channels/bench_channels.go</a></td>
+              <td>Synchronous chan</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L27">bench/bench_channels/bench_channels.go</a></td>
+              <td>Go in for</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L27">bench/bench_channels/bench_channels.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L31">bench/bench_channels/bench_channels.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L35">bench/bench_channels/bench_channels.go</a></td>
+              <td>Close chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L41">bench/bench_channels/bench_channels.go</a></td>
+              <td>chan used as a param</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L41">bench/bench_channels/bench_channels.go</a></td>
+              <td>chan used as a param</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L55">bench/bench_channels/bench_channels.go</a></td>
+              <td>Send</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_channels/bench_channels.go#L56">bench/bench_channels/bench_channels.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L36">bench/bench_reader/bench_reader.go</a></td>
+              <td>Synchronous chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L37">bench/bench_reader/bench_reader.go</a></td>
+              <td>Synchronous chan</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L41">bench/bench_reader/bench_reader.go</a></td>
+              <td>Go in for</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L41">bench/bench_reader/bench_reader.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L45">bench/bench_reader/bench_reader.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L59">bench/bench_reader/bench_reader.go</a></td>
+              <td>Close chan</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L71">bench/bench_reader/bench_reader.go</a></td>
+              <td>chan used as a param</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L71">bench/bench_reader/bench_reader.go</a></td>
+              <td>chan used as a param</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L85">bench/bench_reader/bench_reader.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L86">bench/bench_reader/bench_reader.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_reader/bench_reader.go#L92">bench/bench_reader/bench_reader.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L40">bench/bench_writer/bench_writer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L41">bench/bench_writer/bench_writer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L44">bench/bench_writer/bench_writer.go</a></td>
+              <td>Go in for</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L44">bench/bench_writer/bench_writer.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L48">bench/bench_writer/bench_writer.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L62">bench/bench_writer/bench_writer.go</a></td>
+              <td>Close chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L74">bench/bench_writer/bench_writer.go</a></td>
+              <td>chan used as a param</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L74">bench/bench_writer/bench_writer.go</a></td>
+              <td>chan used as a param</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L87">bench/bench_writer/bench_writer.go</a></td>
+              <td>Send</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//bench/bench_writer/bench_writer.go#L88">bench/bench_writer/bench_writer.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L85">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L85">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L134">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L134">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L185">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L185">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L252">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L252">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L306">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L306">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L365">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L365">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L450">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L450">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L552">internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>552</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/clusterinfo/data.go#L552">internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>552</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/protocol/tcp_server.go#L38">internal/protocol/tcp_server.go</a></td>
+              <td>Go in for</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/protocol/tcp_server.go#L38">internal/protocol/tcp_server.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/util/wait_group_wrapper.go#L13">internal/util/wait_group_wrapper.go</a></td>
+              <td>Goroutine</td>
+              <td>13</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/writers/spread_writer.go#L15">internal/writers/spread_writer.go</a></td>
+              <td>chan used as a param</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/writers/spread_writer.go#L36">internal/writers/spread_writer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>36</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/writers/spread_writer.go#L37">internal/writers/spread_writer.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//internal/writers/spread_writer.go#L38">internal/writers/spread_writer.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/notify.go#L70">nsqadmin/notify.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/notify.go#L70">nsqadmin/notify.go</a></td>
+              <td>Send</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/nsqadmin_test.go#L59">nsqadmin/nsqadmin_test.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/nsqadmin_test.go#L96">nsqadmin/nsqadmin_test.go</a></td>
+              <td>Goroutine</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/nsqadmin.go#L41">nsqadmin/nsqadmin.go</a></td>
+              <td>Synchronous chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/nsqadmin.go#L171">nsqadmin/nsqadmin.go</a></td>
+              <td>Synchronous chan</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/nsqadmin.go#L178">nsqadmin/nsqadmin.go</a></td>
+              <td>Send</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/nsqadmin.go#L188">nsqadmin/nsqadmin.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/http_test.go#L56">nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/http_test.go#L81">nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/http_test.go#L105">nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/http_test.go#L123">nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqadmin/http_test.go#L628">nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>628</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/lookup.go#L108">nsqd/lookup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>108</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/lookup.go#L109">nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/lookup.go#L119">nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/lookup.go#L151">nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/lookup.go#L166">nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/statsd.go#L34">nsqd/statsd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>34</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/statsd.go#L35">nsqd/statsd.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/statsd.go#L37">nsqd/statsd.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel_test.go#L31">nsqd/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel_test.go#L53">nsqd/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel_test.go#L57">nsqd/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L88">nsqd/channel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L201">nsqd/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>201</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L202">nsqd/channel.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L221">nsqd/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>221</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L222">nsqd/channel.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L306">nsqd/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>306</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L307">nsqd/channel.go</a></td>
+              <td>Send</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/channel.go#L442">nsqd/channel.go</a></td>
+              <td>Goroutine</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/stats_test.go#L135">nsqd/stats_test.go</a></td>
+              <td>Goroutine</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/stats_test.go#L144">nsqd/stats_test.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L92">nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L93">nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L94">nsqd/nsqd.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>94</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L187">nsqd/nsqd.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>187</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L188">nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L231">nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L238">nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L263">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L547">nsqd/nsqd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>547</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L548">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>548</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L549">nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>549</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L582">nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L582">nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L582">nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L594">nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>594</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L608">nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>608</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L608">nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>608</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L608">nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>608</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L610">nsqd/nsqd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>610</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L611">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>611</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L620">nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>620</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L621">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>621</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L641">nsqd/nsqd.go</a></td>
+              <td>Unknown chan length</td>
+              <td>641</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L642">nsqd/nsqd.go</a></td>
+              <td>Unknown chan length</td>
+              <td>642</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L643">nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>643</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L652">nsqd/nsqd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>652</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L653">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>653</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L657">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>657</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L661">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>661</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L672">nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>672</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L677">nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>677</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd.go#L689">nsqd/nsqd.go</a></td>
+              <td>Close chan</td>
+              <td>689</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L206">nsqd/client_v2.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>206</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L207">nsqd/client_v2.go</a></td>
+              <td>Synchronous chan</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L214">nsqd/client_v2.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>214</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L215">nsqd/client_v2.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>215</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L277">nsqd/client_v2.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>277</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L278">nsqd/client_v2.go</a></td>
+              <td>Send</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L421">nsqd/client_v2.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>421</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/client_v2.go#L422">nsqd/client_v2.go</a></td>
+              <td>Send</td>
+              <td>422</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L50">nsqd/topic.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>50</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L51">nsqd/topic.go</a></td>
+              <td>Synchronous chan</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L52">nsqd/topic.go</a></td>
+              <td>Synchronous chan</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L55">nsqd/topic.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L61">nsqd/topic.go</a></td>
+              <td>Unknown chan length</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L91">nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>91</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L92">nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L112">nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>112</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L113">nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L114">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L171">nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>171</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L172">nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L173">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L177">nsqd/topic.go</a></td>
+              <td>Goroutine</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L225">nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>225</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L226">nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L256">nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>256</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L257">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L259">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L261">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L263">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L279">nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>279</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L280">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L281">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>281</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L287">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L302">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L311">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L404">nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>404</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L405">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L423">nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>423</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L424">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L476">nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>476</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L477">nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/topic.go#L478">nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>478</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L44">nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L57">nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L58">nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L59">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L61">nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L87">nsqd/nsqd_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>87</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L88">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L89">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L109">nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L110">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L121">nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L122">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L124">nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L143">nsqd/nsqd_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>143</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L144">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L145">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L156">nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L157">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L169">nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L171">nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L172">nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L173">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L175">nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L187">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L204">nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L205">nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/nsqd_test.go#L250">nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/http_test.go#L916">nsqd/http_test.go</a></td>
+              <td>Go in for</td>
+              <td>916</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/http_test.go#L916">nsqd/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>916</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L53">nsqd/protocol_v2.go</a></td>
+              <td>Synchronous chan</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L54">nsqd/protocol_v2.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L55">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L205">nsqd/protocol_v2.go</a></td>
+              <td>chan used as a param</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L263">nsqd/protocol_v2.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>263</td>
+              <td>8</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L264">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L275">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L276">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L279">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L300">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L305">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L324">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>324</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L337">nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2.go#L638">nsqd/protocol_v2.go</a></td>
+              <td>Send</td>
+              <td>638</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L48">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L165">nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L192">nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L192">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L199">nsqd/protocol_v2_test.go</a></td>
+              <td>Send</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L203">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L207">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L237">nsqd/protocol_v2_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>237</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L238">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L417">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>417</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1249">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1258">nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1259">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1262">nsqd/protocol_v2_test.go</a></td>
+              <td>Close chan</td>
+              <td>1262</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1268">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1654">nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1654</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1654">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1654</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1663">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1663</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1678">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1678</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1728">nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1728</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1728">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1728</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1737">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1737</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1752">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1752</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1806">nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1806</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1807">nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1807</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1811">nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1811</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1811">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1811</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1815">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1815</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1819">nsqd/protocol_v2_test.go</a></td>
+              <td>Close chan</td>
+              <td>1819</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1826">nsqd/protocol_v2_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>1826</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1826">nsqd/protocol_v2_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>1826</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1837">nsqd/protocol_v2_test.go</a></td>
+              <td>Send</td>
+              <td>1837</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1838">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1838</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1894">nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1894</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1895">nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1895</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1908">nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1908</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1908">nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1908</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1912">nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1912</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqd/protocol_v2_test.go#L1917">nsqd/protocol_v2_test.go</a></td>
+              <td>Close chan</td>
+              <td>1917</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/nsqlookupd.go#L55">nsqlookupd/nsqlookupd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/nsqlookupd.go#L62">nsqlookupd/nsqlookupd.go</a></td>
+              <td>Send</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/nsqlookupd.go#L74">nsqlookupd/nsqlookupd.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/lookup_protocol_v1_test.go#L45">nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/lookup_protocol_v1_test.go#L48">nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/lookup_protocol_v1_test.go#L51">nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/lookup_protocol_v1_test.go#L55">nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>55</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/lookup_protocol_v1_test.go#L56">nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/lookup_protocol_v1_test.go#L57">nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/nsqlookupd_test.go#L44">nsqlookupd/nsqlookupd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/http_test.go#L42">nsqlookupd/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob//nsqlookupd/http_test.go#L66">nsqlookupd/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 32 ,  90 ,
+     50 ,
+     56 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,1965 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : astaxie/beego ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/astaxie/beego/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> adapter/cache/cache ( 3 features, 1/7 featured file ) </li>
+          
+          <li> adapter/metric/metric ( 1 features, 1/2 featured file ) </li>
+          
+          <li> adapter/session/session ( 1 features, 1/11 featured file ) </li>
+          
+          <li> adapter/session/redis_sentinel/redis_sentinel ( 1 features, 1/2 featured file ) </li>
+          
+          <li> adapter/toolbox/toolbox ( 6 features, 1/7 featured file ) </li>
+          
+          <li> client/cache/cache ( 5 features, 2/6 featured file ) </li>
+          
+          <li> client/httplib/httplib ( 1 features, 1/3 featured file ) </li>
+          
+          <li> client/httplib/filter/prometheus/prometheus ( 1 features, 1/2 featured file ) </li>
+          
+          <li> client/orm/orm ( 1 features, 1/43 featured file ) </li>
+          
+          <li> client/orm/filter/prometheus/prometheus ( 1 features, 1/2 featured file ) </li>
+          
+          <li> core/config/etcd/etcd ( 1 features, 1/2 featured file ) </li>
+          
+          <li> core/logs/logs ( 24 features, 4/24 featured file ) </li>
+          
+          <li> server/web/web ( 17 features, 4/39 featured file ) </li>
+          
+          <li> server/web/filter/prometheus/prometheus ( 1 features, 1/2 featured file ) </li>
+          
+          <li> server/web/grace/grace ( 8 features, 2/2 featured file ) </li>
+          
+          <li> server/web/session/session ( 3 features, 2/9 featured file ) </li>
+          
+          <li> server/web/session/redis/redis ( 1 features, 1/2 featured file ) </li>
+          
+          <li> server/web/session/redis_sentinel/redis_sentinel ( 1 features, 1/2 featured file ) </li>
+          
+          <li> task/task ( 23 features, 2/4 featured file ) </li>
+          
+    <li> Num of Packages with features : 19/93</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>17 </td>
+      <td>19 </td>
+      <td>9</td>
+      <td>43</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>1</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>4 </td>
+      <td>0 </td>
+      <td>2 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>33.33333333333333%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>4 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/cache/cache_test.go#L35">adapter/cache/cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/cache/cache_test.go#L35">adapter/cache/cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>35</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/cache/cache_test.go#L35">adapter/cache/cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/metric/prometheus.go#L51">adapter/metric/prometheus.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/session/sess_mem_test.go#L32">adapter/session/sess_mem_test.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/session/redis_sentinel/sess_redis_sentinel_test.go#L27">adapter/session/redis_sentinel/sess_redis_sentinel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/toolbox/task_test.go#L53">adapter/toolbox/task_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/toolbox/task_test.go#L54">adapter/toolbox/task_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/toolbox/task_test.go#L56">adapter/toolbox/task_test.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/toolbox/task_test.go#L61">adapter/toolbox/task_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/toolbox/task_test.go#L62">adapter/toolbox/task_test.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//adapter/toolbox/task_test.go#L64">adapter/toolbox/task_test.go</a></td>
+              <td>Send</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/cache/memory.go#L220">client/cache/memory.go</a></td>
+              <td>Goroutine</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/cache/memory.go#L234">client/cache/memory.go</a></td>
+              <td>Receive</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/cache/cache_test.go#L36">client/cache/cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/cache/cache_test.go#L36">client/cache/cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>36</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/cache/cache_test.go#L36">client/cache/cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/httplib/httplib.go#L409">client/httplib/httplib.go</a></td>
+              <td>Goroutine</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/httplib/filter/prometheus/filter.go#L52">client/httplib/filter/prometheus/filter.go</a></td>
+              <td>Goroutine</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/orm/db_alias.go#L536">client/orm/db_alias.go</a></td>
+              <td>Goroutine</td>
+              <td>536</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//client/orm/filter/prometheus/filter.go#L63">client/orm/filter/prometheus/filter.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/config/etcd/config.go#L128">core/config/etcd/config.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/conn_test.go#L28">core/logs/conn_test.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/conn_test.go#L39">core/logs/conn_test.go</a></td>
+              <td>Send</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/conn_test.go#L54">core/logs/conn_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/conn_test.go#L61">core/logs/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/conn_test.go#L70">core/logs/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/conn_test.go#L77">core/logs/conn_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>77</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/conn_test.go#L78">core/logs/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/file.go#L245">core/logs/file.go</a></td>
+              <td>Goroutine</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/file.go#L247">core/logs/file.go</a></td>
+              <td>Goroutine</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/file.go#L263">core/logs/file.go</a></td>
+              <td>Receive</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/file.go#L278">core/logs/file.go</a></td>
+              <td>Receive</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/file.go#L375">core/logs/file.go</a></td>
+              <td>Goroutine</td>
+              <td>375</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/file_test.go#L429">core/logs/file_test.go</a></td>
+              <td>Go in for</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/file_test.go#L429">core/logs/file_test.go</a></td>
+              <td>Goroutine</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L150">core/logs/log.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>150</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L166">core/logs/log.go</a></td>
+              <td>Unknown chan length</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L173">core/logs/log.go</a></td>
+              <td>Goroutine</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L314">core/logs/log.go</a></td>
+              <td>Send</td>
+              <td>314</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L361">core/logs/log.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>361</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L362">core/logs/log.go</a></td>
+              <td>Receive</td>
+              <td>362</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L365">core/logs/log.go</a></td>
+              <td>Receive</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L568">core/logs/log.go</a></td>
+              <td>Send</td>
+              <td>568</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L579">core/logs/log.go</a></td>
+              <td>Send</td>
+              <td>579</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//core/logs/log.go#L605">core/logs/log.go</a></td>
+              <td>Receive</td>
+              <td>605</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/hooks.go#L72">server/web/hooks.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/admin.go#L123">server/web/admin.go</a></td>
+              <td>Goroutine</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/router.go#L938">server/web/router.go</a></td>
+              <td>Goroutine</td>
+              <td>938</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L98">server/web/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>98</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L98">server/web/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>98</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L145">server/web/server.go</a></td>
+              <td>Goroutine</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L176">server/web/server.go</a></td>
+              <td>Send</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L180">server/web/server.go</a></td>
+              <td>Goroutine</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L191">server/web/server.go</a></td>
+              <td>Send</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L194">server/web/server.go</a></td>
+              <td>Receive</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L200">server/web/server.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L233">server/web/server.go</a></td>
+              <td>Send</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L239">server/web/server.go</a></td>
+              <td>Goroutine</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L247">server/web/server.go</a></td>
+              <td>Send</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L253">server/web/server.go</a></td>
+              <td>Send</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L260">server/web/server.go</a></td>
+              <td>Send</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/server.go#L265">server/web/server.go</a></td>
+              <td>Receive</td>
+              <td>265</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/filter/prometheus/filter.go#L56">server/web/filter/prometheus/filter.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/grace.go#L125">server/web/grace/grace.go</a></td>
+              <td>Synchronous chan</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/grace.go#L141">server/web/grace/grace.go</a></td>
+              <td>Synchronous chan</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/server.go#L49">server/web/grace/server.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/server.go#L64">server/web/grace/server.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/server.go#L116">server/web/grace/server.go</a></td>
+              <td>Goroutine</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/server.go#L171">server/web/grace/server.go</a></td>
+              <td>Goroutine</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/server.go#L248">server/web/grace/server.go</a></td>
+              <td>Receive</td>
+              <td>248</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/grace/server.go#L295">server/web/grace/server.go</a></td>
+              <td>Send</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/session/sess_mem_test.go#L32">server/web/session/sess_mem_test.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/session/sess_mem.go#L99">server/web/session/sess_mem.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/session/sess_mem.go#L126">server/web/session/sess_mem.go</a></td>
+              <td>Goroutine</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/session/redis/sess_redis_test.go#L38">server/web/session/redis/sess_redis_test.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//server/web/session/redis_sentinel/sess_redis_sentinel_test.go#L31">server/web/session/redis_sentinel/sess_redis_sentinel_test.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L58">task/task_test.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L61">task/task_test.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L84">task/task_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>84</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L85">task/task_test.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L87">task/task_test.go</a></td>
+              <td>Receive</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L111">task/task_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L112">task/task_test.go</a></td>
+              <td>Goroutine</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task_test.go#L114">task/task_test.go</a></td>
+              <td>Send</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L450">task/task.go</a></td>
+              <td>Goroutine</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L475">task/task.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>475</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L476">task/task.go</a></td>
+              <td>Receive</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L482">task/task.go</a></td>
+              <td>Go in for</td>
+              <td>482</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L482">task/task.go</a></td>
+              <td>Goroutine</td>
+              <td>482</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L487">task/task.go</a></td>
+              <td>Receive</td>
+              <td>487</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L495">task/task.go</a></td>
+              <td>Receive</td>
+              <td>495</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L508">task/task.go</a></td>
+              <td>Goroutine</td>
+              <td>508</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L509">task/task.go</a></td>
+              <td>Send</td>
+              <td>509</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L525">task/task.go</a></td>
+              <td>Goroutine</td>
+              <td>525</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L526">task/task.go</a></td>
+              <td>Send</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L544">task/task.go</a></td>
+              <td>Goroutine</td>
+              <td>544</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L545">task/task.go</a></td>
+              <td>Send</td>
+              <td>545</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L562">task/task.go</a></td>
+              <td>Goroutine</td>
+              <td>562</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/astaxie/beego/blob//task/task.go#L563">task/task.go</a></td>
+              <td>Send</td>
+              <td>563</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 17 ,  19 ,
+     9 ,
+     43 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

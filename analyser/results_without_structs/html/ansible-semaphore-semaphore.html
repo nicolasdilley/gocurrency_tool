@@ -1,0 +1,732 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : ansible-semaphore/semaphore ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/ansible-semaphore/semaphore/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> api/sockets/sockets ( 17 features, 2/2 featured file ) </li>
+          
+          <li> api/tasks/tasks ( 18 features, 4/7 featured file ) </li>
+          
+          <li> cli/cmd/cmd ( 2 features, 1/11 featured file ) </li>
+          
+    <li> Num of Packages with features : 3/16</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>9 </td>
+      <td>8 </td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>0</td>
+      <td>28.57142857142857%</td>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>3 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L25">api/sockets/pool.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L26">api/sockets/pool.go</a></td>
+              <td>Synchronous chan</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L27">api/sockets/pool.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L34">api/sockets/pool.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>34</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L35">api/sockets/pool.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L37">api/sockets/pool.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L42">api/sockets/pool.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L48">api/sockets/pool.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>48</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/pool.go#L49">api/sockets/pool.go</a></td>
+              <td>Send</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L46">api/sockets/handler.go</a></td>
+              <td>Send</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L86">api/sockets/handler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>86</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L87">api/sockets/handler.go</a></td>
+              <td>Receive</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L96">api/sockets/handler.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L114">api/sockets/handler.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>114</td>
+              <td>256</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L119">api/sockets/handler.go</a></td>
+              <td>Send</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L121">api/sockets/handler.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/sockets/handler.go#L127">api/sockets/handler.go</a></td>
+              <td>Send</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/logging.go#L31">api/tasks/logging.go</a></td>
+              <td>Send</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/logging.go#L71">api/tasks/logging.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/logging.go#L72">api/tasks/logging.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/http.go#L38">api/tasks/http.go</a></td>
+              <td>Send</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L35">api/tasks/pool.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L40">api/tasks/pool.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>40</td>
+              <td>10000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L43">api/tasks/pool.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L71">api/tasks/pool.go</a></td>
+              <td>Close chan</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L76">api/tasks/pool.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L110">api/tasks/pool.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>110</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L111">api/tasks/pool.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L121">api/tasks/pool.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L128">api/tasks/pool.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L147">api/tasks/pool.go</a></td>
+              <td>Send</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L149">api/tasks/pool.go</a></td>
+              <td>Goroutine</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/pool.go#L152">api/tasks/pool.go</a></td>
+              <td>Goroutine</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/runner.go#L133">api/tasks/runner.go</a></td>
+              <td>Send</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//api/tasks/runner.go#L209">api/tasks/runner.go</a></td>
+              <td>Send</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//cli/cmd/root.go#L75">cli/cmd/root.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/ansible-semaphore/semaphore/blob//cli/cmd/root.go#L76">cli/cmd/root.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 9 ,  8 ,
+     7 ,
+     8 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

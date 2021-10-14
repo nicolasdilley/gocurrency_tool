@@ -1,0 +1,1786 @@
+Line num,0
+packages num,74,273
+files num,141,1481
+Average Line num per featured file,65854
+pkg/abi/abi,68
+pkg/abi/linux/linux,4393
+pkg/abi/linux/errno/errno,149
+pkg/amutex/amutex,117
+pkg/atomicbitops/atomicbitops,341
+pkg/binary/binary,410
+pkg/bitmap/bitmap,419
+pkg/bits/bits,177
+pkg/bpf/bpf,1778
+pkg/buffer/buffer,1442
+pkg/cleanup/cleanup,68
+pkg/compressio/compressio,709
+pkg/context/context,76
+pkg/control/client/client,12
+pkg/control/server/server,87
+pkg/coverage/coverage,171
+pkg/cpuid/cpuid,1331
+pkg/crypto/crypto,13
+pkg/errors/errors,16
+pkg/errors/linuxerr/linuxerr_test,593
+pkg/eventchannel/eventchannel,333
+pkg/fd/fd,254
+pkg/fdchannel/fdchannel,181
+pkg/fdnotifier/fdnotifier,167
+pkg/flipcall/flipcall,965
+pkg/fspath/fspath,314
+pkg/gohacks/gohacks,95
+pkg/goid/goid,85
+pkg/hostarch/hostarch,497
+pkg/ilist/ilist,307
+pkg/linewriter/linewriter,96
+pkg/log/log,447
+pkg/marshal/marshal,64
+pkg/marshal/primitive/primitive,213
+pkg/memutil/memutil,32
+pkg/merkletree/merkletree,1166
+pkg/metric/metric,723
+pkg/p9/p9,6618
+pkg/p9/p9test/p9test,1854
+pkg/pool/pool,71
+pkg/procid/procid,51
+pkg/rand/rand,49
+pkg/refs/refs,395
+pkg/refsvfs2/refs_template,164
+pkg/ring0/ring0,1041
+pkg/ring0/gen_offsets/main,7
+pkg/ring0/pagetables/pagetables,1147
+pkg/safecopy/safecopy,742
+pkg/safemem/safemem,952
+pkg/seccomp/main,1568
+pkg/secio/secio,161
+pkg/segment/segment,1155
+pkg/sentry/arch/arch,1457
+pkg/sentry/arch/fpu/fpu,177
+pkg/sentry/contexttest/contexttest,113
+pkg/sentry/control/control,915
+pkg/sentry/device/device,176
+pkg/sentry/devices/memdev/memdev,228
+pkg/sentry/devices/ttydev/ttydev,24
+pkg/sentry/devices/tundev/tundev,118
+pkg/sentry/fdimport/fdimport,105
+pkg/sentry/fs/fs_test,6709
+pkg/sentry/fs/anon/anon,26
+pkg/sentry/fs/dev/dev,492
+pkg/sentry/fs/fdpipe/fdpipe,1051
+pkg/sentry/fs/filetest/filetest,35
+pkg/sentry/fs/fsutil/fsutil,2205
+pkg/sentry/fs/gofer/gofer,2492
+pkg/sentry/fs/host/host,1718
+pkg/sentry/fs/lock/lock,1232
+pkg/sentry/fs/proc/proc,3263
+pkg/sentry/fs/proc/device/device,5
+pkg/sentry/fs/proc/seqfile/seqfile,373
+pkg/sentry/fs/ramfs/ramfs,565
+pkg/sentry/fs/sys/sys,133
+pkg/sentry/fs/timerfd/timerfd,88
+pkg/sentry/fs/tmpfs/tmpfs,843
+pkg/sentry/fs/tty/tty,989
+pkg/sentry/fs/user/user,431
+pkg/sentry/fsbridge/fsbridge,233
+pkg/sentry/fsimpl/cgroupfs/cgroupfs,706
+pkg/sentry/fsimpl/devpts/devpts,1030
+pkg/sentry/fsimpl/devtmpfs/devtmpfs,350
+pkg/sentry/fsimpl/eventfd/eventfd,262
+pkg/sentry/fsimpl/fuse/fuse,2059
+pkg/sentry/fsimpl/gofer/gofer,4957
+pkg/sentry/fsimpl/host/host,1374
+pkg/sentry/fsimpl/kernfs/kernfs_test,2369
+pkg/sentry/fsimpl/overlay/overlay,2905
+pkg/sentry/fsimpl/pipefs/pipefs,116
+pkg/sentry/fsimpl/proc/proc,3371
+pkg/sentry/fsimpl/signalfd/signalfd,85
+pkg/sentry/fsimpl/sockfs/sockfs,67
+pkg/sentry/fsimpl/sys/sys_test,304
+pkg/sentry/fsimpl/testutil/testutil,333
+pkg/sentry/fsimpl/timerfd/timerfd,88
+pkg/sentry/fsimpl/tmpfs/tmpfs,3214
+pkg/sentry/fsimpl/verity/verity,2819
+pkg/sentry/fsmetric/fsmetric,37
+pkg/sentry/hostcpu/hostcpu,71
+pkg/sentry/hostfd/hostfd,115
+pkg/sentry/hostmm/hostmm,209
+pkg/sentry/inet/inet,250
+pkg/sentry/kernel/kernel,10466
+pkg/sentry/kernel/auth/auth,508
+pkg/sentry/kernel/contexttest/contexttest,18
+pkg/sentry/kernel/epoll/epoll,306
+pkg/sentry/kernel/eventfd/eventfd,236
+pkg/sentry/kernel/fasync/fasync,161
+pkg/sentry/kernel/futex/futex,858
+pkg/sentry/kernel/ipc/ipc,170
+pkg/sentry/kernel/memevent/memevent,67
+pkg/sentry/kernel/msgqueue/msgqueue,350
+pkg/sentry/kernel/pipe/pipe,1164
+pkg/sentry/kernel/sched/sched,88
+pkg/sentry/kernel/semaphore/semaphore,596
+pkg/sentry/kernel/shm/shm,363
+pkg/sentry/kernel/signalfd/signalfd,84
+pkg/sentry/kernel/time/time,444
+pkg/sentry/limits/limits,189
+pkg/sentry/loader/loader,1004
+pkg/sentry/loader/vdsodata/vdsodata,1
+pkg/sentry/memmap/memmap,433
+pkg/sentry/mm/mm,3976
+pkg/sentry/pgalloc/pgalloc,1180
+pkg/sentry/platform/platform,173
+pkg/sentry/platform/interrupt/interrupt,115
+pkg/sentry/platform/kvm/kvm,3426
+pkg/sentry/platform/kvm/testutil/testutil,176
+pkg/sentry/platform/ptrace/ptrace,1230
+pkg/sentry/sighandling/sighandling,64
+pkg/sentry/socket/socket,473
+pkg/sentry/socket/control/control,606
+pkg/sentry/socket/hostinet/hostinet,1256
+pkg/sentry/socket/netfilter/netfilter,1553
+pkg/sentry/socket/netlink/message_test,1147
+pkg/sentry/socket/netlink/port/port,113
+pkg/sentry/socket/netlink/route/route,421
+pkg/sentry/socket/netlink/uevent/uevent,25
+pkg/sentry/socket/netstack/netstack,3370
+pkg/sentry/socket/unix/unix,893
+pkg/sentry/socket/unix/transport/transport,1189
+pkg/sentry/state/state,109
+pkg/sentry/strace/strace,2776
+pkg/sentry/syscalls/syscalls,181
+pkg/sentry/syscalls/linux/linux,9642
+pkg/sentry/syscalls/linux/vfs2/vfs2,5316
+pkg/sentry/time/time,1110
+pkg/sentry/unimpl/unimpl,20
+pkg/sentry/uniqueid/uniqueid,20
+pkg/sentry/usage/usage,216
+pkg/sentry/vfs/vfs,5104
+pkg/sentry/vfs/genericfstree/genericfstree,48
+pkg/sentry/vfs/memxattr/memxattr,80
+pkg/sentry/watchdog/watchdog,225
+pkg/shim/shim,1178
+pkg/shim/proc/proc,1142
+pkg/shim/runsc/runsc,492
+pkg/shim/runtimeoptions/runtimeoptions,380
+pkg/shim/utils/utils,519
+pkg/sleep/sleep,558
+pkg/state/state,1473
+pkg/state/pretty/pretty,255
+pkg/state/statefile/statefile,365
+pkg/state/wire/wire,668
+pkg/sync/sync,946
+pkg/sync/atomicptr/seqatomic,44
+pkg/sync/atomicptrmap/atomicptrmap,869
+pkg/sync/seqatomic/seqatomic,129
+pkg/syncevent/syncevent,928
+pkg/syserr/syserr,365
+pkg/tcpip/tcpip_test,2192
+pkg/tcpip/adapters/gonet/gonet,1071
+pkg/tcpip/buffer/buffer_test,836
+pkg/tcpip/checker/checker,1193
+pkg/tcpip/faketime/faketime_test,290
+pkg/tcpip/hash/jenkins/jenkins,178
+pkg/tcpip/header/header_test,7307
+pkg/tcpip/header/parse/parse,105
+pkg/tcpip/internal/tcp/tcp,19
+pkg/tcpip/link/channel/channel,188
+pkg/tcpip/link/ethernet/ethernet_test,114
+pkg/tcpip/link/fdbased/fdbased,1402
+pkg/tcpip/link/loopback/loopback,49
+pkg/tcpip/link/muxed/muxed,163
+pkg/tcpip/link/nested/nested_test,169
+pkg/tcpip/link/packetsocket/packetsocket,24
+pkg/tcpip/link/pipe/pipe,70
+pkg/tcpip/link/qdisc/fifo/fifo,196
+pkg/tcpip/link/rawfile/rawfile,259
+pkg/tcpip/link/sharedmem/sharedmem,1030
+pkg/tcpip/link/sharedmem/pipe/pipe,530
+pkg/tcpip/link/sharedmem/queue/queue,583
+pkg/tcpip/link/sniffer/sniffer,344
+pkg/tcpip/link/tun/tun,333
+pkg/tcpip/link/waitable/waitable,208
+pkg/tcpip/network/ip_test,2824
+pkg/tcpip/network/arp/arp_test,928
+pkg/tcpip/network/hash/hash,58
+pkg/tcpip/network/internal/fragmentation/fragmentation,1087
+pkg/tcpip/network/internal/ip/ip_test,1460
+pkg/tcpip/network/internal/testutil/testutil,72
+pkg/tcpip/network/ipv4/ipv4_test,5240
+pkg/tcpip/network/ipv6/ipv6_test,9260
+pkg/tcpip/ports/ports,912
+pkg/tcpip/sample/tun_tcp_connect/main,139
+pkg/tcpip/sample/tun_tcp_echo/main,168
+pkg/tcpip/seqnum/seqnum,27
+pkg/tcpip/stack/stack_test,20078
+pkg/tcpip/testutil/testutil,164
+pkg/tcpip/transport/icmp/icmp_test,888
+pkg/tcpip/transport/packet/packet,352
+pkg/tcpip/transport/raw/raw,504
+pkg/tcpip/transport/tcp/rcv_test,15482
+pkg/tcpip/transport/tcp/testing/context/context,833
+pkg/tcpip/transport/tcpconntrack/tcpconntrack_test,577
+pkg/tcpip/transport/udp/udp_test,3144
+pkg/unet/unet,1093
+pkg/urpc/urpc,550
+pkg/usermem/usermem,756
+pkg/waiter/waiter,231
+runsc/main,9
+runsc/boot/boot,4415
+runsc/boot/filter/filter,766
+runsc/boot/platforms/platforms,9
+runsc/boot/pprof/pprof,3
+runsc/cgroup/cgroup,1395
+runsc/cli/cli,176
+runsc/cmd/cmd,4291
+runsc/config/config,672
+runsc/console/console,38
+runsc/container/container,5728
+runsc/flag/flag,19
+runsc/fsgofer/fsgofer,2030
+runsc/fsgofer/filter/filter,341
+runsc/mitigate/mitigate,615
+runsc/sandbox/sandbox,1295
+runsc/specutils/specutils,1063
+runsc/specutils/safemount_test/main,114
+runsc/specutils/seccomp/seccomp,536
+shim/main,7
+shim/cli/cli,8
+tools/bigquery/bigquery,154
+tools/checkescape/checkescape,580
+tools/checkescape/test1/test1,77
+tools/checkescape/test2/test2,39
+tools/checklinkname/checklinkname,201
+tools/checklocks/checklocks,1183
+tools/checkunsafe/checkunsafe,29
+tools/constraintutil/constraintutil,234
+tools/github/main,121
+tools/github/reviver/reviver,396
+tools/go_generics/main,310
+tools/go_generics/globals/globals,469
+tools/go_generics/go_merge/main,119
+tools/go_generics/rules_tests/template,53
+tools/go_marshal/main,42
+tools/go_marshal/analysis/analysis,97
+tools/go_marshal/gomarshal/gomarshal,1980
+tools/go_stateify/main,332
+tools/nogo/nogo,1110
+tools/nogo/check/main,80
+tools/nogo/filter/main,139
+tools/nogo/objdump/objdump,57
+tools/parsers/main,353
+tools/verity/main,106
+tools/worker/worker,223
+tools/yamltest/main,102
+webhook/main,7
+webhook/pkg/cli/cli,82
+webhook/pkg/injector/injector,160
+website/cmd/server/main,232
+website/cmd/syscalldocs/main,192
+Filename, #,Concurrent Type, Line number , Number
+pkg/amutex/amutex_test.go,5,Go in for,58,
+pkg/amutex/amutex_test.go,7,Goroutine in for with constant (constant),58,1000
+pkg/amutex/amutex_test.go,1,Goroutine,58,
+pkg/amutex/amutex_test.go,8,Known chan length (length),84,1
+pkg/amutex/amutex_test.go,1,Goroutine,85,
+pkg/amutex/amutex_test.go,3,Send,87,
+pkg/amutex/amutex_test.go,3,Send,94,
+pkg/amutex/amutex.go,20,Receive only chan (<-chan),37,
+pkg/amutex/amutex.go,16,Select (number of branch),39,2
+pkg/amutex/amutex.go,2,Receive,40,
+pkg/amutex/amutex.go,2,Receive,43,
+pkg/amutex/amutex.go,8,Known chan length (length),59,1
+pkg/amutex/amutex.go,16,Select (number of branch),90,2
+pkg/amutex/amutex.go,2,Receive,91,
+pkg/amutex/amutex.go,2,Receive,92,
+pkg/amutex/amutex.go,17,Select with default (number of branch),109,2
+pkg/amutex/amutex.go,3,Send,110,
+pkg/atomicbitops/atomicbitops_test.go,5,Go in for,33,
+pkg/atomicbitops/atomicbitops_test.go,7,Goroutine in for with constant (constant),33,32
+pkg/atomicbitops/atomicbitops_test.go,1,Goroutine,33,
+pkg/atomicbitops/atomicbitops_test.go,5,Go in for,53,
+pkg/atomicbitops/atomicbitops_test.go,7,Goroutine in for with constant (constant),53,64
+pkg/atomicbitops/atomicbitops_test.go,1,Goroutine,53,
+pkg/compressio/compressio.go,3,Send,158,
+pkg/compressio/compressio.go,3,Send,164,
+pkg/compressio/compressio.go,3,Send,168,
+pkg/compressio/compressio.go,3,Send,190,
+pkg/compressio/compressio.go,3,Send,200,
+pkg/compressio/compressio.go,3,Send,206,
+pkg/compressio/compressio.go,5,Go in for,292,
+pkg/compressio/compressio.go,1,Goroutine,292,
+pkg/compressio/compressio.go,16,Select (number of branch),342,2
+pkg/compressio/compressio.go,3,Send,343,
+pkg/compressio/compressio.go,2,Receive,346,
+pkg/control/server/server.go,1,Goroutine,88,
+pkg/fdchannel/fdchannel_test.go,1,Goroutine,124,
+pkg/fdnotifier/fdnotifier.go,1,Goroutine,64,
+pkg/flipcall/flipcall_example_test.go,1,Goroutine,54,
+pkg/flipcall/flipcall_test.go,1,Goroutine,71,
+pkg/flipcall/flipcall_test.go,1,Goroutine,156,
+pkg/flipcall/flipcall_test.go,1,Goroutine,209,
+pkg/flipcall/flipcall_test.go,1,Goroutine,239,
+pkg/flipcall/flipcall_test.go,1,Goroutine,277,
+pkg/flipcall/flipcall_test.go,1,Goroutine,318,
+pkg/flipcall/flipcall_test.go,1,Goroutine,364,
+pkg/goid/goid_test.go,4,Synchronous chan,39,
+pkg/goid/goid_test.go,4,Synchronous chan,39,
+pkg/goid/goid_test.go,5,Go in for,43,
+pkg/goid/goid_test.go,7,Goroutine in for with constant (constant),43,5000
+pkg/goid/goid_test.go,1,Goroutine,43,
+pkg/goid/goid_test.go,2,Receive,60,
+pkg/goid/goid_test.go,17,Select with default (number of branch),64,2
+pkg/goid/goid_test.go,2,Receive,65,
+pkg/goid/goid_test.go,15,Close chan,80,
+pkg/p9/transport_test.go,1,Goroutine,196,
+pkg/p9/client_test.go,1,Goroutine,35,
+pkg/p9/client_test.go,1,Goroutine,76,
+pkg/p9/client.go,8,Known chan length (length),161,1
+pkg/p9/client.go,1,Goroutine,231,
+pkg/p9/client.go,3,Send,391,
+pkg/p9/client.go,3,Send,405,
+pkg/p9/client.go,22,chan used as a param,410,
+pkg/p9/client.go,16,Select (number of branch),412,2
+pkg/p9/client.go,2,Receive,413,
+pkg/p9/client.go,3,Send,415,
+pkg/p9/client.go,17,Select with default (number of branch),416,2
+pkg/p9/client.go,2,Receive,417,
+pkg/p9/client.go,2,Receive,420,
+pkg/p9/client.go,2,Receive,427,
+pkg/p9/server.go,2,Receive,407,
+pkg/p9/server.go,5,Go in for,456,
+pkg/p9/server.go,4,Synchronous chan,429,
+pkg/p9/server.go,1,Goroutine,456,
+pkg/p9/server.go,1,Goroutine,556,
+pkg/p9/server.go,5,Go in for,681,
+pkg/p9/server.go,1,Goroutine,681,
+pkg/p9/messages.go,17,Select with default (number of branch),2662,2
+pkg/p9/messages.go,2,Receive,2663,
+pkg/p9/messages.go,17,Select with default (number of branch),2679,2
+pkg/p9/messages.go,3,Send,2680,
+pkg/p9/p9test/p9test.go,1,Goroutine,312,
+pkg/p9/p9test/client_test.go,8,Known chan length (length),1831,1
+pkg/p9/p9test/client_test.go,8,Known chan length (length),1832,1
+pkg/p9/p9test/client_test.go,1,Goroutine,1839,
+pkg/p9/p9test/client_test.go,3,Send,1842,
+pkg/p9/p9test/client_test.go,1,Goroutine,1846,
+pkg/p9/p9test/client_test.go,3,Send,1849,
+pkg/p9/p9test/client_test.go,16,Select (number of branch),1865,2
+pkg/p9/p9test/client_test.go,2,Receive,1866,
+pkg/p9/p9test/client_test.go,2,Receive,1868,
+pkg/p9/p9test/client_test.go,16,Select (number of branch),1873,2
+pkg/p9/p9test/client_test.go,2,Receive,1874,
+pkg/p9/p9test/client_test.go,2,Receive,1880,
+pkg/p9/p9test/client_test.go,5,Go in for,2246,
+pkg/p9/p9test/client_test.go,7,Goroutine in for with constant (constant),2246,10
+pkg/p9/p9test/client_test.go,1,Goroutine,2246,
+pkg/procid/procid_test.go,8,Known chan length (length),27,10
+pkg/procid/procid_test.go,3,Send,60,
+pkg/procid/procid_test.go,5,Go in for,66,
+pkg/procid/procid_test.go,1,Goroutine,66,
+pkg/procid/procid_test.go,1,Goroutine,77,
+pkg/procid/procid_test.go,6,Range over chan,83,
+pkg/sentry/control/pprof.go,16,Select (number of branch),94,2
+pkg/sentry/control/pprof.go,2,Receive,95,
+pkg/sentry/control/pprof.go,2,Receive,96,
+pkg/sentry/control/pprof.go,16,Select (number of branch),123,2
+pkg/sentry/control/pprof.go,2,Receive,124,
+pkg/sentry/control/pprof.go,2,Receive,125,
+pkg/sentry/control/pprof.go,16,Select (number of branch),191,2
+pkg/sentry/control/pprof.go,2,Receive,192,
+pkg/sentry/control/pprof.go,2,Receive,193,
+pkg/sentry/control/pprof.go,16,Select (number of branch),233,2
+pkg/sentry/control/pprof.go,2,Receive,234,
+pkg/sentry/control/pprof.go,2,Receive,235,
+pkg/sentry/control/pprof.go,16,Select (number of branch),276,2
+pkg/sentry/control/pprof.go,2,Receive,277,
+pkg/sentry/control/pprof.go,2,Receive,278,
+pkg/sentry/fs/fs.go,8,Known chan length (length),71,1
+pkg/sentry/fs/fs.go,1,Goroutine,86,
+pkg/sentry/fs/fs.go,1,Goroutine,102,
+pkg/sentry/fs/fs.go,8,Known chan length (length),116,1
+pkg/sentry/fs/fs.go,1,Goroutine,117,
+pkg/sentry/fs/fs.go,3,Send,119,
+pkg/sentry/fs/fs.go,16,Select (number of branch),121,2
+pkg/sentry/fs/fs.go,2,Receive,122,
+pkg/sentry/fs/fs.go,17,Select with default (number of branch),123,2
+pkg/sentry/fs/fs.go,2,Receive,124,
+pkg/sentry/fs/fs.go,2,Receive,129,
+pkg/sentry/fs/fs.go,17,Select with default (number of branch),140,2
+pkg/sentry/fs/fs.go,3,Send,141,
+pkg/sentry/fs/copy_up_test.go,5,Go in for,65,
+pkg/sentry/fs/copy_up_test.go,7,Goroutine in for with constant (constant),65,4
+pkg/sentry/fs/copy_up_test.go,1,Goroutine,65,
+pkg/sentry/fs/fdpipe/pipe_opener.go,16,Select (number of branch),58,2
+pkg/sentry/fs/fdpipe/pipe_opener.go,2,Receive,59,
+pkg/sentry/fs/fdpipe/pipe_opener.go,2,Receive,68,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,5,Go in for,248,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,10,Make chan in for,247,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,8,Known chan length (length),247,1
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,1,Goroutine,248,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,3,Send,257,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,3,Send,265,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,2,Receive,285,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,5,Go in for,441,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,10,Make chan in for,440,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,8,Known chan length (length),440,1
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,1,Goroutine,441,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,3,Send,454,
+pkg/sentry/fs/fdpipe/pipe_opener_test.go,2,Receive,470,
+pkg/sentry/fs/host/wait_test.go,16,Select (number of branch),64,2
+pkg/sentry/fs/host/wait_test.go,2,Receive,65,
+pkg/sentry/fs/host/wait_test.go,2,Receive,66,
+pkg/sentry/fsimpl/eventfd/eventfd_test.go,17,Select with default (number of branch),66,2
+pkg/sentry/fsimpl/eventfd/eventfd_test.go,2,Receive,67,
+pkg/sentry/fsimpl/fuse/connection_test.go,17,Select with default (number of branch),42,2
+pkg/sentry/fsimpl/fuse/connection_test.go,2,Receive,43,
+pkg/sentry/fsimpl/fuse/connection_test.go,17,Select with default (number of branch),50,2
+pkg/sentry/fsimpl/fuse/connection_test.go,2,Receive,51,
+pkg/sentry/fsimpl/fuse/connection_test.go,17,Select with default (number of branch),91,2
+pkg/sentry/fsimpl/fuse/connection_test.go,2,Receive,92,
+pkg/sentry/fsimpl/fuse/connection.go,17,Select with default (number of branch),180,2
+pkg/sentry/fsimpl/fuse/connection.go,2,Receive,181,
+pkg/sentry/fsimpl/fuse/connection.go,8,Known chan length (length),189,1
+pkg/sentry/fsimpl/fuse/connection.go,9,Unknown chan length,206,
+pkg/sentry/fsimpl/fuse/dev.go,9,Unknown chan length,106,
+pkg/sentry/fsimpl/fuse/dev.go,17,Select with default (number of branch),408,2
+pkg/sentry/fsimpl/fuse/dev.go,3,Send,409,
+pkg/sentry/fsimpl/fuse/dev_test.go,5,Go in for,104,
+pkg/sentry/fsimpl/fuse/dev_test.go,1,Goroutine,104,
+pkg/sentry/fsimpl/fuse/dev_test.go,5,Go in for,113,
+pkg/sentry/fsimpl/fuse/dev_test.go,1,Goroutine,113,
+pkg/sentry/fsimpl/fuse/dev_test.go,2,Receive,122,
+pkg/sentry/fsimpl/fuse/dev_test.go,3,Send,127,
+pkg/sentry/fsimpl/fuse/dev_test.go,2,Receive,132,
+pkg/sentry/fsimpl/fuse/dev_test.go,16,Select (number of branch),147,1
+pkg/sentry/fsimpl/fuse/dev_test.go,2,Receive,148,
+pkg/sentry/fsimpl/fuse/dev_test.go,16,Select (number of branch),163,1
+pkg/sentry/fsimpl/fuse/dev_test.go,2,Receive,164,
+pkg/sentry/fsimpl/fuse/dev_test.go,22,chan used as a param,175,
+pkg/sentry/fsimpl/fuse/dev_test.go,16,Select (number of branch),195,2
+pkg/sentry/fsimpl/fuse/dev_test.go,2,Receive,196,
+pkg/sentry/fsimpl/fuse/dev_test.go,2,Receive,197,
+pkg/sentry/fsimpl/fuse/dev_test.go,22,chan used as a param,210,
+pkg/sentry/fsimpl/fuse/dev_test.go,3,Send,211,
+pkg/sentry/fsimpl/fuse/dev_test.go,22,chan used as a param,254,
+pkg/sentry/fsimpl/fuse/dev_test.go,3,Send,255,
+pkg/sentry/fsimpl/gofer/host_named_pipe.go,16,Select (number of branch),105,2
+pkg/sentry/fsimpl/gofer/host_named_pipe.go,2,Receive,106,
+pkg/sentry/fsimpl/gofer/host_named_pipe.go,2,Receive,109,
+pkg/sentry/fsimpl/tmpfs/pipe_test.go,4,Synchronous chan,45,
+pkg/sentry/fsimpl/tmpfs/pipe_test.go,1,Goroutine,46,
+pkg/sentry/fsimpl/tmpfs/pipe_test.go,3,Send,49,
+pkg/sentry/fsimpl/tmpfs/pipe_test.go,2,Receive,60,
+pkg/sentry/hostmm/hostmm.go,4,Synchronous chan,76,
+pkg/sentry/hostmm/hostmm.go,1,Goroutine,77,
+pkg/sentry/hostmm/hostmm.go,15,Close chan,97,
+pkg/sentry/hostmm/hostmm.go,2,Receive,120,
+pkg/sentry/kernel/timekeeper.go,4,Synchronous chan,214,
+pkg/sentry/kernel/timekeeper.go,1,Goroutine,224,
+pkg/sentry/kernel/timekeeper.go,16,Select (number of branch),254,2
+pkg/sentry/kernel/timekeeper.go,2,Receive,255,
+pkg/sentry/kernel/timekeeper.go,2,Receive,256,
+pkg/sentry/kernel/timekeeper.go,2,Receive,306,
+pkg/sentry/kernel/timekeeper_state.go,4,Synchronous chan,40,
+pkg/sentry/kernel/aio.go,1,Goroutine,29,
+pkg/sentry/kernel/task.go,8,Known chan length (length),619,1
+pkg/sentry/kernel/task_block.go,22,chan used as a param,38,
+pkg/sentry/kernel/task_block.go,20,Receive only chan (<-chan),72,
+pkg/sentry/kernel/task_block.go,17,Select with default (number of branch),87,2
+pkg/sentry/kernel/task_block.go,2,Receive,88,
+pkg/sentry/kernel/task_block.go,20,Receive only chan (<-chan),103,
+pkg/sentry/kernel/task_block.go,20,Receive only chan (<-chan),103,
+pkg/sentry/kernel/task_block.go,20,Receive only chan (<-chan),112,
+pkg/sentry/kernel/task_block.go,20,Receive only chan (<-chan),120,
+pkg/sentry/kernel/task_block.go,20,Receive only chan (<-chan),120,
+pkg/sentry/kernel/task_block.go,17,Select with default (number of branch),127,2
+pkg/sentry/kernel/task_block.go,2,Receive,128,
+pkg/sentry/kernel/task_block.go,16,Select (number of branch),148,3
+pkg/sentry/kernel/task_block.go,2,Receive,149,
+pkg/sentry/kernel/task_block.go,2,Receive,155,
+pkg/sentry/kernel/task_block.go,2,Receive,161,
+pkg/sentry/kernel/task_block.go,17,Select with default (number of branch),225,2
+pkg/sentry/kernel/task_block.go,2,Receive,226,
+pkg/sentry/kernel/task_block.go,17,Select with default (number of branch),241,2
+pkg/sentry/kernel/task_block.go,3,Send,242,
+pkg/sentry/kernel/task_syscall.go,1,Goroutine,75,
+pkg/sentry/kernel/task_start.go,8,Known chan length (length),131,1
+pkg/sentry/kernel/task_start.go,1,Goroutine,327,
+pkg/sentry/kernel/fd_table_test.go,5,Go in for,218,
+pkg/sentry/kernel/fd_table_test.go,1,Goroutine,218,
+pkg/sentry/kernel/timekeeper_test.go,4,Synchronous chan,110,
+pkg/sentry/kernel/timekeeper_test.go,4,Synchronous chan,138,
+pkg/sentry/kernel/kernel.go,22,chan used as a param,670,
+pkg/sentry/kernel/eventfd/eventfd_test.go,17,Select with default (number of branch),56,2
+pkg/sentry/kernel/eventfd/eventfd_test.go,2,Receive,57,
+pkg/sentry/kernel/futex/futex_test.go,2,Receive,498,
+pkg/sentry/kernel/futex/futex_test.go,22,chan used as a param,514,
+pkg/sentry/kernel/futex/futex_test.go,3,Send,520,
+pkg/sentry/kernel/futex/futex_test.go,4,Synchronous chan,527,
+pkg/sentry/kernel/futex/futex_test.go,5,Go in for,530,
+pkg/sentry/kernel/futex/futex_test.go,7,Goroutine in for with constant (constant),530,10
+pkg/sentry/kernel/futex/futex_test.go,1,Goroutine,530,
+pkg/sentry/kernel/futex/futex_test.go,2,Receive,534,
+pkg/sentry/kernel/futex/futex.go,3,Send,285,
+pkg/sentry/kernel/futex/futex.go,17,Select with default (number of branch),571,2
+pkg/sentry/kernel/futex/futex.go,2,Receive,572,
+pkg/sentry/kernel/futex/futex.go,17,Select with default (number of branch),649,2
+pkg/sentry/kernel/futex/futex.go,2,Receive,650,
+pkg/sentry/kernel/memevent/memory_events.go,1,Goroutine,73,
+pkg/sentry/kernel/memevent/memory_events.go,16,Select (number of branch),87,2
+pkg/sentry/kernel/memevent/memory_events.go,2,Receive,88,
+pkg/sentry/kernel/memevent/memory_events.go,2,Receive,90,
+pkg/sentry/kernel/pipe/pipe_util.go,16,Select (number of branch),183,2
+pkg/sentry/kernel/pipe/pipe_util.go,2,Receive,184,
+pkg/sentry/kernel/pipe/pipe_util.go,2,Receive,186,
+pkg/sentry/kernel/pipe/pipe_util.go,17,Select with default (number of branch),193,2
+pkg/sentry/kernel/pipe/pipe_util.go,2,Receive,194,
+pkg/sentry/kernel/pipe/pipe_test.go,4,Synchronous chan,85,
+pkg/sentry/kernel/pipe/pipe_test.go,4,Synchronous chan,86,
+pkg/sentry/kernel/pipe/pipe_test.go,15,Close chan,89,
+pkg/sentry/kernel/pipe/pipe_test.go,2,Receive,90,
+pkg/sentry/kernel/pipe/pipe_test.go,1,Goroutine,93,
+pkg/sentry/kernel/pipe/pipe_test.go,15,Close chan,94,
+pkg/sentry/kernel/pipe/pipe_test.go,16,Select (number of branch),106,2
+pkg/sentry/kernel/pipe/pipe_test.go,2,Receive,107,
+pkg/sentry/kernel/pipe/pipe_test.go,2,Receive,109,
+pkg/sentry/kernel/pipe/pipe_test.go,2,Receive,133,
+pkg/sentry/kernel/pipe/node_test.go,3,Send,47,
+pkg/sentry/kernel/pipe/node_test.go,21,Send only chan (chan<-),63,
+pkg/sentry/kernel/pipe/node_test.go,3,Send,72,
+pkg/sentry/kernel/pipe/node_test.go,21,Send only chan (chan<-),77,
+pkg/sentry/kernel/pipe/node_test.go,3,Send,82,
+pkg/sentry/kernel/pipe/node_test.go,20,Receive only chan (<-chan),98,
+pkg/sentry/kernel/pipe/node_test.go,16,Select (number of branch),99,2
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,100,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,102,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,111,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,112,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,118,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,119,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,121,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,122,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,129,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,130,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,136,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,137,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,139,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,140,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,147,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,148,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,149,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,150,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,157,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,158,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,160,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,161,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,162,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,172,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,174,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,179,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,180,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,182,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,183,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,190,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,193,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,194,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,201,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,202,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,204,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,205,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,207,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,208,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,215,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,216,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,218,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,219,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,221,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,222,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,229,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,230,
+pkg/sentry/kernel/pipe/node_test.go,16,Select (number of branch),231,2
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,232,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,234,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,241,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,270,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,271,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,282,
+pkg/sentry/kernel/pipe/node_test.go,4,Synchronous chan,289,
+pkg/sentry/kernel/pipe/node_test.go,1,Goroutine,290,
+pkg/sentry/kernel/pipe/node_test.go,2,Receive,301,
+pkg/sentry/kernel/semaphore/semaphore_test.go,22,chan used as a param,48,
+pkg/sentry/kernel/semaphore/semaphore_test.go,17,Select with default (number of branch),49,2
+pkg/sentry/kernel/semaphore/semaphore_test.go,2,Receive,50,
+pkg/sentry/kernel/semaphore/semaphore.go,22,chan used as a param,633,
+pkg/sentry/kernel/semaphore/semaphore.go,3,Send,656,
+pkg/sentry/kernel/semaphore/semaphore.go,3,Send,678,
+pkg/sentry/kernel/time/tcpip.go,1,Goroutine,55,
+pkg/sentry/kernel/time/time.go,1,Goroutine,475,
+pkg/sentry/kernel/time/time.go,16,Select (number of branch),496,2
+pkg/sentry/kernel/time/time.go,2,Receive,497,
+pkg/sentry/kernel/time/time.go,2,Receive,498,
+pkg/sentry/kernel/time/time.go,8,Known chan length (length),675,1
+pkg/sentry/kernel/time/time.go,17,Select with default (number of branch),681,2
+pkg/sentry/kernel/time/time.go,3,Send,682,
+pkg/sentry/mm/address_space.go,2,Receive,105,
+pkg/sentry/mm/aio_context.go,17,Select with default (number of branch),192,2
+pkg/sentry/mm/aio_context.go,3,Send,193,
+pkg/sentry/mm/aio_context_state.go,8,Known chan length (length),19,1
+pkg/sentry/pgalloc/save_restore.go,4,Synchronous chan,138,
+pkg/sentry/pgalloc/save_restore.go,1,Goroutine,140,
+pkg/sentry/pgalloc/save_restore.go,15,Close chan,141,
+pkg/sentry/pgalloc/save_restore.go,2,Receive,153,
+pkg/sentry/pgalloc/pgalloc.go,1,Goroutine,331,
+pkg/sentry/pgalloc/pgalloc.go,1,Goroutine,1213,
+pkg/sentry/platform/kvm/kvm_test.go,1,Goroutine,270,
+pkg/sentry/platform/kvm/kvm_test.go,1,Goroutine,285,
+pkg/sentry/platform/kvm/kvm_test.go,5,Go in for,316,
+pkg/sentry/platform/kvm/kvm_test.go,7,Goroutine in for with constant (constant),316,1000
+pkg/sentry/platform/kvm/kvm_test.go,1,Goroutine,316,
+pkg/sentry/platform/ptrace/subprocess.go,4,Synchronous chan,170,
+pkg/sentry/platform/ptrace/subprocess.go,19,Channel of channels,171,requests
+pkg/sentry/platform/ptrace/subprocess.go,1,Goroutine,172,
+pkg/sentry/platform/ptrace/subprocess.go,3,Send,179,
+pkg/sentry/platform/ptrace/subprocess.go,3,Send,185,
+pkg/sentry/platform/ptrace/subprocess.go,6,Range over chan,188,
+pkg/sentry/platform/ptrace/subprocess.go,3,Send,210,
+pkg/sentry/platform/ptrace/subprocess.go,2,Receive,218,
+pkg/sentry/platform/ptrace/subprocess.go,1,Goroutine,258,
+pkg/sentry/platform/ptrace/subprocess.go,4,Synchronous chan,271,
+pkg/sentry/platform/ptrace/subprocess.go,3,Send,272,
+pkg/sentry/platform/ptrace/subprocess.go,2,Receive,273,
+pkg/sentry/sighandling/sighandling.go,22,chan used as a param,35,
+pkg/sentry/sighandling/sighandling.go,4,Synchronous chan,74,
+pkg/sentry/sighandling/sighandling.go,4,Synchronous chan,75,
+pkg/sentry/sighandling/sighandling.go,13,Slice array of chans,84,
+pkg/sentry/sighandling/sighandling.go,8,Known chan length (length),86,1
+pkg/sentry/sighandling/sighandling.go,1,Goroutine,96,
+pkg/sentry/sighandling/sighandling.go,15,Close chan,99,
+pkg/sentry/sighandling/sighandling.go,2,Receive,100,
+pkg/sentry/socket/unix/transport/connectioned_state.go,9,Unknown chan length,26,
+pkg/sentry/socket/unix/transport/connectioned_state.go,2,Receive,33,
+pkg/sentry/socket/unix/transport/connectioned_state.go,3,Send,35,
+pkg/sentry/socket/unix/transport/connectioned_state.go,9,Unknown chan length,47,
+pkg/sentry/socket/unix/transport/connectioned_state.go,3,Send,50,
+pkg/sentry/socket/unix/transport/connectioned.go,17,Select with default (number of branch),324,2
+pkg/sentry/socket/unix/transport/connectioned.go,3,Send,325,
+pkg/sentry/socket/unix/transport/connectioned.go,9,Unknown chan length,390,
+pkg/sentry/socket/unix/transport/connectioned.go,3,Send,393,
+pkg/sentry/socket/unix/transport/connectioned.go,9,Unknown chan length,402,
+pkg/sentry/socket/unix/transport/connectioned.go,17,Select with default (number of branch),415,2
+pkg/sentry/socket/unix/transport/connectioned.go,2,Receive,416,
+pkg/sentry/state/state.go,22,chan used as a param,113,
+pkg/sentry/syscalls/linux/sys_splice.go,8,Known chan length (length),60,1
+pkg/sentry/syscalls/linux/sys_splice.go,8,Known chan length (length),76,1
+pkg/sentry/syscalls/linux/sys_aio.go,2,Receive,86,
+pkg/sentry/syscalls/linux/sys_poll.go,22,chan used as a param,61,
+pkg/sentry/syscalls/linux/sys_poll.go,8,Known chan length (length),103,1
+pkg/sentry/syscalls/linux/vfs2/poll.go,22,chan used as a param,64,
+pkg/sentry/syscalls/linux/vfs2/poll.go,8,Known chan length (length),106,1
+pkg/sentry/vfs/mount_test.go,4,Synchronous chan,101,
+pkg/sentry/vfs/mount_test.go,5,Go in for,106,
+pkg/sentry/vfs/mount_test.go,1,Goroutine,106,
+pkg/sentry/vfs/mount_test.go,2,Receive,109,
+pkg/sentry/vfs/mount_test.go,15,Close chan,131,
+pkg/sentry/vfs/mount_test.go,4,Synchronous chan,158,
+pkg/sentry/vfs/mount_test.go,5,Go in for,163,
+pkg/sentry/vfs/mount_test.go,1,Goroutine,163,
+pkg/sentry/vfs/mount_test.go,2,Receive,166,
+pkg/sentry/vfs/mount_test.go,15,Close chan,190,
+pkg/sentry/vfs/mount_test.go,4,Synchronous chan,216,
+pkg/sentry/vfs/mount_test.go,5,Go in for,221,
+pkg/sentry/vfs/mount_test.go,1,Goroutine,221,
+pkg/sentry/vfs/mount_test.go,2,Receive,224,
+pkg/sentry/vfs/mount_test.go,15,Close chan,247,
+pkg/sentry/watchdog/watchdog.go,4,Synchronous chan,177,
+pkg/sentry/watchdog/watchdog.go,4,Synchronous chan,178,
+pkg/sentry/watchdog/watchdog.go,1,Goroutine,184,
+pkg/sentry/watchdog/watchdog.go,1,Goroutine,207,
+pkg/sentry/watchdog/watchdog.go,3,Send,223,
+pkg/sentry/watchdog/watchdog.go,2,Receive,224,
+pkg/sentry/watchdog/watchdog.go,2,Receive,232,
+pkg/sentry/watchdog/watchdog.go,16,Select (number of branch),251,2
+pkg/sentry/watchdog/watchdog.go,2,Receive,252,
+pkg/sentry/watchdog/watchdog.go,3,Send,253,
+pkg/sentry/watchdog/watchdog.go,2,Receive,255,
+pkg/sentry/watchdog/watchdog.go,4,Synchronous chan,267,
+pkg/sentry/watchdog/watchdog.go,1,Goroutine,268,
+pkg/sentry/watchdog/watchdog.go,15,Close chan,270,
+pkg/sentry/watchdog/watchdog.go,16,Select (number of branch),273,2
+pkg/sentry/watchdog/watchdog.go,2,Receive,274,
+pkg/sentry/watchdog/watchdog.go,2,Receive,275,
+pkg/sentry/watchdog/watchdog.go,2,Receive,279,
+pkg/sentry/watchdog/watchdog.go,8,Known chan length (length),370,1
+pkg/sentry/watchdog/watchdog.go,1,Goroutine,371,
+pkg/sentry/watchdog/watchdog.go,3,Send,374,
+pkg/sentry/watchdog/watchdog.go,16,Select (number of branch),376,2
+pkg/sentry/watchdog/watchdog.go,2,Receive,377,
+pkg/sentry/watchdog/watchdog.go,2,Receive,378,
+pkg/shim/debug.go,8,Known chan length (length),31,1
+pkg/shim/debug.go,1,Goroutine,33,
+pkg/shim/debug.go,6,Range over chan,35,
+pkg/shim/epoll.go,17,Select with default (number of branch),64,2
+pkg/shim/epoll.go,2,Receive,65,
+pkg/shim/service_linux.go,1,Goroutine,51,
+pkg/shim/service_linux.go,1,Goroutine,67,
+pkg/shim/service_linux.go,1,Goroutine,107,
+pkg/shim/service.go,1,Goroutine,93,
+pkg/shim/service.go,8,Known chan length (length),97,128
+pkg/shim/service.go,1,Goroutine,103,
+pkg/shim/service.go,1,Goroutine,109,
+pkg/shim/service.go,1,Goroutine,255,
+pkg/shim/service.go,3,Send,853,
+pkg/shim/proc/utils.go,8,Known chan length (length),35,32
+pkg/shim/proc/exec.go,2,Receive,64,
+pkg/shim/proc/exec.go,1,Goroutine,261,
+pkg/shim/proc/exec.go,3,Send,265,
+pkg/shim/proc/io.go,1,Goroutine,51,
+pkg/shim/proc/io.go,1,Goroutine,68,
+pkg/shim/proc/io.go,1,Goroutine,123,
+pkg/shim/proc/init.go,4,Synchronous chan,101,
+pkg/shim/proc/init.go,2,Receive,175,
+pkg/shim/proc/init.go,1,Goroutine,237,
+pkg/shim/proc/init.go,3,Send,244,
+pkg/shim/proc/init.go,4,Synchronous chan,418,
+pkg/shim/runsc/runsc.go,22,chan used as a param,58,
+pkg/shim/runsc/runsc.go,8,Known chan length (length),426,128
+pkg/shim/runsc/runsc.go,8,Known chan length (length),426,128
+pkg/shim/runsc/runsc.go,1,Goroutine,428,
+pkg/shim/runsc/runsc.go,15,Close chan,430,
+pkg/shim/runsc/runsc.go,3,Send,445,
+pkg/sleep/sleep_test.go,1,Goroutine,170,
+pkg/sleep/sleep_test.go,1,Goroutine,194,
+pkg/sleep/sleep_test.go,5,Go in for,352,
+pkg/sleep/sleep_test.go,1,Goroutine,352,
+pkg/sleep/sleep_test.go,1,Goroutine,389,
+pkg/sleep/sleep_test.go,3,Send,432,
+pkg/sleep/sleep_test.go,16,Select (number of branch),433,4
+pkg/sleep/sleep_test.go,2,Receive,434,
+pkg/sleep/sleep_test.go,2,Receive,435,
+pkg/sleep/sleep_test.go,2,Receive,436,
+pkg/sleep/sleep_test.go,2,Receive,437,
+pkg/sleep/sleep_test.go,8,Known chan length (length),459,1
+pkg/sleep/sleep_test.go,3,Send,463,
+pkg/sleep/sleep_test.go,2,Receive,464,
+pkg/sleep/sleep_test.go,8,Known chan length (length),482,1
+pkg/sleep/sleep_test.go,3,Send,483,
+pkg/sleep/sleep_test.go,17,Select with default (number of branch),485,2
+pkg/sleep/sleep_test.go,3,Send,486,
+pkg/sleep/sleep_test.go,5,Go in for,501,
+pkg/sleep/sleep_test.go,1,Goroutine,501,
+pkg/sleep/sleep_test.go,8,Known chan length (length),514,1
+pkg/sleep/sleep_test.go,5,Go in for,516,
+pkg/sleep/sleep_test.go,1,Goroutine,516,
+pkg/sleep/sleep_test.go,3,Send,517,
+pkg/sleep/sleep_test.go,2,Receive,519,
+pkg/sleep/sleep_test.go,5,Go in for,537,
+pkg/sleep/sleep_test.go,1,Goroutine,537,
+pkg/sleep/sleep_test.go,5,Go in for,557,
+pkg/sleep/sleep_test.go,1,Goroutine,557,
+pkg/sleep/sleep_test.go,3,Send,558,
+pkg/sleep/sleep_test.go,16,Select (number of branch),560,4
+pkg/sleep/sleep_test.go,2,Receive,561,
+pkg/sleep/sleep_test.go,2,Receive,562,
+pkg/sleep/sleep_test.go,2,Receive,563,
+pkg/sleep/sleep_test.go,2,Receive,564,
+pkg/sync/seqcount_test.go,1,Goroutine,48,
+pkg/sync/gate_test.go,5,Go in for,68,
+pkg/sync/gate_test.go,7,Goroutine in for with constant (constant),68,1000
+pkg/sync/gate_test.go,1,Goroutine,68,
+pkg/sync/gate_test.go,5,Go in for,124,
+pkg/sync/gate_test.go,1,Goroutine,124,
+pkg/sync/rwmutex_test.go,22,chan used as a param,21,
+pkg/sync/rwmutex_test.go,3,Send,23,
+pkg/sync/rwmutex_test.go,2,Receive,24,
+pkg/sync/rwmutex_test.go,3,Send,26,
+pkg/sync/rwmutex_test.go,4,Synchronous chan,32,
+pkg/sync/rwmutex_test.go,4,Synchronous chan,33,
+pkg/sync/rwmutex_test.go,4,Synchronous chan,34,
+pkg/sync/rwmutex_test.go,5,Go in for,36,
+pkg/sync/rwmutex_test.go,1,Goroutine,36,
+pkg/sync/rwmutex_test.go,2,Receive,40,
+pkg/sync/rwmutex_test.go,3,Send,43,
+pkg/sync/rwmutex_test.go,2,Receive,47,
+pkg/sync/rwmutex_test.go,22,chan used as a param,58,
+pkg/sync/rwmutex_test.go,3,Send,70,
+pkg/sync/rwmutex_test.go,22,chan used as a param,73,
+pkg/sync/rwmutex_test.go,3,Send,85,
+pkg/sync/rwmutex_test.go,22,chan used as a param,88,
+pkg/sync/rwmutex_test.go,3,Send,108,
+pkg/sync/rwmutex_test.go,4,Synchronous chan,116,
+pkg/sync/rwmutex_test.go,1,Goroutine,117,
+pkg/sync/rwmutex_test.go,1,Goroutine,118,
+pkg/sync/rwmutex_test.go,5,Go in for,121,
+pkg/sync/rwmutex_test.go,1,Goroutine,121,
+pkg/sync/rwmutex_test.go,1,Goroutine,123,
+pkg/sync/rwmutex_test.go,1,Goroutine,124,
+pkg/sync/rwmutex_test.go,5,Go in for,126,
+pkg/sync/rwmutex_test.go,1,Goroutine,126,
+pkg/sync/rwmutex_test.go,2,Receive,130,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,5,Go in for,153,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,7,Goroutine in for with constant (constant),153,3
+pkg/sync/atomicptrmap/atomicptrmap_test.go,1,Goroutine,153,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,5,Go in for,218,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,7,Goroutine in for with constant (constant),218,3
+pkg/sync/atomicptrmap/atomicptrmap_test.go,1,Goroutine,218,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,1,Goroutine,252,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,1,Goroutine,266,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,5,Go in for,582,
+pkg/sync/atomicptrmap/atomicptrmap_test.go,1,Goroutine,582,
+pkg/sync/seqatomic/seqatomic_test.go,1,Goroutine,51,
+pkg/syncevent/syncevent_example_test.go,1,Goroutine,41,
+pkg/syncevent/syncevent_example_test.go,1,Goroutine,55,
+pkg/syncevent/broadcaster_test.go,17,Select with default (number of branch),367,2
+pkg/syncevent/broadcaster_test.go,2,Receive,368,
+pkg/syncevent/waiter_test.go,1,Goroutine,40,
+pkg/syncevent/waiter_test.go,1,Goroutine,56,
+pkg/syncevent/waiter_test.go,8,Known chan length (length),118,1
+pkg/syncevent/waiter_test.go,3,Send,119,
+pkg/syncevent/waiter_test.go,17,Select with default (number of branch),123,2
+pkg/syncevent/waiter_test.go,3,Send,124,
+pkg/syncevent/waiter_test.go,8,Known chan length (length),159,1
+pkg/syncevent/waiter_test.go,17,Select with default (number of branch),164,2
+pkg/syncevent/waiter_test.go,3,Send,165,
+pkg/syncevent/waiter_test.go,2,Receive,170,
+pkg/syncevent/waiter_test.go,8,Known chan length (length),282,1
+pkg/syncevent/waiter_test.go,8,Known chan length (length),283,1
+pkg/syncevent/waiter_test.go,8,Known chan length (length),284,1
+pkg/syncevent/waiter_test.go,17,Select with default (number of branch),289,2
+pkg/syncevent/waiter_test.go,3,Send,290,
+pkg/syncevent/waiter_test.go,16,Select (number of branch),295,3
+pkg/syncevent/waiter_test.go,2,Receive,296,
+pkg/syncevent/waiter_test.go,2,Receive,298,
+pkg/syncevent/waiter_test.go,2,Receive,300,
+pkg/syncevent/waiter_test.go,5,Go in for,317,
+pkg/syncevent/waiter_test.go,1,Goroutine,317,
+pkg/syncevent/waiter_test.go,5,Go in for,332,
+pkg/syncevent/waiter_test.go,1,Goroutine,332,
+pkg/syncevent/waiter_test.go,8,Known chan length (length),340,1
+pkg/syncevent/waiter_test.go,5,Go in for,344,
+pkg/syncevent/waiter_test.go,1,Goroutine,344,
+pkg/syncevent/waiter_test.go,17,Select with default (number of branch),345,2
+pkg/syncevent/waiter_test.go,3,Send,346,
+pkg/syncevent/waiter_test.go,2,Receive,350,
+pkg/syncevent/waiter_test.go,5,Go in for,363,
+pkg/syncevent/waiter_test.go,1,Goroutine,363,
+pkg/syncevent/waiter_test.go,5,Go in for,382,
+pkg/syncevent/waiter_test.go,1,Goroutine,382,
+pkg/syncevent/waiter_test.go,8,Known chan length (length),392,1
+pkg/syncevent/waiter_test.go,8,Known chan length (length),393,1
+pkg/syncevent/waiter_test.go,8,Known chan length (length),394,1
+pkg/syncevent/waiter_test.go,5,Go in for,398,
+pkg/syncevent/waiter_test.go,1,Goroutine,398,
+pkg/syncevent/waiter_test.go,17,Select with default (number of branch),399,2
+pkg/syncevent/waiter_test.go,3,Send,400,
+pkg/syncevent/waiter_test.go,16,Select (number of branch),405,3
+pkg/syncevent/waiter_test.go,2,Receive,406,
+pkg/syncevent/waiter_test.go,2,Receive,408,
+pkg/syncevent/waiter_test.go,2,Receive,410,
+pkg/tcpip/timer_test.go,5,Go in for,115,
+pkg/tcpip/timer_test.go,7,Goroutine in for with constant (constant),115,2
+pkg/tcpip/timer_test.go,1,Goroutine,115,
+pkg/tcpip/timer_test.go,4,Synchronous chan,141,
+pkg/tcpip/timer_test.go,3,Send,144,
+pkg/tcpip/timer_test.go,16,Select (number of branch),149,2
+pkg/tcpip/timer_test.go,2,Receive,150,
+pkg/tcpip/timer_test.go,2,Receive,151,
+pkg/tcpip/timer_test.go,16,Select (number of branch),156,2
+pkg/tcpip/timer_test.go,2,Receive,157,
+pkg/tcpip/timer_test.go,2,Receive,159,
+pkg/tcpip/timer_test.go,4,Synchronous chan,168,
+pkg/tcpip/timer_test.go,3,Send,170,
+pkg/tcpip/timer_test.go,16,Select (number of branch),180,2
+pkg/tcpip/timer_test.go,2,Receive,181,
+pkg/tcpip/timer_test.go,2,Receive,182,
+pkg/tcpip/timer_test.go,16,Select (number of branch),187,2
+pkg/tcpip/timer_test.go,2,Receive,188,
+pkg/tcpip/timer_test.go,2,Receive,190,
+pkg/tcpip/timer_test.go,4,Synchronous chan,199,
+pkg/tcpip/timer_test.go,3,Send,202,
+pkg/tcpip/timer_test.go,16,Select (number of branch),208,2
+pkg/tcpip/timer_test.go,2,Receive,209,
+pkg/tcpip/timer_test.go,2,Receive,211,
+pkg/tcpip/timer_test.go,16,Select (number of branch),217,2
+pkg/tcpip/timer_test.go,2,Receive,218,
+pkg/tcpip/timer_test.go,2,Receive,219,
+pkg/tcpip/timer_test.go,16,Select (number of branch),224,2
+pkg/tcpip/timer_test.go,2,Receive,225,
+pkg/tcpip/timer_test.go,2,Receive,227,
+pkg/tcpip/timer_test.go,4,Synchronous chan,236,
+pkg/tcpip/timer_test.go,3,Send,240,
+pkg/tcpip/timer_test.go,16,Select (number of branch),247,2
+pkg/tcpip/timer_test.go,2,Receive,248,
+pkg/tcpip/timer_test.go,2,Receive,250,
+pkg/tcpip/timer_test.go,4,Synchronous chan,264,
+pkg/tcpip/timer_test.go,3,Send,267,
+pkg/tcpip/timer_test.go,16,Select (number of branch),284,2
+pkg/tcpip/timer_test.go,2,Receive,285,
+pkg/tcpip/timer_test.go,2,Receive,287,
+pkg/tcpip/timer_test.go,4,Synchronous chan,296,
+pkg/tcpip/timer_test.go,3,Send,299,
+pkg/tcpip/timer_test.go,16,Select (number of branch),310,2
+pkg/tcpip/timer_test.go,2,Receive,311,
+pkg/tcpip/timer_test.go,2,Receive,312,
+pkg/tcpip/timer_test.go,16,Select (number of branch),317,2
+pkg/tcpip/timer_test.go,2,Receive,318,
+pkg/tcpip/timer_test.go,2,Receive,320,
+pkg/tcpip/timer_test.go,4,Synchronous chan,329,
+pkg/tcpip/timer_test.go,3,Send,332,
+pkg/tcpip/timer_test.go,16,Select (number of branch),341,2
+pkg/tcpip/timer_test.go,2,Receive,342,
+pkg/tcpip/timer_test.go,2,Receive,343,
+pkg/tcpip/timer_test.go,16,Select (number of branch),348,2
+pkg/tcpip/timer_test.go,2,Receive,349,
+pkg/tcpip/timer_test.go,2,Receive,351,
+pkg/tcpip/adapters/gonet/gonet.go,4,Synchronous chan,130,
+pkg/tcpip/adapters/gonet/gonet.go,4,Synchronous chan,131,
+pkg/tcpip/adapters/gonet/gonet.go,17,Select with default (number of branch),162,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,163,
+pkg/tcpip/adapters/gonet/gonet.go,16,Select (number of branch),264,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,265,
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,267,
+pkg/tcpip/adapters/gonet/gonet.go,20,Receive only chan (<-chan),290,
+pkg/tcpip/adapters/gonet/gonet.go,17,Select with default (number of branch),291,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,292,
+pkg/tcpip/adapters/gonet/gonet.go,16,Select (number of branch),311,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,312,
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,314,
+pkg/tcpip/adapters/gonet/gonet.go,17,Select with default (number of branch),352,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,353,
+pkg/tcpip/adapters/gonet/gonet.go,16,Select (number of branch),391,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,392,
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,394,
+pkg/tcpip/adapters/gonet/gonet.go,17,Select with default (number of branch),491,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,492,
+pkg/tcpip/adapters/gonet/gonet.go,16,Select (number of branch),499,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,500,
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,503,
+pkg/tcpip/adapters/gonet/gonet.go,17,Select with default (number of branch),633,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,634,
+pkg/tcpip/adapters/gonet/gonet.go,16,Select (number of branch),658,2
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,659,
+pkg/tcpip/adapters/gonet/gonet.go,2,Receive,661,
+pkg/tcpip/adapters/gonet/gonet_test.go,2,Receive,109,
+pkg/tcpip/adapters/gonet/gonet_test.go,4,Synchronous chan,146,
+pkg/tcpip/adapters/gonet/gonet_test.go,1,Goroutine,147,
+pkg/tcpip/adapters/gonet/gonet_test.go,15,Close chan,148,
+pkg/tcpip/adapters/gonet/gonet_test.go,16,Select (number of branch),172,2
+pkg/tcpip/adapters/gonet/gonet_test.go,2,Receive,173,
+pkg/tcpip/adapters/gonet/gonet_test.go,2,Receive,174,
+pkg/tcpip/adapters/gonet/gonet_test.go,4,Synchronous chan,195,
+pkg/tcpip/adapters/gonet/gonet_test.go,15,Close chan,198,
+pkg/tcpip/adapters/gonet/gonet_test.go,16,Select (number of branch),228,2
+pkg/tcpip/adapters/gonet/gonet_test.go,2,Receive,229,
+pkg/tcpip/adapters/gonet/gonet_test.go,2,Receive,230,
+pkg/tcpip/adapters/gonet/gonet_test.go,4,Synchronous chan,357,
+pkg/tcpip/adapters/gonet/gonet_test.go,15,Close chan,359,
+pkg/tcpip/adapters/gonet/gonet_test.go,4,Synchronous chan,419,
+pkg/tcpip/adapters/gonet/gonet_test.go,1,Goroutine,420,
+pkg/tcpip/adapters/gonet/gonet_test.go,15,Close chan,421,
+pkg/tcpip/adapters/gonet/gonet_test.go,16,Select (number of branch),448,2
+pkg/tcpip/adapters/gonet/gonet_test.go,2,Receive,449,
+pkg/tcpip/adapters/gonet/gonet_test.go,2,Receive,450,
+pkg/tcpip/faketime/faketime.go,20,Receive only chan (<-chan),55,
+pkg/tcpip/faketime/faketime.go,2,Receive,77,
+pkg/tcpip/faketime/faketime.go,4,Synchronous chan,167,
+pkg/tcpip/faketime/faketime.go,1,Goroutine,170,
+pkg/tcpip/faketime/faketime.go,15,Close chan,171,
+pkg/tcpip/header/checksum_test.go,4,Synchronous chan,169,
+pkg/tcpip/header/checksum_test.go,8,Known chan length (length),170,5
+pkg/tcpip/header/checksum_test.go,5,Go in for,176,
+pkg/tcpip/header/checksum_test.go,7,Goroutine in for with constant (constant),176,5
+pkg/tcpip/header/checksum_test.go,1,Goroutine,176,
+pkg/tcpip/header/checksum_test.go,3,Send,179,
+pkg/tcpip/header/checksum_test.go,2,Receive,180,
+pkg/tcpip/header/checksum_test.go,2,Receive,191,
+pkg/tcpip/header/checksum_test.go,15,Close chan,193,
+pkg/tcpip/link/channel/channel.go,17,Select with default (number of branch),64,2
+pkg/tcpip/link/channel/channel.go,2,Receive,65,
+pkg/tcpip/link/channel/channel.go,16,Select (number of branch),73,2
+pkg/tcpip/link/channel/channel.go,2,Receive,74,
+pkg/tcpip/link/channel/channel.go,2,Receive,76,
+pkg/tcpip/link/channel/channel.go,17,Select with default (number of branch),83,2
+pkg/tcpip/link/channel/channel.go,3,Send,84,
+pkg/tcpip/link/fdbased/endpoint_test.go,8,Known chan length (length),98,2
+pkg/tcpip/link/fdbased/endpoint_test.go,3,Send,100,
+pkg/tcpip/link/fdbased/endpoint_test.go,8,Known chan length (length),114,100
+pkg/tcpip/link/fdbased/endpoint_test.go,2,Receive,127,
+pkg/tcpip/link/fdbased/endpoint_test.go,2,Receive,128,
+pkg/tcpip/link/fdbased/endpoint_test.go,3,Send,135,
+pkg/tcpip/link/fdbased/endpoint_test.go,16,Select (number of branch),392,2
+pkg/tcpip/link/fdbased/endpoint_test.go,2,Receive,393,
+pkg/tcpip/link/fdbased/endpoint_test.go,2,Receive,404,
+pkg/tcpip/link/fdbased/endpoint.go,5,Go in for,401,
+pkg/tcpip/link/fdbased/endpoint.go,1,Goroutine,401,
+pkg/tcpip/link/qdisc/fifo/endpoint.go,5,Go in for,67,
+pkg/tcpip/link/qdisc/fifo/endpoint.go,1,Goroutine,67,
+pkg/tcpip/link/sharedmem/sharedmem.go,1,Goroutine,152,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,8,Known chan length (length),105,1000000
+pkg/tcpip/link/sharedmem/sharedmem_test.go,3,Send,144,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,20,Receive only chan (<-chan),159,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,16,Select (number of branch),161,2
+pkg/tcpip/link/sharedmem/sharedmem_test.go,2,Receive,162,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,2,Receive,163,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,20,Receive only chan (<-chan),603,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,16,Select (number of branch),612,2
+pkg/tcpip/link/sharedmem/sharedmem_test.go,2,Receive,613,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,2,Receive,614,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,16,Select (number of branch),775,2
+pkg/tcpip/link/sharedmem/sharedmem_test.go,2,Receive,776,
+pkg/tcpip/link/sharedmem/sharedmem_test.go,2,Receive,777,
+pkg/tcpip/link/sharedmem/pipe/pipe_test.go,1,Goroutine,475,
+pkg/tcpip/network/arp/arp_test.go,3,Send,94,
+pkg/tcpip/network/arp/arp_test.go,3,Send,103,
+pkg/tcpip/network/arp/arp_test.go,3,Send,112,
+pkg/tcpip/network/arp/arp_test.go,17,Select with default (number of branch),116,2
+pkg/tcpip/network/arp/arp_test.go,2,Receive,117,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,21,Send only chan (chan<-),116,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,3,Send,118,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,8,Known chan length (length),129,2
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,17,Select with default (number of branch),182,2
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,183,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,189,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,17,Select with default (number of branch),197,2
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,198,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,203,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,216,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,17,Select with default (number of branch),221,2
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,222,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,8,Known chan length (length),239,1
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,256,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,261,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,267,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,280,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,17,Select with default (number of branch),285,2
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,286,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,8,Known chan length (length),345,1
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,369,
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,17,Select with default (number of branch),374,2
+pkg/tcpip/network/internal/ip/duplicate_address_detection_test.go,2,Receive,375,
+pkg/tcpip/network/ipv4/ipv4_test.go,1,Goroutine,3320,
+pkg/tcpip/network/ipv4/ipv4_test.go,1,Goroutine,3337,
+pkg/tcpip/network/ipv6/ndp_test.go,8,Known chan length (length),1295,3
+pkg/tcpip/network/ipv6/ndp_test.go,3,Send,1299,
+pkg/tcpip/network/ipv6/ndp_test.go,3,Send,1316,
+pkg/tcpip/network/ipv6/ndp_test.go,2,Receive,1326,
+pkg/tcpip/network/ipv6/ndp_test.go,17,Select with default (number of branch),1331,2
+pkg/tcpip/network/ipv6/ndp_test.go,2,Receive,1332,
+pkg/tcpip/sample/tun_tcp_connect/main.go,22,chan used as a param,68,
+pkg/tcpip/sample/tun_tcp_connect/main.go,2,Receive,181,
+pkg/tcpip/sample/tun_tcp_connect/main.go,4,Synchronous chan,193,
+pkg/tcpip/sample/tun_tcp_connect/main.go,1,Goroutine,194,
+pkg/tcpip/sample/tun_tcp_connect/main.go,2,Receive,207,
+pkg/tcpip/sample/tun_tcp_connect/main.go,2,Receive,217,
+pkg/tcpip/sample/tun_tcp_echo/main.go,2,Receive,94,
+pkg/tcpip/sample/tun_tcp_echo/main.go,5,Go in for,229,
+pkg/tcpip/sample/tun_tcp_echo/main.go,2,Receive,222,
+pkg/tcpip/sample/tun_tcp_echo/main.go,1,Goroutine,229,
+pkg/tcpip/stack/pending_packets.go,20,Receive only chan (<-chan),95,
+pkg/tcpip/stack/pending_packets.go,1,Goroutine,177,
+pkg/tcpip/stack/pending_packets.go,20,Receive only chan (<-chan),186,
+pkg/tcpip/stack/iptables.go,3,Send,351,
+pkg/tcpip/stack/iptables.go,1,Goroutine,364,
+pkg/tcpip/stack/iptables.go,16,Select (number of branch),367,2
+pkg/tcpip/stack/iptables.go,2,Receive,368,
+pkg/tcpip/stack/iptables.go,2,Receive,371,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),326,2
+pkg/tcpip/stack/forwarding_test.go,3,Send,327,
+pkg/tcpip/stack/forwarding_test.go,8,Known chan length (length),380,300
+pkg/tcpip/stack/forwarding_test.go,8,Known chan length (length),393,300
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),451,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,452,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),495,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,496,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),527,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,528,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),558,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,559,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),606,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,607,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),656,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,657,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),709,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,710,
+pkg/tcpip/stack/forwarding_test.go,17,Select with default (number of branch),774,2
+pkg/tcpip/stack/forwarding_test.go,2,Receive,775,
+pkg/tcpip/stack/neighbor_cache_test.go,17,Select with default (number of branch),326,2
+pkg/tcpip/stack/neighbor_cache_test.go,2,Receive,327,
+pkg/tcpip/stack/neighbor_cache_test.go,5,Go in for,1157,
+pkg/tcpip/stack/neighbor_cache_test.go,7,Goroutine in for with constant (constant),1157,16
+pkg/tcpip/stack/neighbor_cache_test.go,1,Goroutine,1157,
+pkg/tcpip/stack/neighbor_cache_test.go,17,Select with default (number of branch),1320,2
+pkg/tcpip/stack/neighbor_cache_test.go,2,Receive,1321,
+pkg/tcpip/stack/neighbor_cache_test.go,17,Select with default (number of branch),1361,2
+pkg/tcpip/stack/neighbor_cache_test.go,2,Receive,1362,
+pkg/tcpip/stack/neighbor_cache_test.go,17,Select with default (number of branch),1419,2
+pkg/tcpip/stack/neighbor_cache_test.go,2,Receive,1420,
+pkg/tcpip/stack/neighbor_cache_test.go,17,Select with default (number of branch),1501,2
+pkg/tcpip/stack/neighbor_cache_test.go,2,Receive,1502,
+pkg/tcpip/stack/neighbor_cache_test.go,17,Select with default (number of branch),1573,2
+pkg/tcpip/stack/neighbor_cache_test.go,2,Receive,1574,
+pkg/tcpip/stack/transport_demuxer_test.go,4,Synchronous chan,344,
+pkg/tcpip/stack/transport_demuxer_test.go,5,Go in for,363,
+pkg/tcpip/stack/transport_demuxer_test.go,1,Goroutine,363,
+pkg/tcpip/stack/transport_demuxer_test.go,3,Send,365,
+pkg/tcpip/stack/transport_demuxer_test.go,2,Receive,415,
+pkg/tcpip/stack/stack_test.go,8,Known chan length (length),2536,1
+pkg/tcpip/stack/stack_test.go,17,Select with default (number of branch),2579,2
+pkg/tcpip/stack/stack_test.go,2,Receive,2580,
+pkg/tcpip/stack/stack_test.go,17,Select with default (number of branch),2589,2
+pkg/tcpip/stack/stack_test.go,2,Receive,2590,
+pkg/tcpip/stack/stack_test.go,8,Known chan length (length),2664,1
+pkg/tcpip/stack/stack_test.go,17,Select with default (number of branch),2693,2
+pkg/tcpip/stack/stack_test.go,2,Receive,2694,
+pkg/tcpip/stack/stack_test.go,8,Known chan length (length),3334,1
+pkg/tcpip/stack/stack_test.go,17,Select with default (number of branch),3391,2
+pkg/tcpip/stack/stack_test.go,2,Receive,3392,
+pkg/tcpip/stack/stack_test.go,8,Known chan length (length),4552,1
+pkg/tcpip/stack/stack_test.go,3,Send,4554,
+pkg/tcpip/stack/stack_test.go,2,Receive,4559,
+pkg/tcpip/stack/ndp_test.go,3,Send,177,
+pkg/tcpip/stack/ndp_test.go,3,Send,188,
+pkg/tcpip/stack/ndp_test.go,3,Send,202,
+pkg/tcpip/stack/ndp_test.go,3,Send,215,
+pkg/tcpip/stack/ndp_test.go,3,Send,226,
+pkg/tcpip/stack/ndp_test.go,3,Send,236,
+pkg/tcpip/stack/ndp_test.go,3,Send,246,
+pkg/tcpip/stack/ndp_test.go,3,Send,256,
+pkg/tcpip/stack/ndp_test.go,3,Send,267,
+pkg/tcpip/stack/ndp_test.go,3,Send,280,
+pkg/tcpip/stack/ndp_test.go,3,Send,291,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),320,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),342,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,343,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),363,1
+pkg/tcpip/stack/ndp_test.go,2,Receive,415,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),479,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),558,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,559,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),725,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),764,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,765,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),833,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),867,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,868,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),923,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),935,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,936,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1020,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1021,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1245,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1246,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1247,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1316,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1317,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1321,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1322,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1326,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1327,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1415,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1434,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1435,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1448,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1449,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1470,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1471,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1482,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1483,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1501,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1502,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1547,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1573,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1574,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1583,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1584,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1605,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1627,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1628,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1644,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1645,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1670,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1671,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1679,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1680,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1702,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1724,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1725,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1739,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1740,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1748,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1749,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1765,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1766,
+pkg/tcpip/stack/ndp_test.go,9,Unknown chan length,1781,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1824,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1825,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1833,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1834,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),1869,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1895,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1896,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1908,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1909,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1925,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1926,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1944,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1945,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),1952,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,1953,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2017,2
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2018,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2048,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2049,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2062,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2063,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2076,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2077,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2089,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2090,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2100,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2101,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2122,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2123,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2168,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2169,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2183,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2184,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2202,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2203,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2237,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2238,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2258,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2259,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2267,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2268,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2277,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2278,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2302,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2303,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2329,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2330,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2342,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2343,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2351,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2352,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2359,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2360,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2389,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2420,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2421,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2434,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2435,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2523,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2557,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2558,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2571,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2572,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2597,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2598,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2611,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2612,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2626,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2627,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2660,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2661,
+pkg/tcpip/stack/ndp_test.go,9,Unknown chan length,2749,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2801,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2802,
+pkg/tcpip/stack/ndp_test.go,2,Receive,2814,
+pkg/tcpip/stack/ndp_test.go,2,Receive,2823,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2829,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2852,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2853,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),2867,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,2868,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),2895,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3002,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3003,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3043,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3044,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3076,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3077,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3088,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3089,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3109,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3110,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3123,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3124,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3166,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3167,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3194,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3195,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3206,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3207,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3240,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3241,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),3260,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3262,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3263,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3267,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3268,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3278,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3279,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),3349,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3370,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3371,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3387,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3388,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),3476,10
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3498,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3499,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3520,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3521,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3528,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3529,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),3547,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3569,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3570,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3594,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3595,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3613,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3614,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3695,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3696,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),3716,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3747,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3748,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3759,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3760,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),3806,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3834,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3835,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3864,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3865,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3903,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3904,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3917,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3918,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3931,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3932,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),3945,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,3946,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4026,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4027,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4102,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4103,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4163,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4164,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4187,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4188,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4210,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4211,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4220,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4221,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4245,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4246,2
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4279,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4280,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4303,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4304,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4316,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4317,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4336,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4337,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4343,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4344,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4460,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4478,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4479,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4495,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4496,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4511,3
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4587,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4588,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4604,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4605,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4618,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4619,1
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4620,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4640,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4641,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4662,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4663,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4670,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4671,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4678,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4679,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4694,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4695,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4699,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4700,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4704,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4705,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4782,4
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),4783,4
+pkg/tcpip/stack/ndp_test.go,9,Unknown chan length,4784,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4802,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4803,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4812,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4813,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),4822,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,4823,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),5032,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,5033,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),5037,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,5038,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),5042,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,5043,
+pkg/tcpip/stack/ndp_test.go,8,Known chan length (length),5058,1
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),5076,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,5077,
+pkg/tcpip/stack/ndp_test.go,17,Select with default (number of branch),5088,2
+pkg/tcpip/stack/ndp_test.go,2,Receive,5089,
+pkg/tcpip/transport/tcp/forwarder.go,1,Goroutine,94,
+pkg/tcpip/transport/tcp/dispatcher.go,5,Go in for,163,
+pkg/tcpip/transport/tcp/dispatcher.go,1,Goroutine,163,
+pkg/tcpip/transport/tcp/endpoint_state.go,4,Synchronous chan,36,
+pkg/tcpip/transport/tcp/endpoint_state.go,4,Synchronous chan,37,
+pkg/tcpip/transport/tcp/endpoint_state.go,2,Receive,41,
+pkg/tcpip/transport/tcp/endpoint_state.go,1,Goroutine,251,
+pkg/tcpip/transport/tcp/endpoint_state.go,1,Goroutine,268,
+pkg/tcpip/transport/tcp/endpoint_state.go,1,Goroutine,281,
+pkg/tcpip/transport/tcp/accept.go,1,Goroutine,511,
+pkg/tcpip/transport/tcp/accept.go,1,Goroutine,771,
+pkg/tcpip/transport/tcp/accept.go,2,Receive,833,
+pkg/tcpip/transport/tcp/connect.go,2,Receive,595,
+pkg/tcpip/transport/tcp/connect.go,21,Send only chan (chan<-),1345,
+pkg/tcpip/transport/tcp/connect.go,2,Receive,1395,
+pkg/tcpip/transport/tcp/connect.go,2,Receive,1507,
+pkg/tcpip/transport/tcp/connect.go,2,Receive,1753,
+pkg/tcpip/transport/tcp/endpoint.go,1,Goroutine,2367,
+pkg/tcpip/transport/tcp/endpoint.go,1,Goroutine,2539,
+pkg/tcpip/transport/tcp/endpoint.go,4,Synchronous chan,2550,
+pkg/tcpip/transport/tcp/endpoint.go,1,Goroutine,2551,
+pkg/tcpip/transport/tcp/endpoint.go,2,Receive,2552,
+pkg/tcpip/transport/tcp/endpoint.go,2,Receive,3055,
+pkg/tcpip/transport/tcp/tcp_timestamp_test.go,16,Select (number of branch),99,2
+pkg/tcpip/transport/tcp/tcp_timestamp_test.go,2,Receive,100,
+pkg/tcpip/transport/tcp/tcp_timestamp_test.go,2,Receive,101,
+pkg/tcpip/transport/tcp/tcp_timestamp_test.go,16,Select (number of branch),285,2
+pkg/tcpip/transport/tcp/tcp_timestamp_test.go,2,Receive,286,
+pkg/tcpip/transport/tcp/tcp_timestamp_test.go,2,Receive,287,
+pkg/tcpip/transport/tcp/dual_stack_test.go,16,Select (number of branch),88,2
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,89,
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,93,
+pkg/tcpip/transport/tcp/dual_stack_test.go,16,Select (number of branch),195,2
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,196,
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,200,
+pkg/tcpip/transport/tcp/dual_stack_test.go,16,Select (number of branch),397,2
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,398,
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,404,
+pkg/tcpip/transport/tcp/dual_stack_test.go,16,Select (number of branch),531,2
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,532,
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,538,
+pkg/tcpip/transport/tcp/dual_stack_test.go,16,Select (number of branch),617,2
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,618,
+pkg/tcpip/transport/tcp/dual_stack_test.go,2,Receive,624,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,53,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,15,Close chan,69,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,94,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,106,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,15,Close chan,127,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,157,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,22,chan used as a param,197,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,3,Send,204,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,3,Send,210,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,3,Send,213,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,508,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,535,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,573,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,604,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,620,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,649,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,664,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,697,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,735,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,773,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,789,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,829,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,844,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,15,Close chan,857,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,888,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,22,chan used as a param,891,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,3,Send,901,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,3,Send,906,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,3,Send,911,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,3,Send,914,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,922,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,946,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,4,Synchronous chan,1002,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,15,Close chan,1014,
+pkg/tcpip/transport/tcp/tcp_rack_test.go,2,Receive,1033,
+pkg/tcpip/transport/tcp/tcp_test.go,20,Receive only chan (<-chan),82,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),93,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,94,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,95,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,143,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,213,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),469,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,470,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,476,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),901,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,902,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,903,
+pkg/tcpip/transport/tcp/tcp_test.go,4,Synchronous chan,1419,
+pkg/tcpip/transport/tcp/tcp_test.go,3,Send,1423,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1440,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),1442,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1443,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1446,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1479,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),1716,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1717,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1718,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),1908,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1909,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1910,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),1977,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1978,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,1979,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),2091,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2092,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2093,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),2245,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2246,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2247,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),2549,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2550,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2556,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),2621,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2622,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,2628,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),3213,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3214,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3220,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),3267,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3268,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3274,
+pkg/tcpip/transport/tcp/tcp_test.go,8,Known chan length (length),3290,1
+pkg/tcpip/transport/tcp/tcp_test.go,3,Send,3294,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),3302,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3303,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3307,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),3393,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3394,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3398,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3455,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),3564,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3565,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,3566,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),4485,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,4486,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,4487,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,4810,
+pkg/tcpip/transport/tcp/tcp_test.go,4,Synchronous chan,5050,
+pkg/tcpip/transport/tcp/tcp_test.go,3,Send,5069,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),5085,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5086,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5087,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),5530,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5531,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5537,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),5546,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5547,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5549,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),5559,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5560,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5566,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5855,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),5872,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5873,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5879,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),5943,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5944,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5950,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),5958,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5959,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,5961,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6094,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),6151,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6152,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6158,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6235,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),6330,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6331,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6337,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),6789,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6790,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6796,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),6908,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6909,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,6915,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),7015,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7016,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7022,
+pkg/tcpip/transport/tcp/tcp_test.go,17,Select with default (number of branch),7069,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7070,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),7105,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7106,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7112,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),7179,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7180,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7186,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),7329,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7330,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7336,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),7489,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7490,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,7491,
+pkg/tcpip/transport/tcp/tcp_test.go,1,Goroutine,7902,
+pkg/tcpip/transport/tcp/tcp_test.go,1,Goroutine,7915,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),8196,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,8197,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,8201,
+pkg/tcpip/transport/tcp/tcp_test.go,16,Select (number of branch),8289,2
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,8290,
+pkg/tcpip/transport/tcp/tcp_test.go,2,Receive,8296,
+pkg/tcpip/transport/tcp/testing/context/context.go,16,Select (number of branch),738,2
+pkg/tcpip/transport/tcp/testing/context/context.go,2,Receive,739,
+pkg/tcpip/transport/tcp/testing/context/context.go,2,Receive,743,
+pkg/tcpip/transport/tcp/testing/context/context.go,16,Select (number of branch),1012,2
+pkg/tcpip/transport/tcp/testing/context/context.go,2,Receive,1013,
+pkg/tcpip/transport/tcp/testing/context/context.go,2,Receive,1017,
+pkg/tcpip/transport/tcp/testing/context/context.go,16,Select (number of branch),1089,2
+pkg/tcpip/transport/tcp/testing/context/context.go,2,Receive,1090,
+pkg/tcpip/transport/tcp/testing/context/context.go,2,Receive,1096,
+pkg/tcpip/transport/udp/udp_test.go,17,Select with default (number of branch),606,2
+pkg/tcpip/transport/udp/udp_test.go,2,Receive,607,
+pkg/unet/unet_test.go,5,Go in for,98,
+pkg/unet/unet_test.go,1,Goroutine,98,
+pkg/unet/unet_test.go,4,Synchronous chan,156,
+pkg/unet/unet_test.go,4,Synchronous chan,157,
+pkg/unet/unet_test.go,1,Goroutine,158,
+pkg/unet/unet_test.go,3,Send,161,
+pkg/unet/unet_test.go,3,Send,163,
+pkg/unet/unet_test.go,16,Select (number of branch),173,2
+pkg/unet/unet_test.go,2,Receive,174,
+pkg/unet/unet_test.go,2,Receive,176,
+pkg/unet/unet_test.go,1,Goroutine,635,
+pkg/unet/unet_test.go,1,Goroutine,663,
+pkg/unet/unet_test.go,1,Goroutine,704,
+pkg/urpc/urpc.go,1,Goroutine,451,
+pkg/urpc/urpc.go,8,Known chan length (length),470,1
+pkg/urpc/urpc.go,1,Goroutine,471,
+pkg/urpc/urpc.go,16,Select (number of branch),475,2
+pkg/urpc/urpc.go,2,Receive,476,
+pkg/urpc/urpc.go,2,Receive,478,
+pkg/urpc/urpc.go,3,Send,500,
+pkg/waiter/waiter.go,17,Select with default (number of branch),151,2
+pkg/waiter/waiter.go,3,Send,152,
+pkg/waiter/waiter.go,22,chan used as a param,163,
+pkg/waiter/waiter.go,8,Known chan length (length),165,1
+pkg/waiter/waiter_test.go,4,Synchronous chan,96,
+pkg/waiter/waiter_test.go,4,Synchronous chan,97,
+pkg/waiter/waiter_test.go,4,Synchronous chan,98,
+pkg/waiter/waiter_test.go,5,Go in for,102,
+pkg/waiter/waiter_test.go,7,Goroutine in for with constant (constant),102,1000
+pkg/waiter/waiter_test.go,1,Goroutine,102,
+pkg/waiter/waiter_test.go,2,Receive,115,
+pkg/waiter/waiter_test.go,3,Send,119,
+pkg/waiter/waiter_test.go,2,Receive,122,
+pkg/waiter/waiter_test.go,3,Send,126,
+pkg/waiter/waiter_test.go,15,Close chan,131,
+pkg/waiter/waiter_test.go,2,Receive,133,
+pkg/waiter/waiter_test.go,15,Close chan,143,
+pkg/waiter/waiter_test.go,2,Receive,145,
+pkg/waiter/waiter_test.go,4,Synchronous chan,178,
+pkg/waiter/waiter_test.go,4,Synchronous chan,179,
+pkg/waiter/waiter_test.go,5,Go in for,181,
+pkg/waiter/waiter_test.go,7,Goroutine in for with constant (constant),181,1000
+pkg/waiter/waiter_test.go,1,Goroutine,181,
+pkg/waiter/waiter_test.go,2,Receive,182,
+pkg/waiter/waiter_test.go,3,Send,184,
+pkg/waiter/waiter_test.go,15,Close chan,189,
+pkg/waiter/waiter_test.go,2,Receive,191,
+runsc/boot/loader_test.go,1,Goroutine,96,
+runsc/boot/loader_test.go,1,Goroutine,174,
+runsc/boot/loader_test.go,2,Receive,175,
+runsc/boot/loader_test.go,4,Synchronous chan,221,
+runsc/boot/loader_test.go,1,Goroutine,222,
+runsc/boot/loader_test.go,3,Send,225,
+runsc/boot/loader_test.go,3,Send,226,
+runsc/boot/loader_test.go,16,Select (number of branch),232,2
+runsc/boot/loader_test.go,2,Receive,233,
+runsc/boot/loader_test.go,2,Receive,235,
+runsc/boot/loader_test.go,16,Select (number of branch),247,2
+runsc/boot/loader_test.go,2,Receive,248,
+runsc/boot/loader_test.go,2,Receive,250,
+runsc/boot/controller.go,3,Send,225,
+runsc/boot/controller.go,2,Receive,226,
+runsc/boot/controller.go,3,Send,502,
+runsc/boot/controller.go,2,Receive,503,
+runsc/boot/loader.go,3,Send,551,
+runsc/boot/loader.go,1,Goroutine,831,
+runsc/boot/loader.go,2,Receive,1067,
+runsc/cmd/gofer.go,1,Goroutine,139,
+runsc/cmd/gofer.go,5,Go in for,221,
+runsc/cmd/gofer.go,1,Goroutine,221,
+runsc/cmd/debug.go,1,Goroutine,279,
+runsc/cmd/debug.go,1,Goroutine,286,
+runsc/cmd/debug.go,1,Goroutine,293,
+runsc/cmd/debug.go,1,Goroutine,300,
+runsc/cmd/debug.go,1,Goroutine,307,
+runsc/cmd/debug.go,4,Synchronous chan,316,
+runsc/cmd/debug.go,1,Goroutine,317,
+runsc/cmd/debug.go,15,Close chan,318,
+runsc/cmd/debug.go,8,Known chan length (length),321,1
+runsc/cmd/debug.go,16,Select (number of branch),323,2
+runsc/cmd/debug.go,2,Receive,324,
+runsc/cmd/debug.go,2,Receive,326,
+runsc/cmd/debug.go,16,Select (number of branch),328,3
+runsc/cmd/debug.go,2,Receive,329,
+runsc/cmd/debug.go,2,Receive,332,
+runsc/cmd/debug.go,2,Receive,335,
+runsc/container/hook.go,8,Known chan length (length),89,1
+runsc/container/hook.go,1,Goroutine,90,
+runsc/container/hook.go,3,Send,91,
+runsc/container/hook.go,16,Select (number of branch),98,2
+runsc/container/hook.go,2,Receive,99,
+runsc/container/hook.go,2,Receive,103,
+runsc/container/console_test.go,1,Goroutine,416,
+runsc/container/console_test.go,1,Goroutine,433,
+runsc/container/console_test.go,5,Go in for,578,
+runsc/container/console_test.go,1,Goroutine,578,
+runsc/container/console_test.go,3,Send,629,
+runsc/container/console_test.go,17,Select with default (number of branch),642,2
+runsc/container/console_test.go,2,Receive,643,
+runsc/container/console_test.go,2,Receive,653,
+runsc/container/console_test.go,17,Select with default (number of branch),663,2
+runsc/container/console_test.go,2,Receive,664,
+runsc/container/multi_container_test.go,5,Go in for,1043,
+runsc/container/multi_container_test.go,5,Go in for,1050,
+runsc/container/multi_container_test.go,1,Goroutine,1043,
+runsc/container/multi_container_test.go,1,Goroutine,1050,
+runsc/container/container_test.go,4,Synchronous chan,529,
+runsc/container/container_test.go,1,Goroutine,530,
+runsc/container/container_test.go,3,Send,533,
+runsc/container/container_test.go,3,Send,537,
+runsc/container/container_test.go,3,Send,540,
+runsc/container/container_test.go,2,Receive,553,
+runsc/container/container_test.go,4,Synchronous chan,943,
+runsc/container/container_test.go,1,Goroutine,944,
+runsc/container/container_test.go,3,Send,947,
+runsc/container/container_test.go,3,Send,949,
+runsc/container/container_test.go,3,Send,951,
+runsc/container/container_test.go,16,Select (number of branch),965,2
+runsc/container/container_test.go,2,Receive,966,
+runsc/container/container_test.go,2,Receive,968,
+runsc/container/container_test.go,5,Go in for,2164,
+runsc/container/container_test.go,7,Goroutine in for with constant (constant),2164,10
+runsc/container/container_test.go,5,Go in for,2171,
+runsc/container/container_test.go,7,Goroutine in for with constant (constant),2171,10
+runsc/container/container_test.go,1,Goroutine,2164,
+runsc/container/container_test.go,1,Goroutine,2171,
+runsc/container/container_test.go,1,Goroutine,2818,
+runsc/specutils/namespace.go,8,Known chan length (length),268,1
+runsc/specutils/namespace.go,1,Goroutine,270,
+runsc/specutils/namespace.go,2,Receive,273,
+tools/github/reviver/reviver.go,5,Go in for,79,
+tools/github/reviver/reviver.go,1,Goroutine,79,
+tools/github/reviver/reviver.go,1,Goroutine,119,
+tools/worker/worker.go,1,Goroutine,215,
+tools/worker/worker.go,10,Make chan in for,290,
+tools/worker/worker.go,5,Go in for,291,
+tools/worker/worker.go,4,Synchronous chan,290,
+tools/worker/worker.go,1,Goroutine,291,
+tools/worker/worker.go,3,Send,291,
+tools/worker/worker.go,17,Select with default (number of branch),293,2
+tools/worker/worker.go,2,Receive,294,

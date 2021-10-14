@@ -1,0 +1,797 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : gorilla/websocket ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/gorilla/websocket/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> websocket_test ( 28 features, 5/31 featured file ) </li>
+          
+          <li> examples/chat/main ( 17 features, 3/3 featured file ) </li>
+          
+          <li> examples/command/main ( 12 features, 1/1 featured file ) </li>
+          
+          <li> examples/echo/main ( 11 features, 1/2 featured file ) </li>
+          
+          <li> examples/filewatch/main ( 4 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 5/6</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>10 </td>
+      <td>27 </td>
+      <td>9</td>
+      <td>11</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>4</td>
+      <td>0</td>
+      <td>44.44444444444444%</td>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>9 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L50">conn_broadcast_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L51">conn_broadcast_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L77">conn_broadcast_test.go</a></td>
+              <td>Go in for</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L77">conn_broadcast_test.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L79">conn_broadcast_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L80">conn_broadcast_test.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L88">conn_broadcast_test.go</a></td>
+              <td>Send</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L90">conn_broadcast_test.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L105">conn_broadcast_test.go</a></td>
+              <td>Send</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_broadcast_test.go#L107">conn_broadcast_test.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//prepared.go#L76">prepared.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>76</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//prepared.go#L77">prepared.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_test.go#L652">conn_test.go</a></td>
+              <td>Receive</td>
+              <td>652</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_test.go#L659">conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>659</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn_test.go#L664">conn_test.go</a></td>
+              <td>Receive</td>
+              <td>664</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//client_server_test.go#L775">client_server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>775</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//client_server_test.go#L820">client_server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>820</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//client_server_test.go#L821">client_server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>821</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//client_server_test.go#L823">client_server_test.go</a></td>
+              <td>Close chan</td>
+              <td>823</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//client_server_test.go#L826">client_server_test.go</a></td>
+              <td>Receive</td>
+              <td>826</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L305">conn.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>305</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L306">conn.go</a></td>
+              <td>Send</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L379">conn.go</a></td>
+              <td>Receive</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L380">conn.go</a></td>
+              <td>Send</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L441">conn.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>441</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L442">conn.go</a></td>
+              <td>Receive</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L444">conn.go</a></td>
+              <td>Receive</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//conn.go#L447">conn.go</a></td>
+              <td>Send</td>
+              <td>447</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/main.go#L31">examples/chat/main.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/hub.go#L34">examples/chat/hub.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>34</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/hub.go#L35">examples/chat/hub.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/hub.go#L37">examples/chat/hub.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/hub.go#L42">examples/chat/hub.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/hub.go#L44">examples/chat/hub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>44</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/hub.go#L45">examples/chat/hub.go</a></td>
+              <td>Send</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L58">examples/chat/client.go</a></td>
+              <td>Send</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L73">examples/chat/client.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L89">examples/chat/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>89</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L90">examples/chat/client.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L108">examples/chat/client.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L114">examples/chat/client.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L130">examples/chat/client.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>130</td>
+              <td>256</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L131">examples/chat/client.go</a></td>
+              <td>Send</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L135">examples/chat/client.go</a></td>
+              <td>Goroutine</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/chat/client.go#L136">examples/chat/client.go</a></td>
+              <td>Goroutine</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L59">examples/command/main.go</a></td>
+              <td>chan used as a param</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L81">examples/command/main.go</a></td>
+              <td>chan used as a param</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L85">examples/command/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>85</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L86">examples/command/main.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L90">examples/command/main.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L139">examples/command/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L140">examples/command/main.go</a></td>
+              <td>Goroutine</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L141">examples/command/main.go</a></td>
+              <td>Goroutine</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L153">examples/command/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>153</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L154">examples/command/main.go</a></td>
+              <td>Receive</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L155">examples/command/main.go</a></td>
+              <td>Receive</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/command/main.go#L160">examples/command/main.go</a></td>
+              <td>Receive</td>
+              <td>160</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L26">examples/echo/client.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>26</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L38">examples/echo/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L40">examples/echo/client.go</a></td>
+              <td>Goroutine</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L41">examples/echo/client.go</a></td>
+              <td>Close chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L56">examples/echo/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>56</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L57">examples/echo/client.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L59">examples/echo/client.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L65">examples/echo/client.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L75">examples/echo/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>75</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L76">examples/echo/client.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/echo/client.go#L77">examples/echo/client.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/filewatch/main.go#L82">examples/filewatch/main.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>82</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/filewatch/main.go#L83">examples/filewatch/main.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/filewatch/main.go#L104">examples/filewatch/main.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gorilla/websocket/blob//examples/filewatch/main.go#L127">examples/filewatch/main.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 10 ,  27 ,
+     9 ,
+     11 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

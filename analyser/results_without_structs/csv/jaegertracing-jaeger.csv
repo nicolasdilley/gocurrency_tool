@@ -1,0 +1,462 @@
+Line num,0
+packages num,44,193
+files num,69,716
+Average Line num per featured file,16587
+jaeger,14
+cmd/agent/main,86
+cmd/agent/app/app,788
+cmd/agent/app/configmanager/configmanager,115
+cmd/agent/app/configmanager/grpc/grpc,88
+cmd/agent/app/customtransport/customtransport,79
+cmd/agent/app/httpserver/httpserver,35
+cmd/agent/app/processors/processors,267
+cmd/agent/app/reporter/reporter,836
+cmd/agent/app/reporter/grpc/grpc,830
+cmd/agent/app/servers/servers,266
+cmd/agent/app/servers/thriftudp/thriftudp,295
+cmd/agent/app/testutils/testutils,167
+cmd/all-in-one/main,357
+cmd/all-in-one/setupcontext/setupcontext,21
+cmd/anonymizer/main,68
+cmd/anonymizer/app/app,108
+cmd/anonymizer/app/anonymizer/anonymizer,319
+cmd/anonymizer/app/query/query,58
+cmd/anonymizer/app/uiconv/uiconv,367
+cmd/anonymizer/app/writer/writer,108
+cmd/collector/main,112
+cmd/collector/app/app,1640
+cmd/collector/app/handler/handler,569
+cmd/collector/app/processor/processor,29
+cmd/collector/app/sampling/sampling,63
+cmd/collector/app/sampling/model/model,15
+cmd/collector/app/sampling/strategystore/strategystore,18
+cmd/collector/app/sanitizer/sanitizer,289
+cmd/collector/app/sanitizer/cache/cache,317
+cmd/collector/app/sanitizer/cache/mocks/mocks,56
+cmd/collector/app/sanitizer/zipkin/zipkin,289
+cmd/collector/app/server/server,565
+cmd/collector/app/zipkin/zipkin,1740
+cmd/docs/docs,113
+cmd/env/env,66
+cmd/es-index-cleaner/main,92
+cmd/es-index-cleaner/app/app,737
+cmd/esmapping-generator/main,36
+cmd/esmapping-generator/app/app,101
+cmd/esmapping-generator/app/renderer/renderer,105
+cmd/flags/flags,344
+cmd/ingester/main,92
+cmd/ingester/app/app,176
+cmd/ingester/app/builder/builder,64
+cmd/ingester/app/consumer/consumer,920
+cmd/ingester/app/consumer/mocks/mocks,163
+cmd/ingester/app/consumer/offset/offset,304
+cmd/ingester/app/processor/processor_test,225
+cmd/ingester/app/processor/decorator/decorator,209
+cmd/ingester/app/processor/mocks/mocks,26
+cmd/query/main,141
+cmd/query/app/app,5114
+cmd/query/app/apiv3/apiv3,1131
+cmd/query/app/mocks/mocks,42
+cmd/query/app/querysvc/querysvc,402
+cmd/query/app/ui/ui,15
+cmd/query/app/ui/actual/assets,1
+cmd/status/status,98
+cmd/tracegen/main,49
+crossdock/main,82
+crossdock/services/services,996
+crossdock/services/mocks/mocks,98
+examples/hotrod/main,7
+examples/hotrod/cmd/cmd,241
+examples/hotrod/pkg/delay/delay,12
+examples/hotrod/pkg/httperr/httperr,11
+examples/hotrod/pkg/log/log,162
+examples/hotrod/pkg/pool/pool,33
+examples/hotrod/pkg/tracing/tracing,158
+examples/hotrod/services/config/config,16
+examples/hotrod/services/customer/customer,182
+examples/hotrod/services/driver/driver,412
+examples/hotrod/services/frontend/frontend,196
+examples/hotrod/services/route/route,164
+examples/memstore-plugin/main,80
+internal/tracegen/tracegen,140
+model/model_test,4937
+model/adjuster/adjuster_test,873
+model/converter/converter,1
+model/converter/json/json,440
+model/converter/thrift/thrift,1
+model/converter/thrift/jaeger/jaeger,706
+model/converter/thrift/zipkin/zipkin,630
+model/json/json,65
+model/prototest/prototest,179
+pkg/pkg,1
+pkg/cache/cache,328
+pkg/cassandra/cassandra,34
+pkg/cassandra/config/config,129
+pkg/cassandra/gocql/gocql,56
+pkg/cassandra/gocql/testutils/testutils,49
+pkg/cassandra/metrics/metrics,163
+pkg/cassandra/mocks/mocks,140
+pkg/clientcfg/clientcfghttp/clientcfghttp,433
+pkg/clientcfg/clientcfghttp/thrift-0.9.2/sampling,709
+pkg/config/config,118
+pkg/config/tlscfg/tlscfg,838
+pkg/discovery/discovery,89
+pkg/discovery/grpcresolver/grpcresolver,252
+pkg/distributedlock/distributedlock,9
+pkg/distributedlock/mocks/mocks,40
+pkg/es/es,83
+pkg/es/config/config,435
+pkg/es/mocks/mocks,453
+pkg/es/wrapper/eswrapper,144
+pkg/fswatcher/fswatcher,42
+pkg/gogocodec/gogocodec,85
+pkg/healthcheck/healthcheck,181
+pkg/httpfs/httpfs,49
+pkg/httpmetrics/httpmetrics,114
+pkg/kafka/auth/auth,269
+pkg/kafka/consumer/consumer,43
+pkg/kafka/mocks/mocks,48
+pkg/kafka/producer/producer,44
+pkg/memory/config/config,5
+pkg/metrics/metrics,162
+pkg/multicloser/multicloser,71
+pkg/multierror/multierror,66
+pkg/netutils/netutils,64
+pkg/normalizer/normalizer,42
+pkg/prometheus/config/config,11
+pkg/queue/queue,389
+pkg/recoveryhandler/recoveryhandler,41
+pkg/testutils/testutils,154
+pkg/version/version,72
+plugin/plugin,12
+plugin/metrics/metrics,189
+plugin/metrics/disabled/disabled,118
+plugin/metrics/prometheus/prometheus,127
+plugin/metrics/prometheus/metricsstore/metricsstore,596
+plugin/metrics/prometheus/metricsstore/dbmodel/dbmodel,105
+plugin/pkg/distributedlock/cassandra/cassandra,305
+plugin/sampling/calculationstrategy/calculationstrategy,69
+plugin/sampling/leaderelection/leaderelection,159
+plugin/sampling/leaderelection/mocks/mocks,35
+plugin/sampling/strategystore/strategystore,183
+plugin/sampling/strategystore/adaptive/adaptive,1770
+plugin/sampling/strategystore/static/static,773
+plugin/storage/storage,675
+plugin/storage/badger/badger,567
+plugin/storage/badger/dependencystore/dependencystore_test,148
+plugin/storage/badger/spanstore/spanstore_test,1512
+plugin/storage/cassandra/cassandra,607
+plugin/storage/cassandra/dependencystore/dependencystore,442
+plugin/storage/cassandra/samplingstore/samplingstore,622
+plugin/storage/cassandra/savetracetest/main,119
+plugin/storage/cassandra/spanstore/spanstore,2000
+plugin/storage/cassandra/spanstore/dbmodel/dbmodel,1213
+plugin/storage/es/es,875
+plugin/storage/es/dependencystore/dependencystore,301
+plugin/storage/es/dependencystore/dbmodel/dbmodel,73
+plugin/storage/es/mappings/mappings,351
+plugin/storage/es/spanstore/spanstore,2326
+plugin/storage/es/spanstore/dbmodel/dbmodel,847
+plugin/storage/grpc/grpc,369
+plugin/storage/grpc/config/config,75
+plugin/storage/grpc/mocks/mocks,26
+plugin/storage/grpc/proto/storage_v1/storage_v1_test,93
+plugin/storage/grpc/proto/storageprototest/storageprototest,119
+plugin/storage/grpc/shared/shared,1274
+plugin/storage/integration/integration,1351
+plugin/storage/kafka/kafka,903
+plugin/storage/memory/memory,767
+ports/ports,71
+proto-gen/api_v2/api_v2,5328
+proto-gen/api_v2/metrics/metrics,6874
+proto-gen/api_v3/api_v3,915
+proto-gen/otel/common/v1/v1,358
+proto-gen/otel/resource/v1/v1,73
+proto-gen/otel/trace/v1/v1,608
+proto-gen/storage_v1/storage_v1,4259
+proto-gen/storage_v1/mocks/mocks,1024
+proto-gen/zipkin/zipkin_proto3,425
+storage/storage,29
+storage/dependencystore/dependencystore,13
+storage/dependencystore/mocks/mocks,30
+storage/metricsstore/metricsstore,33
+storage/metricsstore/mocks/mocks,81
+storage/mocks/mocks,156
+storage/samplingstore/samplingstore,13
+storage/samplingstore/mocks/mocks,81
+storage/spanstore/spanstore_test,352
+storage/spanstore/metrics/metrics_test,278
+storage/spanstore/mocks/mocks,119
+swagger-gen/models/models,435
+swagger-gen/restapi/restapi,826
+swagger-gen/restapi/operations/operations,456
+thrift-gen/agent/agent,348
+thrift-gen/baggage/baggage,496
+thrift-gen/jaeger/jaeger,2425
+thrift-gen/sampling/sampling,1179
+thrift-gen/zipkincore/zipkincore,1604
+Filename, #,Concurrent Type, Line number , Number
+cmd/agent/app/agent.go,1,Goroutine,68,
+cmd/agent/app/agent.go,5,Go in for,76,
+cmd/agent/app/agent.go,1,Goroutine,76,
+cmd/agent/app/agent_test.go,17,Select with default (number of branch),57,2
+cmd/agent/app/agent_test.go,2,Receive,58,
+cmd/agent/app/agent_test.go,8,Known chan length (length),113,2
+cmd/agent/app/agent_test.go,1,Goroutine,114,
+cmd/agent/app/agent_test.go,3,Send,117,
+cmd/agent/app/agent_test.go,15,Close chan,119,
+cmd/agent/app/agent_test.go,2,Receive,132,
+cmd/agent/app/configmanager/grpc/manager_test.go,1,Goroutine,79,
+cmd/agent/app/processors/thrift_processor.go,5,Go in for,86,
+cmd/agent/app/processors/thrift_processor.go,1,Goroutine,86,
+cmd/agent/app/processors/thrift_processor_test.go,1,Goroutine,69,
+cmd/agent/app/reporter/client_metrics.go,4,Synchronous chan,106,
+cmd/agent/app/reporter/client_metrics.go,1,Goroutine,109,
+cmd/agent/app/reporter/client_metrics.go,16,Select (number of branch),136,2
+cmd/agent/app/reporter/client_metrics.go,2,Receive,137,
+cmd/agent/app/reporter/client_metrics.go,2,Receive,139,
+cmd/agent/app/reporter/grpc/collector_proxy_test.go,1,Goroutine,79,
+cmd/agent/app/reporter/grpc/builder.go,1,Goroutine,108,
+cmd/agent/app/reporter/grpc/builder_test.go,21,Send only chan (chan<-),49,
+cmd/agent/app/reporter/grpc/builder_test.go,21,Send only chan (chan<-),51,
+cmd/agent/app/servers/tbuffered_server_test.go,1,Goroutine,47,
+cmd/agent/app/servers/tbuffered_server_test.go,17,Select with default (number of branch),62,2
+cmd/agent/app/servers/tbuffered_server_test.go,2,Receive,63,
+cmd/agent/app/servers/tbuffered_server_test.go,1,Goroutine,134,
+cmd/agent/app/servers/tbuffered_server_test.go,17,Select with default (number of branch),153,2
+cmd/agent/app/servers/tbuffered_server_test.go,2,Receive,154,
+cmd/agent/app/servers/tbuffered_server.go,9,Unknown chan length,79,
+cmd/agent/app/servers/tbuffered_server.go,17,Select with default (number of branch),112,2
+cmd/agent/app/servers/tbuffered_server.go,3,Send,113,
+cmd/agent/app/servers/thriftudp/transport_test.go,1,Goroutine,105,
+cmd/agent/app/servers/thriftudp/transport_test.go,1,Goroutine,112,
+cmd/agent/app/testutils/mock_grpc_collector.go,1,Goroutine,46,
+cmd/all-in-one/main.go,1,Goroutine,256,
+cmd/anonymizer/app/anonymizer/anonymizer.go,1,Goroutine,92,
+cmd/collector/app/span_processor.go,4,Synchronous chan,109,
+cmd/collector/app/span_processor.go,1,Goroutine,224,
+cmd/collector/app/span_processor.go,16,Select (number of branch),228,2
+cmd/collector/app/span_processor.go,2,Receive,229,
+cmd/collector/app/span_processor.go,2,Receive,231,
+cmd/collector/app/handler/grpc_handler_test.go,1,Goroutine,69,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go,1,Goroutine,133,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go,1,Goroutine,143,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache_test.go,1,Goroutine,174,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,1,Goroutine,95,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,1,Goroutine,96,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,16,Select (number of branch),106,2
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,2,Receive,107,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,2,Receive,109,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,16,Select (number of branch),145,2
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,2,Receive,146,
+cmd/collector/app/sanitizer/cache/auto_refresh_cache.go,2,Receive,153,
+cmd/collector/app/server/http.go,1,Goroutine,91,
+cmd/collector/app/server/zipkin.go,1,Goroutine,86,
+cmd/collector/app/server/grpc.go,1,Goroutine,83,
+cmd/flags/admin.go,1,Goroutine,118,
+cmd/flags/service.go,8,Known chan length (length),59,1
+cmd/flags/service.go,4,Synchronous chan,60,
+cmd/flags/service.go,3,Send,84,
+cmd/flags/service.go,16,Select (number of branch),146,2
+cmd/flags/service.go,2,Receive,147,
+cmd/flags/service.go,2,Receive,149,
+cmd/ingester/app/consumer/deadlock_detector_test.go,2,Receive,33,
+cmd/ingester/app/consumer/consumer.go,1,Goroutine,78,
+cmd/ingester/app/consumer/consumer.go,5,Go in for,87,
+cmd/ingester/app/consumer/consumer.go,5,Go in for,88,
+cmd/ingester/app/consumer/consumer.go,1,Goroutine,87,
+cmd/ingester/app/consumer/consumer.go,1,Goroutine,88,
+cmd/ingester/app/consumer/consumer.go,16,Select (number of branch),132,2
+cmd/ingester/app/consumer/consumer.go,2,Receive,133,
+cmd/ingester/app/consumer/consumer.go,2,Receive,151,
+cmd/ingester/app/consumer/consumer.go,20,Receive only chan (<-chan),166,
+cmd/ingester/app/consumer/deadlock_detector.go,8,Known chan length (length),87,1
+cmd/ingester/app/consumer/deadlock_detector.go,4,Synchronous chan,88,
+cmd/ingester/app/consumer/deadlock_detector.go,1,Goroutine,100,
+cmd/ingester/app/consumer/deadlock_detector.go,16,Select (number of branch),111,2
+cmd/ingester/app/consumer/deadlock_detector.go,2,Receive,112,
+cmd/ingester/app/consumer/deadlock_detector.go,2,Receive,115,
+cmd/ingester/app/consumer/deadlock_detector.go,17,Select with default (number of branch),117,2
+cmd/ingester/app/consumer/deadlock_detector.go,3,Send,118,
+cmd/ingester/app/consumer/deadlock_detector.go,4,Synchronous chan,141,
+cmd/ingester/app/consumer/deadlock_detector.go,1,Goroutine,150,
+cmd/ingester/app/consumer/deadlock_detector.go,16,Select (number of branch),155,2
+cmd/ingester/app/consumer/deadlock_detector.go,2,Receive,156,
+cmd/ingester/app/consumer/deadlock_detector.go,2,Receive,159,
+cmd/ingester/app/consumer/deadlock_detector.go,3,Send,178,
+cmd/ingester/app/consumer/deadlock_detector.go,3,Send,194,
+cmd/ingester/app/consumer/consumer_test.go,8,Known chan length (length),72,1
+cmd/ingester/app/consumer/consumer_test.go,3,Send,73,
+cmd/ingester/app/consumer/offset/manager.go,1,Goroutine,73,
+cmd/ingester/app/consumer/offset/manager.go,16,Select (number of branch),76,2
+cmd/ingester/app/consumer/offset/manager.go,2,Receive,77,
+cmd/ingester/app/consumer/offset/manager.go,2,Receive,85,
+cmd/ingester/app/processor/parallel_processor.go,5,Go in for,53,
+cmd/ingester/app/processor/parallel_processor.go,1,Goroutine,53,
+cmd/ingester/app/processor/parallel_processor.go,16,Select (number of branch),55,2
+cmd/ingester/app/processor/parallel_processor.go,2,Receive,56,
+cmd/ingester/app/processor/parallel_processor.go,2,Receive,58,
+cmd/ingester/app/processor/parallel_processor.go,3,Send,69,
+cmd/query/main.go,1,Goroutine,127,
+cmd/query/app/server.go,1,Goroutine,256,
+cmd/query/app/server.go,3,Send,271,
+cmd/query/app/server.go,1,Goroutine,275,
+cmd/query/app/server.go,3,Send,281,
+cmd/query/app/server.go,1,Goroutine,286,
+cmd/query/app/server.go,3,Send,294,
+cmd/query/app/static_handler_test.go,4,Synchronous chan,197,
+cmd/query/app/static_handler_test.go,3,Send,229,
+cmd/query/app/static_handler_test.go,15,Close chan,236,
+cmd/query/app/static_handler_test.go,3,Send,237,
+cmd/query/app/static_handler.go,16,Select (number of branch),148,2
+cmd/query/app/static_handler.go,2,Receive,149,
+cmd/query/app/static_handler.go,2,Receive,170,
+cmd/query/app/static_handler.go,1,Goroutine,191,
+cmd/query/app/server_test.go,1,Goroutine,344,
+cmd/query/app/server_test.go,1,Goroutine,504,
+cmd/query/app/server_test.go,1,Goroutine,622,
+cmd/query/app/server_test.go,1,Goroutine,666,
+cmd/query/app/grpc_handler_test.go,1,Goroutine,160,
+cmd/query/app/apiv3/grpc_gateway_test.go,1,Goroutine,79,
+cmd/query/app/apiv3/grpc_gateway_test.go,1,Goroutine,97,
+cmd/query/app/apiv3/grpc_handler_test.go,1,Goroutine,43,
+cmd/tracegen/main.go,1,Goroutine,67,
+crossdock/main.go,1,Goroutine,64,
+crossdock/services/tracehandler.go,4,Synchronous chan,137,
+crossdock/services/tracehandler.go,1,Goroutine,138,
+crossdock/services/tracehandler.go,15,Close chan,139,
+crossdock/services/tracehandler.go,22,chan used as a param,198,
+crossdock/services/tracehandler.go,16,Select (number of branch),202,2
+crossdock/services/tracehandler.go,2,Receive,203,
+crossdock/services/tracehandler.go,2,Receive,205,
+crossdock/services/tracehandler_test.go,4,Synchronous chan,270,
+crossdock/services/tracehandler_test.go,1,Goroutine,271,
+crossdock/services/tracehandler_test.go,15,Close chan,272,
+examples/hotrod/cmd/all.go,1,Goroutine,29,
+examples/hotrod/cmd/all.go,1,Goroutine,30,
+examples/hotrod/cmd/all.go,1,Goroutine,31,
+examples/hotrod/pkg/pool/pool.go,4,Synchronous chan,26,
+examples/hotrod/pkg/pool/pool.go,4,Synchronous chan,27,
+examples/hotrod/pkg/pool/pool.go,5,Go in for,29,
+examples/hotrod/pkg/pool/pool.go,1,Goroutine,29,
+examples/hotrod/pkg/pool/pool.go,16,Select (number of branch),31,2
+examples/hotrod/pkg/pool/pool.go,2,Receive,32,
+examples/hotrod/pkg/pool/pool.go,2,Receive,34,
+examples/hotrod/pkg/pool/pool.go,3,Send,48,
+internal/tracegen/config.go,5,Go in for,76,
+internal/tracegen/config.go,1,Goroutine,76,
+pkg/cache/lru_test.go,4,Synchronous chan,154,
+pkg/cache/lru_test.go,5,Go in for,159,
+pkg/cache/lru_test.go,7,Goroutine in for with constant (constant),159,20
+pkg/cache/lru_test.go,1,Goroutine,159,
+pkg/cache/lru_test.go,2,Receive,162,
+pkg/cache/lru_test.go,15,Close chan,170,
+pkg/cache/lru_test.go,4,Synchronous chan,175,
+pkg/cache/lru_test.go,1,Goroutine,178,
+pkg/cache/lru_test.go,3,Send,181,
+pkg/cache/lru_test.go,16,Select (number of branch),191,2
+pkg/cache/lru_test.go,2,Receive,192,
+pkg/cache/lru_test.go,2,Receive,194,
+pkg/cache/lru_test.go,4,Synchronous chan,200,
+pkg/cache/lru_test.go,1,Goroutine,204,
+pkg/cache/lru_test.go,3,Send,207,
+pkg/cache/lru_test.go,16,Select (number of branch),218,2
+pkg/cache/lru_test.go,2,Receive,219,
+pkg/cache/lru_test.go,2,Receive,221,
+pkg/config/tlscfg/cert_watcher.go,16,Select (number of branch),82,2
+pkg/config/tlscfg/cert_watcher.go,2,Receive,83,
+pkg/config/tlscfg/cert_watcher.go,2,Receive,126,
+pkg/config/tlscfg/options.go,1,Goroutine,83,
+pkg/config/tlscfg/cert_watcher_test.go,1,Goroutine,79,
+pkg/config/tlscfg/cert_watcher_test.go,1,Goroutine,156,
+pkg/config/tlscfg/cert_watcher_test.go,1,Goroutine,215,
+pkg/config/tlscfg/cert_watcher_test.go,1,Goroutine,320,
+pkg/discovery/notifier_test.go,4,Synchronous chan,27,
+pkg/discovery/notifier_test.go,4,Synchronous chan,28,
+pkg/discovery/notifier_test.go,1,Goroutine,52,
+pkg/discovery/notifier_test.go,1,Goroutine,53,
+pkg/discovery/notifier_test.go,15,Close chan,58,
+pkg/discovery/notifier_test.go,15,Close chan,59,
+pkg/discovery/notifier.go,21,Send only chan (chan<-),37,
+pkg/discovery/notifier.go,21,Send only chan (chan<-),45,
+pkg/discovery/notifier.go,3,Send,61,
+pkg/discovery/grpcresolver/grpc_resolver_test.go,5,Go in for,73,
+pkg/discovery/grpcresolver/grpc_resolver_test.go,1,Goroutine,73,
+pkg/discovery/grpcresolver/grpc_resolver.go,8,Known chan length (length),72,100
+pkg/discovery/grpcresolver/grpc_resolver.go,1,Goroutine,98,
+pkg/queue/bounded_queue.go,9,Unknown chan length,53,
+pkg/queue/bounded_queue.go,5,Go in for,73,
+pkg/queue/bounded_queue.go,1,Goroutine,73,
+pkg/queue/bounded_queue.go,16,Select (number of branch),79,2
+pkg/queue/bounded_queue.go,2,Receive,80,
+pkg/queue/bounded_queue.go,2,Receive,88,
+pkg/queue/bounded_queue.go,17,Select with default (number of branch),132,2
+pkg/queue/bounded_queue.go,3,Send,133,
+pkg/queue/bounded_queue.go,1,Goroutine,168,
+pkg/queue/bounded_queue.go,16,Select (number of branch),171,2
+pkg/queue/bounded_queue.go,2,Receive,172,
+pkg/queue/bounded_queue.go,2,Receive,175,
+pkg/queue/bounded_queue.go,9,Unknown chan length,190,
+pkg/testutils/logger_test.go,4,Synchronous chan,55,
+pkg/testutils/logger_test.go,1,Goroutine,59,
+pkg/testutils/logger_test.go,2,Receive,60,
+pkg/testutils/logger_test.go,1,Goroutine,65,
+pkg/testutils/logger_test.go,2,Receive,66,
+pkg/testutils/logger_test.go,15,Close chan,73,
+plugin/sampling/leaderelection/leader_election_test.go,1,Goroutine,97,
+plugin/sampling/leaderelection/leader_election.go,1,Goroutine,67,
+plugin/sampling/leaderelection/leader_election.go,16,Select (number of branch),89,2
+plugin/sampling/leaderelection/leader_election.go,2,Receive,90,
+plugin/sampling/leaderelection/leader_election.go,2,Receive,93,
+plugin/sampling/strategystore/adaptive/aggregator.go,16,Select (number of branch),71,2
+plugin/sampling/strategystore/adaptive/aggregator.go,2,Receive,72,
+plugin/sampling/strategystore/adaptive/aggregator.go,2,Receive,77,
+plugin/sampling/strategystore/adaptive/aggregator.go,1,Goroutine,126,
+plugin/sampling/strategystore/adaptive/processor.go,4,Synchronous chan,167,
+plugin/sampling/strategystore/adaptive/processor.go,1,Goroutine,170,
+plugin/sampling/strategystore/adaptive/processor.go,1,Goroutine,171,
+plugin/sampling/strategystore/adaptive/processor.go,16,Select (number of branch),204,2
+plugin/sampling/strategystore/adaptive/processor.go,2,Receive,205,
+plugin/sampling/strategystore/adaptive/processor.go,2,Receive,211,
+plugin/sampling/strategystore/adaptive/processor.go,16,Select (number of branch),237,2
+plugin/sampling/strategystore/adaptive/processor.go,2,Receive,238,
+plugin/sampling/strategystore/adaptive/processor.go,1,Goroutine,272,
+plugin/sampling/strategystore/adaptive/processor.go,2,Receive,274,
+plugin/sampling/strategystore/adaptive/processor_test.go,4,Synchronous chan,384,
+plugin/sampling/strategystore/adaptive/processor_test.go,1,Goroutine,386,
+plugin/sampling/strategystore/adaptive/processor_test.go,4,Synchronous chan,420,
+plugin/sampling/strategystore/adaptive/processor_test.go,1,Goroutine,427,
+plugin/sampling/strategystore/static/strategy_store.go,1,Goroutine,77,
+plugin/sampling/strategystore/static/strategy_store.go,16,Select (number of branch),152,2
+plugin/sampling/strategystore/static/strategy_store.go,2,Receive,153,
+plugin/sampling/strategystore/static/strategy_store.go,2,Receive,155,
+plugin/storage/badger/factory.go,1,Goroutine,136,
+plugin/storage/badger/factory.go,1,Goroutine,137,
+plugin/storage/badger/factory.go,16,Select (number of branch),191,2
+plugin/storage/badger/factory.go,2,Receive,192,
+plugin/storage/badger/factory.go,2,Receive,194,
+plugin/storage/badger/factory.go,16,Select (number of branch),217,2
+plugin/storage/badger/factory.go,2,Receive,218,
+plugin/storage/badger/factory.go,2,Receive,220,
+plugin/storage/integration/token_propagation_test.go,1,Goroutine,91,
+plugin/storage/kafka/writer.go,1,Goroutine,53,
+plugin/storage/kafka/writer.go,1,Goroutine,58,
+plugin/storage/kafka/writer.go,3,Send,85,
+proto-gen/api_v3/query_service.pb.gw.go,1,Goroutine,236,
+proto-gen/api_v3/query_service.pb.gw.go,2,Receive,237,
+thrift-gen/baggage/baggage.go,1,Goroutine,301,
+thrift-gen/baggage/baggage.go,16,Select (number of branch),305,2
+thrift-gen/baggage/baggage.go,2,Receive,306,
+thrift-gen/baggage/baggage.go,2,Receive,308,
+thrift-gen/jaeger/jaeger.go,1,Goroutine,2414,
+thrift-gen/jaeger/jaeger.go,16,Select (number of branch),2418,2
+thrift-gen/jaeger/jaeger.go,2,Receive,2419,
+thrift-gen/jaeger/jaeger.go,2,Receive,2421,
+thrift-gen/sampling/sampling.go,1,Goroutine,1077,
+thrift-gen/sampling/sampling.go,16,Select (number of branch),1081,2
+thrift-gen/sampling/sampling.go,2,Receive,1082,
+thrift-gen/sampling/sampling.go,2,Receive,1084,
+thrift-gen/zipkincore/zipkincore.go,1,Goroutine,1569,
+thrift-gen/zipkincore/zipkincore.go,16,Select (number of branch),1573,2
+thrift-gen/zipkincore/zipkincore.go,2,Receive,1574,
+thrift-gen/zipkincore/zipkincore.go,2,Receive,1576,

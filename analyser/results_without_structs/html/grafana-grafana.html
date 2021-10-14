@@ -1,0 +1,8257 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : grafana/grafana ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/grafana/grafana/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> devenv/docker/blocks/slow_proxy/main ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/api/api ( 2 features, 1/75 featured file ) </li>
+          
+          <li> pkg/api/avatar/avatar ( 11 features, 1/1 featured file ) </li>
+          
+          <li> pkg/cmd/grafana-server/commands/commands ( 7 features, 1/3 featured file ) </li>
+          
+          <li> pkg/expr/mathexp/parse/parse ( 5 features, 1/4 featured file ) </li>
+          
+          <li> pkg/infra/log/log ( 1 features, 1/7 featured file ) </li>
+          
+          <li> pkg/infra/metrics/metrics ( 2 features, 1/4 featured file ) </li>
+          
+          <li> pkg/infra/metrics/graphitebridge/graphitebridge ( 13 features, 2/2 featured file ) </li>
+          
+          <li> pkg/infra/remotecache/remotecache ( 5 features, 3/10 featured file ) </li>
+          
+          <li> pkg/infra/serverlock/serverlock ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/infra/tracing/tracing ( 1 features, 1/2 featured file ) </li>
+          
+          <li> pkg/infra/usagestats/usagestats ( 12 features, 3/5 featured file ) </li>
+          
+          <li> pkg/plugins/backendplugin/manager/manager ( 20 features, 3/5 featured file ) </li>
+          
+          <li> pkg/plugins/manager/manager ( 3 features, 1/12 featured file ) </li>
+          
+          <li> pkg/server/server ( 13 features, 2/5 featured file ) </li>
+          
+          <li> pkg/services/alerting/alerting ( 59 features, 5/24 featured file ) </li>
+          
+          <li> pkg/services/auth/auth ( 3 features, 1/6 featured file ) </li>
+          
+          <li> pkg/services/cleanup/cleanup ( 3 features, 1/2 featured file ) </li>
+          
+          <li> pkg/services/live/live ( 21 features, 2/2 featured file ) </li>
+          
+          <li> pkg/services/live/pushhttp/pushhttp ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/services/live/pushws/pushws ( 4 features, 1/1 featured file ) </li>
+          
+          <li> pkg/services/live/runstream/runstream ( 70 features, 2/3 featured file ) </li>
+          
+          <li> pkg/services/ngalert/notifier/notifier ( 15 features, 3/13 featured file ) </li>
+          
+          <li> pkg/services/ngalert/schedule/schedule_test ( 35 features, 3/6 featured file ) </li>
+          
+          <li> pkg/services/ngalert/sender/sender ( 2 features, 1/1 featured file ) </li>
+          
+          <li> pkg/services/ngalert/state/state ( 7 features, 1/6 featured file ) </li>
+          
+          <li> pkg/services/notifications/notifications ( 9 features, 3/9 featured file ) </li>
+          
+          <li> pkg/services/provisioning/provisioning ( 14 features, 2/3 featured file ) </li>
+          
+          <li> pkg/services/provisioning/dashboards/dashboards ( 9 features, 3/10 featured file ) </li>
+          
+          <li> pkg/services/rendering/rendering ( 3 features, 1/5 featured file ) </li>
+          
+          <li> pkg/services/sqlstore/sqlstore ( 2 features, 1/62 featured file ) </li>
+          
+          <li> pkg/tsdb/cloudwatch/cloudwatch ( 23 features, 4/31 featured file ) </li>
+          
+          <li> pkg/tsdb/mssql/mssql ( 2 features, 1/4 featured file ) </li>
+          
+          <li> pkg/tsdb/mysql/mysql ( 2 features, 1/4 featured file ) </li>
+          
+          <li> pkg/tsdb/postgres/postgres ( 10 features, 3/8 featured file ) </li>
+          
+          <li> pkg/tsdb/sqleng/sqleng ( 10 features, 1/4 featured file ) </li>
+          
+          <li> pkg/tsdb/testdatasource/testdatasource ( 3 features, 1/12 featured file ) </li>
+          
+    <li> Num of Packages with features : 37/192</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>49 </td>
+      <td>131 </td>
+      <td>59</td>
+      <td>66</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>4 </td>
+      <td>0</td>
+      <td>11</td>
+      <td>26.666666666666668</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>6 </td>
+      <td>5 </td>
+      <td>2 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>33</td>
+      <td>12</td>
+      <td>14</td>
+      <td>20.33898305084746%</td>
+      <td>22 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>45 </td>
+      <td>3</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//devenv/docker/blocks/slow_proxy/main.go#L35">devenv/docker/blocks/slow_proxy/main.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/http_server.go#L236">pkg/api/http_server.go</a></td>
+              <td>Goroutine</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/http_server.go#L239">pkg/api/http_server.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L63">pkg/api/avatar/avatar.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>63</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L64">pkg/api/avatar/avatar.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L66">pkg/api/avatar/avatar.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L166">pkg/api/avatar/avatar.go</a></td>
+              <td>Unknown chan length</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L168">pkg/api/avatar/avatar.go</a></td>
+              <td>Go in for</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L168">pkg/api/avatar/avatar.go</a></td>
+              <td>Goroutine</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L170">pkg/api/avatar/avatar.go</a></td>
+              <td>Receive</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L184">pkg/api/avatar/avatar.go</a></td>
+              <td>Send</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L190">pkg/api/avatar/avatar.go</a></td>
+              <td>Synchronous chan</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L191">pkg/api/avatar/avatar.go</a></td>
+              <td>Goroutine</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/api/avatar/avatar.go#L192">pkg/api/avatar/avatar.go</a></td>
+              <td>Send</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/cmd/grafana-server/commands/cli.go#L91">pkg/cmd/grafana-server/commands/cli.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/cmd/grafana-server/commands/cli.go#L166">pkg/cmd/grafana-server/commands/cli.go</a></td>
+              <td>Goroutine</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/cmd/grafana-server/commands/cli.go#L190">pkg/cmd/grafana-server/commands/cli.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>190</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/cmd/grafana-server/commands/cli.go#L191">pkg/cmd/grafana-server/commands/cli.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>191</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/cmd/grafana-server/commands/cli.go#L197">pkg/cmd/grafana-server/commands/cli.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>197</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/cmd/grafana-server/commands/cli.go#L198">pkg/cmd/grafana-server/commands/cli.go</a></td>
+              <td>Receive</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/cmd/grafana-server/commands/cli.go#L202">pkg/cmd/grafana-server/commands/cli.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/expr/mathexp/parse/lex.go#L106">pkg/expr/mathexp/parse/lex.go</a></td>
+              <td>Send</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/expr/mathexp/parse/lex.go#L142">pkg/expr/mathexp/parse/lex.go</a></td>
+              <td>Send</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/expr/mathexp/parse/lex.go#L148">pkg/expr/mathexp/parse/lex.go</a></td>
+              <td>Receive</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/expr/mathexp/parse/lex.go#L157">pkg/expr/mathexp/parse/lex.go</a></td>
+              <td>Synchronous chan</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/expr/mathexp/parse/lex.go#L159">pkg/expr/mathexp/parse/lex.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/log/file.go#L218">pkg/infra/log/file.go</a></td>
+              <td>Goroutine</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/service.go#L47">pkg/infra/metrics/service.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/service.go#L53">pkg/infra/metrics/service.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite.go#L173">pkg/infra/metrics/graphitebridge/graphite.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>173</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite.go#L174">pkg/infra/metrics/graphitebridge/graphite.go</a></td>
+              <td>Receive</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite.go#L178">pkg/infra/metrics/graphitebridge/graphite.go</a></td>
+              <td>Receive</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L503">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>503</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L504">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Receive</td>
+              <td>504</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L515">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Receive</td>
+              <td>515</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L517">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Receive</td>
+              <td>517</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L523">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L524">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>524</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L530">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Goroutine</td>
+              <td>530</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L533">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Send</td>
+              <td>533</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L539">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Send</td>
+              <td>539</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/metrics/graphitebridge/graphite_test.go#L543">pkg/infra/metrics/graphitebridge/graphite_test.go</a></td>
+              <td>Send</td>
+              <td>543</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/remotecache/remotecache_test.go#L83">pkg/infra/remotecache/remotecache_test.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/remotecache/remotecache.go#L94">pkg/infra/remotecache/remotecache.go</a></td>
+              <td>Receive</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/remotecache/database_storage.go#L32">pkg/infra/remotecache/database_storage.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>32</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/remotecache/database_storage.go#L33">pkg/infra/remotecache/database_storage.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/remotecache/database_storage.go#L35">pkg/infra/remotecache/database_storage.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/serverlock/serverlock_integration_test.go#L29">pkg/infra/serverlock/serverlock_integration_test.go</a></td>
+              <td>Receive</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/tracing/tracing.go#L143">pkg/infra/tracing/tracing.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/service.go#L66">pkg/infra/usagestats/service.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>66</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/service.go#L67">pkg/infra/usagestats/service.go</a></td>
+              <td>Receive</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/service.go#L71">pkg/infra/usagestats/service.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/service.go#L73">pkg/infra/usagestats/service.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats.go#L292">pkg/infra/usagestats/usage_stats.go</a></td>
+              <td>Goroutine</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats_test.go#L239">pkg/infra/usagestats/usage_stats_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats_test.go#L245">pkg/infra/usagestats/usage_stats_test.go</a></td>
+              <td>Send</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats_test.go#L252">pkg/infra/usagestats/usage_stats_test.go</a></td>
+              <td>Send</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats_test.go#L259">pkg/infra/usagestats/usage_stats_test.go</a></td>
+              <td>Close chan</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats_test.go#L268">pkg/infra/usagestats/usage_stats_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>268</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats_test.go#L269">pkg/infra/usagestats/usage_stats_test.go</a></td>
+              <td>Receive</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/infra/usagestats/usage_stats_test.go#L271">pkg/infra/usagestats/usage_stats_test.go</a></td>
+              <td>Receive</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/resource_response_stream.go#L29">pkg/plugins/backendplugin/manager/resource_response_stream.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>29</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/resource_response_stream.go#L30">pkg/plugins/backendplugin/manager/resource_response_stream.go</a></td>
+              <td>Receive</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/resource_response_stream.go#L32">pkg/plugins/backendplugin/manager/resource_response_stream.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/resource_response_stream.go#L38">pkg/plugins/backendplugin/manager/resource_response_stream.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>38</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/resource_response_stream.go#L39">pkg/plugins/backendplugin/manager/resource_response_stream.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/resource_response_stream.go#L41">pkg/plugins/backendplugin/manager/resource_response_stream.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L49">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L221">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Go in for</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L221">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L371">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>371</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L488">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>488</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L501">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>501</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L502">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Receive</td>
+              <td>502</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager.go#L507">pkg/plugins/backendplugin/manager/manager.go</a></td>
+              <td>Receive</td>
+              <td>507</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager_test.go#L84">pkg/plugins/backendplugin/manager/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager_test.go#L104">pkg/plugins/backendplugin/manager/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager_test.go#L113">pkg/plugins/backendplugin/manager/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager_test.go#L242">pkg/plugins/backendplugin/manager/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager_test.go#L246">pkg/plugins/backendplugin/manager/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/backendplugin/manager/manager_test.go#L265">pkg/plugins/backendplugin/manager/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>265</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/manager/manager.go#L191">pkg/plugins/manager/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/manager/manager.go#L192">pkg/plugins/manager/manager.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/plugins/manager/manager.go#L194">pkg/plugins/manager/manager.go</a></td>
+              <td>Receive</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server.go#L69">pkg/server/server.go</a></td>
+              <td>Synchronous chan</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server.go#L150">pkg/server/server.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>150</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server.go#L151">pkg/server/server.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server.go#L185">pkg/server/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>185</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server.go#L186">pkg/server/server.go</a></td>
+              <td>Receive</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server.go#L188">pkg/server/server.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server_test.go#L40">pkg/server/server_test.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server_test.go#L71">pkg/server/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server_test.go#L73">pkg/server/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server_test.go#L74">pkg/server/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server_test.go#L79">pkg/server/server_test.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server_test.go#L85">pkg/server/server_test.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/server/server_test.go#L91">pkg/server/server_test.go</a></td>
+              <td>Receive</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L32">pkg/services/alerting/ticker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L36">pkg/services/alerting/ticker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L39">pkg/services/alerting/ticker.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L49">pkg/services/alerting/ticker.go</a></td>
+              <td>Send</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L55">pkg/services/alerting/ticker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>55</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L56">pkg/services/alerting/ticker.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L57">pkg/services/alerting/ticker.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/ticker.go#L65">pkg/services/alerting/ticker.go</a></td>
+              <td>Send</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/scheduler.go#L51">pkg/services/alerting/scheduler.go</a></td>
+              <td>chan used as a param</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/scheduler.go#L81">pkg/services/alerting/scheduler.go</a></td>
+              <td>chan used as a param</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/scheduler.go#L83">pkg/services/alerting/scheduler.go</a></td>
+              <td>Send</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L54">pkg/services/alerting/engine_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>54</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L55">pkg/services/alerting/engine_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L58">pkg/services/alerting/engine_test.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L62">pkg/services/alerting/engine_test.go</a></td>
+              <td>Receive</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L68">pkg/services/alerting/engine_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>68</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L69">pkg/services/alerting/engine_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L72">pkg/services/alerting/engine_test.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L76">pkg/services/alerting/engine_test.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L81">pkg/services/alerting/engine_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>81</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L82">pkg/services/alerting/engine_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L85">pkg/services/alerting/engine_test.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine_test.go#L89">pkg/services/alerting/engine_test.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L73">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L75">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L77">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L80">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>80</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L81">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L86">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L103">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L105">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L107">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Send</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L110">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>110</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L111">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/notifier_test.go#L116">pkg/services/alerting/notifier_test.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L57">pkg/services/alerting/engine.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>57</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L87">pkg/services/alerting/engine.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>87</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L88">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L90">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L106">pkg/services/alerting/engine.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L107">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L109">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L126">pkg/services/alerting/engine.go</a></td>
+              <td>Unknown chan length</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L127">pkg/services/alerting/engine.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>127</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L130">pkg/services/alerting/engine.go</a></td>
+              <td>Send</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L134">pkg/services/alerting/engine.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>134</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L135">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L139">pkg/services/alerting/engine.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>139</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L140">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L142">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L145">pkg/services/alerting/engine.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L149">pkg/services/alerting/engine.go</a></td>
+              <td>Goroutine</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L154">pkg/services/alerting/engine.go</a></td>
+              <td>chan used as a param</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L163">pkg/services/alerting/engine.go</a></td>
+              <td>chan used as a param</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L163">pkg/services/alerting/engine.go</a></td>
+              <td>chan used as a param</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L171">pkg/services/alerting/engine.go</a></td>
+              <td>Send</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L178">pkg/services/alerting/engine.go</a></td>
+              <td>Goroutine</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L209">pkg/services/alerting/engine.go</a></td>
+              <td>Send</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/alerting/engine.go#L216">pkg/services/alerting/engine.go</a></td>
+              <td>Send</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/auth/token_cleanup.go#L25">pkg/services/auth/token_cleanup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>25</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/auth/token_cleanup.go#L26">pkg/services/auth/token_cleanup.go</a></td>
+              <td>Receive</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/auth/token_cleanup.go#L36">pkg/services/auth/token_cleanup.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/cleanup/cleanup.go#L43">pkg/services/cleanup/cleanup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>43</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/cleanup/cleanup.go#L44">pkg/services/cleanup/cleanup.go</a></td>
+              <td>Receive</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/cleanup/cleanup.go#L61">pkg/services/cleanup/cleanup.go</a></td>
+              <td>Receive</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L16">pkg/services/live/live_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>16</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L18">pkg/services/live/live_test.go</a></td>
+              <td>Close chan</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L20">pkg/services/live/live_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>20</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L24">pkg/services/live/live_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>24</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L25">pkg/services/live/live_test.go</a></td>
+              <td>Receive</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L26">pkg/services/live/live_test.go</a></td>
+              <td>Receive</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L32">pkg/services/live/live_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L34">pkg/services/live/live_test.go</a></td>
+              <td>Close chan</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L39">pkg/services/live/live_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>39</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L40">pkg/services/live/live_test.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L41">pkg/services/live/live_test.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L48">pkg/services/live/live_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>48</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L49">pkg/services/live/live_test.go</a></td>
+              <td>Send</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live_test.go#L50">pkg/services/live/live_test.go</a></td>
+              <td>Send</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live.go#L210">pkg/services/live/live.go</a></td>
+              <td>Unknown chan length</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live.go#L421">pkg/services/live/live.go</a></td>
+              <td>chan used as a param</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live.go#L423">pkg/services/live/live.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>423</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live.go#L424">pkg/services/live/live.go</a></td>
+              <td>Send</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live.go#L425">pkg/services/live/live.go</a></td>
+              <td>Receive</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live.go#L428">pkg/services/live/live.go</a></td>
+              <td>Goroutine</td>
+              <td>428</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/live.go#L429">pkg/services/live/live.go</a></td>
+              <td>Receive</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/pushhttp/push.go#L41">pkg/services/live/pushhttp/push.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/pushws/push.go#L138">pkg/services/live/pushws/push.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/pushws/push.go#L142">pkg/services/live/pushws/push.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>142</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/pushws/push.go#L143">pkg/services/live/pushws/push.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/pushws/push.go#L145">pkg/services/live/pushws/push.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L90">pkg/services/live/runstream/manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L91">pkg/services/live/runstream/manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L119">pkg/services/live/runstream/manager.go</a></td>
+              <td>Slice array of chans</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L133">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L179">pkg/services/live/runstream/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>179</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L180">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L182">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L204">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L248">pkg/services/live/runstream/manager.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>248</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L249">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L273">pkg/services/live/runstream/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>273</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L274">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L276">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L333">pkg/services/live/runstream/manager.go</a></td>
+              <td>Send</td>
+              <td>333</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L338">pkg/services/live/runstream/manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>338</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L353">pkg/services/live/runstream/manager.go</a></td>
+              <td>Send</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L354">pkg/services/live/runstream/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>354</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L362">pkg/services/live/runstream/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>362</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L363">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>363</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L364">pkg/services/live/runstream/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>364</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L365">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L419">pkg/services/live/runstream/manager.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>419</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L430">pkg/services/live/runstream/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>430</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L431">pkg/services/live/runstream/manager.go</a></td>
+              <td>Send</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L432">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>432</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L435">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>435</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L440">pkg/services/live/runstream/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>440</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L441">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>441</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L446">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>446</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager.go#L448">pkg/services/live/runstream/manager.go</a></td>
+              <td>Receive</td>
+              <td>448</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L17">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L19">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>19</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L20">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L21">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L39">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L59">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L63">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L64">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L89">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L92">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L93">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L124">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L128">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L129">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L130">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L131">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L145">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L148">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L149">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L158">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L161">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L162">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L201">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L205">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L206">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L216">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L217">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L218">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L242">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L295">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L328">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L350">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L351">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L360">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L361">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>361</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L365">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L394">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>394</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L414">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>414</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L420">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/live/runstream/manager_test.go#L421">pkg/services/live/runstream/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L176">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Unknown chan length</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L177">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Unknown chan length</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L179">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Send</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L181">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Close chan</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L186">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Range over chan</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L194">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Send</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L200">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Close chan</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/receivers.go#L203">pkg/services/ngalert/notifier/receivers.go</a></td>
+              <td>Range over chan</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/multiorg_alertmanager.go#L52">pkg/services/ngalert/notifier/multiorg_alertmanager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>52</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/multiorg_alertmanager.go#L53">pkg/services/ngalert/notifier/multiorg_alertmanager.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/multiorg_alertmanager.go#L56">pkg/services/ngalert/notifier/multiorg_alertmanager.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/alertmanager.go#L112">pkg/services/ngalert/notifier/alertmanager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/alertmanager.go#L146">pkg/services/ngalert/notifier/alertmanager.go</a></td>
+              <td>Goroutine</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/alertmanager.go#L396">pkg/services/ngalert/notifier/alertmanager.go</a></td>
+              <td>Goroutine</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/notifier/alertmanager.go#L402">pkg/services/ngalert/notifier/alertmanager.go</a></td>
+              <td>Goroutine</td>
+              <td>402</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_unit_test.go#L60">pkg/services/ngalert/schedule/schedule_unit_test.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_unit_test.go#L126">pkg/services/ngalert/schedule/schedule_unit_test.go</a></td>
+              <td>Goroutine</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L158">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Goroutine</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L165">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Goroutine</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L292">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>292</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L293">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L297">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L314">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>314</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L315">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive</td>
+              <td>315</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L370">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Send</td>
+              <td>370</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L381">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Send</td>
+              <td>381</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L384">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L402">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>402</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L402">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>402</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L409">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>409</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L410">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L491">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive</td>
+              <td>491</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L496">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Receive</td>
+              <td>496</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L571">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Synchronous chan</td>
+              <td>571</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L578">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Send</td>
+              <td>578</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L580">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Close chan</td>
+              <td>580</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule.go#L582">pkg/services/ngalert/schedule/schedule.go</a></td>
+              <td>Goroutine</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L128">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L129">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L138">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Send</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L141">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Send</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L154">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Goroutine</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L219">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L228">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>228</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L229">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Receive</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L238">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Receive</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L247">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L256">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>256</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L257">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Receive</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/schedule/schedule_test.go#L265">pkg/services/ngalert/schedule/schedule_test.go</a></td>
+              <td>Receive</td>
+              <td>265</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/sender/sender.go#L85">pkg/services/ngalert/sender/sender.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/sender/sender.go#L92">pkg/services/ngalert/sender/sender.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/state/manager.go#L35">pkg/services/ngalert/state/manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/state/manager.go#L42">pkg/services/ngalert/state/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/state/manager.go#L47">pkg/services/ngalert/state/manager.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/state/manager.go#L184">pkg/services/ngalert/state/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>184</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/state/manager.go#L203">pkg/services/ngalert/state/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>203</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/state/manager.go#L204">pkg/services/ngalert/state/manager.go</a></td>
+              <td>Receive</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/ngalert/state/manager.go#L207">pkg/services/ngalert/state/manager.go</a></td>
+              <td>Receive</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications_test.go#L32">pkg/services/notifications/notifications_test.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/send_email_integration_test.go#L59">pkg/services/notifications/send_email_integration_test.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications.go#L30">pkg/services/notifications/notifications.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>30</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications.go#L31">pkg/services/notifications/notifications.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>31</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications.go#L78">pkg/services/notifications/notifications.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>78</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications.go#L79">pkg/services/notifications/notifications.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications.go#L85">pkg/services/notifications/notifications.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications.go#L97">pkg/services/notifications/notifications.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/notifications/notifications.go#L147">pkg/services/notifications/notifications.go</a></td>
+              <td>Send</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L86">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L87">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L91">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L108">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Goroutine</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L112">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Send</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L118">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>118</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L119">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L120">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L126">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>126</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L127">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning_test.go#L128">pkg/services/provisioning/provisioning_test.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning.go#L123">pkg/services/provisioning/provisioning.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>123</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning.go#L124">pkg/services/provisioning/provisioning.go</a></td>
+              <td>Receive</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/provisioning.go#L127">pkg/services/provisioning/provisioning.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/dashboard.go#L96">pkg/services/provisioning/dashboards/dashboard.go</a></td>
+              <td>Go in for</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/dashboard.go#L96">pkg/services/provisioning/dashboards/dashboard.go</a></td>
+              <td>Goroutine</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/dashboard.go#L99">pkg/services/provisioning/dashboards/dashboard.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/validator.go#L121">pkg/services/provisioning/dashboards/validator.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>121</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/validator.go#L122">pkg/services/provisioning/dashboards/validator.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/validator.go#L124">pkg/services/provisioning/dashboards/validator.go</a></td>
+              <td>Receive</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/file_reader.go#L75">pkg/services/provisioning/dashboards/file_reader.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>75</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/file_reader.go#L76">pkg/services/provisioning/dashboards/file_reader.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/provisioning/dashboards/file_reader.go#L80">pkg/services/provisioning/dashboards/file_reader.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/rendering/rendering.go#L106">pkg/services/rendering/rendering.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/rendering/rendering.go#L121">pkg/services/rendering/rendering.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/rendering/rendering.go#L140">pkg/services/rendering/rendering.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/sqlstore/annotation_cleanup.go#L90">pkg/services/sqlstore/annotation_cleanup.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>90</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/services/sqlstore/annotation_cleanup.go#L91">pkg/services/sqlstore/annotation_cleanup.go</a></td>
+              <td>Receive</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/logs.go#L28">pkg/tsdb/cloudwatch/logs.go</a></td>
+              <td>chan used as a param</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L67">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L113">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Synchronous chan</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L115">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Close chan</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L119">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Goroutine</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L137">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>chan used as a param</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L166">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Unknown chan length</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L215">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>chan used as a param</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L239">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Send</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L240">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Receive</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L244">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Send</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/live.go#L278">pkg/tsdb/cloudwatch/live.go</a></td>
+              <td>Send</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/time_series_query.go#L41">pkg/tsdb/cloudwatch/time_series_query.go</a></td>
+              <td>Unknown chan length</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/time_series_query.go#L51">pkg/tsdb/cloudwatch/time_series_query.go</a></td>
+              <td>Send</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/time_series_query.go#L91">pkg/tsdb/cloudwatch/time_series_query.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/time_series_query.go#L104">pkg/tsdb/cloudwatch/time_series_query.go</a></td>
+              <td>Send</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/time_series_query.go#L109">pkg/tsdb/cloudwatch/time_series_query.go</a></td>
+              <td>Close chan</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/time_series_query.go#L111">pkg/tsdb/cloudwatch/time_series_query.go</a></td>
+              <td>Range over chan</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/log_actions.go#L22">pkg/tsdb/cloudwatch/log_actions.go</a></td>
+              <td>Unknown chan length</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/log_actions.go#L52">pkg/tsdb/cloudwatch/log_actions.go</a></td>
+              <td>Send</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/log_actions.go#L66">pkg/tsdb/cloudwatch/log_actions.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/log_actions.go#L76">pkg/tsdb/cloudwatch/log_actions.go</a></td>
+              <td>Close chan</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/cloudwatch/log_actions.go#L78">pkg/tsdb/cloudwatch/log_actions.go</a></td>
+              <td>Range over chan</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/mssql/macros_test.go#L245">pkg/tsdb/mssql/macros_test.go</a></td>
+              <td>Goroutine</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/mssql/macros_test.go#L251">pkg/tsdb/mssql/macros_test.go</a></td>
+              <td>Goroutine</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/mysql/macros_test.go#L210">pkg/tsdb/mysql/macros_test.go</a></td>
+              <td>Goroutine</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/mysql/macros_test.go#L216">pkg/tsdb/mysql/macros_test.go</a></td>
+              <td>Goroutine</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/locker_test.go#L29">pkg/tsdb/postgres/locker_test.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/locker_test.go#L50">pkg/tsdb/postgres/locker_test.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/tlsmanager_test.go#L51">pkg/tsdb/postgres/tlsmanager_test.go</a></td>
+              <td>Go in for</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/tlsmanager_test.go#L51">pkg/tsdb/postgres/tlsmanager_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>51</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/tlsmanager_test.go#L51">pkg/tsdb/postgres/tlsmanager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/tlsmanager_test.go#L84">pkg/tsdb/postgres/tlsmanager_test.go</a></td>
+              <td>Go in for</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/tlsmanager_test.go#L84">pkg/tsdb/postgres/tlsmanager_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>84</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/tlsmanager_test.go#L84">pkg/tsdb/postgres/tlsmanager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/macros_test.go#L235">pkg/tsdb/postgres/macros_test.go</a></td>
+              <td>Goroutine</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/postgres/macros_test.go#L241">pkg/tsdb/postgres/macros_test.go</a></td>
+              <td>Goroutine</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L150">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Unknown chan length</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L159">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Go in for</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L159">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L165">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Close chan</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L169">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Range over chan</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L178">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>chan used as a param</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L196">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Send</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L216">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Send</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L269">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Send</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/sqleng/sql_engine.go#L342">pkg/tsdb/sqleng/sql_engine.go</a></td>
+              <td>Send</td>
+              <td>342</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/testdatasource/stream_handler.go#L111">pkg/tsdb/testdatasource/stream_handler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>111</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/testdatasource/stream_handler.go#L112">pkg/tsdb/testdatasource/stream_handler.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grafana/grafana/blob//pkg/tsdb/testdatasource/stream_handler.go#L115">pkg/tsdb/testdatasource/stream_handler.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 49 ,  131 ,
+     59 ,
+     66 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

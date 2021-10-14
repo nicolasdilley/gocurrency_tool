@@ -1,0 +1,840 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : schollz/croc ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/schollz/croc/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> v9/src/message ( 3 features, 1/2 featured file ) </li>
+          
+          <li> v9/src/tcp ( 17 features, 2/2 featured file ) </li>
+          
+          <li> v9/src/croc ( 57 features, 2/2 featured file ) </li>
+          
+          <li> v9/src/cli ( 2 features, 1/1 featured file ) </li>
+          
+          <li> v9/src/comm ( 3 features, 1/2 featured file ) </li>
+          
+          <li> v9/src/models ( 5 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 6/9</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>8 </td>
+      <td>5 </td>
+      <td>5</td>
+      <td>31</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>1</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>8 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>60%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/message/message_test.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/message/message_test.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/message/message_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/message/message_test.go</a></td>
+              <td>Go in for</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/message/message_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/message/message_test.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp_test.go#L15">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp_test.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Go in for</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L284">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Waitgroup</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L285">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>285</td>
+              <td>&amp;{9862418 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L288">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L291">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L305">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L333">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>333</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L338">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>338</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L346">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Send</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L350">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Send</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L367">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>367</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L368">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Receive</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go#L376">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/tcp/tcp.go</a></td>
+              <td>Receive</td>
+              <td>376</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L21">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L22">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>65</td>
+              <td>&amp;{9947576 INT 2} val is : 2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>131</td>
+              <td>&amp;{9948938 INT 2} val is : 2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L289">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Go in for</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L289">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>289</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L322">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L354">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Send</td>
+              <td>354</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>379</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L383">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>383</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L386">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L388">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>388</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L389">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L393">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>393</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L424">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Send</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L460">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Send</td>
+              <td>460</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L473">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Send</td>
+              <td>473</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L477">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Receive</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L489">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Send</td>
+              <td>489</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L491">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Receive</td>
+              <td>491</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L525">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup</td>
+              <td>525</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L526">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Mutex</td>
+              <td>526</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L527">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>527</td>
+              <td>&amp;{9883112 INT 2} val is : 2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L528">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>528</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L529">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>529</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L537">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>537</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L540">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>540</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L543">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>543</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L544">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>544</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L553">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>553</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L556">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>556</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L559">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>559</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L700">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Synchronous chan</td>
+              <td>700</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L894">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup</td>
+              <td>894</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L895">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>895</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L898">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Go in for</td>
+              <td>898</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L898">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>898</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L899">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>899</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L922">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>922</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L926">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>926</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L1386">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Go in for</td>
+              <td>1386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go#L1386">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/croc/croc.go</a></td>
+              <td>Goroutine</td>
+              <td>1386</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/cli/cli.go#L528">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/cli/cli.go</a></td>
+              <td>Go in for</td>
+              <td>528</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/cli/cli.go#L528">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/cli/cli.go</a></td>
+              <td>Goroutine</td>
+              <td>528</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/comm/comm_test.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/comm/comm_test.go</a></td>
+              <td>Goroutine</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/comm/comm_test.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/comm/comm_test.go</a></td>
+              <td>Go in for</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/comm/comm_test.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/comm/comm_test.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go</a></td>
+              <td>Unknown chan length</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go</a></td>
+              <td>Go in for</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go</a></td>
+              <td>Send</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/schollz/croc/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/schollz&#43;&#43;croc/src/models/constants.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 8 ,  5 ,
+     5 ,
+     31 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

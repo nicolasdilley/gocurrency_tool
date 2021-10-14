@@ -1,0 +1,4605 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : go-kit/kit ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/go-kit/kit/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> auth/jwt/jwt ( 3 features, 1/4 featured file ) </li>
+          
+          <li> log/log_test ( 2 features, 1/9 featured file ) </li>
+          
+          <li> metrics/cloudwatch/cloudwatch ( 13 features, 1/2 featured file ) </li>
+          
+          <li> metrics/cloudwatch2/cloudwatch2 ( 7 features, 1/2 featured file ) </li>
+          
+          <li> metrics/dogstatsd/dogstatsd ( 5 features, 1/2 featured file ) </li>
+          
+          <li> metrics/generic/generic_test ( 2 features, 1/2 featured file ) </li>
+          
+          <li> metrics/graphite/graphite ( 5 features, 1/2 featured file ) </li>
+          
+          <li> metrics/influx/influx ( 4 features, 1/3 featured file ) </li>
+          
+          <li> metrics/influxstatsd/influxstatsd ( 5 features, 1/2 featured file ) </li>
+          
+          <li> metrics/statsd/statsd ( 5 features, 1/2 featured file ) </li>
+          
+          <li> sd/sd ( 44 features, 4/9 featured file ) </li>
+          
+          <li> sd/consul/consul ( 46 features, 2/8 featured file ) </li>
+          
+          <li> sd/dnssrv/dnssrv ( 11 features, 2/4 featured file ) </li>
+          
+          <li> sd/etcd/etcd ( 36 features, 6/9 featured file ) </li>
+          
+          <li> sd/etcdv3/etcdv3 ( 18 features, 4/9 featured file ) </li>
+          
+          <li> sd/eureka/eureka ( 30 features, 3/7 featured file ) </li>
+          
+          <li> sd/internal/instance/instance ( 20 features, 2/2 featured file ) </li>
+          
+          <li> sd/lb/lb_test ( 32 features, 3/8 featured file ) </li>
+          
+          <li> sd/zk/zk ( 30 features, 5/9 featured file ) </li>
+          
+          <li> transport/amqp/amqp_test ( 77 features, 3/8 featured file ) </li>
+          
+          <li> transport/grpc/grpc_test ( 1 features, 1/6 featured file ) </li>
+          
+          <li> transport/http/http_test ( 42 features, 2/9 featured file ) </li>
+          
+          <li> transport/http/jsonrpc/jsonrpc_test ( 33 features, 1/10 featured file ) </li>
+          
+          <li> transport/nats/nats_test ( 34 features, 2/7 featured file ) </li>
+          
+          <li> util/conn/conn ( 27 features, 2/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 25/57</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>57 </td>
+      <td>172 </td>
+      <td>111</td>
+      <td>48</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>14 </td>
+      <td>19</td>
+      <td>12</td>
+      <td>73.33333333333333</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>0 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>64</td>
+      <td>42</td>
+      <td>5</td>
+      <td>37.83783783783784%</td>
+      <td>17 </td>
+      <td>2</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>70 </td>
+      <td>4</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//auth/jwt/middleware_test.go#L215">auth/jwt/middleware_test.go</a></td>
+              <td>Go in for</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//auth/jwt/middleware_test.go#L215">auth/jwt/middleware_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>215</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//auth/jwt/middleware_test.go#L215">auth/jwt/middleware_test.go</a></td>
+              <td>Goroutine</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//log/example_test.go#L127">log/example_test.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//log/example_test.go#L128">log/example_test.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L109">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Unknown chan length</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L144">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L146">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>146</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L147">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Receive</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L151">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L242">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Unknown chan length</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L242">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Unknown chan length</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L244">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Go in for</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L244">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Goroutine</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L245">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Send</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L247">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Receive</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L253">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Send</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch/cloudwatch.go#L258">metrics/cloudwatch/cloudwatch.go</a></td>
+              <td>Receive</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch2/cloudwatch2.go#L87">metrics/cloudwatch2/cloudwatch2.go</a></td>
+              <td>Unknown chan length</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch2/cloudwatch2.go#L119">metrics/cloudwatch2/cloudwatch2.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch2/cloudwatch2.go#L121">metrics/cloudwatch2/cloudwatch2.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>121</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch2/cloudwatch2.go#L122">metrics/cloudwatch2/cloudwatch2.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch2/cloudwatch2.go#L126">metrics/cloudwatch2/cloudwatch2.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch2/cloudwatch2.go#L166">metrics/cloudwatch2/cloudwatch2.go</a></td>
+              <td>Send</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/cloudwatch2/cloudwatch2.go#L168">metrics/cloudwatch2/cloudwatch2.go</a></td>
+              <td>Receive</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/dogstatsd/dogstatsd.go#L117">metrics/dogstatsd/dogstatsd.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/dogstatsd/dogstatsd.go#L119">metrics/dogstatsd/dogstatsd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>119</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/dogstatsd/dogstatsd.go#L120">metrics/dogstatsd/dogstatsd.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/dogstatsd/dogstatsd.go#L124">metrics/dogstatsd/dogstatsd.go</a></td>
+              <td>Receive</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/dogstatsd/dogstatsd.go#L135">metrics/dogstatsd/dogstatsd.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/generic/generic_test.go#L84">metrics/generic/generic_test.go</a></td>
+              <td>Go in for</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/generic/generic_test.go#L84">metrics/generic/generic_test.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/graphite/graphite.go#L90">metrics/graphite/graphite.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/graphite/graphite.go#L92">metrics/graphite/graphite.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>92</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/graphite/graphite.go#L93">metrics/graphite/graphite.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/graphite/graphite.go#L97">metrics/graphite/graphite.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/graphite/graphite.go#L108">metrics/graphite/graphite.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influx/influx.go#L92">metrics/influx/influx.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influx/influx.go#L94">metrics/influx/influx.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>94</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influx/influx.go#L95">metrics/influx/influx.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influx/influx.go#L99">metrics/influx/influx.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influxstatsd/influxstatsd.go#L116">metrics/influxstatsd/influxstatsd.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influxstatsd/influxstatsd.go#L118">metrics/influxstatsd/influxstatsd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>118</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influxstatsd/influxstatsd.go#L119">metrics/influxstatsd/influxstatsd.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influxstatsd/influxstatsd.go#L123">metrics/influxstatsd/influxstatsd.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/influxstatsd/influxstatsd.go#L134">metrics/influxstatsd/influxstatsd.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/statsd/statsd.go#L96">metrics/statsd/statsd.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/statsd/statsd.go#L98">metrics/statsd/statsd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>98</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/statsd/statsd.go#L99">metrics/statsd/statsd.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/statsd/statsd.go#L103">metrics/statsd/statsd.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//metrics/statsd/statsd.go#L114">metrics/statsd/statsd.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer_test.go#L42">sd/endpointer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>42</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer_test.go#L43">sd/endpointer_test.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer_test.go#L45">sd/endpointer_test.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer_test.go#L49">sd/endpointer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>49</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer_test.go#L50">sd/endpointer_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer_test.go#L52">sd/endpointer_test.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/instancer.go#L32">sd/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/instancer.go#L32">sd/instancer.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/instancer.go#L35">sd/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer.go#L36">sd/endpointer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpointer.go#L38">sd/endpointer.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L24">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>24</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L25">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L27">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L29">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L36">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>36</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L37">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L39">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L41">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L48">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>48</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L49">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L51">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L53">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L59">sd/endpoint_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L60">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>60</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L61">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L63">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L65">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L71">sd/endpoint_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L72">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>72</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L74">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L76">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L100">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>100</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L101">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L103">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L110">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>110</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L111">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L113">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L121">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>121</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L122">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L124">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L131">sd/endpoint_cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>131</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L132">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/endpoint_cache_test.go#L134">sd/endpoint_cache_test.go</a></td>
+              <td>Receive</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L43">sd/consul/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L54">sd/consul/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L96">sd/consul/instancer.go</a></td>
+              <td>chan used as a param</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L114">sd/consul/instancer.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>114</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L115">sd/consul/instancer.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>115</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L114">sd/consul/instancer.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>114</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L115">sd/consul/instancer.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>115</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L118">sd/consul/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L123">sd/consul/instancer.go</a></td>
+              <td>Send</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L129">sd/consul/instancer.go</a></td>
+              <td>Send</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L135">sd/consul/instancer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>135</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L136">sd/consul/instancer.go</a></td>
+              <td>Receive</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L138">sd/consul/instancer.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L140">sd/consul/instancer.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L146">sd/consul/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer.go#L151">sd/consul/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L143">sd/consul/instancer_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L143">sd/consul/instancer_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L156">sd/consul/instancer_test.go</a></td>
+              <td>Send</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L157">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L166">sd/consul/instancer_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>166</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L167">sd/consul/instancer_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>167</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L166">sd/consul/instancer_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>166</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L167">sd/consul/instancer_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>167</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L172">sd/consul/instancer_test.go</a></td>
+              <td>Send</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L176">sd/consul/instancer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>176</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L177">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L178">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L188">sd/consul/instancer_test.go</a></td>
+              <td>Send</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L191">sd/consul/instancer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L192">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L193">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L197">sd/consul/instancer_test.go</a></td>
+              <td>Send</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L200">sd/consul/instancer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>200</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L201">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L202">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L212">sd/consul/instancer_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L232">sd/consul/instancer_test.go</a></td>
+              <td>Send</td>
+              <td>232</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L238">sd/consul/instancer_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>238</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L238">sd/consul/instancer_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>238</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L246">sd/consul/instancer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>246</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L247">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L248">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>248</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L258">sd/consul/instancer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>258</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L259">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/consul/instancer_test.go#L260">sd/consul/instancer_test.go</a></td>
+              <td>Receive</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer.go#L50">sd/dnssrv/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer.go#L61">sd/dnssrv/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer.go#L73">sd/dnssrv/instancer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>73</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer.go#L74">sd/dnssrv/instancer.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer.go#L83">sd/dnssrv/instancer.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer.go#L105">sd/dnssrv/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer.go#L110">sd/dnssrv/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer_test.go#L20">sd/dnssrv/instancer_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer_test.go#L52">sd/dnssrv/instancer_test.go</a></td>
+              <td>Send</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer_test.go#L74">sd/dnssrv/instancer_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/dnssrv/instancer_test.go#L90">sd/dnssrv/instancer_test.go</a></td>
+              <td>Send</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/registrar.go#L79">sd/etcd/registrar.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/registrar.go#L88">sd/etcd/registrar.go</a></td>
+              <td>Synchronous chan</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/registrar.go#L94">sd/etcd/registrar.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>94</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/registrar.go#L95">sd/etcd/registrar.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/registrar.go#L99">sd/etcd/registrar.go</a></td>
+              <td>Receive</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/registrar_test.go#L20">sd/etcd/registrar_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L27">sd/etcd/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L38">sd/etcd/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L43">sd/etcd/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L44">sd/etcd/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L46">sd/etcd/instancer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>46</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L47">sd/etcd/instancer.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L56">sd/etcd/instancer.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L68">sd/etcd/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer.go#L73">sd/etcd/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L132">sd/etcd/client_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>132</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L133">sd/etcd/client_test.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L135">sd/etcd/client_test.go</a></td>
+              <td>Receive</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L142">sd/etcd/client_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L187">sd/etcd/client_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L188">sd/etcd/client_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L189">sd/etcd/client_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>189</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L192">sd/etcd/client_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L193">sd/etcd/client_test.go</a></td>
+              <td>Goroutine</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L195">sd/etcd/client_test.go</a></td>
+              <td>Send</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L200">sd/etcd/client_test.go</a></td>
+              <td>Receive</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L203">sd/etcd/client_test.go</a></td>
+              <td>Send</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L204">sd/etcd/client_test.go</a></td>
+              <td>Receive</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L209">sd/etcd/client_test.go</a></td>
+              <td>Send</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L210">sd/etcd/client_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>210</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L211">sd/etcd/client_test.go</a></td>
+              <td>Receive</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client_test.go#L213">sd/etcd/client_test.go</a></td>
+              <td>Receive</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/instancer_test.go#L63">sd/etcd/instancer_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client.go#L141">sd/etcd/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client.go#L143">sd/etcd/client.go</a></td>
+              <td>Send</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcd/client.go#L148">sd/etcd/client.go</a></td>
+              <td>Send</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/registrar_test.go#L20">sd/etcdv3/registrar_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer_test.go#L72">sd/etcdv3/instancer_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L27">sd/etcdv3/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L38">sd/etcdv3/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L43">sd/etcdv3/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L44">sd/etcdv3/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L47">sd/etcdv3/instancer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>47</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L48">sd/etcdv3/instancer.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L57">sd/etcdv3/instancer.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L69">sd/etcdv3/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/instancer.go#L74">sd/etcdv3/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/client.go#L151">sd/etcdv3/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/client.go#L156">sd/etcdv3/client.go</a></td>
+              <td>Send</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/client.go#L161">sd/etcdv3/client.go</a></td>
+              <td>Send</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/client.go#L217">sd/etcdv3/client.go</a></td>
+              <td>Goroutine</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/client.go#L219">sd/etcdv3/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>219</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/client.go#L220">sd/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/etcdv3/client.go#L225">sd/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L71">sd/eureka/registrar.go</a></td>
+              <td>Channel of channels</td>
+              <td>71</td>
+              <td>quitc.r</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L72">sd/eureka/registrar.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L84">sd/eureka/registrar.go</a></td>
+              <td>Synchronous chan</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L85">sd/eureka/registrar.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L86">sd/eureka/registrar.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L101">sd/eureka/registrar.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L102">sd/eureka/registrar.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/registrar.go#L107">sd/eureka/registrar.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L33">sd/eureka/instancer.go</a></td>
+              <td>Channel of channels</td>
+              <td>33</td>
+              <td>s.quitc</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L36">sd/eureka/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L38">sd/eureka/instancer.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L39">sd/eureka/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L45">sd/eureka/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L46">sd/eureka/instancer.go</a></td>
+              <td>Send</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L47">sd/eureka/instancer.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L62">sd/eureka/instancer.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L62">sd/eureka/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L66">sd/eureka/instancer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>66</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L67">sd/eureka/instancer.go</a></td>
+              <td>Receive</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L69">sd/eureka/instancer.go</a></td>
+              <td>Receive</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L93">sd/eureka/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/instancer.go#L98">sd/eureka/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L126">sd/eureka/util_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L127">sd/eureka/util_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>127</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L130">sd/eureka/util_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>130</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L131">sd/eureka/util_test.go</a></td>
+              <td>Send</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L139">sd/eureka/util_test.go</a></td>
+              <td>Goroutine</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L142">sd/eureka/util_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>142</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L143">sd/eureka/util_test.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/eureka/util_test.go#L145">sd/eureka/util_test.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L38">sd/internal/instance/cache_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L39">sd/internal/instance/cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L42">sd/internal/instance/cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L46">sd/internal/instance/cache_test.go</a></td>
+              <td>Close chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L49">sd/internal/instance/cache_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L50">sd/internal/instance/cache_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>50</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L51">sd/internal/instance/cache_test.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L55">sd/internal/instance/cache_test.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L62">sd/internal/instance/cache_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>62</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L63">sd/internal/instance/cache_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>63</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L69">sd/internal/instance/cache_test.go</a></td>
+              <td>Receive</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L72">sd/internal/instance/cache_test.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L78">sd/internal/instance/cache_test.go</a></td>
+              <td>Close chan</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache_test.go#L79">sd/internal/instance/cache_test.go</a></td>
+              <td>Close chan</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache.go#L55">sd/internal/instance/cache.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache.go#L62">sd/internal/instance/cache.go</a></td>
+              <td>Send</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache.go#L66">sd/internal/instance/cache.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache.go#L78">sd/internal/instance/cache.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache.go#L82">sd/internal/instance/cache.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/internal/instance/cache.go#L86">sd/internal/instance/cache.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L75">sd/lb/retry.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>75</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L76">sd/lb/retry.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>76</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L75">sd/lb/retry.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>75</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L76">sd/lb/retry.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>76</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L82">sd/lb/retry.go</a></td>
+              <td>Go in for</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L82">sd/lb/retry.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L85">sd/lb/retry.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L90">sd/lb/retry.go</a></td>
+              <td>Send</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L93">sd/lb/retry.go</a></td>
+              <td>Send</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L96">sd/lb/retry.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>96</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L97">sd/lb/retry.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L100">sd/lb/retry.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry.go#L103">sd/lb/retry.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/round_robin_test.go#L68">sd/lb/round_robin_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/round_robin_test.go#L68">sd/lb/round_robin_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/round_robin_test.go#L76">sd/lb/round_robin_test.go</a></td>
+              <td>Go in for</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/round_robin_test.go#L76">sd/lb/round_robin_test.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/round_robin_test.go#L79">sd/lb/round_robin_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/round_robin_test.go#L80">sd/lb/round_robin_test.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/round_robin_test.go#L91">sd/lb/round_robin_test.go</a></td>
+              <td>Close chan</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L70">sd/lb/retry_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L74">sd/lb/retry_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>74</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L70">sd/lb/retry_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L74">sd/lb/retry_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>74</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L71">sd/lb/retry_test.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L75">sd/lb/retry_test.go</a></td>
+              <td>Send</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L78">sd/lb/retry_test.go</a></td>
+              <td>Goroutine</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L78">sd/lb/retry_test.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L80">sd/lb/retry_test.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L84">sd/lb/retry_test.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L84">sd/lb/retry_test.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/lb/retry_test.go#L86">sd/lb/retry_test.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client.go#L171">sd/zk/client.go</a></td>
+              <td>Goroutine</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client.go#L173">sd/zk/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>173</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client.go#L174">sd/zk/client.go</a></td>
+              <td>Receive</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client.go#L176">sd/zk/client.go</a></td>
+              <td>Receive</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L29">sd/zk/instancer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L46">sd/zk/instancer.go</a></td>
+              <td>Goroutine</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L51">sd/zk/instancer.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L57">sd/zk/instancer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L58">sd/zk/instancer.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L71">sd/zk/instancer.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L83">sd/zk/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/instancer.go#L88">sd/zk/instancer.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/util_test.go#L64">sd/zk/util_test.go</a></td>
+              <td>Send</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/util_test.go#L71">sd/zk/util_test.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/util_test.go#L86">sd/zk/util_test.go</a></td>
+              <td>Send</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/util_test.go#L92">sd/zk/util_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>92</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/util_test.go#L93">sd/zk/util_test.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/util_test.go#L122">sd/zk/util_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>122</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/util_test.go#L123">sd/zk/util_test.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/integration_test.go#L203">sd/zk/integration_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>203</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/integration_test.go#L204">sd/zk/integration_test.go</a></td>
+              <td>Receive</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/integration_test.go#L208">sd/zk/integration_test.go</a></td>
+              <td>Receive</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/integration_test.go#L218">sd/zk/integration_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>218</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/integration_test.go#L219">sd/zk/integration_test.go</a></td>
+              <td>Receive</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/integration_test.go#L223">sd/zk/integration_test.go</a></td>
+              <td>Receive</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client_test.go#L30">sd/zk/client_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client_test.go#L35">sd/zk/client_test.go</a></td>
+              <td>Close chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client_test.go#L70">sd/zk/client_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>70</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client_test.go#L71">sd/zk/client_test.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//sd/zk/client_test.go#L72">sd/zk/client_test.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher.go#L155">transport/amqp/publisher.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>155</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher.go#L156">transport/amqp/publisher.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher.go#L164">transport/amqp/publisher.go</a></td>
+              <td>Receive</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L29">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>29</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L31">transport/amqp/publisher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L33">transport/amqp/publisher_test.go</a></td>
+              <td>Send</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L36">transport/amqp/publisher_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>36</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L37">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L40">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L56">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>56</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L78">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>78</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L79">transport/amqp/publisher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L81">transport/amqp/publisher_test.go</a></td>
+              <td>Send</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L85">transport/amqp/publisher_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>85</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L86">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L89">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L105">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>105</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L121">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>121</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L122">transport/amqp/publisher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L124">transport/amqp/publisher_test.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L128">transport/amqp/publisher_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>128</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L129">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L132">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L155">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>155</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L180">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>180</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L181">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>181</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L182">transport/amqp/publisher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L185">transport/amqp/publisher_test.go</a></td>
+              <td>Send</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L187">transport/amqp/publisher_test.go</a></td>
+              <td>Send</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L191">transport/amqp/publisher_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L192">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L195">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L205">transport/amqp/publisher_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>205</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L206">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L213">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L216">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L232">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>232</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L249">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>249</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L250">transport/amqp/publisher_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>250</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L251">transport/amqp/publisher_test.go</a></td>
+              <td>Goroutine</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L254">transport/amqp/publisher_test.go</a></td>
+              <td>Send</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L256">transport/amqp/publisher_test.go</a></td>
+              <td>Send</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L261">transport/amqp/publisher_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>261</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L262">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>262</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L264">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/publisher_test.go#L266">transport/amqp/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>266</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L28">transport/amqp/subscriber_test.go</a></td>
+              <td>Send</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L36">transport/amqp/subscriber_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L38">transport/amqp/subscriber_test.go</a></td>
+              <td>Send</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L54">transport/amqp/subscriber_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>54</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L59">transport/amqp/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>59</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L60">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L63">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L86">transport/amqp/subscriber_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>86</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L92">transport/amqp/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>92</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L93">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L96">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L120">transport/amqp/subscriber_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>120</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L126">transport/amqp/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>126</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L127">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L130">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L169">transport/amqp/subscriber_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>169</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L179">transport/amqp/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>179</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L180">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L183">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L242">transport/amqp/subscriber_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>242</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L250">transport/amqp/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>250</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L251">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L253">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L288">transport/amqp/subscriber_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>288</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L294">transport/amqp/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>294</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L295">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L298">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>298</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L337">transport/amqp/subscriber_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>337</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L343">transport/amqp/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>343</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L344">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/amqp/subscriber_test.go#L347">transport/amqp/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>347</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/grpc/client_test.go#L31">transport/grpc/client_test.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L33">transport/http/client_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>33</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L33">transport/http/client_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>33</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L46">transport/http/client_test.go</a></td>
+              <td>Send</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L67">transport/http/client_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>67</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L68">transport/http/client_test.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L69">transport/http/client_test.go</a></td>
+              <td>Receive</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L158">transport/http/client_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L158">transport/http/client_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L187">transport/http/client_test.go</a></td>
+              <td>Close chan</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L196">transport/http/client_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>196</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L197">transport/http/client_test.go</a></td>
+              <td>Receive</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/client_test.go#L198">transport/http/client_test.go</a></td>
+              <td>Receive</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L84">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L98">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L98">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L121">transport/http/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L128">transport/http/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L130">transport/http/server_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>130</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L131">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L132">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L143">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L143">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L166">transport/http/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L173">transport/http/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L175">transport/http/server_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>175</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L176">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L177">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L188">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L188">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L216">transport/http/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L222">transport/http/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L224">transport/http/server_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>224</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L225">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L226">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L420">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L422">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>422</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L420">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L422">transport/http/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>422</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L421">transport/http/server_test.go</a></td>
+              <td>Receive</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L431">transport/http/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L439">transport/http/server_test.go</a></td>
+              <td>Send</td>
+              <td>439</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/server_test.go#L441">transport/http/server_test.go</a></td>
+              <td>Send</td>
+              <td>441</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L220">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L239">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L239">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L259">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L267">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>267</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L268">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L269">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L275">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L275">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L295">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L303">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>303</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L304">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>304</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L305">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L311">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L311">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L331">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>331</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L339">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>339</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L340">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>340</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L341">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>341</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L347">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>347</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L347">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>347</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L360">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Close chan</td>
+              <td>360</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L367">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>367</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L368">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L369">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>369</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L380">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L385">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L380">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L385">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L382">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Receive</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L395">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>395</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L404">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Send</td>
+              <td>404</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/http/jsonrpc/server_test.go#L406">transport/http/jsonrpc/server_test.go</a></td>
+              <td>Send</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/publisher_test.go#L168">transport/nats/publisher_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/publisher_test.go#L169">transport/nats/publisher_test.go</a></td>
+              <td>Close chan</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/publisher_test.go#L172">transport/nats/publisher_test.go</a></td>
+              <td>Receive</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L33">transport/nats/subscriber_test.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L153">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L174">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L174">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L199">transport/nats/subscriber_test.go</a></td>
+              <td>Close chan</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L211">transport/nats/subscriber_test.go</a></td>
+              <td>Goroutine</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L219">transport/nats/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>219</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L220">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L221">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L236">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L236">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>236</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L257">transport/nats/subscriber_test.go</a></td>
+              <td>Close chan</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L269">transport/nats/subscriber_test.go</a></td>
+              <td>Goroutine</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L277">transport/nats/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>277</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L278">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L279">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L294">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L294">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L310">transport/nats/subscriber_test.go</a></td>
+              <td>Close chan</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L321">transport/nats/subscriber_test.go</a></td>
+              <td>Goroutine</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L329">transport/nats/subscriber_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>329</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L330">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>330</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L331">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>331</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L476">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L481">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>481</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L476">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L481">transport/nats/subscriber_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>481</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L478">transport/nats/subscriber_test.go</a></td>
+              <td>Receive</td>
+              <td>478</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L491">transport/nats/subscriber_test.go</a></td>
+              <td>Goroutine</td>
+              <td>491</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L507">transport/nats/subscriber_test.go</a></td>
+              <td>Send</td>
+              <td>507</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//transport/nats/subscriber_test.go#L510">transport/nats/subscriber_test.go</a></td>
+              <td>Send</td>
+              <td>510</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L15">util/conn/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L15">util/conn/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L48">util/conn/manager_test.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L74">util/conn/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L77">util/conn/manager_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>77</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L78">util/conn/manager_test.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L79">util/conn/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L101">util/conn/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L101">util/conn/manager_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L114">util/conn/manager_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>114</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L115">util/conn/manager_test.go</a></td>
+              <td>Send</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager_test.go#L116">util/conn/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L49">util/conn/manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L50">util/conn/manager.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L52">util/conn/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L64">util/conn/manager.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L71">util/conn/manager.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L88">util/conn/manager.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>88</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L88">util/conn/manager.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>88</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L96">util/conn/manager.go</a></td>
+              <td>Send</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L99">util/conn/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>99</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L100">util/conn/manager.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L102">util/conn/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L102">util/conn/manager.go</a></td>
+              <td>Send</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L104">util/conn/manager.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L115">util/conn/manager.go</a></td>
+              <td>Send</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/go-kit/kit/blob//util/conn/manager.go#L117">util/conn/manager.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 57 ,  172 ,
+     111 ,
+     48 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

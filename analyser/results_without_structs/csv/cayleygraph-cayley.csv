@@ -1,0 +1,412 @@
+Line num,0
+packages num,13,70
+files num,13,257
+Average Line num per featured file,3132
+cayley,50
+appengine/main,100
+client/client,95
+clog/clog,55
+clog/glog/glog,28
+cmd/cayley/main,166
+cmd/cayley/command/command,893
+cmd/cayleyexport/main,145
+cmd/cayleyimport/main,154
+cmd/docgen/main,182
+cmd/download_ui/main,93
+examples/hello_bolt/main,45
+examples/hello_schema/main,90
+examples/hello_world/main,23
+examples/transaction/main,31
+graph/graph_test,984
+graph/all/all,13
+graph/gaedatastore/gaedatastore,1046
+graph/graphmock/graphmock,201
+graph/graphtest/graphtest,1650
+graph/graphtest/testutil/testutil,45
+graph/http/httpgraph,9
+graph/iterator/iterator_test,4461
+graph/kv/kv_test,2646
+graph/kv/all/all,6
+graph/kv/badger/badger,56
+graph/kv/bolt/bolt,86
+graph/kv/btree/btree,49
+graph/kv/kvtest/kvtest,121
+graph/kv/leveldb/leveldb,74
+graph/log/graphlog,127
+graph/memstore/memstore,2097
+graph/nosql/nosql,1179
+graph/nosql/all/all,18
+graph/nosql/elastic/elastic,14
+graph/nosql/mongo/mongo,14
+graph/nosql/nosqltest/nosqltest,51
+graph/nosql/ouch/ouch,4
+graph/proto/proto,1477
+graph/refs/refs,134
+graph/sql/sql,2348
+graph/sql/cockroach/cockroach,243
+graph/sql/mysql/mysql,167
+graph/sql/postgres/postgres,180
+graph/sql/sqlite/sqlite,167
+graph/sql/sqltest/sqltest,85
+inference/inference,917
+internal/internal,130
+internal/decompressor/decompressor,106
+internal/dock/dock,123
+internal/gephi/gephi,360
+internal/http/http,437
+internal/linkedql/schema/schema,340
+internal/lru/lru,74
+internal/repl/repl,268
+packrd/packrd,2
+query/query,78
+query/gizmo/gizmo,2132
+query/graphql/graphql,894
+query/linkedql/linkedql,1008
+query/linkedql/steps/steps,1537
+query/mql/mql,590
+query/path/path_test,701
+query/path/pathtest/pathtest,645
+query/sexp/sexp,548
+query/shape/shape_test,1861
+schema/schema_test,1966
+server/http/cayleyhttp,820
+version/version,6
+writer/writer,89
+Filename, #,Concurrent Type, Line number , Number
+client/client.go,8,Known chan length (length),83,1
+client/client.go,1,Goroutine,84,
+client/client.go,15,Close chan,86,
+client/client.go,3,Send,96,
+client/client.go,2,Receive,104,
+cmd/cayley/cayley.go,1,Goroutine,86,
+cmd/cayley/cayley.go,1,Goroutine,93,
+cmd/cayley/command/repl.go,8,Known chan length (length),27,1
+cmd/cayley/command/repl.go,1,Goroutine,29,
+cmd/cayley/command/repl.go,16,Select (number of branch),30,2
+cmd/cayley/command/repl.go,2,Receive,31,
+cmd/cayley/command/repl.go,2,Receive,32,
+cmd/cayleyexport/cayleyexport_test.go,1,Goroutine,55,
+cmd/cayleyimport/cayleyimport_test.go,1,Goroutine,37,
+graph/iterator/iterate.go,17,Select with default (number of branch),40,2
+graph/iterator/iterate.go,2,Receive,41,
+graph/iterator/iterate.go,17,Select with default (number of branch),52,2
+graph/iterator/iterate.go,2,Receive,53,
+graph/iterator/iterate.go,17,Select with default (number of branch),106,2
+graph/iterator/iterate.go,2,Receive,107,
+graph/iterator/iterate.go,17,Select with default (number of branch),116,2
+graph/iterator/iterate.go,2,Receive,117,
+graph/iterator/iterate.go,17,Select with default (number of branch),147,2
+graph/iterator/iterate.go,2,Receive,148,
+graph/iterator/iterate.go,17,Select with default (number of branch),154,2
+graph/iterator/iterate.go,2,Receive,155,
+graph/iterator/iterate.go,17,Select with default (number of branch),173,2
+graph/iterator/iterate.go,2,Receive,174,
+graph/iterator/iterate.go,17,Select with default (number of branch),180,2
+graph/iterator/iterate.go,2,Receive,181,
+graph/iterator/iterate.go,21,Send only chan (chan<-),204,
+graph/iterator/iterate.go,16,Select (number of branch),209,2
+graph/iterator/iterate.go,2,Receive,210,
+graph/iterator/iterate.go,3,Send,212,
+graph/iterator/iterate.go,16,Select (number of branch),215,2
+graph/iterator/iterate.go,2,Receive,216,
+graph/iterator/iterate.go,3,Send,218,
+graph/iterator/iterate.go,17,Select with default (number of branch),233,2
+graph/iterator/iterate.go,2,Receive,234,
+graph/iterator/iterate.go,17,Select with default (number of branch),248,2
+graph/iterator/iterate.go,2,Receive,249,
+graph/iterator/iterate.go,21,Send only chan (chan<-),335,
+graph/iterator/iterate.go,16,Select (number of branch),354,2
+graph/iterator/iterate.go,2,Receive,355,
+graph/iterator/iterate.go,3,Send,357,
+internal/http/query.go,17,Select with default (number of branch),84,2
+internal/http/query.go,2,Receive,85,
+internal/lru/lru_test.go,4,Synchronous chan,25,
+internal/lru/lru_test.go,5,Go in for,28,
+internal/lru/lru_test.go,7,Goroutine in for with constant (constant),28,100
+internal/lru/lru_test.go,1,Goroutine,28,
+internal/lru/lru_test.go,3,Send,32,
+internal/lru/lru_test.go,2,Receive,38,
+internal/repl/repl.go,17,Select with default (number of branch),118,2
+internal/repl/repl.go,2,Receive,119,
+internal/repl/repl.go,1,Goroutine,249,
+internal/repl/repl.go,8,Known chan length (length),250,1
+internal/repl/repl.go,2,Receive,252,
+query/gizmo/gizmo.go,16,Select (number of branch),220,2
+query/gizmo/gizmo.go,3,Send,221,
+query/gizmo/gizmo.go,2,Receive,222,
+query/gizmo/gizmo.go,8,Known chan length (length),333,1
+query/gizmo/gizmo.go,1,Goroutine,335,
+query/gizmo/gizmo.go,3,Send,339,
+query/gizmo/gizmo.go,16,Select (number of branch),347,3
+query/gizmo/gizmo.go,2,Receive,348,
+query/gizmo/gizmo.go,2,Receive,351,
+query/gizmo/gizmo.go,2,Receive,356,
+query/graphql/graphql.go,17,Select with default (number of branch),218,2
+query/graphql/graphql.go,2,Receive,219,
+query/graphql/graphql.go,17,Select with default (number of branch),291,2
+query/graphql/graphql.go,2,Receive,292,
+query/graphql/graphql.go,17,Select with default (number of branch),307,2
+query/graphql/graphql.go,2,Receive,308,
+schema/loader.go,17,Select with default (number of branch),324,2
+schema/loader.go,2,Receive,325,
+schema/loader.go,17,Select with default (number of branch),447,2
+schema/loader.go,2,Receive,448,
+server/http/api_v2.go,17,Select with default (number of branch),513,2
+server/http/api_v2.go,2,Receive,514,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/linkedql/linkedql.go,0,Mutex,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/kvtest/kvtest.go,0,Mutex,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/kvtest/kvtest.go,0,Mutex,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/kvtest/kvtest.go,0,Mutex,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/client/client.go,0,Mutex,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/bolt/bolt.go,0,Mutex,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/indexing.go,0,Mutex Unlock(),430,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/indexing.go,0,Mutex Unlock(),437,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/indexing.go,0,Mutex Lock(),450,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/indexing.go,0,Mutex Unlock(),453,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/indexing.go,0,Mutex Unlock(),477,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/indexing.go,0,Mutex Lock(),567,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/indexing.go,0,Mutex Unlock(),568,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/iterators.go,0,Mutex,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/iterators.go,0,Mutex,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/iterators.go,0,Mutex,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/iterators.go,0,Mutex,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore.go,0,Mutex,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/iterator.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/iterator.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/iterator.go,0,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/iterator.go,0,Mutex,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/iterator.go,0,Mutex,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/iterator.go,0,Mutex,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,272,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,276,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,276,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,276,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,276,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,401,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,401,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,401,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,401,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,401,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,476,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,651,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/quadstore.go,0,Mutex,651,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/shape.go,0,Mutex,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/shape.go,0,Mutex,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/shape.go,0,Mutex,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/shape.go,0,Mutex,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/linkedql/steps/match_test.go,0,Mutex,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/linkedql/steps/steps_test.go,0,Mutex,90,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/postgres/postgres.go,0,Mutex,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/sqlite/sqlite.go,0,Mutex,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo.go,0,Mutex,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo.go,0,Mutex,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo.go,0,Mutex,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo_test.go,0,Mutex,696,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo_test.go,0,Mutex,696,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo_test.go,0,Mutex,696,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo_test.go,0,Mutex,801,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo_test.go,0,Mutex,801,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/query/gizmo/gizmo_test.go,0,Mutex,801,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/iterator.go,0,Mutex,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/iterator.go,0,Mutex,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/quadstore.go,0,Mutex,90,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/quadstore.go,0,Mutex,90,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/quadstore.go,0,Mutex,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/quadstore.go,0,Mutex,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/shapes.go,0,Mutex,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/shapes.go,0,Mutex,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/shapes.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/shapes.go,0,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/schema/loader_test.go,0,Mutex,15,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/schema/loader_test.go,0,Mutex,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/schema/namespaces_test.go,0,Mutex,17,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/schema/namespaces_test.go,0,Mutex,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/schema/namespaces_test.go,0,Mutex,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/schema/writer_test.go,0,Mutex,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/repl/repl.go,0,Mutex,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/repl/repl.go,0,Mutex,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/graphtest/graphtest.go,0,Mutex,1221,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/graphtest/integration.go,0,Mutex,509,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/graphtest/integration.go,0,Mutex,509,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/graphtest/integration.go,0,Mutex,509,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/graphtest/integration.go,0,Mutex,586,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/graphtest/integration.go,0,Mutex,586,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/graphtest/integration.go,0,Mutex,586,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Waitgroup,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Mutex,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/leveldb/leveldb.go,0,Waitgroup,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/sql/mysql/mysql.go,0,Mutex,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/nosqltest/nosqltest.go,0,Mutex,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/nosql/nosqltest/nosqltest.go,0,Mutex,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore_test.go,0,Mutex,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore_test.go,0,Mutex Lock(),283,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore_test.go,0,Mutex Unlock(),286,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore_test.go,0,Mutex Lock(),291,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/graph/kv/quadstore_test.go,0,Mutex Unlock(),293,
+/Users/nicolasdilley/Library/Caches/go-build/97/9762ec12481e9e91e30622a370e2633d707e4b60598d1e6e34b824b1c71751a9-d,0,Mutex,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/lru/lru.go,0,Mutex Lock(),50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/lru/lru.go,0,Mutex Unlock(),51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/lru/lru.go,0,Mutex Lock(),61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/lru/lru.go,0,Mutex Unlock(),62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/lru/lru.go,0,Mutex Lock(),72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/lru/lru.go,0,Mutex Unlock(),73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/cayleygraph++cayley/internal/lru/lru_test.go,0,Mutex,26,

@@ -1,0 +1,922 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : junegunn/fzf ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/junegunn/fzf/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> src/fzf ( 66 features, 6/31 featured file ) </li>
+          
+          <li> src/tui/tui ( 7 features, 1/9 featured file ) </li>
+          
+          <li> src/util/util ( 10 features, 1/11 featured file ) </li>
+          
+    <li> Num of Packages with features : 3/6</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>17 </td>
+      <td>23 </td>
+      <td>13</td>
+      <td>18</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>4</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>6</td>
+      <td>2</td>
+      <td>46.15384615384615%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>4 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal_unix.go#L11">src/terminal_unix.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>11</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal_unix.go#L19">src/terminal_unix.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal_windows.go#L9">src/terminal_windows.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>9</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal_windows.go#L17">src/terminal_windows.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/reader.go#L38">src/reader.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/reader.go#L47">src/reader.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/reader.go#L64">src/reader.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/core.go#L144">src/core.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/core.go#L215">src/core.go</a></td>
+              <td>Goroutine</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/core.go#L220">src/core.go</a></td>
+              <td>Goroutine</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/core.go#L222">src/core.go</a></td>
+              <td>Send</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/core.go#L237">src/core.go</a></td>
+              <td>Goroutine</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/core.go#L316">src/core.go</a></td>
+              <td>Send</td>
+              <td>316</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/core.go#L334">src/core.go</a></td>
+              <td>Send</td>
+              <td>334</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L154">src/matcher.go</a></td>
+              <td>Unknown chan length</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L155">src/matcher.go</a></td>
+              <td>Unknown chan length</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L163">src/matcher.go</a></td>
+              <td>Go in for</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L163">src/matcher.go</a></td>
+              <td>Goroutine</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L174">src/matcher.go</a></td>
+              <td>Send</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L187">src/matcher.go</a></td>
+              <td>Send</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L199">src/matcher.go</a></td>
+              <td>Range over chan</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/matcher.go#L218">src/matcher.go</a></td>
+              <td>Receive</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L534">src/terminal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>534</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L535">src/terminal.go</a></td>
+              <td>Synchronous chan</td>
+              <td>535</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1852">src/terminal.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>1852</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1853">src/terminal.go</a></td>
+              <td>Send</td>
+              <td>1853</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1868">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>1868</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1870">src/terminal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1870</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1872">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1872</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1873">src/terminal.go</a></td>
+              <td>Range over chan</td>
+              <td>1873</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1881">src/terminal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1881</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1883">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1883</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1885">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>1885</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1890">src/terminal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1890</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1892">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1892</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1894">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>1894</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1907">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1907</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1909">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>1909</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1914">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1914</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1928">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1928</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1969">src/terminal.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1969</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1970">src/terminal.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1970</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1973">src/terminal.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1973</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1974">src/terminal.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1974</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1976">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1976</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1979">src/terminal.go</a></td>
+              <td>Send</td>
+              <td>1979</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1984">src/terminal.go</a></td>
+              <td>Send</td>
+              <td>1984</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1989">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>1989</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1997">src/terminal.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1997</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L1998">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>1998</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2008">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2008</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2029">src/terminal.go</a></td>
+              <td>Send</td>
+              <td>2029</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2033">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>2033</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2037">src/terminal.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>2037</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2038">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2038</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2040">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2040</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2052">src/terminal.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>2052</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2053">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2053</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2055">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2055</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2060">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2060</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2065">src/terminal.go</a></td>
+              <td>Send</td>
+              <td>2065</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2068">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2068</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2070">src/terminal.go</a></td>
+              <td>Send</td>
+              <td>2070</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2071">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2071</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2072">src/terminal.go</a></td>
+              <td>Receive</td>
+              <td>2072</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/terminal.go#L2094">src/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>2094</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/tui/light_windows.go#L68">src/tui/light_windows.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>68</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/tui/light_windows.go#L72">src/tui/light_windows.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/tui/light_windows.go#L81">src/tui/light_windows.go</a></td>
+              <td>Send</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/tui/light_windows.go#L135">src/tui/light_windows.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>135</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/tui/light_windows.go#L136">src/tui/light_windows.go</a></td>
+              <td>Receive</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/tui/light_windows.go#L138">src/tui/light_windows.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/tui/light_windows.go#L142">src/tui/light_windows.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L19">src/util/eventbox_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L21">src/util/eventbox_test.go</a></td>
+              <td>Goroutine</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L23">src/util/eventbox_test.go</a></td>
+              <td>Send</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L24">src/util/eventbox_test.go</a></td>
+              <td>Receive</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L29">src/util/eventbox_test.go</a></td>
+              <td>Send</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L30">src/util/eventbox_test.go</a></td>
+              <td>Receive</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L32">src/util/eventbox_test.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L33">src/util/eventbox_test.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L40">src/util/eventbox_test.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/junegunn/fzf/blob//src/util/eventbox_test.go#L51">src/util/eventbox_test.go</a></td>
+              <td>Send</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 17 ,  23 ,
+     13 ,
+     18 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,1618 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : rkt/rkt ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/rkt/rkt/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> pkg/pod/pod ( 8 features, 1/7 featured file ) </li>
+          
+          <li> pkg/tar/tar ( 4 features, 1/3 featured file ) </li>
+          
+          <li> rkt/main ( 9 features, 2/53 featured file ) </li>
+          
+          <li> stage1/iottymux/main ( 64 features, 1/1 featured file ) </li>
+          
+          <li> store/db/db ( 2 features, 1/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 5/78</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>9 </td>
+      <td>16 </td>
+      <td>16</td>
+      <td>26</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>4 </td>
+      <td>5</td>
+      <td>1</td>
+      <td>90</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6.25%</td>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L86">pkg/pod/wait.go</a></td>
+              <td>Synchronous chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L88">pkg/pod/wait.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L89">pkg/pod/wait.go</a></td>
+              <td>Close chan</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L92">pkg/pod/wait.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>92</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L93">pkg/pod/wait.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L94">pkg/pod/wait.go</a></td>
+              <td>Send</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L96">pkg/pod/wait.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/pod/wait.go#L104">pkg/pod/wait.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/tar/chroot.go#L118">pkg/tar/chroot.go</a></td>
+              <td>Synchronous chan</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/tar/chroot.go#L119">pkg/tar/chroot.go</a></td>
+              <td>Goroutine</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/tar/chroot.go#L120">pkg/tar/chroot.go</a></td>
+              <td>Send</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//pkg/tar/chroot.go#L126">pkg/tar/chroot.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/metadata_service.go#L61">rkt/metadata_service.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>61</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/metadata_service.go#L632">rkt/metadata_service.go</a></td>
+              <td>Close chan</td>
+              <td>632</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/metadata_service.go#L656">rkt/metadata_service.go</a></td>
+              <td>Close chan</td>
+              <td>656</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/metadata_service.go#L682">rkt/metadata_service.go</a></td>
+              <td>Goroutine</td>
+              <td>682</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/metadata_service.go#L683">rkt/metadata_service.go</a></td>
+              <td>Goroutine</td>
+              <td>683</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/metadata_service.go#L687">rkt/metadata_service.go</a></td>
+              <td>Receive</td>
+              <td>687</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/api_service.go#L931">rkt/api_service.go</a></td>
+              <td>Go in for</td>
+              <td>931</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/api_service.go#L931">rkt/api_service.go</a></td>
+              <td>Goroutine</td>
+              <td>931</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//rkt/api_service.go#L936">rkt/api_service.go</a></td>
+              <td>Receive</td>
+              <td>936</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L171">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L174">stage1/iottymux/iottymux.go</a></td>
+              <td>Send</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L187">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L191">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L195">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L199">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L203">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L205">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L211">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L308">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L309">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>309</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L310">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L311">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L317">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>317</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L405">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L435">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>435</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L436">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>436</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L437">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>437</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L442">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L443">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>443</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L444">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L445">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>445</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L446">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>446</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L447">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>447</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L449">stage1/iottymux/iottymux.go</a></td>
+              <td>Send</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L455">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>455</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L456">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>456</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L457">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>457</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L458">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>458</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L459">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>459</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L460">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>460</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L462">stage1/iottymux/iottymux.go</a></td>
+              <td>Send</td>
+              <td>462</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L470">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>470</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L475">stage1/iottymux/iottymux.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>475</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L476">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>476</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L484">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>484</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L486">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>486</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L494">stage1/iottymux/iottymux.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>494</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L494">stage1/iottymux/iottymux.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>494</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L499">stage1/iottymux/iottymux.go</a></td>
+              <td>Send</td>
+              <td>499</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L502">stage1/iottymux/iottymux.go</a></td>
+              <td>Send</td>
+              <td>502</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L509">stage1/iottymux/iottymux.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>509</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L514">stage1/iottymux/iottymux.go</a></td>
+              <td>Send</td>
+              <td>514</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L522">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>522</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L522">stage1/iottymux/iottymux.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>522</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L523">stage1/iottymux/iottymux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L531">stage1/iottymux/iottymux.go</a></td>
+              <td>Close chan</td>
+              <td>531</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L543">stage1/iottymux/iottymux.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>543</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L545">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>545</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L546">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>546</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L547">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>547</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L550">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>550</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L551">stage1/iottymux/iottymux.go</a></td>
+              <td>Send</td>
+              <td>551</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L558">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>558</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L560">stage1/iottymux/iottymux.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>560</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L561">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>561</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L562">stage1/iottymux/iottymux.go</a></td>
+              <td>Goroutine</td>
+              <td>562</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L585">stage1/iottymux/iottymux.go</a></td>
+              <td>chan used as a param</td>
+              <td>585</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L585">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>585</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L585">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>585</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L603">stage1/iottymux/iottymux.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>603</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L606">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>606</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L611">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>611</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//stage1/iottymux/iottymux.go#L615">stage1/iottymux/iottymux.go</a></td>
+              <td>Receive</td>
+              <td>615</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//store/db/db_test.go#L103">store/db/db_test.go</a></td>
+              <td>Go in for</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rkt/rkt/blob//store/db/db_test.go#L103">store/db/db_test.go</a></td>
+              <td>Goroutine</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 9 ,  16 ,
+     16 ,
+     26 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

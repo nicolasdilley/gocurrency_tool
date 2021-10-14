@@ -1,0 +1,1169 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : kelseyhightower/confd ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/kelseyhightower/confd/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> main ( 10 features, 1/4 featured file ) </li>
+          
+          <li> backends/consul/consul ( 8 features, 1/1 featured file ) </li>
+          
+          <li> backends/dynamodb/dynamodb ( 2 features, 1/1 featured file ) </li>
+          
+          <li> backends/env/env ( 2 features, 1/1 featured file ) </li>
+          
+          <li> backends/etcd/etcd ( 7 features, 1/1 featured file ) </li>
+          
+          <li> backends/etcdv3/etcdv3 ( 22 features, 1/1 featured file ) </li>
+          
+          <li> backends/file/file ( 13 features, 1/1 featured file ) </li>
+          
+          <li> backends/rancher/rancher ( 8 features, 1/1 featured file ) </li>
+          
+          <li> backends/redis/redis ( 12 features, 1/1 featured file ) </li>
+          
+          <li> backends/ssm/ssm ( 2 features, 1/1 featured file ) </li>
+          
+          <li> backends/vault/vault ( 2 features, 1/1 featured file ) </li>
+          
+          <li> backends/zookeeper/zookeeper ( 19 features, 1/1 featured file ) </li>
+          
+          <li> resource/template/template ( 11 features, 1/5 featured file ) </li>
+          
+    <li> Num of Packages with features : 13/18</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>18 </td>
+      <td>34 </td>
+      <td>14</td>
+      <td>13</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>1</td>
+      <td>18</td>
+      <td>5.263157894736842</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>2</td>
+      <td>0</td>
+      <td>14.285714285714285%</td>
+      <td>5 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>13 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L41">confd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L42">confd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L43">confd.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>43</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L53">confd.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L55">confd.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>55</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L58">confd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>58</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L59">confd.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L61">confd.go</a></td>
+              <td>Receive</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L63">confd.go</a></td>
+              <td>Close chan</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//confd.go#L64">confd.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L68">backends/consul/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L69">backends/consul/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L70">backends/consul/client.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L76">backends/consul/client.go</a></td>
+              <td>Send</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L79">backends/consul/client.go</a></td>
+              <td>Send</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L82">backends/consul/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>82</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L83">backends/consul/client.go</a></td>
+              <td>Receive</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/consul/client.go#L85">backends/consul/client.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/dynamodb/client.go#L108">backends/dynamodb/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/dynamodb/client.go#L109">backends/dynamodb/client.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/env/client.go#L56">backends/env/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/env/client.go#L57">backends/env/client.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcd/client.go#L124">backends/etcd/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcd/client.go#L135">backends/etcd/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcd/client.go#L136">backends/etcd/client.go</a></td>
+              <td>Close chan</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcd/client.go#L138">backends/etcd/client.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcd/client.go#L139">backends/etcd/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>139</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcd/client.go#L140">backends/etcd/client.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcd/client.go#L142">backends/etcd/client.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L28">backends/etcdv3/client.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L37">backends/etcdv3/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>37</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L38">backends/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L39">backends/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L44">backends/etcdv3/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>44</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L45">backends/etcdv3/client.go</a></td>
+              <td>Send</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L46">backends/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L56">backends/etcdv3/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L61">backends/etcdv3/client.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L225">backends/etcdv3/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L246">backends/etcdv3/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L248">backends/etcdv3/client.go</a></td>
+              <td>Close chan</td>
+              <td>248</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L249">backends/etcdv3/client.go</a></td>
+              <td>Goroutine</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L250">backends/etcdv3/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>250</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L251">backends/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L253">backends/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L258">backends/etcdv3/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L261">backends/etcdv3/client.go</a></td>
+              <td>Go in for</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L261">backends/etcdv3/client.go</a></td>
+              <td>Goroutine</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L263">backends/etcdv3/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>263</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L264">backends/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/etcdv3/client.go#L266">backends/etcdv3/client.go</a></td>
+              <td>Receive</td>
+              <td>266</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L108">backends/file/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L109">backends/file/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L110">backends/file/client.go</a></td>
+              <td>Goroutine</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L111">backends/file/client.go</a></td>
+              <td>Close chan</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L113">backends/file/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>113</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L114">backends/file/client.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L119">backends/file/client.go</a></td>
+              <td>Send</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L121">backends/file/client.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L122">backends/file/client.go</a></td>
+              <td>Send</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L123">backends/file/client.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L124">backends/file/client.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L128">backends/file/client.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/file/client.go#L131">backends/file/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L149">backends/rancher/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L155">backends/rancher/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L156">backends/rancher/client.go</a></td>
+              <td>Goroutine</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L161">backends/rancher/client.go</a></td>
+              <td>Send</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L166">backends/rancher/client.go</a></td>
+              <td>Send</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L175">backends/rancher/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>175</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L176">backends/rancher/client.go</a></td>
+              <td>Receive</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/rancher/client.go#L178">backends/rancher/client.go</a></td>
+              <td>Receive</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L119">backends/redis/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L228">backends/redis/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L237">backends/redis/client.go</a></td>
+              <td>Receive</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L242">backends/redis/client.go</a></td>
+              <td>Goroutine</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L248">backends/redis/client.go</a></td>
+              <td>Send</td>
+              <td>248</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L254">backends/redis/client.go</a></td>
+              <td>Goroutine</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L267">backends/redis/client.go</a></td>
+              <td>Send</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L274">backends/redis/client.go</a></td>
+              <td>Send</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L279">backends/redis/client.go</a></td>
+              <td>Send</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L289">backends/redis/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>289</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L290">backends/redis/client.go</a></td>
+              <td>Receive</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/redis/client.go#L293">backends/redis/client.go</a></td>
+              <td>Receive</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/ssm/client.go#L100">backends/ssm/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/ssm/client.go#L101">backends/ssm/client.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/vault/client.go#L286">backends/vault/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/vault/client.go#L287">backends/vault/client.go</a></td>
+              <td>Receive</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L85">backends/zookeeper/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L85">backends/zookeeper/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L88">backends/zookeeper/client.go</a></td>
+              <td>Send</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L92">backends/zookeeper/client.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L96">backends/zookeeper/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>96</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L97">backends/zookeeper/client.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L99">backends/zookeeper/client.go</a></td>
+              <td>Send</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L101">backends/zookeeper/client.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L103">backends/zookeeper/client.go</a></td>
+              <td>Send</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L105">backends/zookeeper/client.go</a></td>
+              <td>Receive</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L113">backends/zookeeper/client.go</a></td>
+              <td>chan used as a param</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L125">backends/zookeeper/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L126">backends/zookeeper/client.go</a></td>
+              <td>Synchronous chan</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L127">backends/zookeeper/client.go</a></td>
+              <td>Close chan</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L138">backends/zookeeper/client.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L151">backends/zookeeper/client.go</a></td>
+              <td>Goroutine</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L158">backends/zookeeper/client.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>158</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L159">backends/zookeeper/client.go</a></td>
+              <td>Receive</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//backends/zookeeper/client.go#L161">backends/zookeeper/client.go</a></td>
+              <td>Receive</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L43">resource/template/processor.go</a></td>
+              <td>chan used as a param</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L43">resource/template/processor.go</a></td>
+              <td>chan used as a param</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L56">resource/template/processor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>56</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L57">resource/template/processor.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L59">resource/template/processor.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L73">resource/template/processor.go</a></td>
+              <td>chan used as a param</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L73">resource/template/processor.go</a></td>
+              <td>chan used as a param</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L88">resource/template/processor.go</a></td>
+              <td>Go in for</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L88">resource/template/processor.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L99">resource/template/processor.go</a></td>
+              <td>Send</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/kelseyhightower/confd/blob//resource/template/processor.go#L106">resource/template/processor.go</a></td>
+              <td>Send</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 18 ,  34 ,
+     14 ,
+     13 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

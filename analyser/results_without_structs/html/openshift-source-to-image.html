@@ -1,0 +1,829 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : openshift/source-to-image ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/openshift/source-to-image/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> pkg/build/strategies/onbuild/onbuild ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/build/strategies/sti/sti ( 8 features, 2/6 featured file ) </li>
+          
+          <li> pkg/docker/docker ( 18 features, 2/6 featured file ) </li>
+          
+          <li> pkg/tar/tar ( 3 features, 2/3 featured file ) </li>
+          
+          <li> pkg/util/util ( 6 features, 1/13 featured file ) </li>
+          
+          <li> pkg/util/interrupt/interrupt ( 4 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 6/42</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>12 </td>
+      <td>6</td>
+      <td>11</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>5</td>
+      <td>0</td>
+      <td>83.33333333333334%</td>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/onbuild/onbuild.go#L111">pkg/build/strategies/onbuild/onbuild.go</a></td>
+              <td>Goroutine</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/postexecutorstep.go#L365">pkg/build/strategies/sti/postexecutorstep.go</a></td>
+              <td>Receive</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/sti.go#L634">pkg/build/strategies/sti/sti.go</a></td>
+              <td>Synchronous chan</td>
+              <td>634</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/sti.go#L679">pkg/build/strategies/sti/sti.go</a></td>
+              <td>Close chan</td>
+              <td>679</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/sti.go#L682">pkg/build/strategies/sti/sti.go</a></td>
+              <td>Send</td>
+              <td>682</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/sti.go#L691">pkg/build/strategies/sti/sti.go</a></td>
+              <td>Close chan</td>
+              <td>691</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/sti.go#L698">pkg/build/strategies/sti/sti.go</a></td>
+              <td>Goroutine</td>
+              <td>698</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/sti.go#L701">pkg/build/strategies/sti/sti.go</a></td>
+              <td>Receive</td>
+              <td>701</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/build/strategies/sti/sti.go#L722">pkg/build/strategies/sti/sti.go</a></td>
+              <td>Receive</td>
+              <td>722</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/util.go#L212">pkg/docker/util.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>212</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/util.go#L213">pkg/docker/util.go</a></td>
+              <td>Goroutine</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/util.go#L230">pkg/docker/util.go</a></td>
+              <td>Close chan</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L377">pkg/docker/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>377</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L860">pkg/docker/docker.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>860</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L862">pkg/docker/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>862</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L872">pkg/docker/docker.go</a></td>
+              <td>Send</td>
+              <td>872</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L875">pkg/docker/docker.go</a></td>
+              <td>Send</td>
+              <td>875</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L883">pkg/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>883</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L889">pkg/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>889</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L895">pkg/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>895</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L1023">pkg/docker/docker.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1023</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L1025">pkg/docker/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>1025</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L1026">pkg/docker/docker.go</a></td>
+              <td>Send</td>
+              <td>1026</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L1046">pkg/docker/docker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1046</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L1047">pkg/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>1047</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L1057">pkg/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>1057</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/docker/docker.go#L1063">pkg/docker/docker.go</a></td>
+              <td>Receive</td>
+              <td>1063</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/tar/tar.go#L227">pkg/tar/tar.go</a></td>
+              <td>Goroutine</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/tar/tar_test.go#L575">pkg/tar/tar_test.go</a></td>
+              <td>Goroutine</td>
+              <td>575</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/tar/tar_test.go#L641">pkg/tar/tar_test.go</a></td>
+              <td>Goroutine</td>
+              <td>641</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/timeout.go#L31">pkg/util/timeout.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>31</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/timeout.go#L33">pkg/util/timeout.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/timeout.go#L36">pkg/util/timeout.go</a></td>
+              <td>Send</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/timeout.go#L39">pkg/util/timeout.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>39</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/timeout.go#L40">pkg/util/timeout.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/timeout.go#L43">pkg/util/timeout.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/interrupt/interrupt.go#L66">pkg/util/interrupt/interrupt.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>66</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/interrupt/interrupt.go#L68">pkg/util/interrupt/interrupt.go</a></td>
+              <td>Close chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/interrupt/interrupt.go#L70">pkg/util/interrupt/interrupt.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/openshift/source-to-image/blob//pkg/util/interrupt/interrupt.go#L71">pkg/util/interrupt/interrupt.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 5 ,  12 ,
+     6 ,
+     11 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

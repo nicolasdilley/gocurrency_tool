@@ -1,0 +1,713 @@
+Line num,78311
+packages num,24,321
+files num,42,260
+Average Line num per featured file,194,8164
+,686
+api,234
+api/handler,59
+api/handler/api,235
+api/handler/event,97
+api/handler/http,176
+api/handler/rpc,706
+api/handler/web,133
+api/internal/proto,21
+api/proto,286
+api/resolver,53
+api/resolver/grpc,27
+api/resolver/host,22
+api/resolver/path,28
+api/resolver/vpath,55
+api/router,55
+api/router/registry,405
+api/router/static,257
+api/router/util,571
+api/server,70
+api/server/acme,59
+api/server/acme/autocert,76
+api/server/cors,33
+api/server/http,121
+auth,621
+broker,958
+cache,244
+client,1655
+cmd,727
+cmd/gomu,8
+cmd/gomu/cmd,78
+cmd/gomu/cmd/cli,10
+cmd/gomu/cmd/cli/call,50
+cmd/gomu/cmd/cli/describe,66
+cmd/gomu/cmd/cli/generate,116
+cmd/gomu/cmd/cli/new,173
+cmd/gomu/cmd/cli/run,134
+cmd/gomu/cmd/cli/services,30
+cmd/gomu/cmd/cli/stream,143
+cmd/gomu/debug/trace,15
+cmd/gomu/debug/trace/jaeger,87
+cmd/gomu/generator,99
+cmd/gomu/generator/template,364
+cmd/protoc-gen-micro,34
+cmd/protoc-gen-micro/examples/greeter,366
+cmd/protoc-gen-micro/generator,2141
+cmd/protoc-gen-micro/plugin/micro,431
+codec,44
+codec/bytes,89
+codec/grpc,164
+codec/json,75
+codec/jsonrpc,231
+codec/proto,115
+codec/protorpc,327
+codec/text,63
+config,482
+config/encoder,6
+config/encoder/json,18
+config/loader,35
+config/loader/memory,347
+config/reader,143
+config/reader/json,339
+config/secrets,54
+config/secrets/box,133
+config/secrets/secretbox,98
+config/source,87
+config/source/cli,249
+config/source/env,250
+config/source/file,269
+config/source/flag,140
+config/source/memory,128
+debug/handler,126
+debug/log,134
+debug/log/memory,121
+debug/log/noop,17
+debug/profile,28
+debug/profile/http,58
+debug/profile/pprof,72
+debug/proto,692
+debug/stats,82
+debug/trace,148
+errors,260
+examples/broker,50
+examples/broker/consumer,39
+examples/broker/producer,39
+examples/cache,22
+examples/cache/handler,44
+examples/cache/proto,502
+examples/client,105
+examples/client/codegen,69
+examples/client/dc_filter,66
+examples/client/dc_selector,102
+examples/client/pub,26
+examples/client/selector,95
+examples/client/wrapper,74
+examples/config/file,24
+examples/config/grpc/client,42
+examples/config/grpc/srv,113
+examples/config/modify,40
+examples/config/yaml,36
+examples/event/srv,22
+examples/event/srv/proto,60
+examples/filter,23
+examples/filter/version,18
+examples/flags,37
+examples/function,19
+examples/function/proto,176
+examples/gateway,32
+examples/gateway/proto/hello,196
+examples/getip,26
+examples/getip/proto,176
+examples/graceful,15
+examples/greeter/cli,20
+examples/greeter/cli/sidecar,33
+examples/greeter/srv,31
+examples/greeter/srv/proto/hello,157
+examples/heartbeat,17
+examples/helloworld,22
+examples/helloworld/proto,157
+examples/http/cli,21
+examples/http/rpccli,24
+examples/http/srv,43
+examples/metadata/cli,25
+examples/metadata/srv,33
+examples/mocking,37
+examples/mocking/mock,16
+examples/noproto,18
+examples/noproto/client,19
+examples/pubsub/cli,35
+examples/pubsub/srv,31
+examples/pubsub/srv/proto,60
+examples/redirect,30
+examples/roundrobin,50
+examples/secure/cli,26
+examples/secure/srv,31
+examples/secure/srv/proto/hello,177
+examples/server,38
+examples/server/codegen,63
+examples/server/handler,45
+examples/server/proto/example,503
+examples/server/subscriber,15
+examples/server/wrapper,62
+examples/service,49
+examples/service/proto,162
+examples/sharding,48
+examples/shutdown,20
+examples/stream/client,66
+examples/stream/server,46
+examples/stream/server/proto,378
+examples/waitgroup,30
+examples/wrapper,32
+examples/wrapper/cli,32
+logger,422
+metadata,187
+plugins,123
+plugins/acme/certmagic,176
+plugins/auth/jwt,123
+plugins/auth/jwt/token,226
+plugins/broker/gocloud,279
+plugins/broker/googlepubsub,259
+plugins/broker/grpc,676
+plugins/broker/grpc/proto,132
+plugins/broker/http,830
+plugins/broker/kafka,342
+plugins/broker/memory,238
+plugins/broker/mqtt,425
+plugins/broker/nats,360
+plugins/broker/nsq,340
+plugins/broker/proxy,254
+plugins/broker/rabbitmq,909
+plugins/broker/redis,331
+plugins/broker/segmentio,918
+plugins/broker/snssqs,577
+plugins/broker/sqs,353
+plugins/broker/stan,494
+plugins/broker/stomp,314
+plugins/client/grpc,1396
+plugins/client/http,865
+plugins/client/http/test,35
+plugins/client/mock,195
+plugins/client/mucp,11
+plugins/codec/bsonrpc,166
+plugins/codec/json-iterator,77
+plugins/codec/jsonrpc2,497
+plugins/codec/msgpackrpc,518
+plugins/codec/segmentio,88
+plugins/config/encoder/cue,71
+plugins/config/encoder/hcl,19
+plugins/config/encoder/toml,25
+plugins/config/encoder/xml,18
+plugins/config/encoder/yaml,18
+plugins/config/source/configmap,421
+plugins/config/source/consul,304
+plugins/config/source/etcd,323
+plugins/config/source/grpc,149
+plugins/config/source/grpc/proto,240
+plugins/config/source/mucp,124
+plugins/config/source/mucp/proto,368
+plugins/config/source/nacos,202
+plugins/config/source/pkger,80
+plugins/config/source/runtimevar,128
+plugins/config/source/url,125
+plugins/config/source/vault,346
+plugins/logger/apex,201
+plugins/logger/logrus,227
+plugins/logger/windowseventlog,122
+plugins/logger/zap,235
+plugins/logger/zerolog,275
+plugins/proxy/http,267
+plugins/registry/cache,16
+plugins/registry/consul,1073
+plugins/registry/etcd,436
+plugins/registry/eureka,495
+plugins/registry/eureka/mock,262
+plugins/registry/gossip,899
+plugins/registry/gossip/proto,105
+plugins/registry/kubernetes,749
+plugins/registry/kubernetes/client,183
+plugins/registry/kubernetes/client/api,336
+plugins/registry/kubernetes/client/mock,135
+plugins/registry/kubernetes/client/watch,138
+plugins/registry/mdns,11
+plugins/registry/memory,644
+plugins/registry/multi,300
+plugins/registry/nacos,422
+plugins/registry/nats,760
+plugins/registry/proxy,320
+plugins/registry/zookeeper,502
+plugins/selector/dns,90
+plugins/selector/label,253
+plugins/selector/registry,25
+plugins/selector/shard,190
+plugins/selector/static,162
+plugins/server/grpc,2033
+plugins/server/grpc/proto,380
+plugins/server/http,798
+plugins/server/mucp,11
+plugins/store/cockroach,528
+plugins/store/consul,119
+plugins/store/file,541
+plugins/store/memcached,145
+plugins/store/memory,483
+plugins/store/mysql,230
+plugins/store/redis,241
+plugins/sync/consul,233
+plugins/sync/etcd,142
+plugins/sync/memory,147
+plugins/transport/grpc,335
+plugins/transport/grpc/proto,292
+plugins/transport/http,125
+plugins/transport/memory,302
+plugins/transport/nats,486
+plugins/transport/quic,161
+plugins/transport/rabbitmq,606
+plugins/transport/tcp,415
+plugins/transport/utp,449
+plugins/wrapper/breaker/gobreaker,135
+plugins/wrapper/breaker/hystrix,230
+plugins/wrapper/endpoint,40
+plugins/wrapper/monitoring/prometheus,386
+plugins/wrapper/monitoring/victoriametrics,322
+plugins/wrapper/ratelimiter/ratelimit,145
+plugins/wrapper/ratelimiter/uber,30
+plugins/wrapper/select/roundrobin,44
+plugins/wrapper/select/shard,47
+plugins/wrapper/select/version,42
+plugins/wrapper/service,28
+plugins/wrapper/trace/awsxray,228
+plugins/wrapper/trace/datadog,372
+plugins/wrapper/trace/opencensus,313
+plugins/wrapper/trace/opentracing,253
+plugins/wrapper/validator,21
+registry,1526
+registry/cache,337
+runtime,937
+runtime/kubernetes,723
+runtime/local,7
+runtime/local/build,28
+runtime/local/build/docker,79
+runtime/local/build/go,55
+runtime/local/git,399
+runtime/local/process,26
+runtime/local/process/os,145
+runtime/local/source,21
+runtime/local/source/git,66
+runtime/local/source/go,67
+selector,571
+server,2564
+server/mock,198
+server/proto,248
+store,417
+sync,56
+transport,1116
+util/addr,198
+util/backoff,11
+util/buf,17
+util/ctx,52
+util/file,303
+util/file/proto,664
+util/grpc,76
+util/http,166
+util/io,31
+util/jitter,12
+util/kubernetes/api,435
+util/kubernetes/client,902
+util/log,163
+util/mdns,1381
+util/net,124
+util/pki,291
+util/pool,201
+util/qson,302
+util/registry,183
+util/ring,141
+util/signal,10
+util/socket,128
+util/stream,70
+util/sync,198
+util/test,44
+util/tls,60
+util/wrapper,214
+web,951
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/service.go,1,Goroutine,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/service.go,1,Goroutine,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/service.go,4,Synchronous chan,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/service.go,1,Goroutine,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/service.go,17,Select with default (number of branch),161,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/service.go,2,Receive,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,20,Receive only chan (<-chan),191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,16,Select (number of branch),226,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,248,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,261,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,311,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,4,Synchronous chan,405,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,4,Synchronous chan,406,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,1,Goroutine,441,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,16,Select (number of branch),443,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,3,Send,449,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,450,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,17,Select with default (number of branch),480,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,481,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,4,Synchronous chan,630,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,1,Goroutine,644,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,17,Select with default (number of branch),658,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/default.go,2,Receive,659,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory_test.go,1,Goroutine,19,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,16,Select (number of branch),65,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,16,Select (number of branch),97,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,3,Send,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,17,Select with default (number of branch),112,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,17,Select with default (number of branch),128,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,16,Select (number of branch),139,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,1,Goroutine,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,16,Select (number of branch),186,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,2,Receive,187,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,3,Send,189,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,4,Synchronous chan,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/memory.go,4,Synchronous chan,232,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,4,Synchronous chan,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,1,Goroutine,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,17,Select with default (number of branch),75,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,2,Receive,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,15,Close chan,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,4,Synchronous chan,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,1,Goroutine,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,17,Select with default (number of branch),144,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,2,Receive,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,15,Close chan,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,4,Synchronous chan,192,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,15,Close chan,197,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,1,Goroutine,200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,16,Select (number of branch),201,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,2,Receive,202,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,2,Receive,204,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,1,Goroutine,218,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,17,Select with default (number of branch),220,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,2,Receive,221,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport_test.go,2,Receive,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,17,Select with default (number of branch),107,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,3,Send,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,2,Receive,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,17,Select with default (number of branch),208,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,2,Receive,210,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,17,Select with default (number of branch),244,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,2,Receive,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,17,Select with default (number of branch),317,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,2,Receive,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,17,Select with default (number of branch),368,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,2,Receive,369,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,8,Known chan length (length),434,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,3,Send,435,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/transport/http_transport.go,4,Synchronous chan,448,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/ring/buffer.go,16,Select (number of branch),55,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/ring/buffer.go,2,Receive,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/ring/buffer.go,3,Send,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/ring/buffer.go,8,Known chan length (length),115,128
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/ring/buffer.go,4,Synchronous chan,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/cache/cache_test.go,2,Receive,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/cache/cache_test.go,2,Receive,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/cache/cache_test.go,2,Receive,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/pool/default_test.go,1,Goroutine,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/sync/manager.go,4,Synchronous chan,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/sync/manager.go,5,Go in for,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/sync/manager.go,1,Goroutine,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/sync/manager.go,3,Send,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/sync/manager.go,16,Select (number of branch),38,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/sync/manager.go,2,Receive,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/sync/sync.go,1,Goroutine,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/web_test.go,30,Waitgroup,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/web_test.go,24,Waitgroup Add(const),55,&{18023869 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/web_test.go,1,Goroutine,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/web_test.go,26,Waitgroup Done(),57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/web_test.go,1,Goroutine,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/web_test.go,26,Waitgroup Done(),64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/web_test.go,31,Waitgroup Wait(),71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,1,Goroutine,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,4,Synchronous chan,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,10,Make chan in for,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,5,Go in for,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,4,Synchronous chan,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,1,Goroutine,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,16,Select (number of branch),118,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,2,Receive,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,2,Receive,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,15,Close chan,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,17,Select with default (number of branch),135,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,2,Receive,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,17,Select with default (number of branch),180,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/default.go,2,Receive,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/router/static/static.go,17,Select with default (number of branch),36,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/router/static/static.go,2,Receive,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/router/static/static.go,17,Select with default (number of branch),164,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/router/static/static.go,2,Receive,165,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/router/static/static.go,4,Synchronous chan,349,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,16,Select (number of branch),35,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,3,Send,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,16,Select (number of branch),45,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,17,Select with default (number of branch),50,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,16,Select (number of branch),71,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,3,Send,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,16,Select (number of branch),82,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,17,Select with default (number of branch),96,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/socket/socket.go,2,Receive,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/http/http_test.go,1,Goroutine,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,8,Known chan length (length),24,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,4,Synchronous chan,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,1,Goroutine,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,16,Select (number of branch),28,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,2,Receive,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,2,Receive,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,15,Close chan,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server_test.go,2,Receive,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server.go,4,Synchronous chan,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server.go,1,Goroutine,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server.go,1,Goroutine,147,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server.go,1,Goroutine,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server.go,16,Select (number of branch),413,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server.go,2,Receive,414,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/server.go,2,Receive,417,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,21,Send only chan (chan<-),103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,22,chan used as a param,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,8,Known chan length (length),114,32
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,118,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,16,Select (number of branch),124,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,2,Receive,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,2,Receive,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,3,Send,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,21,Send only chan (chan<-),159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,4,Synchronous chan,250,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,8,Known chan length (length),317,32
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,319,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,320,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,1,Goroutine,321,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,16,Select (number of branch),348,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,2,Receive,349,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,16,Select (number of branch),367,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,3,Send,368,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,2,Receive,369,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,2,Receive,381,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,22,chan used as a param,403,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,16,Select (number of branch),423,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,3,Send,424,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/mdns/client.go,2,Receive,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/debug/log/memory/stream.go,17,Select with default (number of branch),17,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/debug/log/memory/stream.go,2,Receive,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/debug/log/memory/memory.go,8,Known chan length (length),91,128
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/debug/log/memory/memory.go,1,Goroutine,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/debug/log/memory/memory.go,3,Send,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/debug/log/memory/memory.go,3,Send,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/logs.go,17,Select with default (number of branch),48,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/logs.go,2,Receive,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/logs.go,3,Send,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/logs.go,4,Synchronous chan,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/logs.go,4,Synchronous chan,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/logs.go,5,Go in for,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/logs.go,1,Goroutine,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,20,Receive only chan (<-chan),235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,16,Select (number of branch),240,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,2,Receive,241,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,2,Receive,244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,2,Receive,312,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,1,Goroutine,341,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,3,Send,351,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,17,Select with default (number of branch),378,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,2,Receive,379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,4,Synchronous chan,562,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,1,Goroutine,576,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,17,Select with default (number of branch),590,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/runtime/kubernetes/kubernetes.go,2,Receive,591,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,9,Unknown chan length,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,3,Send,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,2,Receive,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,9,Unknown chan length,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,3,Send,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,30,Waitgroup,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,9,Unknown chan length,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,5,Go in for,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,1,Goroutine,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,6,Range over chan,160,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,16,Select (number of branch),164,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,2,Receive,165,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,2,Receive,166,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,26,Waitgroup Done(),168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,24,Waitgroup Add(const),174,&{17509984 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,3,Send,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,31,Waitgroup Wait(),178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,15,Close chan,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,15,Close chan,182,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,4,Synchronous chan,208,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,15,Close chan,217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,2,Receive,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,30,Waitgroup,256,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,26,Waitgroup Done(),260,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,24,Waitgroup Add(const),274,&{17512002 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,31,Waitgroup Wait(),282,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,30,Waitgroup,312,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,26,Waitgroup Done(),315,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,24,Waitgroup Add(const),330,&{17513106 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http_test.go,31,Waitgroup Wait(),337,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,19,Channel of channels,135,h.exit
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,16,Select (number of branch),268,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,2,Receive,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,2,Receive,279,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,3,Send,280,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,1,Goroutine,412,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,1,Goroutine,413,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,4,Synchronous chan,452,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,3,Send,453,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,2,Receive,454,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/broker/http.go,1,Goroutine,620,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/source/env/watcher.go,2,Receive,12,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/source/env/env_test.go,1,Goroutine,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,17,Select with default (number of branch),54,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,2,Receive,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,1,Goroutine,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,16,Select (number of branch),82,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,2,Receive,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,3,Send,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,4,Synchronous chan,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,4,Synchronous chan,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/util/kubernetes/client/watch.go,1,Goroutine,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/handler/rpc/stream.go,1,Goroutine,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/handler/rpc/stream.go,17,Select with default (number of branch),138,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/handler/rpc/stream.go,2,Receive,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/handler/rpc/stream.go,2,Receive,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/handler/rpc/stream.go,17,Select with default (number of branch),180,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/api/handler/rpc/stream.go,2,Receive,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/context.go,30,Waitgroup,14,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,30,Waitgroup,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,5,Go in for,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,7,Goroutine in for with constant (constant),111,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,5,Go in for,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,7,Goroutine in for with constant (constant),122,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,24,Waitgroup Add(const),109,&{17623129 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,1,Goroutine,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,2,Receive,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,26,Waitgroup Done(),119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,1,Goroutine,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,2,Receive,124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,26,Waitgroup Done(),129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_stream_test.go,31,Waitgroup Wait(),132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/server.go,8,Known chan length (length),211,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/server.go,2,Receive,215,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_codec.go,4,Synchronous chan,179,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_codec.go,17,Select with default (number of branch),206,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_codec.go,2,Receive,207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_codec.go,17,Select with default (number of branch),240,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_codec.go,2,Receive,241,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_router.go,27,Mutex,465,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,30,Waitgroup,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,5,Go in for,371,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,5,Go in for,408,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,1,Goroutine,371,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,1,Goroutine,408,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,4,Synchronous chan,857,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,1,Goroutine,859,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,17,Select with default (number of branch),867,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,2,Receive,869,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,1,Goroutine,887,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,16,Select (number of branch),901,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,2,Receive,903,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,2,Receive,930,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,15,Close chan,932,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,30,Waitgroup,950,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,31,Waitgroup Wait(),955,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,3,Send,959,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,4,Synchronous chan,993,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,3,Send,994,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/server/rpc_server.go,2,Receive,996,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,8,Known chan length (length),59,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,1,Goroutine,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,3,Send,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,15,Close chan,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,16,Select (number of branch),106,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,8,Known chan length (length),117,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,16,Select (number of branch),124,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,16,Select (number of branch),223,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,224,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,8,Known chan length (length),251,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,1,Goroutine,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,3,Send,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,15,Close chan,254,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,16,Select (number of branch),288,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,289,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service_test.go,2,Receive,293,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,22,chan used as a param,94,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,16,Select (number of branch),105,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,2,Receive,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,2,Receive,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,1,Goroutine,241,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,19,Channel of channels,249,exit.s
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,1,Goroutine,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,2,Receive,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,3,Send,254,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,8,Known chan length (length),277,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,3,Send,278,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,2,Receive,287,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,2,Receive,294,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,4,Synchronous chan,471,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,1,Goroutine,472,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,8,Known chan length (length),474,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,16,Select (number of branch),479,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,2,Receive,481,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,2,Receive,486,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/web/service.go,15,Close chan,493,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/source/file/file_test.go,1,Goroutine,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/config/source/file/file_test.go,1,Goroutine,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/selector/strategy.go,27,Mutex,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/selector/strategy.go,29,Mutex Lock(),49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/selector/strategy.go,28,Mutex Unlock(),52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,30,Waitgroup,14,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,24,Waitgroup Add(const),15,&{17987455 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,26,Waitgroup Done(),24,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,8,Known chan length (length),32,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,1,Goroutine,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,3,Send,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,31,Waitgroup Wait(),40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/function_test.go,2,Receive,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,24,Waitgroup Add(const),17,&{17983958 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,31,Waitgroup Wait(),21,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,24,Waitgroup Add(const),26,&{17984130 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,26,Waitgroup Done(),36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,26,Waitgroup Done(),40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,30,Waitgroup,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,1,Goroutine,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,31,Waitgroup Wait(),81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,30,Waitgroup,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,1,Goroutine,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,31,Waitgroup Wait(),119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,5,Go in for,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,24,Waitgroup Add(const),135,&{17986146 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,1,Goroutine,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,26,Waitgroup Done(),139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service_test.go,31,Waitgroup Wait(),147,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service.go,8,Known chan length (length),213,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service.go,16,Select (number of branch),218,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service.go,2,Receive,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/asim++go-micro/service.go,2,Receive,222,

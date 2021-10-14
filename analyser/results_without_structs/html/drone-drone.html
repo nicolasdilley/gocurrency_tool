@@ -1,0 +1,2689 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : drone/drone ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/drone/drone/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> handler/api/events/events ( 18 features, 3/5 featured file ) </li>
+          
+          <li> handler/api/user/user ( 1 features, 1/11 featured file ) </li>
+          
+          <li> handler/web/web ( 1 features, 1/13 featured file ) </li>
+          
+          <li> livelog/livelog ( 40 features, 6/9 featured file ) </li>
+          
+          <li> metric/sink/sink ( 3 features, 1/4 featured file ) </li>
+          
+          <li> operator/runner/runner ( 3 features, 1/11 featured file ) </li>
+          
+          <li> pubsub/pubsub ( 31 features, 5/8 featured file ) </li>
+          
+          <li> scheduler/queue/queue ( 36 features, 4/9 featured file ) </li>
+          
+          <li> server/server ( 3 features, 1/1 featured file ) </li>
+          
+          <li> service/canceler/reaper/reaper ( 3 features, 1/4 featured file ) </li>
+          
+          <li> service/redisdb/redisdb ( 3 features, 1/1 featured file ) </li>
+          
+          <li> trigger/trigger ( 1 features, 1/6 featured file ) </li>
+          
+          <li> trigger/cron/cron ( 3 features, 1/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 13/104</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>11 </td>
+      <td>58 </td>
+      <td>27</td>
+      <td>18</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td>12</td>
+      <td>1</td>
+      <td>44.44444444444444%</td>
+      <td>6 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>18 </td>
+      <td>8</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/global.go#L69">handler/api/events/global.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>69</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/global.go#L70">handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/global.go#L73">handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/global.go#L76">handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/global.go#L79">handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/global.go#L82">handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/build.go#L88">handler/api/events/build.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>88</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/build.go#L89">handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/build.go#L92">handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/build.go#L95">handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/build.go#L98">handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/build.go#L101">handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/logs.go#L108">handler/api/events/logs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>108</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/logs.go#L109">handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/logs.go#L111">handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/logs.go#L113">handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/logs.go#L115">handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/events/logs.go#L117">handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/api/user/sync.go#L38">handler/api/user/sync.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//handler/web/login.go#L170">handler/web/login.go</a></td>
+              <td>Goroutine</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub.go#L32">livelog/sub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>32</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub.go#L33">livelog/sub.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub.go#L34">livelog/sub.go</a></td>
+              <td>Send</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_test.go#L38">livelog/stream_test.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_test.go#L49">livelog/stream_test.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_test.go#L51">livelog/stream_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>51</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_test.go#L52">livelog/stream_test.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_test.go#L54">livelog/stream_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_test.go#L93">livelog/stream_test.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub_test.go#L17">livelog/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>17</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub_test.go#L18">livelog/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub_test.go#L27">livelog/sub_test.go</a></td>
+              <td>Receive</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub_test.go#L37">livelog/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>37</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub_test.go#L38">livelog/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub_test.go#L61">livelog/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>61</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/sub_test.go#L62">livelog/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/streamer_test.go#L31">livelog/streamer_test.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/streamer_test.go#L43">livelog/streamer_test.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/streamer_test.go#L45">livelog/streamer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>45</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/streamer_test.go#L46">livelog/streamer_test.go</a></td>
+              <td>Receive</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/streamer_test.go#L48">livelog/streamer_test.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/streamer_test.go#L50">livelog/streamer_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L61">livelog/stream.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>61</td>
+              <td>5000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L62">livelog/stream.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L64">livelog/stream.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L73">livelog/stream.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L74">livelog/stream.go</a></td>
+              <td>Close chan</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L75">livelog/stream.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>75</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L76">livelog/stream.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream.go#L77">livelog/stream.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L131">livelog/stream_redis.go</a></td>
+              <td>Unknown chan length</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L132">livelog/stream_redis.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>132</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L134">livelog/stream_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L135">livelog/stream_redis.go</a></td>
+              <td>Close chan</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L136">livelog/stream_redis.go</a></td>
+              <td>Close chan</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L143">livelog/stream_redis.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>143</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L144">livelog/stream_redis.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L146">livelog/stream_redis.go</a></td>
+              <td>Receive</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L154">livelog/stream_redis.go</a></td>
+              <td>Send</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//livelog/stream_redis.go#L173">livelog/stream_redis.go</a></td>
+              <td>Send</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//metric/sink/datadog.go#L71">metric/sink/datadog.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>71</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//metric/sink/datadog.go#L72">metric/sink/datadog.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//metric/sink/datadog.go#L74">metric/sink/datadog.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//operator/runner/runner.go#L541">operator/runner/runner.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>541</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//operator/runner/runner.go#L542">operator/runner/runner.go</a></td>
+              <td>Receive</td>
+              <td>542</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//operator/runner/runner.go#L599">operator/runner/runner.go</a></td>
+              <td>Goroutine</td>
+              <td>599</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_test.go#L36">pubsub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_test.go#L45">pubsub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_test.go#L47">pubsub/hub_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>47</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_test.go#L48">pubsub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_test.go#L50">pubsub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub_test.go#L19">pubsub/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>19</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub_test.go#L20">pubsub/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub_test.go#L29">pubsub/sub_test.go</a></td>
+              <td>Receive</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub_test.go#L39">pubsub/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>39</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub_test.go#L40">pubsub/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub_test.go#L63">pubsub/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>63</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub_test.go#L64">pubsub/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub.go#L49">pubsub/hub.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>49</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub.go#L50">pubsub/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub.go#L54">pubsub/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub.go#L55">pubsub/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub.go#L56">pubsub/hub.go</a></td>
+              <td>Close chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub.go#L57">pubsub/hub.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub.go#L58">pubsub/hub.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub.go#L32">pubsub/sub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>32</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub.go#L33">pubsub/sub.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/sub.go#L34">pubsub/sub.go</a></td>
+              <td>Send</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L41">pubsub/hub_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L71">pubsub/hub_redis.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>71</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L72">pubsub/hub_redis.go</a></td>
+              <td>Synchronous chan</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L78">pubsub/hub_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L79">pubsub/hub_redis.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L85">pubsub/hub_redis.go</a></td>
+              <td>Close chan</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L86">pubsub/hub_redis.go</a></td>
+              <td>Close chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L115">pubsub/hub_redis.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>115</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//pubsub/hub_redis.go#L116">pubsub/hub_redis.go</a></td>
+              <td>Send</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller.go#L51">scheduler/queue/canceller.go</a></td>
+              <td>Synchronous chan</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller.go#L63">scheduler/queue/canceller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>63</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller.go#L64">scheduler/queue/canceller.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller.go#L66">scheduler/queue/canceller.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller.go#L73">scheduler/queue/canceller.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue_test.go#L63">scheduler/queue/queue_test.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue_test.go#L73">scheduler/queue/queue_test.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue_test.go#L107">scheduler/queue/queue_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>107</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue_test.go#L111">scheduler/queue/queue_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>111</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue_test.go#L112">scheduler/queue/queue_test.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue_test.go#L113">scheduler/queue/queue_test.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller_redis.go#L45">scheduler/queue/canceller_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller_redis.go#L104">scheduler/queue/canceller_redis.go</a></td>
+              <td>Synchronous chan</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller_redis.go#L111">scheduler/queue/canceller_redis.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>111</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller_redis.go#L112">scheduler/queue/canceller_redis.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller_redis.go#L116">scheduler/queue/canceller_redis.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller_redis.go#L140">scheduler/queue/canceller_redis.go</a></td>
+              <td>Send</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/canceller_redis.go#L155">scheduler/queue/canceller_redis.go</a></td>
+              <td>Send</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L43">scheduler/queue/queue.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>43</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L48">scheduler/queue/queue.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L53">scheduler/queue/queue.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L54">scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L79">scheduler/queue/queue.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L80">scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L95">scheduler/queue/queue.go</a></td>
+              <td>Synchronous chan</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L101">scheduler/queue/queue.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L102">scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L106">scheduler/queue/queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L107">scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L112">scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L204">scheduler/queue/queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>204</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L205">scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L216">scheduler/queue/queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>216</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L217">scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L219">scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//scheduler/queue/queue.go#L221">scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//server/server.go#L63">server/server.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//server/server.go#L92">server/server.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//server/server.go#L138">server/server.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//service/canceler/reaper/reaper.go#L70">service/canceler/reaper/reaper.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>70</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//service/canceler/reaper/reaper.go#L71">service/canceler/reaper/reaper.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//service/canceler/reaper/reaper.go#L73">service/canceler/reaper/reaper.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//service/redisdb/redisdb.go#L125">service/redisdb/redisdb.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>125</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//service/redisdb/redisdb.go#L126">service/redisdb/redisdb.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//service/redisdb/redisdb.go#L134">service/redisdb/redisdb.go</a></td>
+              <td>Receive</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//trigger/trigger.go#L485">trigger/trigger.go</a></td>
+              <td>Goroutine</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//trigger/cron/cron.go#L53">trigger/cron/cron.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//trigger/cron/cron.go#L54">trigger/cron/cron.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob//trigger/cron/cron.go#L56">trigger/cron/cron.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 11 ,  58 ,
+     27 ,
+     18 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

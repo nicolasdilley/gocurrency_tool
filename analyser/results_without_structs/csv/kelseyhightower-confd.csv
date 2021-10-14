@@ -1,0 +1,203 @@
+Line num,0
+packages num,13,18
+files num,13,29
+Average Line num per featured file,1740
+main,276
+backends/backends,106
+backends/consul/consul,72
+backends/dynamodb/dynamodb,86
+backends/env/env,44
+backends/etcd/etcd,134
+backends/etcdv3/etcdv3,219
+backends/file/file,151
+backends/rancher/rancher,151
+backends/redis/redis,247
+backends/ssm/ssm,87
+backends/vault/vault,228
+backends/zookeeper/zookeeper,142
+integration/ssm/main,90
+integration/zookeeper/main,57
+log/log,45
+resource/template/template,1500
+util/util,329
+Filename, #,Concurrent Type, Line number , Number
+confd.go,4,Synchronous chan,41,
+confd.go,4,Synchronous chan,42,
+confd.go,8,Known chan length (length),43,10
+confd.go,1,Goroutine,53,
+confd.go,8,Known chan length (length),55,1
+confd.go,16,Select (number of branch),58,3
+confd.go,2,Receive,59,
+confd.go,2,Receive,61,
+confd.go,15,Close chan,63,
+confd.go,2,Receive,64,
+backends/consul/client.go,22,chan used as a param,68,
+backends/consul/client.go,4,Synchronous chan,69,
+backends/consul/client.go,1,Goroutine,70,
+backends/consul/client.go,3,Send,76,
+backends/consul/client.go,3,Send,79,
+backends/consul/client.go,16,Select (number of branch),82,2
+backends/consul/client.go,2,Receive,83,
+backends/consul/client.go,2,Receive,85,
+backends/dynamodb/client.go,22,chan used as a param,108,
+backends/dynamodb/client.go,2,Receive,109,
+backends/env/client.go,22,chan used as a param,56,
+backends/env/client.go,2,Receive,57,
+backends/etcd/client.go,22,chan used as a param,124,
+backends/etcd/client.go,4,Synchronous chan,135,
+backends/etcd/client.go,15,Close chan,136,
+backends/etcd/client.go,1,Goroutine,138,
+backends/etcd/client.go,16,Select (number of branch),139,2
+backends/etcd/client.go,2,Receive,140,
+backends/etcd/client.go,2,Receive,142,
+backends/etcdv3/client.go,21,Send only chan (chan<-),28,
+backends/etcdv3/client.go,16,Select (number of branch),37,2
+backends/etcdv3/client.go,2,Receive,38,
+backends/etcdv3/client.go,2,Receive,39,
+backends/etcdv3/client.go,16,Select (number of branch),44,2
+backends/etcdv3/client.go,3,Send,45,
+backends/etcdv3/client.go,2,Receive,46,
+backends/etcdv3/client.go,4,Synchronous chan,56,
+backends/etcdv3/client.go,1,Goroutine,61,
+backends/etcdv3/client.go,22,chan used as a param,225,
+backends/etcdv3/client.go,4,Synchronous chan,246,
+backends/etcdv3/client.go,15,Close chan,248,
+backends/etcdv3/client.go,1,Goroutine,249,
+backends/etcdv3/client.go,16,Select (number of branch),250,2
+backends/etcdv3/client.go,2,Receive,251,
+backends/etcdv3/client.go,2,Receive,253,
+backends/etcdv3/client.go,4,Synchronous chan,258,
+backends/etcdv3/client.go,5,Go in for,261,
+backends/etcdv3/client.go,1,Goroutine,261,
+backends/etcdv3/client.go,16,Select (number of branch),263,2
+backends/etcdv3/client.go,2,Receive,264,
+backends/etcdv3/client.go,2,Receive,266,
+backends/file/client.go,22,chan used as a param,108,
+backends/file/client.go,4,Synchronous chan,109,
+backends/file/client.go,1,Goroutine,110,
+backends/file/client.go,15,Close chan,111,
+backends/file/client.go,16,Select (number of branch),113,3
+backends/file/client.go,2,Receive,114,
+backends/file/client.go,3,Send,119,
+backends/file/client.go,2,Receive,121,
+backends/file/client.go,3,Send,122,
+backends/file/client.go,2,Receive,123,
+backends/file/client.go,3,Send,124,
+backends/file/client.go,2,Receive,128,
+backends/file/client.go,22,chan used as a param,131,
+backends/rancher/client.go,22,chan used as a param,149,
+backends/rancher/client.go,4,Synchronous chan,155,
+backends/rancher/client.go,1,Goroutine,156,
+backends/rancher/client.go,3,Send,161,
+backends/rancher/client.go,3,Send,166,
+backends/rancher/client.go,16,Select (number of branch),175,2
+backends/rancher/client.go,2,Receive,176,
+backends/rancher/client.go,2,Receive,178,
+backends/redis/client.go,4,Synchronous chan,119,
+backends/redis/client.go,22,chan used as a param,228,
+backends/redis/client.go,2,Receive,237,
+backends/redis/client.go,1,Goroutine,242,
+backends/redis/client.go,3,Send,248,
+backends/redis/client.go,1,Goroutine,254,
+backends/redis/client.go,3,Send,267,
+backends/redis/client.go,3,Send,274,
+backends/redis/client.go,3,Send,279,
+backends/redis/client.go,16,Select (number of branch),289,2
+backends/redis/client.go,2,Receive,290,
+backends/redis/client.go,2,Receive,293,
+backends/ssm/client.go,22,chan used as a param,100,
+backends/ssm/client.go,2,Receive,101,
+backends/vault/client.go,22,chan used as a param,286,
+backends/vault/client.go,2,Receive,287,
+backends/zookeeper/client.go,22,chan used as a param,85,
+backends/zookeeper/client.go,22,chan used as a param,85,
+backends/zookeeper/client.go,3,Send,88,
+backends/zookeeper/client.go,3,Send,92,
+backends/zookeeper/client.go,16,Select (number of branch),96,3
+backends/zookeeper/client.go,2,Receive,97,
+backends/zookeeper/client.go,3,Send,99,
+backends/zookeeper/client.go,2,Receive,101,
+backends/zookeeper/client.go,3,Send,103,
+backends/zookeeper/client.go,2,Receive,105,
+backends/zookeeper/client.go,22,chan used as a param,113,
+backends/zookeeper/client.go,4,Synchronous chan,125,
+backends/zookeeper/client.go,4,Synchronous chan,126,
+backends/zookeeper/client.go,15,Close chan,127,
+backends/zookeeper/client.go,1,Goroutine,138,
+backends/zookeeper/client.go,1,Goroutine,151,
+backends/zookeeper/client.go,16,Select (number of branch),158,2
+backends/zookeeper/client.go,2,Receive,159,
+backends/zookeeper/client.go,2,Receive,161,
+resource/template/processor.go,22,chan used as a param,43,
+resource/template/processor.go,22,chan used as a param,43,
+resource/template/processor.go,16,Select (number of branch),56,2
+resource/template/processor.go,2,Receive,57,
+resource/template/processor.go,2,Receive,59,
+resource/template/processor.go,22,chan used as a param,73,
+resource/template/processor.go,22,chan used as a param,73,
+resource/template/processor.go,5,Go in for,88,
+resource/template/processor.go,1,Goroutine,88,
+resource/template/processor.go,3,Send,99,
+resource/template/processor.go,3,Send,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Waitgroup,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex Lock(),230,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex,232,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex Unlock(),236,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcdv3/client.go,0,Mutex Unlock(),243,
+/Users/nicolasdilley/Library/Caches/go-build/46/465ac5865753e9a14e6eb29d0e561823cbd66d3f405e18abe1a4a515e85a7615-d,0,Mutex,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/dynamodb/client.go,0,Mutex,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/dynamodb/client.go,0,Mutex,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/file/client.go,0,Mutex,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/zookeeper/client.go,0,Mutex,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/zookeeper/client.go,0,Mutex,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/zookeeper/client.go,0,Mutex,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/zookeeper/client.go,0,Mutex,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,17,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,17,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,17,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,17,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,17,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/consul/client.go,0,Mutex,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/vault/client.go,0,Mutex,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/vault/client.go,0,Mutex,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/vault/client.go,0,Mutex,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/vault/client.go,0,Mutex,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/vault/client.go,0,Mutex,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcd/client.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcd/client.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcd/client.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcd/client.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcd/client.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcd/client.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/etcd/client.go,0,Mutex,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/ssm/client.go,0,Mutex,19,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/backends/ssm/client.go,0,Mutex,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/processor.go,0,Waitgroup,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/processor.go,0,Mutex,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/processor.go,0,Waitgroup Add(const),87,&{10940877 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/processor.go,0,Waitgroup Done(),94,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/processor.go,0,Mutex,130,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/resource.go,0,Mutex,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/resource.go,0,Mutex,207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/resource.go,0,Mutex,306,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/resource.go,0,Mutex,328,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/resource_test.go,0,Mutex,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/template_test.go,0,Mutex,807,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/kelseyhightower++confd/resource/template/template_test.go,0,Mutex,875,

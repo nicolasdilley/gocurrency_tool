@@ -1,0 +1,2107 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : buger/goreplay ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/buger/goreplay/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> main ( 209 features, 30/52 featured file ) </li>
+          
+          <li> capture/capture ( 17 features, 1/9 featured file ) </li>
+          
+          <li> simpletime/simpletime ( 1 features, 1/1 featured file ) </li>
+          
+          <li> tcp/tcp ( 17 features, 1/4 featured file ) </li>
+          
+    <li> Num of Packages with features : 4/9</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>34 </td>
+      <td>57 </td>
+      <td>42</td>
+      <td>74</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>9 </td>
+      <td>0 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>20</td>
+      <td>19</td>
+      <td>3</td>
+      <td>45.23809523809524%</td>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>19 </td>
+      <td>4</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//s3_test.go#L67">s3_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>67</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//s3_test.go#L81">s3_test.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//s3_test.go#L114">s3_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>114</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//s3_test.go#L127">s3_test.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http_test.go#L28">input_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http_test.go#L63">input_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_file_test.go#L30">output_file_test.go</a></td>
+              <td>Goroutine</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_file_test.go#L55">output_file_test.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_kafka_test.go#L24">output_kafka_test.go</a></td>
+              <td>Receive</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_kafka_test.go#L47">output_kafka_test.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_s3.go#L129">output_s3.go</a></td>
+              <td>Send</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L105">gor.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L110">gor.go</a></td>
+              <td>Synchronous chan</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L112">gor.go</a></td>
+              <td>Goroutine</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L118">gor.go</a></td>
+              <td>Close chan</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L121">gor.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>121</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L124">gor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>124</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L125">gor.go</a></td>
+              <td>Receive</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor.go#L127">gor.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//elasticsearch.go#L99">elasticsearch.go</a></td>
+              <td>Synchronous chan</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//elasticsearch.go#L102">elasticsearch.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//elasticsearch.go#L115">elasticsearch.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp_test.go#L27">output_tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp_test.go#L45">output_tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp_test.go#L49">output_tcp_test.go</a></td>
+              <td>Go in for</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp_test.go#L49">output_tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp_test.go#L72">output_tcp_test.go</a></td>
+              <td>Unknown chan length</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp_test.go#L87">output_tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L314">input_file_test.go</a></td>
+              <td>Goroutine</td>
+              <td>314</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L343">input_file_test.go</a></td>
+              <td>Goroutine</td>
+              <td>343</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L345">input_file_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>345</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L346">input_file_test.go</a></td>
+              <td>Goroutine</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L348">input_file_test.go</a></td>
+              <td>Send</td>
+              <td>348</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L351">input_file_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>351</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L352">input_file_test.go</a></td>
+              <td>Receive</td>
+              <td>352</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file_test.go#L354">input_file_test.go</a></td>
+              <td>Receive</td>
+              <td>354</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_kafka.go#L53">output_kafka.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_kafka.go#L94">output_kafka.go</a></td>
+              <td>Send</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//gor_stat.go#L28">gor_stat.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter.go#L42">emitter.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter.go#L51">emitter.go</a></td>
+              <td>Go in for</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter.go#L51">emitter.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_file.go#L94">output_file.go</a></td>
+              <td>Goroutine</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp_test.go#L35">input_tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp_test.go#L120">input_tcp_test.go</a></td>
+              <td>Goroutine</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter_test.go#L33">emitter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter_test.go#L64">emitter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter_test.go#L119">emitter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter_test.go#L163">emitter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter_test.go#L212">emitter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//emitter_test.go#L252">emitter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L107">output_http.go</a></td>
+              <td>Synchronous chan</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L112">output_http.go</a></td>
+              <td>Unknown chan length</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L114">output_http.go</a></td>
+              <td>Unknown chan length</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L117">output_http.go</a></td>
+              <td>Synchronous chan</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L126">output_http.go</a></td>
+              <td>Go in for</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L126">output_http.go</a></td>
+              <td>Goroutine</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L128">output_http.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L141">output_http.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>141</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L142">output_http.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L145">output_http.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L151">output_http.go</a></td>
+              <td>Send</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L161">output_http.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>161</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L162">output_http.go</a></td>
+              <td>Receive</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L164">output_http.go</a></td>
+              <td>Receive</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L176">output_http.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>176</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L177">output_http.go</a></td>
+              <td>Receive</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L179">output_http.go</a></td>
+              <td>Send</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L188">output_http.go</a></td>
+              <td>Goroutine</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L202">output_http.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>202</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L203">output_http.go</a></td>
+              <td>Receive</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L205">output_http.go</a></td>
+              <td>Receive</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http.go#L233">output_http.go</a></td>
+              <td>Send</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http_test.go#L55">output_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http_test.go#L97">output_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http_test.go#L125">output_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http_test.go#L157">output_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http_test.go#L200">output_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_http_test.go#L229">output_http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L16">input_dummy.go</a></td>
+              <td>Synchronous chan</td>
+              <td>16</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L17">input_dummy.go</a></td>
+              <td>Synchronous chan</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L19">input_dummy.go</a></td>
+              <td>Goroutine</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L27">input_dummy.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>27</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L28">input_dummy.go</a></td>
+              <td>Receive</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L30">input_dummy.go</a></td>
+              <td>Receive</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L40">input_dummy.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>40</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L41">input_dummy.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L44">input_dummy.go</a></td>
+              <td>Send</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_dummy.go#L47">input_dummy.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L32">middleware.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>32</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L33">middleware.go</a></td>
+              <td>Synchronous chan</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L45">middleware.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L47">middleware.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L70">middleware.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L125">middleware.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>125</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L126">middleware.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L128">middleware.go</a></td>
+              <td>Send</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L136">middleware.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>136</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L137">middleware.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware.go#L139">middleware.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http.go#L22">input_http.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>22</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http.go#L23">input_http.go</a></td>
+              <td>Synchronous chan</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http.go#L33">input_http.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>33</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http.go#L34">input_http.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http.go#L36">input_http.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http.go#L55">input_http.go</a></td>
+              <td>Send</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_http.go#L71">input_http.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L46">input_kafka.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>46</td>
+              <td>256</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L47">input_kafka.go</a></td>
+              <td>Synchronous chan</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L56">input_kafka.go</a></td>
+              <td>Go in for</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L64">input_kafka.go</a></td>
+              <td>Go in for</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L56">input_kafka.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L60">input_kafka.go</a></td>
+              <td>Send</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L64">input_kafka.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L83">input_kafka.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>83</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L84">input_kafka.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_kafka.go#L86">input_kafka.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp.go#L50">output_tcp.go</a></td>
+              <td>Go in for</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp.go#L50">output_tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp.go#L82">output_tcp.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp.go#L91">output_tcp.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp.go#L92">output_tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_tcp.go#L116">output_tcp.go</a></td>
+              <td>Send</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L68">input_file.go</a></td>
+              <td>chan used as a param</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L181">input_file.go</a></td>
+              <td>Synchronous chan</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L182">input_file.go</a></td>
+              <td>Goroutine</td>
+              <td>182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L183">input_file.go</a></td>
+              <td>Receive</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L207">input_file.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>207</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L208">input_file.go</a></td>
+              <td>Synchronous chan</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L221">input_file.go</a></td>
+              <td>Goroutine</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L276">input_file.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>276</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L277">input_file.go</a></td>
+              <td>Receive</td>
+              <td>277</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L279">input_file.go</a></td>
+              <td>Receive</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L321">input_file.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>321</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L322">input_file.go</a></td>
+              <td>Receive</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L384">input_file.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>384</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L385">input_file.go</a></td>
+              <td>Receive</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_file.go#L389">input_file.go</a></td>
+              <td>Send</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//limiter_test.go#L26">limiter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//limiter_test.go#L52">limiter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//limiter_test.go#L78">limiter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//limiter_test.go#L104">limiter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L32">input_tcp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>32</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L35">input_tcp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L44">input_tcp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>44</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L45">input_tcp.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L47">input_tcp.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L80">input_tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L84">input_tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_tcp.go#L123">input_tcp.go</a></td>
+              <td>Send</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L23">test_input.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>23</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L24">test_input.go</a></td>
+              <td>Synchronous chan</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L31">test_input.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>31</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L32">test_input.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L41">test_input.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L54">test_input.go</a></td>
+              <td>Send</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L59">test_input.go</a></td>
+              <td>Send</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L64">test_input.go</a></td>
+              <td>Send</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L69">test_input.go</a></td>
+              <td>Send</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L80">test_input.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L90">test_input.go</a></td>
+              <td>Send</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//test_input.go#L95">test_input.go</a></td>
+              <td>Send</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L21">middleware_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>21</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L22">middleware_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L27">middleware_test.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L28">middleware_test.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L51">middleware_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L63">middleware_test.go</a></td>
+              <td>Send</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L73">middleware_test.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L81">middleware_test.go</a></td>
+              <td>Goroutine</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L85">middleware_test.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//middleware_test.go#L87">middleware_test.go</a></td>
+              <td>Receive</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L39">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L75">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L110">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L141">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L175">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L204">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L269">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L302">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L313">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>313</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw_test.go#L341">input_raw_test.go</a></td>
+              <td>Goroutine</td>
+              <td>341</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L50">input_raw.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L83">input_raw.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>83</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L84">input_raw.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L86">input_raw.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L109">input_raw.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L130">input_raw.go</a></td>
+              <td>Receive</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L132">input_raw.go</a></td>
+              <td>Goroutine</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//input_raw.go#L133">input_raw.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L44">output_binary.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>44</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L45">output_binary.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>45</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L46">output_binary.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>46</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L47">output_binary.go</a></td>
+              <td>Synchronous chan</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L51">output_binary.go</a></td>
+              <td>Send</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L53">output_binary.go</a></td>
+              <td>Send</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L56">output_binary.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L63">output_binary.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L65">output_binary.go</a></td>
+              <td>Go in for</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L65">output_binary.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L87">output_binary.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>87</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L88">output_binary.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L91">output_binary.go</a></td>
+              <td>Receive</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L118">output_binary.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L124">output_binary.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L135">output_binary.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>135</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L136">output_binary.go</a></td>
+              <td>Receive</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L138">output_binary.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//output_binary.go#L162">output_binary.go</a></td>
+              <td>Send</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L144">capture/capture.go</a></td>
+              <td>Synchronous chan</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L145">capture/capture.go</a></td>
+              <td>Synchronous chan</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L146">capture/capture.go</a></td>
+              <td>Synchronous chan</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L150">capture/capture.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>150</td>
+              <td>10000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L187">capture/capture.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>187</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L188">capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L190">capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L192">capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L199">capture/capture.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>199</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L200">capture/capture.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L201">capture/capture.go</a></td>
+              <td>Close chan</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L203">capture/capture.go</a></td>
+              <td>Send</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L368">capture/capture.go</a></td>
+              <td>Go in for</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L368">capture/capture.go</a></td>
+              <td>Goroutine</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L395">capture/capture.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>395</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L396">capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//capture/capture.go#L398">capture/capture.go</a></td>
+              <td>Receive</td>
+              <td>398</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//simpletime/time.go#L10">simpletime/time.go</a></td>
+              <td>Goroutine</td>
+              <td>10</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L228">tcp/tcp_message.go</a></td>
+              <td>chan used as a param</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L238">tcp/tcp_message.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>238</td>
+              <td>10000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L241">tcp/tcp_message.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>241</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L245">tcp/tcp_message.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>245</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L256">tcp/tcp_message.go</a></td>
+              <td>Go in for</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L256">tcp/tcp_message.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>256</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L256">tcp/tcp_message.go</a></td>
+              <td>Goroutine</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L267">tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L275">tcp/tcp_message.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>275</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L276">tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L278">tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L280">tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L283">tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>283</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L420">tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L429">tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L462">tcp/tcp_message.go</a></td>
+              <td>Send</td>
+              <td>462</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/buger/goreplay/blob//tcp/tcp_message.go#L463">tcp/tcp_message.go</a></td>
+              <td>Receive</td>
+              <td>463</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 34 ,  57 ,
+     42 ,
+     74 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

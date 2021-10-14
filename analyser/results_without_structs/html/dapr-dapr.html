@@ -1,0 +1,3533 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : dapr/dapr ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/dapr/dapr/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> pkg/components ( 1 features, 1/7 featured file ) </li>
+          
+          <li> pkg/sentry/ca ( 8 features, 2/4 featured file ) </li>
+          
+          <li> pkg/runtime ( 50 features, 2/9 featured file ) </li>
+          
+          <li> pkg/signals ( 4 features, 1/1 featured file ) </li>
+          
+          <li> pkg/operator ( 7 features, 1/2 featured file ) </li>
+          
+          <li> pkg/grpc ( 13 features, 3/18 featured file ) </li>
+          
+          <li> pkg/fswatcher ( 6 features, 1/1 featured file ) </li>
+          
+          <li> pkg/actors/internal ( 18 features, 2/2 featured file ) </li>
+          
+          <li> pkg/concurrency ( 6 features, 1/1 featured file ) </li>
+          
+          <li> pkg/sentry ( 5 features, 1/1 featured file ) </li>
+          
+          <li> pkg/placement ( 69 features, 4/4 featured file ) </li>
+          
+          <li> pkg/operator/api ( 3 features, 1/1 featured file ) </li>
+          
+          <li> pkg/injector ( 6 features, 1/7 featured file ) </li>
+          
+          <li> tests/platforms/kubernetes ( 4 features, 2/9 featured file ) </li>
+          
+          <li> pkg/actors ( 128 features, 5/22 featured file ) </li>
+          
+          <li> pkg/health ( 17 features, 3/3 featured file ) </li>
+          
+          <li> pkg/metrics ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/http ( 11 features, 3/10 featured file ) </li>
+          
+          <li> pkg/testing ( 3 features, 1/10 featured file ) </li>
+          
+          <li> pkg/client/informers/externalversions ( 3 features, 1/2 featured file ) </li>
+          
+          <li> pkg/grpc/proxy ( 15 features, 2/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 21/77</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>48 </td>
+      <td>126 </td>
+      <td>43</td>
+      <td>82</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>1</td>
+      <td>5</td>
+      <td>37.5</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>11 </td>
+      <td>0 </td>
+      <td>3 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>17</td>
+      <td>23</td>
+      <td>3</td>
+      <td>53.48837209302325%</td>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>35 </td>
+      <td>2</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/components/kubernetes_loader_test.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/components/kubernetes_loader_test.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>156</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority.go#L159">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority.go</a></td>
+              <td>Receive</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go#L264">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go</a></td>
+              <td>Goroutine</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go#L271">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>271</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go#L273">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go</a></td>
+              <td>Goroutine</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go</a></td>
+              <td>Send</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go#L279">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/ca/certificate_authority_test.go</a></td>
+              <td>Receive</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L298">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>298</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L299">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>299</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L306">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L309">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>309</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L316">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>316</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L346">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L350">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>350</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L351">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L379">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>379</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L390">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>390</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L404">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>404</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L411">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>411</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L414">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Goroutine</td>
+              <td>414</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L416">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Goroutine</td>
+              <td>416</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L458">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>458</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L459">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>459</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L460">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>460</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L487">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>487</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L488">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>488</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L489">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>489</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L499">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>499</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L500">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>500</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L501">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Receive</td>
+              <td>501</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L1762">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1762</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L1763">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>1763</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L1782">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>1782</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L1825">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1825</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L1826">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>1826</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L1847">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>1847</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L1868">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Send</td>
+              <td>1868</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go#L2535">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2535</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L320">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Goroutine</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L629">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Goroutine</td>
+              <td>629</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L704">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Send</td>
+              <td>704</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L709">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Go in for</td>
+              <td>709</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L709">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Goroutine</td>
+              <td>709</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L757">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Goroutine</td>
+              <td>757</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1601">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Send</td>
+              <td>1601</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1657">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Send</td>
+              <td>1657</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1675">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1675</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1682">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Goroutine</td>
+              <td>1682</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1683">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Send</td>
+              <td>1683</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1686">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1686</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1687">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Receive</td>
+              <td>1687</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1691">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Receive</td>
+              <td>1691</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1821">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Receive</td>
+              <td>1821</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L1962">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Send</td>
+              <td>1962</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L2078">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Go in for</td>
+              <td>2078</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go#L2078">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/runtime/runtime.go</a></td>
+              <td>Goroutine</td>
+              <td>2078</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go</a></td>
+              <td>Receive</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/signals/signals.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go</a></td>
+              <td>Receive</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go#L153">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go</a></td>
+              <td>Goroutine</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go#L161">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go</a></td>
+              <td>Receive</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go#L172">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/operator.go</a></td>
+              <td>Goroutine</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go#L403">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go</a></td>
+              <td>Unknown chan length</td>
+              <td>403</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go#L418">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go</a></td>
+              <td>Send</td>
+              <td>418</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go#L426">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go</a></td>
+              <td>Receive</td>
+              <td>426</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go#L1116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go</a></td>
+              <td>Goroutine</td>
+              <td>1116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go#L1117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api.go</a></td>
+              <td>Receive</td>
+              <td>1117</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/server.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/server.go</a></td>
+              <td>Go in for</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/server.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/server.go</a></td>
+              <td>Goroutine</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/server.go#L244">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/server.go</a></td>
+              <td>Goroutine</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go#L152">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go#L169">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go#L193">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go#L1301">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/api_test.go</a></td>
+              <td>Receive</td>
+              <td>1301</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go#L12">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>25</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go</a></td>
+              <td>Receive</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go</a></td>
+              <td>Send</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/fswatcher/fswatcher.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L270">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Go in for</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L270">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>270</td>
+              <td>10000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L274">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Go in for</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L274">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>274</td>
+              <td>10000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L268">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L269">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>269</td>
+              <td>&amp;{75394699 INT 2} val is : 2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L270">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Goroutine</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L272">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>272</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L274">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Goroutine</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L279">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go#L294">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement_test.go</a></td>
+              <td>Goroutine</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go#L167">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go</a></td>
+              <td>Goroutine</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go#L216">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go</a></td>
+              <td>Goroutine</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go#L380">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go</a></td>
+              <td>Goroutine</td>
+              <td>380</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go#L399">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go</a></td>
+              <td>Synchronous chan</td>
+              <td>399</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go#L446">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/internal/placement.go</a></td>
+              <td>Receive</td>
+              <td>446</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go</a></td>
+              <td>Unknown chan length</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go</a></td>
+              <td>Send</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go</a></td>
+              <td>Send</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/concurrency/limiter.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go</a></td>
+              <td>chan used as a param</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go</a></td>
+              <td>Send</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/sentry/sentry.go</a></td>
+              <td>Goroutine</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>144</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L152">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>162</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L167">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L190">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>190</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L191">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L198">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L208">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>208</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L236">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>236</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L237">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go#L240">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement_test.go</a></td>
+              <td>Receive</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go#L160">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>160</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go#L161">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go</a></td>
+              <td>Receive</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go</a></td>
+              <td>Send</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go#L246">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/placement.go</a></td>
+              <td>Send</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Send</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Close chan</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L78">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Send</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>171</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Go in for</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>180</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Goroutine</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Send</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L233">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>233</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L234">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Receive</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go#L239">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership_test.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Waitgroup</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>37</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Synchronous chan</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>46</td>
+              <td>&amp;{71483485 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Close chan</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>chan used as a param</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>76</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Unknown chan length</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>chan used as a param</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Goroutine</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>136</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Send</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L161">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>161</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Send</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L204">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>chan used as a param</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>207</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L210">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>210</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L214">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L217">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Send</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Goroutine</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go#L248">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/placement/membership.go</a></td>
+              <td>Receive</td>
+              <td>248</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/api/api.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/api/api.go</a></td>
+              <td>Send</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/api/api.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/api/api.go</a></td>
+              <td>Go in for</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/api/api.go#L235">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/operator/api/api.go</a></td>
+              <td>Goroutine</td>
+              <td>235</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go</a></td>
+              <td>Synchronous chan</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go#L146">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go</a></td>
+              <td>Goroutine</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>147</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go</a></td>
+              <td>Receive</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go#L165">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/injector/injector.go</a></td>
+              <td>Close chan</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/appmanager.go#L719">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/appmanager.go</a></td>
+              <td>Go in for</td>
+              <td>719</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/appmanager.go#L719">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/appmanager.go</a></td>
+              <td>Goroutine</td>
+              <td>719</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/portforward.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/portforward.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/portforward.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/tests/platforms/kubernetes/portforward.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Send</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L592">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>592</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L622">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>622</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L623">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>623</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L626">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>626</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L635">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>635</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L651">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Goroutine</td>
+              <td>651</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L652">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Goroutine</td>
+              <td>652</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L671">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>671</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L672">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>672</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L680">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>680</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L720">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>720</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L755">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>755</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L756">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>756</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L762">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>762</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L768">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>768</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L816">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>816</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L835">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>835</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L836">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>836</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L842">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>842</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L869">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>869</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L970">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>970</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L989">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>989</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L990">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>990</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L993">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>993</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1002">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1002</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1019">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1019</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1020">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1020</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1027">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1027</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1028">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1028</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1031">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1031</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1038">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1038</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1072">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1072</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1073">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1073</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1079">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1079</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1085">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1085</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1133</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1156</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1181">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1181</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1456">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Receive</td>
+              <td>1456</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go#L1605">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1605</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor.go</a></td>
+              <td>Synchronous chan</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L198">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L208">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L224">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L271">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L282">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>282</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L520">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Waitgroup</td>
+              <td>520</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L523">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>523</td>
+              <td>&amp;{75602895 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L524">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>524</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L525">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>525</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L550">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>550</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L551">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>551</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L553">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>553</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L587">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Synchronous chan</td>
+              <td>587</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L589">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Waitgroup</td>
+              <td>589</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L599">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>599</td>
+              <td>&amp;{75605297 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L600">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>600</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L601">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>601</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L616">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Synchronous chan</td>
+              <td>616</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L628">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>628</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L669">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>chan used as a param</td>
+              <td>669</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L713">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>713</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L726">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>726</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L729">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>729</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L734">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>734</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L735">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>735</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L737">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>737</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L741">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>741</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L773">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>773</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L950">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>950</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L951">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>951</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L953">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>953</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1006">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1006</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1092">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>1092</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1095">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Goroutine</td>
+              <td>1095</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1117</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1469">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>1469</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1470">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1470</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go#L1472">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actors.go</a></td>
+              <td>Receive</td>
+              <td>1472</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L95">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L97">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Goroutine</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L122">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Send</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_lock_test.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Send</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Send</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L97">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>97</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Goroutine</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L114">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>114</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Go in for</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>139</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/actors/actor_test.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go#L22">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go</a></td>
+              <td>Receive</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go#L111">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go</a></td>
+              <td>Receive</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health_test.go</a></td>
+              <td>Receive</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>43</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go</a></td>
+              <td>Send</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/health.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go</a></td>
+              <td>Synchronous chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>59</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/health/server.go</a></td>
+              <td>Close chan</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/metrics/exporter.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/metrics/exporter.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api.go#L1301">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api.go</a></td>
+              <td>Goroutine</td>
+              <td>1301</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go</a></td>
+              <td>Go in for</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go</a></td>
+              <td>Goroutine</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go</a></td>
+              <td>Go in for</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/server.go</a></td>
+              <td>Goroutine</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go#L240">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go</a></td>
+              <td>Receive</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go#L2052">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2052</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go#L2070">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2070</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go#L2088">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2088</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go#L2106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/http/api_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2106</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/testing/app_mock.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/testing/app_mock.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/testing/app_mock.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/testing/app_mock.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>66</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/testing/app_mock.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/testing/app_mock.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/client/informers/externalversions/factory.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/client/informers/externalversions/factory.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/client/informers/externalversions/factory.go#L118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/client/informers/externalversions/factory.go</a></td>
+              <td>Goroutine</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/client/informers/externalversions/factory.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/client/informers/externalversions/factory.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler_test.go#L243">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler_test.go</a></td>
+              <td>Goroutine</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler_test.go#L247">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler_test.go</a></td>
+              <td>Goroutine</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>86</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L87">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Receive</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>116</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Goroutine</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Send</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Send</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Send</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Send</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>148</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L149">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Goroutine</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L153">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Send</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/dapr/dapr/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr&#43;&#43;dapr/pkg/grpc/proxy/handler.go</a></td>
+              <td>Send</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 48 ,  126 ,
+     43 ,
+     82 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

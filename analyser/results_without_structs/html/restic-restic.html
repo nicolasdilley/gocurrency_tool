@@ -1,0 +1,3863 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : restic/restic ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/restic/restic/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cmd/restic/main ( 51 features, 10/56 featured file ) </li>
+          
+          <li> helpers/build-release-binaries/main ( 4 features, 1/1 featured file ) </li>
+          
+          <li> internal/archiver/archiver ( 51 features, 5/18 featured file ) </li>
+          
+          <li> internal/backend/backend ( 2 features, 1/21 featured file ) </li>
+          
+          <li> internal/backend/local/local_test ( 2 features, 1/8 featured file ) </li>
+          
+          <li> internal/backend/rclone/rclone_test ( 11 features, 1/6 featured file ) </li>
+          
+          <li> internal/backend/sftp/sftp_test ( 10 features, 1/7 featured file ) </li>
+          
+          <li> internal/cache/cache ( 7 features, 2/8 featured file ) </li>
+          
+          <li> internal/checker/checker_test ( 54 features, 3/3 featured file ) </li>
+          
+          <li> internal/repository/repository ( 54 features, 6/19 featured file ) </li>
+          
+          <li> internal/restic/restic_test ( 34 features, 3/60 featured file ) </li>
+          
+          <li> internal/restorer/restorer ( 6 features, 1/12 featured file ) </li>
+          
+          <li> internal/ui/ui ( 36 features, 1/4 featured file ) </li>
+          
+          <li> internal/ui/json/json ( 38 features, 1/1 featured file ) </li>
+          
+          <li> internal/ui/progress/progress_test ( 12 features, 2/2 featured file ) </li>
+          
+          <li> internal/ui/signals/signals ( 1 features, 1/4 featured file ) </li>
+          
+          <li> internal/ui/termstatus/termstatus ( 17 features, 1/9 featured file ) </li>
+          
+    <li> Num of Packages with features : 17/45</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>60 </td>
+      <td>113 </td>
+      <td>52</td>
+      <td>28</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>8 </td>
+      <td>8</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>20 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>43</td>
+      <td>8</td>
+      <td>1</td>
+      <td>15.384615384615385%</td>
+      <td>29 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>66 </td>
+      <td>4</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/lock.go#L44">cmd/restic/lock.go</a></td>
+              <td>Synchronous chan</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/lock.go#L47">cmd/restic/lock.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/lock.go#L58">cmd/restic/lock.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/lock.go#L70">cmd/restic/lock.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>70</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/lock.go#L71">cmd/restic/lock.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/lock.go#L74">cmd/restic/lock.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_helpers_test.go#L26">cmd/restic/integration_helpers_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>26</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_helpers_test.go#L28">cmd/restic/integration_helpers_test.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_helpers_test.go#L41">cmd/restic/integration_helpers_test.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_helpers_test.go#L54">cmd/restic/integration_helpers_test.go</a></td>
+              <td>Close chan</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_helpers_test.go#L58">cmd/restic/integration_helpers_test.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_helpers_test.go#L91">cmd/restic/integration_helpers_test.go</a></td>
+              <td>Receive</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_helpers_test.go#L98">cmd/restic/integration_helpers_test.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L12">cmd/restic/find.go</a></td>
+              <td>Synchronous chan</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L13">cmd/restic/find.go</a></td>
+              <td>Goroutine</td>
+              <td>13</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L14">cmd/restic/find.go</a></td>
+              <td>Close chan</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L52">cmd/restic/find.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>52</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L53">cmd/restic/find.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L55">cmd/restic/find.go</a></td>
+              <td>Send</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L68">cmd/restic/find.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>68</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L69">cmd/restic/find.go</a></td>
+              <td>Receive</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/find.go#L71">cmd/restic/find.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_mount.go#L173">cmd/restic/cmd_mount.go</a></td>
+              <td>Receive</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/delete.go#L27">cmd/restic/delete.go</a></td>
+              <td>Synchronous chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/delete.go#L30">cmd/restic/delete.go</a></td>
+              <td>Close chan</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/delete.go#L32">cmd/restic/delete.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>32</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/delete.go#L33">cmd/restic/delete.go</a></td>
+              <td>Send</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/delete.go#L34">cmd/restic/delete.go</a></td>
+              <td>Receive</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/delete.go#L45">cmd/restic/delete.go</a></td>
+              <td>Range over chan</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/integration_fuse_test.go#L88">cmd/restic/integration_fuse_test.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L202">cmd/restic/cmd_debug.go</a></td>
+              <td>Synchronous chan</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L204">cmd/restic/cmd_debug.go</a></td>
+              <td>Synchronous chan</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L226">cmd/restic/cmd_debug.go</a></td>
+              <td>Close chan</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L237">cmd/restic/cmd_debug.go</a></td>
+              <td>Range over chan</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L258">cmd/restic/cmd_debug.go</a></td>
+              <td>Close chan</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L263">cmd/restic/cmd_debug.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>263</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L264">cmd/restic/cmd_debug.go</a></td>
+              <td>Send</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_debug.go#L265">cmd/restic/cmd_debug.go</a></td>
+              <td>Receive</td>
+              <td>265</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cleanup.go#L20">cmd/restic/cleanup.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>20</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cleanup.go#L21">cmd/restic/cleanup.go</a></td>
+              <td>Goroutine</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cleanup.go#L58">cmd/restic/cleanup.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/global_debug.go#L45">cmd/restic/global_debug.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L223">cmd/restic/cmd_check.go</a></td>
+              <td>Synchronous chan</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L226">cmd/restic/cmd_check.go</a></td>
+              <td>Goroutine</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L228">cmd/restic/cmd_check.go</a></td>
+              <td>Range over chan</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L243">cmd/restic/cmd_check.go</a></td>
+              <td>Synchronous chan</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L244">cmd/restic/cmd_check.go</a></td>
+              <td>Goroutine</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L250">cmd/restic/cmd_check.go</a></td>
+              <td>Range over chan</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L273">cmd/restic/cmd_check.go</a></td>
+              <td>Synchronous chan</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L275">cmd/restic/cmd_check.go</a></td>
+              <td>Goroutine</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//cmd/restic/cmd_check.go#L277">cmd/restic/cmd_check.go</a></td>
+              <td>Range over chan</td>
+              <td>277</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//helpers/build-release-binaries/main.go#L196">helpers/build-release-binaries/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//helpers/build-release-binaries/main.go#L200">helpers/build-release-binaries/main.go</a></td>
+              <td>Range over chan</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//helpers/build-release-binaries/main.go#L213">helpers/build-release-binaries/main.go</a></td>
+              <td>Send</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//helpers/build-release-binaries/main.go#L216">helpers/build-release-binaries/main.go</a></td>
+              <td>Close chan</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L20">internal/archiver/tree_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>20</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L21">internal/archiver/tree_saver.go</a></td>
+              <td>Receive</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L23">internal/archiver/tree_saver.go</a></td>
+              <td>Receive</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L51">internal/archiver/tree_saver.go</a></td>
+              <td>Synchronous chan</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L70">internal/archiver/tree_saver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>70</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L78">internal/archiver/tree_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>78</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L79">internal/archiver/tree_saver.go</a></td>
+              <td>Send</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L80">internal/archiver/tree_saver.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L82">internal/archiver/tree_saver.go</a></td>
+              <td>Close chan</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L145">internal/archiver/tree_saver.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L148">internal/archiver/tree_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>148</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L149">internal/archiver/tree_saver.go</a></td>
+              <td>Receive</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L151">internal/archiver/tree_saver.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/tree_saver.go#L164">internal/archiver/tree_saver.go</a></td>
+              <td>Send</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/buffer.go#L36">internal/archiver/buffer.go</a></td>
+              <td>Unknown chan length</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/buffer.go#L39">internal/archiver/buffer.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/buffer.go#L40">internal/archiver/buffer.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/buffer.go#L50">internal/archiver/buffer.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>50</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/buffer.go#L51">internal/archiver/buffer.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/buffer.go#L72">internal/archiver/buffer.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>72</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/buffer.go#L73">internal/archiver/buffer.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver_test.go#L37">internal/archiver/file_saver_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver_test.go#L38">internal/archiver/file_saver_test.go</a></td>
+              <td>Close chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L26">internal/archiver/blob_saver.go</a></td>
+              <td>Synchronous chan</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L44">internal/archiver/blob_saver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>44</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L45">internal/archiver/blob_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>45</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L46">internal/archiver/blob_saver.go</a></td>
+              <td>Send</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L47">internal/archiver/blob_saver.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L49">internal/archiver/blob_saver.go</a></td>
+              <td>Close chan</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L65">internal/archiver/blob_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>65</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L66">internal/archiver/blob_saver.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L68">internal/archiver/blob_saver.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L114">internal/archiver/blob_saver.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L117">internal/archiver/blob_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>117</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L118">internal/archiver/blob_saver.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L120">internal/archiver/blob_saver.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/blob_saver.go#L129">internal/archiver/blob_saver.go</a></td>
+              <td>Send</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L26">internal/archiver/file_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>26</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L27">internal/archiver/file_saver.go</a></td>
+              <td>Receive</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L31">internal/archiver/file_saver.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L71">internal/archiver/file_saver.go</a></td>
+              <td>Synchronous chan</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L102">internal/archiver/file_saver.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>102</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L112">internal/archiver/file_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>112</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L113">internal/archiver/file_saver.go</a></td>
+              <td>Send</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L114">internal/archiver/file_saver.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L117">internal/archiver/file_saver.go</a></td>
+              <td>Close chan</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L223">internal/archiver/file_saver.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L229">internal/archiver/file_saver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>229</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L230">internal/archiver/file_saver.go</a></td>
+              <td>Receive</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L232">internal/archiver/file_saver.go</a></td>
+              <td>Receive</td>
+              <td>232</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/archiver/file_saver.go#L239">internal/archiver/file_saver.go</a></td>
+              <td>Send</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/semaphore.go#L27">internal/backend/semaphore.go</a></td>
+              <td>Send</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/semaphore.go#L32">internal/backend/semaphore.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/local/local.go#L342">internal/backend/local/local.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>342</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/local/local.go#L343">internal/backend/local/local.go</a></td>
+              <td>Receive</td>
+              <td>343</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L51">internal/backend/rclone/backend.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L185">internal/backend/rclone/backend.go</a></td>
+              <td>Synchronous chan</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L195">internal/backend/rclone/backend.go</a></td>
+              <td>Goroutine</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L203">internal/backend/rclone/backend.go</a></td>
+              <td>Close chan</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L210">internal/backend/rclone/backend.go</a></td>
+              <td>Goroutine</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L213">internal/backend/rclone/backend.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>213</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L214">internal/backend/rclone/backend.go</a></td>
+              <td>Receive</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L216">internal/backend/rclone/backend.go</a></td>
+              <td>Receive</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L318">internal/backend/rclone/backend.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>318</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L319">internal/backend/rclone/backend.go</a></td>
+              <td>Receive</td>
+              <td>319</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/rclone/backend.go#L321">internal/backend/rclone/backend.go</a></td>
+              <td>Receive</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L52">internal/backend/sftp/sftp.go</a></td>
+              <td>Goroutine</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L75">internal/backend/sftp/sftp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>75</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L76">internal/backend/sftp/sftp.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L80">internal/backend/sftp/sftp.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L101">internal/backend/sftp/sftp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L102">internal/backend/sftp/sftp.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L502">internal/backend/sftp/sftp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>502</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L503">internal/backend/sftp/sftp.go</a></td>
+              <td>Receive</td>
+              <td>503</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L505">internal/backend/sftp/sftp.go</a></td>
+              <td>Receive</td>
+              <td>505</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/backend/sftp/sftp.go#L513">internal/backend/sftp/sftp.go</a></td>
+              <td>Receive</td>
+              <td>513</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/cache/backend_test.go#L170">internal/cache/backend_test.go</a></td>
+              <td>Go in for</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/cache/backend_test.go#L170">internal/cache/backend_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>170</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/cache/backend_test.go#L170">internal/cache/backend_test.go</a></td>
+              <td>Goroutine</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/cache/backend.go#L87">internal/cache/backend.go</a></td>
+              <td>Synchronous chan</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/cache/backend.go#L98">internal/cache/backend.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/cache/backend.go#L118">internal/cache/backend.go</a></td>
+              <td>Close chan</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/cache/backend.go#L153">internal/cache/backend.go</a></td>
+              <td>Receive</td>
+              <td>153</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L24">internal/checker/testing.go</a></td>
+              <td>Synchronous chan</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L25">internal/checker/testing.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L27">internal/checker/testing.go</a></td>
+              <td>Range over chan</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L32">internal/checker/testing.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L33">internal/checker/testing.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L35">internal/checker/testing.go</a></td>
+              <td>Range over chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L46">internal/checker/testing.go</a></td>
+              <td>Synchronous chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L47">internal/checker/testing.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/testing.go#L49">internal/checker/testing.go</a></td>
+              <td>Range over chan</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L167">internal/checker/checker.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L181">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L191">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>191</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L192">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L194">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L201">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>201</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L202">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L204">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L211">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>211</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L212">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L214">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L252">internal/checker/checker.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L252">internal/checker/checker.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L267">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>267</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L268">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L270">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>270</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L297">internal/checker/checker.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>297</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L303">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>303</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L304">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>304</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L306">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L538">internal/checker/checker.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>538</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L543">internal/checker/checker.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>543</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L551">internal/checker/checker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>551</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L560">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>560</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L561">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>561</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L563">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>563</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L574">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>574</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L575">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>575</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L577">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>577</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L585">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>585</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L586">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L587">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>587</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L590">internal/checker/checker.go</a></td>
+              <td>Close chan</td>
+              <td>590</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L594">internal/checker/checker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>594</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L595">internal/checker/checker.go</a></td>
+              <td>Receive</td>
+              <td>595</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker.go#L597">internal/checker/checker.go</a></td>
+              <td>Send</td>
+              <td>597</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L31">internal/checker/checker_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L33">internal/checker/checker_test.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L35">internal/checker/checker_test.go</a></td>
+              <td>Range over chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L199">internal/checker/checker_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L200">internal/checker/checker_test.go</a></td>
+              <td>Close chan</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L439">internal/checker/checker_test.go</a></td>
+              <td>Receive</td>
+              <td>439</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L522">internal/checker/checker_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>522</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L527">internal/checker/checker_test.go</a></td>
+              <td>Goroutine</td>
+              <td>527</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/checker/checker_test.go#L528">internal/checker/checker_test.go</a></td>
+              <td>Receive</td>
+              <td>528</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index_test.go#L384">internal/repository/master_index_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index_test.go#L385">internal/repository/master_index_test.go</a></td>
+              <td>Goroutine</td>
+              <td>385</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index_test.go#L387">internal/repository/master_index_test.go</a></td>
+              <td>Range over chan</td>
+              <td>387</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L32">internal/repository/repack.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L34">internal/repository/repack.go</a></td>
+              <td>Close chan</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L36">internal/repository/repack.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>36</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L37">internal/repository/repack.go</a></td>
+              <td>Send</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L38">internal/repository/repack.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L50">internal/repository/repack.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L56">internal/repository/repack.go</a></td>
+              <td>Range over chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L71">internal/repository/repack.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>71</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L72">internal/repository/repack.go</a></td>
+              <td>Send</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L73">internal/repository/repack.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L86">internal/repository/repack.go</a></td>
+              <td>Close chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repack.go#L92">internal/repository/repack.go</a></td>
+              <td>Range over chan</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index_parallel.go#L33">internal/repository/index_parallel.go</a></td>
+              <td>Synchronous chan</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index_parallel.go#L36">internal/repository/index_parallel.go</a></td>
+              <td>Close chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index_parallel.go#L38">internal/repository/index_parallel.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>38</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index_parallel.go#L39">internal/repository/index_parallel.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index_parallel.go#L41">internal/repository/index_parallel.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index_parallel.go#L50">internal/repository/index_parallel.go</a></td>
+              <td>Range over chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L255">internal/repository/index.go</a></td>
+              <td>Synchronous chan</td>
+              <td>255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L257">internal/repository/index.go</a></td>
+              <td>Goroutine</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L260">internal/repository/index.go</a></td>
+              <td>Close chan</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L266">internal/repository/index.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>266</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L267">internal/repository/index.go</a></td>
+              <td>Receive</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L269">internal/repository/index.go</a></td>
+              <td>Send</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L294">internal/repository/index.go</a></td>
+              <td>Synchronous chan</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L296">internal/repository/index.go</a></td>
+              <td>Goroutine</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L299">internal/repository/index.go</a></td>
+              <td>Close chan</td>
+              <td>299</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L319">internal/repository/index.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>319</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L320">internal/repository/index.go</a></td>
+              <td>Receive</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/index.go#L322">internal/repository/index.go</a></td>
+              <td>Send</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L246">internal/repository/master_index.go</a></td>
+              <td>Synchronous chan</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L248">internal/repository/master_index.go</a></td>
+              <td>Goroutine</td>
+              <td>248</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L251">internal/repository/master_index.go</a></td>
+              <td>Close chan</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L257">internal/repository/master_index.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>257</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L258">internal/repository/master_index.go</a></td>
+              <td>Receive</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L260">internal/repository/master_index.go</a></td>
+              <td>Send</td>
+              <td>260</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L319">internal/repository/master_index.go</a></td>
+              <td>Synchronous chan</td>
+              <td>319</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L322">internal/repository/master_index.go</a></td>
+              <td>Close chan</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L348">internal/repository/master_index.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>348</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L349">internal/repository/master_index.go</a></td>
+              <td>Send</td>
+              <td>349</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L350">internal/repository/master_index.go</a></td>
+              <td>Receive</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L364">internal/repository/master_index.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>364</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L365">internal/repository/master_index.go</a></td>
+              <td>Send</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L366">internal/repository/master_index.go</a></td>
+              <td>Receive</td>
+              <td>366</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/master_index.go#L373">internal/repository/master_index.go</a></td>
+              <td>Range over chan</td>
+              <td>373</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repository.go#L496">internal/repository/repository.go</a></td>
+              <td>Synchronous chan</td>
+              <td>496</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repository.go#L500">internal/repository/repository.go</a></td>
+              <td>Close chan</td>
+              <td>500</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repository.go#L502">internal/repository/repository.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>502</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repository.go#L503">internal/repository/repository.go</a></td>
+              <td>Receive</td>
+              <td>503</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repository.go#L505">internal/repository/repository.go</a></td>
+              <td>Send</td>
+              <td>505</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/repository/repository.go#L514">internal/repository/repository.go</a></td>
+              <td>Range over chan</td>
+              <td>514</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L34">internal/restic/tree_stream.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L34">internal/restic/tree_stream.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L41">internal/restic/tree_stream.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>41</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L42">internal/restic/tree_stream.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L44">internal/restic/tree_stream.go</a></td>
+              <td>Send</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L49">internal/restic/tree_stream.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L50">internal/restic/tree_stream.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L50">internal/restic/tree_stream.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L89">internal/restic/tree_stream.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>89</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L90">internal/restic/tree_stream.go</a></td>
+              <td>Receive</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L93">internal/restic/tree_stream.go</a></td>
+              <td>Send</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L97">internal/restic/tree_stream.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L141">internal/restic/tree_stream.go</a></td>
+              <td>Send</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L154">internal/restic/tree_stream.go</a></td>
+              <td>Synchronous chan</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L155">internal/restic/tree_stream.go</a></td>
+              <td>Synchronous chan</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L156">internal/restic/tree_stream.go</a></td>
+              <td>Synchronous chan</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L172">internal/restic/tree_stream.go</a></td>
+              <td>Close chan</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L177">internal/restic/tree_stream.go</a></td>
+              <td>Close chan</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/tree_stream.go#L178">internal/restic/tree_stream.go</a></td>
+              <td>Close chan</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L251">internal/restic/lock.go</a></td>
+              <td>Goroutine</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L252">internal/restic/lock.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>252</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L254">internal/restic/lock.go</a></td>
+              <td>Range over chan</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L309">internal/restic/lock.go</a></td>
+              <td>Synchronous chan</td>
+              <td>309</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L313">internal/restic/lock.go</a></td>
+              <td>Close chan</td>
+              <td>313</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L319">internal/restic/lock.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>319</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L320">internal/restic/lock.go</a></td>
+              <td>Receive</td>
+              <td>320</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L322">internal/restic/lock.go</a></td>
+              <td>Send</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/lock.go#L331">internal/restic/lock.go</a></td>
+              <td>Range over chan</td>
+              <td>331</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/snapshot.go#L86">internal/restic/snapshot.go</a></td>
+              <td>Synchronous chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/snapshot.go#L90">internal/restic/snapshot.go</a></td>
+              <td>Close chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/snapshot.go#L96">internal/restic/snapshot.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>96</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/snapshot.go#L97">internal/restic/snapshot.go</a></td>
+              <td>Receive</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/snapshot.go#L99">internal/restic/snapshot.go</a></td>
+              <td>Send</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restic/snapshot.go#L108">internal/restic/snapshot.go</a></td>
+              <td>Range over chan</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restorer/filerestorer.go#L146">internal/restorer/filerestorer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restorer/filerestorer.go#L149">internal/restorer/filerestorer.go</a></td>
+              <td>Range over chan</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restorer/filerestorer.go#L164">internal/restorer/filerestorer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>164</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restorer/filerestorer.go#L165">internal/restorer/filerestorer.go</a></td>
+              <td>Receive</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restorer/filerestorer.go#L167">internal/restorer/filerestorer.go</a></td>
+              <td>Send</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/restorer/filerestorer.go#L171">internal/restorer/filerestorer.go</a></td>
+              <td>Close chan</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L103">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>103</td>
+              <td>7</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L104">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L106">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L115">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L120">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L123">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L129">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L139">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L204">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>204</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L205">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L206">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>206</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L213">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>213</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L214">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L215">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L221">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>221</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L222">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L223">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L289">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>289</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L290">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L291">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L298">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>298</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L299">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>299</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L300">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L302">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>302</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L303">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>303</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L304">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>304</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L307">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>307</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L308">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L309">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>309</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L335">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>335</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L336">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L337">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L364">internal/ui/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>364</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L365">internal/ui/backup.go</a></td>
+              <td>Send</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L366">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>366</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/backup.go#L382">internal/ui/backup.go</a></td>
+              <td>Receive</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L115">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>115</td>
+              <td>7</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L116">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L118">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L120">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L129">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L134">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L137">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L143">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L210">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>210</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L211">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L212">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L219">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>219</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L220">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L221">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L227">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>227</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L228">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L229">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L242">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>242</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L243">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L244">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L253">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>253</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L254">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L255">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L257">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>257</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L258">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L259">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L262">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>262</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L263">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L264">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L314">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>314</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L315">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>315</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L316">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>316</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L365">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>365</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L366">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>366</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L367">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>367</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L387">internal/ui/json/backup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>387</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L388">internal/ui/json/backup.go</a></td>
+              <td>Send</td>
+              <td>388</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/json/backup.go#L389">internal/ui/json/backup.go</a></td>
+              <td>Receive</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L38">internal/ui/progress/counter.go</a></td>
+              <td>Synchronous chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L39">internal/ui/progress/counter.go</a></td>
+              <td>Synchronous chan</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L47">internal/ui/progress/counter.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L81">internal/ui/progress/counter.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L117">internal/ui/progress/counter.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>117</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L118">internal/ui/progress/counter.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L119">internal/ui/progress/counter.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter.go#L122">internal/ui/progress/counter.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter_test.go#L40">internal/ui/progress/counter_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter_test.go#L41">internal/ui/progress/counter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter_test.go#L42">internal/ui/progress/counter_test.go</a></td>
+              <td>Close chan</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/progress/counter_test.go#L50">internal/ui/progress/counter_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/signals/signals.go#L12">internal/ui/signals/signals.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>12</td>
+              <td>1</td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L61">internal/ui/termstatus/status.go</a></td>
+              <td>Synchronous chan</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L62">internal/ui/termstatus/status.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L63">internal/ui/termstatus/status.go</a></td>
+              <td>Synchronous chan</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L102">internal/ui/termstatus/status.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>102</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L103">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L110">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L142">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L185">internal/ui/termstatus/status.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>185</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L186">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L188">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L211">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L253">internal/ui/termstatus/status.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>253</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L254">internal/ui/termstatus/status.go</a></td>
+              <td>Send</td>
+              <td>254</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L255">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L340">internal/ui/termstatus/status.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>340</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L341">internal/ui/termstatus/status.go</a></td>
+              <td>Send</td>
+              <td>341</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/restic/restic/blob//internal/ui/termstatus/status.go#L342">internal/ui/termstatus/status.go</a></td>
+              <td>Receive</td>
+              <td>342</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 60 ,  113 ,
+     52 ,
+     28 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

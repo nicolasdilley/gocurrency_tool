@@ -13,6 +13,7 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 	var normal_relative_filename string = "./results/normal/relative.csv"
 	var normal_new_chan_filename string = "./results/normal/new_chan.csv"
 	var normal_absolute_filename string = "./results/normal/absolute.csv"
+	var normal_all_absolute_filename string = "./results/normal/all_absolute.csv"
 
 	var normal_absolute_wg_filename string = "./results/normal/absolute_wg.csv"
 	var normal_new_wg_filename string = "./results/normal/new_wg.csv"
@@ -21,8 +22,10 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 	var normal_new_mu_filename string = "./results/normal/new_mu.csv"
 	var normal_absolute_mu_filename string = "./results/normal/absolute_mu.csv"
 	var normal_relative_mu_filename string = "./results/normal/relative_mu.csv"
+	var normal_relative_all_filename string = "./results/normal/relative_all.csv"
 
 	var median_absolute_filename string = "./results/median/absolute.csv"
+	var median_all_absolute_filename string = "./results/median/all_absolute.csv"
 	var median_absolute_wg_filename string = "./results/median/absolute_wg.csv"
 	var median_absolute_mu_filename string = "./results/median/absolute_mu.csv"
 	var median_cloc_filename string = "./results/cloc/median.csv"
@@ -53,6 +56,9 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 	normal_absolute, _ := os.Create(normal_absolute_filename)
 	defer normal_absolute.Close()
 
+	normal_all_absolute, _ := os.Create(normal_all_absolute_filename)
+	defer normal_all_absolute.Close()
+
 	normal_absolute_wg, _ := os.Create(normal_absolute_wg_filename)
 	defer normal_absolute_wg.Close()
 
@@ -71,8 +77,14 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 	normal_absolute_mu, _ := os.Create(normal_absolute_mu_filename)
 	defer normal_absolute_mu.Close()
 
+	normal_relative_all, _ := os.Create(normal_relative_all_filename)
+	defer normal_relative_all.Close()
+
 	median_absolute, _ := os.Create(median_absolute_filename)
 	defer median_absolute.Close()
+
+	median_all_absolute, _ := os.Create(median_all_absolute_filename)
+	defer median_all_absolute.Close()
 
 	median_absolute_wg, _ := os.Create(median_absolute_wg_filename)
 	defer median_absolute_wg.Close()
@@ -118,10 +130,11 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 
 	median := calculateMedian(page)
 	percent_around_median := 0.3
+	num_median := 0 // the number of median projects
 
 	for proj, features := range page.Stats.Features_per_projects {
 
-		num_lines_in_featured_files := float64(page.Stats.Num_lines_in_featured_files[proj])
+		num_lines_in_featured_files := float64(page.Stats.Num_lines_in_featured_files.Get(proj).Concurrent_size)
 
 		num_chan := 0.0
 		num_select := 0.0
@@ -149,6 +162,8 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 			case MAKE_CHAN_COUNT:
 				num_chan++
 			case SELECT_COUNT:
+				num_select++
+			case DEFAULT_SELECT_COUNT:
 				num_select++
 			case SEND_COUNT:
 				num_send++
@@ -180,6 +195,31 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 
 		if num_featured_lines == 0 {
 			fmt.Println(proj, " has 0 featured lines")
+		}
+
+		if num_lines_in_featured_files > float64(median)*(1.0-percent_around_median) &&
+			num_lines_in_featured_files < float64(median)*(1.0+percent_around_median) {
+			num_median++
+
+			median_all_absolute.WriteString(fmt.Sprintf("%s,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f\n",
+				strings.TrimSuffix(proj, ".csv"),
+				num_chan,
+				num_send,
+				num_receive,
+				num_select,
+				num_close,
+				num_range_over_chan,
+
+				num_wg,
+				num_known_add+
+					num_unknown_add,
+				num_done,
+				num_wait,
+
+				num_mutex,
+				num_lock,
+				num_unlock,
+			))
 		}
 
 		if num_chan > 0 {
@@ -238,6 +278,8 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 					float64(features[0].f_num_featured_files)/float64(features[0].f_num_files)*100,
 				))
 			}
+		} else {
+			fmt.Println("proj ", proj, " does not contain channels")
 		}
 
 		if num_wg > 0 {
@@ -260,10 +302,9 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 				(num_wait/num_featured_lines)*1000,
 			))
 
-			normal_new_wg.WriteString(fmt.Sprintf("%s,%f,%f,%f,%f\n",
+			normal_new_wg.WriteString(fmt.Sprintf("%s,%f,%f,%f\n",
 				strings.TrimSuffix(proj, ".csv"),
-				num_known_add/num_wg,
-				num_unknown_add/num_wg,
+				(num_known_add+num_unknown_add)/num_wg,
 				num_done/num_wg,
 				num_wait/num_wg,
 			))
@@ -283,7 +324,7 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 			}
 		}
 
-		if num_lock > 0 || num_unlock > 0 {
+		if num_lock > 0 || num_unlock > 0 || num_mutex > 0 {
 
 			// all projects
 			normal_absolute_mu.WriteString(fmt.Sprintf("%s,%f,%f,%f\n",
@@ -320,6 +361,26 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 				))
 			}
 		}
+
+		normal_all_absolute.WriteString(fmt.Sprintf("%s,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f,%f\n",
+			strings.TrimSuffix(proj, ".csv"),
+			num_chan,
+			num_send,
+			num_receive,
+			num_select,
+			num_close,
+			num_range_over_chan,
+
+			num_wg,
+			num_known_add+
+				num_unknown_add,
+			num_done,
+			num_wait,
+
+			num_mutex,
+			num_lock,
+			num_unlock,
+		))
 
 		// if  waitgroup  generate absolute and relative
 		// if unlock or lock generate absolute and relative
@@ -365,6 +426,8 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 		go_per_projects.WriteString(fmt.Sprintf("%s,%f\n", proj, 1000*float64(size)/page.Stats.Features_per_projects[proj+".csv"][0].f_featured_file_line_average))
 	}
 
+	page.Stats.Num_median_projects = num_median
+
 }
 
 func calculateIQR(features_per_projects map[string][]*Feature) (int, int, int) {
@@ -383,13 +446,13 @@ func calculateIQR(features_per_projects map[string][]*Feature) (int, int, int) {
 func calculateMedian(page *PageData) int {
 	var lines stats.Float64Data
 
-	for _, name := range page.Stats.Num_lines_in_featured_files {
-		lines = append(lines, float64(name))
+	for _, project := range page.Stats.Num_lines_in_featured_files {
+		lines = append(lines, float64(project.Concurrent_size))
 	}
 
 	sort.Float64s(lines)
 	quartile, _ := stats.Quartile(lines)
 
-	fmt.Printf("median: %d", int(quartile.Q2))
+	fmt.Printf("median: %d\n", int(quartile.Q2))
 	return int(quartile.Q2)
 }

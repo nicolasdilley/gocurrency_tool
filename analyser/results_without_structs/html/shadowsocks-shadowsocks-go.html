@@ -1,0 +1,500 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : shadowsocks/shadowsocks-go ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/shadowsocks/shadowsocks-go/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> cmd/shadowsocks-httpget/main ( 6 features, 1/1 featured file ) </li>
+          
+          <li> cmd/shadowsocks-local/main ( 3 features, 1/1 featured file ) </li>
+          
+          <li> cmd/shadowsocks-server/main ( 18 features, 1/1 featured file ) </li>
+          
+          <li> shadowsocks/shadowsocks ( 8 features, 3/13 featured file ) </li>
+          
+    <li> Num of Packages with features : 4/5</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>4 </td>
+      <td>4</td>
+      <td>15</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>4 </td>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>75%</td>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>2</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-httpget/httpget.go#L52">cmd/shadowsocks-httpget/httpget.go</a></td>
+              <td>chan used as a param</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-httpget/httpget.go#L56">cmd/shadowsocks-httpget/httpget.go</a></td>
+              <td>Send</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-httpget/httpget.go#L131">cmd/shadowsocks-httpget/httpget.go</a></td>
+              <td>Synchronous chan</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-httpget/httpget.go#L133">cmd/shadowsocks-httpget/httpget.go</a></td>
+              <td>Go in for</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-httpget/httpget.go#L133">cmd/shadowsocks-httpget/httpget.go</a></td>
+              <td>Goroutine</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-httpget/httpget.go#L140">cmd/shadowsocks-httpget/httpget.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-local/local.go#L326">cmd/shadowsocks-local/local.go</a></td>
+              <td>Goroutine</td>
+              <td>326</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-local/local.go#L344">cmd/shadowsocks-local/local.go</a></td>
+              <td>Go in for</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-local/local.go#L344">cmd/shadowsocks-local/local.go</a></td>
+              <td>Goroutine</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L169">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L283">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>283</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L295">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L333">cmd/shadowsocks-server/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>333</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L333">cmd/shadowsocks-server/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>333</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L335">cmd/shadowsocks-server/server.go</a></td>
+              <td>Range over chan</td>
+              <td>335</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L372">cmd/shadowsocks-server/server.go</a></td>
+              <td>Go in for</td>
+              <td>372</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L372">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>372</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L482">cmd/shadowsocks-server/server.go</a></td>
+              <td>Go in for</td>
+              <td>482</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L482">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>482</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L484">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>484</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L501">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>501</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L510">cmd/shadowsocks-server/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>510</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L511">cmd/shadowsocks-server/server.go</a></td>
+              <td>Close chan</td>
+              <td>511</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L513">cmd/shadowsocks-server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>513</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L516">cmd/shadowsocks-server/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>516</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L517">cmd/shadowsocks-server/server.go</a></td>
+              <td>Receive</td>
+              <td>517</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//cmd/shadowsocks-server/server.go#L519">cmd/shadowsocks-server/server.go</a></td>
+              <td>Receive</td>
+              <td>519</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/conn_test.go#L43">shadowsocks/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/leakybuf.go#L25">shadowsocks/leakybuf.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>25</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/leakybuf.go#L26">shadowsocks/leakybuf.go</a></td>
+              <td>Receive</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/leakybuf.go#L40">shadowsocks/leakybuf.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/leakybuf.go#L41">shadowsocks/leakybuf.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/udprelay.go#L80">shadowsocks/udprelay.go</a></td>
+              <td>Goroutine</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/udprelay.go#L221">shadowsocks/udprelay.go</a></td>
+              <td>Goroutine</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/shadowsocks/shadowsocks-go/blob//shadowsocks/udprelay.go#L256">shadowsocks/udprelay.go</a></td>
+              <td>Goroutine</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 2 ,  4 ,
+     4 ,
+     15 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

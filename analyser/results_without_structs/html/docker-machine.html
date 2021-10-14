@@ -1,0 +1,638 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : docker/machine ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/docker/machine/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> commands/commands ( 23 features, 2/41 featured file ) </li>
+          
+          <li> commands/commandstest/commandstest ( 4 features, 1/2 featured file ) </li>
+          
+          <li> drivers/azure/azureutil/azureutil ( 10 features, 1/11 featured file ) </li>
+          
+    <li> Num of Packages with features : 3/11</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>7 </td>
+      <td>8 </td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>3</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0%</td>
+      <td>3 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L334">commands/ls.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>334</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L402">commands/ls.go</a></td>
+              <td>Send</td>
+              <td>402</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L418">commands/ls.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>418</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L421">commands/ls.go</a></td>
+              <td>Synchronous chan</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L423">commands/ls.go</a></td>
+              <td>Goroutine</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L425">commands/ls.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>425</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L428">commands/ls.go</a></td>
+              <td>Receive</td>
+              <td>428</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L429">commands/ls.go</a></td>
+              <td>Send</td>
+              <td>429</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L432">commands/ls.go</a></td>
+              <td>Receive</td>
+              <td>432</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L433">commands/ls.go</a></td>
+              <td>Send</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L446">commands/ls.go</a></td>
+              <td>Synchronous chan</td>
+              <td>446</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L449">commands/ls.go</a></td>
+              <td>Go in for</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L449">commands/ls.go</a></td>
+              <td>Goroutine</td>
+              <td>449</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L453">commands/ls.go</a></td>
+              <td>Receive</td>
+              <td>453</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/ls.go#L456">commands/ls.go</a></td>
+              <td>Close chan</td>
+              <td>456</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L436">commands/commands.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>436</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L452">commands/commands.go</a></td>
+              <td>Send</td>
+              <td>452</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L459">commands/commands.go</a></td>
+              <td>Synchronous chan</td>
+              <td>459</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L459">commands/commands.go</a></td>
+              <td>Synchronous chan</td>
+              <td>459</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L465">commands/commands.go</a></td>
+              <td>Go in for</td>
+              <td>465</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L465">commands/commands.go</a></td>
+              <td>Goroutine</td>
+              <td>465</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L472">commands/commands.go</a></td>
+              <td>Receive</td>
+              <td>472</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commands.go#L477">commands/commands.go</a></td>
+              <td>Close chan</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commandstest/stdout_capture.go#L32">commands/commandstest/stdout_capture.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commandstest/stdout_capture.go#L33">commands/commandstest/stdout_capture.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commandstest/stdout_capture.go#L36">commands/commandstest/stdout_capture.go</a></td>
+              <td>Send</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//commands/commandstest/stdout_capture.go#L47">commands/commandstest/stdout_capture.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L720">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Synchronous chan</td>
+              <td>720</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L721">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Goroutine</td>
+              <td>721</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L723">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>723</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L724">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Receive</td>
+              <td>724</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L730">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Send</td>
+              <td>730</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L743">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Send</td>
+              <td>743</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L750">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>750</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L751">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Receive</td>
+              <td>751</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L752">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Close chan</td>
+              <td>752</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker/machine/blob//drivers/azure/azureutil/azureutil.go#L754">drivers/azure/azureutil/azureutil.go</a></td>
+              <td>Receive</td>
+              <td>754</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 7 ,  8 ,
+     6 ,
+     5 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

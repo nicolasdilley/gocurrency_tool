@@ -1,0 +1,1463 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : cayleygraph/cayley ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/cayleygraph/cayley/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> client/client ( 5 features, 1/1 featured file ) </li>
+          
+          <li> cmd/cayley/main ( 2 features, 1/1 featured file ) </li>
+          
+          <li> cmd/cayley/command/command ( 5 features, 1/8 featured file ) </li>
+          
+          <li> cmd/cayleyexport/main ( 1 features, 1/2 featured file ) </li>
+          
+          <li> cmd/cayleyimport/main ( 1 features, 1/2 featured file ) </li>
+          
+          <li> graph/iterator/iterator_test ( 31 features, 1/33 featured file ) </li>
+          
+          <li> internal/http/http ( 2 features, 1/9 featured file ) </li>
+          
+          <li> internal/lru/lru ( 6 features, 1/2 featured file ) </li>
+          
+          <li> internal/repl/repl ( 5 features, 1/2 featured file ) </li>
+          
+          <li> query/gizmo/gizmo ( 10 features, 1/6 featured file ) </li>
+          
+          <li> query/graphql/graphql ( 6 features, 1/3 featured file ) </li>
+          
+          <li> schema/schema_test ( 4 features, 1/9 featured file ) </li>
+          
+          <li> server/http/cayleyhttp ( 2 features, 1/4 featured file ) </li>
+          
+    <li> Num of Packages with features : 13/70</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>7 </td>
+      <td>30 </td>
+      <td>5</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>2</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>80%</td>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>6 </td>
+      <td>18</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//client/client.go#L83">client/client.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>83</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//client/client.go#L84">client/client.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//client/client.go#L86">client/client.go</a></td>
+              <td>Close chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//client/client.go#L96">client/client.go</a></td>
+              <td>Send</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//client/client.go#L104">client/client.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayley/cayley.go#L86">cmd/cayley/cayley.go</a></td>
+              <td>Goroutine</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayley/cayley.go#L93">cmd/cayley/cayley.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayley/command/repl.go#L27">cmd/cayley/command/repl.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>27</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayley/command/repl.go#L29">cmd/cayley/command/repl.go</a></td>
+              <td>Goroutine</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayley/command/repl.go#L30">cmd/cayley/command/repl.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>30</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayley/command/repl.go#L31">cmd/cayley/command/repl.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayley/command/repl.go#L32">cmd/cayley/command/repl.go</a></td>
+              <td>Receive</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayleyexport/cayleyexport_test.go#L55">cmd/cayleyexport/cayleyexport_test.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//cmd/cayleyimport/cayleyimport_test.go#L37">cmd/cayleyimport/cayleyimport_test.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L40">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L41">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L52">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>52</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L53">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L106">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L107">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L116">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>116</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L117">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L147">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>147</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L148">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L154">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>154</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L155">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L173">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>173</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L174">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L180">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>180</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L181">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L204">graph/iterator/iterate.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L209">graph/iterator/iterate.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>209</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L210">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>210</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L212">graph/iterator/iterate.go</a></td>
+              <td>Send</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L215">graph/iterator/iterate.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>215</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L216">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>216</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L218">graph/iterator/iterate.go</a></td>
+              <td>Send</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L233">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>233</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L234">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>234</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L248">graph/iterator/iterate.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>248</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L249">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L335">graph/iterator/iterate.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>335</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L354">graph/iterator/iterate.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>354</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L355">graph/iterator/iterate.go</a></td>
+              <td>Receive</td>
+              <td>355</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//graph/iterator/iterate.go#L357">graph/iterator/iterate.go</a></td>
+              <td>Send</td>
+              <td>357</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/http/query.go#L84">internal/http/query.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>84</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/http/query.go#L85">internal/http/query.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/lru/lru_test.go#L25">internal/lru/lru_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/lru/lru_test.go#L28">internal/lru/lru_test.go</a></td>
+              <td>Go in for</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/lru/lru_test.go#L28">internal/lru/lru_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>28</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/lru/lru_test.go#L28">internal/lru/lru_test.go</a></td>
+              <td>Goroutine</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/lru/lru_test.go#L32">internal/lru/lru_test.go</a></td>
+              <td>Send</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/lru/lru_test.go#L38">internal/lru/lru_test.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/repl/repl.go#L118">internal/repl/repl.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>118</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/repl/repl.go#L119">internal/repl/repl.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/repl/repl.go#L249">internal/repl/repl.go</a></td>
+              <td>Goroutine</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/repl/repl.go#L250">internal/repl/repl.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>250</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//internal/repl/repl.go#L252">internal/repl/repl.go</a></td>
+              <td>Receive</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L220">query/gizmo/gizmo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>220</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L221">query/gizmo/gizmo.go</a></td>
+              <td>Send</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L222">query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L333">query/gizmo/gizmo.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>333</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L335">query/gizmo/gizmo.go</a></td>
+              <td>Goroutine</td>
+              <td>335</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L339">query/gizmo/gizmo.go</a></td>
+              <td>Send</td>
+              <td>339</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L347">query/gizmo/gizmo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>347</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L348">query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>348</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L351">query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/gizmo/gizmo.go#L356">query/gizmo/gizmo.go</a></td>
+              <td>Receive</td>
+              <td>356</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/graphql/graphql.go#L218">query/graphql/graphql.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>218</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/graphql/graphql.go#L219">query/graphql/graphql.go</a></td>
+              <td>Receive</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/graphql/graphql.go#L291">query/graphql/graphql.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>291</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/graphql/graphql.go#L292">query/graphql/graphql.go</a></td>
+              <td>Receive</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/graphql/graphql.go#L307">query/graphql/graphql.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>307</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//query/graphql/graphql.go#L308">query/graphql/graphql.go</a></td>
+              <td>Receive</td>
+              <td>308</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//schema/loader.go#L324">schema/loader.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>324</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//schema/loader.go#L325">schema/loader.go</a></td>
+              <td>Receive</td>
+              <td>325</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//schema/loader.go#L447">schema/loader.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>447</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//schema/loader.go#L448">schema/loader.go</a></td>
+              <td>Receive</td>
+              <td>448</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//server/http/api_v2.go#L513">server/http/api_v2.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>513</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/cayleygraph/cayley/blob//server/http/api_v2.go#L514">server/http/api_v2.go</a></td>
+              <td>Receive</td>
+              <td>514</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 7 ,  30 ,
+     5 ,
+     9 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

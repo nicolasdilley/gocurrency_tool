@@ -1,0 +1,917 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : gomodule/redigo ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/gomodule/redigo/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> redis/redis_test ( 82 features, 6/24 featured file ) </li>
+          
+          <li> redisx/redisx_test ( 12 features, 2/6 featured file ) </li>
+          
+    <li> Num of Packages with features : 2/2</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>16 </td>
+      <td>26 </td>
+      <td>11</td>
+      <td>17</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>6 </td>
+      <td>0 </td>
+      <td>4 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>5</td>
+      <td>1</td>
+      <td>45.45454545454545%</td>
+      <td>3 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>8 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L61">redis/test_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L74">redis/test_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>74</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L75">redis/test_test.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L77">redis/test_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>77</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L78">redis/test_test.go</a></td>
+              <td>Receive</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L79">redis/test_test.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L91">redis/test_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L103">redis/test_test.go</a></td>
+              <td>Send</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L108">redis/test_test.go</a></td>
+              <td>Send</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L112">redis/test_test.go</a></td>
+              <td>Send</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/test_test.go#L121">redis/test_test.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L259">redis/pool.go</a></td>
+              <td>Send</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L339">redis/pool.go</a></td>
+              <td>Unknown chan length</td>
+              <td>339</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L344">redis/pool.go</a></td>
+              <td>Send</td>
+              <td>344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L372">redis/pool.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>372</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L373">redis/pool.go</a></td>
+              <td>Receive</td>
+              <td>373</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L376">redis/pool.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>376</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L377">redis/pool.go</a></td>
+              <td>Receive</td>
+              <td>377</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L378">redis/pool.go</a></td>
+              <td>Send</td>
+              <td>378</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L382">redis/pool.go</a></td>
+              <td>Receive</td>
+              <td>382</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool.go#L423">redis/pool.go</a></td>
+              <td>Send</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn.go#L261">redis/conn.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>261</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn.go#L264">redis/conn.go</a></td>
+              <td>Send</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn.go#L268">redis/conn.go</a></td>
+              <td>Goroutine</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn.go#L269">redis/conn.go</a></td>
+              <td>Send</td>
+              <td>269</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn.go#L271">redis/conn.go</a></td>
+              <td>Receive</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L53">redis/pubsub_example_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>53</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L56">redis/pubsub_example_test.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L60">redis/pubsub_example_test.go</a></td>
+              <td>Send</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L64">redis/pubsub_example_test.go</a></td>
+              <td>Send</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L72">redis/pubsub_example_test.go</a></td>
+              <td>Send</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L77">redis/pubsub_example_test.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L88">redis/pubsub_example_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>88</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L89">redis/pubsub_example_test.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L96">redis/pubsub_example_test.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L98">redis/pubsub_example_test.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L110">redis/pubsub_example_test.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pubsub_example_test.go#L152">redis/pubsub_example_test.go</a></td>
+              <td>Goroutine</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L67">redis/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L75">redis/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L76">redis/conn_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L77">redis/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L79">redis/conn_test.go</a></td>
+              <td>Close chan</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L444">redis/conn_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L445">redis/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>445</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L447">redis/conn_test.go</a></td>
+              <td>Close chan</td>
+              <td>447</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L452">redis/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>452</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L488">redis/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>488</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L494">redis/conn_test.go</a></td>
+              <td>Go in for</td>
+              <td>494</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L494">redis/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>494</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L721">redis/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>721</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L725">redis/conn_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>725</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L733">redis/conn_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>733</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L735">redis/conn_test.go</a></td>
+              <td>Goroutine</td>
+              <td>735</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L741">redis/conn_test.go</a></td>
+              <td>Close chan</td>
+              <td>741</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L743">redis/conn_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>743</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L744">redis/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>744</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/conn_test.go#L746">redis/conn_test.go</a></td>
+              <td>Receive</td>
+              <td>746</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L352">redis/pool_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>352</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L353">redis/pool_test.go</a></td>
+              <td>Goroutine</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L355">redis/pool_test.go</a></td>
+              <td>Send</td>
+              <td>355</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L359">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>359</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L445">redis/pool_test.go</a></td>
+              <td>Goroutine</td>
+              <td>445</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L592">redis/pool_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>592</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L594">redis/pool_test.go</a></td>
+              <td>Go in for</td>
+              <td>594</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L594">redis/pool_test.go</a></td>
+              <td>Goroutine</td>
+              <td>594</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L598">redis/pool_test.go</a></td>
+              <td>Send</td>
+              <td>598</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L622">redis/pool_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>622</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L623">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>623</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L627">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>627</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L654">redis/pool_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>654</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L655">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>655</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L662">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>662</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L688">redis/pool_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>688</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L689">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>689</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L693">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>693</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L723">redis/pool_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>723</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L724">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>724</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L733">redis/pool_test.go</a></td>
+              <td>Receive</td>
+              <td>733</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L779">redis/pool_test.go</a></td>
+              <td>Go in for</td>
+              <td>779</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L779">redis/pool_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>779</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redis/pool_test.go#L779">redis/pool_test.go</a></td>
+              <td>Goroutine</td>
+              <td>779</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux.go#L104">redisx/connmux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux.go#L107">redisx/connmux.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux.go#L124">redisx/connmux.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L174">redisx/connmux_test.go</a></td>
+              <td>Go in for</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L174">redisx/connmux_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>174</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L174">redisx/connmux_test.go</a></td>
+              <td>Goroutine</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L212">redisx/connmux_test.go</a></td>
+              <td>Go in for</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L212">redisx/connmux_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>212</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L212">redisx/connmux_test.go</a></td>
+              <td>Goroutine</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L241">redisx/connmux_test.go</a></td>
+              <td>Go in for</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L241">redisx/connmux_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>241</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gomodule/redigo/blob//redisx/connmux_test.go#L241">redisx/connmux_test.go</a></td>
+              <td>Goroutine</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 16 ,  26 ,
+     11 ,
+     17 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

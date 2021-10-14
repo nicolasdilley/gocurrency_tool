@@ -78,7 +78,7 @@ func generateAstMap(path_to_dir string) (map[string]*packages.Package, *token.Fi
 
 	filepath.Walk(path_to_dir, func(path string, file os.FileInfo, err error) error {
 		if file.IsDir() {
-			if file.Name() != "vendor" && file.Name() != "third_party" || file.Name() == "tests" || file.Name() == "test" {
+			if file.Name() != "vendor" || file.Name() != "third_party" || file.Name() != "tests" || file.Name() != "test" {
 				path, _ = filepath.Abs(path)
 				package_names = append(package_names, path)
 			} else {

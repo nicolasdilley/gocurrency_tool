@@ -6,7 +6,33 @@
 
   <h2> Projects </h2>
 
+  <h3> Channels </h3>
+
   #projects without channels / #featured projects : {{.Stats.Num_projects_without_chans}} / {{.Stats.Num_featured_projects}}
+
+
+  #projects without go / #featured projects : {{.Stats.Num_projects_without_go}} / {{.Stats.Num_featured_projects}}
+   #projects without send / #featured projects : {{.Stats.Num_projects_without_send}} / {{.Stats.Num_featured_projects}}
+  #projects without receive / #featured projects : {{.Stats.Num_projects_without_receive}} / {{.Stats.Num_featured_projects}}
+  #projects without select / #featured projects : {{.Stats.Num_projects_without_select}} / {{.Stats.Num_featured_projects}}
+  #projects without close / #featured projects : {{.Stats.Num_projects_without_close}} / {{.Stats.Num_featured_projects}}
+  #projects without range / #featured projects : {{.Stats.Num_projects_without_range}} / {{.Stats.Num_featured_projects}}
+
+  <h3> WaitGroup </h3>
+  #projects without WaitGroup / #featured projects : {{.Stats.Num_projects_without_wg}} / {{.Stats.Num_featured_projects}}
+
+  #projects without Add(x) / #featured projects : {{.Stats.Num_projects_without_unknown_add}} / {{.Stats.Num_featured_projects}}
+  #projects without Add(const) / #featured projects : {{.Stats.Num_projects_without_known_add}} / {{.Stats.Num_featured_projects}}
+  #projects without Add(all) / #featured projects : {{.Stats.Num_projects_without_add}} / {{.Stats.Num_featured_projects}}
+
+  #projects without Done() / #featured projects : {{.Stats.Num_projects_without_done}} / {{.Stats.Num_featured_projects}}
+  #projects without Wait() / #featured projects : {{.Stats.Num_projects_without_wait}} / {{.Stats.Num_featured_projects}}
+
+  <h3> Mutex </h3>
+  #projects without Mutex / #featured projects : {{.Stats.Num_projects_without_mutex}} / {{.Stats.Num_featured_projects}}
+  
+  #projects without Lock / #featured projects : {{.Stats.Num_projects_without_lock}} / {{.Stats.Num_featured_projects}}
+  #projects without Unlock / #featured projects : {{.Stats.Num_projects_without_unlock}} / {{.Stats.Num_featured_projects}}
 
   <h2> Channels </h2>
 
@@ -19,6 +45,18 @@
   <h2> Projects </h2>
 
   # of project with at least one chan : {{.Stats.Project_with_interesting_features}}
+  # of median projects : {{.Stats.Num_median_projects}}
+
+  biggest project in k ploc {{index .Stats.Num_lines_in_featured_files 0}}
+  second project in k ploc {{index .Stats.Num_lines_in_featured_files 1}}
+  third project in k ploc {{index .Stats.Num_lines_in_featured_files 2}}
+
+  <ul>
+    {{range .Stats.Num_lines_in_featured_files}}
+      <li>{{.}}</li>
+    {{end}}
+  </ul>
+
 
   <h2> Averages </h2>
   #channels / {{.Constant}} LoC : {{.Stats.Average.Channels}} </br>
@@ -34,6 +72,9 @@
   %of defined chans as params : {{.Stats.Average.Defined_over_params}}% </br>
   #Project with assign chan in for : {{.Stats.Num_assign_chan_in_for}} </br>
 
+  <h2> Select </h2>
+  Num of select : {{.Stats.Num_select}}
+  Num of select with default branch : {{.Stats.Num_default_select}}
 
   <h2> Average Channels Size </h2>
   <canvas id="chan_size" width="800" height="800"></canvas>
