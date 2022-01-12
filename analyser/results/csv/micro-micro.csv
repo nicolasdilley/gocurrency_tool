@@ -1,0 +1,569 @@
+Line num,85078
+packages num,26,258
+files num,43,302
+Average Line num per featured file,190,8209
+,11
+cmd,1533
+cmd/cli,683
+cmd/cli/auth,426
+cmd/cli/config,158
+cmd/cli/gen,28
+cmd/cli/init,71
+cmd/cli/namespace,237
+cmd/cli/network,247
+cmd/cli/new,167
+cmd/cli/new/template,188
+cmd/cli/run,863
+cmd/cli/store,729
+cmd/cli/store/snapshot,242
+cmd/cli/token,233
+cmd/cli/user,236
+cmd/cli/util,234
+cmd/protoc-gen-client,381
+cmd/protoc-gen-micro,34
+cmd/protoc-gen-micro/examples/greeter,398
+cmd/protoc-gen-micro/generator,2146
+cmd/protoc-gen-micro/plugin/micro,464
+cmd/protoc-gen-openapi,39
+cmd/protoc-gen-openapi/converter,869
+cmd/protoc-gen-openapi/converter/testdata,579
+cmd/server,177
+cmd/service,217
+cmd/service/handler/exec,81
+cmd/service/handler/file,88
+cmd/usage,134
+cmd/usage/client,110
+cmd/usage/proto,156
+cmd/usage/server,171
+plugin,184
+plugin/etcd,629
+plugin/nats/broker,365
+plugin/nats/stream,206
+plugin/postgres,679
+plugin/prometheus,241
+plugin/redis/blocklist,46
+plugin/redis/broker,599
+plugin/redis/stream,620
+plugin/s3,424
+profile,218
+proto/alert,340
+proto/api,994
+proto/auth,1857
+proto/broker,440
+proto/build,359
+proto/client,477
+proto/config,808
+proto/debug,790
+proto/errors,91
+proto/events,858
+proto/network,1168
+proto/registry,1069
+proto/router,1022
+proto/runtime,2345
+proto/store,2069
+proto/transport,283
+service,369
+service/api,568
+service/api/auth,156
+service/api/handler,102
+service/api/handler/api,227
+service/api/handler/event,97
+service/api/handler/http,181
+service/api/handler/rpc,524
+service/api/handler/web,137
+service/api/resolver,65
+service/api/resolver/grpc,31
+service/api/resolver/host,24
+service/api/resolver/path,29
+service/api/resolver/subdomain,126
+service/api/resolver/vpath,59
+service/api/router,158
+service/api/router/registry,488
+service/api/server,620
+service/api/server/http,153
+service/auth,280
+service/auth/client,307
+service/auth/handler,624
+service/auth/jwt,119
+service/auth/noop,61
+service/auth/server,48
+service/broker,109
+service/broker/client,207
+service/broker/handler,87
+service/broker/memory,185
+service/broker/server,33
+service/build,24
+service/build/client,83
+service/build/golang,209
+service/build/util/tar,97
+service/build/util/zip,39
+service/client,507
+service/client/grpc,1382
+service/client/mucp,1122
+service/config,215
+service/config/client,78
+service/config/env,37
+service/config/handler,345
+service/config/secrets,145
+service/config/server,34
+service/config/store,198
+service/context,21
+service/context/metadata,187
+service/debug,16
+service/debug/handler,98
+service/debug/log,77
+service/debug/log/kubernetes,229
+service/debug/log/memory,118
+service/debug/log/noop,17
+service/debug/profile,28
+service/debug/profile/http,58
+service/debug/profile/pprof,90
+service/debug/stats,16
+service/debug/stats/memory,64
+service/debug/trace,87
+service/debug/trace/memory,62
+service/errors,212
+service/events,135
+service/events/client,144
+service/events/handler,183
+service/events/server,19
+service/events/store,156
+service/events/stream/memory,202
+service/events/stream/test,185
+service/events/util,24
+service/logger,432
+service/metrics,100
+service/metrics/logging,67
+service/metrics/noop,34
+service/metrics/wrapper,31
+service/model,1874
+service/network,118
+service/network/handler,157
+service/network/mucp,1859
+service/network/mucp/proto,920
+service/network/resolver,8
+service/network/resolver/dns,54
+service/network/resolver/dnssrv,24
+service/network/resolver/http,56
+service/network/resolver/noop,8
+service/network/resolver/registry,28
+service/network/resolver/static,21
+service/network/server,176
+service/network/transport,94
+service/network/transport/grpc,331
+service/network/transport/http,845
+service/network/transport/memory,298
+service/network/tunnel,147
+service/network/tunnel/broker,165
+service/network/tunnel/mucp,2019
+service/network/tunnel/transport,103
+service/network/util,81
+service/proxy,48
+service/proxy/grpc,150
+service/proxy/http,218
+service/proxy/mucp,427
+service/proxy/server,304
+service/registry,210
+service/registry/cache,551
+service/registry/client,184
+service/registry/handler,149
+service/registry/memory,781
+service/registry/noop,33
+service/registry/server,81
+service/registry/util,116
+service/router,270
+service/router/client,309
+service/router/kubernetes,80
+service/router/registry,675
+service/runtime,569
+service/runtime/cells/go/util/entrypoint,19
+service/runtime/cells/v3/loader,73
+service/runtime/client,476
+service/runtime/handler,579
+service/runtime/kubernetes,1023
+service/runtime/kubernetes/api,434
+service/runtime/kubernetes/client,1809
+service/runtime/local,617
+service/runtime/local/process,36
+service/runtime/local/process/os,151
+service/runtime/local/test/bar,2
+service/runtime/local/test/empty,1
+service/runtime/local/test/foo/cmd/bar,2
+service/runtime/local/test/foo/cmd/baz,2
+service/runtime/local/test/qux/cmd/test,2
+service/runtime/manager,802
+service/runtime/server,60
+service/runtime/source,21
+service/runtime/source/git,717
+service/runtime/source/go,67
+service/server,351
+service/server/grpc,2272
+service/server/grpc/proto,378
+service/server/mock,198
+service/server/mucp,2211
+service/store,253
+service/store/cache,183
+service/store/client,318
+service/store/file,499
+service/store/handler,364
+service/store/memory,228
+service/store/server,32
+service/store/test,373
+test,3309
+test/dep-test,2
+test/dep-test/dep-test-service,25
+test/dep-test/dep-test-service/handler,36
+test/dep-test/dep-test-service/proto/dep,677
+test/dep-test/dep-test-service/proto/imports,289
+test/dep-test/dep-test-service/subscriber,15
+test/fakes,103
+util/acme,59
+util/acme/autocert,76
+util/acme/certmagic,175
+util/addr,186
+util/auth,16
+util/auth/namespace,485
+util/auth/rules,463
+util/auth/token,76
+util/auth/token/basic,117
+util/auth/token/jwt,196
+util/backoff,11
+util/buf,17
+util/cache,192
+util/codec,89
+util/codec/bytes,91
+util/codec/grpc,164
+util/codec/json,75
+util/codec/jsonrpc,231
+util/codec/proto,115
+util/codec/protorpc,327
+util/codec/text,65
+util/config,252
+util/ctx,61
+util/helper,112
+util/muxer,50
+util/namespace,16
+util/net,68
+util/opentelemetry,58
+util/opentelemetry/jaeger,33
+util/pool,202
+util/qson,318
+util/report,96
+util/ring,141
+util/router,571
+util/selector,62
+util/selector/random,37
+util/selector/roundrobin,62
+util/socket,128
+util/sync,56
+util/sync/memory,147
+util/tls,60
+util/user,158
+util/wrapper,322
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/watcher.go,16,Select (number of branch),36,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/watcher.go,2,Receive,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/watcher.go,2,Receive,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/watcher.go,17,Select with default (number of branch),60,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/watcher.go,2,Receive,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,16,Select (number of branch),113,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,3,Send,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,2,Receive,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,2,Receive,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,1,Goroutine,148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,1,Goroutine,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,1,Goroutine,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,8,Known chan length (length),263,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,4,Synchronous chan,264,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,1,Goroutine,268,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/table.go,2,Receive,269,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,8,Known chan length (length),57,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,4,Synchronous chan,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,1,Goroutine,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,17,Select with default (number of branch),101,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,3,Send,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,17,Select with default (number of branch),306,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,4,Synchronous chan,371,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,15,Close chan,374,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,1,Goroutine,377,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,16,Select (number of branch),380,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,381,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,383,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,385,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,8,Known chan length (length),433,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,17,Select with default (number of branch),437,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,3,Send,438,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,1,Goroutine,444,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,16,Select (number of branch),451,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,452,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,454,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,471,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,1,Goroutine,477,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,17,Select with default (number of branch),479,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/router/registry/registry.go,2,Receive,480,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/pool/default_test.go,1,Goroutine,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,24,Waitgroup Add(const),16,&{26643373 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,31,Waitgroup Wait(),20,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,24,Waitgroup Add(const),27,&{26643572 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,26,Waitgroup Done(),33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,26,Waitgroup Done(),37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,30,Waitgroup,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,1,Goroutine,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,31,Waitgroup Wait(),86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,5,Go in for,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,24,Waitgroup Add(const),102,&{26644876 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,1,Goroutine,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,26,Waitgroup Done(),106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service_test.go,31,Waitgroup Wait(),114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service.go,8,Known chan length (length),201,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/service.go,2,Receive,207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/config/config.go,27,Mutex,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/config/config.go,29,Mutex Lock(),34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/config/config.go,28,Mutex Unlock(),35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/config/config.go,29,Mutex Lock(),48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/config/config.go,28,Mutex Unlock(),49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/config/config.go,29,Mutex Lock(),76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/config/config.go,28,Mutex Unlock(),77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/ring/buffer.go,16,Select (number of branch),69,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/ring/buffer.go,2,Receive,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/ring/buffer.go,3,Send,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/ring/buffer.go,8,Known chan length (length),129,128
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/ring/buffer.go,4,Synchronous chan,131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/events/store/store.go,1,Goroutine,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/util.go,30,Waitgroup,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/subscriber.go,9,Unknown chan length,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/subscriber.go,5,Go in for,267,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/subscriber.go,1,Goroutine,267,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/subscriber.go,3,Send,278,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/subscriber.go,2,Receive,283,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,19,Channel of channels,110,srv.exit
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,30,Waitgroup,881,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,5,Go in for,885,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,24,Waitgroup Add(const),884,&{26216195 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,1,Goroutine,885,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,26,Waitgroup Done(),886,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,31,Waitgroup Wait(),895,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,1,Goroutine,982,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,1,Goroutine,989,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,1,Goroutine,997,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,16,Select (number of branch),1011,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,2,Receive,1013,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,2,Receive,1020,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,4,Synchronous chan,1038,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,1,Goroutine,1040,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,15,Close chan,1042,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,16,Select (number of branch),1045,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,2,Receive,1046,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,2,Receive,1047,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,3,Send,1052,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,4,Synchronous chan,1102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,3,Send,1103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,16,Select (number of branch),1106,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/grpc/grpc.go,2,Receive,1107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/util.go,16,Select (number of branch),140,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/util.go,2,Receive,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cmd.go,1,Goroutine,436,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/metrics/metrics.go,27,Mutex,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/metrics/metrics.go,29,Mutex Lock(),42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/metrics/metrics.go,28,Mutex Unlock(),43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/metrics/metrics.go,29,Mutex Lock(),50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/metrics/metrics.go,28,Mutex Unlock(),51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,30,Waitgroup,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,5,Go in for,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,7,Goroutine in for with constant (constant),127,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,5,Go in for,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,7,Goroutine in for with constant (constant),138,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,24,Waitgroup Add(const),125,&{24817252 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,1,Goroutine,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,2,Receive,130,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,26,Waitgroup Done(),135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,1,Goroutine,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,2,Receive,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,26,Waitgroup Done(),145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_stream_test.go,31,Waitgroup Wait(),148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_codec.go,4,Synchronous chan,195,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_codec.go,17,Select with default (number of branch),222,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_codec.go,2,Receive,223,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_codec.go,17,Select with default (number of branch),256,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_codec.go,2,Receive,257,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_router.go,27,Mutex,481,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,30,Waitgroup,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,30,Waitgroup,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,5,Go in for,386,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,5,Go in for,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,1,Goroutine,386,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,1,Goroutine,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,4,Synchronous chan,881,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,1,Goroutine,883,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,17,Select with default (number of branch),891,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,2,Receive,893,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,1,Goroutine,911,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,16,Select (number of branch),925,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,2,Receive,927,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,2,Receive,954,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,15,Close chan,956,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,30,Waitgroup,974,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,31,Waitgroup Wait(),979,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,3,Send,983,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,4,Synchronous chan,1017,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,3,Send,1018,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/server/mucp/rpc_server.go,2,Receive,1020,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/web/web.go,8,Known chan length (length),149,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/web/web.go,3,Send,153,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/web/web.go,1,Goroutine,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/web/web.go,1,Goroutine,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/web/web.go,2,Receive,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/service.go,1,Goroutine,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/service.go,1,Goroutine,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/service.go,4,Synchronous chan,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/service.go,1,Goroutine,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/service.go,17,Select with default (number of branch),196,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/service.go,2,Receive,197,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,4,Synchronous chan,224,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,4,Synchronous chan,225,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,1,Goroutine,260,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,16,Select (number of branch),262,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,2,Receive,263,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,3,Send,268,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,2,Receive,269,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,17,Select with default (number of branch),302,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/local/local.go,2,Receive,303,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,16,Select (number of branch),51,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,3,Send,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,16,Select (number of branch),61,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,17,Select with default (number of branch),66,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,16,Select (number of branch),87,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,3,Send,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,89,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,16,Select (number of branch),98,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,17,Select with default (number of branch),112,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/util/socket/socket.go,2,Receive,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/proxy/http/http_test.go,1,Goroutine,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/router/router_test.go,1,Goroutine,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/usage/plugin.go,1,Goroutine,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/new/new.go,1,Goroutine,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/new/new.go,2,Receive,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/new/new.go,2,Receive,131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher_test.go,4,Synchronous chan,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher_test.go,4,Synchronous chan,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher_test.go,1,Goroutine,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher_test.go,3,Send,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher.go,16,Select (number of branch),32,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher.go,2,Receive,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher.go,2,Receive,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher.go,17,Select with default (number of branch),61,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/watcher.go,2,Receive,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,9,Unknown chan length,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,4,Synchronous chan,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,5,Go in for,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,1,Goroutine,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,2,Receive,232,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,3,Send,236,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,3,Send,242,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,3,Send,248,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,15,Close chan,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory_test.go,2,Receive,256,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,1,Goroutine,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,16,Select (number of branch),90,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,2,Receive,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,17,Select with default (number of branch),131,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,2,Receive,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,16,Select (number of branch),137,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,3,Send,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,2,Receive,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,1,Goroutine,223,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,1,Goroutine,262,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,1,Goroutine,329,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,1,Goroutine,337,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,1,Goroutine,347,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,4,Synchronous chan,479,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/registry/memory/memory.go,4,Synchronous chan,480,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,17,Select with default (number of branch),68,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,2,Receive,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,1,Goroutine,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,16,Select (number of branch),96,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,2,Receive,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,3,Send,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,4,Synchronous chan,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,4,Synchronous chan,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/kubernetes/client/watch.go,1,Goroutine,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,1,Goroutine,597,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,1,Goroutine,801,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,1,Goroutine,907,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,1,Goroutine,928,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,16,Select (number of branch),957,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,2,Receive,958,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,2,Receive,960,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,17,Select with default (number of branch),974,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/runtime/manager/manager.go,3,Send,975,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/profile/pprof/pprof.go,16,Select (number of branch),49,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/profile/pprof/pprof.go,2,Receive,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/profile/pprof/pprof.go,2,Receive,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/profile/pprof/pprof.go,4,Synchronous chan,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/profile/pprof/pprof.go,1,Goroutine,94,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/profile/pprof/pprof.go,17,Select with default (number of branch),110,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/profile/pprof/pprof.go,2,Receive,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,17,Select with default (number of branch),148,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,4,Synchronous chan,208,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,30,Waitgroup,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,24,Waitgroup Add(const),212,&{26329781 INT 3} val is : 3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,1,Goroutine,213,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,1,Goroutine,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,1,Goroutine,215,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,31,Waitgroup Wait(),216,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,26,Waitgroup Done(),223,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,17,Select with default (number of branch),230,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,22,chan used as a param,265,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,26,Waitgroup Done(),268,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,17,Select with default (number of branch),272,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,273,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,16,Select (number of branch),286,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,287,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,3,Send,289,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,22,chan used as a param,296,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,26,Waitgroup Done(),299,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,16,Select (number of branch),305,5
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,306,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,308,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,310,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,313,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/api/handler/rpc/stream.go,2,Receive,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes_test.go,1,Goroutine,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/stream.go,17,Select with default (number of branch),50,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/stream.go,2,Receive,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes.go,17,Select with default (number of branch),56,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes.go,2,Receive,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes.go,3,Send,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes.go,4,Synchronous chan,178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes.go,4,Synchronous chan,179,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes.go,5,Go in for,184,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/debug/log/kubernetes/kubernetes.go,1,Goroutine,184,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,4,Synchronous chan,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,1,Goroutine,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,5,Go in for,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,17,Select with default (number of branch),122,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,2,Receive,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,1,Goroutine,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,17,Select with default (number of branch),157,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/broker/broker.go,2,Receive,158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/transport/listener.go,5,Go in for,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/service/network/tunnel/transport/listener.go,1,Goroutine,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/snapshot_test.go,3,Send,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/restore.go,4,Synchronous chan,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/restore.go,1,Goroutine,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/restore.go,15,Close chan,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/restore.go,3,Send,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/snapshot.go,4,Synchronous chan,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/snapshot.go,1,Goroutine,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/snapshot.go,20,Receive only chan (<-chan),101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/micro++micro/cmd/cli/store/snapshot/snapshot.go,2,Receive,104,

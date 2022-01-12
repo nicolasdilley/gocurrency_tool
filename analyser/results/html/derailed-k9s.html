@@ -1,0 +1,1919 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : derailed/k9s ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/derailed/k9s/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> internal/watch ( 5 features, 1/3 featured file ) </li>
+          
+          <li> internal/dao ( 32 features, 2/47 featured file ) </li>
+          
+          <li> internal/view ( 25 features, 5/71 featured file ) </li>
+          
+          <li> internal/model ( 40 features, 9/23 featured file ) </li>
+          
+          <li> internal/ui ( 19 features, 4/22 featured file ) </li>
+          
+          <li> internal/model_test ( 2 features, 1/16 featured file ) </li>
+          
+          <li> internal/ui_test ( 1 features, 1/12 featured file ) </li>
+          
+    <li> Num of Packages with features : 7/27</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>9 </td>
+      <td>40 </td>
+      <td>6</td>
+      <td>37</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>33.33333333333333%</td>
+      <td>3 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>15 </td>
+      <td>2</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go</a></td>
+              <td>Synchronous chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go</a></td>
+              <td>Synchronous chan</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go</a></td>
+              <td>Goroutine</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/watch/factory.go</a></td>
+              <td>Close chan</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Synchronous chan</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Go in for</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Goroutine</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>84</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Receive</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L93">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Close chan</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Range over chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L122">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Synchronous chan</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Go in for</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Goroutine</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L126">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>133</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Send</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Receive</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Goroutine</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Close chan</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/cluster.go</a></td>
+              <td>Range over chan</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go#L343">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go</a></td>
+              <td>Goroutine</td>
+              <td>343</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go#L352">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>352</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go#L353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go</a></td>
+              <td>Receive</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go#L363">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go</a></td>
+              <td>Send</td>
+              <td>363</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go#L387">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go</a></td>
+              <td>Send</td>
+              <td>387</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go#L390">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/dao/pod.go</a></td>
+              <td>Send</td>
+              <td>390</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>103</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>127</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/exec.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/svc.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/svc.go</a></td>
+              <td>Goroutine</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/svc.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/svc.go</a></td>
+              <td>Goroutine</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/svc.go#L179">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/svc.go</a></td>
+              <td>Receive</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf_extender.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf_extender.go</a></td>
+              <td>Goroutine</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/pf.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>143</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L146">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Goroutine</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Receive</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L271">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Goroutine</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L289">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>289</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Receive</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L293">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Receive</td>
+              <td>293</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L338">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Goroutine</td>
+              <td>338</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L444">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Goroutine</td>
+              <td>444</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go#L445">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/view/app.go</a></td>
+              <td>Receive</td>
+              <td>445</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/pulse.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>173</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go#L174">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go</a></td>
+              <td>Receive</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go#L176">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/table.go</a></td>
+              <td>Receive</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go#L166">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>166</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go#L167">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go</a></td>
+              <td>Receive</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go#L170">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/tree.go</a></td>
+              <td>Receive</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go#L194">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go</a></td>
+              <td>Goroutine</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go</a></td>
+              <td>Goroutine</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go#L270">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>270</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go#L271">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go</a></td>
+              <td>Receive</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go#L288">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go</a></td>
+              <td>Receive</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go#L290">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log.go</a></td>
+              <td>Receive</td>
+              <td>290</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go#L23">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go</a></td>
+              <td>Goroutine</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go#L28">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go</a></td>
+              <td>Send</td>
+              <td>28</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/log_int_test.go</a></td>
+              <td>Send</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go#L97">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go</a></td>
+              <td>Goroutine</td>
+              <td>97</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go</a></td>
+              <td>Goroutine</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/cmd_buff.go</a></td>
+              <td>Receive</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go</a></td>
+              <td>Goroutine</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>138</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/yaml.go</a></td>
+              <td>Receive</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go</a></td>
+              <td>Goroutine</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>127</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/describe.go</a></td>
+              <td>Receive</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go</a></td>
+              <td>Goroutine</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>136</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go</a></td>
+              <td>Send</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash.go</a></td>
+              <td>Send</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>43</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Receive</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>94</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L95">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/config.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go#L122">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go</a></td>
+              <td>Goroutine</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>123</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go</a></td>
+              <td>Receive</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go#L126">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/indicator.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/app.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/app.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/app.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/app.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash_test.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash_test.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/model/flash_test.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/derailed/k9s/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash_test.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/derailed&#43;&#43;k9s/internal/ui/flash_test.go</a></td>
+              <td>Goroutine</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 9 ,  40 ,
+     6 ,
+     37 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

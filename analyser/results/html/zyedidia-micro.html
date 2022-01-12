@@ -1,0 +1,755 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : zyedidia/micro ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/zyedidia/micro/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> v2/internal/buffer ( 9 features, 3/17 featured file ) </li>
+          
+          <li> v2/internal/clipboard ( 3 features, 1/4 featured file ) </li>
+          
+          <li> v2/internal/config ( 25 features, 2/12 featured file ) </li>
+          
+          <li> v2/internal/screen ( 7 features, 1/2 featured file ) </li>
+          
+          <li> v2/internal/action ( 1 features, 1/17 featured file ) </li>
+          
+          <li> v2/internal/lua ( 1 features, 1/1 featured file ) </li>
+          
+          <li> v2/internal/shell ( 10 features, 3/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 7/12</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>7 </td>
+      <td>4 </td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>6</td>
+      <td>0</td>
+      <td>66.66666666666666%</td>
+      <td>1 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>1 </td>
+      <td>2</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>50</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go</a></td>
+              <td>Goroutine</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/backup.go</a></td>
+              <td>Send</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/save.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/save.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>40</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/save.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/save.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/save.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/save.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/buffer.go#L799">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/buffer/buffer.go</a></td>
+              <td>Goroutine</td>
+              <td>799</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/clipboard/terminal.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/clipboard/terminal.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>19</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/clipboard/terminal.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/clipboard/terminal.go</a></td>
+              <td>Receive</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/clipboard/terminal.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/clipboard/terminal.go</a></td>
+              <td>Receive</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L12">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Mutex</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L15">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Synchronous chan</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L21">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Goroutine</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/autosave.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L93">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Synchronous chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>99</td>
+              <td>&amp;{14163468 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Go in for</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Send</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Goroutine</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Range over chan</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L114">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Close chan</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go#L116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/config/plugin_installer.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go#L26">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go</a></td>
+              <td>Mutex</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>44</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go</a></td>
+              <td>Send</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>138</td>
+              <td>8</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go#L191">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/screen/screen.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>191</td>
+              <td>8</td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/action/command.go#L688">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/action/command.go</a></td>
+              <td>Goroutine</td>
+              <td>688</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/lua/lua.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/lua/lua.go</a></td>
+              <td>Mutex</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go#L12">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>12</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go</a></td>
+              <td>Send</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go#L78">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go</a></td>
+              <td>Goroutine</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/job.go</a></td>
+              <td>Send</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/shell.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/shell.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>105</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/shell.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/shell.go</a></td>
+              <td>Goroutine</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/shell.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/shell.go</a></td>
+              <td>Range over chan</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/terminal.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/terminal.go</a></td>
+              <td>Synchronous chan</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/terminal.go#L95">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/terminal.go</a></td>
+              <td>Goroutine</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/zyedidia/micro/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/terminal.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/zyedidia&#43;&#43;micro/internal/shell/terminal.go</a></td>
+              <td>Send</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 7 ,  4 ,
+     9 ,
+     10 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

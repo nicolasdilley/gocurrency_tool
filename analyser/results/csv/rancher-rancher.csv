@@ -1,0 +1,743 @@
+Line num,414970
+packages num,52,487
+files num,59,667
+Average Line num per featured file,249,14707
+,217
+cmd/agent,410
+cmd/rancherd,37
+cmd/rancherd/auth,357
+pkg/agent/clean,0
+pkg/agent/cluster,99
+pkg/agent/node,85
+pkg/agent/rancher,138
+pkg/api/norman,39
+pkg/api/norman/customization/aks,544
+pkg/api/norman/customization/alert,299
+pkg/api/norman/customization/app,238
+pkg/api/norman/customization/authn,68
+pkg/api/norman/customization/catalog,850
+pkg/api/norman/customization/cluster,2388
+pkg/api/norman/customization/clusterregistrationtokens,45
+pkg/api/norman/customization/clusterscan,104
+pkg/api/norman/customization/clustertemplate,229
+pkg/api/norman/customization/cred,85
+pkg/api/norman/customization/etcdbackup,19
+pkg/api/norman/customization/feature,77
+pkg/api/norman/customization/gke,426
+pkg/api/norman/customization/globaldns,260
+pkg/api/norman/customization/globalnamespaceaccess,508
+pkg/api/norman/customization/globalrole,41
+pkg/api/norman/customization/globalrolebinding,18
+pkg/api/norman/customization/kontainerdriver,324
+pkg/api/norman/customization/logging,373
+pkg/api/norman/customization/monitor,1433
+pkg/api/norman/customization/multiclusterapp,675
+pkg/api/norman/customization/namespace,220
+pkg/api/norman/customization/namespacedresource,32
+pkg/api/norman/customization/node,367
+pkg/api/norman/customization/nodepool,72
+pkg/api/norman/customization/nodetemplate,83
+pkg/api/norman/customization/oci,420
+pkg/api/norman/customization/persistentvolumeclaim,38
+pkg/api/norman/customization/pipeline,843
+pkg/api/norman/customization/podsecuritypolicybinding,28
+pkg/api/norman/customization/podsecuritypolicytemplate,133
+pkg/api/norman/customization/project,645
+pkg/api/norman/customization/roletemplate,123
+pkg/api/norman/customization/roletemplatebinding,71
+pkg/api/norman/customization/secret,50
+pkg/api/norman/customization/setting,99
+pkg/api/norman/customization/vsphere,558
+pkg/api/norman/customization/workload,328
+pkg/api/norman/customization/yaml,65
+pkg/api/norman/server,40
+pkg/api/norman/server/managementstored,779
+pkg/api/norman/server/userstored,190
+pkg/api/norman/store/apiservice,73
+pkg/api/norman/store/app,154
+pkg/api/norman/store/catalog,70
+pkg/api/norman/store/cert,52
+pkg/api/norman/store/cluster,1291
+pkg/api/norman/store/clustertemplate,250
+pkg/api/norman/store/crd,16
+pkg/api/norman/store/feature,16
+pkg/api/norman/store/globaldns,141
+pkg/api/norman/store/globalrole,26
+pkg/api/norman/store/globalrolebindings,49
+pkg/api/norman/store/hpa,56
+pkg/api/norman/store/ingress,227
+pkg/api/norman/store/namespace,155
+pkg/api/norman/store/nocondition,22
+pkg/api/norman/store/node,173
+pkg/api/norman/store/nodetemplate,200
+pkg/api/norman/store/noopwatching,13
+pkg/api/norman/store/password,381
+pkg/api/norman/store/pod,175
+pkg/api/norman/store/preference,31
+pkg/api/norman/store/projectsetter,210
+pkg/api/norman/store/roletemplate,114
+pkg/api/norman/store/scoped,38
+pkg/api/norman/store/secret,68
+pkg/api/norman/store/service,99
+pkg/api/norman/store/setting,93
+pkg/api/norman/store/storageclass,104
+pkg/api/norman/store/userscope,107
+pkg/api/norman/store/workload,699
+pkg/api/steve,90
+pkg/api/steve/aggregation,216
+pkg/api/steve/catalog,291
+pkg/api/steve/catalog/types,63
+pkg/api/steve/clusters,304
+pkg/api/steve/disallow,51
+pkg/api/steve/github,71
+pkg/api/steve/health,19
+pkg/api/steve/machine,290
+pkg/api/steve/navlinks,84
+pkg/api/steve/norman,112
+pkg/api/steve/projects,127
+pkg/api/steve/proxy,210
+pkg/api/steve/settings,18
+pkg/api/steve/userpreferences,177
+pkg/apis/catalog.cattle.io,4
+pkg/apis/catalog.cattle.io/v1,608
+pkg/apis/cluster.cattle.io,4
+pkg/apis/cluster.cattle.io/v3,203
+pkg/apis/management.cattle.io,4
+pkg/apis/management.cattle.io/v3,12254
+pkg/apis/project.cattle.io,4
+pkg/apis/project.cattle.io/v3,2914
+pkg/apis/provisioning.cattle.io,4
+pkg/apis/provisioning.cattle.io/v1,350
+pkg/apis/rke.cattle.io,4
+pkg/apis/rke.cattle.io/v1,1087
+pkg/apis/rke.cattle.io/v1/plan,62
+pkg/apis/ui.cattle.io,4
+pkg/apis/ui.cattle.io/v1,159
+pkg/app,131
+pkg/auth,157
+pkg/auth/api,61
+pkg/auth/api/secrets,88
+pkg/auth/api/user,322
+pkg/auth/audit,501
+pkg/auth/data,72
+pkg/auth/principals,141
+pkg/auth/providerrefresh,334
+pkg/auth/providers,218
+pkg/auth/providers/activedirectory,737
+pkg/auth/providers/azure,685
+pkg/auth/providers/common,858
+pkg/auth/providers/common/ldap,304
+pkg/auth/providers/github,812
+pkg/auth/providers/googleoauth,822
+pkg/auth/providers/keycloakoidc,343
+pkg/auth/providers/ldap,885
+pkg/auth/providers/local,374
+pkg/auth/providers/oidc,518
+pkg/auth/providers/publicapi,434
+pkg/auth/providers/saml,980
+pkg/auth/requests,384
+pkg/auth/requests/sar,79
+pkg/auth/settings,23
+pkg/auth/tokens,1188
+pkg/auth/util,49
+pkg/auth/webhook,71
+pkg/cacerts,59
+pkg/catalog/manager,1514
+pkg/catalog/utils,282
+pkg/catalog/utils/version,139
+pkg/catalogv2,16
+pkg/catalogv2/chart,65
+pkg/catalogv2/content,494
+pkg/catalogv2/git,220
+pkg/catalogv2/helm,548
+pkg/catalogv2/helmop,763
+pkg/catalogv2/http,188
+pkg/catalogv2/system,388
+pkg/cert,111
+pkg/channelserver,100
+pkg/client/generated/cluster/v3,1338
+pkg/client/generated/management/v3,15751
+pkg/client/generated/management/v3public,781
+pkg/client/generated/project/v3,12294
+pkg/cluster,67
+pkg/clustermanager,563
+pkg/clusterprovisioninglogger,70
+pkg/clusterrouter,135
+pkg/clusterrouter/proxy,249
+pkg/codegen,205
+pkg/codegen/generator,145
+pkg/codegen/generator/cleanup,35
+pkg/controllers/dashboard,60
+pkg/controllers/dashboard/apiservice,207
+pkg/controllers/dashboard/chart,11
+pkg/controllers/dashboard/clusterindex,30
+pkg/controllers/dashboard/clusterregistrationtoken,278
+pkg/controllers/dashboard/fleetcharts,93
+pkg/controllers/dashboard/helm,771
+pkg/controllers/dashboard/hostedcluster,169
+pkg/controllers/dashboard/kubernetesprovider,58
+pkg/controllers/dashboard/mcmagent,14
+pkg/controllers/dashboard/scaleavailable,89
+pkg/controllers/dashboard/systemcharts,101
+pkg/controllers/dashboardapi,13
+pkg/controllers/dashboardapi/feature,85
+pkg/controllers/dashboardapi/settings,123
+pkg/controllers/management,91
+pkg/controllers/management/agentupgrade,69
+pkg/controllers/management/aks,364
+pkg/controllers/management/auth,3349
+pkg/controllers/management/authprovisioningv2,699
+pkg/controllers/management/certsexpiration,74
+pkg/controllers/management/cloudcredential,54
+pkg/controllers/management/cluster,412
+pkg/controllers/management/clusterconfigcopier,34
+pkg/controllers/management/clusterconnected,106
+pkg/controllers/management/clusterdeploy,520
+pkg/controllers/management/clustergc,235
+pkg/controllers/management/clusteroperator,182
+pkg/controllers/management/clusterprovisioner,1193
+pkg/controllers/management/clusterstats,205
+pkg/controllers/management/clusterstatus,42
+pkg/controllers/management/clustertemplate,182
+pkg/controllers/management/clusterupstreamrefresher,433
+pkg/controllers/management/drivers,432
+pkg/controllers/management/drivers/kontainerdriver,386
+pkg/controllers/management/drivers/nodedriver,570
+pkg/controllers/management/eks,464
+pkg/controllers/management/etcdbackup,456
+pkg/controllers/management/feature,81
+pkg/controllers/management/gke,383
+pkg/controllers/management/k3sbasedupgrade,636
+pkg/controllers/management/kontainerdrivermetadata,1205
+pkg/controllers/management/node,1371
+pkg/controllers/management/nodepool,736
+pkg/controllers/management/nodetemplate,212
+pkg/controllers/management/podsecuritypolicy,57
+pkg/controllers/management/rbac,406
+pkg/controllers/management/restrictedadminrbac,420
+pkg/controllers/management/rkeworkerupgrader,855
+pkg/controllers/management/test/e2e,512
+pkg/controllers/management/usercontrollers,374
+pkg/controllers/managementagent,58
+pkg/controllers/managementagent/dnsrecord,243
+pkg/controllers/managementagent/externalservice,119
+pkg/controllers/managementagent/ingress,251
+pkg/controllers/managementagent/nslabels,100
+pkg/controllers/managementagent/servicemonitor,509
+pkg/controllers/managementagent/targetworkloadservice,258
+pkg/controllers/managementagent/workload,1014
+pkg/controllers/managementapi,58
+pkg/controllers/managementapi/catalog,125
+pkg/controllers/managementapi/dynamicschema,76
+pkg/controllers/managementapi/samlconfig,67
+pkg/controllers/managementapi/usercontrollers,158
+pkg/controllers/managementapi/whitelistproxy/kontainerdriver,26
+pkg/controllers/managementapi/whitelistproxy/nodedriver,26
+pkg/controllers/managementlegacy,18
+pkg/controllers/managementlegacy/catalog,87
+pkg/controllers/managementlegacy/cis,300
+pkg/controllers/managementlegacy/compose,305
+pkg/controllers/managementlegacy/compose/common,119
+pkg/controllers/managementlegacy/globaldns,679
+pkg/controllers/managementlegacy/multiclusterapp,1153
+pkg/controllers/managementuser,77
+pkg/controllers/managementuser/certsexpiration,392
+pkg/controllers/managementuser/clusterauthtoken,439
+pkg/controllers/managementuser/clusterauthtoken/common,174
+pkg/controllers/managementuser/healthsyncer,132
+pkg/controllers/managementuser/machinerole,51
+pkg/controllers/managementuser/networkpolicy,1106
+pkg/controllers/managementuser/nodesyncer,1390
+pkg/controllers/managementuser/nsserviceaccount,61
+pkg/controllers/managementuser/pspdelete,49
+pkg/controllers/managementuser/rbac,2504
+pkg/controllers/managementuser/rbac/podsecuritypolicy,809
+pkg/controllers/managementuser/resourcequota,968
+pkg/controllers/managementuser/secret,218
+pkg/controllers/managementuser/settings,45
+pkg/controllers/managementuser/snapshotbackpopulate,124
+pkg/controllers/managementuser/windows,148
+pkg/controllers/managementuserlegacy,35
+pkg/controllers/managementuserlegacy/alert,780
+pkg/controllers/managementuserlegacy/alert/common,42
+pkg/controllers/managementuserlegacy/alert/config,807
+pkg/controllers/managementuserlegacy/alert/configsyncer,1046
+pkg/controllers/managementuserlegacy/alert/deployer,869
+pkg/controllers/managementuserlegacy/alert/manager,459
+pkg/controllers/managementuserlegacy/alert/statesyncer,123
+pkg/controllers/managementuserlegacy/alert/watcher,1058
+pkg/controllers/managementuserlegacy/approuter,418
+pkg/controllers/managementuserlegacy/cis,916
+pkg/controllers/managementuserlegacy/endpoints,712
+pkg/controllers/managementuserlegacy/globaldns,306
+pkg/controllers/managementuserlegacy/helm,795
+pkg/controllers/managementuserlegacy/helm/common,489
+pkg/controllers/managementuserlegacy/ingresshostgen,61
+pkg/controllers/managementuserlegacy/istio,746
+pkg/controllers/managementuserlegacy/logging,28
+pkg/controllers/managementuserlegacy/logging/config,83
+pkg/controllers/managementuserlegacy/logging/configsyncer,351
+pkg/controllers/managementuserlegacy/logging/deployer,683
+pkg/controllers/managementuserlegacy/logging/generator,1166
+pkg/controllers/managementuserlegacy/logging/passwordgetter,144
+pkg/controllers/managementuserlegacy/logging/utils,1023
+pkg/controllers/managementuserlegacy/logging/watcher,122
+pkg/controllers/managementuserlegacy/monitoring,7054
+pkg/controllers/managementuserlegacy/pipeline,13
+pkg/controllers/managementuserlegacy/pipeline/controller/pipeline,129
+pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution,1848
+pkg/controllers/managementuserlegacy/pipeline/controller/project,159
+pkg/controllers/managementuserlegacy/pipeline/upgrade,145
+pkg/controllers/managementuserlegacy/systemimage,133
+pkg/controllers/provisioningv2,70
+pkg/controllers/provisioningv2/cluster,567
+pkg/controllers/provisioningv2/fleetcluster,90
+pkg/controllers/provisioningv2/fleetworkspace,127
+pkg/controllers/provisioningv2/managedchart,155
+pkg/controllers/provisioningv2/rke2/bootstrap,265
+pkg/controllers/provisioningv2/rke2/dynamicschema,260
+pkg/controllers/provisioningv2/rke2/machinedrain,125
+pkg/controllers/provisioningv2/rke2/machinenodelookup,166
+pkg/controllers/provisioningv2/rke2/machineorphan,43
+pkg/controllers/provisioningv2/rke2/machineprovision,795
+pkg/controllers/provisioningv2/rke2/machinestatus,274
+pkg/controllers/provisioningv2/rke2/managesystemagent,309
+pkg/controllers/provisioningv2/rke2/planner,62
+pkg/controllers/provisioningv2/rke2/planstatus,43
+pkg/controllers/provisioningv2/rke2/provisioningcluster,548
+pkg/controllers/provisioningv2/rke2/rkecluster,63
+pkg/controllers/provisioningv2/rke2/rkecontrolplane,40
+pkg/controllers/provisioningv2/rke2/secret,113
+pkg/controllers/provisioningv2/rke2/unmanaged,326
+pkg/crds/dashboard,187
+pkg/crds/management,36
+pkg/crds/provisioningv2,175
+pkg/cron,65
+pkg/data/dashboard,405
+pkg/data/management,2308
+pkg/dialer,320
+pkg/encryptedstore,136
+pkg/features,335
+pkg/generated/clientset/versioned,70
+pkg/generated/clientset/versioned/fake,74
+pkg/generated/clientset/versioned/scheme,23
+pkg/generated/clientset/versioned/typed/provisioning.cattle.io/v1,203
+pkg/generated/clientset/versioned/typed/provisioning.cattle.io/v1/fake,106
+pkg/generated/clientset/versioned/typed/upgrade.cattle.io/v1,203
+pkg/generated/clientset/versioned/typed/upgrade.cattle.io/v1/fake,106
+pkg/generated/compose,117
+pkg/generated/controllers/catalog.cattle.io,59
+pkg/generated/controllers/catalog.cattle.io/v1,929
+pkg/generated/controllers/cluster.cattle.io,59
+pkg/generated/controllers/cluster.cattle.io/v3,422
+pkg/generated/controllers/cluster.x-k8s.io,59
+pkg/generated/controllers/cluster.x-k8s.io/v1alpha4,929
+pkg/generated/controllers/fleet.cattle.io,59
+pkg/generated/controllers/fleet.cattle.io/v1alpha1,626
+pkg/generated/controllers/management.cattle.io,59
+pkg/generated/controllers/management.cattle.io/v3,18557
+pkg/generated/controllers/project.cattle.io,59
+pkg/generated/controllers/project.cattle.io/v3,4652
+pkg/generated/controllers/provisioning.cattle.io,59
+pkg/generated/controllers/provisioning.cattle.io/v1,323
+pkg/generated/controllers/rke.cattle.io,59
+pkg/generated/controllers/rke.cattle.io/v1,1433
+pkg/generated/controllers/ui.cattle.io,59
+pkg/generated/controllers/ui.cattle.io/v1,221
+pkg/generated/controllers/upgrade.cattle.io,59
+pkg/generated/controllers/upgrade.cattle.io/v1,323
+pkg/generated/norman/apiregistration.k8s.io/v1,392
+pkg/generated/norman/apiregistration.k8s.io/v1/fakes,1217
+pkg/generated/norman/apps/v1,1427
+pkg/generated/norman/apps/v1/fakes,4868
+pkg/generated/norman/autoscaling/v2beta2,392
+pkg/generated/norman/autoscaling/v2beta2/fakes,1217
+pkg/generated/norman/batch/v1,392
+pkg/generated/norman/batch/v1/fakes,1217
+pkg/generated/norman/batch/v1beta1,392
+pkg/generated/norman/batch/v1beta1/fakes,1217
+pkg/generated/norman/cluster.cattle.io/v3,737
+pkg/generated/norman/cluster.cattle.io/v3/fakes,2434
+pkg/generated/norman/core/v1,4877
+pkg/generated/norman/core/v1/fakes,17038
+pkg/generated/norman/extensions/v1beta1,392
+pkg/generated/norman/extensions/v1beta1/fakes,1217
+pkg/generated/norman/management.cattle.io/v3,22472
+pkg/generated/norman/management.cattle.io/v3/fakes,79105
+pkg/generated/norman/monitoring.coreos.com/v1,1427
+pkg/generated/norman/monitoring.coreos.com/v1/fakes,4868
+pkg/generated/norman/networking.istio.io/v1alpha3,737
+pkg/generated/norman/networking.istio.io/v1alpha3/fakes,2434
+pkg/generated/norman/networking.k8s.io/v1,392
+pkg/generated/norman/networking.k8s.io/v1/fakes,1217
+pkg/generated/norman/policy/v1beta1,392
+pkg/generated/norman/policy/v1beta1/fakes,1217
+pkg/generated/norman/project.cattle.io/v3,6947
+pkg/generated/norman/project.cattle.io/v3/fakes,24340
+pkg/generated/norman/rbac.authorization.k8s.io/v1,1427
+pkg/generated/norman/rbac.authorization.k8s.io/v1/fakes,4868
+pkg/generated/norman/storage.k8s.io/v1,392
+pkg/generated/norman/storage.k8s.io/v1/fakes,1217
+pkg/git,83
+pkg/helm,914
+pkg/httpproxy,758
+pkg/image,786
+pkg/image/export,624
+pkg/image/external,122
+pkg/impersonation,305
+pkg/jailer,169
+pkg/k8slookup,37
+pkg/k8sproxy,14
+pkg/kontainer-engine,68
+pkg/kontainer-engine/cluster,391
+pkg/kontainer-engine/cmd,745
+pkg/kontainer-engine/drivers,19
+pkg/kontainer-engine/drivers/aks,1028
+pkg/kontainer-engine/drivers/eks,1996
+pkg/kontainer-engine/drivers/gke,1012
+pkg/kontainer-engine/drivers/import,147
+pkg/kontainer-engine/drivers/options,49
+pkg/kontainer-engine/drivers/rke,497
+pkg/kontainer-engine/drivers/rke/rkecerts,69
+pkg/kontainer-engine/drivers/util,129
+pkg/kontainer-engine/example,48
+pkg/kontainer-engine/logstream,90
+pkg/kontainer-engine/service,607
+pkg/kontainer-engine/store,335
+pkg/kontainer-engine/types,1900
+pkg/kontainer-engine/utils,162
+pkg/kontainerdriver,32
+pkg/kubeconfig,208
+pkg/kubectl,150
+pkg/librke,48
+pkg/logserver,56
+pkg/metrics,362
+pkg/monitoring,238
+pkg/multiclustermanager,415
+pkg/multiclustermanager/whitelist,36
+pkg/namespace,117
+pkg/node,326
+pkg/nodeconfig,454
+pkg/notifiers,582
+pkg/peermanager,13
+pkg/pipeline/engine,41
+pkg/pipeline/engine/jenkins,2155
+pkg/pipeline/hooks,77
+pkg/pipeline/hooks/drivers,565
+pkg/pipeline/providers,262
+pkg/pipeline/providers/bitbucketcloud,180
+pkg/pipeline/providers/bitbucketserver,292
+pkg/pipeline/providers/common,279
+pkg/pipeline/providers/github,247
+pkg/pipeline/providers/gitlab,204
+pkg/pipeline/remote,26
+pkg/pipeline/remote/bitbucketcloud,506
+pkg/pipeline/remote/bitbucketserver,657
+pkg/pipeline/remote/github,496
+pkg/pipeline/remote/gitlab,525
+pkg/pipeline/remote/model,43
+pkg/pipeline/utils,478
+pkg/project,27
+pkg/provisioningv2/capi,96
+pkg/provisioningv2/capi/logger,56
+pkg/provisioningv2/kubeconfig,291
+pkg/provisioningv2/rke2/configserver,497
+pkg/provisioningv2/rke2/installer,144
+pkg/provisioningv2/rke2/planner,2257
+pkg/rancher,493
+pkg/rbac,553
+pkg/ref,31
+pkg/resourcelink,13
+pkg/resourcequota,79
+pkg/rkecerts,447
+pkg/rkedialerfactory,87
+pkg/rkenodeconfigclient,119
+pkg/rkenodeconfigserver,473
+pkg/rkeworker,484
+pkg/schemas/cluster.cattle.io/v3,187
+pkg/schemas/factory,30
+pkg/schemas/management.cattle.io/v3,963
+pkg/schemas/management.cattle.io/v3public,192
+pkg/schemas/mapper,1165
+pkg/schemas/project.cattle.io/v3,1474
+pkg/schemas/status,20
+pkg/settings,263
+pkg/systemaccount,170
+pkg/systemtemplate,690
+pkg/systemtokens,96
+pkg/taints,212
+pkg/telemetry,140
+pkg/tls,371
+pkg/tunnelserver,226
+pkg/tunnelserver/mcmauthorizer,340
+pkg/types/config,496
+pkg/types/config/dialer,11
+pkg/types/config/systemtokens,5
+pkg/ui,123
+pkg/user,19
+pkg/version,9
+pkg/websocket,162
+pkg/wrangler,341
+scripts,0
+tests/integration/pkg/clients,65
+tests/integration/pkg/cluster,163
+tests/integration/pkg/defaults,22
+tests/integration/pkg/namespace,20
+tests/integration/pkg/nodeconfig,89
+tests/integration/pkg/registry,228
+tests/integration/pkg/systemdnode,71
+tests/integration/pkg/tests/custom,229
+tests/integration/pkg/tests/machineprovisioning,153
+tests/integration/pkg/wait,78
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/kontainerdrivermetadata/url.go,29,Mutex Lock(),135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/kontainerdrivermetadata/url.go,28,Mutex Unlock(),137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/kontainerdrivermetadata/url.go,29,Mutex Lock(),142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/kontainerdrivermetadata/url.go,28,Mutex Unlock(),143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/kontainerdrivermetadata/metadata_handler.go,27,Mutex,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterstats/statsaggregator.go,4,Synchronous chan,221,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterstats/statsaggregator.go,1,Goroutine,222,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterstats/statsaggregator.go,3,Send,224,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterstats/statsaggregator.go,16,Select (number of branch),227,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterstats/statsaggregator.go,2,Receive,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterstats/statsaggregator.go,2,Receive,229,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterconnected/clusterconnected.go,1,Goroutine,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/customization/project/project_store.go,27,Mutex,251,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/customization/project/project_store.go,29,Mutex Lock(),252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/customization/project/project_store.go,28,Mutex Unlock(),253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/telemetry/telemetry.go,1,Goroutine,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/telemetry/telemetry.go,1,Goroutine,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/telemetry/telemetry.go,2,Receive,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/telemetry/telemetry.go,1,Goroutine,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/telemetry/telemetry.go,1,Goroutine,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/telemetry/telemetry.go,16,Select (number of branch),115,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/telemetry/telemetry.go,2,Receive,116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/tests/integration/pkg/registry/registry.go,27,Mutex,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/tests/integration/pkg/registry/registry.go,29,Mutex Lock(),192,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/tests/integration/pkg/registry/registry.go,28,Mutex Unlock(),193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,2,Receive,396,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,4,Synchronous chan,406,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,1,Goroutine,407,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,16,Select (number of branch),408,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,2,Receive,409,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,3,Send,411,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,3,Send,416,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,2,Receive,420,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/rkeworker/docker.go,3,Send,421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/metrics/metrics.go,1,Goroutine,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/metrics/garbagecollector.go,5,Go in for,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/metrics/garbagecollector.go,10,Make chan in for,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/metrics/garbagecollector.go,4,Synchronous chan,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/metrics/garbagecollector.go,1,Goroutine,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/metrics/garbagecollector.go,15,Close chan,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/metrics/garbagecollector.go,6,Range over chan,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/data/management/user_cleanup.go,1,Goroutine,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/data/management/role_data.go,27,Mutex,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/data/management/role_data.go,29,Mutex Lock(),487,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/data/management/role_data.go,28,Mutex Unlock(),488,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go,27,Mutex,335,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go,29,Mutex Lock(),336,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go,28,Mutex Unlock(),337,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/tls/tls.go,2,Receive,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/nodepool/nodepool.go,1,Goroutine,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/nodepool/nodepool.go,1,Goroutine,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/nodepool/nodepool.go,1,Goroutine,281,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/nodepool/nodepool.go,1,Goroutine,395,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clusterprovisioninglogger/log.go,30,Waitgroup,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clusterprovisioninglogger/log.go,24,Waitgroup Add(const),63,&{111974994 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clusterprovisioninglogger/log.go,1,Goroutine,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clusterprovisioninglogger/log.go,26,Waitgroup Done(),66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clusterprovisioninglogger/log.go,31,Waitgroup Wait(),74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/steve/machine/ssh.go,1,Goroutine,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterprovisioner/provisioner.go,1,Goroutine,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/clusterprovisioner/provisioner.go,1,Goroutine,452,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,8,Known chan length (length),88,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,8,Known chan length (length),90,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,8,Known chan length (length),92,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,1,Goroutine,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,3,Send,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,3,Send,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,16,Select (number of branch),132,5
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,2,Receive,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,2,Receive,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,2,Receive,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,2,Receive,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,2,Receive,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,1,Goroutine,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,3,Send,212,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalogv2/system/system.go,1,Goroutine,311,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/jailer/jailer.go,27,Mutex,20,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/jailer/jailer.go,29,Mutex Lock(),29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/jailer/jailer.go,28,Mutex Unlock(),30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,16,Select (number of branch),38,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,16,Select (number of branch),90,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,16,Select (number of branch),113,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,16,Select (number of branch),170,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/test/e2e/common_test.go,2,Receive,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/alert/statesyncer/statesyncer.go,1,Goroutine,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/providers/saml/saml_client.go,27,Mutex,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/providers/saml/saml_client.go,29,Mutex Lock(),49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/providers/saml/saml_client.go,28,Mutex Unlock(),50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,1,Goroutine,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,16,Select (number of branch),198,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,2,Receive,199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,2,Receive,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,8,Known chan length (length),227,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,1,Goroutine,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,15,Close chan,229,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,3,Send,240,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,16,Select (number of branch),243,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,2,Receive,244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/clustermanager/manager.go,2,Receive,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/rancher/rancher.go,1,Goroutine,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/purge_daemon.go,1,Goroutine,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,5,Go in for,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,10,Make chan in for,124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,10,Make chan in for,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,8,Known chan length (length),124,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,8,Known chan length (length),125,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,1,Goroutine,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,3,Send,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,2,Receive,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,15,Close chan,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,20,Receive only chan (<-chan),148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,20,Receive only chan (<-chan),148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,21,Send only chan (chan<-),148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,16,Select (number of branch),149,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,2,Receive,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,3,Send,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,2,Receive,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager_test.go,3,Send,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/tokens/manager.go,22,chan used as a param,762,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,27,Mutex,14,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,29,Mutex Lock(),37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,28,Mutex Unlock(),38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,29,Mutex Lock(),46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,28,Mutex Unlock(),48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,3,Send,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,29,Mutex Lock(),106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/logstream/logstream.go,28,Mutex Unlock(),108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/tests/integration/pkg/wait/wait.go,16,Select (number of branch),40,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/tests/integration/pkg/wait/wait.go,2,Receive,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/tests/integration/pkg/wait/wait.go,2,Receive,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/clean/binding.go,30,Waitgroup,126,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/clean/binding.go,24,Waitgroup Add(const),128,&{119762850 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/clean/binding.go,1,Goroutine,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/clean/binding.go,26,Waitgroup Done(),133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/clean/binding.go,1,Goroutine,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/clean/binding.go,26,Waitgroup Done(),140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/agent/clean/binding.go,31,Waitgroup Wait(),142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/provisioningv2/rke2/unmanaged/controller.go,1,Goroutine,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/projectsetter/store.go,22,chan used as a param,131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/customization/logging/action.go,4,Synchronous chan,291,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/customization/logging/action.go,2,Receive,323,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,4,Synchronous chan,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,1,Goroutine,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,15,Close chan,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,4,Synchronous chan,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,16,Select (number of branch),90,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,3,Send,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,2,Receive,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,1,Goroutine,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,15,Close chan,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,6,Range over chan,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,22,chan used as a param,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/store/workload/aggregate_store.go,3,Send,193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/deferred.go,16,Select (number of branch),40,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/deferred.go,2,Receive,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/deferred.go,2,Receive,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/deferred.go,1,Goroutine,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/deferred.go,2,Receive,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,4,Synchronous chan,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,1,Goroutine,131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,2,Receive,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,17,Select with default (number of branch),142,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,2,Receive,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,16,Select (number of branch),150,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,2,Receive,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,2,Receive,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,2,Receive,164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/multiclustermanager/app.go,1,Goroutine,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/approuter/approuter.go,1,Goroutine,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go,8,Known chan length (length),278,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go,1,Goroutine,280,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go,3,Send,282,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go,16,Select (number of branch),285,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go,2,Receive,286,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go,2,Receive,288,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/service/service.go,4,Synchronous chan,420,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/service/service.go,4,Synchronous chan,421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/service/service.go,1,Goroutine,423,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/service/service.go,16,Select (number of branch),427,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/service/service.go,2,Receive,428,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/service/service.go,2,Receive,430,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/service/service.go,2,Receive,437,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/tunnelserver/peermanager.go,3,Send,197,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/tunnelserver/peermanager.go,21,Send only chan (chan<-),201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/tunnelserver/peermanager.go,21,Send only chan (chan<-),207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/tunnelserver/peermanager.go,3,Send,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,27,Mutex,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,29,Mutex Lock(),80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,28,Mutex Unlock(),82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,28,Mutex Unlock(),85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,29,Mutex Lock(),96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,28,Mutex Unlock(),98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,1,Goroutine,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,29,Mutex Lock(),103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,28,Mutex Unlock(),105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,17,Select with default (number of branch),142,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,2,Receive,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,29,Mutex Lock(),299,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go,28,Mutex Unlock(),301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/logserver/server.go,1,Goroutine,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go,27,Mutex,942,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go,28,Mutex Unlock(),950,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go,29,Mutex Lock(),951,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/norman/customization/pipeline/pipeline_execution_log.go,1,Goroutine,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/registrycertsyncer.go,1,Goroutine,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/pipelineexecution.go,1,Goroutine,190,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/pipelineexecution.go,1,Goroutine,191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/channelserver/channelserver.go,16,Select (number of branch),57,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/channelserver/channelserver.go,2,Receive,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/channelserver/channelserver.go,2,Receive,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/types/rpc_server.go,22,chan used as a param,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/types/rpc_server.go,22,chan used as a param,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/types/rpc_server.go,3,Send,124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/types/rpc_server.go,3,Send,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/types/rpc_server.go,3,Send,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/types/rpc_server.go,3,Send,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go,27,Mutex,20,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go,28,Mutex Unlock(),30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go,29,Mutex Lock(),31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go,1,Goroutine,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go,29,Mutex Lock(),49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go,28,Mutex Unlock(),54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/cmd/utils.go,4,Synchronous chan,15,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/cmd/utils.go,1,Goroutine,21,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/kontainer-engine/cmd/utils.go,2,Receive,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/watcher/watcher.go,1,Goroutine,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/gke/gke_cluster_handler.go,16,Select (number of branch),317,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/gke/gke_cluster_handler.go,2,Receive,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/management/gke/gke_cluster_handler.go,2,Receive,328,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go,1,Goroutine,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go,16,Select (number of branch),124,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go,2,Receive,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/audit/logwriter.go,1,Goroutine,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/audit/logwriter.go,2,Receive,19,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go,16,Select (number of branch),124,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go,2,Receive,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/steve/navlinks/store.go,8,Known chan length (length),66,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/steve/navlinks/store.go,1,Goroutine,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/steve/navlinks/store.go,15,Close chan,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/api/steve/navlinks/store.go,3,Send,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/auth/requests/authenticate.go,1,Goroutine,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher++rancher/pkg/catalog/manager/catalog_common.go,1,Goroutine,65,

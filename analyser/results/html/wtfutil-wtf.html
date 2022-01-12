@@ -1,0 +1,1474 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : wtfutil/wtf ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/wtfutil/wtf/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> modules/textfile ( 6 features, 1/3 featured file ) </li>
+          
+          <li> modules/cmdrunner ( 11 features, 1/2 featured file ) </li>
+          
+          <li> modules/spotifyweb ( 5 features, 1/3 featured file ) </li>
+          
+          <li> app ( 15 features, 2/11 featured file ) </li>
+          
+          <li> modules/cryptoexchanges/cryptolive/price ( 1 features, 1/3 featured file ) </li>
+          
+          <li> modules/cryptoexchanges/cryptolive ( 3 features, 1/2 featured file ) </li>
+          
+          <li> modules/transmission ( 1 features, 1/4 featured file ) </li>
+          
+          <li> view ( 2 features, 1/12 featured file ) </li>
+          
+          <li> modules/cryptoexchanges/cryptolive/toplist ( 1 features, 1/4 featured file ) </li>
+          
+    <li> Num of Packages with features : 9/90</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>6 </td>
+      <td>11 </td>
+      <td>4</td>
+      <td>13</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>3 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go</a></td>
+              <td>Goroutine</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>134</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go</a></td>
+              <td>Receive</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/textfile/widget.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Synchronous chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Synchronous chan</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Send</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>56</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Send</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Send</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Send</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cmdrunner/widget.go</a></td>
+              <td>Receive</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go#L17">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go</a></td>
+              <td>Synchronous chan</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go</a></td>
+              <td>Send</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/spotifyweb/widget.go</a></td>
+              <td>Receive</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/scheduler.go#L23">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/scheduler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>23</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/scheduler.go#L24">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/scheduler.go</a></td>
+              <td>Receive</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/scheduler.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/scheduler.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Goroutine</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Goroutine</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Go in for</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Goroutine</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Go in for</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Goroutine</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L167">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Goroutine</td>
+              <td>167</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L169">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>169</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L170">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Receive</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L179">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Receive</td>
+              <td>179</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go#L185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/app/wtf_app.go</a></td>
+              <td>Receive</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/price/widget.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/price/widget.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/widget.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/widget.go</a></td>
+              <td>Waitgroup</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/widget.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/widget.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>44</td>
+              <td>&amp;{27416394 INT 2} val is : 2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/widget.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/widget.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/transmission/widget.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/transmission/widget.go</a></td>
+              <td>Goroutine</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/view/base.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/view/base.go</a></td>
+              <td>Synchronous chan</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/view/base.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/view/base.go</a></td>
+              <td>Send</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/wtfutil/wtf/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/toplist/widget.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/wtfutil&#43;&#43;wtf/modules/cryptoexchanges/cryptolive/toplist/widget.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 6 ,  11 ,
+     4 ,
+     13 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

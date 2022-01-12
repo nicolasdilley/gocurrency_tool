@@ -1,0 +1,660 @@
+Line num,245145
+packages num,22,122
+files num,59,1079
+Average Line num per featured file,675,39856
+,1259
+.git/refs/remotes/origin/dependabot/go_modules,0
+internal/addrs,8220
+internal/backend,805
+internal/backend/init,153
+internal/backend/local,2882
+internal/backend/remote,6661
+internal/backend/remote-state/artifactory,178
+internal/backend/remote-state/azure,1492
+internal/backend/remote-state/consul,1107
+internal/backend/remote-state/cos,754
+internal/backend/remote-state/etcdv2,161
+internal/backend/remote-state/etcdv3,560
+internal/backend/remote-state/gcs,600
+internal/backend/remote-state/http,651
+internal/backend/remote-state/inmem,287
+internal/backend/remote-state/kubernetes,1067
+internal/backend/remote-state/manta,589
+internal/backend/remote-state/oss,1587
+internal/backend/remote-state/pg,674
+internal/backend/remote-state/s3,1727
+internal/backend/remote-state/swift,1011
+internal/builtin/providers/terraform,638
+internal/builtin/provisioners/file,258
+internal/builtin/provisioners/local-exec,365
+internal/builtin/provisioners/remote-exec,503
+internal/command,28634
+internal/command/arguments,1914
+internal/command/cliconfig,1500
+internal/command/clistate,465
+internal/command/e2etest,1253
+internal/command/format,7934
+internal/command/jsonconfig,528
+internal/command/jsonplan,1436
+internal/command/jsonprovider,561
+internal/command/jsonstate,1265
+internal/command/testdata,39
+internal/command/testdata/login-oauth-server,189
+internal/command/testdata/login-tfe-server,45
+internal/command/views,6504
+internal/command/views/json,1691
+internal/command/webbrowser,187
+internal/communicator,259
+internal/communicator/remote,53
+internal/communicator/shared,136
+internal/communicator/ssh,1902
+internal/communicator/winrm,699
+internal/configs,6704
+internal/configs/configload,958
+internal/configs/configschema,3730
+internal/configs/hcl2shim,2792
+internal/copy,199
+internal/dag,2326
+internal/depsfile,852
+internal/didyoumean,59
+internal/e2e,185
+internal/earlyconfig,362
+internal/experiments,102
+internal/getmodules,148
+internal/getproviders,0
+internal/grpcwrap,759
+internal/helper/slowmessage,86
+internal/helper/wrappedreadline,82
+internal/helper/wrappedstreams,80
+internal/httpclient,196
+internal/initwd,1640
+internal/instances,956
+internal/ipaddr,283
+internal/lang,2398
+internal/lang/blocktoattr,986
+internal/lang/funcs,7195
+internal/lang/marks,25
+internal/legacy/helper/acctest,198
+internal/legacy/helper/hashcode,55
+internal/legacy/helper/schema,23479
+internal/legacy/terraform,10060
+internal/logging,363
+internal/modsdir,105
+internal/moduledeps,326
+internal/moduletest,580
+internal/plans,792
+internal/plans/internal/planproto,997
+internal/plans/objchange,5874
+internal/plans/planfile,1285
+internal/plugin,1562
+internal/plugin/convert,995
+internal/plugin/discovery,1155
+internal/plugin/mock_proto,466
+internal/plugin6,1161
+internal/plugin6/convert,1264
+internal/plugin6/mock_proto,216
+internal/provider-simple,105
+internal/provider-simple/main,14
+internal/provider-simple-v6,105
+internal/provider-simple-v6/main,14
+internal/provider-terraform/main,14
+internal/providercache,2879
+internal/providers,228
+internal/provisioner-local-exec/main,14
+internal/provisioners,42
+internal/refactoring,1329
+internal/registry,552
+internal/registry/regsrc,457
+internal/registry/response,256
+internal/registry/test,209
+internal/repl,632
+internal/replacefile,68
+internal/states,2250
+internal/states/remote,844
+internal/states/statefile,1896
+internal/states/statemgr,1595
+internal/states/statemgr/testdata,20
+internal/terminal,363
+internal/terraform,44469
+internal/tfdiags,2136
+internal/tfplugin5,4567
+internal/tfplugin6,3980
+internal/typeexpr,388
+tools,9
+tools/loggraphdiff,110
+tools/protobuf-compile,163
+version,18
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/locker.go,16,Select (number of branch),98,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/locker.go,2,Receive,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/locker.go,2,Receive,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/statemgr_test.go,4,Synchronous chan,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/statemgr_test.go,15,Close chan,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/statemgr_test.go,4,Synchronous chan,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/statemgr_test.go,1,Goroutine,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/statemgr_test.go,15,Close chan,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/statemgr_test.go,2,Receive,73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/statemgr_test.go,2,Receive,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/filesystem_test.go,30,Waitgroup,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/filesystem_test.go,5,Go in for,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/filesystem_test.go,7,Goroutine in for with constant (constant),39,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/filesystem_test.go,24,Waitgroup Add(const),38,&{46142401 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/filesystem_test.go,1,Goroutine,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/filesystem_test.go,26,Waitgroup Done(),40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/statemgr/filesystem_test.go,31,Waitgroup Wait(),44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/init/init.go,27,Mutex,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/init/init.go,29,Mutex Lock(),48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/init/init.go,28,Mutex Unlock(),49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/init/init.go,29,Mutex Lock(),86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/init/init.go,28,Mutex Unlock(),87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/init/init.go,29,Mutex Lock(),99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/init/init.go,28,Mutex Unlock(),100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client_test.go,4,Synchronous chan,379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client_test.go,15,Close chan,381,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client_test.go,2,Receive,392,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client_test.go,2,Receive,436,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client_test.go,4,Synchronous chan,472,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client_test.go,15,Close chan,474,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,17,Select with default (number of branch),362,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,2,Receive,363,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,1,Goroutine,459,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,16,Select (number of branch),461,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,2,Receive,462,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,17,Select with default (number of branch),484,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,2,Receive,485,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,2,Receive,497,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,1,Goroutine,533,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,17,Select with default (number of branch),587,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/consul/client.go,2,Receive,588,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,27,Mutex,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,29,Mutex Lock(),107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,28,Mutex Unlock(),108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,1,Goroutine,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,8,Known chan length (length),253,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,1,Goroutine,255,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,16,Select (number of branch),259,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,2,Receive,260,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,3,Send,262,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,2,Receive,263,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,16,Select (number of branch),273,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,2,Receive,274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,2,Receive,280,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,2,Receive,285,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,2,Receive,289,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,29,Mutex Lock(),329,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,28,Mutex Unlock(),330,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator.go,1,Goroutine,372,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator_test.go,1,Goroutine,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator_test.go,5,Go in for,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator_test.go,1,Goroutine,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/ssh/communicator_test.go,1,Goroutine,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/remote/state_test.go,30,Waitgroup,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/remote/state_test.go,5,Go in for,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/remote/state_test.go,7,Goroutine in for with constant (constant),36,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/remote/state_test.go,24,Waitgroup Add(const),35,&{46497458 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/remote/state_test.go,1,Goroutine,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/remote/state_test.go,26,Waitgroup Done(),37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/states/remote/state_test.go,31,Waitgroup Wait(),43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,4,Synchronous chan,89,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,1,Goroutine,90,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,15,Close chan,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,16,Select (number of branch),96,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,2,Receive,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,2,Receive,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,16,Select (number of branch),138,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,2,Receive,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/communicator/communicator.go,2,Receive,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json_test.go,8,Known chan length (length),23,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json_test.go,3,Send,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json_test.go,3,Send,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json_test.go,2,Receive,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json_test.go,2,Receive,206,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui.go,4,Synchronous chan,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui.go,4,Synchronous chan,124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui.go,1,Goroutine,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui.go,16,Select (number of branch),140,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui.go,2,Receive,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui.go,2,Receive,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json.go,4,Synchronous chan,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json.go,4,Synchronous chan,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json.go,1,Goroutine,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json.go,16,Select (number of branch),83,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json.go,2,Receive,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_json.go,2,Receive,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui_test.go,2,Receive,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui_test.go,2,Receive,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/views/hook_ui_test.go,2,Receive,184,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/file/resource_provisioner.go,1,Goroutine,167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/file/resource_provisioner.go,2,Receive,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,4,Synchronous chan,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,4,Synchronous chan,153,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,1,Goroutine,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,2,Receive,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,2,Receive,248,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,4,Synchronous chan,258,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,4,Synchronous chan,259,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,1,Goroutine,265,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,2,Receive,287,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/e2etest/unmanaged_test.go,2,Receive,354,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,27,Mutex,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,30,Waitgroup,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,24,Waitgroup Add(const),69,&{12981031 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,29,Mutex Lock(),86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,28,Mutex Unlock(),91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,26,Waitgroup Done(),93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,1,Goroutine,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,1,Goroutine,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terminal/testing.go,31,Waitgroup Wait(),123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_walk.go,2,Receive,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context.go,4,Synchronous chan,327,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context.go,4,Synchronous chan,328,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context.go,1,Goroutine,334,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context.go,15,Close chan,335,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context.go,16,Select (number of branch),337,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context.go,2,Receive,338,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context.go,2,Receive,341,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/util.go,9,Unknown chan length,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/util.go,3,Send,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/util.go,17,Select with default (number of branch),31,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/util.go,3,Send,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/util.go,17,Select with default (number of branch),42,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/util.go,2,Receive,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/eval_context_builtin_test.go,27,Mutex,14,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/eval_context_builtin_test.go,27,Mutex,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_input_test.go,27,Mutex,126,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_input_test.go,29,Mutex Lock(),136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_input_test.go,28,Mutex Unlock(),137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,8,Known chan length (length),452,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,8,Known chan length (length),453,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,1,Goroutine,454,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,3,Send,456,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,1,Goroutine,458,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,3,Send,459,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,16,Select (number of branch),462,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,2,Receive,463,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_test.go,2,Receive,465,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply2_test.go,27,Mutex,196,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply2_test.go,29,Mutex Lock(),205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply2_test.go,28,Mutex Unlock(),207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_refresh_test.go,27,Mutex,1129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_refresh_test.go,29,Mutex Lock(),1131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_refresh_test.go,28,Mutex Unlock(),1132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,27,Mutex,973,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,29,Mutex Lock(),980,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,28,Mutex Unlock(),981,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,29,Mutex Lock(),1009,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,28,Mutex Unlock(),1010,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,27,Mutex,1035,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,29,Mutex Lock(),1041,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,28,Mutex Unlock(),1042,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,27,Mutex,1090,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,29,Mutex Lock(),1097,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,28,Mutex Unlock(),1098,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,29,Mutex Lock(),1127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_plan_test.go,28,Mutex Unlock(),1128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),233,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),237,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,294,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),303,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),305,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),309,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,4,Synchronous chan,778,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,16,Select (number of branch),784,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,785,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,788,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,15,Close chan,792,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,932,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),934,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),936,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,1176,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),1178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),1179,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,1271,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),1273,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),1274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,1366,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),1368,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),1369,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,1,Goroutine,1688,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,4,Synchronous chan,1706,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,1,Goroutine,1707,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,3,Send,1711,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1714,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,4,Synchronous chan,1747,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,15,Close chan,1750,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,4,Synchronous chan,1768,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,1,Goroutine,1769,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,3,Send,1773,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,4,Synchronous chan,1776,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,1,Goroutine,1777,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,15,Close chan,1778,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1779,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,16,Select (number of branch),1784,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1785,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1787,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,16,Select (number of branch),1791,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1792,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1793,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1798,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,4,Synchronous chan,1847,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,1,Goroutine,1850,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1852,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,15,Close chan,1856,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,4,Synchronous chan,1865,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,1,Goroutine,1866,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,3,Send,1870,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,2,Receive,1874,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,2362,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),2372,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),2373,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,2701,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),2709,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),2711,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),2729,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),2730,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,3127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),3129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),3130,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,3242,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),3244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),3245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,3381,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),3386,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),3387,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),3458,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),3459,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,3691,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),3693,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),3694,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,4694,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),4702,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),4703,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,4761,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),4769,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),4770,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,4988,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),4997,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),4998,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,5046,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),5055,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),5056,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,9689,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),9693,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),9694,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,27,Mutex,9770,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,29,Mutex Lock(),9773,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/terraform/context_apply_test.go,28,Mutex Unlock(),9774,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/kubernetes/backend_test.go,30,Waitgroup,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/kubernetes/backend_test.go,5,Go in for,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/kubernetes/backend_test.go,24,Waitgroup Add(const),98,&{53531558 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/kubernetes/backend_test.go,1,Goroutine,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/kubernetes/backend_test.go,26,Waitgroup Done(),100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/kubernetes/backend_test.go,31,Waitgroup Wait(),123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,21,Send only chan (chan<-),40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,130,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,147,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_events_test.go,3,Send,174,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_test.go,4,Synchronous chan,1271,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_test.go,1,Goroutine,1274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_test.go,15,Close chan,1278,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/providercache/installer_test.go,6,Range over chan,1280,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,16,Select (number of branch),492,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,2,Receive,493,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,2,Receive,495,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,16,Select (number of branch),508,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,2,Receive,509,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,2,Receive,510,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,16,Select (number of branch),528,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,2,Receive,529,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider_test.go,2,Receive,530,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,16,Select (number of branch),242,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,243,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,16,Select (number of branch),253,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,254,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,255,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,277,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,4,Synchronous chan,298,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,1,Goroutine,299,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,15,Close chan,301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,16,Select (number of branch),305,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,306,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,308,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,16,Select (number of branch),314,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,315,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,316,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,16,Select (number of branch),329,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,330,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provisioner_test.go,2,Receive,331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider.go,17,Select with default (number of branch),155,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/provider.go,2,Receive,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/schema.go,27,Mutex,38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/schema.go,29,Mutex Lock(),43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/schema.go,28,Mutex Unlock(),44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/schema.go,29,Mutex Lock(),53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/legacy/helper/schema/schema.go,28,Mutex Unlock(),54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner.go,1,Goroutine,242,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner.go,2,Receive,243,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner.go,5,Go in for,255,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner.go,5,Go in for,256,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner.go,1,Goroutine,255,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner.go,1,Goroutine,256,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,4,Synchronous chan,210,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,15,Close chan,212,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,4,Synchronous chan,216,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,15,Close chan,218,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,4,Synchronous chan,239,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,1,Goroutine,242,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,15,Close chan,243,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,16,Select (number of branch),247,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,2,Receive,248,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,2,Receive,250,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/remote-exec/resource_provisioner_test.go,2,Receive,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/webbrowser/mock.go,1,Goroutine,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,4,Synchronous chan,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,15,Close chan,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,2,Receive,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,4,Synchronous chan,242,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,15,Close chan,255,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,16,Select (number of branch),259,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,2,Receive,260,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,2,Receive,262,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,27,Mutex,291,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,29,Mutex Lock(),293,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk_test.go,28,Mutex Unlock(),294,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,4,Synchronous chan,182,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,4,Synchronous chan,183,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,5,Go in for,297,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,10,Make chan in for,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,10,Make chan in for,273,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,8,Known chan length (length),270,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,4,Synchronous chan,273,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,4,Synchronous chan,287,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,1,Goroutine,297,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,5,Go in for,304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,1,Goroutine,304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,8,Known chan length (length),331,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,3,Send,332,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,15,Close chan,333,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,16,Select (number of branch),335,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,2,Receive,336,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,2,Receive,340,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,2,Receive,344,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,17,Select with default (number of branch),370,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,2,Receive,371,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,21,Send only chan (chan<-),410,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,20,Receive only chan (<-chan),411,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,16,Select (number of branch),417,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,2,Receive,418,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,2,Receive,422,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,3,Send,425,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,2,Receive,428,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,3,Send,441,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/walk.go,3,Send,447,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,27,Mutex,267,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,29,Mutex Lock(),269,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,28,Mutex Unlock(),270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,27,Mutex,302,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,29,Mutex Lock(),304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,28,Mutex Unlock(),305,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,27,Mutex,394,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,29,Mutex Lock(),396,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/dag/dag_test.go,28,Mutex Unlock(),397,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/helper/slowmessage/slowmessage.go,8,Known chan length (length),18,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/helper/slowmessage/slowmessage.go,1,Goroutine,19,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/helper/slowmessage/slowmessage.go,3,Send,20,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/helper/slowmessage/slowmessage.go,16,Select (number of branch),24,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/helper/slowmessage/slowmessage.go,2,Receive,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/helper/slowmessage/slowmessage.go,2,Receive,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/helper/slowmessage/slowmessage.go,2,Receive,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,8,Known chan length (length),99,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,1,Goroutine,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,3,Send,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,3,Send,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,16,Select (number of branch),150,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,2,Receive,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,2,Receive,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,2,Receive,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,2,Receive,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,4,Synchronous chan,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input.go,4,Synchronous chan,182,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input_test.go,1,Goroutine,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/ui_input_test.go,1,Goroutine,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/login.go,4,Synchronous chan,419,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/login.go,3,Send,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/login.go,15,Close chan,447,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/login.go,1,Goroutine,456,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/login.go,15,Close chan,467,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/login.go,2,Receive,504,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/command_test.go,1,Goroutine,580,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/command_test.go,4,Synchronous chan,610,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/command_test.go,1,Goroutine,611,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/command_test.go,15,Close chan,612,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/command_test.go,2,Receive,626,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,1,Goroutine,368,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,16,Select (number of branch),369,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,370,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,372,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,16,Select (number of branch),402,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,403,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,16,Select (number of branch),411,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,412,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,16,Select (number of branch),420,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,421,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,422,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,427,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/meta.go,2,Receive,430,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,4,Synchronous chan,969,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,4,Synchronous chan,970,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,15,Close chan,983,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,3,Send,991,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,17,Select with default (number of branch),1026,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,2,Receive,1027,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,9,Unknown chan length,1231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,17,Select with default (number of branch),1255,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,3,Send,1256,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,2,Receive,1258,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/plan_test.go,2,Receive,1269,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,1,Goroutine,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,9,Unknown chan length,295,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,17,Select with default (number of branch),325,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,3,Send,326,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,2,Receive,328,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,2,Receive,339,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,27,Mutex,475,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,29,Mutex Lock(),478,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,28,Mutex Unlock(),479,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,4,Synchronous chan,1084,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,4,Synchronous chan,1085,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,15,Close chan,1100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,3,Send,1113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,17,Select with default (number of branch),1154,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/apply_test.go,2,Receive,1155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/init_test.go,4,Synchronous chan,1389,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/command/init_test.go,15,Close chan,1390,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/swift/client.go,1,Goroutine,160,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/swift/client.go,16,Select (number of branch),444,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/swift/client.go,2,Receive,445,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/swift/client.go,17,Select with default (number of branch),449,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/swift/client.go,2,Receive,450,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/remote-state/swift/client.go,2,Receive,485,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner.go,4,Synchronous chan,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner.go,1,Goroutine,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner.go,16,Select (number of branch),181,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner.go,2,Receive,182,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner.go,2,Receive,183,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner.go,21,Send only chan (chan<-),207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,4,Synchronous chan,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,1,Goroutine,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,15,Close chan,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,16,Select (number of branch),79,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,2,Receive,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,2,Receive,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,16,Select (number of branch),92,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,2,Receive,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/builtin/provisioners/local-exec/resource_provisioner_test.go,2,Receive,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh.go,4,Synchronous chan,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh.go,1,Goroutine,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh.go,15,Close chan,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan.go,4,Synchronous chan,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan.go,1,Goroutine,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan.go,15,Close chan,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply.go,4,Synchronous chan,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply.go,1,Goroutine,158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply.go,15,Close chan,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,2,Receive,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,2,Receive,89,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,27,Mutex,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,29,Mutex Lock(),162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,28,Mutex Unlock(),163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,2,Receive,190,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,2,Receive,243,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_apply_test.go,2,Receive,288,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,1,Goroutine,315,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,20,Receive only chan (<-chan),331,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,16,Select (number of branch),339,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,2,Receive,340,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,1,Goroutine,360,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,16,Select (number of branch),362,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,2,Receive,363,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,2,Receive,367,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,2,Receive,370,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend.go,2,Receive,375,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh_test.go,2,Receive,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh_test.go,2,Receive,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh_test.go,2,Receive,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh_test.go,2,Receive,191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh_test.go,2,Receive,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_refresh_test.go,2,Receive,246,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,257,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,382,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,474,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,518,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,569,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,623,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/hashicorp++terraform/internal/backend/local/backend_plan_test.go,2,Receive,698,

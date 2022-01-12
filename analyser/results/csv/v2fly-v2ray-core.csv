@@ -1,0 +1,524 @@
+Line num,72417
+packages num,36,139
+files num,52,584
+Average Line num per featured file,172,8966
+,1128
+.github/linters,0
+app,1
+app/browserforwarder,250
+app/commander,377
+app/dispatcher,733
+app/dns,3980
+app/dns/fakedns,564
+app/log,416
+app/log/command,363
+app/observatory,646
+app/observatory/command,350
+app/policy,806
+app/proxyman,935
+app/proxyman/command,1294
+app/proxyman/inbound,906
+app/proxyman/outbound,406
+app/reverse,860
+app/router,2638
+app/router/command,1042
+app/stats,885
+app/stats/command,945
+common,264
+common/antireplay,78
+common/bitmask,44
+common/buf,1825
+common/bytespool,50
+common/cache,134
+common/cmdarg,10
+common/crypto,774
+common/crypto/internal,239
+common/dice,79
+common/drain,62
+common/errors,230
+common/errors/errorgen,30
+common/log,394
+common/mux,1263
+common/net,1493
+common/peer,24
+common/platform,204
+common/platform/ctlcmd,56
+common/platform/filesystem,51
+common/platform/securedload,80
+common/protocol,1487
+common/protocol/bittorrent,22
+common/protocol/dns,123
+common/protocol/http,306
+common/protocol/tls,282
+common/protocol/tls/cert,268
+common/protocol/udp,11
+common/retry,137
+common/serial,364
+common/session,165
+common/signal,156
+common/signal/done,35
+common/signal/pubsub,113
+common/signal/semaphore,19
+common/strmatcher,1205
+common/task,206
+common/uuid,132
+features,15
+features/dns,60
+features/dns/localdns,69
+features/extension,29
+features/inbound,21
+features/outbound,25
+features/policy,126
+features/routing,61
+features/routing/dns,62
+features/routing/session,96
+features/stats,91
+infra/conf,4951
+infra/conf/cfgcommon,442
+infra/conf/cfgcommon/duration,58
+infra/conf/command,43
+infra/conf/geodata,261
+infra/conf/geodata/memconservative,309
+infra/conf/geodata/standard,58
+infra/conf/json,204
+infra/conf/rule,401
+infra/conf/serial,132
+infra/control,692
+infra/control/main,43
+infra/vformat,153
+infra/vprotogen,210
+main,144
+main/confloader,32
+main/confloader/external,76
+main/distro/all,53
+main/distro/debug,9
+main/json,39
+main/jsonem,45
+proxy,26
+proxy/blackhole,350
+proxy/dns,746
+proxy/dokodemo,392
+proxy/freedom,437
+proxy/http,844
+proxy/loopback,228
+proxy/mtproto,606
+proxy/shadowsocks,1298
+proxy/socks,1238
+proxy/trojan,1207
+proxy/vless,216
+proxy/vless/encoding,510
+proxy/vless/inbound,588
+proxy/vless/outbound,266
+proxy/vmess,523
+proxy/vmess/aead,456
+proxy/vmess/encoding,1203
+proxy/vmess/inbound,609
+proxy/vmess/outbound,352
+testing/mocks,367
+testing/scenarios,5875
+testing/servers/http,33
+testing/servers/tcp,109
+testing/servers/udp,64
+transport,149
+transport/internet,1836
+transport/internet/domainsocket,393
+transport/internet/grpc,353
+transport/internet/grpc/encoding,357
+transport/internet/headers/http,1231
+transport/internet/headers/noop,195
+transport/internet/headers/srtp,223
+transport/internet/headers/tls,185
+transport/internet/headers/utp,180
+transport/internet/headers/wechat,174
+transport/internet/headers/wireguard,144
+transport/internet/http,602
+transport/internet/kcp,2757
+transport/internet/quic,858
+transport/internet/tagged,7
+transport/internet/tagged/taggedimpl,45
+transport/internet/tcp,420
+transport/internet/tls,883
+transport/internet/udp,572
+transport/internet/websocket,980
+transport/pipe,380
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/grpc/dial.go,27,Mutex,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/grpc/dial.go,29,Mutex Lock(),71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/grpc/dial.go,28,Mutex Unlock(),72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/grpc/dial.go,29,Mutex Lock(),79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/grpc/dial.go,28,Mutex Unlock(),80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/grpc/hub.go,2,Receive,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/grpc/hub.go,1,Goroutine,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/done/done.go,17,Select with default (number of branch),23,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/done/done.go,2,Receive,24,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/blackhole/blackhole_test.go,4,Synchronous chan,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/blackhole/blackhole_test.go,1,Goroutine,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/blackhole/blackhole_test.go,3,Send,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/blackhole/blackhole_test.go,2,Receive,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/trojan/server.go,17,Select with default (number of branch),220,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/trojan/server.go,2,Receive,221,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/connforwarder.go,2,Receive,21,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/connforwarder.go,2,Receive,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/hub.go,1,Goroutine,164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/connection.go,2,Receive,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/connection.go,2,Receive,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/connection.go,2,Receive,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/connection.go,2,Receive,188,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/connection.go,2,Receive,199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/testing/servers/tcp/tcp.go,1,Goroutine,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/testing/servers/tcp/tcp.go,5,Go in for,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/testing/servers/tcp/tcp.go,1,Goroutine,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/quic_test.go,1,Goroutine,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/quic_test.go,1,Goroutine,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/quic_test.go,1,Goroutine,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/main/distro/debug/debug.go,1,Goroutine,8,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,17,Select with default (number of branch),23,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,3,Send,24,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,2,Receive,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,16,Select (number of branch),34,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,2,Receive,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,2,Receive,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,17,Select with default (number of branch),47,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,2,Receive,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/outbound.go,2,Receive,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/commander.go,8,Known chan length (length),74,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/commander/commander.go,1,Goroutine,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/v2ray_test.go,8,Known chan length (length),28,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/v2ray_test.go,3,Send,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/v2ray_test.go,2,Receive,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,9,Unknown chan length,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,22,chan used as a param,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,17,Select with default (number of branch),75,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,2,Receive,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,17,Select with default (number of branch),90,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,2,Receive,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,4,Synchronous chan,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,1,Goroutine,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,16,Select (number of branch),108,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,2,Receive,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,2,Receive,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,22,chan used as a param,147,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,16,Select (number of branch),148,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,3,Send,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,2,Receive,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,22,chan used as a param,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,17,Select with default (number of branch),155,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,3,Send,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,1,Goroutine,158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,22,chan used as a param,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,16,Select (number of branch),163,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,3,Send,164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,2,Receive,165,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,22,chan used as a param,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,17,Select with default (number of branch),170,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,3,Send,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel.go,1,Goroutine,173,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/testing/servers/udp/udp.go,1,Goroutine,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/server.go,1,Goroutine,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/server.go,1,Goroutine,143,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/server.go,17,Select with default (number of branch),238,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/server.go,2,Receive,239,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/client.go,1,Goroutine,160,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/client.go,1,Goroutine,202,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/client.go,1,Goroutine,203,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/client.go,16,Select (number of branch),226,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/client.go,2,Receive,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/client.go,2,Receive,232,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/mux/client.go,1,Goroutine,313,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/kcp_test.go,1,Goroutine,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/kcp_test.go,1,Goroutine,59,
+,9,Unknown chan length,11,
+,3,Send,14,
+,3,Send,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/browserforwarder/forwarder.go,1,Goroutine,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/udp/dispatcher_test.go,1,Goroutine,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/testing/scenarios/policy_test.go,1,Goroutine,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/testing/scenarios/vmess_test.go,2,Receive,933,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/testing/scenarios/vmess_test.go,2,Receive,1183,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/hub.go,17,Select with default (number of branch),33,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/hub.go,2,Receive,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/hub.go,2,Receive,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/hub.go,5,Go in for,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/hub.go,1,Goroutine,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/hub.go,1,Goroutine,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/dialer.go,17,Select with default (number of branch),53,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/quic/dialer.go,2,Receive,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/stats_test.go,16,Select (number of branch),53,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/stats_test.go,2,Receive,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/stats_test.go,2,Receive,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),79,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,15,Close chan,165,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,17,Select with default (number of branch),167,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,170,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,172,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,15,Close chan,176,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),179,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,182,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,184,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,198,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,209,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,17,Select with default (number of branch),220,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,221,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,223,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,226,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,15,Close chan,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,232,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),234,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,236,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,237,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,241,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),243,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,246,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),253,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,254,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,256,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,258,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,272,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,273,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,279,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,282,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,283,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),287,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,288,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,290,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,292,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,293,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,297,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),299,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,300,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,302,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,306,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,309,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,315,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,17,Select with default (number of branch),316,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,317,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,17,Select with default (number of branch),321,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,322,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,323,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,15,Close chan,326,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),329,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,330,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,332,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,334,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,352,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,4,Synchronous chan,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,355,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,360,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,361,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,362,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,364,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,365,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,1,Goroutine,369,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,371,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,17,Select with default (number of branch),376,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,377,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,382,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,17,Select with default (number of branch),386,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,387,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,389,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,3,Send,391,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,15,Close chan,395,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,16,Select (number of branch),398,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,399,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,401,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/stats/channel_test.go,2,Receive,403,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/domainsocket/listener.go,1,Goroutine,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/observatory/observer.go,1,Goroutine,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,8,Known chan length (length),23,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,5,Go in for,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,2,Receive,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,1,Goroutine,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,17,Select with default (number of branch),34,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,3,Send,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,16,Select (number of branch),42,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,2,Receive,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,2,Receive,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/task/task.go,2,Receive,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/hub.go,2,Receive,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/hub.go,1,Goroutine,165,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/dialer.go,27,Mutex,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/dialer.go,29,Mutex Lock(),32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/dialer.go,28,Mutex Unlock(),33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/dialer.go,29,Mutex Lock(),36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/dialer.go,28,Mutex Unlock(),37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dispatcher/default.go,1,Goroutine,216,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dispatcher/default.go,1,Goroutine,229,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dispatcher/default.go,1,Goroutine,231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dispatcher/default.go,17,Select with default (number of branch),267,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dispatcher/default.go,2,Receive,268,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/ws_test.go,1,Goroutine,24,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/ws_test.go,2,Receive,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/ws_test.go,1,Goroutine,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/websocket/ws_test.go,1,Goroutine,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/notifier.go,17,Select with default (number of branch),17,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/notifier.go,3,Send,18,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer.go,17,Select with default (number of branch),24,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer.go,3,Send,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer.go,17,Select with default (number of branch),31,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer.go,2,Receive,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer.go,8,Known chan length (length),77,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,5,Go in for,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,1,Goroutine,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,4,Synchronous chan,334,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,1,Goroutine,335,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,16,Select (number of branch),337,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,2,Receive,338,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,2,Receive,339,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,16,Select (number of branch),343,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,2,Receive,344,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,2,Receive,345,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,15,Close chan,348,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,16,Select (number of branch),358,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,2,Receive,359,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_tcp.go,2,Receive,361,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,4,Synchronous chan,274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,1,Goroutine,275,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,16,Select (number of branch),277,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,2,Receive,278,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,2,Receive,279,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,16,Select (number of branch),283,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,2,Receive,284,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,2,Receive,285,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,15,Close chan,288,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,16,Select (number of branch),298,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,2,Receive,299,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_udp.go,2,Receive,301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,5,Go in for,173,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,1,Goroutine,173,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,4,Synchronous chan,296,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,1,Goroutine,297,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,16,Select (number of branch),299,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,2,Receive,300,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,2,Receive,301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,16,Select (number of branch),305,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,2,Receive,306,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,2,Receive,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,15,Close chan,310,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,16,Select (number of branch),320,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,2,Receive,321,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,2,Receive,323,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,17,Select with default (number of branch),329,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_quic.go,2,Receive,330,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,5,Go in for,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,1,Goroutine,227,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,4,Synchronous chan,359,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,1,Goroutine,360,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,16,Select (number of branch),362,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,2,Receive,363,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,2,Receive,364,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,16,Select (number of branch),368,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,2,Receive,369,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,2,Receive,370,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,15,Close chan,373,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,16,Select (number of branch),383,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,2,Receive,384,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/dns/nameserver_doh.go,2,Receive,386,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/app/reverse/bridge.go,1,Goroutine,154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/http/http_test.go,1,Goroutine,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/dns/dns_test.go,1,Goroutine,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/dns/dns_test.go,1,Goroutine,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/proxy/dns/dns_test.go,1,Goroutine,291,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/pubsub/pubsub.go,17,Select with default (number of branch),19,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/pubsub/pubsub.go,3,Send,20,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/pubsub/pubsub.go,8,Known chan length (length),86,16
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/listener.go,1,Goroutine,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/listener.go,5,Go in for,158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/listener.go,1,Goroutine,158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/dialer.go,8,Known chan length (length),22,1024
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/dialer.go,1,Goroutine,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/dialer.go,15,Close chan,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/dialer.go,17,Select with default (number of branch),31,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/dialer.go,3,Send,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/dialer.go,6,Range over chan,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/dialer.go,1,Goroutine,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,17,Select with default (number of branch),144,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,1,Goroutine,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,160,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,17,Select with default (number of branch),284,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,285,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,16,Select (number of branch),303,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,305,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,17,Select with default (number of branch),338,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,339,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,16,Select (number of branch),357,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,358,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,2,Receive,359,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/internet/kcp/connection.go,1,Goroutine,454,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,16,Select (number of branch),91,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,2,Receive,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,2,Receive,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,16,Select (number of branch),109,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,2,Receive,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,2,Receive,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,2,Receive,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,16,Select (number of branch),166,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,2,Receive,167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/transport/pipe/impl.go,2,Receive,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/pubsub/pubsub_test.go,17,Select with default (number of branch),15,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/pubsub/pubsub_test.go,2,Receive,16,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/pubsub/pubsub_test.go,17,Select with default (number of branch),27,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/pubsub/pubsub_test.go,2,Receive,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/notifier_test.go,17,Select with default (number of branch),15,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/notifier_test.go,2,Receive,16,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer_test.go,17,Select with default (number of branch),41,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer_test.go,2,Receive,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer_test.go,17,Select with default (number of branch),54,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/v2fly++v2ray-core/common/signal/timer_test.go,2,Receive,55,

@@ -1,0 +1,1006 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : labstack/echo ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/labstack/echo/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> v4 ( 49 features, 1/20 featured file ) </li>
+          
+          <li> v4/middleware ( 50 features, 5/46 featured file ) </li>
+          
+    <li> Num of Packages with features : 2/3</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>25 </td>
+      <td>17 </td>
+      <td>25</td>
+      <td>19</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>20</td>
+      <td>5</td>
+      <td>0</td>
+      <td>20%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L220">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L222">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L223">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L735">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>735</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L743">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>743</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L744">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Receive</td>
+              <td>744</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L746">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Receive</td>
+              <td>746</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L756">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Receive</td>
+              <td>756</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L767">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>767</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L769">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>769</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L772">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>772</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L822">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>822</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L824">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>824</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L836">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>836</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L863">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>863</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L864">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>864</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L869">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>869</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L889">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>889</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L890">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>890</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L893">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>893</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L960">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>960</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L962">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>962</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L963">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>963</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L998">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>998</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1000">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1000</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1001">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1001</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1039">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1039</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1040">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1040</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1043">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1043</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1176">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Receive</td>
+              <td>1188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1194">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1196">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Receive</td>
+              <td>1211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1253">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1253</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1255">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1255</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1342">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1342</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1343">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1343</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1344">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1344</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1362">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1362</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1363">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1363</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1364">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1364</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1418">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1418</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1419">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1419</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go#L1420">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/echo_test.go</a></td>
+              <td>Send</td>
+              <td>1420</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go#L114">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>114</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>120</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go#L178">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout.go</a></td>
+              <td>Send</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>124</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go</a></td>
+              <td>Send</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go#L425">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>425</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go#L430">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go#L433">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go</a></td>
+              <td>Go in for</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go#L432">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>432</td>
+              <td>&amp;{11226248 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go#L433">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go#L435">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/rate_limiter_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>435</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L213">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>213</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L218">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Send</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L243">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Receive</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L251">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>251</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Send</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L302">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Receive</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L350">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L351">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>351</td>
+              <td>&amp;{11126623 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L353">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>353</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L370">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Goroutine</td>
+              <td>370</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go#L375">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/proxy_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>375</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L111">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>111</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Send</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Send</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L241">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>241</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L246">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L249">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Send</td>
+              <td>249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L271">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L273">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>273</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Send</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L292">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L300">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L305">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L311">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Send</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L314">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Send</td>
+              <td>314</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L319">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>319</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L430">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L431">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Goroutine</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L433">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Send</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L437">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>437</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L438">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>438</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/labstack/echo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go#L440">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/labstack&#43;&#43;echo/middleware/timeout_test.go</a></td>
+              <td>Receive</td>
+              <td>440</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 25 ,  17 ,
+     25 ,
+     19 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

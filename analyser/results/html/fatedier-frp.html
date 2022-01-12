@@ -1,0 +1,1565 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : fatedier/frp ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/fatedier/frp/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> test/e2e/mock/server/httpserver ( 2 features, 1/1 featured file ) </li>
+          
+          <li> pkg/util/net ( 27 features, 4/7 featured file ) </li>
+          
+          <li> pkg/metrics/mem ( 1 features, 1/2 featured file ) </li>
+          
+          <li> server/ports ( 1 features, 1/1 featured file ) </li>
+          
+          <li> test/e2e/features ( 10 features, 1/5 featured file ) </li>
+          
+          <li> pkg/util/vhost ( 26 features, 3/7 featured file ) </li>
+          
+          <li> server/group ( 12 features, 2/4 featured file ) </li>
+          
+          <li> client/health ( 3 features, 1/1 featured file ) </li>
+          
+          <li> pkg/proto/udp ( 11 features, 1/2 featured file ) </li>
+          
+          <li> test/e2e/framework ( 7 features, 1/10 featured file ) </li>
+          
+          <li> pkg/nathole ( 8 features, 1/1 featured file ) </li>
+          
+          <li> server/proxy ( 28 features, 3/9 featured file ) </li>
+          
+          <li> cmd/frpc/sub ( 5 features, 1/12 featured file ) </li>
+          
+          <li> test/e2e/mock/server/streamserver ( 3 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 14/47</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>17 </td>
+      <td>28 </td>
+      <td>18</td>
+      <td>37</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>4</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>7 </td>
+      <td>0 </td>
+      <td>1 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>5</td>
+      <td>0</td>
+      <td>27.77777777777778%</td>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>7 </td>
+      <td>7</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/httpserver/server.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/httpserver/server.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/httpserver/server.go#L87">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/httpserver/server.go</a></td>
+              <td>Goroutine</td>
+              <td>87</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/listener.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/listener.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/listener.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/listener.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>48</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/listener.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/listener.go</a></td>
+              <td>Send</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go</a></td>
+              <td>Synchronous chan</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go</a></td>
+              <td>Synchronous chan</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go</a></td>
+              <td>Close chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go</a></td>
+              <td>Send</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go</a></td>
+              <td>Receive</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go</a></td>
+              <td>Goroutine</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/websocket.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go</a></td>
+              <td>Send</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/kcp.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>50</td>
+              <td>20</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>74</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Send</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L174">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>175</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Send</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L202">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L204">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Receive</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L224">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Send</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go#L239">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/net/udp.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/metrics/mem/server.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/metrics/mem/server.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/ports/ports.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/ports/ports.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Waitgroup</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Mutex</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Go in for</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>53</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>52</td>
+              <td>&amp;{19822482 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Goroutine</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/features/group.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/https_test.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/https_test.go</a></td>
+              <td>Goroutine</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/https_test.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/https_test.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go</a></td>
+              <td>Synchronous chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go</a></td>
+              <td>Go in for</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go</a></td>
+              <td>Goroutine</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go#L193">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go</a></td>
+              <td>Send</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go#L213">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/vhost.go</a></td>
+              <td>Receive</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L224">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Goroutine</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>225</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Receive</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L228">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Receive</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L570">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Synchronous chan</td>
+              <td>570</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L571">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Goroutine</td>
+              <td>571</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L574">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>574</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L575">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Receive</td>
+              <td>575</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L576">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Receive</td>
+              <td>576</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L581">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Close chan</td>
+              <td>581</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L602">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>602</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L604">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Goroutine</td>
+              <td>604</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L605">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Goroutine</td>
+              <td>605</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L606">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Receive</td>
+              <td>606</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L616">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>616</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L618">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Send</td>
+              <td>618</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L621">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>621</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go#L623">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/util/vhost/reverseproxy.go</a></td>
+              <td>Send</td>
+              <td>623</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go#L122">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go</a></td>
+              <td>Synchronous chan</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go</a></td>
+              <td>Goroutine</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go</a></td>
+              <td>Send</td>
+              <td>147</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go#L197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>197</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go#L198">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go</a></td>
+              <td>Receive</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcpmux.go</a></td>
+              <td>Receive</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go</a></td>
+              <td>Send</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go#L202">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>202</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go#L203">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go</a></td>
+              <td>Receive</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/group/tcp.go</a></td>
+              <td>Receive</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/client/health/health.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/client/health/health.go</a></td>
+              <td>Goroutine</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/client/health/health.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/client/health/health.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>100</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/client/health/health.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/client/health/health.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>65</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>98</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Send</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/proto/udp/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go#L14">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go</a></td>
+              <td>Mutex</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go#L23">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go#L24">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>24</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/framework/cleanup.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Synchronous chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Goroutine</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Synchronous chan</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Send</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>150</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/pkg/nathole/nathole.go</a></td>
+              <td>Receive</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>44</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>76</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/xtcp.go</a></td>
+              <td>Send</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L87">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>87</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>88</td>
+              <td>1024</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Synchronous chan</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Send</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Send</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>138</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Receive</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Go in for</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Go in for</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>171</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L172">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Receive</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L202">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go#L214">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/udp.go</a></td>
+              <td>Goroutine</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go</a></td>
+              <td>Go in for</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go</a></td>
+              <td>Go in for</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/server/proxy/proxy.go</a></td>
+              <td>Goroutine</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go</a></td>
+              <td>Synchronous chan</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go</a></td>
+              <td>Synchronous chan</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go#L126">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go</a></td>
+              <td>Goroutine</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/cmd/frpc/sub/root.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/streamserver/server.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/streamserver/server.go</a></td>
+              <td>Goroutine</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/streamserver/server.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/streamserver/server.go</a></td>
+              <td>Go in for</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/fatedier/frp/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/streamserver/server.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/fatedier&#43;&#43;frp/test/e2e/mock/server/streamserver/server.go</a></td>
+              <td>Goroutine</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 17 ,  28 ,
+     18 ,
+     37 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

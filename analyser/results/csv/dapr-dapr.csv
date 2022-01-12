@@ -1,0 +1,552 @@
+Line num,59897
+packages num,21,169
+files num,39,261
+Average Line num per featured file,474,18488
+,0
+cmd/daprd,458
+cmd/injector,64
+cmd/operator,55
+cmd/placement,213
+cmd/sentry,87
+pkg/acl,874
+pkg/actors,3496
+pkg/actors/internal,588
+pkg/apis/components,4
+pkg/apis/components/v1alpha1,197
+pkg/apis/configuration,4
+pkg/apis/configuration/v1alpha1,468
+pkg/apis/subscriptions,4
+pkg/apis/subscriptions/v1alpha1,124
+pkg/apis/subscriptions/v2alpha1,217
+pkg/channel,14
+pkg/channel/grpc,132
+pkg/channel/http,414
+pkg/channel/testing,119
+pkg/client/clientset/versioned,70
+pkg/client/clientset/versioned/fake,75
+pkg/client/clientset/versioned/scheme,23
+pkg/client/clientset/versioned/typed/components/v1alpha1,186
+pkg/client/clientset/versioned/typed/components/v1alpha1/fake,97
+pkg/client/clientset/versioned/typed/configuration/v1alpha1,186
+pkg/client/clientset/versioned/typed/configuration/v1alpha1/fake,97
+pkg/client/informers/externalversions,153
+pkg/client/informers/externalversions/components,19
+pkg/client/informers/externalversions/components/v1alpha1,72
+pkg/client/informers/externalversions/configuration,19
+pkg/client/informers/externalversions/configuration/v1alpha1,72
+pkg/client/informers/externalversions/internalinterfaces,14
+pkg/client/listers/components/v1alpha1,55
+pkg/client/listers/configuration/v1alpha1,55
+pkg/components,536
+pkg/components/bindings,206
+pkg/components/middleware/http,116
+pkg/components/nameresolution,107
+pkg/components/pubsub,117
+pkg/components/secretstores,109
+pkg/components/state,282
+pkg/concurrency,42
+pkg/config,592
+pkg/config/env,11
+pkg/config/modes,8
+pkg/cors,2
+pkg/credentials,218
+pkg/diagnostics,1965
+pkg/diagnostics/utils,167
+pkg/encryption,467
+pkg/expr,123
+pkg/fswatcher,37
+pkg/grpc,3501
+pkg/grpc/proxy,391
+pkg/grpc/proxy/codec,93
+pkg/health,298
+pkg/http,4663
+pkg/injector,1605
+pkg/injector/monitoring,46
+pkg/messages,46
+pkg/messaging,487
+pkg/messaging/v1,1104
+pkg/metrics,204
+pkg/middleware/http,18
+pkg/modes,6
+pkg/operator,176
+pkg/operator/api,209
+pkg/operator/client,40
+pkg/operator/handlers,372
+pkg/operator/monitoring,43
+pkg/placement,780
+pkg/placement/hashing,279
+pkg/placement/monitoring,32
+pkg/placement/raft,1031
+pkg/proto,1
+pkg/proto/common/v1,677
+pkg/proto/internals/v1,793
+pkg/proto/operator/v1,695
+pkg/proto/placement/v1,500
+pkg/proto/runtime/v1,4667
+pkg/proto/sentry/v1,321
+pkg/retry,6
+pkg/runtime,4898
+pkg/runtime/pubsub,747
+pkg/runtime/security,389
+pkg/scopes,173
+pkg/sentry,77
+pkg/sentry/ca,554
+pkg/sentry/certs,234
+pkg/sentry/config,158
+pkg/sentry/csr,251
+pkg/sentry/identity,99
+pkg/sentry/identity/kubernetes,168
+pkg/sentry/identity/selfhosted,9
+pkg/sentry/kubernetes,12
+pkg/sentry/monitoring,68
+pkg/sentry/server,159
+pkg/signals,25
+pkg/testing,491
+pkg/testing/trace,23
+pkg/validation,86
+pkg/version,14
+tests/apps/actorapp,170
+tests/apps/actorclientapp,97
+tests/apps/actorfeatures,450
+tests/apps/actorinvocationapp,136
+tests/apps/actorload/cmd/stateactor,85
+tests/apps/actorload/cmd/stateactor/service,170
+tests/apps/actorload/cmd/testclient,194
+tests/apps/actorload/pkg/actor/client,8
+tests/apps/actorload/pkg/actor/client/http,123
+tests/apps/actorload/pkg/actor/runtime,8
+tests/apps/actorload/pkg/telemetry,62
+tests/apps/actorreentrancy,205
+tests/apps/binding_input,140
+tests/apps/binding_input_grpc,134
+tests/apps/binding_output,137
+tests/apps/hellodapr,85
+tests/apps/job-publisher,67
+tests/apps/middleware,66
+tests/apps/perf/actorfeatures,90
+tests/apps/perf/service_invocation_http,12
+tests/apps/perf/tester,80
+tests/apps/pubsub-publisher,238
+tests/apps/pubsub-subscriber,296
+tests/apps/pubsub-subscriber-routing,223
+tests/apps/pubsub-subscriber-routing_grpc,152
+tests/apps/pubsub-subscriber_grpc,203
+tests/apps/runtime,160
+tests/apps/runtime_init,65
+tests/apps/secretapp,143
+tests/apps/service_invocation,1110
+tests/apps/service_invocation_grpc,111
+tests/apps/service_invocation_grpc_proxy_client,47
+tests/apps/service_invocation_grpc_proxy_server,30
+tests/apps/stateapp,500
+tests/e2e/actor_activation,112
+tests/e2e/actor_features,452
+tests/e2e/actor_invocation,151
+tests/e2e/actor_reentrancy,160
+tests/e2e/actor_reminder,212
+tests/e2e/actor_reminder_partition,126
+tests/e2e/actor_sdks,159
+tests/e2e/allowlists,129
+tests/e2e/bindings,113
+tests/e2e/hellodapr,118
+tests/e2e/job,80
+tests/e2e/metrics,232
+tests/e2e/middleware,80
+tests/e2e/pubsub,312
+tests/e2e/pubsub_grpc,320
+tests/e2e/pubsub_routing,231
+tests/e2e/pubsub_routing_grpc,228
+tests/e2e/runtime,108
+tests/e2e/secretapp,169
+tests/e2e/service_invocation,871
+tests/e2e/stateapp,485
+tests/e2e/utils,174
+tests/perf,163
+tests/perf/actor_activation,116
+tests/perf/actor_reminder,115
+tests/perf/actor_timer,110
+tests/perf/service_invocation_http,121
+tests/perf/utils,181
+tests/platforms/kubernetes,1705
+tests/runner,691
+tools,2
+utils,325
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/api/api.go,3,Send,89,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/api/api.go,5,Go in for,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/api/api.go,1,Goroutine,235,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,1,Goroutine,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,16,Select (number of branch),144,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,16,Select (number of branch),162,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,16,Select (number of branch),190,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,191,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,198,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,16,Select (number of branch),208,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,209,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,212,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,16,Select (number of branch),236,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,237,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement_test.go,2,Receive,240,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement.go,17,Select with default (number of branch),160,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement.go,2,Receive,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement.go,3,Send,226,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/placement.go,3,Send,246,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,30,Waitgroup,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,16,Select (number of branch),37,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,4,Synchronous chan,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,24,Waitgroup Add(const),46,&{68732621 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,1,Goroutine,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,26,Waitgroup Done(),48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,15,Close chan,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,31,Waitgroup Wait(),60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,22,chan used as a param,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,17,Select with default (number of branch),76,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,9,Unknown chan length,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,22,chan used as a param,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,1,Goroutine,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,16,Select (number of branch),136,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,147,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,3,Send,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,3,Send,192,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,22,chan used as a param,204,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,8,Known chan length (length),207,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,16,Select (number of branch),210,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,3,Send,225,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,1,Goroutine,226,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership.go,2,Receive,248,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,4,Synchronous chan,38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,1,Goroutine,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,3,Send,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,15,Close chan,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,4,Synchronous chan,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,1,Goroutine,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,3,Send,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,2,Receive,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,8,Known chan length (length),171,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,5,Go in for,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,7,Goroutine in for with constant (constant),180,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,1,Goroutine,180,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,3,Send,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,16,Select (number of branch),233,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,2,Receive,234,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/placement/membership_test.go,2,Receive,239,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/server.go,5,Go in for,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/server.go,1,Goroutine,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/server.go,1,Goroutine,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/server.go,5,Go in for,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/server.go,1,Goroutine,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/api.go,1,Goroutine,1301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/api_test.go,2,Receive,240,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/api_test.go,1,Goroutine,2052,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/api_test.go,1,Goroutine,2070,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/api_test.go,1,Goroutine,2088,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/http/api_test.go,1,Goroutine,2106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor.go,4,Synchronous chan,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,4,Synchronous chan,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,1,Goroutine,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,3,Send,38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,3,Send,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,16,Select (number of branch),97,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,1,Goroutine,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,16,Select (number of branch),114,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,5,Go in for,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,1,Goroutine,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,16,Select (number of branch),139,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_test.go,2,Receive,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,4,Synchronous chan,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,4,Synchronous chan,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,4,Synchronous chan,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,4,Synchronous chan,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,1,Goroutine,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,1,Goroutine,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,3,Send,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actor_lock_test.go,2,Receive,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,198,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,208,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,224,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,271,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,282,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,30,Waitgroup,520,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,24,Waitgroup Add(const),523,&{75759449 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,524,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,26,Waitgroup Done(),525,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,16,Select (number of branch),550,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,551,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,553,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,4,Synchronous chan,587,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,30,Waitgroup,589,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,24,Waitgroup Add(const),599,&{75761851 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,600,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,26,Waitgroup Done(),601,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,4,Synchronous chan,616,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,31,Waitgroup Wait(),628,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,22,chan used as a param,669,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,713,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,726,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,729,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,16,Select (number of branch),734,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,735,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,737,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,741,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,773,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,16,Select (number of branch),950,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,951,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,953,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,4,Synchronous chan,1006,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,8,Known chan length (length),1092,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,1,Goroutine,1095,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,16,Select (number of branch),1117,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1118,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1147,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,16,Select (number of branch),1469,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1470,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors.go,2,Receive,1472,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,3,Send,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),592,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),622,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,623,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,626,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),635,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,1,Goroutine,651,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,1,Goroutine,652,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),671,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,672,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,680,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),720,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),755,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,756,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,762,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,768,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),816,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),835,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,836,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,842,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),869,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),970,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),989,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,990,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,993,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),1002,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,1,Goroutine,1019,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,1,Goroutine,1020,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),1027,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1028,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1031,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),1038,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),1072,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1073,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1079,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1085,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),1133,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,16,Select (number of branch),1156,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,8,Known chan length (length),1181,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,2,Receive,1456,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/actors_test.go,1,Goroutine,1605,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/metrics/exporter.go,1,Goroutine,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/fswatcher/fswatcher.go,21,Send only chan (chan<-),12,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/fswatcher/fswatcher.go,16,Select (number of branch),25,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/fswatcher/fswatcher.go,2,Receive,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/fswatcher/fswatcher.go,3,Send,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/fswatcher/fswatcher.go,2,Receive,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/fswatcher/fswatcher.go,2,Receive,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/server.go,5,Go in for,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/server.go,1,Goroutine,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/server.go,1,Goroutine,244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api.go,9,Unknown chan length,403,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api.go,3,Send,418,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api.go,2,Receive,426,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api.go,1,Goroutine,1116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api.go,2,Receive,1117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api_test.go,1,Goroutine,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api_test.go,1,Goroutine,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api_test.go,1,Goroutine,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api_test.go,1,Goroutine,193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/api_test.go,2,Receive,1301,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health.go,8,Known chan length (length),43,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health.go,1,Goroutine,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health.go,3,Send,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health.go,3,Send,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/server.go,4,Synchronous chan,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/server.go,1,Goroutine,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/server.go,16,Select (number of branch),59,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/server.go,2,Receive,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/server.go,2,Receive,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/server.go,15,Close chan,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health_test.go,2,Receive,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health_test.go,2,Receive,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health_test.go,2,Receive,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health_test.go,2,Receive,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health_test.go,2,Receive,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health_test.go,2,Receive,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/health/health_test.go,2,Receive,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,1,Goroutine,200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,5,Go in for,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,7,Goroutine in for with constant (constant),270,10000
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,5,Go in for,274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,7,Goroutine in for with constant (constant),274,10000
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,30,Waitgroup,268,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,24,Waitgroup Add(const),269,&{75603985 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,1,Goroutine,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,26,Waitgroup Done(),272,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,1,Goroutine,274,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,26,Waitgroup Done(),276,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,31,Waitgroup Wait(),279,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement_test.go,1,Goroutine,294,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement.go,1,Goroutine,167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement.go,1,Goroutine,216,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement.go,1,Goroutine,380,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement.go,4,Synchronous chan,399,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/actors/internal/placement.go,2,Receive,446,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/testing/app_mock.go,1,Goroutine,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/testing/app_mock.go,8,Known chan length (length),66,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/testing/app_mock.go,2,Receive,68,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/components/kubernetes_loader_test.go,1,Goroutine,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/signals/signals.go,4,Synchronous chan,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/signals/signals.go,1,Goroutine,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/signals/signals.go,2,Receive,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/signals/signals.go,2,Receive,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority.go,16,Select (number of branch),156,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority.go,2,Receive,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority.go,2,Receive,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority_test.go,1,Goroutine,264,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority_test.go,8,Known chan length (length),271,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority_test.go,1,Goroutine,273,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority_test.go,3,Send,276,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/ca/certificate_authority_test.go,2,Receive,279,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,1,Goroutine,320,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,1,Goroutine,629,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,3,Send,704,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,5,Go in for,709,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,1,Goroutine,709,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,1,Goroutine,757,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,3,Send,1601,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,3,Send,1657,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,8,Known chan length (length),1675,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,1,Goroutine,1682,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,3,Send,1683,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,16,Select (number of branch),1686,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,2,Receive,1687,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,2,Receive,1691,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,2,Receive,1821,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,3,Send,1962,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,5,Go in for,2078,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime.go,1,Goroutine,2078,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,8,Known chan length (length),298,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,8,Known chan length (length),299,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,306,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,8,Known chan length (length),309,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,316,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,346,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,16,Select (number of branch),350,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,351,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,390,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,8,Known chan length (length),404,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,411,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,1,Goroutine,414,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,1,Goroutine,416,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,16,Select (number of branch),458,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,459,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,460,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,16,Select (number of branch),487,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,488,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,489,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,16,Select (number of branch),499,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,500,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,2,Receive,501,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,1,Goroutine,1762,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,1763,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,1782,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,1,Goroutine,1825,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,1826,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,1847,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,3,Send,1868,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/runtime/runtime_test.go,1,Goroutine,2535,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,16,Select (number of branch),86,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,2,Receive,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,2,Receive,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,8,Known chan length (length),116,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,1,Goroutine,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,3,Send,121,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,3,Send,130,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,3,Send,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,3,Send,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,8,Known chan length (length),148,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,1,Goroutine,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,3,Send,153,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler.go,3,Send,157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler_test.go,1,Goroutine,243,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/grpc/proxy/handler_test.go,1,Goroutine,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/sentry.go,22,chan used as a param,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/sentry.go,1,Goroutine,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/sentry.go,2,Receive,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/sentry.go,3,Send,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/sentry/sentry.go,1,Goroutine,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/operator.go,1,Goroutine,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/operator.go,2,Receive,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/operator.go,1,Goroutine,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/operator.go,4,Synchronous chan,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/operator.go,1,Goroutine,153,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/operator.go,2,Receive,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/operator/operator.go,1,Goroutine,172,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/client/informers/externalversions/factory.go,20,Receive only chan (<-chan),112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/client/informers/externalversions/factory.go,1,Goroutine,118,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/client/informers/externalversions/factory.go,20,Receive only chan (<-chan),125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/tests/platforms/kubernetes/portforward.go,2,Receive,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/tests/platforms/kubernetes/portforward.go,1,Goroutine,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/tests/platforms/kubernetes/appmanager.go,5,Go in for,719,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/tests/platforms/kubernetes/appmanager.go,1,Goroutine,719,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/concurrency/limiter.go,9,Unknown chan length,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/concurrency/limiter.go,3,Send,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/concurrency/limiter.go,2,Receive,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/concurrency/limiter.go,1,Goroutine,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/concurrency/limiter.go,3,Send,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/concurrency/limiter.go,2,Receive,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/injector/injector.go,4,Synchronous chan,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/injector/injector.go,1,Goroutine,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/injector/injector.go,16,Select (number of branch),147,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/injector/injector.go,2,Receive,148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/injector/injector.go,2,Receive,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/dapr++dapr/pkg/injector/injector.go,15,Close chan,165,

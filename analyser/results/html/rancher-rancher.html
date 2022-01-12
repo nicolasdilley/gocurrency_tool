@@ -1,0 +1,3938 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : rancher/rancher ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/rancher/rancher/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> pkg/controllers/management/kontainerdrivermetadata ( 5 features, 2/4 featured file ) </li>
+          
+          <li> pkg/controllers/management/clusterstats ( 6 features, 1/1 featured file ) </li>
+          
+          <li> pkg/controllers/management/clusterconnected ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/api/norman/customization/project ( 3 features, 1/2 featured file ) </li>
+          
+          <li> pkg/telemetry ( 7 features, 1/2 featured file ) </li>
+          
+          <li> tests/integration/pkg/registry ( 3 features, 1/1 featured file ) </li>
+          
+          <li> pkg/rkeworker ( 9 features, 1/2 featured file ) </li>
+          
+          <li> pkg/metrics ( 7 features, 2/2 featured file ) </li>
+          
+          <li> pkg/data/management ( 4 features, 2/14 featured file ) </li>
+          
+          <li> pkg/controllers/managementuser/resourcequota ( 3 features, 1/7 featured file ) </li>
+          
+          <li> pkg/tls ( 1 features, 1/2 featured file ) </li>
+          
+          <li> pkg/controllers/management/nodepool ( 4 features, 1/4 featured file ) </li>
+          
+          <li> pkg/clusterprovisioninglogger ( 5 features, 1/1 featured file ) </li>
+          
+          <li> pkg/api/steve/machine ( 1 features, 1/3 featured file ) </li>
+          
+          <li> pkg/controllers/management/clusterprovisioner ( 2 features, 1/4 featured file ) </li>
+          
+          <li> pkg/catalogv2/system ( 15 features, 1/1 featured file ) </li>
+          
+          <li> pkg/jailer ( 3 features, 1/3 featured file ) </li>
+          
+          <li> pkg/controllers/management/test/e2e ( 12 features, 1/2 featured file ) </li>
+          
+          <li> pkg/controllers/managementuserlegacy/alert/statesyncer ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/auth/providers/saml ( 3 features, 1/5 featured file ) </li>
+          
+          <li> pkg/clustermanager ( 11 features, 1/2 featured file ) </li>
+          
+          <li> pkg/agent/rancher ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/auth/tokens ( 19 features, 3/7 featured file ) </li>
+          
+          <li> pkg/kontainer-engine/logstream ( 8 features, 1/1 featured file ) </li>
+          
+          <li> tests/integration/pkg/wait ( 3 features, 1/1 featured file ) </li>
+          
+          <li> pkg/agent/clean ( 7 features, 1/4 featured file ) </li>
+          
+          <li> pkg/controllers/provisioningv2/rke2/unmanaged ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/api/norman/store/projectsetter ( 1 features, 1/2 featured file ) </li>
+          
+          <li> pkg/api/norman/customization/logging ( 2 features, 1/2 featured file ) </li>
+          
+          <li> pkg/api/norman/store/workload ( 12 features, 1/5 featured file ) </li>
+          
+          <li> pkg/multiclustermanager ( 15 features, 2/3 featured file ) </li>
+          
+          <li> pkg/controllers/managementuserlegacy/approuter ( 1 features, 1/3 featured file ) </li>
+          
+          <li> pkg/controllers/managementuserlegacy/logging/utils ( 6 features, 1/9 featured file ) </li>
+          
+          <li> pkg/kontainer-engine/service ( 7 features, 1/2 featured file ) </li>
+          
+          <li> pkg/tunnelserver ( 4 features, 1/2 featured file ) </li>
+          
+          <li> pkg/controllers/managementuser/nodesyncer ( 13 features, 1/5 featured file ) </li>
+          
+          <li> pkg/logserver ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/kontainer-engine/drivers/eks ( 3 features, 1/3 featured file ) </li>
+          
+          <li> pkg/api/norman/customization/pipeline ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution ( 3 features, 2/5 featured file ) </li>
+          
+          <li> pkg/channelserver ( 3 features, 1/1 featured file ) </li>
+          
+          <li> pkg/kontainer-engine/types ( 6 features, 1/5 featured file ) </li>
+          
+          <li> pkg/controllers/managementlegacy/multiclusterapp ( 6 features, 1/5 featured file ) </li>
+          
+          <li> pkg/kontainer-engine/cmd ( 3 features, 1/11 featured file ) </li>
+          
+          <li> pkg/controllers/managementuserlegacy/logging/watcher ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/controllers/management/gke ( 3 features, 1/1 featured file ) </li>
+          
+          <li> pkg/controllers/managementuser/healthsyncer ( 4 features, 1/1 featured file ) </li>
+          
+          <li> pkg/auth/audit ( 2 features, 1/4 featured file ) </li>
+          
+          <li> pkg/controllers/managementuserlegacy/logging/deployer ( 3 features, 1/6 featured file ) </li>
+          
+          <li> pkg/api/steve/navlinks ( 4 features, 1/2 featured file ) </li>
+          
+          <li> pkg/auth/requests ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/catalog/manager ( 1 features, 1/11 featured file ) </li>
+          
+    <li> Num of Packages with features : 52/287</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>22 </td>
+      <td>56 </td>
+      <td>18</td>
+      <td>52</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>3</td>
+      <td>5</td>
+      <td>50</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>3</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>8</td>
+      <td>0</td>
+      <td>44.44444444444444%</td>
+      <td>6 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>21 </td>
+      <td>2</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/url.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/metadata_handler.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/kontainerdrivermetadata/metadata_handler.go</a></td>
+              <td>Mutex</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go</a></td>
+              <td>Synchronous chan</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go#L222">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go</a></td>
+              <td>Goroutine</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go#L224">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go</a></td>
+              <td>Send</td>
+              <td>224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go#L227">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>227</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go#L228">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go</a></td>
+              <td>Receive</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go#L229">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterstats/statsaggregator.go</a></td>
+              <td>Receive</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterconnected/clusterconnected.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterconnected/clusterconnected.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/project/project_store.go#L251">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/project/project_store.go</a></td>
+              <td>Mutex</td>
+              <td>251</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/project/project_store.go#L252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/project/project_store.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/project/project_store.go#L253">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/project/project_store.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go</a></td>
+              <td>Goroutine</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go</a></td>
+              <td>Goroutine</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go#L114">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go</a></td>
+              <td>Goroutine</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>115</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go#L116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/telemetry/telemetry.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/registry/registry.go#L22">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/registry/registry.go</a></td>
+              <td>Mutex</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/registry/registry.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/registry/registry.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/registry/registry.go#L193">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/registry/registry.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L396">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Receive</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L406">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>406</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L407">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L408">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>408</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L409">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Receive</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L411">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Send</td>
+              <td>411</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L416">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Send</td>
+              <td>416</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L420">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Receive</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go#L421">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/rkeworker/docker.go</a></td>
+              <td>Send</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/metrics.go#L231">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/metrics.go</a></td>
+              <td>Goroutine</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go</a></td>
+              <td>Go in for</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go</a></td>
+              <td>Make chan in for</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go</a></td>
+              <td>Synchronous chan</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go</a></td>
+              <td>Goroutine</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go</a></td>
+              <td>Close chan</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/metrics/garbagecollector.go</a></td>
+              <td>Range over chan</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/user_cleanup.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/user_cleanup.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/role_data.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/role_data.go</a></td>
+              <td>Mutex</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/role_data.go#L487">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/role_data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>487</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/role_data.go#L488">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/data/management/role_data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>488</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go#L335">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go</a></td>
+              <td>Mutex</td>
+              <td>335</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go#L336">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>336</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go#L337">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/resourcequota/resource_quota_sync.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tls/tls.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tls/tls.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go</a></td>
+              <td>Goroutine</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go#L281">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go</a></td>
+              <td>Goroutine</td>
+              <td>281</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go#L395">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/nodepool/nodepool.go</a></td>
+              <td>Goroutine</td>
+              <td>395</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go</a></td>
+              <td>Waitgroup</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>63</td>
+              <td>&amp;{111974994 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clusterprovisioninglogger/log.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/machine/ssh.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/machine/ssh.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterprovisioner/provisioner.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterprovisioner/provisioner.go</a></td>
+              <td>Goroutine</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterprovisioner/provisioner.go#L452">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/clusterprovisioner/provisioner.go</a></td>
+              <td>Goroutine</td>
+              <td>452</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>88</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>90</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>92</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Goroutine</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Send</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Send</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>132</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Receive</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Receive</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Goroutine</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Send</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go#L311">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalogv2/system/system.go</a></td>
+              <td>Goroutine</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/jailer/jailer.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/jailer/jailer.go</a></td>
+              <td>Mutex</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/jailer/jailer.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/jailer/jailer.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/jailer/jailer.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/jailer/jailer.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>38</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>90</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>113</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L114">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L170">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>170</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/test/e2e/common_test.go</a></td>
+              <td>Receive</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/alert/statesyncer/statesyncer.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/alert/statesyncer/statesyncer.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/providers/saml/saml_client.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/providers/saml/saml_client.go</a></td>
+              <td>Mutex</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/providers/saml/saml_client.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/providers/saml/saml_client.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/providers/saml/saml_client.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/providers/saml/saml_client.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L198">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>198</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L199">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Receive</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Receive</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L227">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>227</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L228">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Goroutine</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L229">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Close chan</td>
+              <td>229</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L240">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Send</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L243">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>243</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L244">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Receive</td>
+              <td>244</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go#L247">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/clustermanager/manager.go</a></td>
+              <td>Receive</td>
+              <td>247</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/rancher/rancher.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/rancher/rancher.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/purge_daemon.go#L26">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/purge_daemon.go</a></td>
+              <td>Goroutine</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Go in for</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Make chan in for</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Make chan in for</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>124</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>125</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Goroutine</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Send</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Close chan</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L149">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>149</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Send</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L152">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Receive</td>
+              <td>152</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager_test.go</a></td>
+              <td>Send</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager.go#L762">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/tokens/manager.go</a></td>
+              <td>chan used as a param</td>
+              <td>762</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L14">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Mutex</td>
+              <td>14</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Send</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/logstream/logstream.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/wait/wait.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/wait/wait.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/wait/wait.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/wait/wait.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/wait/wait.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/tests/integration/pkg/wait/wait.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go#L126">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go</a></td>
+              <td>Waitgroup</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>128</td>
+              <td>&amp;{119762850 INT 2} val is : 2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go</a></td>
+              <td>Goroutine</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go</a></td>
+              <td>Goroutine</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/agent/clean/binding.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/provisioningv2/rke2/unmanaged/controller.go#L95">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/provisioningv2/rke2/unmanaged/controller.go</a></td>
+              <td>Goroutine</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/projectsetter/store.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/projectsetter/store.go</a></td>
+              <td>chan used as a param</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/logging/action.go#L291">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/logging/action.go</a></td>
+              <td>Synchronous chan</td>
+              <td>291</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/logging/action.go#L323">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/logging/action.go</a></td>
+              <td>Receive</td>
+              <td>323</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Synchronous chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Close chan</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Synchronous chan</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>90</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Close chan</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Range over chan</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>chan used as a param</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go#L193">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/store/workload/aggregate_store.go</a></td>
+              <td>Send</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>40</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go</a></td>
+              <td>Goroutine</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/deferred.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Synchronous chan</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Goroutine</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Receive</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>142</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>150</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L159">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Receive</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L164">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Receive</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go#L220">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/multiclustermanager/app.go</a></td>
+              <td>Goroutine</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/approuter/approuter.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/approuter/approuter.go</a></td>
+              <td>Goroutine</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go#L278">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>278</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go#L280">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go</a></td>
+              <td>Goroutine</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go#L282">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go</a></td>
+              <td>Send</td>
+              <td>282</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go#L285">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>285</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go#L286">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go</a></td>
+              <td>Receive</td>
+              <td>286</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go#L288">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/utils/testwrap.go</a></td>
+              <td>Receive</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go#L420">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go</a></td>
+              <td>Synchronous chan</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go#L421">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go</a></td>
+              <td>Synchronous chan</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go#L423">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go</a></td>
+              <td>Goroutine</td>
+              <td>423</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go#L427">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>427</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go#L428">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go</a></td>
+              <td>Receive</td>
+              <td>428</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go#L430">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go</a></td>
+              <td>Receive</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go#L437">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/service/service.go</a></td>
+              <td>Receive</td>
+              <td>437</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go#L197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go</a></td>
+              <td>Send</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go#L211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/tunnelserver/peermanager.go</a></td>
+              <td>Send</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Goroutine</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>142</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L299">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>299</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go#L301">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/nodesyncer/cordonfieldssyncer.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/logserver/server.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/logserver/server.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go#L942">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go</a></td>
+              <td>Mutex</td>
+              <td>942</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go#L950">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>950</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go#L951">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/drivers/eks/eks_driver.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>951</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/pipeline/pipeline_execution_log.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/norman/customization/pipeline/pipeline_execution_log.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/registrycertsyncer.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/registrycertsyncer.go</a></td>
+              <td>Goroutine</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/pipelineexecution.go#L190">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/pipelineexecution.go</a></td>
+              <td>Goroutine</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/pipelineexecution.go#L191">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/pipeline/controller/pipelineexecution/pipelineexecution.go</a></td>
+              <td>Goroutine</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/channelserver/channelserver.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/channelserver/channelserver.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/channelserver/channelserver.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/channelserver/channelserver.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/channelserver/channelserver.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/channelserver/channelserver.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go#L23">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go</a></td>
+              <td>chan used as a param</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go</a></td>
+              <td>chan used as a param</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go</a></td>
+              <td>Send</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go</a></td>
+              <td>Send</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/types/rpc_server.go</a></td>
+              <td>Send</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go</a></td>
+              <td>Mutex</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementlegacy/multiclusterapp/interval.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/cmd/utils.go#L15">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/cmd/utils.go</a></td>
+              <td>Synchronous chan</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/cmd/utils.go#L21">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/cmd/utils.go</a></td>
+              <td>Goroutine</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/cmd/utils.go#L23">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/kontainer-engine/cmd/utils.go</a></td>
+              <td>Receive</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/watcher/watcher.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/watcher/watcher.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/gke/gke_cluster_handler.go#L317">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/gke/gke_cluster_handler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>317</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/gke/gke_cluster_handler.go#L318">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/gke/gke_cluster_handler.go</a></td>
+              <td>Receive</td>
+              <td>318</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/gke/gke_cluster_handler.go#L328">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/management/gke/gke_cluster_handler.go</a></td>
+              <td>Receive</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>124</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go</a></td>
+              <td>Receive</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuser/healthsyncer/healthsyncer.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/audit/logwriter.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/audit/logwriter.go</a></td>
+              <td>Goroutine</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/audit/logwriter.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/audit/logwriter.go</a></td>
+              <td>Receive</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>124</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go</a></td>
+              <td>Receive</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/controllers/managementuserlegacy/logging/deployer/appdeployer.go</a></td>
+              <td>Receive</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>66</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go</a></td>
+              <td>Close chan</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/api/steve/navlinks/store.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/requests/authenticate.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/auth/requests/authenticate.go</a></td>
+              <td>Goroutine</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/rancher/rancher/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalog/manager/catalog_common.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/rancher&#43;&#43;rancher/pkg/catalog/manager/catalog_common.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 22 ,  56 ,
+     18 ,
+     52 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

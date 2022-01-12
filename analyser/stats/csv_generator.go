@@ -293,11 +293,11 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 				num_wait,
 			))
 
-			normal_relative_wg.WriteString(fmt.Sprintf("%s,%f,%f,%f,%f,%f\n",
+			normal_relative_wg.WriteString(fmt.Sprintf("%s,%f,%f,%f,%f\n",
 				strings.TrimSuffix(proj, ".csv"),
 				(num_wg/num_featured_lines)*1000,
-				(num_known_add/num_featured_lines)*1000,
-				(num_unknown_add/num_featured_lines)*1000,
+				(num_known_add/num_featured_lines)*1000+
+					(num_unknown_add/num_featured_lines)*1000,
 				(num_done/num_featured_lines)*1000,
 				(num_wait/num_featured_lines)*1000,
 			))
@@ -324,8 +324,11 @@ func GenerateCSVResults(page *PageData, counter *Counter) {
 			}
 		}
 
-		if num_lock > 0 || num_unlock > 0 || num_mutex > 0 {
+		if num_mutex > 0 {
 
+			if num_lock == 0 && num_unlock == 0 {
+				fmt.Println(proj, " has no lock and unlock")
+			}
 			// all projects
 			normal_absolute_mu.WriteString(fmt.Sprintf("%s,%f,%f,%f\n",
 				strings.TrimSuffix(proj, ".csv"),

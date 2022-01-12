@@ -1,0 +1,4011 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : GoogleContainerTools/skaffold ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/GoogleContainerTools/skaffold/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> pkg/skaffold/log/stream ( 2 features, 1/2 featured file ) </li>
+          
+          <li> pkg/skaffold/diagnose ( 1 features, 1/2 featured file ) </li>
+          
+          <li> pkg/skaffold/build/cache ( 12 features, 2/9 featured file ) </li>
+          
+          <li> pkg/skaffold/instrumentation ( 1 features, 1/7 featured file ) </li>
+          
+          <li> pkg/skaffold/util ( 16 features, 2/27 featured file ) </li>
+          
+          <li> pkg/skaffold/kubernetes ( 17 features, 4/9 featured file ) </li>
+          
+          <li> hack/comparisonstats/devrunner ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/skaffold/server ( 12 features, 2/3 featured file ) </li>
+          
+          <li> pkg/skaffold/docker ( 15 features, 4/29 featured file ) </li>
+          
+          <li> pkg/skaffold/trigger/fsnotify ( 10 features, 1/2 featured file ) </li>
+          
+          <li> pkg/skaffold/kubernetes/logger ( 13 features, 2/4 featured file ) </li>
+          
+          <li> pkg/skaffold/kubernetes/portforward ( 49 features, 6/13 featured file ) </li>
+          
+          <li> pkg/skaffold/trigger ( 11 features, 1/2 featured file ) </li>
+          
+          <li> cmd/skaffold/app ( 9 features, 2/6 featured file ) </li>
+          
+          <li> pkg/skaffold/event ( 13 features, 2/5 featured file ) </li>
+          
+          <li> integration/skaffold ( 1 features, 1/1 featured file ) </li>
+          
+          <li> pkg/skaffold/test/custom ( 2 features, 1/3 featured file ) </li>
+          
+          <li> pkg/skaffold/build/local ( 1 features, 1/5 featured file ) </li>
+          
+          <li> pkg/skaffold/build/bazel ( 2 features, 1/5 featured file ) </li>
+          
+          <li> pkg/skaffold/kubernetes/debugging ( 4 features, 1/10 featured file ) </li>
+          
+          <li> pkg/skaffold/docker/tracker ( 2 features, 1/2 featured file ) </li>
+          
+          <li> proto/v1 ( 3 features, 1/2 featured file ) </li>
+          
+          <li> pkg/skaffold/build/misc ( 14 features, 1/6 featured file ) </li>
+          
+          <li> cmd/skaffold/app/cmd ( 11 features, 2/45 featured file ) </li>
+          
+          <li> pkg/skaffold/sync ( 2 features, 2/7 featured file ) </li>
+          
+          <li> integration ( 42 features, 7/31 featured file ) </li>
+          
+          <li> pkg/skaffold/runner ( 11 features, 2/13 featured file ) </li>
+          
+          <li> pkg/skaffold/server/v2 ( 9 features, 2/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 28/161</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>28 </td>
+      <td>75 </td>
+      <td>21</td>
+      <td>58</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>4</td>
+      <td>8</td>
+      <td>38.46153846153847</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>10 </td>
+      <td>0 </td>
+      <td>3 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>8</td>
+      <td>0</td>
+      <td>38.095238095238095%</td>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>21 </td>
+      <td>8</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/log/stream/stream.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/log/stream/stream.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>34</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/log/stream/stream.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/log/stream/stream.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/diagnose/diagnose.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/diagnose/diagnose.go</a></td>
+              <td>Goroutine</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go</a></td>
+              <td>Synchronous chan</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go</a></td>
+              <td>Send</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/retrieve.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go</a></td>
+              <td>Waitgroup</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go</a></td>
+              <td>Go in for</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>42</td>
+              <td>&amp;{61488390 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/cache/lookup.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/instrumentation/meter.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/instrumentation/meter.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>38</td>
+              <td>&amp;{49341640 INT 10} val is : 10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go</a></td>
+              <td>Go in for</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>43</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/store_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Mutex</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Go in for</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/util/port_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go</a></td>
+              <td>Receive</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go#L122">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go</a></td>
+              <td>Receive</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher_test.go</a></td>
+              <td>Close chan</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait_test.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go</a></td>
+              <td>Go in for</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/watcher.go</a></td>
+              <td>Send</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>45</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait.go</a></td>
+              <td>Receive</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/wait.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/hack/comparisonstats/devrunner/devrunner.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/hack/comparisonstats/devrunner/devrunner.go</a></td>
+              <td>Goroutine</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L174">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L182">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>182</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L183">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>183</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Send</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>188</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L189">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Receive</td>
+              <td>189</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L191">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Receive</td>
+              <td>191</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/server.go</a></td>
+              <td>Goroutine</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go</a></td>
+              <td>Synchronous chan</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go</a></td>
+              <td>Goroutine</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go</a></td>
+              <td>Send</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>105</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go</a></td>
+              <td>Receive</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/auth.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/context_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/context_test.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go#L467">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>467</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go#L470">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go</a></td>
+              <td>Go in for</td>
+              <td>470</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go#L470">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>470</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go#L469">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>469</td>
+              <td>&amp;{52385936 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go#L470">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go</a></td>
+              <td>Goroutine</td>
+              <td>470</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go#L472">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>472</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go#L475">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>475</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image.go#L301">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/image.go</a></td>
+              <td>Goroutine</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>75</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Goroutine</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Send</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Synchronous chan</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Goroutine</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>117</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Receive</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Receive</td>
+              <td>129</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Send</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/fsnotify/trigger.go</a></td>
+              <td>Receive</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go</a></td>
+              <td>Synchronous chan</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go</a></td>
+              <td>Goroutine</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>132</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go</a></td>
+              <td>Receive</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go</a></td>
+              <td>Receive</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go</a></td>
+              <td>Goroutine</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go#L195">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/log.go</a></td>
+              <td>Goroutine</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go</a></td>
+              <td>Go in for</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>73</td>
+              <td>&amp;{60603985 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/logger/formatter_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go</a></td>
+              <td>Mutex</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go</a></td>
+              <td>Goroutine</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>81</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder.go</a></td>
+              <td>Receive</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go</a></td>
+              <td>Waitgroup</td>
+              <td>133</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go</a></td>
+              <td>Go in for</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>135</td>
+              <td>&amp;{59995158 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go</a></td>
+              <td>Goroutine</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/resource_forwarder.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go#L516">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>516</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go#L520">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>520</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go#L523">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go</a></td>
+              <td>Goroutine</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go#L525">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/pod_forwarder_test.go</a></td>
+              <td>Send</td>
+              <td>525</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>83</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Goroutine</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Receive</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>chan used as a param</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Send</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Go in for</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Send</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Goroutine</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>154</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Send</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>chan used as a param</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>211</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Receive</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L214">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Receive</td>
+              <td>214</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>230</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L231">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Send</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L236">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>236</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go#L237">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder.go</a></td>
+              <td>Send</td>
+              <td>237</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>53</td>
+              <td>&amp;{60305383 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>62</td>
+              <td>&amp;{60305635 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Goroutine</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>158</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L159">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Goroutine</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L165">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Send</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go#L168">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/portforward/kubectl_forwarder_test.go</a></td>
+              <td>Receive</td>
+              <td>168</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Synchronous chan</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Receive</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Send</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Synchronous chan</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Goroutine</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Receive</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Goroutine</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go#L164">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/trigger/triggers.go</a></td>
+              <td>Send</td>
+              <td>164</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>27</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals.go</a></td>
+              <td>Goroutine</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>30</td>
+              <td>&amp;{62707299 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go</a></td>
+              <td>Goroutine</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go</a></td>
+              <td>Receive</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/signals_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go</a></td>
+              <td>Go in for</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>48</td>
+              <td>1000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go#L388">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>388</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go#L389">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go</a></td>
+              <td>Receive</td>
+              <td>389</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go#L394">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event_test.go</a></td>
+              <td>Receive</td>
+              <td>394</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go</a></td>
+              <td>Send</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go</a></td>
+              <td>Synchronous chan</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go</a></td>
+              <td>Receive</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go#L570">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/event/event.go</a></td>
+              <td>Send</td>
+              <td>570</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/skaffold/helper.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/skaffold/helper.go</a></td>
+              <td>Goroutine</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/test/custom/custom.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/test/custom/custom.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>104</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/test/custom/custom.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/test/custom/custom.go</a></td>
+              <td>Receive</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/local/prune.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/local/prune.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/bazel/dependencies.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/bazel/dependencies.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/bazel/dependencies.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/bazel/dependencies.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go</a></td>
+              <td>Goroutine</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go</a></td>
+              <td>Receive</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/kubernetes/debugging/container_manager.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/tracker/tracker.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/tracker/tracker.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/tracker/tracker.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/docker/tracker/tracker.go</a></td>
+              <td>Send</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/proto/v1/skaffold.pb.gw.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/proto/v1/skaffold.pb.gw.go</a></td>
+              <td>Goroutine</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/proto/v1/skaffold.pb.gw.go#L469">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/proto/v1/skaffold.pb.gw.go</a></td>
+              <td>Goroutine</td>
+              <td>469</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/proto/v1/skaffold.pb.gw.go#L470">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/proto/v1/skaffold.pb.gw.go</a></td>
+              <td>Receive</td>
+              <td>470</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>36</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Close chan</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Waitgroup</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>40</td>
+              <td>&amp;{49768135 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>44</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>60</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Receive</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Receive</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Send</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/build/misc/graceful.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/dev.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/dev.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>60</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/dev.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/dev.go</a></td>
+              <td>Receive</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>67</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>68</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Goroutine</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Send</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L120">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Send</td>
+              <td>120</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L129">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>129</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Receive</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>138</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/cmd/skaffold/app/cmd/cmd.go</a></td>
+              <td>Receive</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/sync/kubectl.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/sync/kubectl.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/sync/docker.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/sync/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/cache_test.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/cache_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/cache_test.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/cache_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/test_events_test.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/test_events_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/test_events_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/test_events_test.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/test_events_test.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/test_events_test.go</a></td>
+              <td>Receive</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/debug_test.go#L172">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/debug_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>172</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/debug_test.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/debug_test.go</a></td>
+              <td>Receive</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/debug_test.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/debug_test.go</a></td>
+              <td>Receive</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/rpc_test.go#L393">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/rpc_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>393</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/rpc_test.go#L394">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/rpc_test.go</a></td>
+              <td>Goroutine</td>
+              <td>394</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/rpc_test.go#L398">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/rpc_test.go</a></td>
+              <td>Send</td>
+              <td>398</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go#L209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go</a></td>
+              <td>Receive</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go#L239">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go#L271">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>271</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go#L274">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go</a></td>
+              <td>Receive</td>
+              <td>274</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go#L288">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/sync_test.go</a></td>
+              <td>Receive</td>
+              <td>288</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L174">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>174</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>225</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L240">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>240</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L243">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L325">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>325</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L328">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>328</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L329">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>329</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L331">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>331</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L351">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>351</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L364">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>364</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L365">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go#L367">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/dev_test.go</a></td>
+              <td>Receive</td>
+              <td>367</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L232">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>232</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L233">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Receive</td>
+              <td>233</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L239">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L327">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>327</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L328">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Receive</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L335">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Receive</td>
+              <td>335</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L403">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Synchronous chan</td>
+              <td>403</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L404">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Goroutine</td>
+              <td>404</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L407">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Send</td>
+              <td>407</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L417">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>417</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L418">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Receive</td>
+              <td>418</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go#L420">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/integration/util.go</a></td>
+              <td>Receive</td>
+              <td>420</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go#L163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go</a></td>
+              <td>Go in for</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go#L163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go</a></td>
+              <td>Goroutine</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go#L165">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go</a></td>
+              <td>Send</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go#L177">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>177</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go#L178">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go</a></td>
+              <td>Receive</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go#L181">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/build.go</a></td>
+              <td>Receive</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>75</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go#L78">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go</a></td>
+              <td>Receive</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/runner/listen.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go</a></td>
+              <td>Send</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go</a></td>
+              <td>Send</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/server_test.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/GoogleContainerTools/skaffold/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/GoogleContainerTools&#43;&#43;skaffold/pkg/skaffold/server/v2/endpoints.go</a></td>
+              <td>Goroutine</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 28 ,  75 ,
+     21 ,
+     58 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

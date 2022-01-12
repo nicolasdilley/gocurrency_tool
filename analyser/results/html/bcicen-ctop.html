@@ -1,0 +1,844 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : bcicen/ctop ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/bcicen/ctop/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> connector ( 27 features, 3/3 featured file ) </li>
+          
+          <li> cwidgets/single ( 2 features, 1/9 featured file ) </li>
+          
+          <li> widgets ( 10 features, 2/6 featured file ) </li>
+          
+          <li> logging ( 11 features, 2/2 featured file ) </li>
+          
+          <li> connector/collector ( 25 features, 4/5 featured file ) </li>
+          
+          <li> container ( 2 features, 1/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 6/12</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>19 </td>
+      <td>8 </td>
+      <td>15</td>
+      <td>23</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>0</td>
+      <td>2</td>
+      <td>33.33333333333333</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>2 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>2</td>
+      <td>0</td>
+      <td>13.333333333333334%</td>
+      <td>3 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td>1</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go</a></td>
+              <td>Goroutine</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go#L26">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go</a></td>
+              <td>Goroutine</td>
+              <td>26</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go</a></td>
+              <td>Synchronous chan</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go</a></td>
+              <td>Goroutine</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go</a></td>
+              <td>Close chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/mock.go</a></td>
+              <td>Goroutine</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/main.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/main.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>51</td>
+              <td>60</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>52</td>
+              <td>60</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Range over chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Send</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Send</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Send</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L217">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>217</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L218">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Receive</td>
+              <td>218</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L229">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>229</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Receive</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go#L239">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/docker.go</a></td>
+              <td>Receive</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/cwidgets/single/logs.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/cwidgets/single/logs.go</a></td>
+              <td>chan used as a param</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/cwidgets/single/logs.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/cwidgets/single/logs.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/input.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/input.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/input.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/input.go</a></td>
+              <td>Send</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/input.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/input.go</a></td>
+              <td>Send</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go</a></td>
+              <td>Synchronous chan</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go</a></td>
+              <td>Send</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go</a></td>
+              <td>Send</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go</a></td>
+              <td>Goroutine</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/widgets/view.go</a></td>
+              <td>Send</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/server.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/server.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/server.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/server.go</a></td>
+              <td>Go in for</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/server.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/server.go</a></td>
+              <td>Goroutine</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Send</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Close chan</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Synchronous chan</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Goroutine</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Send</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/logging/main.go</a></td>
+              <td>Close chan</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go#L16">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go</a></td>
+              <td>Synchronous chan</td>
+              <td>16</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go#L17">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go</a></td>
+              <td>Goroutine</td>
+              <td>17</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>19</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go</a></td>
+              <td>Receive</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go#L23">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go</a></td>
+              <td>Send</td>
+              <td>23</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock_logs.go</a></td>
+              <td>Send</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock.go</a></td>
+              <td>Synchronous chan</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock.go</a></td>
+              <td>Goroutine</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/mock.go</a></td>
+              <td>Send</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Synchronous chan</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Goroutine</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Send</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Send</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Goroutine</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker_logs.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>30</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Synchronous chan</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Range over chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Send</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/connector/collector/docker.go</a></td>
+              <td>Send</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/container/main.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/container/main.go</a></td>
+              <td>chan used as a param</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/bcicen/ctop/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/container/main.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/bcicen&#43;&#43;ctop/container/main.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 19 ,  8 ,
+     15 ,
+     23 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

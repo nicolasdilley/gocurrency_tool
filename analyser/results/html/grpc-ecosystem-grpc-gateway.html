@@ -1,0 +1,899 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : grpc-ecosystem/grpc-gateway ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/grpc-ecosystem/grpc-gateway/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> v2/examples/internal/gateway ( 4 features, 1/4 featured file ) </li>
+          
+          <li> v2/examples/internal/helloworld ( 2 features, 1/3 featured file ) </li>
+          
+          <li> v2/protoc-gen-openapiv2/internal/genopenapi ( 3 features, 1/7 featured file ) </li>
+          
+          <li> v2/examples/internal/server ( 5 features, 2/8 featured file ) </li>
+          
+          <li> v2/examples/internal/integration_test ( 34 features, 2/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 5/28</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>5 </td>
+      <td>11 </td>
+      <td>3</td>
+      <td>18</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>66.66666666666666%</td>
+      <td>0 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>2 </td>
+      <td>0</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go</a></td>
+              <td>Receive</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/gateway/main.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/helloworld/helloworld.pb.gw.go#L987">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/helloworld/helloworld.pb.gw.go</a></td>
+              <td>Goroutine</td>
+              <td>987</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/helloworld/helloworld.pb.gw.go#L988">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/helloworld/helloworld.pb.gw.go</a></td>
+              <td>Receive</td>
+              <td>988</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/protoc-gen-openapiv2/internal/genopenapi/template.go#L710">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/protoc-gen-openapiv2/internal/genopenapi/template.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>710</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/protoc-gen-openapiv2/internal/genopenapi/template.go#L711">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/protoc-gen-openapiv2/internal/genopenapi/template.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>711</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/protoc-gen-openapiv2/internal/genopenapi/template.go#L739">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/protoc-gen-openapiv2/internal/genopenapi/template.go</a></td>
+              <td>Mutex</td>
+              <td>739</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go</a></td>
+              <td>Goroutine</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go</a></td>
+              <td>Receive</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go</a></td>
+              <td>Goroutine</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/main.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/a_bit_of_everything.go#L310">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/server/a_bit_of_everything.go</a></td>
+              <td>Receive</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>46</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Receive</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Receive</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>57</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Send</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Send</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Goroutine</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Send</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>84</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Send</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>92</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L93">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/main_test.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L130">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>130</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L539">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>539</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L679">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>679</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1182">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1182</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1184">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1184</td>
+              <td>&amp;{16179532 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1223">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1223</td>
+              <td>&amp;{16180735 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1224">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1224</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1225</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1312">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1312</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1748">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1748</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1749">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1749</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L1755">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Send</td>
+              <td>1755</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L2005">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2005</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/grpc-ecosystem/grpc-gateway/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go#L2023">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/grpc-ecosystem&#43;&#43;grpc-gateway/examples/internal/integration/integration_test.go</a></td>
+              <td>Goroutine</td>
+              <td>2023</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 5 ,  11 ,
+     3 ,
+     18 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

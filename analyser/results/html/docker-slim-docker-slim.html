@@ -1,0 +1,1593 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : docker-slim/docker-slim ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/docker-slim/docker-slim/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> pkg/app/master/container ( 27 features, 1/1 featured file ) </li>
+          
+          <li> pkg/app/master/commands/build ( 4 features, 1/5 featured file ) </li>
+          
+          <li> pkg/app/master/commands/lint ( 1 features, 1/5 featured file ) </li>
+          
+          <li> pkg/app/master/commands/probe ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/app/master/commands/edit ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/app/master/commands/run ( 11 features, 1/5 featured file ) </li>
+          
+          <li> pkg/ipc/channel ( 6 features, 1/1 featured file ) </li>
+          
+          <li> pkg/app/sensor/ipc ( 6 features, 1/1 featured file ) </li>
+          
+          <li> pkg/app/master/commands/profile ( 4 features, 1/4 featured file ) </li>
+          
+          <li> pkg/app/master/commands/debug ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/app/master/commands/containerize ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/docker/linter ( 13 features, 1/1 featured file ) </li>
+          
+          <li> pkg/app/master/commands/xray ( 1 features, 1/5 featured file ) </li>
+          
+          <li> pkg/app/sensor/monitors/ptrace ( 12 features, 1/1 featured file ) </li>
+          
+          <li> pkg/pdiscover ( 15 features, 1/4 featured file ) </li>
+          
+          <li> pkg/app/master/commands/server ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/app/master/inspectors/container/probes/http ( 22 features, 3/5 featured file ) </li>
+          
+          <li> pkg/app/master/commands/convert ( 1 features, 1/4 featured file ) </li>
+          
+          <li> pkg/app/master/signals ( 8 features, 1/1 featured file ) </li>
+          
+    <li> Num of Packages with features : 19/58</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>20 </td>
+      <td>41 </td>
+      <td>27</td>
+      <td>19</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>2 </td>
+      <td>1</td>
+      <td>3</td>
+      <td>50</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>1 </td>
+      <td>1 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td>9</td>
+      <td>2</td>
+      <td>33.33333333333333%</td>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>9 </td>
+      <td>4</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>chan used as a param</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Synchronous chan</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Synchronous chan</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>230</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L257">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Synchronous chan</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L259">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L261">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L275">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L301">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>301</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L310">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Receive</td>
+              <td>310</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L322">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L343">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>343</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L368">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>368</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L384">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>384</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L386">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>386</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L387">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Receive</td>
+              <td>387</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L447">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>447</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L452">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Receive</td>
+              <td>452</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L463">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>463</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L465">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>465</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L466">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Receive</td>
+              <td>466</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L474">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>474</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L490">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>490</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L505">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Send</td>
+              <td>505</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L574">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Goroutine</td>
+              <td>574</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L575">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>575</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go#L579">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/container/execution.go</a></td>
+              <td>Range over chan</td>
+              <td>579</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go#L586">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go</a></td>
+              <td>Receive</td>
+              <td>586</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go#L593">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go</a></td>
+              <td>Receive</td>
+              <td>593</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go#L600">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go</a></td>
+              <td>Receive</td>
+              <td>600</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go#L890">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/build/handler.go</a></td>
+              <td>Receive</td>
+              <td>890</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/lint/handler.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/lint/handler.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/probe/handler.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/probe/handler.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/edit/handler.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/edit/handler.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>131</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Synchronous chan</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Goroutine</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L147">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>147</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Receive</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L159">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Close chan</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Close chan</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L165">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Receive</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Close chan</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L180">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Receive</td>
+              <td>180</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/run/handler.go</a></td>
+              <td>Receive</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go</a></td>
+              <td>Goroutine</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go#L283">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>283</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go#L284">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go</a></td>
+              <td>Receive</td>
+              <td>284</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>449</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go#L450">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go</a></td>
+              <td>Receive</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go#L594">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/ipc/channel/channel.go</a></td>
+              <td>Goroutine</td>
+              <td>594</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go#L21">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go#L24">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>24</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go</a></td>
+              <td>Send</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go</a></td>
+              <td>Goroutine</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>107</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/ipc/ipc.go</a></td>
+              <td>Receive</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go#L343">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go</a></td>
+              <td>Receive</td>
+              <td>343</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go#L350">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go</a></td>
+              <td>Receive</td>
+              <td>350</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go#L357">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go</a></td>
+              <td>Receive</td>
+              <td>357</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go#L431">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/profile/handler.go</a></td>
+              <td>Receive</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/debug/handler.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/debug/handler.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/containerize/handler.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/containerize/handler.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Unknown chan length</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L193">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Waitgroup</td>
+              <td>193</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L194">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Waitgroup Add(var)</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Go in for</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Goroutine</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L198">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>198</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L215">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Send</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L219">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Goroutine</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L220">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Close chan</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L227">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>227</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L228">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Receive</td>
+              <td>228</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go#L245">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/docker/linter/linter.go</a></td>
+              <td>Receive</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/xray/handler.go#L450">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/xray/handler.go</a></td>
+              <td>Receive</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>chan used as a param</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L21">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>chan used as a param</td>
+              <td>21</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Send</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Send</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>56</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Receive</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Send</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/sensor/monitors/ptrace/monitor.go</a></td>
+              <td>Send</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>58</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Goroutine</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L78">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Synchronous chan</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>80</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Goroutine</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Send</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L161">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>161</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go#L162">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/pdiscover/pevents.go</a></td>
+              <td>Receive</td>
+              <td>162</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/server/handler.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/server/handler.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Synchronous chan</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>47</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Send</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>88</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>107</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Send</td>
+              <td>108</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>148</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L149">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Receive</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/wsclient.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/crawler.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/crawler.go</a></td>
+              <td>Send</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/crawler.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/crawler.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/crawler.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/crawler.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go#L122">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go</a></td>
+              <td>Synchronous chan</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go</a></td>
+              <td>Unknown chan length</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go#L223">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go</a></td>
+              <td>Goroutine</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go#L352">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>352</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go#L395">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>395</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go#L396">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go</a></td>
+              <td>Receive</td>
+              <td>396</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go#L398">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/inspectors/container/probes/http/custom_probe.go</a></td>
+              <td>Receive</td>
+              <td>398</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/convert/handler.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/commands/convert/handler.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L11">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Synchronous chan</td>
+              <td>11</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L12">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Synchronous chan</td>
+              <td>12</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>19</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L22">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Goroutine</td>
+              <td>22</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L24">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>24</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L25">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Receive</td>
+              <td>25</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Receive</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/docker-slim/docker-slim/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/docker-slim&#43;&#43;docker-slim/pkg/app/master/signals/signals.go</a></td>
+              <td>Send</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 20 ,  41 ,
+     27 ,
+     19 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -44,37 +44,37 @@ if not os.path.exists("./csv/mutex"):
     os.makedirs("./csv/mutex")
 
 # Normal relative (Counting features per kPLOC)
-normal_relative = np.loadtxt(open("../stats/results/normal/relative.csv","r+"),
+normal_chan_relative_cloc = np.loadtxt(open("../stats/results/normal/relative.csv","r+"),
                          usecols=(1,2,3,4,5,6),
                          unpack = True,
                          delimiter = ',',
                          dtype = float
                          )
 
-normal_relative_all_fig, ax1 = plt.subplots()
-ax1.boxplot(x=[ normal_relative[0],
-                normal_relative[1],
-                normal_relative[2],
-                normal_relative[3],
-                normal_relative[4],
-                normal_relative[5]],
+normal_chan_relative_cloc_all_fig, ax1 = plt.subplots()
+ax1.boxplot(x=[ normal_chan_relative_cloc[0],
+                normal_chan_relative_cloc[1],
+                normal_chan_relative_cloc[2],
+                normal_chan_relative_cloc[3],
+                normal_chan_relative_cloc[4],
+                normal_chan_relative_cloc[5]],
                 labels=["chan","send","receive","select","close","range"])
 ax1.set_ylim(top=50)
 plt.ylabel("Number of features / kPLOC")
 
-normal_relative_all_fig.savefig('./normal/relative/all_fig.pdf',dpi=900)
-plt.close(normal_relative_all_fig)
+normal_chan_relative_cloc_all_fig.savefig('./normal/relative/all_fig.pdf',dpi=900)
+plt.close(normal_chan_relative_cloc_all_fig)
 
 
-normal_new_chan_df = df(data = {
-'chan' : normal_relative[0]
-,'send' : normal_relative[1]
-,'receive': normal_relative[2]
-,'select': normal_relative[3]
-,'close': normal_relative[4]
-,'range': normal_relative[5]
+normal_chan_relative_cloc_df = df(data = {
+'chan' : normal_chan_relative_cloc[0]
+,'send' : normal_chan_relative_cloc[1]
+,'receive': normal_chan_relative_cloc[2]
+,'select': normal_chan_relative_cloc[3]
+,'close': normal_chan_relative_cloc[4]
+,'range': normal_chan_relative_cloc[5]
 })
-open("./csv/chan/relative_cloc.csv", "w+").write(normal_new_chan_df.describe().to_csv())
+open("./csv/chan/relative_cloc.csv", "w+").write(normal_chan_relative_cloc_df.describe().to_csv())
 
 
 
@@ -275,8 +275,8 @@ ax1.boxplot(x=[ normal_new_chan[0],
                 normal_new_mu[1],],
                 labels=["send","receive","select","close","range",
                 "Add(x)","Done()","Wait()","Lock()","Unlock()"],)
-plt.ylabel("Number of features / concurrency primitives")
-plt.vlines([5.5,8.5],0,5)
+plt.ylabel("Number of features / concurrency mechanisms")
+plt.vlines([5.5,8.5],0,9)
 
 
 normal_all_relative_all_fig.savefig('./normal/relative/relative_all_data_fig.pdf')
@@ -287,77 +287,94 @@ plt.close(normal_all_relative_all_fig)
 # ------------------ ####
 
 # Normal relative count for WG ! (with respect to kLoc)
-normal_relative = np.loadtxt(open("../stats/results/normal/relative_wg.csv","r+"),
-                         usecols=(1,2,3,4,5),
+normal_wg_relative_cloc = np.loadtxt(open("../stats/results/normal/relative_wg.csv","r+"),
+                         usecols=(1,2,3,4),
                          unpack = True,
                          delimiter = ',',
                          dtype = float
                          )
 
-normal_relative_all_fig, ax1 = plt.subplots()
-ax1.boxplot(x=[ normal_relative[0],
-                normal_relative[1],
-                normal_relative[2],
-                normal_relative[3],
-                normal_relative[4],
+normal_wg_relative_cloc_all_fig, ax1 = plt.subplots()
+ax1.boxplot(x=[ normal_wg_relative_cloc[0],
+                normal_wg_relative_cloc[1],
+                normal_wg_relative_cloc[2],
+                normal_wg_relative_cloc[3],
                 ],
-                labels=["Waitgroup","Add(const)","Add(x)","Done()","Wait()"])
+                labels=["Waitgroup","Add(x)","Done()","Wait()"])
 ax1.set_ylim(top=50)
 plt.ylabel("Number of features / kPLOC")
 
-normal_relative_all_fig.savefig('./normal/relative/all_fig_wg.pdf',dpi=900)
-plt.close(normal_relative_all_fig)
+normal_wg_relative_cloc_all_fig.savefig('./normal/relative/all_fig_wg.pdf',dpi=900)
+plt.close(normal_wg_relative_cloc_all_fig)
 
-normal_new_wg_df = df(data = {
-'Waitgroup' : normal_relative[0]
-,'Add(const)' : normal_relative[1]
-,'Add(x)': normal_relative[2]
-,'Done()': normal_relative[3]
-,'Wait()': normal_relative[4]
+normal_wg_relative_cloc_df = df(data = {
+'Waitgroup' : normal_wg_relative_cloc[0]
+,'Add(x)': normal_wg_relative_cloc[1]
+,'Done()': normal_wg_relative_cloc[2]
+,'Wait()': normal_wg_relative_cloc[3]
 })
-open("./csv/wg/relative_cloc.csv", "w+").write(normal_new_wg_df.describe().to_csv())
+open("./csv/wg/relative_cloc.csv", "w+").write(normal_wg_relative_cloc_df.describe().to_csv())
 
 
 
 # ------------------ ####
 
 # Normal relative count for Mutex ! (with respect to kLoc)
-normal_relative = np.loadtxt(open("../stats/results/normal/relative_mu.csv","r+"),
+normal_mu_relative_cloc = np.loadtxt(open("../stats/results/normal/relative_mu.csv","r+"),
                          usecols=(1,2,3),
                          unpack = True,
                          delimiter = ',',
                          dtype = float
                          )
 
-normal_relative_all_fig, ax1 = plt.subplots()
-ax1.boxplot(x=[ normal_relative[0],
-                normal_relative[1],
-                normal_relative[2],
+normal_mu_relative_cloc_all_fig, ax1 = plt.subplots()
+ax1.boxplot(x=[ normal_mu_relative_cloc[0],
+                normal_mu_relative_cloc[1],
+                normal_mu_relative_cloc[2],
                 ],
                 labels=["Mutex","Lock","Unlock"])
 ax1.set_ylim(top=20)
 plt.ylabel("Number of features / kPLOC")
 
-normal_relative_all_fig.savefig('./normal/relative/all_fig_mu.pdf',dpi=900)
-plt.close(normal_relative_all_fig)
+normal_mu_relative_cloc_all_fig.savefig('./normal/relative/all_fig_mu.pdf',dpi=900)
+plt.close(normal_mu_relative_cloc_all_fig)
 
-normal_new_mu_df = df(data = {
-'Mutex' : normal_relative[0]
-,'Lock' : normal_relative[1]
-,'Unlock': normal_relative[2]
+normal_mu_relative_cloc_df = df(data = {
+'Mutex' : normal_mu_relative_cloc[0]
+,'Lock' : normal_mu_relative_cloc[1]
+,'Unlock': normal_mu_relative_cloc[2]
 })
 
-open("./csv/mutex/relative_cloc.csv", "w+").write(normal_new_mu_df.describe().to_csv())
+open("./csv/mutex/relative_cloc.csv", "w+").write(normal_mu_relative_cloc_df.describe().to_csv())
 
 # ------------------ ####
 
-# Normal absolute count for WG ! absolute number of features in projects
-normal_absolute = np.loadtxt(open("../stats/results/normal/absolute_wg.csv","r+"),
-                         usecols=(1,2,3,4,5),
-                         unpack = True,
-                         delimiter = ',',
-                         dtype = float
-                         )
+# All relative to cloc ! 
+
+normal_all_relative_cloc, ax1 = plt.subplots(figsize=(11,8))
+
+
+ax1.boxplot(x=[ normal_chan_relative_cloc[0],
+                normal_chan_relative_cloc[1],
+                normal_chan_relative_cloc[2],
+                normal_chan_relative_cloc[3],
+                normal_chan_relative_cloc[4],
+                normal_chan_relative_cloc[5],
+                normal_wg_relative_cloc[0],
+                normal_wg_relative_cloc[1],
+                normal_wg_relative_cloc[2],
+                normal_wg_relative_cloc[3],
+                normal_mu_relative_cloc[0],
+                normal_mu_relative_cloc[1],
+                normal_mu_relative_cloc[2]],
+                labels=["chan","send","receive","select","close","range",
+                "Waitgroup","Add(x)","Done()","Wait()","Mutex","Lock()","Unlock()"],showmeans=True)
+plt.ylabel("Number of features / kPLOC")
+plt.vlines([6.5,10.5],0,35)
+ax1.set_yscale('log')
+
+normal_all_relative_cloc.savefig('./normal/relative/all_cloc.pdf')
+plt.close(normal_all_relative_cloc)
 
 normal_absolute_all_fig, ax1 = plt.subplots()
 ax1.set_ylim(top=250)
@@ -494,7 +511,6 @@ median_all_absolute = np.loadtxt(open("../stats/results/median/all_absolute.csv"
 
 median_all_absolute_all_fig, ax1 = plt.subplots(figsize=(11,8))
 # ax1.set_ylim(top=1450)
-
 ax1.boxplot(x=[ median_all_absolute[0],
                 median_all_absolute[1],
                 median_all_absolute[2],
@@ -511,6 +527,7 @@ ax1.boxplot(x=[ median_all_absolute[0],
                 labels=["chan","send","receive","select","close","range",
                 "Waitgroup","Add(x)","Done()","Wait()","Mutex","Lock()","Unlock()"],showmeans=True)
 plt.ylabel("Number of features")
+plt.yscale('log')
 plt.vlines([6.5,10.5],0,60)
 
 

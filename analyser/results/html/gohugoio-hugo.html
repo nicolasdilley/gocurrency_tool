@@ -1,0 +1,3508 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : gohugoio/hugo ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/gohugoio/hugo/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> resources ( 17 features, 3/14 featured file ) </li>
+          
+          <li> livereload ( 16 features, 3/3 featured file ) </li>
+          
+          <li> commands ( 26 features, 4/34 featured file ) </li>
+          
+          <li> navigation ( 13 features, 1/4 featured file ) </li>
+          
+          <li> deps ( 3 features, 1/2 featured file ) </li>
+          
+          <li> common/types ( 7 features, 1/6 featured file ) </li>
+          
+          <li> hugolib ( 32 features, 4/93 featured file ) </li>
+          
+          <li> lazy ( 25 features, 2/3 featured file ) </li>
+          
+          <li> tpl/internal/go_templates/texttemplate ( 5 features, 1/10 featured file ) </li>
+          
+          <li> deploy ( 18 features, 1/7 featured file ) </li>
+          
+          <li> tpl/internal/go_templates/fmtsort_test ( 1 features, 1/1 featured file ) </li>
+          
+          <li> cache/filecache ( 7 features, 1/6 featured file ) </li>
+          
+          <li> resources/resource_transformers/postcss ( 1 features, 1/2 featured file ) </li>
+          
+          <li> cache/namedmemcache ( 7 features, 1/2 featured file ) </li>
+          
+          <li> resources/page ( 20 features, 2/37 featured file ) </li>
+          
+          <li> watcher ( 9 features, 1/1 featured file ) </li>
+          
+          <li> resources/resource_transformers/babel ( 1 features, 1/1 featured file ) </li>
+          
+          <li> tpl/data ( 7 features, 1/6 featured file ) </li>
+          
+          <li> tpl/internal/go_templates/texttemplate/parse ( 6 features, 2/5 featured file ) </li>
+          
+          <li> common/maps ( 7 features, 1/7 featured file ) </li>
+          
+          <li> watcher/filenotify ( 18 features, 2/4 featured file ) </li>
+          
+          <li> common/para ( 7 features, 2/2 featured file ) </li>
+          
+    <li> Num of Packages with features : 22/129</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>28 </td>
+      <td>40 </td>
+      <td>22</td>
+      <td>32</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>3 </td>
+      <td>2</td>
+      <td>0</td>
+      <td>100</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>16 </td>
+      <td>0 </td>
+      <td>11 </td>
+      <td>0</td>
+      <td>1</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td>10</td>
+      <td>1</td>
+      <td>45.45454545454545%</td>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>12 </td>
+      <td>7</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image.go#L252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>252</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image.go#L256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image.go</a></td>
+              <td>Send</td>
+              <td>256</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image.go#L258">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image.go</a></td>
+              <td>Receive</td>
+              <td>258</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go#L405">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go#L409">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go</a></td>
+              <td>Go in for</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go#L409">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>409</td>
+              <td>13</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go#L408">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>408</td>
+              <td>&amp;{45892950 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go#L409">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go</a></td>
+              <td>Goroutine</td>
+              <td>409</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go#L410">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>410</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go#L422">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/transform_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>422</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go#L292">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>292</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go#L305">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go</a></td>
+              <td>Go in for</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go#L305">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>305</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go#L304">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>304</td>
+              <td>&amp;{45949129 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go#L305">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go</a></td>
+              <td>Goroutine</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go#L306">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go#L330">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/image_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>330</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/connection.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/connection.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>32</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>39</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Receive</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Receive</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Receive</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>47</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/hub.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>90</td>
+              <td>256</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go</a></td>
+              <td>Send</td>
+              <td>91</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go#L93">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go</a></td>
+              <td>Goroutine</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go#L99">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go</a></td>
+              <td>Goroutine</td>
+              <td>99</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/livereload/livereload.go</a></td>
+              <td>Send</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/commandeer.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/commandeer.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server_test.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server_test.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server_test.go</a></td>
+              <td>Send</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L421">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Synchronous chan</td>
+              <td>421</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L428">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Goroutine</td>
+              <td>428</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L430">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>430</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L431">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L433">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>433</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L442">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Close chan</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L532">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>532</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L535">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>535</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L780">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Goroutine</td>
+              <td>780</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L863">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Goroutine</td>
+              <td>863</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L865">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>865</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L866">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>866</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go#L872">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/hugo.go</a></td>
+              <td>Receive</td>
+              <td>872</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L507">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>507</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L523">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Go in for</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L523">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Goroutine</td>
+              <td>523</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L535">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>535</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L536">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Receive</td>
+              <td>536</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L537">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Receive</td>
+              <td>537</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L540">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Receive</td>
+              <td>540</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go#L615">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/commands/server.go</a></td>
+              <td>Goroutine</td>
+              <td>615</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Mutex</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Mutex</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>58</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>57</td>
+              <td>&amp;{25631776 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/navigation/menu_cache_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deps/deps.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deps/deps.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>117</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deps/deps.go#L118">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deps/deps.go</a></td>
+              <td>Send</td>
+              <td>118</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deps/deps.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deps/deps.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>128</td>
+              <td>10</td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go</a></td>
+              <td>Go in for</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>60</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>59</td>
+              <td>&amp;{24506516 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go</a></td>
+              <td>Goroutine</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/types/evictingqueue_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Synchronous chan</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Unknown chan length</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L65">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Synchronous chan</td>
+              <td>65</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Goroutine</td>
+              <td>67</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Waitgroup</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Go in for</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>72</td>
+              <td>&amp;{46712534 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>80</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Receive</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Send</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L90">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Close chan</td>
+              <td>90</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Close chan</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Receive</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>106</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Send</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site_render.go</a></td>
+              <td>Send</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Synchronous chan</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Send</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L169">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>169</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Send</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L176">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Receive</td>
+              <td>176</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L299">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>299</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go#L300">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/hugo_sites_build.go</a></td>
+              <td>Receive</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/pages_process.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/pages_process.go</a></td>
+              <td>Send</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site.go#L1604">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site.go</a></td>
+              <td>Receive only chan (&lt;-chan)</td>
+              <td>1604</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site.go#L1604">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site.go</a></td>
+              <td>Send only chan (chan&lt;-)</td>
+              <td>1604</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site.go#L1610">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/hugolib/site.go</a></td>
+              <td>Send</td>
+              <td>1610</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Mutex</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L139">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>139</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>173</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Goroutine</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L177">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>177</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L178">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Receive</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L181">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Send</td>
+              <td>181</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>185</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Receive</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Go in for</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>82</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>81</td>
+              <td>&amp;{22622496 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Goroutine</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L83">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>83</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L103">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>103</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>127</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L128">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Receive</td>
+              <td>128</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Go in for</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>211</td>
+              <td>&amp;{22624789 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Goroutine</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L213">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>213</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go#L219">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/lazy/init_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go#L706">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>706</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go#L707">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Goroutine</td>
+              <td>707</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go#L709">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Send</td>
+              <td>709</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go#L711">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Close chan</td>
+              <td>711</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go#L1707">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/exec_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1707</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L190">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Mutex</td>
+              <td>190</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L199">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Make chan in for</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L199">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>199</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Go in for</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L208">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>208</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L209">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Goroutine</td>
+              <td>209</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L211">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>211</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L212">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>212</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L215">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Receive</td>
+              <td>215</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L220">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>220</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L230">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>230</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L239">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Go in for</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L238">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L239">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Goroutine</td>
+              <td>239</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L245">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L246">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>246</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L250">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Receive</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go#L255">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/deploy/deploy.go</a></td>
+              <td>Send</td>
+              <td>255</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/fmtsort/sort_test.go#L191">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/fmtsort/sort_test.go</a></td>
+              <td>Constant array of chans (length)</td>
+              <td>191</td>
+              <td>3</td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go#L222">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go</a></td>
+              <td>Go in for</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>226</td>
+              <td>50</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>225</td>
+              <td>&amp;{45427308 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go#L227">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>227</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go#L245">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/filecache/filecache_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>245</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/resource_transformers/postcss/postcss.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/resource_transformers/postcss/postcss.go</a></td>
+              <td>Goroutine</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>69</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>68</td>
+              <td>&amp;{22604986 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/cache/namedmemcache/named_cache_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Mutex</td>
+              <td>39</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Mutex</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Go in for</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>50</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>49</td>
+              <td>&amp;{45824478 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Goroutine</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/pages_cache_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go</a></td>
+              <td>Go in for</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>144</td>
+              <td>20</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>143</td>
+              <td>&amp;{45786997 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/page/permalinks_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>52</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>53</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L67">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>67</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L68">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Receive</td>
+              <td>68</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Receive</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Send</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/batcher.go</a></td>
+              <td>Send</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/resource_transformers/babel/babel.go#L197">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/resources/resource_transformers/babel/babel.go</a></td>
+              <td>Goroutine</td>
+              <td>197</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go</a></td>
+              <td>Go in for</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>158</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>157</td>
+              <td>&amp;{46548862 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go#L158">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go</a></td>
+              <td>Goroutine</td>
+              <td>158</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go#L159">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>159</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go#L178">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/data/resources_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex_test.go#L543">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex_test.go</a></td>
+              <td>Receive</td>
+              <td>543</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Send</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Send</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go#L195">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Receive</td>
+              <td>195</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go#L219">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Synchronous chan</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go#L223">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/tpl/internal/go_templates/texttemplate/parse/lex.go</a></td>
+              <td>Goroutine</td>
+              <td>223</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go</a></td>
+              <td>Go in for</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go</a></td>
+              <td>Goroutine in for with constant (constant)</td>
+              <td>142</td>
+              <td>10</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>141</td>
+              <td>&amp;{24560524 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go#L142">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go</a></td>
+              <td>Goroutine</td>
+              <td>142</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go#L163">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>163</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go#L166">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/maps/scratch_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Goroutine</td>
+              <td>69</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>125</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L126">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Send</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L127">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>127</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>135</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Send</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L137">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>137</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L149">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>149</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L267">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>267</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L268">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L279">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L281">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>281</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L294">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>294</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L295">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L296">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>296</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go#L298">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/watcher/filenotify/poller_test.go</a></td>
+              <td>Receive</td>
+              <td>298</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>45</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go</a></td>
+              <td>Send</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go</a></td>
+              <td>Receive</td>
+              <td>47</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para_test.go</a></td>
+              <td>Mutex</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para_test.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/gohugoio/hugo/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/gohugoio&#43;&#43;hugo/common/para/para_test.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 28 ,  40 ,
+     22 ,
+     32 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

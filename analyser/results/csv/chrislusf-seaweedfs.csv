@@ -1,0 +1,628 @@
+Line num,87678
+packages num,28,121
+files num,69,568
+Average Line num per featured file,191,13243
+docker,0
+test/s3/basic,246
+test/s3/multipart,154
+unmaintained/change_superblock,64
+unmaintained/check_disk_size,34
+unmaintained/compact_leveldb,32
+unmaintained/diff_volume_servers,173
+unmaintained/fix_dat,107
+unmaintained/load_test/load_test_leveldb,128
+unmaintained/load_test/load_test_meta_tail,66
+unmaintained/remove_duplicate_fids,74
+unmaintained/repeated_vacuum,55
+unmaintained/s3/presigned_put,51
+unmaintained/see_dat,40
+unmaintained/see_idx,33
+unmaintained/see_log_entry,56
+unmaintained/see_meta,50
+unmaintained/stress_filer_upload/bench_filer_upload,111
+unmaintained/stress_filer_upload/stress_filer_upload_actual,125
+unmaintained/stress_filer_upload/write_files,40
+unmaintained/volume_tailer,56
+weed,145
+weed/command,5504
+weed/command/scaffold,8
+weed/filer,4271
+weed/filer/abstract_sql,367
+weed/filer/cassandra,226
+weed/filer/elastic/v7,340
+weed/filer/etcd,207
+weed/filer/hbase,259
+weed/filer/leveldb,316
+weed/filer/leveldb2,312
+weed/filer/leveldb3,397
+weed/filer/mongodb,230
+weed/filer/mysql,114
+weed/filer/mysql2,75
+weed/filer/postgres,125
+weed/filer/postgres2,86
+weed/filer/redis,249
+weed/filer/redis2,259
+weed/filer/rocksdb,386
+weed/filer/sqlite,65
+weed/filer/tikv,357
+weed/filesys,2732
+weed/filesys/meta_cache,303
+weed/ftpd,62
+weed/glog,1129
+weed/iamapi,830
+weed/images,251
+weed/messaging/broker,661
+weed/messaging/msgclient,443
+weed/notification,44
+weed/notification/aws_sqs,75
+weed/notification/gocdk_pub_sub,80
+weed/notification/google_pub_sub,72
+weed/notification/kafka,70
+weed/notification/log,22
+weed/operation,1340
+weed/pb,335
+weed/pb/filer_pb,5438
+weed/pb/iam_pb,290
+weed/pb/master_pb,4141
+weed/pb/messaging_pb,1773
+weed/pb/remote_pb,644
+weed/pb/volume_server_pb,8015
+weed/query/json,217
+weed/query/sqltypes,399
+weed/remote_storage,217
+weed/remote_storage/azure,252
+weed/remote_storage/gcs,148
+weed/remote_storage/hdfs,186
+weed/remote_storage/s3,499
+weed/replication,85
+weed/replication/repl_util,36
+weed/replication/sink,19
+weed/replication/sink/azuresink,102
+weed/replication/sink/b2sink,98
+weed/replication/sink/filersink,300
+weed/replication/sink/gcssink,91
+weed/replication/sink/localsink,110
+weed/replication/sink/s3sink,271
+weed/replication/source,109
+weed/replication/sub,486
+weed/s3api,4845
+weed/s3api/http,11
+weed/s3api/policy,753
+weed/s3api/s3_constants,8
+weed/s3api/s3err,465
+weed/security,240
+weed/sequence,296
+weed/server,6716
+weed/server/filer_ui,42
+weed/server/master_ui,7
+weed/server/volume_server_ui,27
+weed/shell,8107
+weed/stats,472
+weed/storage,3860
+weed/storage/backend,248
+weed/storage/backend/memory_map,308
+weed/storage/backend/memory_map/os_overloads,174
+weed/storage/backend/s3_backend,347
+weed/storage/erasure_coding,1146
+weed/storage/idx,46
+weed/storage/needle,1258
+weed/storage/needle_map,654
+weed/storage/super_block,164
+weed/storage/types,238
+weed/storage/volume_info,64
+weed/topology,3349
+weed/util,1743
+weed/util/bounded_tree,215
+weed/util/buffered_writer,42
+weed/util/chunk_cache,501
+weed/util/fla9,703
+weed/util/grace,83
+weed/util/httpdown,281
+weed/util/log_buffer,371
+weed/wdclient,418
+weed/wdclient/exclusive_locks,102
+weed/wdclient/net2,419
+weed/wdclient/resource_pool,587
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/volume_write.go,3,Send,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/volume_write.go,1,Goroutine,234,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/volume_write.go,2,Receive,244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,1,Goroutine,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,9,Unknown chan length,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,1,Goroutine,142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,3,Send,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,15,Close chan,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,30,Waitgroup,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,5,Go in for,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,24,Waitgroup Add(const),161,&{51432038 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,1,Goroutine,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,26,Waitgroup Done(),163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,6,Range over chan,164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,31,Waitgroup Wait(),169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,8,Known chan length (length),193,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,30,Waitgroup,194,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,24,Waitgroup Add(const),195,&{51432904 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,1,Goroutine,196,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,3,Send,199,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,26,Waitgroup Done(),202,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,1,Goroutine,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,26,Waitgroup Done(),209,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,1,Goroutine,212,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,31,Waitgroup Wait(),213,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,15,Close chan,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/disk_location.go,6,Range over chan,218,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/volume.go,8,Known chan length (length),56,128
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,8,Known chan length (length),67,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,8,Known chan length (length),68,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,8,Known chan length (length),70,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,8,Known chan length (length),71,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,3,Send,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,3,Send,401,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,3,Send,433,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store.go,3,Send,457,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,3,Send,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,3,Send,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,30,Waitgroup,337,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,5,Go in for,352,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,24,Waitgroup Add(const),351,&{51457059 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,1,Goroutine,352,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,26,Waitgroup Done(),353,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/store_ec.go,31,Waitgroup Wait(),370,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,30,Waitgroup,192,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,9,Unknown chan length,193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,26,Waitgroup Done(),195,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,3,Send,201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,24,Waitgroup Add(const),212,&{52138506 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,1,Goroutine,214,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,31,Waitgroup Wait(),219,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,15,Close chan,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_ec_encode.go,6,Range over chan,226,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,3,Send,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,30,Waitgroup,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,24,Waitgroup Add(const),118,&{51985737 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,8,Known chan length (length),119,1024
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,1,Goroutine,120,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,26,Waitgroup Done(),122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,15,Close chan,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_fs_meta_save.go,31,Waitgroup Wait(),157,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_remote_cache.go,30,Waitgroup,124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_remote_cache.go,24,Waitgroup Add(const),137,&{52062129 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_remote_cache.go,26,Waitgroup Done(),139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_remote_cache.go,31,Waitgroup Wait(),156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/shell_liner.go,1,Goroutine,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_tier_move.go,30,Waitgroup,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_tier_move.go,24,Waitgroup Add(const),150,&{52100864 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_tier_move.go,1,Goroutine,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_tier_move.go,26,Waitgroup Done(),158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_tier_move.go,31,Waitgroup Wait(),164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,3,Send,173,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,3,Send,323,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,9,Unknown chan length,490,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,30,Waitgroup,491,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,5,Go in for,494,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,24,Waitgroup Add(const),493,&{52244793 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,1,Goroutine,494,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,26,Waitgroup Done(),495,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,3,Send,500,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,31,Waitgroup Wait(),505,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,15,Close chan,506,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/shell/command_volume_fsck.go,6,Range over chan,508,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,9,Unknown chan length,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,3,Send,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,2,Receive,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,16,Select (number of branch),52,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,2,Receive,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,2,Receive,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,17,Select with default (number of branch),64,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,2,Receive,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,17,Select with default (number of branch),75,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,3,Send,76,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,8,Known chan length (length),129,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,1,Goroutine,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,3,Send,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,16,Select (number of branch),144,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,2,Receive,145,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/resource_pool/semaphore.go,2,Receive,147,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/filer/reader_at.go,1,Goroutine,205,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/filer/filer.go,1,Goroutine,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/filer/meta_aggregator.go,5,Go in for,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/filer/meta_aggregator.go,1,Goroutine,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/azure/azure_highlevel.go,27,Mutex,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/azure/azure_highlevel.go,29,Mutex Lock(),70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/azure/azure_highlevel.go,28,Mutex Unlock(),73,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/s3sink/s3_sink.go,30,Waitgroup,124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/s3sink/s3_sink.go,5,Go in for,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/s3sink/s3_sink.go,24,Waitgroup Add(const),127,&{52607930 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/s3sink/s3_sink.go,1,Goroutine,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/s3sink/s3_sink.go,26,Waitgroup Done(),129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/s3sink/s3_sink.go,31,Waitgroup Wait(),138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,4,Synchronous chan,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,8,Known chan length (length),98,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,4,Synchronous chan,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,4,Synchronous chan,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,4,Synchronous chan,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,4,Synchronous chan,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,19,Channel of channels,103,ss.stop
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,19,Channel of channels,104,ss.kill
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,1,Goroutine,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,1,Goroutine,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,171,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,173,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,177,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,16,Select (number of branch),219,7
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,220,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,226,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,229,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,234,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,244,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,255,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,272,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,293,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,295,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,302,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,4,Synchronous chan,321,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,322,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,16,Select (number of branch),325,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,326,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,327,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,4,Synchronous chan,332,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,333,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,16,Select (number of branch),334,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,335,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,336,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,8,Known chan length (length),371,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,1,Goroutine,372,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,15,Close chan,373,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,3,Send,374,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,8,Known chan length (length),377,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,16,Select (number of branch),380,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,381,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,385,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/httpdown/http_down.go,2,Receive,390,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,9,Unknown chan length,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,3,Send,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,2,Receive,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,1,Goroutine,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,3,Send,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,1,Goroutine,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,5,Go in for,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,1,Goroutine,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/limiter.go,3,Send,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,3,Send,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,3,Send,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,8,Known chan length (length),191,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,1,Goroutine,203,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,15,Close chan,208,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,16,Select (number of branch),216,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,2,Receive,217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,2,Receive,222,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,2,Receive,226,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server.go,8,Known chan length (length),256,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,30,Waitgroup,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,27,Mutex,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,5,Go in for,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,24,Waitgroup Add(const),79,&{52742981 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,1,Goroutine,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,26,Waitgroup Done(),85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,29,Mutex Lock(),93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,28,Mutex Unlock(),95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server_handlers_write_upload.go,31,Waitgroup Wait(),109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server.go,1,Goroutine,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_server.go,1,Goroutine,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/common.go,1,Goroutine,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/common.go,1,Goroutine,322,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,8,Known chan length (length),117,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,1,Goroutine,119,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,3,Send,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,3,Send,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,16,Select (number of branch),157,8
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,158,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,192,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,204,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,217,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_grpc_client_to_master.go,2,Receive,219,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_grpc_server_remote.go,30,Waitgroup,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_grpc_server_remote.go,24,Waitgroup Add(const),90,&{52872491 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_grpc_server_remote.go,26,Waitgroup Done(),92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/filer_grpc_server_remote.go,31,Waitgroup Wait(),154,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server_handlers.go,8,Known chan length (length),122,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server_handlers.go,3,Send,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server_handlers.go,2,Receive,128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server_volume.go,1,Goroutine,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server_volume.go,2,Receive,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server_volume.go,1,Goroutine,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server_volume.go,3,Send,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_grpc_server_volume.go,3,Send,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_server.go,4,Synchronous chan,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_server.go,1,Goroutine,115,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/volume_server.go,1,Goroutine,116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server.go,9,Unknown chan length,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server.go,8,Known chan length (length),108,16
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server.go,3,Send,178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server.go,2,Receive,179,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server.go,1,Goroutine,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/server/master_server.go,1,Goroutine,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/traverse_bfs.go,30,Waitgroup,15,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/traverse_bfs.go,24,Waitgroup Add(const),17,&{51225053 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/traverse_bfs.go,5,Go in for,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/traverse_bfs.go,1,Goroutine,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/traverse_bfs.go,26,Waitgroup Done(),37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/traverse_bfs.go,31,Waitgroup Wait(),42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/traverse_bfs.go,24,Waitgroup Add(const),57,&{51225989 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/remote_storage.go,27,Mutex,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/remote_storage.go,29,Mutex Lock(),112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/remote_storage/remote_storage.go,28,Mutex Unlock(),113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/grace/signal_handling.go,27,Mutex,15,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/grace/signal_handling.go,8,Known chan length (length),18,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/grace/signal_handling.go,1,Goroutine,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/grace/signal_handling.go,29,Mutex Lock(),41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/grace/signal_handling.go,28,Mutex Unlock(),42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/broker/broker_server.go,1,Goroutine,41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/broker/broker_grpc_server_subscribe.go,1,Goroutine,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/filersink/fetch_write.go,30,Waitgroup,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/filersink/fetch_write.go,5,Go in for,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/filersink/fetch_write.go,24,Waitgroup Add(const),27,&{52632420 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/filersink/fetch_write.go,1,Goroutine,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/filersink/fetch_write.go,26,Waitgroup Done(),29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sink/filersink/fetch_write.go,31,Waitgroup Wait(),38,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),35,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),36,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),37,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),38,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),39,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),40,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),41,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,8,Known chan length (length),42,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,75,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,3,Send,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,16,Select (number of branch),92,9
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,93,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,107,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/stats/stats.go,2,Receive,109,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/log_buffer/log_buffer.go,8,Known chan length (length),52,256
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/log_buffer/log_buffer.go,1,Goroutine,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/log_buffer/log_buffer.go,1,Goroutine,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/log_buffer/log_buffer.go,3,Send,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/log_buffer/log_buffer.go,3,Send,126,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/util/log_buffer/log_buffer.go,3,Send,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,9,Unknown chan length,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,30,Waitgroup,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,5,Go in for,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,24,Waitgroup Add(const),99,&{51256795 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,1,Goroutine,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,26,Waitgroup Done(),101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,3,Send,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,31,Waitgroup Wait(),111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,15,Close chan,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/delete_content.go,6,Range over chan,114,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/operation/chunked_file.go,1,Goroutine,236,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master.go,1,Goroutine,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master.go,1,Goroutine,146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master.go,1,Goroutine,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master.go,1,Goroutine,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master.go,16,Select (number of branch),161,0
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,202,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,223,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,232,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,241,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,250,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,259,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,1,Goroutine,263,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/server.go,16,Select (number of branch),266,0
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/s3.go,1,Goroutine,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/s3.go,1,Goroutine,174,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer.go,1,Goroutine,130,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer.go,1,Goroutine,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer.go,1,Goroutine,141,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer.go,1,Goroutine,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer.go,1,Goroutine,160,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer.go,1,Goroutine,216,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer.go,1,Goroutine,241,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_sync.go,1,Goroutine,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_sync.go,1,Goroutine,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_sync.go,16,Select (number of branch),120,0
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master_follower.go,1,Goroutine,134,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master_follower.go,1,Goroutine,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master_follower.go,1,Goroutine,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/master_follower.go,16,Select (number of branch),142,0
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,30,Waitgroup,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,4,Synchronous chan,148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,4,Synchronous chan,149,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,4,Synchronous chan,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,5,Go in for,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,24,Waitgroup Add(const),154,&{53188131 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,155,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,159,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,15,Close chan,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,31,Waitgroup Wait(),164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,24,Waitgroup Add(const),166,&{53188459 INT 2} val is : 2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,31,Waitgroup Wait(),169,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,15,Close chan,170,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,4,Synchronous chan,175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,4,Synchronous chan,176,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,178,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,181,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,5,Go in for,184,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,24,Waitgroup Add(const),183,&{53188920 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,184,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,31,Waitgroup Wait(),186,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,24,Waitgroup Add(const),187,&{53189006 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,188,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,31,Waitgroup Wait(),189,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,15,Close chan,190,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,22,chan used as a param,200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,22,chan used as a param,200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,26,Waitgroup Done(),201,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,8,Known chan length (length),202,100
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,30,Waitgroup,203,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,5,Go in for,207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,7,Goroutine in for with constant (constant),207,7
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,24,Waitgroup Add(const),206,&{53189426 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,1,Goroutine,207,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,26,Waitgroup Done(),208,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,6,Range over chan,209,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,252,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,261,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,263,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,15,Close chan,280,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,31,Waitgroup Wait(),281,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,22,chan used as a param,284,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,26,Waitgroup Done(),285,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,22,chan used as a param,325,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,22,chan used as a param,325,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,16,Select (number of branch),333,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,2,Receive,334,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,26,Waitgroup Done(),335,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,2,Receive,337,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,22,chan used as a param,355,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,368,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,3,Send,384,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,22,chan used as a param,434,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,16,Select (number of branch),439,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,2,Receive,440,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,26,Waitgroup Done(),441,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/benchmark.go,2,Receive,443,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,1,Goroutine,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,1,Goroutine,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,4,Synchronous chan,259,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,3,Send,271,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,16,Select (number of branch),274,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,2,Receive,275,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,1,Goroutine,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,1,Goroutine,336,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,1,Goroutine,367,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,5,Go in for,390,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/volume.go,1,Goroutine,390,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/mount_std.go,2,Receive,254,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,30,Waitgroup,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,9,Unknown chan length,161,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,1,Goroutine,163,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,15,Close chan,164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,5,Go in for,174,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,24,Waitgroup Add(const),173,&{53261628 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,1,Goroutine,174,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,26,Waitgroup Done(),175,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,31,Waitgroup Wait(),187,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,22,chan used as a param,206,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,3,Send,221,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,22,chan used as a param,249,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,9,Unknown chan length,449,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,9,Unknown chan length,451,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,30,Waitgroup,452,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,5,Go in for,460,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,24,Waitgroup Add(const),458,&{53269850 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,3,Send,459,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,1,Goroutine,460,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,26,Waitgroup Done(),462,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,2,Receive,463,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,3,Send,510,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,31,Waitgroup Wait(),515,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,15,Close chan,516,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/command/filer_copy.go,6,Range over chan,519,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/wdclient/exclusive_locks/exclusive_locker.go,1,Goroutine,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_google_pub_sub.go,8,Known chan length (length),84,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_google_pub_sub.go,1,Goroutine,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_google_pub_sub.go,3,Send,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_google_pub_sub.go,2,Receive,95,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,8,Known chan length (length),53,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,5,Go in for,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,1,Goroutine,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,16,Select (number of branch),84,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,2,Receive,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,2,Receive,87,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,3,Send,88,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/replication/sub/notification_kafka.go,2,Receive,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/chan_sub.go,4,Synchronous chan,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/chan_sub.go,1,Goroutine,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/chan_sub.go,3,Send,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/subscriber.go,30,Waitgroup,101,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/subscriber.go,24,Waitgroup Add(const),104,&{52299228 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/subscriber.go,1,Goroutine,105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/subscriber.go,26,Waitgroup Done(),106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/subscriber.go,31,Waitgroup Wait(),111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/publisher.go,8,Known chan length (length),79,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/publisher.go,1,Goroutine,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/messaging/msgclient/publisher.go,3,Send,84,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/glog/glog.go,1,Goroutine,410,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/glog/glog.go,8,Known chan length (length),745,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/glog/glog.go,1,Goroutine,746,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/glog/glog.go,3,Send,748,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/glog/glog.go,16,Select (number of branch),750,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/glog/glog.go,2,Receive,751,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/glog/glog.go,2,Receive,752,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/storage/needle/async_request.go,2,Receive,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/grpc_client_server.go,27,Mutex,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/grpc_client_server.go,29,Mutex Lock(),91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/grpc_client_server.go,28,Mutex Unlock(),92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/grpc_client_server.go,29,Mutex Lock(),124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/grpc_client_server.go,28,Mutex Unlock(),131,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/notification/gocdk_pub_sub/gocdk_pub_sub.go,1,Goroutine,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/notification/gocdk_pub_sub/gocdk_pub_sub.go,2,Receive,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/node.go,3,Send,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/node.go,3,Send,247,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_event_handling.go,1,Goroutine,14,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_event_handling.go,1,Goroutine,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_event_handling.go,1,Goroutine,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_event_handling.go,16,Select (number of branch),33,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_event_handling.go,2,Receive,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_event_handling.go,2,Receive,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,9,Unknown chan length,19,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,5,Go in for,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,1,Goroutine,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,3,Send,29,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,3,Send,33,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,3,Send,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,16,Select (number of branch),50,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,2,Receive,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,2,Receive,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,9,Unknown chan length,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,5,Go in for,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,1,Goroutine,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,3,Send,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,3,Send,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,16,Select (number of branch),93,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,2,Receive,94,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology_vacuum.go,2,Receive,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology.go,4,Synchronous chan,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/topology.go,4,Synchronous chan,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/store_replicate.go,4,Synchronous chan,148,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/store_replicate.go,5,Go in for,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/store_replicate.go,1,Goroutine,150,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/store_replicate.go,3,Send,151,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/topology/store_replicate.go,2,Receive,156,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/filer_pb/filer_client_bfs.go,30,Waitgroup,15,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/filer_pb/filer_client_bfs.go,24,Waitgroup Add(const),17,&{50738998 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/filer_pb/filer_client_bfs.go,5,Go in for,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/filer_pb/filer_client_bfs.go,1,Goroutine,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/filer_pb/filer_client_bfs.go,26,Waitgroup Done(),37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/filer_pb/filer_client_bfs.go,31,Waitgroup Wait(),41,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/pb/filer_pb/filer_client_bfs.go,24,Waitgroup Add(const),57,&{50739967 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/filesys/dirty_pages_continuous.go,1,Goroutine,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/filesys/dirty_pages_temp_file.go,1,Goroutine,137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/filesys/wfs.go,1,Goroutine,144,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/chrislusf++seaweedfs/weed/s3api/s3api_server.go,1,Goroutine,40,

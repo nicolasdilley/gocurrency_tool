@@ -1,0 +1,2763 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : nsqio/nsq ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/nsqio/nsq/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> internal/util ( 1 features, 1/3 featured file ) </li>
+          
+          <li> internal/writers ( 4 features, 1/2 featured file ) </li>
+          
+          <li> internal/protocol ( 6 features, 1/6 featured file ) </li>
+          
+          <li> nsqadmin ( 13 features, 4/9 featured file ) </li>
+          
+          <li> nsqd ( 210 features, 12/28 featured file ) </li>
+          
+          <li> nsqlookupd ( 12 features, 4/12 featured file ) </li>
+          
+          <li> internal/clusterinfo ( 92 features, 1/3 featured file ) </li>
+          
+    <li> Num of Packages with features : 7/19</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>27 </td>
+      <td>67 </td>
+      <td>32</td>
+      <td>44</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>15 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>23</td>
+      <td>5</td>
+      <td>4</td>
+      <td>15.625%</td>
+      <td>4 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>15 </td>
+      <td>11</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/util/wait_group_wrapper.go#L13">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/util/wait_group_wrapper.go</a></td>
+              <td>Goroutine</td>
+              <td>13</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go#L15">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go</a></td>
+              <td>chan used as a param</td>
+              <td>15</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>36</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/writers/spread_writer.go</a></td>
+              <td>Receive</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go</a></td>
+              <td>Waitgroup</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go</a></td>
+              <td>Go in for</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>37</td>
+              <td>&amp;{6728079 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/protocol/tcp_server.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/notify.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/notify.go</a></td>
+              <td>Goroutine</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/notify.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/notify.go</a></td>
+              <td>Send</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin_test.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin_test.go</a></td>
+              <td>Goroutine</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin_test.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin_test.go</a></td>
+              <td>Goroutine</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go</a></td>
+              <td>Synchronous chan</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go</a></td>
+              <td>Synchronous chan</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go#L178">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go</a></td>
+              <td>Send</td>
+              <td>178</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/nsqadmin.go</a></td>
+              <td>Receive</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go#L81">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>81</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go#L123">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>123</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go#L628">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqadmin/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>628</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/statsd.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/statsd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>34</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/statsd.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/statsd.go</a></td>
+              <td>Receive</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/statsd.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/statsd.go</a></td>
+              <td>Receive</td>
+              <td>37</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Unknown chan length</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>201</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L202">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Receive</td>
+              <td>202</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>221</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L222">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Receive</td>
+              <td>222</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L306">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>306</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L307">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Send</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go#L442">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel.go</a></td>
+              <td>Goroutine</td>
+              <td>442</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>50</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Synchronous chan</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Synchronous chan</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Unknown chan length</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L91">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>91</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>112</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L114">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>114</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>171</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L172">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L177">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Goroutine</td>
+              <td>177</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L225">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>225</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L226">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>226</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L256">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>256</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L257">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>257</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L259">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L261">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L263">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L279">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>279</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L280">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L281">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>281</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L287">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>287</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L302">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>302</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L311">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>311</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L404">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>404</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L405">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>405</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L423">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>423</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L424">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>424</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L476">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>476</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L477">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Send</td>
+              <td>477</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go#L478">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/topic.go</a></td>
+              <td>Receive</td>
+              <td>478</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L206">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>206</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Synchronous chan</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L214">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>214</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L215">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>215</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L277">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>277</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L278">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Send</td>
+              <td>278</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L421">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>421</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go#L422">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/client_v2.go</a></td>
+              <td>Send</td>
+              <td>422</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>108</td>
+              <td>4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go#L119">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>119</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go#L166">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/lookup.go</a></td>
+              <td>Receive</td>
+              <td>166</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L59">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>59</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>61</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L87">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>87</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>88</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L110">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>110</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L121">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>121</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L122">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>122</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>143</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L156">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>156</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L157">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>157</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L169">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>169</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L171">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>171</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L172">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L175">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>175</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L187">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>187</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L204">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Send</td>
+              <td>204</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Receive</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go#L250">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>132</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>134</td>
+              <td>&amp;{10396350 INT 2} val is : 2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go</a></td>
+              <td>Goroutine</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go#L141">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>141</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go</a></td>
+              <td>Goroutine</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go#L148">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>148</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go#L151">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/stats_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>151</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel_test.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel_test.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/channel_test.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L93">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>94</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L187">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>187</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L188">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>188</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L231">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>231</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L238">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L263">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L547">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>547</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L548">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>548</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L549">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>549</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L582">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>582</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L594">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>594</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L608">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>608</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L608">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>608</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L608">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>chan used as a param</td>
+              <td>608</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L610">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>610</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L611">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>611</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L620">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>620</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L621">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>621</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L641">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Unknown chan length</td>
+              <td>641</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L642">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Unknown chan length</td>
+              <td>642</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L643">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>643</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L652">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>652</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L653">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>653</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L657">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>657</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L661">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>661</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L672">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Send</td>
+              <td>672</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L677">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Receive</td>
+              <td>677</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go#L689">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/nsqd.go</a></td>
+              <td>Close chan</td>
+              <td>689</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go#L900">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>900</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go#L916">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go</a></td>
+              <td>Go in for</td>
+              <td>916</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go#L915">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>915</td>
+              <td>&amp;{10392288 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go#L916">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>916</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go#L931">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>931</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go#L935">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/http_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>935</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Synchronous chan</td>
+              <td>53</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Goroutine</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>chan used as a param</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L263">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>263</td>
+              <td>8</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L264">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>264</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L275">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>275</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L276">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>276</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L279">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>279</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L300">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>300</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L305">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>305</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L324">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>324</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L337">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Receive</td>
+              <td>337</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go#L638">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2.go</a></td>
+              <td>Send</td>
+              <td>638</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L165">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>165</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L192">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>192</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L199">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Send</td>
+              <td>199</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L203">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>203</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L207">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>207</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L237">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>237</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L238">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>238</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L417">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>417</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1249">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1249</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1258">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1258</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1259">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1259</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1262">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Close chan</td>
+              <td>1262</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1268">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1634">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1634</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1654">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1654</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1653">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1653</td>
+              <td>&amp;{10350669 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1654">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1654</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1662">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1662</td>
+              <td>&amp;{10350898 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1663">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1663</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1675">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1675</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1677">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1677</td>
+              <td>&amp;{10351193 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1678">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1678</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1689">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1689</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1691">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1691</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1695">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1695</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1709">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1709</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1728">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1728</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1727">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1727</td>
+              <td>&amp;{10352722 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1728">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1728</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1736">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1736</td>
+              <td>&amp;{10352963 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1737">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1737</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1749">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1749</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1751">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1751</td>
+              <td>&amp;{10353258 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1752">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1752</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1763">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1763</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1765">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1765</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1769">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1769</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1790">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1790</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1806">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1806</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1807">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1807</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1811">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1811</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1810">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1810</td>
+              <td>&amp;{10355405 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1811">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1811</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1813">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1813</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1815">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1815</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1819">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Close chan</td>
+              <td>1819</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1820">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1820</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1826">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>1826</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1826">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>chan used as a param</td>
+              <td>1826</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1837">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Send</td>
+              <td>1837</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1838">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1838</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1883">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>1883</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1894">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1894</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1895">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>1895</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1908">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Go in for</td>
+              <td>1908</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1907">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>1907</td>
+              <td>&amp;{10358489 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1908">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Goroutine</td>
+              <td>1908</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1910">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>1910</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1912">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Receive</td>
+              <td>1912</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1917">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Close chan</td>
+              <td>1917</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go#L1918">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqd/protocol_v2_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>1918</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Send</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Goroutine</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>55</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/lookup_protocol_v1_test.go</a></td>
+              <td>Receive</td>
+              <td>57</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd.go</a></td>
+              <td>Synchronous chan</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd.go</a></td>
+              <td>Send</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/http_test.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/http_test.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/http_test.go</a></td>
+              <td>Goroutine</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd_test.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/nsqlookupd/nsqlookupd_test.go</a></td>
+              <td>Goroutine</td>
+              <td>44</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>75</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>84</td>
+              <td>&amp;{8651783 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L94">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>94</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L96">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>96</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L100">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>100</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L105">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>105</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L124">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>124</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>125</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L133">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>133</td>
+              <td>&amp;{8652901 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>143</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L145">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>145</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L149">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>149</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L150">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>150</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L172">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>172</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L184">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>184</td>
+              <td>&amp;{8654104 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L185">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>185</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L186">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>186</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L194">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>194</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L196">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>196</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L200">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>200</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L201">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>201</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L219">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L242">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>242</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L243">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>243</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L251">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>251</td>
+              <td>&amp;{8655763 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L252">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>252</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L253">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>253</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L261">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>261</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L263">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>263</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L267">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>267</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L268">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>268</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L280">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>280</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L294">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>294</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L295">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>295</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L306">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L305">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>305</td>
+              <td>&amp;{8656980 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L306">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>306</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L307">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>307</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L315">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>315</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L317">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>317</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L321">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>321</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L322">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>322</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L328">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>328</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L345">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>345</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L346">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>346</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L365">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L364">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>364</td>
+              <td>&amp;{8658313 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L365">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>365</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L366">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>366</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L374">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>374</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L376">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>376</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L386">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>386</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L388">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>388</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L402">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>402</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L403">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>403</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L415">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>415</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L430">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>430</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L431">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>431</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L450">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L449">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>449</td>
+              <td>&amp;{8660520 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L450">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L451">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>451</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L460">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>460</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L462">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>462</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L479">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>479</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L481">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>481</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L502">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>502</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L512">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>512</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L519">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>519</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L539">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex</td>
+              <td>539</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L540">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup</td>
+              <td>540</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L552">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Go in for</td>
+              <td>552</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L551">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>551</td>
+              <td>&amp;{8663383 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L552">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Goroutine</td>
+              <td>552</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L553">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>553</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L573">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>573</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L575">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>575</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L579">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Lock()</td>
+              <td>579</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L580">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Mutex Unlock()</td>
+              <td>580</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/nsqio/nsq/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go#L616">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/nsqio&#43;&#43;nsq/internal/clusterinfo/data.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>616</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 27 ,  67 ,
+     32 ,
+     44 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

@@ -1,0 +1,2458 @@
+<html>
+  <head>
+    <style> table, th, td {border: 1px solid black;} </style>
+  </head>
+  <body>
+    <h1> Project name : drone/drone ( 0 Lines ) </h1>
+  <h2> <a href="https://github.com/drone/drone/tree/"> Commit :  </a></h2>
+</br>
+  <h2> Packages </h2>
+
+  <ul>
+    
+          <li> server ( 3 features, 1/1 featured file ) </li>
+          
+          <li> operator/runner ( 3 features, 1/11 featured file ) </li>
+          
+          <li> handler/api/events ( 18 features, 3/5 featured file ) </li>
+          
+          <li> metric/sink ( 3 features, 1/4 featured file ) </li>
+          
+          <li> trigger/cron ( 3 features, 1/2 featured file ) </li>
+          
+          <li> scheduler/queue ( 40 features, 4/8 featured file ) </li>
+          
+          <li> handler/web ( 1 features, 1/13 featured file ) </li>
+          
+          <li> pubsub ( 38 features, 5/7 featured file ) </li>
+          
+          <li> service/redisdb ( 3 features, 1/1 featured file ) </li>
+          
+          <li> service/canceler/reaper ( 3 features, 1/4 featured file ) </li>
+          
+          <li> livelog ( 51 features, 6/8 featured file ) </li>
+          
+          <li> trigger ( 1 features, 1/6 featured file ) </li>
+          
+    <li> Num of Packages with features : 12/91</li>
+  </ul>
+
+  <h2> Simple expressions </h2>
+  <table>
+    <tr>
+      <th> Send </th>
+      <th> Receive </th>
+      <th> Channels </th>
+      <th> Goroutines </th>
+    </tr>
+
+    <tr>
+      <td>11 </td>
+      <td>58 </td>
+      <td>27</td>
+      <td>17</td>
+    </tr>
+  </table>
+
+  <h2> Function parameter  </h2>
+  <table>
+    <tr>
+      <th> Receive chan </th>
+      <th> Send chan </th>
+      <th> Undefined chan </th>
+      <th> Ratio </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> For Loop  </h2>
+  <table>
+    <tr>
+      <th> Go in for </th>
+      <th> Range over a channel </th>
+      <th> Go in a constant for </th>
+      <th> Make chan in for </th>
+      <th> Make chan in constant for </th>
+      <th> Assign chan in for </th>
+    </tr>
+
+    <tr>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0 </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0 </td>
+    </tr>
+  </table>
+
+  <h2> Channels  </h2>
+  <table>
+    <tr>
+      <th> Synchronous Chan </th>
+      <th> Known Size </th>
+      <th> Unknown Size </th>
+      <th> Known over Unknown and Synchronous </th>
+      <th> Close Channels </th>
+      <th> Chan of chans </th>
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td>12</td>
+      <td>1</td>
+      <td>44.44444444444444%</td>
+      <td>6 </td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Array, Slices and map  </h2>
+  <table>
+    <tr>
+      <th> Unknown array of chan </th>
+      <th> Constant array of chan </th>
+      <th> Slice of chan </th>
+      <th> Map of chan </th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </table>
+
+  <h2> Selects </h2>
+  <table>
+    <tr>
+      <th> Select without default </th>
+      <th> Select with default </th>
+    </tr>
+    <tr>
+      <td>18 </td>
+      <td>8</td>
+    </tr>
+  </table>
+  <canvas id="basics" width="400" height="400"></canvas>
+
+  <h2> Features </h2>
+  <table id="features_table">
+    <thead>
+    <tr>
+      <th> Filename </th>
+      <th> Concurrent Type </th>
+      <th> Line number </th>
+      <th> Number </th>
+    </tr>
+  </thead>
+  <tbody>
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/server/server.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/server/server.go</a></td>
+              <td>Receive</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/server/server.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/server/server.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/server/server.go#L138">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/server/server.go</a></td>
+              <td>Receive</td>
+              <td>138</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/operator/runner/runner.go#L541">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/operator/runner/runner.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>541</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/operator/runner/runner.go#L542">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/operator/runner/runner.go</a></td>
+              <td>Receive</td>
+              <td>542</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/operator/runner/runner.go#L599">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/operator/runner/runner.go</a></td>
+              <td>Goroutine</td>
+              <td>599</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go#L69">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>69</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>70</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go#L82">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/global.go</a></td>
+              <td>Receive</td>
+              <td>82</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go#L108">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>108</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go#L109">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>109</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go#L111">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>111</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>115</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go#L117">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/logs.go</a></td>
+              <td>Receive</td>
+              <td>117</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go#L88">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>88</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go#L89">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>89</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go#L92">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>92</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go#L95">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go#L98">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>98</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/api/events/build.go</a></td>
+              <td>Receive</td>
+              <td>101</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/metric/sink/datadog.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/metric/sink/datadog.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>71</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/metric/sink/datadog.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/metric/sink/datadog.go</a></td>
+              <td>Receive</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/metric/sink/datadog.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/metric/sink/datadog.go</a></td>
+              <td>Receive</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/cron/cron.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/cron/cron.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/cron/cron.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/cron/cron.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/cron/cron.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/cron/cron.go</a></td>
+              <td>Receive</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go</a></td>
+              <td>Synchronous chan</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>63</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go</a></td>
+              <td>Receive</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go#L66">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go</a></td>
+              <td>Receive</td>
+              <td>66</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go#L104">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go</a></td>
+              <td>Synchronous chan</td>
+              <td>104</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go#L111">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>111</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go#L116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go</a></td>
+              <td>Receive</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go#L140">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go</a></td>
+              <td>Send</td>
+              <td>140</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go#L155">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/canceller_redis.go</a></td>
+              <td>Send</td>
+              <td>155</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>43</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Goroutine</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L53">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>53</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>79</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L80">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>80</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L95">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Synchronous chan</td>
+              <td>95</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L101">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>101</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L102">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>102</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L106">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>106</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>107</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L204">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>204</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L205">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Send</td>
+              <td>205</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L216">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>216</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L217">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>217</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L219">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>219</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go#L221">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue.go</a></td>
+              <td>Receive</td>
+              <td>221</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>61</td>
+              <td>&amp;{34180830 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Goroutine</td>
+              <td>63</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L84">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>84</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L107">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>107</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L111">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>111</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L112">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Receive</td>
+              <td>112</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go#L113">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/scheduler/queue/queue_test.go</a></td>
+              <td>Receive</td>
+              <td>113</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/web/login.go#L170">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/handler/web/login.go</a></td>
+              <td>Goroutine</td>
+              <td>170</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>49</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go</a></td>
+              <td>Synchronous chan</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go</a></td>
+              <td>Goroutine</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go</a></td>
+              <td>Close chan</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go#L57">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>57</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go#L58">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub.go</a></td>
+              <td>Receive</td>
+              <td>58</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>19</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go#L20">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>20</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go</a></td>
+              <td>Receive</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go#L39">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>39</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go#L63">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>63</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>32</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/sub.go</a></td>
+              <td>Send</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L41">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>41</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>71</td>
+              <td>100</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L72">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Synchronous chan</td>
+              <td>72</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L78">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>78</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L79">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Receive</td>
+              <td>79</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L85">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Close chan</td>
+              <td>85</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L86">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Close chan</td>
+              <td>86</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L115">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>115</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go#L116">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_redis.go</a></td>
+              <td>Send</td>
+              <td>116</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>35</td>
+              <td>&amp;{33842494 INT 1} val is : 1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L36">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>36</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L40">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>40</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L44">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>44</td>
+              <td>&amp;{33842652 INT 3} val is : 3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Goroutine</td>
+              <td>45</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L47">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>47</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/pubsub/hub_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/redisdb/redisdb.go#L125">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/redisdb/redisdb.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>125</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/redisdb/redisdb.go#L126">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/redisdb/redisdb.go</a></td>
+              <td>Receive</td>
+              <td>126</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/redisdb/redisdb.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/redisdb/redisdb.go</a></td>
+              <td>Receive</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/canceler/reaper/reaper.go#L70">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/canceler/reaper/reaper.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>70</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/canceler/reaper/reaper.go#L71">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/canceler/reaper/reaper.go</a></td>
+              <td>Receive</td>
+              <td>71</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/canceler/reaper/reaper.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/service/canceler/reaper/reaper.go</a></td>
+              <td>Receive</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub.go#L32">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>32</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub.go#L33">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub.go</a></td>
+              <td>Receive</td>
+              <td>33</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub.go#L34">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub.go</a></td>
+              <td>Send</td>
+              <td>34</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go#L17">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>17</td>
+              <td>5</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go#L18">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>18</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go#L27">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go</a></td>
+              <td>Receive</td>
+              <td>27</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>37</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>61</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/sub_test.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L61">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>61</td>
+              <td>5000</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L62">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Synchronous chan</td>
+              <td>62</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L64">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Synchronous chan</td>
+              <td>64</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L73">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Goroutine</td>
+              <td>73</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L74">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Close chan</td>
+              <td>74</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L75">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>75</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L76">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Receive</td>
+              <td>76</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go#L77">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream.go</a></td>
+              <td>Receive</td>
+              <td>77</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L29">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>29</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>30</td>
+              <td>&amp;{33982943 INT 4} val is : 4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L31">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Goroutine</td>
+              <td>31</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L35">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>35</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L43">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Goroutine</td>
+              <td>43</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L45">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>45</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L46">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Receive</td>
+              <td>46</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L48">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Receive</td>
+              <td>48</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L50">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Receive</td>
+              <td>50</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>51</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go#L56">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/streamer_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>56</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L19">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Waitgroup</td>
+              <td>19</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L30">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>30</td>
+              <td>&amp;{33980700 INT 3} val is : 3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L37">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Waitgroup Add(const)</td>
+              <td>37</td>
+              <td>&amp;{33980820 INT 4} val is : 4</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L38">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Goroutine</td>
+              <td>38</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L42">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>42</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L49">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Goroutine</td>
+              <td>49</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L51">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Select (number of branch)</td>
+              <td>51</td>
+              <td>2</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L52">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Receive</td>
+              <td>52</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L54">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Receive</td>
+              <td>54</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L55">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Waitgroup Done()</td>
+              <td>55</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L60">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Waitgroup Wait()</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go#L93">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_test.go</a></td>
+              <td>Receive</td>
+              <td>93</td>
+              <td></td>
+            </tr>
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L131">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Unknown chan length</td>
+              <td>131</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L132">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Known chan length (length)</td>
+              <td>132</td>
+              <td>1</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L134">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Goroutine</td>
+              <td>134</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L135">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Close chan</td>
+              <td>135</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L136">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Close chan</td>
+              <td>136</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L143">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Select with default (number of branch)</td>
+              <td>143</td>
+              <td>3</td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L144">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Receive</td>
+              <td>144</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L146">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Receive</td>
+              <td>146</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L154">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Send</td>
+              <td>154</td>
+              <td></td>
+            </tr>
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go#L173">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/livelog/stream_redis.go</a></td>
+              <td>Send</td>
+              <td>173</td>
+              <td></td>
+            </tr>
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <tr>
+              <td><a href="https://github.com/drone/drone/blob///Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/trigger.go#L485">/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/drone&#43;&#43;drone/trigger/trigger.go</a></td>
+              <td>Goroutine</td>
+              <td>485</td>
+              <td></td>
+            </tr>
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    </tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+  <script>
+
+
+  
+  var ctx = "basics";
+  var myChart = new Chart(ctx, {
+    type: 'bar', data: {
+    labels: ["Send", "Receive", "Channels", "Goroutines"],
+    datasets: [{
+    label: '# of features',
+    data: [ 11 ,  58 ,
+     27 ,
+     17 ],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(54, 162, 235, 0.2)','rgba(255, 206, 86, 0.2)','rgba(75, 192, 192, 0.2)'],
+    borderColor: ['rgba(255,99,132,1)','rgba(54, 162, 235, 1)','rgba(255, 206, 86, 1)','rgba(75, 192, 192, 1)'],
+    borderWidth: 1}]},
+    options: { scales: {yAxes: [{ticks: {beginAtZero:true}}]},responsive:false}
+  });
+
+    
+    $(document).ready( function () {
+      $('#features_table').DataTable({
+    paging: false
+});
+} );
+  </script>
+  </body>
+</html>

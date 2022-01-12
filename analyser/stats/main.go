@@ -83,7 +83,6 @@ type Counter struct {
 	chan_size_map                     map[int]int
 	go_map                            map[int][]int
 	chan_map                          map[int][]int
-	go_int_for_over_go                int
 	chan_in_for                       int
 	make_chan                         int
 	known_chan_map                    []ChanSizeInfo
@@ -120,38 +119,44 @@ type ProjectCounter struct {
 
 // statsInfo is a struct that holds combined projects stats
 type StatsInfo struct {
-	Num_projects                          int         // the number of projects analyzed
-	Num_featured_projects                 int         // the number of projects with at least one feature
-	Num_median_projects                   int         // the number of projects that falls between median ploc (concurrency size)
-	Num_projects_without_chans            int         // the number of projects analyzed without a new channel
-	Num_projects_without_go               int         // the number of projects analyzed without a go
-	Num_projects_without_send             int         // the number of projects analyzed without a send
-	Num_projects_without_receive          int         // the number of projects analyzed without a receive
-	Num_projects_without_select           int         // the number of projects analyzed without a select
-	Num_projects_without_close            int         // the number of projects analyzed without a close
-	Num_projects_without_range            int         // the number of projects analyzed without a range
-	Num_projects_without_wg               int         // the number of projects analyzed without a wg
-	Num_projects_without_unknown_add      int         // the number of projects analyzed without a unknown_add
-	Num_projects_without_known_add        int         // the number of projects analyzed without a known_add
-	Num_projects_without_add              int         // the number of projects analyzed without a add
-	Num_projects_without_wait             int         // the number of projects analyzed without a wait
-	Num_projects_without_done             int         // the number of projects analyzed without a done
-	Num_projects_without_mutex            int         // the number of projects analyzed without a mutex
-	Num_projects_without_lock             int         // the number of projects analyzed without a lock
-	Num_projects_without_unlock           int         // the number of projects analyzed without a unlock
-	Num_of_package_with_features          int         // how many packages with features
-	Num_of_packages_from_featured_project int         // num of packages only in featured project
-	Num_select                            int         // num of select
-	Num_default_select                    int         // num of select with a default branch
-	Num_packages                          int         // the total number of packages
-	Num_features                          int         // the total number of features
-	Num_files                             int         // total number of files in the project
-	Num_featured_files                    int         // total number of featured files in the project
-	Num_lines_in_featured_files           ProjectList // total number of featured files in the project per project
-	Project_with_interesting_features     int
-	Features_per_projects                 map[string][]*Feature // a map of all the features per project name
-	Num_assign_chan_in_for                int
-	Average                               AverageInfo
+	Num_projects                           int         // the number of projects analyzed
+	Num_featured_projects                  int         // the number of projects with at least one feature
+	Num_median_projects                    int         // the number of projects that falls between median ploc (concurrency size)
+	Num_projects_without_chans             int         // the number of projects analyzed without a new channel
+	Num_projects_without_go                int         // the number of projects analyzed without a go
+	Num_projects_without_send              int         // the number of projects analyzed without a send
+	Num_projects_without_receive           int         // the number of projects analyzed without a receive
+	Num_projects_without_select            int         // the number of projects analyzed without a select
+	Num_projects_without_close             int         // the number of projects analyzed without a close
+	Num_projects_without_range             int         // the number of projects analyzed without a range
+	Num_projects_without_wg                int         // the number of projects analyzed without a wg
+	Num_projects_without_unknown_add       int         // the number of projects analyzed without a unknown_add
+	Num_projects_without_known_add         int         // the number of projects analyzed without a known_add
+	Num_projects_without_add               int         // the number of projects analyzed without a add
+	Num_projects_without_wait              int         // the number of projects analyzed without a wait
+	Num_projects_without_done              int         // the number of projects analyzed without a done
+	Num_projects_without_mutex             int         // the number of projects analyzed without a mutex
+	Num_projects_without_lock              int         // the number of projects analyzed without a lock
+	Num_projects_without_unlock            int         // the number of projects analyzed without a unlock
+	Num_projects_with_chan_in_for          int         // the number of projects analyzed with a chan in unknown for
+	Num_projects_with_chan_in_any_for      int         // the number of projects analyzed with a chan in any for
+	Num_projects_with_chan_in_for_constant int         // the number of projects analyzed with a chan in constant for
+	Num_projects_with_chan_in_map          int         // the number of projects analyzed with a chan in map
+	Num_projects_with_chan_in_slice        int         // the number of projects analyzed with a chan in slice
+	Num_projects_with_chan_of_chans        int         // the number of projects analyzed with a chan of chan
+	Num_of_package_with_features           int         // how many packages with features
+	Num_of_packages_from_featured_project  int         // num of packages only in featured project
+	Num_select                             int         // num of select
+	Num_default_select                     int         // num of select with a default branch
+	Num_packages                           int         // the total number of packages
+	Num_features                           int         // the total number of features
+	Num_files                              int         // total number of files in the project
+	Num_featured_files                     int         // total number of featured files in the project
+	Num_lines_in_featured_files            ProjectList // total number of featured files in the project per project
+	Project_with_interesting_features      int
+	Features_per_projects                  map[string][]*Feature // a map of all the features per project name
+	Num_assign_chan_in_for                 int
+	Average                                AverageInfo
 }
 
 type AverageInfo struct {
@@ -349,7 +354,11 @@ func getCounters(features_per_projects map[string][]*Feature, stats *StatsInfo) 
 
 		containsGoInFor := false
 		containsChanInFor := false
+		containsChanInForConstant := false
 		containsAssignChanInFor := false
+		containsChanInMap := false
+		containsChanInSlice := false
+		containsChanOfChans := false
 		proj = strings.TrimSuffix(proj, ".csv")
 
 		num_go := 0
@@ -398,7 +407,11 @@ func getCounters(features_per_projects map[string][]*Feature, stats *StatsInfo) 
 				counter.go_in_constant_for_map[proj]++
 				num, _ := strconv.Atoi(feature.f_number)
 				counter.constant_go_in_constant_for_map[proj] = append(counter.constant_go_in_constant_for_map[proj], num)
-			case CHAN_MAP_COUNT, CHAN_SLICE_COUNT:
+			case CHAN_MAP_COUNT:
+				containsChanInMap = true
+				counter.dynamic_structures += 1 / (float64(feature.f_number_of_lines) / constant)
+			case CHAN_SLICE_COUNT:
+				containsChanInSlice = true
 				counter.dynamic_structures += 1 / (float64(feature.f_number_of_lines) / constant)
 			case SEND_CHAN_COUNT, RECEIVE_CHAN_COUNT:
 				defined_chans++
@@ -434,8 +447,11 @@ func getCounters(features_per_projects map[string][]*Feature, stats *StatsInfo) 
 				containsChanInFor = true
 				counter.chan_in_any_for_map[proj]++
 				counter.chan_in_for_map[proj]++
+			case CHAN_OF_CHANS_COUNT:
+				containsChanOfChans = true
 			case MAKE_CHAN_IN_CONSTANT_FOR_COUNT:
 				counter.chan_in_any_for_map[proj]++
+				containsChanInForConstant = true
 			case ASSIGN_CHAN_IN_FOR_COUNT:
 				containsAssignChanInFor = true
 			case WAITGROUP_COUNT:
@@ -460,16 +476,37 @@ func getCounters(features_per_projects map[string][]*Feature, stats *StatsInfo) 
 		}
 		if containsChanInFor {
 			project_counter.chan_in_for++
+			stats.Num_projects_with_chan_in_for++
 		}
+
+		if containsChanInForConstant {
+			stats.Num_projects_with_chan_in_for_constant++
+		}
+
+		if counter.chan_in_any_for_map[proj] > 0 {
+			stats.Num_projects_with_chan_in_any_for++
+		}
+
 		if containsGoInFor {
 			project_counter.go_in_for++
 		}
 		if containsAssignChanInFor {
 			project_counter.assign_chan_in_for++
+			fmt.Println("project ", proj, " contains an occurence of assign chan in for")
 		}
 		if defined_chans+undefined_chans != 0 {
 			counter.defined_chans += (float64(defined_chans) / float64(defined_chans+undefined_chans)) * 100
 			project_counter.params_chan++
+		}
+
+		if containsChanInMap {
+			stats.Num_projects_with_chan_in_map++
+		}
+		if containsChanInSlice {
+			stats.Num_projects_with_chan_in_slice++
+		}
+		if containsChanOfChans {
+			stats.Num_projects_with_chan_of_chans++
 		}
 
 		if counter.go_in_any_for_map[proj]-counter.go_in_constant_for_map[proj] > 0 {
@@ -536,6 +573,10 @@ func getCounters(features_per_projects map[string][]*Feature, stats *StatsInfo) 
 
 		if counter.done[proj] == 0 {
 			stats.Num_projects_without_done++
+
+			if num_wg > 0 {
+				fmt.Println("The one without done is ", proj)
+			}
 		}
 
 		if num_mutex == 0 {

@@ -1,0 +1,1185 @@
+Line num,1056967
+packages num,26,817
+files num,50,644
+Average Line num per featured file,291,14558
+,0
+cmd/podman,870
+cmd/podman/common,2546
+cmd/podman/completion,81
+cmd/podman/containers,4212
+cmd/podman/diff,68
+cmd/podman/generate,221
+cmd/podman/healthcheck,57
+cmd/podman/images,2872
+cmd/podman/inspect,287
+cmd/podman/machine,531
+cmd/podman/manifest,476
+cmd/podman/networks,623
+cmd/podman/parse,336
+cmd/podman/play,218
+cmd/podman/pods,1512
+cmd/podman/registry,226
+cmd/podman/secrets,306
+cmd/podman/system,1119
+cmd/podman/system/connection,528
+cmd/podman/utils,144
+cmd/podman/validate,173
+cmd/podman/volumes,637
+dependencies,4
+hack/podman-registry-go,104
+libpod,27156
+libpod/common,15
+libpod/define,840
+libpod/driver,22
+libpod/events,742
+libpod/layers,9
+libpod/linkmode,8
+libpod/lock,263
+libpod/lock/file,184
+libpod/lock/shm,372
+libpod/logs,221
+libpod/logs/reversereader,48
+libpod/network,1522
+libpod/network/cni,3627
+libpod/network/types,111
+libpod/network/util,277
+libpod/plugin,330
+libpod/shutdown,107
+pkg/annotations,43
+pkg/api/handlers,327
+pkg/api/handlers/compat,4659
+pkg/api/handlers/libpod,2629
+pkg/api/handlers/swagger,99
+pkg/api/handlers/types,14
+pkg/api/handlers/utils,637
+pkg/api/server,992
+pkg/api/server/idle,72
+pkg/api/types,12
+pkg/auth,313
+pkg/autoupdate,362
+pkg/bindings,345
+pkg/bindings/containers,2619
+pkg/bindings/generate,190
+pkg/bindings/generator,152
+pkg/bindings/images,1679
+pkg/bindings/internal/util,93
+pkg/bindings/manifests,317
+pkg/bindings/network,488
+pkg/bindings/play,259
+pkg/bindings/pods,547
+pkg/bindings/secrets,174
+pkg/bindings/system,302
+pkg/bindings/test,2575
+pkg/bindings/volumes,234
+pkg/cgroups,1142
+pkg/channel,44
+pkg/checkpoint,182
+pkg/checkpoint/crutils,139
+pkg/copy,99
+pkg/criu,14
+pkg/ctime,77
+pkg/domain/entities,2005
+pkg/domain/entities/reports,36
+pkg/domain/entities/types,30
+pkg/domain/filters,551
+pkg/domain/infra,450
+pkg/domain/infra/abi,4998
+pkg/domain/infra/abi/parse,77
+pkg/domain/infra/abi/terminal,201
+pkg/domain/infra/tunnel,1894
+pkg/domain/utils,53
+pkg/env,104
+pkg/errorhandling,70
+pkg/hooks,903
+pkg/hooks/0.1.0,235
+pkg/hooks/1.0.0,662
+pkg/hooks/exec,579
+pkg/inspect,50
+pkg/kubeutils,23
+pkg/lookup,127
+pkg/machine,931
+pkg/machine/qemu,704
+pkg/namespaces,297
+pkg/netns,129
+pkg/network,18
+pkg/parallel,43
+pkg/parallel/ctr,26
+pkg/ps,273
+pkg/ps/define,5
+pkg/resolvconf,184
+pkg/resolvconf/dns,14
+pkg/rootless,816
+pkg/rootlessport,313
+pkg/seccomp,30
+pkg/selinux,32
+pkg/servicereaper,50
+pkg/signal,297
+pkg/specgen,864
+pkg/specgen/generate,0
+pkg/specgen/generate/kube,1136
+pkg/specgenutil,1653
+pkg/systemd,164
+pkg/systemd/define,6
+pkg/systemd/generate,2074
+pkg/terminal,142
+pkg/timetype,177
+pkg/trust,211
+pkg/util,1364
+pkg/util/camelcase,44
+test/checkseccomp,13
+test/e2e,20825
+test/framework,33
+test/goecho,25
+test/testvol,229
+test/utils,726
+utils,323
+vendor,0
+vendor/github.com/Azure/go-ansiterm,734
+vendor/github.com/Azure/go-ansiterm/winterm,1275
+vendor/github.com/BurntSushi/toml,2782
+vendor/github.com/BurntSushi/toml/internal,8
+vendor/github.com/Microsoft/go-winio,1960
+vendor/github.com/Microsoft/go-winio/backuptar,438
+vendor/github.com/Microsoft/go-winio/pkg/guid,161
+vendor/github.com/Microsoft/go-winio/pkg/security,167
+vendor/github.com/Microsoft/go-winio/vhd,343
+vendor/github.com/Microsoft/hcsshim,734
+vendor/github.com/Microsoft/hcsshim/computestorage,680
+vendor/github.com/Microsoft/hcsshim/internal/cow,37
+vendor/github.com/Microsoft/hcsshim/internal/hcs,1381
+vendor/github.com/Microsoft/hcsshim/internal/hcs/schema1,198
+vendor/github.com/Microsoft/hcsshim/internal/hcs/schema2,795
+vendor/github.com/Microsoft/hcsshim/internal/hcserror,40
+vendor/github.com/Microsoft/hcsshim/internal/hns,883
+vendor/github.com/Microsoft/hcsshim/internal/interop,46
+vendor/github.com/Microsoft/hcsshim/internal/log,17
+vendor/github.com/Microsoft/hcsshim/internal/logfields,16
+vendor/github.com/Microsoft/hcsshim/internal/longpath,21
+vendor/github.com/Microsoft/hcsshim/internal/mergemaps,43
+vendor/github.com/Microsoft/hcsshim/internal/oc,37
+vendor/github.com/Microsoft/hcsshim/internal/safefile,302
+vendor/github.com/Microsoft/hcsshim/internal/timeout,44
+vendor/github.com/Microsoft/hcsshim/internal/vmcompute,1029
+vendor/github.com/Microsoft/hcsshim/internal/wclayer,2024
+vendor/github.com/Microsoft/hcsshim/internal/winapi,616
+vendor/github.com/Microsoft/hcsshim/osversion,48
+vendor/github.com/VividCortex/ewma,65
+vendor/github.com/acarl005/stripansi,9
+vendor/github.com/beorn7/perks/quantile,211
+vendor/github.com/bits-and-blooms/bitset,774
+vendor/github.com/blang/semver,666
+vendor/github.com/buger/goterm,511
+vendor/github.com/cespare/xxhash/v2,275
+vendor/github.com/checkpoint-restore/checkpointctl/lib,172
+vendor/github.com/checkpoint-restore/go-criu/v5,238
+vendor/github.com/checkpoint-restore/go-criu/v5/rpc,1937
+vendor/github.com/chzyer/readline,4318
+vendor/github.com/container-orchestrated-devices/container-device-interface/pkg,133
+vendor/github.com/container-orchestrated-devices/container-device-interface/specs-go,119
+vendor/github.com/containerd/cgroups/stats/v1,5982
+vendor/github.com/containerd/containerd/errdefs,133
+vendor/github.com/containerd/containerd/log,27
+vendor/github.com/containerd/containerd/pkg/userns,37
+vendor/github.com/containerd/containerd/platforms,468
+vendor/github.com/containerd/containerd/sys,519
+vendor/github.com/containerd/stargz-snapshotter/estargz,3226
+vendor/github.com/containerd/stargz-snapshotter/estargz/errorutil,21
+vendor/github.com/containernetworking/cni/libcni,687
+vendor/github.com/containernetworking/cni/pkg/invoke,270
+vendor/github.com/containernetworking/cni/pkg/types,211
+vendor/github.com/containernetworking/cni/pkg/types/020,86
+vendor/github.com/containernetworking/cni/pkg/types/current,214
+vendor/github.com/containernetworking/cni/pkg/utils,48
+vendor/github.com/containernetworking/cni/pkg/version,188
+vendor/github.com/containernetworking/plugins/pkg/ip,516
+vendor/github.com/containernetworking/plugins/pkg/ns,141
+vendor/github.com/containernetworking/plugins/pkg/utils/hwaddr,34
+vendor/github.com/containernetworking/plugins/pkg/utils/sysctl,49
+vendor/github.com/containernetworking/plugins/plugins/ipam/host-local/backend,12
+vendor/github.com/containernetworking/plugins/plugins/ipam/host-local/backend/allocator,433
+vendor/github.com/containers/buildah,5959
+vendor/github.com/containers/buildah/bind,255
+vendor/github.com/containers/buildah/chroot,1419
+vendor/github.com/containers/buildah/copier,1833
+vendor/github.com/containers/buildah/define,376
+vendor/github.com/containers/buildah/docker,118
+vendor/github.com/containers/buildah/imagebuildah,2118
+vendor/github.com/containers/buildah/pkg/blobcache,470
+vendor/github.com/containers/buildah/pkg/chrootuser,352
+vendor/github.com/containers/buildah/pkg/cli,371
+vendor/github.com/containers/buildah/pkg/completion,14
+vendor/github.com/containers/buildah/pkg/overlay,188
+vendor/github.com/containers/buildah/pkg/parse,984
+vendor/github.com/containers/buildah/pkg/rusage,69
+vendor/github.com/containers/buildah/pkg/sshagent,191
+vendor/github.com/containers/buildah/util,476
+vendor/github.com/containers/common/libimage,3933
+vendor/github.com/containers/common/libimage/manifests,360
+vendor/github.com/containers/common/pkg/apparmor,277
+vendor/github.com/containers/common/pkg/apparmor/internal/supported,78
+vendor/github.com/containers/common/pkg/auth,338
+vendor/github.com/containers/common/pkg/capabilities,157
+vendor/github.com/containers/common/pkg/cgroupv2,26
+vendor/github.com/containers/common/pkg/chown,107
+vendor/github.com/containers/common/pkg/completion,111
+vendor/github.com/containers/common/pkg/config,1510
+vendor/github.com/containers/common/pkg/defaultnet,167
+vendor/github.com/containers/common/pkg/filters,94
+vendor/github.com/containers/common/pkg/manifests,419
+vendor/github.com/containers/common/pkg/parse,174
+vendor/github.com/containers/common/pkg/report,149
+vendor/github.com/containers/common/pkg/report/camelcase,44
+vendor/github.com/containers/common/pkg/retry,99
+vendor/github.com/containers/common/pkg/seccomp,1470
+vendor/github.com/containers/common/pkg/secrets,361
+vendor/github.com/containers/common/pkg/secrets/filedriver,124
+vendor/github.com/containers/common/pkg/secrets/passdriver,144
+vendor/github.com/containers/common/pkg/secrets/shelldriver,110
+vendor/github.com/containers/common/pkg/signal,297
+vendor/github.com/containers/common/pkg/subscriptions,306
+vendor/github.com/containers/common/pkg/supplemented,334
+vendor/github.com/containers/common/pkg/sysinfo,473
+vendor/github.com/containers/common/pkg/timetype,95
+vendor/github.com/containers/common/pkg/umask,17
+vendor/github.com/containers/common/version,2
+vendor/github.com/containers/conmon/runner/config,16
+vendor/github.com/containers/image/v5/copy,1552
+vendor/github.com/containers/image/v5/directory,365
+vendor/github.com/containers/image/v5/directory/explicitfilepath,40
+vendor/github.com/containers/image/v5/docker,2291
+vendor/github.com/containers/image/v5/docker/archive,377
+vendor/github.com/containers/image/v5/docker/daemon,332
+vendor/github.com/containers/image/v5/docker/internal/tarfile,867
+vendor/github.com/containers/image/v5/docker/policyconfiguration,49
+vendor/github.com/containers/image/v5/docker/reference,517
+vendor/github.com/containers/image/v5/image,923
+vendor/github.com/containers/image/v5/internal/blobinfocache,66
+vendor/github.com/containers/image/v5/internal/iolimits,28
+vendor/github.com/containers/image/v5/internal/pkg/keyctl,163
+vendor/github.com/containers/image/v5/internal/pkg/platform,132
+vendor/github.com/containers/image/v5/internal/putblobdigest,35
+vendor/github.com/containers/image/v5/internal/rootless,13
+vendor/github.com/containers/image/v5/internal/tmpdir,20
+vendor/github.com/containers/image/v5/internal/types,41
+vendor/github.com/containers/image/v5/internal/uploadreader,29
+vendor/github.com/containers/image/v5/manifest,1285
+vendor/github.com/containers/image/v5/oci/archive,309
+vendor/github.com/containers/image/v5/oci/internal,94
+vendor/github.com/containers/image/v5/oci/layout,545
+vendor/github.com/containers/image/v5/openshift,1264
+vendor/github.com/containers/image/v5/ostree,889
+vendor/github.com/containers/image/v5/pkg/blobinfocache,49
+vendor/github.com/containers/image/v5/pkg/blobinfocache/boltdb,290
+vendor/github.com/containers/image/v5/pkg/blobinfocache/internal/prioritize,70
+vendor/github.com/containers/image/v5/pkg/blobinfocache/memory,129
+vendor/github.com/containers/image/v5/pkg/blobinfocache/none,19
+vendor/github.com/containers/image/v5/pkg/compression,161
+vendor/github.com/containers/image/v5/pkg/compression/internal,35
+vendor/github.com/containers/image/v5/pkg/compression/types,13
+vendor/github.com/containers/image/v5/pkg/docker/config,664
+vendor/github.com/containers/image/v5/pkg/shortnames,293
+vendor/github.com/containers/image/v5/pkg/strslice,18
+vendor/github.com/containers/image/v5/pkg/sysregistriesv2,851
+vendor/github.com/containers/image/v5/pkg/tlsclientconfig,98
+vendor/github.com/containers/image/v5/signature,1694
+vendor/github.com/containers/image/v5/storage,1474
+vendor/github.com/containers/image/v5/tarball,342
+vendor/github.com/containers/image/v5/transports,82
+vendor/github.com/containers/image/v5/transports/alltransports,59
+vendor/github.com/containers/image/v5/types,216
+vendor/github.com/containers/image/v5/version,9
+vendor/github.com/containers/libtrust,2125
+vendor/github.com/containers/ocicrypt,643
+vendor/github.com/containers/ocicrypt/blockcipher,233
+vendor/github.com/containers/ocicrypt/config,257
+vendor/github.com/containers/ocicrypt/config/keyprovider-config,46
+vendor/github.com/containers/ocicrypt/config/pkcs11config,77
+vendor/github.com/containers/ocicrypt/crypto/pkcs11,516
+vendor/github.com/containers/ocicrypt/helpers,291
+vendor/github.com/containers/ocicrypt/keywrap,13
+vendor/github.com/containers/ocicrypt/keywrap/jwe,97
+vendor/github.com/containers/ocicrypt/keywrap/keyprovider,173
+vendor/github.com/containers/ocicrypt/keywrap/pgp,211
+vendor/github.com/containers/ocicrypt/keywrap/pkcs11,105
+vendor/github.com/containers/ocicrypt/keywrap/pkcs7,93
+vendor/github.com/containers/ocicrypt/spec,7
+vendor/github.com/containers/ocicrypt/utils,401
+vendor/github.com/containers/ocicrypt/utils/keyprovider,196
+vendor/github.com/containers/psgo,624
+vendor/github.com/containers/psgo/internal/capabilities,57
+vendor/github.com/containers/psgo/internal/cgroups,25
+vendor/github.com/containers/psgo/internal/dev,82
+vendor/github.com/containers/psgo/internal/host,107
+vendor/github.com/containers/psgo/internal/proc,496
+vendor/github.com/containers/psgo/internal/process,170
+vendor/github.com/containers/storage,6133
+vendor/github.com/containers/storage/drivers,853
+vendor/github.com/containers/storage/drivers/aufs,647
+vendor/github.com/containers/storage/drivers/btrfs,545
+vendor/github.com/containers/storage/drivers/copy,253
+vendor/github.com/containers/storage/drivers/devmapper,2629
+vendor/github.com/containers/storage/drivers/overlay,2055
+vendor/github.com/containers/storage/drivers/overlayutils,14
+vendor/github.com/containers/storage/drivers/quota,255
+vendor/github.com/containers/storage/drivers/register,28
+vendor/github.com/containers/storage/drivers/vfs,232
+vendor/github.com/containers/storage/drivers/windows,784
+vendor/github.com/containers/storage/drivers/zfs,465
+vendor/github.com/containers/storage/pkg/archive,2894
+vendor/github.com/containers/storage/pkg/chrootarchive,561
+vendor/github.com/containers/storage/pkg/chunked,1169
+vendor/github.com/containers/storage/pkg/chunked/compressor,171
+vendor/github.com/containers/storage/pkg/chunked/internal,133
+vendor/github.com/containers/storage/pkg/config,200
+vendor/github.com/containers/storage/pkg/devicemapper,927
+vendor/github.com/containers/storage/pkg/directory,100
+vendor/github.com/containers/storage/pkg/dmesg,14
+vendor/github.com/containers/storage/pkg/fileutils,312
+vendor/github.com/containers/storage/pkg/fsutils,76
+vendor/github.com/containers/storage/pkg/homedir,119
+vendor/github.com/containers/storage/pkg/idtools,698
+vendor/github.com/containers/storage/pkg/ioutils,585
+vendor/github.com/containers/storage/pkg/locker,64
+vendor/github.com/containers/storage/pkg/lockfile,290
+vendor/github.com/containers/storage/pkg/longpath,15
+vendor/github.com/containers/storage/pkg/loopback,232
+vendor/github.com/containers/storage/pkg/mount,416
+vendor/github.com/containers/storage/pkg/parsers,47
+vendor/github.com/containers/storage/pkg/parsers/kernel,202
+vendor/github.com/containers/storage/pkg/pools,77
+vendor/github.com/containers/storage/pkg/promise,8
+vendor/github.com/containers/storage/pkg/reexec,99
+vendor/github.com/containers/storage/pkg/stringid,69
+vendor/github.com/containers/storage/pkg/stringutils,83
+vendor/github.com/containers/storage/pkg/system,785
+vendor/github.com/containers/storage/pkg/tarlog,50
+vendor/github.com/containers/storage/pkg/truncindex,100
+vendor/github.com/containers/storage/pkg/unshare,605
+vendor/github.com/containers/storage/types,599
+vendor/github.com/coreos/go-iptables/iptables,520
+vendor/github.com/coreos/go-systemd/activation,114
+vendor/github.com/coreos/go-systemd/v22/activation,119
+vendor/github.com/coreos/go-systemd/v22/daemon,77
+vendor/github.com/coreos/go-systemd/v22/dbus,1064
+vendor/github.com/coreos/go-systemd/v22/internal/dlopen,47
+vendor/github.com/coreos/go-systemd/v22/journal,161
+vendor/github.com/coreos/go-systemd/v22/sdjournal,788
+vendor/github.com/coreos/stream-metadata-go/fedoracoreos,16
+vendor/github.com/coreos/stream-metadata-go/fedoracoreos/internals,21
+vendor/github.com/coreos/stream-metadata-go/stream,84
+vendor/github.com/coreos/stream-metadata-go/stream/rhcos,8
+vendor/github.com/cri-o/ocicni/pkg/ocicni,913
+vendor/github.com/cyphar/filepath-securejoin,69
+vendor/github.com/davecgh/go-spew/spew,1059
+vendor/github.com/digitalocean/go-libvirt,14173
+vendor/github.com/digitalocean/go-libvirt/internal/constants,508
+vendor/github.com/digitalocean/go-libvirt/internal/event,77
+vendor/github.com/digitalocean/go-libvirt/internal/go-xdr/xdr2,934
+vendor/github.com/digitalocean/go-qemu/qmp,286
+vendor/github.com/disiqueira/gotree/v3,100
+vendor/github.com/docker/distribution,301
+vendor/github.com/docker/distribution/digestset,188
+vendor/github.com/docker/distribution/metrics,8
+vendor/github.com/docker/distribution/reference,511
+vendor/github.com/docker/distribution/registry/api/errcode,294
+vendor/github.com/docker/distribution/registry/api/v2,1887
+vendor/github.com/docker/distribution/registry/client,931
+vendor/github.com/docker/distribution/registry/client/auth/challenge,186
+vendor/github.com/docker/distribution/registry/client/transport,284
+vendor/github.com/docker/distribution/registry/storage/cache,118
+vendor/github.com/docker/distribution/registry/storage/cache/memory,131
+vendor/github.com/docker/docker/api,9
+vendor/github.com/docker/docker/api/types,1063
+vendor/github.com/docker/docker/api/types/blkiodev,16
+vendor/github.com/docker/docker/api/types/container,424
+vendor/github.com/docker/docker/api/types/events,29
+vendor/github.com/docker/docker/api/types/filters,237
+vendor/github.com/docker/docker/api/types/image,9
+vendor/github.com/docker/docker/api/types/mount,62
+vendor/github.com/docker/docker/api/types/network,94
+vendor/github.com/docker/docker/api/types/registry,57
+vendor/github.com/docker/docker/api/types/strslice,18
+vendor/github.com/docker/docker/api/types/swarm,593
+vendor/github.com/docker/docker/api/types/swarm/runtime,704
+vendor/github.com/docker/docker/api/types/time,103
+vendor/github.com/docker/docker/api/types/versions,46
+vendor/github.com/docker/docker/api/types/volume,13
+vendor/github.com/docker/docker/client,3793
+vendor/github.com/docker/docker/errdefs,476
+vendor/github.com/docker/docker/pkg/archive,2361
+vendor/github.com/docker/docker/pkg/fileutils,256
+vendor/github.com/docker/docker/pkg/homedir,115
+vendor/github.com/docker/docker/pkg/idtools,575
+vendor/github.com/docker/docker/pkg/ioutils,536
+vendor/github.com/docker/docker/pkg/jsonmessage,221
+vendor/github.com/docker/docker/pkg/longpath,15
+vendor/github.com/docker/docker/pkg/namesgenerator,367
+vendor/github.com/docker/docker/pkg/parsers,59
+vendor/github.com/docker/docker/pkg/pools,92
+vendor/github.com/docker/docker/pkg/stdcopy,123
+vendor/github.com/docker/docker/pkg/system,975
+vendor/github.com/docker/docker-credential-helpers/client,126
+vendor/github.com/docker/docker-credential-helpers/credentials,186
+vendor/github.com/docker/go-connections/nat,300
+vendor/github.com/docker/go-connections/sockets,207
+vendor/github.com/docker/go-connections/tlsconfig,213
+vendor/github.com/docker/go-metrics,495
+vendor/github.com/docker/go-plugins-helpers/sdk,322
+vendor/github.com/docker/go-plugins-helpers/volume,187
+vendor/github.com/docker/go-units,201
+vendor/github.com/docker/libnetwork/resolvconf,206
+vendor/github.com/docker/libnetwork/resolvconf/dns,14
+vendor/github.com/docker/libnetwork/types,449
+vendor/github.com/dtylman/scp,243
+vendor/github.com/fsnotify/fsnotify,1295
+vendor/github.com/fsouza/go-dockerclient,5593
+vendor/github.com/ghodss/yaml,541
+vendor/github.com/go-logr/logr,61
+vendor/github.com/go-task/slim-sprig,1505
+vendor/github.com/godbus/dbus/v5,5207
+vendor/github.com/gogo/protobuf/gogoproto,1104
+vendor/github.com/gogo/protobuf/proto,12836
+vendor/github.com/gogo/protobuf/protoc-gen-gogo/descriptor,3287
+vendor/github.com/gogo/protobuf/sortkeys,52
+vendor/github.com/golang/groupcache/lru,87
+vendor/github.com/golang/protobuf/proto,2350
+vendor/github.com/golang/protobuf/ptypes,235
+vendor/github.com/golang/protobuf/ptypes/any,51
+vendor/github.com/golang/protobuf/ptypes/duration,52
+vendor/github.com/golang/protobuf/ptypes/timestamp,53
+vendor/github.com/google/go-cmp/cmp,2770
+vendor/github.com/google/go-cmp/cmp/internal/diff,300
+vendor/github.com/google/go-cmp/cmp/internal/flags,6
+vendor/github.com/google/go-cmp/cmp/internal/function,78
+vendor/github.com/google/go-cmp/cmp/internal/value,298
+vendor/github.com/google/go-intervals/intervalset,361
+vendor/github.com/google/gofuzz,358
+vendor/github.com/google/shlex,326
+vendor/github.com/google/uuid,676
+vendor/github.com/gorilla/handlers,440
+vendor/github.com/gorilla/mux,1110
+vendor/github.com/gorilla/schema,907
+vendor/github.com/hashicorp/errwrap,98
+vendor/github.com/hashicorp/go-multierror,184
+vendor/github.com/hpcloud/tail,343
+vendor/github.com/hpcloud/tail/ratelimiter,121
+vendor/github.com/hpcloud/tail/util,36
+vendor/github.com/hpcloud/tail/watch,406
+vendor/github.com/hpcloud/tail/winfile,77
+vendor/github.com/imdario/mergo,512
+vendor/github.com/inconshreveable/mousetrap,112
+vendor/github.com/ishidawataru/sctp,1079
+vendor/github.com/jinzhu/copier,482
+vendor/github.com/json-iterator/go,7880
+vendor/github.com/juju/ansiterm,359
+vendor/github.com/juju/ansiterm/tabwriter,324
+vendor/github.com/klauspost/compress,59
+vendor/github.com/klauspost/compress/flate,5411
+vendor/github.com/klauspost/compress/fse,1193
+vendor/github.com/klauspost/compress/huff0,2178
+vendor/github.com/klauspost/compress/internal/snapref,607
+vendor/github.com/klauspost/compress/zstd,9008
+vendor/github.com/klauspost/compress/zstd/internal/xxhash,254
+vendor/github.com/klauspost/pgzip,836
+vendor/github.com/lunixbochs/vtclean,264
+vendor/github.com/manifoldco/promptui,902
+vendor/github.com/manifoldco/promptui/list,158
+vendor/github.com/manifoldco/promptui/screenbuf,117
+vendor/github.com/mattn/go-colorable,1081
+vendor/github.com/mattn/go-isatty,143
+vendor/github.com/mattn/go-runewidth,742
+vendor/github.com/mattn/go-shellwords,340
+vendor/github.com/matttproud/golang_protobuf_extensions/pbutil,55
+vendor/github.com/miekg/pkcs11,1926
+vendor/github.com/mistifyio/go-zfs,724
+vendor/github.com/mitchellh/mapstructure,1129
+vendor/github.com/moby/sys/mount,401
+vendor/github.com/moby/sys/mountinfo,353
+vendor/github.com/moby/term,425
+vendor/github.com/moby/term/windows,252
+vendor/github.com/modern-go/concurrent,132
+vendor/github.com/modern-go/reflect2,1324
+vendor/github.com/morikuni/aec,497
+vendor/github.com/mrunalp/fileutils,163
+vendor/github.com/mtrmac/gpgme,1001
+vendor/github.com/nxadm/tail,348
+vendor/github.com/nxadm/tail/ratelimiter,124
+vendor/github.com/nxadm/tail/util,36
+vendor/github.com/nxadm/tail/watch,401
+vendor/github.com/nxadm/tail/winfile,77
+vendor/github.com/onsi/ginkgo,370
+vendor/github.com/onsi/ginkgo/config,167
+vendor/github.com/onsi/ginkgo/extensions/table,137
+vendor/github.com/onsi/ginkgo/formatter,163
+vendor/github.com/onsi/ginkgo/ginkgo,1778
+vendor/github.com/onsi/ginkgo/ginkgo/convert,465
+vendor/github.com/onsi/ginkgo/ginkgo/interrupthandler,54
+vendor/github.com/onsi/ginkgo/ginkgo/nodot,159
+vendor/github.com/onsi/ginkgo/ginkgo/outline,315
+vendor/github.com/onsi/ginkgo/ginkgo/testrunner,503
+vendor/github.com/onsi/ginkgo/ginkgo/testsuite,112
+vendor/github.com/onsi/ginkgo/ginkgo/watch,373
+vendor/github.com/onsi/ginkgo/internal/codelocation,31
+vendor/github.com/onsi/ginkgo/internal/containernode,121
+vendor/github.com/onsi/ginkgo/internal/failer,76
+vendor/github.com/onsi/ginkgo/internal/global,16
+vendor/github.com/onsi/ginkgo/internal/leafnodes,583
+vendor/github.com/onsi/ginkgo/internal/remote,561
+vendor/github.com/onsi/ginkgo/internal/spec,324
+vendor/github.com/onsi/ginkgo/internal/spec_iterator,175
+vendor/github.com/onsi/ginkgo/internal/specrunner,355
+vendor/github.com/onsi/ginkgo/internal/suite,176
+vendor/github.com/onsi/ginkgo/internal/testingtproxy,78
+vendor/github.com/onsi/ginkgo/internal/writer,104
+vendor/github.com/onsi/ginkgo/reporters,362
+vendor/github.com/onsi/ginkgo/reporters/stenographer,646
+vendor/github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable,820
+vendor/github.com/onsi/ginkgo/reporters/stenographer/support/go-isatty,48
+vendor/github.com/onsi/ginkgo/types,288
+vendor/github.com/onsi/gomega,324
+vendor/github.com/onsi/gomega/format,303
+vendor/github.com/onsi/gomega/gbytes,279
+vendor/github.com/onsi/gomega/gexec,387
+vendor/github.com/onsi/gomega/gstruct,390
+vendor/github.com/onsi/gomega/gstruct/errors,52
+vendor/github.com/onsi/gomega/internal,427
+vendor/github.com/onsi/gomega/matchers,2276
+vendor/github.com/onsi/gomega/matchers/support/goraph/bipartitegraph,176
+vendor/github.com/onsi/gomega/matchers/support/goraph/edge,47
+vendor/github.com/onsi/gomega/matchers/support/goraph/node,6
+vendor/github.com/onsi/gomega/matchers/support/goraph/util,5
+vendor/github.com/onsi/gomega/types,48
+vendor/github.com/opencontainers/go-digest,220
+vendor/github.com/opencontainers/image-spec/specs-go,13
+vendor/github.com/opencontainers/image-spec/specs-go/v1,110
+vendor/github.com/opencontainers/runc/libcontainer/apparmor,67
+vendor/github.com/opencontainers/runc/libcontainer/cgroups,795
+vendor/github.com/opencontainers/runc/libcontainer/configs,573
+vendor/github.com/opencontainers/runc/libcontainer/devices,222
+vendor/github.com/opencontainers/runc/libcontainer/user,550
+vendor/github.com/opencontainers/runc/libcontainer/userns,45
+vendor/github.com/opencontainers/runc/libcontainer/utils,211
+vendor/github.com/opencontainers/runtime-spec/specs-go,399
+vendor/github.com/opencontainers/runtime-tools/error,82
+vendor/github.com/opencontainers/runtime-tools/filepath,114
+vendor/github.com/opencontainers/runtime-tools/generate,1561
+vendor/github.com/opencontainers/runtime-tools/generate/seccomp,953
+vendor/github.com/opencontainers/runtime-tools/specerror,526
+vendor/github.com/opencontainers/runtime-tools/validate,925
+vendor/github.com/opencontainers/selinux/go-selinux,1257
+vendor/github.com/opencontainers/selinux/go-selinux/label,221
+vendor/github.com/opencontainers/selinux/pkg/pwalk,64
+vendor/github.com/opencontainers/selinux/pkg/pwalkdir,63
+vendor/github.com/openshift/imagebuilder,1413
+vendor/github.com/openshift/imagebuilder/dockerfile/command,41
+vendor/github.com/openshift/imagebuilder/dockerfile/parser,661
+vendor/github.com/openshift/imagebuilder/signal,94
+vendor/github.com/openshift/imagebuilder/strslice,18
+vendor/github.com/ostreedev/ostree-go/pkg/glibobject,245
+vendor/github.com/ostreedev/ostree-go/pkg/otbuiltin,876
+vendor/github.com/pkg/errors,277
+vendor/github.com/pmezard/go-difflib/difflib,497
+vendor/github.com/prometheus/client_golang/prometheus,3315
+vendor/github.com/prometheus/client_golang/prometheus/internal,48
+vendor/github.com/prometheus/client_golang/prometheus/promhttp,955
+vendor/github.com/prometheus/client_model/go,625
+vendor/github.com/prometheus/common/expfmt,1891
+vendor/github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg,99
+vendor/github.com/prometheus/common/model,1116
+vendor/github.com/prometheus/procfs,5047
+vendor/github.com/prometheus/procfs/internal/fs,25
+vendor/github.com/prometheus/procfs/internal/util,154
+vendor/github.com/rivo/uniseg,1792
+vendor/github.com/rootless-containers/rootlesskit/pkg/api,27
+vendor/github.com/rootless-containers/rootlesskit/pkg/msgutil,58
+vendor/github.com/rootless-containers/rootlesskit/pkg/port,35
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin,11
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin/child,145
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin/msg,120
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin/opaque,5
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin/parent,184
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin/parent/tcp,97
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin/parent/udp,55
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/builtin/parent/udp/udpproxy,115
+vendor/github.com/rootless-containers/rootlesskit/pkg/port/portutil,120
+vendor/github.com/safchain/ethtool,606
+vendor/github.com/seccomp/libseccomp-golang,870
+vendor/github.com/sirupsen/logrus,1462
+vendor/github.com/sirupsen/logrus/hooks/syslog,42
+vendor/github.com/spf13/cobra,3363
+vendor/github.com/spf13/pflag,3856
+vendor/github.com/stefanberger/go-pkcs11uri,328
+vendor/github.com/stretchr/testify/assert,2969
+vendor/github.com/stretchr/testify/require,2076
+vendor/github.com/syndtr/gocapability/capability,944
+vendor/github.com/tchap/go-patricia/patricia,684
+vendor/github.com/uber/jaeger-client-go/log,81
+vendor/github.com/uber/jaeger-client-go/thrift,4667
+vendor/github.com/uber/jaeger-client-go/thrift-gen/agent,348
+vendor/github.com/uber/jaeger-client-go/thrift-gen/jaeger,2425
+vendor/github.com/uber/jaeger-client-go/thrift-gen/zipkincore,1604
+vendor/github.com/uber/jaeger-client-go/utils,438
+vendor/github.com/ulikunitz/xz,1304
+vendor/github.com/ulikunitz/xz/internal/hash,223
+vendor/github.com/ulikunitz/xz/internal/xlog,291
+vendor/github.com/ulikunitz/xz/lzma,3300
+vendor/github.com/vbatts/tar-split/archive/tar,2052
+vendor/github.com/vbatts/tar-split/tar/asm,214
+vendor/github.com/vbatts/tar-split/tar/storage,192
+vendor/github.com/vbauerster/mpb/v6,1232
+vendor/github.com/vbauerster/mpb/v6/cwriter,141
+vendor/github.com/vbauerster/mpb/v6/decor,909
+vendor/github.com/vbauerster/mpb/v6/internal,25
+vendor/github.com/vbauerster/mpb/v7,1383
+vendor/github.com/vbauerster/mpb/v7/cwriter,144
+vendor/github.com/vbauerster/mpb/v7/decor,909
+vendor/github.com/vbauerster/mpb/v7/internal,25
+vendor/github.com/vishvananda/netlink,12004
+vendor/github.com/vishvananda/netlink/nl,3324
+vendor/github.com/vishvananda/netns,265
+vendor/github.com/xeipuuv/gojsonpointer,134
+vendor/github.com/xeipuuv/gojsonreference,87
+vendor/github.com/xeipuuv/gojsonschema,3365
+vendor/go.etcd.io/bbolt,3448
+vendor/go.mozilla.org/pkcs7,1433
+vendor/go.opencensus.io,4
+vendor/go.opencensus.io/internal,62
+vendor/go.opencensus.io/trace,1175
+vendor/go.opencensus.io/trace/internal,5
+vendor/go.opencensus.io/trace/tracestate,93
+vendor/golang.org/x/crypto/blowfish,371
+vendor/golang.org/x/crypto/cast5,469
+vendor/golang.org/x/crypto/chacha20,301
+vendor/golang.org/x/crypto/curve25519,96
+vendor/golang.org/x/crypto/curve25519/internal/field,426
+vendor/golang.org/x/crypto/ed25519,163
+vendor/golang.org/x/crypto/ed25519/internal/edwards25519,2864
+vendor/golang.org/x/crypto/internal/subtle,26
+vendor/golang.org/x/crypto/openpgp,1212
+vendor/golang.org/x/crypto/openpgp/armor,284
+vendor/golang.org/x/crypto/openpgp/elgamal,77
+vendor/golang.org/x/crypto/openpgp/errors,39
+vendor/golang.org/x/crypto/openpgp/packet,3505
+vendor/golang.org/x/crypto/openpgp/s2k,191
+vendor/golang.org/x/crypto/pbkdf2,35
+vendor/golang.org/x/crypto/poly1305,343
+vendor/golang.org/x/crypto/ssh,7332
+vendor/golang.org/x/crypto/ssh/agent,1324
+vendor/golang.org/x/crypto/ssh/internal/bcrypt_pbkdf,72
+vendor/golang.org/x/crypto/ssh/knownhosts,399
+vendor/golang.org/x/crypto/ssh/terminal,30
+vendor/golang.org/x/net/context,248
+vendor/golang.org/x/net/html,6243
+vendor/golang.org/x/net/html/atom,821
+vendor/golang.org/x/net/html/charset,202
+vendor/golang.org/x/net/http/httpguts,265
+vendor/golang.org/x/net/http2,7743
+vendor/golang.org/x/net/http2/hpack,1055
+vendor/golang.org/x/net/idna,0
+vendor/golang.org/x/net/internal/socks,386
+vendor/golang.org/x/net/internal/timeseries,374
+vendor/golang.org/x/net/proxy,295
+vendor/golang.org/x/net/trace,1495
+vendor/golang.org/x/sync/errgroup,36
+vendor/golang.org/x/sync/semaphore,90
+vendor/golang.org/x/sys/cpu,1183
+vendor/golang.org/x/sys/execabs,45
+vendor/golang.org/x/sys/internal/unsafeheader,13
+vendor/golang.org/x/sys/plan9,1365
+vendor/golang.org/x/sys/unix,132059
+vendor/golang.org/x/sys/windows,18407
+vendor/golang.org/x/term,943
+vendor/golang.org/x/text/encoding,203
+vendor/golang.org/x/text/encoding/charmap,7451
+vendor/golang.org/x/text/encoding/htmlindex,491
+vendor/golang.org/x/text/encoding/internal,44
+vendor/golang.org/x/text/encoding/internal/identifier,271
+vendor/golang.org/x/text/encoding/japanese,27542
+vendor/golang.org/x/text/encoding/korean,34267
+vendor/golang.org/x/text/encoding/simplifiedchinese,44409
+vendor/golang.org/x/text/encoding/traditionalchinese,37274
+vendor/golang.org/x/text/encoding/unicode,406
+vendor/golang.org/x/text/internal/language,4810
+vendor/golang.org/x/text/internal/language/compact,1372
+vendor/golang.org/x/text/internal/tag,71
+vendor/golang.org/x/text/internal/utf8internal,49
+vendor/golang.org/x/text/language,1469
+vendor/golang.org/x/text/runes,391
+vendor/golang.org/x/text/secure/bidirule,226
+vendor/golang.org/x/text/transform,427
+vendor/golang.org/x/text/unicode/bidi,9098
+vendor/golang.org/x/text/unicode/norm,35778
+vendor/golang.org/x/tools/go/ast/inspector,287
+vendor/google.golang.org/genproto/googleapis/rpc/status,148
+vendor/google.golang.org/grpc,5484
+vendor/google.golang.org/grpc/attributes,37
+vendor/google.golang.org/grpc/backoff,14
+vendor/google.golang.org/grpc/balancer,127
+vendor/google.golang.org/grpc/balancer/base,188
+vendor/google.golang.org/grpc/balancer/grpclb/state,17
+vendor/google.golang.org/grpc/balancer/roundrobin,43
+vendor/google.golang.org/grpc/binarylog/grpc_binarylog_v1,918
+vendor/google.golang.org/grpc/codes,107
+vendor/google.golang.org/grpc/connectivity,30
+vendor/google.golang.org/grpc/credentials,270
+vendor/google.golang.org/grpc/encoding,37
+vendor/google.golang.org/grpc/encoding/proto,28
+vendor/google.golang.org/grpc/grpclog,302
+vendor/google.golang.org/grpc/internal,40
+vendor/google.golang.org/grpc/internal/backoff,31
+vendor/google.golang.org/grpc/internal/balancerload,17
+vendor/google.golang.org/grpc/internal/binarylog,683
+vendor/google.golang.org/grpc/internal/buffer,38
+vendor/google.golang.org/grpc/internal/channelz,1102
+vendor/google.golang.org/grpc/internal/credentials,115
+vendor/google.golang.org/grpc/internal/envconfig,14
+vendor/google.golang.org/grpc/internal/grpclog,102
+vendor/google.golang.org/grpc/internal/grpcrand,28
+vendor/google.golang.org/grpc/internal/grpcsync,28
+vendor/google.golang.org/grpc/internal/grpcutil,128
+vendor/google.golang.org/grpc/internal/metadata,19
+vendor/google.golang.org/grpc/internal/resolver,59
+vendor/google.golang.org/grpc/internal/resolver/dns,351
+vendor/google.golang.org/grpc/internal/resolver/passthrough,27
+vendor/google.golang.org/grpc/internal/resolver/unix,33
+vendor/google.golang.org/grpc/internal/serviceconfig,77
+vendor/google.golang.org/grpc/internal/status,96
+vendor/google.golang.org/grpc/internal/syscall,106
+vendor/google.golang.org/grpc/internal/transport,4625
+vendor/google.golang.org/grpc/internal/transport/networktype,17
+vendor/google.golang.org/grpc/keepalive,20
+vendor/google.golang.org/grpc/metadata,113
+vendor/google.golang.org/grpc/peer,18
+vendor/google.golang.org/grpc/resolver,74
+vendor/google.golang.org/grpc/serviceconfig,11
+vendor/google.golang.org/grpc/stats,147
+vendor/google.golang.org/grpc/status,65
+vendor/google.golang.org/grpc/tap,8
+vendor/google.golang.org/protobuf/encoding/prototext,871
+vendor/google.golang.org/protobuf/encoding/protowire,405
+vendor/google.golang.org/protobuf/internal/descfmt,281
+vendor/google.golang.org/protobuf/internal/descopts,13
+vendor/google.golang.org/protobuf/internal/detrand,46
+vendor/google.golang.org/protobuf/internal/encoding/defval,175
+vendor/google.golang.org/protobuf/internal/encoding/messageset,161
+vendor/google.golang.org/protobuf/internal/encoding/tag,164
+vendor/google.golang.org/protobuf/internal/encoding/text,1247
+vendor/google.golang.org/protobuf/internal/errors,91
+vendor/google.golang.org/protobuf/internal/filedesc,2512
+vendor/google.golang.org/protobuf/internal/filetype,170
+vendor/google.golang.org/protobuf/internal/flags,7
+vendor/google.golang.org/protobuf/internal/genid,1140
+vendor/google.golang.org/protobuf/internal/impl,11796
+vendor/google.golang.org/protobuf/internal/order,134
+vendor/google.golang.org/protobuf/internal/pragma,6
+vendor/google.golang.org/protobuf/internal/set,46
+vendor/google.golang.org/protobuf/internal/strs,220
+vendor/google.golang.org/protobuf/internal/version,22
+vendor/google.golang.org/protobuf/proto,1714
+vendor/google.golang.org/protobuf/reflect/protodesc,1191
+vendor/google.golang.org/protobuf/reflect/protoreflect,1470
+vendor/google.golang.org/protobuf/reflect/protoregistry,638
+vendor/google.golang.org/protobuf/runtime/protoiface,94
+vendor/google.golang.org/protobuf/runtime/protoimpl,36
+vendor/google.golang.org/protobuf/types/descriptorpb,3089
+vendor/google.golang.org/protobuf/types/known/anypb,215
+vendor/google.golang.org/protobuf/types/known/durationpb,202
+vendor/google.golang.org/protobuf/types/known/timestamppb,182
+vendor/gopkg.in/fsnotify.v1,1293
+vendor/gopkg.in/inf.v0,492
+vendor/gopkg.in/square/go-jose.v2,3127
+vendor/gopkg.in/square/go-jose.v2/cipher,290
+vendor/gopkg.in/square/go-jose.v2/json,2634
+vendor/gopkg.in/tomb.v1,76
+vendor/gopkg.in/yaml.v2,6561
+vendor/gopkg.in/yaml.v3,7661
+vendor/k8s.io/api/apps/v1,9201
+vendor/k8s.io/api/core/v1,74766
+vendor/k8s.io/apimachinery/pkg/api/resource,1449
+vendor/k8s.io/apimachinery/pkg/apis/meta/v1,14505
+vendor/k8s.io/apimachinery/pkg/conversion,175
+vendor/k8s.io/apimachinery/pkg/conversion/queryparams,146
+vendor/k8s.io/apimachinery/pkg/fields,385
+vendor/k8s.io/apimachinery/pkg/labels,803
+vendor/k8s.io/apimachinery/pkg/runtime,3353
+vendor/k8s.io/apimachinery/pkg/runtime/schema,232
+vendor/k8s.io/apimachinery/pkg/selection,13
+vendor/k8s.io/apimachinery/pkg/types,24
+vendor/k8s.io/apimachinery/pkg/util/errors,173
+vendor/k8s.io/apimachinery/pkg/util/intstr,494
+vendor/k8s.io/apimachinery/pkg/util/json,99
+vendor/k8s.io/apimachinery/pkg/util/naming,63
+vendor/k8s.io/apimachinery/pkg/util/net,1099
+vendor/k8s.io/apimachinery/pkg/util/runtime,97
+vendor/k8s.io/apimachinery/pkg/util/sets,658
+vendor/k8s.io/apimachinery/pkg/util/validation,347
+vendor/k8s.io/apimachinery/pkg/util/validation/field,232
+vendor/k8s.io/apimachinery/pkg/watch,571
+vendor/k8s.io/apimachinery/third_party/forked/golang/reflect,307
+vendor/k8s.io/klog/v2,1137
+vendor/sigs.k8s.io/structured-merge-diff/v4/value,2080
+version,25
+Filename, #,Concurrent Type, Line number , Number
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/containers/cp.go,4,Synchronous chan,110,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/containers/cp.go,1,Goroutine,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/containers/cp.go,3,Send,112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/containers/cp.go,2,Receive,116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,8,Known chan length (length),45,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,1,Goroutine,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,3,Send,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,16,Select (number of branch),54,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,2,Receive,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,2,Receive,57,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,16,Select (number of branch),63,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,2,Receive,64,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/exec/exec.go,2,Receive,66,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/signal/signal_unsupported.go,22,chan used as a param,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/signal/signal_unsupported.go,22,chan used as a param,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/logs/log.go,4,Synchronous chan,98,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/logs/log.go,1,Goroutine,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/logs/log.go,3,Send,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/logs/log.go,15,Close chan,108,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/logs/log.go,3,Send,116,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/logs/log.go,6,Range over chan,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/cgroups/systemd.go,23,Make chan in constant for,39,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/cgroups/systemd.go,4,Synchronous chan,39,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/cgroups/systemd.go,2,Receive,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/cgroups/systemd.go,4,Synchronous chan,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/cgroups/systemd.go,2,Receive,77,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/kubeutils/resize.go,20,Receive only chan (<-chan),27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/kubeutils/resize.go,1,Goroutine,32,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/kubeutils/resize.go,2,Receive,36,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,22,chan used as a param,34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,8,Known chan length (length),35,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,1,Goroutine,37,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,16,Select (number of branch),44,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,2,Receive,45,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,2,Receive,47,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,16,Select (number of branch),51,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,2,Receive,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,2,Receive,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,3,Send,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/terminal/terminal.go,22,chan used as a param,81,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/channel/writer.go,22,chan used as a param,23,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/channel/writer.go,3,Send,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,30,Waitgroup,1021,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,9,Unknown chan length,1044,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,1,Goroutine,1050,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,31,Waitgroup Wait(),1051,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,15,Close chan,1052,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,6,Range over chan,1055,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,8,Known chan length (length),1320,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,1,Goroutine,1341,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,15,Close chan,1342,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,17,Select with default (number of branch),1351,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,2,Receive,1352,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/abi/containers.go,3,Send,1394,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,8,Known chan length (length),219,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,1,Goroutine,221,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,2,Receive,222,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,1,Goroutine,228,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,1,Goroutine,245,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,3,Send,248,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,3,Send,251,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,2,Receive,254,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,1,Goroutine,270,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,1,Goroutine,272,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,2,Receive,278,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,1,Goroutine,284,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/server/server.go,2,Receive,292,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/utils/containers.go,4,Synchronous chan,211,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/utils/containers.go,4,Synchronous chan,212,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/utils/containers.go,1,Goroutine,222,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/utils/containers.go,3,Send,223,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/utils/containers.go,2,Receive,226,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/utils/containers.go,2,Receive,233,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log_unsupported.go,22,chan used as a param,13,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_attach_unsupported.go,20,Receive only chan (<-chan),11,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_attach_unsupported.go,22,chan used as a param,11,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_attach_unsupported.go,21,Send only chan (chan<-),11,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_attach_unsupported.go,20,Receive only chan (<-chan),15,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,27,Mutex,19,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,29,Mutex Lock(),34,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,28,Mutex Unlock(),35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,20,Receive only chan (<-chan),112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,21,Send only chan (chan<-),112,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,20,Receive only chan (<-chan),128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,21,Send only chan (chan<-),128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/oci_missing.go,20,Receive only chan (<-chan),128,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,22,chan used as a param,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,22,chan used as a param,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,22,chan used as a param,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,3,Send,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,1,Goroutine,72,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,17,Select with default (number of branch),77,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,2,Receive,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,3,Send,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,1,Goroutine,113,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,1,Goroutine,126,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,4,Synchronous chan,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,1,Goroutine,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_log.go,2,Receive,140,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/util.go,22,chan used as a param,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/util.go,16,Select (number of branch),68,4
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/util.go,2,Receive,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/util.go,2,Receive,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/util.go,2,Receive,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/util.go,2,Receive,91,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,20,Receive only chan (<-chan),105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,4,Synchronous chan,118,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,4,Synchronous chan,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,1,Goroutine,125,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,3,Send,127,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,15,Close chan,129,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,16,Select (number of branch),132,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,133,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,20,Receive only chan (<-chan),231,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,8,Known chan length (length),251,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,1,Goroutine,253,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,254,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,20,Receive only chan (<-chan),281,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,21,Send only chan (chan<-),281,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,8,Known chan length (length),484,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,1,Goroutine,486,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,487,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,3,Send,488,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,4,Synchronous chan,526,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,16,Select (number of branch),539,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,3,Send,540,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,541,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,30,Waitgroup,545,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,24,Waitgroup Add(const),548,&{35546944 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,1,Goroutine,549,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,26,Waitgroup Done(),550,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,24,Waitgroup Add(const),558,&{35547103 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,1,Goroutine,559,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,26,Waitgroup Done(),560,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,16,Select (number of branch),572,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,573,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,575,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,16,Select (number of branch),583,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,584,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,2,Receive,586,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_api.go,31,Waitgroup Wait(),589,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,2,Receive,337,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,20,Receive only chan (<-chan),379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,21,Send only chan (chan<-),379,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,4,Synchronous chan,431,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,15,Close chan,434,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,2,Receive,469,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,20,Receive only chan (<-chan),712,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,2,Receive,727,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,1,Goroutine,729,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,4,Synchronous chan,845,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_exec.go,15,Close chan,846,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events.go,4,Synchronous chan,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events.go,27,Mutex,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events.go,29,Mutex Lock(),137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events.go,1,Goroutine,138,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events.go,6,Range over chan,139,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events.go,28,Mutex Unlock(),142,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events.go,29,Mutex Lock(),146,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/pod_api.go,2,Receive,183,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/pod_api.go,2,Receive,237,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/pod_api.go,2,Receive,304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/pod_api.go,2,Receive,360,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/pod_api.go,2,Receive,471,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/runtime.go,4,Synchronous chan,740,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/runtime.go,1,Goroutine,751,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/runtime.go,2,Receive,756,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/runtime.go,17,Select with default (number of branch),769,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/runtime.go,2,Receive,770,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/runtime.go,3,Send,821,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_internal.go,4,Synchronous chan,167,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_internal.go,15,Close chan,168,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_internal.go,8,Known chan length (length),1711,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_internal.go,1,Goroutine,1717,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_internal.go,3,Send,1722,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_internal.go,2,Receive,1729,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/container_internal.go,2,Receive,1736,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,1,Goroutine,60,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,4,Synchronous chan,65,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,1,Goroutine,67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,16,Select (number of branch),68,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,2,Receive,69,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,2,Receive,71,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,17,Select with default (number of branch),77,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,2,Receive,78,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,3,Send,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/events/logfile.go,3,Send,99,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,21,Send only chan (chan<-),28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,3,Send,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,3,Send,40,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,3,Send,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,16,Select (number of branch),49,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,2,Receive,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,2,Receive,58,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor.go,3,Send,61,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,8,Known chan length (length),29,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,1,Goroutine,30,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,2,Receive,31,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,2,Receive,111,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,8,Known chan length (length),134,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,1,Goroutine,135,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,2,Receive,136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,2,Receive,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,8,Known chan length (length),331,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,1,Goroutine,332,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/hooks/monitor_test.go,2,Receive,333,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/plugin/volume_api.go,27,Mutex,56,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/plugin/volume_api.go,29,Mutex Lock(),136,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/plugin/volume_api.go,28,Mutex Unlock(),137,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/plugin/volume_api.go,29,Mutex Lock(),193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/plugin/volume_api.go,28,Mutex Unlock(),194,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,27,Mutex,22,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,8,Known chan length (length),38,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,8,Known chan length (length),39,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,1,Goroutine,44,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,16,Select (number of branch),45,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,2,Receive,46,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,15,Close chan,48,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,15,Close chan,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,2,Receive,52,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,29,Mutex Lock(),55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,28,Mutex Unlock(),67,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,3,Send,85,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,29,Mutex Lock(),104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,28,Mutex Unlock(),105,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,29,Mutex Lock(),123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/libpod/shutdown/handler.go,28,Mutex Unlock(),124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/system/events.go,8,Known chan length (length),72,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/system/events.go,4,Synchronous chan,74,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/system/events.go,1,Goroutine,92,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/system/events.go,3,Send,94,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/system/events.go,6,Range over chan,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/cmd/podman/system/events.go,2,Receive,117,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/attach_test.go,1,Goroutine,42,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/attach_test.go,2,Receive,43,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/attach_test.go,1,Goroutine,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/attach_test.go,1,Goroutine,82,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/attach_test.go,2,Receive,83,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/attach_test.go,1,Goroutine,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/system_test.go,4,Synchronous chan,49,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/system_test.go,27,Mutex,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/system_test.go,29,Mutex Lock(),51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/system_test.go,1,Goroutine,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/system_test.go,28,Mutex Unlock(),54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/system_test.go,6,Range over chan,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/system_test.go,29,Mutex Lock(),62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,4,Synchronous chan,258,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,1,Goroutine,261,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,3,Send,263,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,15,Close chan,264,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,2,Receive,268,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,4,Synchronous chan,280,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,1,Goroutine,283,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,3,Send,285,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,15,Close chan,286,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,2,Receive,290,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,4,Synchronous chan,294,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,1,Goroutine,295,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,3,Send,299,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,15,Close chan,300,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,2,Receive,304,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,8,Known chan length (length),355,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,1,Goroutine,368,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/test/containers_test.go,2,Receive,371,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/rmi_test.go,30,Waitgroup,290,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/rmi_test.go,26,Waitgroup Done(),294,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/rmi_test.go,24,Waitgroup Add(const),305,&{36331771 INT 10} val is : 10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/rmi_test.go,5,Go in for,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/rmi_test.go,7,Goroutine in for with constant (constant),307,10
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/rmi_test.go,1,Goroutine,307,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/rmi_test.go,31,Waitgroup Wait(),309,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/events_test.go,30,Waitgroup,162,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/events_test.go,24,Waitgroup Add(const),163,&{37392024 INT 1} val is : 1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/events_test.go,1,Goroutine,164,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/events_test.go,26,Waitgroup Done(),166,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/events_test.go,31,Waitgroup Wait(),200,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/common_test.go,27,Mutex,89,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/common_test.go,29,Mutex Lock(),360,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/test/e2e/common_test.go,28,Mutex Unlock(),362,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/autoupdate/autoupdate.go,4,Synchronous chan,318,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/autoupdate/autoupdate.go,2,Receive,325,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/parallel/ctr/ctr.go,2,Receive,35,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/events.go,4,Synchronous chan,25,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/events.go,1,Goroutine,26,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/events.go,6,Range over chan,27,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/events.go,3,Send,28,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,4,Synchronous chan,393,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,4,Synchronous chan,394,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,1,Goroutine,396,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,16,Select (number of branch),402,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,2,Receive,403,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,2,Receive,405,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,2,Receive,409,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,4,Synchronous chan,493,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,4,Synchronous chan,494,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,1,Goroutine,499,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,3,Send,501,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,16,Select (number of branch),505,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,2,Receive,506,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,2,Receive,514,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,2,Receive,518,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,4,Synchronous chan,755,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,27,Mutex,766,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,29,Mutex Lock(),767,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,1,Goroutine,769,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,6,Range over chan,770,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,28,Mutex Unlock(),773,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/tunnel/containers.go,29,Mutex Lock(),779,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/runtime_libpod.go,8,Known chan length (length),363,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/runtime_libpod.go,1,Goroutine,366,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/domain/infra/runtime_libpod.go,2,Receive,370,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/parallel/parallel.go,4,Synchronous chan,53,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/parallel/parallel.go,1,Goroutine,55,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/parallel/parallel.go,15,Close chan,59,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/parallel/parallel.go,3,Send,62,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/parallel/parallel.go,3,Send,70,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/images/pull.go,17,Select with default (number of branch),78,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/images/pull.go,2,Receive,79,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/images/build.go,17,Select with default (number of branch),407,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/images/build.go,2,Receive,411,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/bindings/images/build.go,1,Goroutine,462,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_push.go,4,Synchronous chan,122,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_push.go,1,Goroutine,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_push.go,3,Send,124,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_push.go,16,Select (number of branch),131,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_push.go,2,Receive,132,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_push.go,2,Receive,152,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_attach.go,8,Known chan length (length),103,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_attach.go,2,Receive,106,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,4,Synchronous chan,50,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,4,Synchronous chan,51,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,1,Goroutine,54,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,3,Send,63,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,16,Select (number of branch),79,3
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,2,Receive,80,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,2,Receive,86,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/events.go,2,Receive,100,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_stats.go,17,Select with default (number of branch),95,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_stats.go,2,Receive,96,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/exec.go,8,Known chan length (length),190,1
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/exec.go,2,Receive,193,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_logs.go,30,Waitgroup,94,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_logs.go,9,Unknown chan length,97,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_logs.go,1,Goroutine,102,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_logs.go,31,Waitgroup Wait(),103,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_logs.go,15,Close chan,104,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/containers_logs.go,6,Range over chan,123,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images.go,4,Synchronous chan,289,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images.go,4,Synchronous chan,292,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images.go,1,Goroutine,293,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images.go,3,Send,295,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images.go,16,Select (number of branch),323,2
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images.go,2,Receive,324,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images.go,2,Receive,342,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,1,Goroutine,506,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,16,Select (number of branch),547,6
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,2,Receive,548,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,2,Receive,554,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,2,Receive,560,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,2,Receive,566,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,2,Receive,573,
+/Users/nicolasdilley/go/src/github.com/nicolasdilley/gocurrency_tool/projects-gocurrency/containers++podman/pkg/api/handlers/compat/images_build.go,2,Receive,592,
